@@ -1,6 +1,6 @@
 # 13F Tracker — Reporte trimestral 2026Q2
 
-_Generado 2026-09-02 12:20 · fuente de datos: **sec** · periodo de reporte 2026-06-30_
+_Generado 2026-09-02 13:00 · fuente de datos: **sec** · periodo de reporte 2026-06-30_
 
 > 2026Q2: 88 managers, $37.07T en posiciones reportadas, +19.3% vs trimestre anterior (mismos 87 managers)
 
@@ -12,7 +12,7 @@ _Generado 2026-09-02 12:20 · fuente de datos: **sec** · periodo de reporte 202
 - Rotación sectorial: mayor incremento de peso en Information Technology (+5.8 pp) y Consumer Staples (0.0 pp); mayor reducción en Consumer Discretionary (-1.7 pp) y Industrials (-0.9 pp).
 - Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.5 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-1.2 pp).
 - El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.4B frente a un efecto precio de $1.15T (7571 compras / 7041 ventas); su peso actual está en el percentil 100 de su historia.
-- Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Unclassified (2.4%), Real Estate (2.1%).
+- Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Real Estate (2.1%).
 - Compras de consenso (más compradores netos): Space Exploration Techn Corp (SPCX) (54 compradores / 0 vendedores, flujo $138.7B), Cerebras Systems Inc (CBRS) (42 compradores / 0 vendedores, flujo $11.3B), Kla Corp (KLAC) (44 compradores / 3 vendedores, flujo $143.9B).
 - Ventas de consenso: Carnival Corp Common Stock (CCL) (38 vendedores / 1 comprador, flujo -$8.2B), Sleep Number Corp (SNBRQ) (28 vendedores / 1 comprador, flujo -$15M), Ascendis Pharma A/s (ASND) (26 vendedores / 1 comprador, flujo -$2.8B).
 - Movimientos individuales más grandes: FMR LLC abre Space Exploration Techn Corp (SPCX) ($51.7B); BlackRock Inc. aumenta Kla Corp (KLAC) ($34.3B); Jane Street Group, LLC aumenta State Str SPDR S&P 500 ETF T (SPY) ($31.5B); Bank of America Corp aumenta Vanguard Index Fds Growth ETF (VOO) ($24.1B).

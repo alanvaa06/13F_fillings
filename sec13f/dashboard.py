@@ -45,7 +45,6 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
         book = h.groupby(["period", "manager_type"], as_index=False)["value_usd"].sum().rename(columns={"value_usd": "book"})
         rot = rotation.merge(book, on=["period", "manager_type"], how="left")
         rot["flow_pct"] = rot["net_flow"] / rot["book"]
-        rot = rot[rot["period"].isin(detail_periods)]
 
     # managers table
     mg = msum.merge(fp[["cik", "period", "top10_weight", "options_share", "etf_share", "inferred_type", "inferred_reason"]], on=["cik", "period"], how="left")

@@ -120,7 +120,7 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
 
     # --- sector rotation (equal-weighted)
     es = exp_sector_ew[(exp_sector_ew["period"] == period)].dropna(subset=["d_avg_weight"])
-    es = es[~es["sector"].str.startswith("ETF")]
+    es = es[~es["sector"].str.startswith("ETF") & (es["sector"] != "Unclassified")]
     if not es.empty:
         top = es.nlargest(2, "d_avg_weight")
         bot = es.nsmallest(2, "d_avg_weight")
@@ -133,7 +133,9 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
         ))
 
     # --- sector positioning vs benchmark (direct equity, active managers)
-    sp = sector_pos[sector_pos["period"] == period] if not sector_pos.empty else pd.DataFrame()
+    sp_all = sector_pos[sector_pos["period"] == period] if not sector_pos.empty else pd.DataFrame()
+    unclassified_w = float(sp_all.loc[sp_all["sector"] == "Unclassified", "weight_ew"].sum()) if not sp_all.empty else 0.0
+    sp = sp_all[sp_all["sector"] != "Unclassified"] if not sp_all.empty else sp_all
     if not sp.empty:
         ow = sp.loc[sp["active_weight"].idxmax()]
         uw = sp.loc[sp["active_weight"].idxmin()]
@@ -144,6 +146,8 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
         if not da.empty:
             mv = da.loc[da["d_active_qoq"].abs().idxmax()]
             text += f" Mayor cambio de peso activo en el trimestre: {mv['sector']} ({_pp(mv['d_active_qoq'])})."
+        if unclassified_w >= 0.05:
+            text += f" Un {unclassified_w:.0%} del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
         bullets.append(dict(kind="sector_positioning", text=text))
         facts.update(sector_top_overweight=dict(sector=ow["sector"], active_weight=float(ow["active_weight"]), breadth=float(ow["overweight_breadth"])),
                      sector_top_underweight=dict(sector=uw["sector"], active_weight=float(uw["active_weight"]), breadth=float(uw["overweight_breadth"])),

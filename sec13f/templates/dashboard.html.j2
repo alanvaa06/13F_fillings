@@ -192,7 +192,7 @@ td.meta{white-space:normal}
   <p class="lede">Composición del valor reportado por instrumento subyacente. <em>Equal-weight</em> promedia la asignación de cada manager (cada filer pesa igual); <em>por valor</em> (market weight) suma dólares y queda dominada por los filers más grandes.</p>
   <div class="controls"><span>Ponderación</span><button class="wbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="wbtn" data-w="vw" aria-pressed="false">Por valor (market weight)</button></div>
   <div class="grid2">
-    <div><h3>Mezcla por trimestre (últimos <span class="n-detail"></span>)</h3><div id="c-asset-mix" class="chart"></div></div>
+    <div><h3>Mezcla por trimestre (12 trimestres hasta el seleccionado)</h3><div id="c-asset-mix" class="chart"></div></div>
     <div><h3>Cambio vs. trimestre anterior <span class="meta" id="asset-delta-label"></span></h3><div id="c-asset-delta" class="chart"></div></div>
   </div>
 </section>
@@ -309,7 +309,10 @@ td.meta{white-space:normal}
 <script id="data" type="application/json">{{ data_json }}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const ALLP = DATA.periods; const P = DATA.detail_periods; let cur = P[P.length-1]; let wmode = 'ew'; let smode = 'ew'; let hmode = 'ew'; let amode = 'ALL'; let mgrLabels = true; let cmetric = 'flow'; let cmag = 'ALL';
+const ALLP = DATA.periods; const DETAIL = DATA.detail_periods; const P = ALLP; let cur = ALLP[ALLP.length-1];
+const hasDetail = () => DETAIL.includes(cur);
+const DETAIL_MSG = () => `Detalle por posición disponible para los últimos ${DETAIL.length} trimestres (desde ${ql(DETAIL[0])}). Selecciona un trimestre más reciente; las vistas agregadas sí cubren este periodo.`;
+const noDetailTable = (id, capId) => { document.getElementById(id).innerHTML = `<tbody><tr><td class="meta">${esc(DETAIL_MSG())}</td></tr></tbody>`; if(capId) document.getElementById(capId).textContent=''; }; let wmode = 'ew'; let smode = 'ew'; let hmode = 'ew'; let amode = 'ALL'; let mgrLabels = true; let cmetric = 'flow'; let cmag = 'ALL';
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const SERIES = () => ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(css);
 const usd = x => { if (x==null||isNaN(x)) return '—'; const a=Math.abs(x), s=x<0?'-':''; if(a>=1e12) return s+'$'+(a/1e12).toFixed(2)+'T'; if(a>=1e9) return s+'$'+(a/1e9).toFixed(1)+'B'; if(a>=1e6) return s+'$'+(a/1e6).toFixed(0)+'M'; return s+'$'+a.toFixed(0); };
@@ -392,7 +395,7 @@ function renderPeriods(){
     document.getElementById('p-prev').onclick=()=>{const i=P.indexOf(cur); if(i>0){cur=P[i-1]; renderAll();}};
     document.getElementById('p-next').onclick=()=>{const i=P.indexOf(cur); if(i<P.length-1){cur=P[i+1]; renderAll();}}; }
   sel.value=cur; document.getElementById('period-span').textContent=`cierre ${cur}`;
-  document.querySelectorAll('.n-detail,#n-detail').forEach(e=>e.textContent=P.length);
+  document.querySelectorAll('.n-detail,#n-detail').forEach(e=>e.textContent=DETAIL.length);
   document.getElementById('hist-span').textContent=`${ql(ALLP[0])} – ${ql(ALLP[ALLP.length-1])}`;
 }
 // ---------- history
@@ -442,7 +445,8 @@ const ASSET_ORDER = DATA.asset_order;
 function renderAsset(){
   const S = SERIES(); const key = wmode==='ew'?'avg_weight':'share'; const dkey = wmode==='ew'?'d_avg_weight':'d_share';
   const rows = DATA.exposure_asset;
-  const traces = ASSET_ORDER.map((a,i)=>({type:'bar', name:a, x:P.map(ql), y:P.map(p=>{const r=rows.find(r=>r.period===p&&r.underlying_asset===a); return r&&r[key]!=null?r[key]*100:0;}),
+  const win = ALLP.slice(Math.max(0, ALLP.indexOf(cur)-11), ALLP.indexOf(cur)+1);
+  const traces = ASSET_ORDER.map((a,i)=>({type:'bar', name:a, x:win.map(ql), y:win.map(p=>{const r=rows.find(r=>r.period===p&&r.underlying_asset===a); return r&&r[key]!=null?r[key]*100:0;}),
     marker:{color:S[i%8], line:{width:2,color:css('--surface')}}, hovertemplate:'%{x} · '+a+': %{y:.1f}%<extra></extra>'}));
   plot('c-asset-mix', traces, base({barmode:'stack', bargap:0.35, yaxis:Object.assign(base().yaxis,{title:{text:'% del valor'},ticksuffix:'%'}), margin:{l:8,r:16,t:8,b:80}, legend:{orientation:'h',y:-0.2,x:0}}));
   const dr = ASSET_ORDER.map(a=>{const r=rows.find(r=>r.period===cur&&r.underlying_asset===a); return {a, d:r&&r[dkey]!=null?r[dkey]*100:0};}).sort((x,y)=>x.d-y.d);
@@ -526,6 +530,7 @@ function movesTable(el, rows, withMgr){
   buildTable(el, cols, rows, {empty:'Sin movimientos con estos filtros.', sticky: withMgr?3:2});  // frozen through "Emisor"
 }
 function renderMoves(){
+  if(!hasDetail()){ noDetailTable('t-moves','cap-moves'); return; }
   const mgr=document.getElementById('moves-mgr').value;
   const all = DATA.moves.filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
   const rows = [...all].sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,40);
@@ -538,7 +543,8 @@ function renderCompanies(){
   const all = (DATA.companies||[]).filter(r=>r.period===cur);
   const kp = document.getElementById('companies-kpis');
   if(!all.length){
-    kp.innerHTML=''; emptyChart(document.getElementById('c-companies-buy'), 'Sin trimestre previo para comparar.'); emptyChart(document.getElementById('c-companies-sell'), 'Sin trimestre previo para comparar.');
+    const msg = hasDetail() ? 'Sin trimestre previo para comparar.' : DETAIL_MSG();
+    kp.innerHTML=''; emptyChart(document.getElementById('c-companies-buy'), msg); emptyChart(document.getElementById('c-companies-sell'), msg);
     document.getElementById('t-companies').innerHTML=''; document.getElementById('cap-companies').textContent=''; document.getElementById('companies-foot').textContent=''; return;
   }
   // KPIs come from full-universe totals computed in Python; the embedded rows are only the top movers per quarter.
@@ -601,35 +607,47 @@ function renderCompanies(){
 // ---------- consensus
 function renderConsensus(){
   const C = DATA.consensus.filter(r=>r.period===cur);
+  const emptyMsg = hasDetail() ? undefined : DETAIL_MSG();
   const issuerCol = {k:'issuer', h:'Emisor', cls:'txt', s:r=>title(r.issuer), f:r=>esc(title(r.issuer))};
   const held = [...C].sort((a,b)=>b.holders-a.holders||b.total_value-a.total_value).slice(0,12);
   buildTable(document.getElementById('t-held'), [issuerCol,
     {k:'holders', h:'Tenedores', cls:'num mono'}, {k:'total_value', h:'Valor', cls:'num mono', f:r=>usd(r.total_value)},
-    {k:'net_buyers', h:'Neto', cls:'num mono', tip:'Compradores − vendedores', f:r=>signed(r.net_buyers??0, v=>(v>0?'+':'')+v)}], held, {sticky:1});
+    {k:'net_buyers', h:'Neto', cls:'num mono', tip:'Compradores − vendedores', f:r=>signed(r.net_buyers??0, v=>(v>0?'+':'')+v)}], held, {sticky:1, empty: emptyMsg});
   const bought=[...C].filter(r=>r.net_buyers>0).sort((a,b)=>b.net_buyers-a.net_buyers||b.net_flow-a.net_flow).slice(0,12);
   buildTable(document.getElementById('t-bought'), [issuerCol,
     {k:'buyers', h:'Compr.', cls:'num mono', f:r=>`<span class="up">${r.buyers}</span>`}, {k:'sellers', h:'Vend.', cls:'num mono'}, {k:'new_holders', h:'Nuevos', cls:'num mono'},
-    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], bought, {empty:'Sin compras de consenso.', sticky:1});
+    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], bought, {empty: emptyMsg||'Sin compras de consenso.', sticky:1});
   const sold=[...C].filter(r=>r.net_buyers<0).sort((a,b)=>a.net_buyers-b.net_buyers||a.net_flow-b.net_flow).slice(0,12);
   buildTable(document.getElementById('t-sold'), [issuerCol,
     {k:'sellers', h:'Vend.', cls:'num mono', f:r=>`<span class="down">${r.sellers}</span>`}, {k:'buyers', h:'Compr.', cls:'num mono'}, {k:'exits', h:'Salidas', cls:'num mono'},
-    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], sold, {empty:'Sin ventas de consenso.', sticky:1});
+    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], sold, {empty: emptyMsg||'Sin ventas de consenso.', sticky:1});
 }
 // ---------- options
 function renderOptions(){
   const O = DATA.putcall.filter(r=>r.period===cur).sort((a,b)=>(b.put+b.call)-(a.put+a.call)).slice(0,15).reverse();
-  if(!O.length){ emptyChart(document.getElementById('c-putcall'), 'Sin opciones reportadas en este periodo.'); return; }
+  if(!O.length){ emptyChart(document.getElementById('c-putcall'), hasDetail() ? 'Sin opciones reportadas en este periodo.' : DETAIL_MSG()); return; }
   plot('c-putcall', [
     {type:'bar', orientation:'h', name:'Puts', x:O.map(r=>r.put/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s8'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · puts: $%{x:.2f}B<extra></extra>'},
     {type:'bar', orientation:'h', name:'Calls', x:O.map(r=>r.call/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s1'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · calls: $%{x:.2f}B<extra></extra>'},
   ], base({barmode:'group', bargap:0.3, xaxis:Object.assign(base().xaxis,{title:{text:'Nocional (USD, miles de millones)'}, tickprefix:'$', ticksuffix:'B'}), margin:{l:8,r:16,t:8,b:70}}));
 }
 // ---------- detail
+function renderDetailAum(cik){
+  const A = DATA.managers.filter(r=>r.cik===cik).sort((a,b)=>a.period<b.period?-1:1);
+  plot('c-detail-aum', [{type:'scatter', mode:'lines+markers', x:A.map(r=>ql(r.period)), y:A.map(r=>r.total_value/1e9), line:{width:2, color:css('--s1')}, marker:{size:A.map(r=>r.period===cur?10:5), color:css('--s1'), line:{width:2,color:css('--surface')}},
+    customdata:A.map(r=>[r.n_positions, pct(r.top10_weight,0), r.turnover==null?'—':pct(r.turnover,0)]), hovertemplate:'%{x}: $%{y:.1f}B<br>%{customdata[0]} posiciones · top-10 %{customdata[1]} · rotación %{customdata[2]}<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{tickangle:-45, nticks:16, showgrid:false}), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'B', rangemode:'tozero'}), showlegend:false, margin:{l:8,r:16,t:8,b:56}}));
+}
 function renderDetail(){
   const sel=document.getElementById('detail-mgr'); const M = DATA.managers.filter(r=>r.period===cur).sort((a,b)=>b.total_value-a.total_value);
   const v=sel.value; sel.innerHTML=M.map(r=>`<option value="${r.cik}">${esc(r.short)}</option>`).join(''); sel.value=[...sel.options].some(o=>o.value===v)?v:M[0].cik;
   const cik=sel.value; const m=M.find(r=>r.cik===cik);
   document.getElementById('detail-meta').textContent = m?`${m.manager} · ${usd(m.total_value)} · ${m.n_positions} posiciones · ${m.manager_type}`:'';
+  if(!hasDetail()){
+    ['c-detail-top','c-detail-sector','c-detail-top-delta','c-detail-sector-delta'].forEach(id=>emptyChart(document.getElementById(id), DETAIL_MSG()));
+    document.querySelectorAll('.detail-delta-label').forEach(e=>e.textContent='');
+    renderDetailAum(cik); noDetailTable('t-detail-moves'); return;
+  }
   const H = DATA.holdings.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight).slice(-15);
   plot('c-detail-top', [{type:'bar', orientation:'h', x:H.map(r=>r.weight*100), y:H.map(r=>title(r.issuer)+(r.put_call?' ('+r.put_call+')':'')), marker:{color:css('--s1')}, text:H.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
     customdata:H.map(r=>[usd(r.value_usd), r.asset_type, r.sector]), hovertemplate:'%{y}<br>%{x:.1f}% · %{customdata[0]}<br>%{customdata[1]} · %{customdata[2]}<extra></extra>'}],
@@ -659,10 +677,7 @@ function renderDetail(){
       .filter(r=>Math.abs(r.d)>=0.0005 || r.w1>0.01).sort((a,b)=>a.d-b.d);
     dbar('c-detail-sector-delta', S0.length?rowsS:[], r=>r.name, '%{y}<br>%{customdata[0]} → %{customdata[1]} (%{x:+.2f} pp)<extra></extra>');
   } else { dbar('c-detail-top-delta', [], null, ''); dbar('c-detail-sector-delta', [], null, ''); }
-  const A = DATA.managers.filter(r=>r.cik===cik).sort((a,b)=>a.period<b.period?-1:1);
-  plot('c-detail-aum', [{type:'scatter', mode:'lines+markers', x:A.map(r=>ql(r.period)), y:A.map(r=>r.total_value/1e9), line:{width:2, color:css('--s1')}, marker:{size:A.map(r=>r.period===cur?10:5), color:css('--s1'), line:{width:2,color:css('--surface')}},
-    customdata:A.map(r=>[r.n_positions, pct(r.top10_weight,0), r.turnover==null?'—':pct(r.turnover,0)]), hovertemplate:'%{x}: $%{y:.1f}B<br>%{customdata[0]} posiciones · top-10 %{customdata[1]} · rotación %{customdata[2]}<extra></extra>'}],
-    base({xaxis:Object.assign(base().xaxis,{tickangle:-45, nticks:16, showgrid:false}), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'B', rangemode:'tozero'}), showlegend:false, margin:{l:8,r:16,t:8,b:56}}));
+  renderDetailAum(cik);
   const rows = DATA.moves.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,15);
   const el=document.getElementById('t-detail-moves');
   if(!rows.length){ el.innerHTML='<tbody><tr><td class="meta">Sin trimestre previo para comparar.</td></tr></tbody>'; } else movesTable(el, rows, false);

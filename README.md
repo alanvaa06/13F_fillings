@@ -22,7 +22,7 @@ python -m sec13f.cli all --source sample --clean            # ~2 min; --quarters
 export SEC_USER_AGENT="Tu Nombre tu@email.com"
 python -m sec13f.cli verify                      # comprueba los CIK del universo contra EDGAR
 python -m sec13f.cli fetch --quarters 40                  # ~3,600 filings para 92 managers; ~1 filing/s, cacheado en disco
-python -m sec13f.cli build --history-quarters 40         # parsea, clasifica y genera dashboard + reporte (10 anos)
+python -m sec13f.cli build --history-quarters 40 --detail-quarters 20   # dashboard + reporte: 10 anos agregados, 5 anos de detalle por posicion
 python -m sec13f.cli enrich-issuers --top 2500           # opcional: amplia el maestro de emisores y vuelve a correr build
 
 # Re-generar solo los productos (sin volver a descargar). --detail-quarters controla cuántos
@@ -45,7 +45,7 @@ Salidas en `output/`:
 | `company_moves.csv` | Por empresa (CUSIP) y trimestre: tenedores antes/después, compradores/vendedores, Δ títulos agregados, flujo neto/bruto, efecto precio y clasificación del movimiento (MAJOR / MINOR / NONE) |
 | `consensus.csv`, `put_call.csv` | Crowding (tenedores, compradores/vendedores netos) y nocional de puts vs calls por subyacente |
 
-Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas de MB o varios GB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio. `holdings.csv` y `changes.csv` solo se escriben con `build --position-csv`; sus equivalentes Parquet (`data/processed/`) se escriben siempre. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo).
+Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas de MB o varios GB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio. `holdings.csv` y `changes.csv` solo se escriben con `build --position-csv`; sus equivalentes Parquet (`data/processed/`) se escriben siempre. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo). El selector de trimestre recorre los 40 trimestres: las vistas agregadas (KPIs, lectura, activos, sectores, heatmap, tabla y scatter de managers, valor por manager) cubren todos; las vistas por posición (movimientos, emisoras, consenso, opciones, detalle de posiciones) cubren los últimos 20 (`--detail-quarters`) y lo indican al seleccionar un trimestre anterior.
 
 ## Datos publicados
 

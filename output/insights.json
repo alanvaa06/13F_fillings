@@ -6,7 +6,7 @@
     "bullets": [
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+6.9 pp; 76% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.5 pp; 13% por encima)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.2 pp; 61% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.5 pp; 13% por encima). Un 17% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "type_mismatch",
@@ -22,9 +22,9 @@
       "total_value": 10127895314000.0,
       "n_positions": 141461,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.06866106027282214,
-        "breadth": 0.759493670886076
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.0322338864565109,
+        "breadth": 0.6075949367088608
       },
       "sector_top_underweight": {
         "sector": "Real Estate",
@@ -72,7 +72,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+6.6 pp; 71% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.2 pp; 11% por encima). Mayor cambio de peso activo en el trimestre: Consumer Staples (-0.8 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.0 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.2 pp; 11% por encima). Mayor cambio de peso activo en el trimestre: Consumer Staples (-0.8 pp). Un 16% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -121,9 +121,9 @@
       "n_add": 65938,
       "n_trim": 50106,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.06611119550086966,
-        "breadth": 0.7125
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.029905387605988792,
+        "breadth": 0.625
       },
       "sector_top_underweight": {
         "sector": "Real Estate",
@@ -204,7 +204,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+7.0 pp; 75% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.8 pp; 34% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.5 pp; 64% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.8 pp; 34% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-1.1 pp). Un 17% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -253,9 +253,9 @@
       "n_add": 65807,
       "n_trim": 53373,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.0703861707989852,
-        "breadth": 0.75
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.024812567481541745,
+        "breadth": 0.6375
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -332,11 +332,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.8 pp) y Information Technology (+0.6 pp); mayor reducción en Unclassified (-0.5 pp) y Materials (-0.3 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.8 pp) y Information Technology (+0.6 pp); mayor reducción en Materials (-0.3 pp) y Communication Services (-0.3 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+7.0 pp; 72% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-3.1 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+0.7 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.8 pp; 64% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-3.1 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+0.7 pp). Un 17% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -389,9 +389,9 @@
       "n_add": 62069,
       "n_trim": 56769,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.07020440774403794,
-        "breadth": 0.725
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.028027128102259435,
+        "breadth": 0.6375
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -476,11 +476,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Unclassified (+1.2 pp) y Information Technology (+0.7 pp); mayor reducción en Real Estate (-0.8 pp) y Materials (-0.5 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+0.7 pp) y Energy (+0.3 pp); mayor reducción en Real Estate (-0.8 pp) y Materials (-0.5 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+7.6 pp; 79% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Health Care (+1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.3 pp; 64% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Health Care (+1.1 pp). Un 18% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -488,7 +488,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Unclassified (17.6%), Information Technology (14.5%), Health Care (10.8%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (14.5%), Health Care (10.8%)."
       },
       {
         "kind": "consensus_buy",
@@ -533,9 +533,9 @@
       "n_add": 67306,
       "n_trim": 49803,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.07573712232918846,
-        "breadth": 0.7875
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.02298499521144433,
+        "breadth": 0.6375
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -545,7 +545,6 @@
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
       "sector_extremes": {
         "highs": [
-          "Unclassified",
           "Information Technology",
           "Health Care"
         ],
@@ -620,11 +619,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.6 pp) y Real Estate (+0.5 pp); mayor reducción en Unclassified (-1.3 pp) y Communication Services (-0.6 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.6 pp) y Real Estate (+0.5 pp); mayor reducción en Communication Services (-0.6 pp) y Materials (-0.1 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+6.8 pp; 80% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 34% por encima). Mayor cambio de peso activo en el trimestre: Unclassified (-0.7 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.3 pp; 60% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 34% por encima). Mayor cambio de peso activo en el trimestre: Real Estate (+0.7 pp). Un 16% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -677,9 +676,9 @@
       "n_add": 66499,
       "n_trim": 52993,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.06830926958874631,
-        "breadth": 0.8
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.023245319936699052,
+        "breadth": 0.6
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -768,7 +767,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+7.6 pp; 77% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.8 pp; 32% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+1.2 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.4 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.8 pp; 32% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+1.2 pp). Un 17% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -821,9 +820,9 @@
       "n_add": 63921,
       "n_trim": 57734,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.07644332364587042,
-        "breadth": 0.7682926829268293
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.023950285249334943,
+        "breadth": 0.5609756097560976
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -908,11 +907,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Energy (+0.7 pp) y Real Estate (+0.6 pp); mayor reducción en Unclassified (-1.7 pp) y Information Technology (-0.2 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Energy (+0.7 pp) y Real Estate (+0.6 pp); mayor reducción en Information Technology (-0.2 pp) y Industrials (-0.1 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+6.1 pp; 72% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.4 pp; 40% por encima). Mayor cambio de peso activo en el trimestre: Unclassified (-1.5 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.1 pp; 59% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.4 pp; 40% por encima). Mayor cambio de peso activo en el trimestre: Financials (+1.0 pp). Un 15% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -965,9 +964,9 @@
       "n_add": 70272,
       "n_trim": 53157,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.06140379004093946,
-        "breadth": 0.7195121951219512
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.021088808969472767,
+        "breadth": 0.5853658536585366
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -1050,11 +1049,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.6 pp) y Industrials (+0.5 pp); mayor reducción en Unclassified (-0.7 pp) y Real Estate (-0.4 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.6 pp) y Industrials (+0.5 pp); mayor reducción en Real Estate (-0.4 pp) y Consumer Discretionary (-0.4 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.9 pp; 71% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.7 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (+0.6 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.6 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.7 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (+0.6 pp). Un 14% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1107,9 +1106,9 @@
       "n_add": 71206,
       "n_trim": 55999,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05863925268924523,
-        "breadth": 0.7073170731707317
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.015888364699004037,
+        "breadth": 0.524390243902439
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -1193,11 +1192,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.7 pp) y Utilities (+0.6 pp); mayor reducción en Industrials (-1.1 pp) y Unclassified (-0.9 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.7 pp) y Utilities (+0.6 pp); mayor reducción en Industrials (-1.1 pp) y Information Technology (-0.6 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+6.2 pp; 69% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.9 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (+0.9 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.5 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.9 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (+0.9 pp). Un 13% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1250,9 +1249,9 @@
       "n_add": 67385,
       "n_trim": 59806,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.062351414864330934,
-        "breadth": 0.6941176470588235
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.024555428905717686,
+        "breadth": 0.6235294117647059
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -1337,11 +1336,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Communication Services (+0.8 pp) y Industrials (+0.7 pp); mayor reducción en Financials (-0.9 pp) y Unclassified (-0.3 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Communication Services (+0.8 pp) y Industrials (+0.7 pp); mayor reducción en Financials (-0.9 pp) y Utilities (-0.1 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.6 pp; 67% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 28% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.7 pp; 55% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.5 pp; 28% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.1 pp). Un 13% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1394,9 +1393,9 @@
       "n_add": 63730,
       "n_trim": 62487,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05616826097917478,
-        "breadth": 0.6705882352941176
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.027402485481473393,
+        "breadth": 0.5529411764705883
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -1480,11 +1479,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Industrials (+0.8 pp) y Materials (+0.5 pp); mayor reducción en Unclassified (-1.0 pp) y Communication Services (-0.8 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Industrials (+0.8 pp) y Materials (+0.5 pp); mayor reducción en Communication Services (-0.8 pp) y Information Technology (-0.7 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.7 pp; 67% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.8 pp; 24% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.0 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.8 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.8 pp; 24% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.0 pp). Un 12% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1537,9 +1536,9 @@
       "n_add": 72659,
       "n_trim": 54411,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05676569358793383,
-        "breadth": 0.6705882352941176
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.027725162030843256,
+        "breadth": 0.5647058823529412
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -1628,7 +1627,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.7 pp; 71% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.4 pp; 15% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (+1.4 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+4.2 pp; 64% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.4 pp; 15% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (+1.4 pp). Un 12% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1681,9 +1680,9 @@
       "n_add": 69814,
       "n_trim": 59868,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.0574419214164357,
-        "breadth": 0.7058823529411765
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.04156142945848035,
+        "breadth": 0.6352941176470588
       },
       "sector_top_underweight": {
         "sector": "Real Estate",
@@ -1766,11 +1765,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.6 pp) y Information Technology (+0.6 pp); mayor reducción en Unclassified (-1.0 pp) y Consumer Discretionary (-0.6 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.6 pp) y Information Technology (+0.6 pp); mayor reducción en Consumer Discretionary (-0.6 pp) y Real Estate (-0.2 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.6 pp; 71% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.4 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Industrials (+0.7 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.6 pp; 61% de los managers por encima del benchmark) y mayor infraponderación en Financials (-2.4 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Industrials (+0.7 pp). Un 11% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1823,9 +1822,9 @@
       "n_add": 69564,
       "n_trim": 59905,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05585251236373682,
-        "breadth": 0.7058823529411765
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.03572238682696603,
+        "breadth": 0.611764705882353
       },
       "sector_top_underweight": {
         "sector": "Financials",
@@ -1912,7 +1911,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.7 pp; 71% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.8 pp; 33% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.1 pp; 64% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.8 pp; 33% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.3 pp). Un 11% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -1965,9 +1964,9 @@
       "n_add": 61784,
       "n_trim": 67167,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05715516180923909,
-        "breadth": 0.7058823529411765
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.03093409202286844,
+        "breadth": 0.6352941176470588
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2050,11 +2049,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+0.8 pp) y Consumer Discretionary (+0.6 pp); mayor reducción en Unclassified (-1.1 pp) y Consumer Staples (-0.4 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+0.8 pp) y Consumer Discretionary (+0.6 pp); mayor reducción en Consumer Staples (-0.4 pp) y Utilities (-0.4 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.9 pp; 66% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-3.7 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-0.9 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.9 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-3.7 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-0.9 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2107,9 +2106,9 @@
       "n_add": 67646,
       "n_trim": 60855,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.049229954833474816,
-        "breadth": 0.6588235294117647
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.028659068722511685,
+        "breadth": 0.6235294117647059
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2198,7 +2197,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.7 pp; 66% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 26% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+0.7 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.3 pp; 58% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 26% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+0.7 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2251,9 +2250,9 @@
       "n_add": 65366,
       "n_trim": 69294,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.04702569387970466,
-        "breadth": 0.6588235294117647
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.023107662897418488,
+        "breadth": 0.5764705882352941
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2341,7 +2340,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.5 pp; 61% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.0 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-0.9 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.4 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.0 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-0.9 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2394,9 +2393,9 @@
       "n_add": 74857,
       "n_trim": 63229,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.045364817536062335,
-        "breadth": 0.611764705882353
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.013702541820747996,
+        "breadth": 0.5176470588235295
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2483,7 +2482,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.9 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.0 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Unclassified (+0.4 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.3 pp; 48% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.0 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Industrials (-0.3 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2532,9 +2531,9 @@
       "n_add": 73373,
       "n_trim": 71882,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.04928509718491735,
-        "breadth": 0.6235294117647059
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.012582166039806927,
+        "breadth": 0.4823529411764706
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2619,7 +2618,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.0 pp; 67% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-1.9 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (-0.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.2 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-1.9 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (-0.3 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2679,9 +2678,9 @@
       "n_add": 77767,
       "n_trim": 74796,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05033441285050985,
-        "breadth": 0.6666666666666666
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.011596432256565564,
+        "breadth": 0.5238095238095238
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2774,7 +2773,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.9 pp; 65% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-1.7 pp; 33% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-0.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+0.9 pp; 45% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-1.7 pp; 33% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-0.3 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2782,7 +2781,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.3%); en mínimos: Unclassified (8.9%), Consumer Staples (3.9%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.3%); en mínimos: Consumer Staples (3.9%)."
       },
       {
         "kind": "consensus_buy",
@@ -2834,9 +2833,9 @@
       "n_add": 79384,
       "n_trim": 77744,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.04923362810362418,
-        "breadth": 0.6547619047619048
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.00871834693457986,
+        "breadth": 0.4523809523809524
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -2849,7 +2848,6 @@
           "Information Technology"
         ],
         "lows": [
-          "Unclassified",
           "Consumer Staples"
         ]
       },
@@ -2930,7 +2928,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.1 pp; 67% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-3.5 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.8 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.8 pp; 51% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-3.5 pp; 31% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.8 pp). Un 9% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -2938,7 +2936,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.0%); en mínimos: Unclassified (8.6%), Consumer Staples (3.8%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.0%); en mínimos: Consumer Staples (3.8%)."
       },
       {
         "kind": "consensus_buy",
@@ -2990,9 +2988,9 @@
       "n_add": 88276,
       "n_trim": 72101,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.050817774410596456,
-        "breadth": 0.6666666666666666
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.018387654510637147,
+        "breadth": 0.5119047619047619
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -3005,7 +3003,6 @@
           "Information Technology"
         ],
         "lows": [
-          "Unclassified",
           "Consumer Staples"
         ]
       },
@@ -3086,7 +3083,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.3 pp; 68% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 30% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-0.6 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.5 pp; 49% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 30% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-0.6 pp). Un 8% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3094,7 +3091,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en mínimos: Unclassified (8.5%), Consumer Staples (3.5%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en mínimos: Consumer Staples (3.5%)."
       },
       {
         "kind": "consensus_buy",
@@ -3146,9 +3143,9 @@
       "n_add": 79837,
       "n_trim": 83260,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05256235895706901,
-        "breadth": 0.6785714285714286
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.015027419035068726,
+        "breadth": 0.4880952380952381
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -3159,7 +3156,6 @@
       "sector_extremes": {
         "highs": [],
         "lows": [
-          "Unclassified",
           "Consumer Staples"
         ]
       },
@@ -3240,7 +3236,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+5.0 pp; 67% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.5 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+2.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.7 pp; 51% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.5 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+2.3 pp). Un 8% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3248,7 +3244,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.3%), Energy (6.1%); en mínimos: Unclassified (8.1%), Communication Services (7.2%), Real Estate (2.6%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (20.3%), Energy (6.1%); en mínimos: Communication Services (7.2%), Real Estate (2.6%)."
       },
       {
         "kind": "consensus_buy",
@@ -3300,9 +3296,9 @@
       "n_add": 80651,
       "n_trim": 77860,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.05040477076079347,
-        "breadth": 0.6666666666666666
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.017351183068434098,
+        "breadth": 0.5119047619047619
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -3316,7 +3312,6 @@
           "Energy"
         ],
         "lows": [
-          "Unclassified",
           "Communication Services",
           "Real Estate"
         ]
@@ -3394,11 +3389,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.7 pp) y Consumer Staples (+0.3 pp); mayor reducción en Unclassified (-0.5 pp) y Communication Services (-0.3 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Consumer Discretionary (+0.7 pp) y Consumer Staples (+0.3 pp); mayor reducción en Communication Services (-0.3 pp) y Information Technology (-0.2 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+4.7 pp; 70% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.5 pp; 37% por encima). Mayor cambio de peso activo en el trimestre: Consumer Staples (+0.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.7 pp; 46% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.5 pp; 37% por encima). Mayor cambio de peso activo en el trimestre: Consumer Staples (+0.3 pp). Un 8% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3406,7 +3401,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en mínimos: Unclassified (7.6%), Communication Services (6.9%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en mínimos: Communication Services (6.9%)."
       },
       {
         "kind": "consensus_buy",
@@ -3458,9 +3453,9 @@
       "n_add": 82577,
       "n_trim": 79118,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.047495102103713535,
-        "breadth": 0.7023809523809523
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.016726376552888514,
+        "breadth": 0.4642857142857143
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -3471,7 +3466,6 @@
       "sector_extremes": {
         "highs": [],
         "lows": [
-          "Unclassified",
           "Communication Services"
         ]
       },
@@ -3548,11 +3542,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Industrials (+0.8 pp) y Financials (+0.3 pp); mayor reducción en Consumer Discretionary (-1.1 pp) y Unclassified (-1.0 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Industrials (+0.8 pp) y Financials (+0.3 pp); mayor reducción en Consumer Discretionary (-1.1 pp) y Consumer Staples (-0.1 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+3.7 pp; 65% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.8 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Unclassified (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+2.1 pp; 60% de los managers por encima del benchmark) y mayor infraponderación en Health Care (-2.8 pp; 38% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+1.0 pp). Un 6% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3560,7 +3554,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Financials (13.6%), Industrials (11.0%); en mínimos: Communication Services (6.9%), Unclassified (6.3%), Real Estate (2.6%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Financials (13.6%), Industrials (11.0%); en mínimos: Communication Services (6.9%), Real Estate (2.6%)."
       },
       {
         "kind": "consensus_buy",
@@ -3612,9 +3606,9 @@
       "n_add": 84547,
       "n_trim": 75041,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.03657371920848073,
-        "breadth": 0.6547619047619048
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.020936186783014038,
+        "breadth": 0.5952380952380952
       },
       "sector_top_underweight": {
         "sector": "Health Care",
@@ -3629,7 +3623,6 @@
         ],
         "lows": [
           "Communication Services",
-          "Unclassified",
           "Real Estate"
         ]
       },
@@ -3706,11 +3699,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Communication Services (+1.1 pp); mayor reducción en Unclassified (-1.0 pp) y Health Care (-0.7 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Communication Services (+1.1 pp); mayor reducción en Health Care (-0.7 pp) y Financials (-0.7 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.9 pp; 63% de los managers por encima del benchmark) y mayor infraponderación en Consumer Staples (-1.9 pp; 20% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.7 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Communication Services (+1.6 pp; 45% de los managers por encima del benchmark) y mayor infraponderación en Consumer Staples (-1.9 pp; 20% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.7 pp). Un 5% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3718,7 +3711,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (21.5%), Industrials (10.8%), Materials (3.6%); en mínimos: Unclassified (5.5%), Real Estate (2.5%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (21.5%), Industrials (10.8%), Materials (3.6%); en mínimos: Real Estate (2.5%)."
       },
       {
         "kind": "consensus_buy",
@@ -3770,9 +3763,9 @@
       "n_add": 86686,
       "n_trim": 73561,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.029045618627350465,
-        "breadth": 0.6309523809523809
+        "sector": "Communication Services",
+        "active_weight": 0.016003913756740346,
+        "breadth": 0.4523809523809524
       },
       "sector_top_underweight": {
         "sector": "Consumer Staples",
@@ -3787,7 +3780,6 @@
           "Materials"
         ],
         "lows": [
-          "Unclassified",
           "Real Estate"
         ]
       },
@@ -3868,7 +3860,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.9 pp; 63% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.5 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Communication Services (+1.6 pp; 44% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.5 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.1 pp). Un 5% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -3876,7 +3868,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (22.5%), Industrials (11.2%); en mínimos: Unclassified (5.4%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (22.5%), Industrials (11.2%)."
       },
       {
         "kind": "consensus_buy",
@@ -3928,9 +3920,9 @@
       "n_add": 77853,
       "n_trim": 80481,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.02887021021209551,
-        "breadth": 0.6309523809523809
+        "sector": "Communication Services",
+        "active_weight": 0.0156703647122335,
+        "breadth": 0.44047619047619047
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -3943,9 +3935,7 @@
           "Information Technology",
           "Industrials"
         ],
-        "lows": [
-          "Unclassified"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -4024,7 +4014,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+3.0 pp; 60% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.7 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Financials (-0.6 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Communication Services (+2.1 pp; 49% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.7 pp; 35% por encima). Mayor cambio de peso activo en el trimestre: Financials (-0.6 pp). Un 5% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "sector_driver",
@@ -4084,9 +4074,9 @@
       "n_add": 81199,
       "n_trim": 76096,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.029697253204287132,
-        "breadth": 0.5952380952380952
+        "sector": "Communication Services",
+        "active_weight": 0.021071210264104204,
+        "breadth": 0.4880952380952381
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -4176,11 +4166,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.0 pp) y Financials (+0.4 pp); mayor reducción en Unclassified (-1.2 pp) y Energy (-0.6 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.0 pp) y Financials (+0.4 pp); mayor reducción en Energy (-0.6 pp) y Health Care (-0.2 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Communication Services (+2.4 pp; 49% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Unclassified (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Communication Services (+2.4 pp; 49% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-2.9 pp; 36% por encima). Mayor cambio de peso activo en el trimestre: Health Care (+0.6 pp)."
       },
       {
         "kind": "sector_driver",
@@ -4188,7 +4178,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (23.0%); en mínimos: Unclassified (3.9%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (23.0%)."
       },
       {
         "kind": "consensus_buy",
@@ -4254,9 +4244,7 @@
         "highs": [
           "Information Technology"
         ],
-        "lows": [
-          "Unclassified"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -4491,7 +4479,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.4 pp; 58% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-4.7 pp; 37% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (-1.5 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Energy (+1.6 pp; 38% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-4.7 pp; 37% por encima). Mayor cambio de peso activo en el trimestre: Communication Services (-1.5 pp)."
       },
       {
         "kind": "sector_driver",
@@ -4551,9 +4539,9 @@
       "n_add": 81638,
       "n_trim": 78713,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.02373096329327113,
-        "breadth": 0.5833333333333334
+        "sector": "Energy",
+        "active_weight": 0.015503267007140595,
+        "breadth": 0.38095238095238093
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -4647,7 +4635,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.5 pp; 58% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-4.5 pp; 30% por encima). Mayor cambio de peso activo en el trimestre: Financials (-0.4 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+1.6 pp; 60% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-4.5 pp; 30% por encima). Mayor cambio de peso activo en el trimestre: Financials (-0.4 pp)."
       },
       {
         "kind": "sector_driver",
@@ -4707,9 +4695,9 @@
       "n_add": 82744,
       "n_trim": 72946,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.024597065647763743,
-        "breadth": 0.5833333333333334
+        "sector": "Consumer Discretionary",
+        "active_weight": 0.01582777372034813,
+        "breadth": 0.5952380952380952
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -4798,11 +4786,11 @@
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Financials (+0.9 pp) y Information Technology (+0.4 pp); mayor reducción en Materials (-0.3 pp) y Unclassified (-0.2 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Financials (+0.9 pp) y Information Technology (+0.4 pp); mayor reducción en Materials (-0.3 pp) y Industrials (-0.2 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.1 pp; 60% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.4 pp; 25% por encima). Mayor cambio de peso activo en el trimestre: Health Care (+1.3 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Energy (+1.5 pp; 40% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.4 pp; 25% por encima). Mayor cambio de peso activo en el trimestre: Health Care (+1.3 pp)."
       },
       {
         "kind": "sector_driver",
@@ -4810,7 +4798,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (23.8%), Industrials (11.6%); en mínimos: Unclassified (3.5%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (23.8%), Industrials (11.6%)."
       },
       {
         "kind": "consensus_buy",
@@ -4862,9 +4850,9 @@
       "n_add": 87090,
       "n_trim": 72717,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.020761966681052395,
-        "breadth": 0.5952380952380952
+        "sector": "Energy",
+        "active_weight": 0.015219415057793242,
+        "breadth": 0.40476190476190477
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -4877,9 +4865,7 @@
           "Information Technology",
           "Industrials"
         ],
-        "lows": [
-          "Unclassified"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -4958,7 +4944,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.2 pp; 55% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.0 pp; 26% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-1.0 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Industrials (+1.3 pp; 50% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.0 pp; 26% por encima). Mayor cambio de peso activo en el trimestre: Health Care (-1.0 pp)."
       },
       {
         "kind": "sector_driver",
@@ -5018,9 +5004,9 @@
       "n_add": 84557,
       "n_trim": 75585,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.02217896979746076,
-        "breadth": 0.5476190476190477
+        "sector": "Industrials",
+        "active_weight": 0.012865547995129595,
+        "breadth": 0.5
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -5113,7 +5099,7 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Unclassified (+2.1 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-6.6 pp; 24% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.6 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+1.6 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-6.6 pp; 24% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.6 pp)."
       },
       {
         "kind": "sector_driver",
@@ -5121,7 +5107,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Financials (15.4%), Industrials (11.7%), Materials (3.6%); en mínimos: Unclassified (3.3%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Financials (15.4%), Industrials (11.7%), Materials (3.6%)."
       },
       {
         "kind": "consensus_buy",
@@ -5173,9 +5159,9 @@
       "n_add": 84879,
       "n_trim": 74064,
       "sector_top_overweight": {
-        "sector": "Unclassified",
-        "active_weight": 0.020522294527424448,
-        "breadth": 0.5595238095238095
+        "sector": "Financials",
+        "active_weight": 0.015757324131194378,
+        "breadth": 0.5238095238095238
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
@@ -5189,9 +5175,7 @@
           "Industrials",
           "Materials"
         ],
-        "lows": [
-          "Unclassified"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -5278,7 +5262,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.0%), Financials (15.8%), Industrials (11.9%), Materials (3.7%); en mínimos: Unclassified (2.9%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.0%), Financials (15.8%), Industrials (11.9%), Materials (3.7%)."
       },
       {
         "kind": "consensus_buy",
@@ -5352,9 +5336,7 @@
           "Industrials",
           "Materials"
         ],
-        "lows": [
-          "Unclassified"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -5441,7 +5423,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.1%), Industrials (12.1%), Materials (4.0%); en mínimos: Consumer Staples (3.3%), Unclassified (2.7%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.1%), Industrials (12.1%), Materials (4.0%); en mínimos: Consumer Staples (3.3%)."
       },
       {
         "kind": "consensus_buy",
@@ -5515,8 +5497,7 @@
           "Materials"
         ],
         "lows": [
-          "Consumer Staples",
-          "Unclassified"
+          "Consumer Staples"
         ]
       },
       "most_held": [
@@ -5775,7 +5756,7 @@
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Unclassified (2.4%), Real Estate (2.1%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Real Estate (2.1%)."
       },
       {
         "kind": "consensus_buy",
@@ -5860,7 +5841,6 @@
         "lows": [
           "Consumer Discretionary",
           "Consumer Staples",
-          "Unclassified",
           "Real Estate"
         ]
       },
