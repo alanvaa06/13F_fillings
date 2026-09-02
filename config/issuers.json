@@ -142,7 +142,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 900
+   "ref_price": 900,
+   "ipo": "2012-06-30"
   },
   {
    "ticker": "PANW",
@@ -153,7 +154,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 360
+   "ref_price": 360,
+   "ipo": "2012-09-30"
   },
   {
    "ticker": "CRWD",
@@ -164,7 +166,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 290
+   "ref_price": 290,
+   "ipo": "2019-06-30"
   },
   {
    "ticker": "SNOW",
@@ -175,7 +178,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 120
+   "ref_price": 120,
+   "ipo": "2020-09-30"
   },
   {
    "ticker": "PLTR",
@@ -186,7 +190,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 38
+   "ref_price": 38,
+   "ipo": "2020-09-30"
   },
   {
    "ticker": "CSCO",
@@ -230,7 +235,8 @@
    "sector": "Information Technology",
    "industry": "Technology Hardware",
    "country": "US",
-   "ref_price": 45
+   "ref_price": 45,
+   "ipo": "2011-09-30"
   },
   {
    "ticker": "DELL",
@@ -241,7 +247,8 @@
    "sector": "Information Technology",
    "industry": "Technology Hardware",
    "country": "US",
-   "ref_price": 120
+   "ref_price": 120,
+   "ipo": "2018-12-31"
   },
   {
    "ticker": "TSM",
@@ -274,7 +281,8 @@
    "sector": "Information Technology",
    "industry": "Semiconductors",
    "country": "GB",
-   "ref_price": 140
+   "ref_price": 140,
+   "ipo": "2023-09-30"
   },
   {
    "ticker": "SAP",
@@ -307,7 +315,8 @@
    "sector": "Communication Services",
    "industry": "Interactive Media",
    "country": "US",
-   "ref_price": 167
+   "ref_price": 167,
+   "ipo": "2014-06-30"
   },
   {
    "ticker": "META",
@@ -318,7 +327,8 @@
    "sector": "Communication Services",
    "industry": "Interactive Media",
    "country": "US",
-   "ref_price": 570
+   "ref_price": 570,
+   "ipo": "2012-06-30"
   },
   {
    "ticker": "NFLX",
@@ -384,7 +394,8 @@
    "sector": "Communication Services",
    "industry": "Telecom",
    "country": "US",
-   "ref_price": 205
+   "ref_price": 205,
+   "ipo": "2013-06-30"
   },
   {
    "ticker": "SPOT",
@@ -395,7 +406,8 @@
    "sector": "Communication Services",
    "industry": "Entertainment",
    "country": "LU",
-   "ref_price": 370
+   "ref_price": 370,
+   "ipo": "2018-06-30"
   },
   {
    "ticker": "CHTR",
@@ -516,7 +528,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Travel",
    "country": "US",
-   "ref_price": 130
+   "ref_price": 130,
+   "ipo": "2020-12-31"
   },
   {
    "ticker": "UBER",
@@ -527,7 +540,8 @@
    "sector": "Industrials",
    "industry": "Ground Transportation",
    "country": "US",
-   "ref_price": 75
+   "ref_price": 75,
+   "ipo": "2019-06-30"
   },
   {
    "ticker": "GM",
@@ -593,7 +607,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Internet Retail",
    "country": "CN",
-   "ref_price": 100
+   "ref_price": 100,
+   "ipo": "2014-09-30"
   },
   {
    "ticker": "PDD",
@@ -604,7 +619,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Internet Retail",
    "country": "CN",
-   "ref_price": 140
+   "ref_price": 140,
+   "ipo": "2018-09-30"
   },
   {
    "ticker": "JD",
@@ -615,7 +631,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Internet Retail",
    "country": "CN",
-   "ref_price": 40
+   "ref_price": 40,
+   "ipo": "2014-06-30"
   },
   {
    "ticker": "SE",
@@ -626,7 +643,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Internet Retail",
    "country": "SG",
-   "ref_price": 95
+   "ref_price": 95,
+   "ipo": "2017-12-31"
   },
   {
    "ticker": "TM",
@@ -703,7 +721,8 @@
    "sector": "Consumer Staples",
    "industry": "Packaged Foods",
    "country": "US",
-   "ref_price": 35
+   "ref_price": 35,
+   "ipo": "2015-09-30"
   },
   {
    "ticker": "MDLZ",
@@ -714,7 +733,8 @@
    "sector": "Consumer Staples",
    "industry": "Packaged Foods",
    "country": "US",
-   "ref_price": 72
+   "ref_price": 72,
+   "ipo": "2012-12-31"
   },
   {
    "ticker": "MO",
@@ -846,7 +866,8 @@
    "sector": "Health Care",
    "industry": "Pharmaceuticals",
    "country": "US",
-   "ref_price": 195
+   "ref_price": 195,
+   "ipo": "2013-03-31"
   },
   {
    "ticker": "PFE",
@@ -923,7 +944,8 @@
    "sector": "Health Care",
    "industry": "Biotechnology",
    "country": "US",
-   "ref_price": 70
+   "ref_price": 70,
+   "ipo": "2018-12-31"
   },
   {
    "ticker": "TMO",
@@ -1220,7 +1242,8 @@
    "sector": "Financials",
    "industry": "Payments",
    "country": "US",
-   "ref_price": 78
+   "ref_price": 78,
+   "ipo": "2015-09-30"
   },
   {
    "ticker": "COIN",
@@ -1231,7 +1254,8 @@
    "sector": "Financials",
    "industry": "Capital Markets",
    "country": "US",
-   "ref_price": 180
+   "ref_price": 180,
+   "ipo": "2021-06-30"
   },
   {
    "ticker": "HOOD",
@@ -1242,7 +1266,8 @@
    "sector": "Financials",
    "industry": "Capital Markets",
    "country": "US",
-   "ref_price": 23
+   "ref_price": 23,
+   "ipo": "2021-09-30"
   },
   {
    "ticker": "SOFI",
@@ -1253,7 +1278,8 @@
    "sector": "Financials",
    "industry": "Consumer Finance",
    "country": "US",
-   "ref_price": 8
+   "ref_price": 8,
+   "ipo": "2021-06-30"
   },
   {
    "ticker": "MCO",
@@ -1440,7 +1466,8 @@
    "sector": "Financials",
    "industry": "Banks",
    "country": "BR",
-   "ref_price": 13
+   "ref_price": 13,
+   "ipo": "2021-12-31"
   },
   {
    "ticker": "XOM",
@@ -1528,7 +1555,8 @@
    "sector": "Energy",
    "industry": "Refining",
    "country": "US",
-   "ref_price": 130
+   "ref_price": 130,
+   "ipo": "2012-06-30"
   },
   {
    "ticker": "VLO",
@@ -1737,7 +1765,8 @@
    "sector": "Materials",
    "industry": "Chemicals",
    "country": "US",
-   "ref_price": 52
+   "ref_price": 52,
+   "ipo": "2019-06-30"
   },
   {
    "ticker": "ALB",
@@ -2111,7 +2140,8 @@
    "sector": "ETF - Thematic",
    "industry": "Innovation",
    "country": "US",
-   "ref_price": 52
+   "ref_price": 52,
+   "ipo": "2014-12-31"
   },
   {
    "ticker": "BAC.PRL",
@@ -2144,7 +2174,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 115
+   "ref_price": 115,
+   "ipo": "2020-12-31"
   },
   {
    "ticker": "OXY.WT",
@@ -2155,7 +2186,8 @@
    "sector": "Energy",
    "industry": "Oil & Gas E&P",
    "country": "US",
-   "ref_price": 30
+   "ref_price": 30,
+   "ipo": "2020-09-30"
   },
   {
    "ticker": "SNOW.CNV",
@@ -2166,7 +2198,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 98
+   "ref_price": 98,
+   "ipo": "2020-12-31"
   },
   {
    "ticker": "LBRDK",
@@ -2177,7 +2210,8 @@
    "sector": "Communication Services",
    "industry": "Media",
    "country": "US",
-   "ref_price": 75
+   "ref_price": 75,
+   "ipo": "2014-12-31"
   },
   {
    "ticker": "SEG",
@@ -2188,7 +2222,8 @@
    "sector": "Real Estate",
    "industry": "Real Estate Development",
    "country": "US",
-   "ref_price": 25
+   "ref_price": 25,
+   "ipo": "2024-09-30"
   },
   {
    "ticker": "WBD",
@@ -2199,7 +2234,8 @@
    "sector": "Communication Services",
    "industry": "Media",
    "country": "US",
-   "ref_price": 8
+   "ref_price": 8,
+   "ipo": "2022-06-30"
   },
   {
    "ticker": "CPNG",
@@ -2210,7 +2246,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Internet Retail",
    "country": "KR",
-   "ref_price": 24
+   "ref_price": 24,
+   "ipo": "2021-03-31"
   },
   {
    "ticker": "HHH",
@@ -2232,7 +2269,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Restaurants",
    "country": "CA",
-   "ref_price": 70
+   "ref_price": 70,
+   "ipo": "2014-12-31"
   },
   {
    "ticker": "HLT",
@@ -2243,7 +2281,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Hotels",
    "country": "US",
-   "ref_price": 230
+   "ref_price": 230,
+   "ipo": "2013-12-31"
   },
   {
    "ticker": "CP",
@@ -2287,7 +2326,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "US",
-   "ref_price": 100
+   "ref_price": 100,
+   "ipo": "2015-06-30"
   },
   {
    "ticker": "TDY.UNIT",
@@ -2298,7 +2338,8 @@
    "sector": "Industrials",
    "industry": "Aerospace & Defense",
    "country": "US",
-   "ref_price": 430
+   "ref_price": 430,
+   "ipo": "2011-09-30"
   },
   {
    "ticker": "BUD",
@@ -2320,7 +2361,8 @@
    "sector": "Communication Services",
    "industry": "Interactive Entertainment",
    "country": "US",
-   "ref_price": 45
+   "ref_price": 45,
+   "ipo": "2021-03-31"
   },
   {
    "ticker": "SHOP",
@@ -2331,7 +2373,8 @@
    "sector": "Information Technology",
    "industry": "Software",
    "country": "CA",
-   "ref_price": 80
+   "ref_price": 80,
+   "ipo": "2015-06-30"
   },
   {
    "ticker": "AFRM",
@@ -2342,7 +2385,8 @@
    "sector": "Financials",
    "industry": "Consumer Finance",
    "country": "US",
-   "ref_price": 42
+   "ref_price": 42,
+   "ipo": "2021-03-31"
   },
   {
    "ticker": "RIVN",
@@ -2353,7 +2397,8 @@
    "sector": "Consumer Discretionary",
    "industry": "Automobiles",
    "country": "US",
-   "ref_price": 11
+   "ref_price": 11,
+   "ipo": "2021-12-31"
   },
   {
    "ticker": "ULTA",
@@ -2408,7 +2453,8 @@
    "sector": "Financials",
    "industry": "Consumer Finance",
    "country": "US",
-   "ref_price": 35
+   "ref_price": 35,
+   "ipo": "2014-06-30"
   },
   {
    "ticker": "LEN",

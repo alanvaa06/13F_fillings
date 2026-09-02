@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import logging
+import re
 from datetime import date, datetime
 from pathlib import Path
 
@@ -17,6 +18,7 @@ from .config import VALUE_IN_DOLLARS_FROM
 
 log = logging.getLogger(__name__)
 
+NUMERIC_COLUMNS = ["value_usd", "shares", "vote_sole", "vote_shared", "vote_none"]
 HOLDING_COLUMNS = [
     "cik", "manager", "accession", "form", "filing_date", "period",
     "issuer", "title_of_class", "cusip", "figi", "value_usd", "shares",
@@ -108,6 +110,68 @@ def parse_infotable(xml: bytes, meta: dict) -> pd.DataFrame:
     return df
 
 
+_CUSIP_RE = re.compile(r"(?<![A-Z0-9])([0-9A-Z]{6}[0-9A-Z]{2}[0-9])(?![A-Z0-9])")
+_NUM_RE = re.compile(r"-?[\d,]+(?:\.\d+)?")
+_CLASS_HEADS = {"COM", "CL", "CLASS", "SHS", "ORD", "SPONSORED", "SPON", "PFD", "NOTE", "NOTES", "DEB", "DEBENTURE", "BD", "WT", "WTS",
+                "UNIT", "UNITS", "ADR", "ADS", "RT", "RTS", "CAP", "STK", "SH", "SHARE", "SHARES", "ETF", "TR"}
+
+
+def parse_text_table(text: str, meta: dict) -> pd.DataFrame:
+    """Best-effort parser for pre-2013 ASCII 13F tables.
+
+    Each holdings line contains: issuer, class, CUSIP, value (x$1000), shares,
+    SH/PRN, [PUT/CALL], discretion, [managers], voting sole/shared/none. Column
+    positions vary by filer, so we anchor on the 9-character CUSIP and read the
+    numeric fields to its right.
+    """
+    rows = []
+    mult = value_multiplier(meta.get("filing_date", "2000-01-01"))
+    in_table = False
+    for raw in text.splitlines():
+        line = raw.rstrip()
+        up = line.upper()
+        if "<TABLE>" in up or "FORM 13F INFORMATION TABLE" in up:
+            in_table = True
+            continue
+        if "</TABLE>" in up:
+            in_table = False
+            continue
+        if not in_table or not line.strip():
+            continue
+        m = _CUSIP_RE.search(up)
+        if not m or m.start() < 8:
+            continue
+        left, right = line[: m.start()].strip(), up[m.end():]
+        nums = [n.replace(",", "") for n in _NUM_RE.findall(right)]
+        if len(nums) < 2:
+            continue
+        toks = right.split()
+        put_call = "Put" if "PUT" in toks else ("Call" if "CALL" in toks else "")
+        sh_prn = "PRN" if "PRN" in toks else "SH"
+        disc = next((t for t in toks if t in ("SOLE", "SHARED", "DEFINED", "DFND", "OTR", "OTHER")), "")
+        # issuer / class split: the class starts at the last "class head" token (COM, CL, SHS, PFD, NOTE...)
+        lt = left.split()
+        heads = [i for i, t in enumerate(lt) if i >= 1 and t.upper() in _CLASS_HEADS]
+        cut = heads[-1] if heads else max(1, len(lt) - 1)
+        issuer, cls = " ".join(lt[:cut]), " ".join(lt[cut:])
+        try:
+            value, shares = float(nums[0]), float(nums[1])
+        except ValueError:
+            continue
+        # voting authority = last three numbers; anything in between is the "other managers" field
+        tail = nums[-3:] if len(nums) >= 5 else nums[2:5]
+        vote = [float(x) for x in tail] + [0.0] * 3
+        other = " ".join(nums[2:-3]) if len(nums) > 5 else ""
+        rows.append({
+            "cik": meta["cik"], "manager": meta["manager"], "accession": meta["accession"], "form": meta["form"],
+            "filing_date": _to_date(meta["filing_date"]), "period": _to_date(meta["report_period"]),
+            "issuer": issuer.upper(), "title_of_class": cls.upper(), "cusip": m.group(1), "figi": "",
+            "value_usd": value * mult, "shares": shares, "sh_prn": sh_prn, "put_call": put_call, "discretion": disc,
+            "other_managers": other, "vote_sole": vote[0], "vote_shared": vote[1], "vote_none": vote[2],
+        })
+    return pd.DataFrame(rows, columns=HOLDING_COLUMNS)
+
+
 def parse_filing_folder(folder: Path) -> tuple[dict, pd.DataFrame]:
     meta = json.loads((folder / "meta.json").read_text())
     cover = {}
@@ -117,7 +181,11 @@ def parse_filing_folder(folder: Path) -> tuple[dict, pd.DataFrame]:
             cover = parse_cover(pdoc.read_bytes())
         except etree.XMLSyntaxError as exc:
             log.warning("Bad cover page in %s: %s", folder, exc)
-    holdings = parse_infotable((folder / "infotable.xml").read_bytes(), meta)
+    if (folder / "infotable.xml").exists():
+        holdings = parse_infotable((folder / "infotable.xml").read_bytes(), meta)
+    else:
+        holdings = parse_text_table((folder / "infotable.txt").read_text(errors="replace"), meta)
+        cover["text_format"] = True
     # Reconcile: cover-page total vs sum of table (in the same units)
     mult = value_multiplier(meta.get("filing_date", "2030-01-01"))
     if cover.get("table_value_total"):
@@ -163,6 +231,9 @@ def parse_all(folders: list[Path]) -> tuple[pd.DataFrame, pd.DataFrame]:
         covers.append(c)
         frames.append(h)
     holdings = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=HOLDING_COLUMNS)
+    # an empty filing frame carries object dtypes and would poison the concat
+    for c in NUMERIC_COLUMNS:
+        holdings[c] = pd.to_numeric(holdings[c], errors="coerce").astype(float).fillna(0.0)
     filings = pd.DataFrame(covers)
     # Keep only the latest filing per (cik, period); amendments that restate replace originals.
     if not holdings.empty:

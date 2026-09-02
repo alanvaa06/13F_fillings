@@ -85,6 +85,26 @@ def build_report(insights: list[dict], msum: pd.DataFrame, fp: pd.DataFrame, exp
         out.append(_md_table(big, {"manager": "Manager", "action": "Acción", "display_name": "Emisor", "asset_type": "Tipo", "pct_shares": "Δ títulos", "flow_effect": "Flujo", "weight_prev": "Peso previo", "weight_cur": "Peso actual"},
                              {"pct_shares": lambda v: "" if pd.isna(v) else f"{v:+.0%}", "flow_effect": _usd, "weight_prev": lambda v: f"{v:.1%}", "weight_cur": lambda v: f"{v:.1%}"}))
 
+    # ---- long-run history, one row per year (Q4, or the latest quarter of the final year)
+    periods = sorted(msum["period"].unique())
+    if len(periods) > 4:
+        out.append("\n## Serie histórica (un corte por año)\n")
+        yearly = {}
+        for p in periods:
+            yearly[p[:4]] = p  # keeps the last quarter available in each year
+        rows = []
+        for y, p in sorted(yearly.items()):
+            m = msum[msum["period"] == p]
+            ea = exp_asset_ew[(exp_asset_ew["period"] == p) & (exp_asset_ew["underlying_asset"] == "Equity")]
+            es = exp_sector_ew[(exp_sector_ew["period"] == p) & (~exp_sector_ew["sector"].str.startswith("ETF"))]
+            top = es.nlargest(1, "avg_weight")
+            rows.append(dict(period=quarter_label(p), managers=int(m["cik"].nunique()), total_value=float(m["total_value"].sum()),
+                             net_flow=(float(m["net_flow"].sum()) if "net_flow" in m and m["net_flow"].notna().any() else float("nan")),
+                             equity_w=(float(ea["avg_weight"].iloc[0]) if not ea.empty else float("nan")),
+                             top_sector=(f"{top['sector'].iloc[0]} ({top['avg_weight'].iloc[0]:.1%})" if not top.empty else "")))
+        out.append(_md_table(pd.DataFrame(rows), {"period": "Trimestre", "managers": "Managers", "total_value": "Valor 13F", "net_flow": "Flujo neto (trim.)", "equity_w": "Equity directo (EW)", "top_sector": "Sector líder (EW)"},
+                             {"total_value": _usd, "net_flow": lambda v: "" if pd.isna(v) else _usd(v), "equity_w": lambda v: "" if pd.isna(v) else f"{v:.1%}"}))
+
     out.append("\n## Metodología\n")
     out.append("- **Fuente:** formularios 13F-HR (y enmiendas 13F-HR/A) descargados de SEC EDGAR vía la API de submissions y los archivos XML del information table. "
                "Los valores se normalizan a dólares (los filings anteriores al 3-ene-2023 reportan en miles).\n"

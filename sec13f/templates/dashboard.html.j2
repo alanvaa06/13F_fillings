@@ -44,6 +44,8 @@ header{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px 
 .periods{display:flex;gap:6px;flex-wrap:wrap}
 .pill{border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}
 .pill[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+select.pill{padding-right:28px;font-weight:600}
+.periods{align-items:center}
 .pill:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 main{max-width:1240px;margin:0 auto;padding:8px 24px 64px}
 section{padding:28px 0;border-bottom:1px solid var(--border)}
@@ -94,7 +96,12 @@ td.num,th.num{text-align:right}
     <div class="eyebrow">SEC EDGAR · Formularios 13F-HR · {{ n_managers }} managers · fuente: {{ source }}</div>
     <h1>{{ title }}</h1>
   </div>
-  <div class="periods" id="periods" role="group" aria-label="Periodo de reporte"></div>
+  <div class="periods" role="group" aria-label="Periodo de reporte">
+    <button class="pill" id="p-prev" aria-label="Trimestre anterior">‹</button>
+    <select id="period-select" class="pill" aria-label="Trimestre"></select>
+    <button class="pill" id="p-next" aria-label="Trimestre siguiente">›</button>
+    <span class="meta" id="period-span"></span>
+  </div>
 </div></header>
 
 <main>
@@ -106,12 +113,30 @@ td.num,th.num{text-align:right}
   {% if source == 'sample' %}<div class="warn"><strong>Datos de muestra.</strong> Este corte se generó sin conexión a SEC con filings sintéticos que respetan el esquema XML de EDGAR (identificadores reales, tenencias simuladas). Ejecuta <span class="mono">python -m sec13f.cli all --source sec</span> con acceso a internet para reemplazarlo por los reportes reales.</div>{% endif %}
 </section>
 
+<section id="s-history">
+  <h2>Serie histórica <span class="meta" id="hist-span"></span></h2>
+  <p class="lede">Evolución trimestral del universo completo. Las vistas de detalle por posición (movimientos, consenso, opciones, detalle por manager) cubren los últimos <span id="n-detail"></span> trimestres; las series agregadas cubren todo el histórico.</p>
+  <div class="grid2">
+    <div><h3>Valor reportado del universo</h3><div id="c-hist-value" class="chart"></div></div>
+    <div><h3>Flujo neto estimado por trimestre</h3><div id="c-hist-flow" class="chart"></div></div>
+  </div>
+  <div class="grid2" style="margin-top:20px">
+    <div><h3>Mezcla de activos (equal-weight)</h3><div id="c-hist-asset" class="chart tall"></div></div>
+    <div><h3>Peso sectorial (equal-weight, 7 mayores + otros)</h3><div id="c-hist-sector" class="chart tall"></div></div>
+  </div>
+  <div class="grid3" style="margin-top:20px">
+    <div><h3>Managers reportando</h3><div id="c-hist-mgrs" class="chart" style="min-height:240px"></div></div>
+    <div><h3>Concentración promedio (top-10)</h3><div id="c-hist-top10" class="chart" style="min-height:240px"></div></div>
+    <div><h3>Rotación promedio</h3><div id="c-hist-turnover" class="chart" style="min-height:240px"></div></div>
+  </div>
+</section>
+
 <section id="s-asset">
   <h2>Exposición por tipo de activo</h2>
   <p class="lede">Composición del valor reportado por instrumento subyacente. La vista <em>equal-weight</em> promedia la asignación de cada manager, la vista <em>por valor</em> suma dólares (dominada por los filers más grandes).</p>
   <div class="controls"><span>Ponderación</span><button class="wbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="wbtn" data-w="vw" aria-pressed="false">Por valor</button></div>
   <div class="grid2">
-    <div><h3>Mezcla por trimestre</h3><div id="c-asset-mix" class="chart"></div></div>
+    <div><h3>Mezcla por trimestre (últimos <span class="n-detail"></span>)</h3><div id="c-asset-mix" class="chart"></div></div>
     <div><h3>Cambio vs. trimestre anterior <span class="meta" id="asset-delta-label"></span></h3><div id="c-asset-delta" class="chart"></div></div>
   </div>
 </section>
@@ -171,6 +196,8 @@ td.num,th.num{text-align:right}
     <div><h3>Principales posiciones</h3><div id="c-detail-top" class="chart tall"></div></div>
     <div><h3>Exposición sectorial del manager</h3><div id="c-detail-sector" class="chart tall"></div></div>
   </div>
+  <h3 style="margin-top:18px">Valor reportado del manager en el tiempo</h3>
+  <div id="c-detail-aum" class="chart" style="min-height:260px"></div>
   <h3 style="margin-top:18px">Cambios del trimestre</h3>
   <div class="tablewrap"><table id="t-detail-moves"></table></div>
 </section>
@@ -194,7 +221,7 @@ td.num,th.num{text-align:right}
 <script id="data" type="application/json">{{ data_json }}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const P = DATA.periods; let cur = P[P.length-1]; let wmode = 'ew'; let amode = 'ALL';
+const ALLP = DATA.periods; const P = DATA.detail_periods; let cur = P[P.length-1]; let wmode = 'ew'; let amode = 'ALL';
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const SERIES = () => ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(css);
 const usd = x => { if (x==null||isNaN(x)) return '—'; const a=Math.abs(x), s=x<0?'-':''; if(a>=1e12) return s+'$'+(a/1e12).toFixed(2)+'T'; if(a>=1e9) return s+'$'+(a/1e9).toFixed(1)+'B'; if(a>=1e6) return s+'$'+(a/1e6).toFixed(0)+'M'; return s+'$'+a.toFixed(0); };
@@ -221,8 +248,38 @@ const plot = (id, traces, layout) => Plotly.react(id, traces, layout, CFG);
 
 // ---------- header
 function renderPeriods(){
-  const el=document.getElementById('periods'); el.innerHTML='';
-  P.forEach(p=>{ const b=document.createElement('button'); b.className='pill'; b.textContent=ql(p); b.setAttribute('aria-pressed', p===cur); b.onclick=()=>{cur=p; renderAll();}; el.appendChild(b); });
+  const sel=document.getElementById('period-select');
+  if(!sel.options.length){ P.forEach(p=>{ const o=document.createElement('option'); o.value=p; o.textContent=ql(p); sel.appendChild(o); }); sel.onchange=()=>{cur=sel.value; renderAll();};
+    document.getElementById('p-prev').onclick=()=>{const i=P.indexOf(cur); if(i>0){cur=P[i-1]; renderAll();}};
+    document.getElementById('p-next').onclick=()=>{const i=P.indexOf(cur); if(i<P.length-1){cur=P[i+1]; renderAll();}}; }
+  sel.value=cur; document.getElementById('period-span').textContent=`cierre ${cur}`;
+  document.querySelectorAll('.n-detail,#n-detail').forEach(e=>e.textContent=P.length);
+  document.getElementById('hist-span').textContent=`${ql(ALLP[0])} – ${ql(ALLP[ALLP.length-1])}`;
+}
+// ---------- history
+function renderHistory(){
+  const H = DATA.history; const x = H.map(r=>ql(r.period)); const S=SERIES();
+  const ax = (o)=>Object.assign(base().xaxis, {tickangle:-45, nticks:16, showgrid:false}, o||{});
+  plot('c-hist-value', [{type:'bar', x, y:H.map(r=>r.total_value/1e12), marker:{color:css('--s1')}, hovertemplate:'%{x}: $%{y:.2f}T<extra></extra>'}],
+    base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'T', rangemode:'tozero'}), showlegend:false, bargap:0.25}));
+  const fl = H.filter(r=>r.net_flow!=null);
+  plot('c-hist-flow', [{type:'bar', x:fl.map(r=>ql(r.period)), y:fl.map(r=>r.net_flow/1e9), marker:{color:fl.map(r=>r.net_flow>=0?css('--div-pos'):css('--div-neg'))}, hovertemplate:'%{x}: $%{y:.1f}B<extra></extra>'}],
+    base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'B', zeroline:true}), showlegend:false, bargap:0.25}));
+  const EA = DATA.exposure_asset;
+  plot('c-hist-asset', ASSET_ORDER.map((a,i)=>({type:'scatter', mode:'lines', stackgroup:'one', name:a, x, y:ALLP.map(p=>{const r=EA.find(r=>r.period===p&&r.underlying_asset===a); return r&&r.avg_weight!=null?r.avg_weight*100:0;}),
+    line:{width:0.5, color:css('--surface')}, fillcolor:S[i%8], hovertemplate:'%{x} · '+a+': %{y:.1f}%<extra></extra>'})),
+    base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{ticksuffix:'%', range:[0,100]}), margin:{l:8,r:16,t:8,b:90}, legend:{orientation:'h',y:-0.32,x:0}, hovermode:'x unified'}));
+  const ES = DATA.exposure_sector; const secs=[...new Set(ES.map(r=>r.sector))];
+  const avg = secs.map(sc=>({sc, m: ES.filter(r=>r.sector===sc).reduce((a,r)=>a+(r.avg_weight||0),0)})).sort((a,b)=>b.m-a.m);
+  const top = avg.slice(0,7).map(a=>a.sc), rest = avg.slice(7).map(a=>a.sc);
+  const series = top.map((sc,i)=>({type:'scatter', mode:'lines', name:sc, x, y:ALLP.map(p=>{const r=ES.find(r=>r.period===p&&r.sector===sc); return r?r.avg_weight*100:null;}), line:{width:2, color:S[i]}, hovertemplate:'%{x} · '+sc+': %{y:.1f}%<extra></extra>'}));
+  if(rest.length) series.push({type:'scatter', mode:'lines', name:'Otros ('+rest.length+')', x, y:ALLP.map(p=>ES.filter(r=>r.period===p&&rest.includes(r.sector)).reduce((a,r)=>a+r.avg_weight*100,0)), line:{width:2, color:css('--muted'), dash:'dot'}, hovertemplate:'%{x} · otros: %{y:.1f}%<extra></extra>'});
+  plot('c-hist-sector', series, base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{ticksuffix:'%', rangemode:'tozero'}), margin:{l:8,r:16,t:8,b:90}, legend:{orientation:'h',y:-0.32,x:0}, hovermode:'x unified'}));
+  const small = (id, y, fmt, suf) => plot(id, [{type:'scatter', mode:'lines', x, y, line:{width:2, color:css('--s1')}, fill:'tozeroy', fillcolor:'rgba(42,120,214,0.10)', hovertemplate:'%{x}: %{y'+fmt+'}'+suf+'<extra></extra>'}],
+    base({xaxis:ax({nticks:8}), yaxis:Object.assign(base().yaxis,{ticksuffix:suf, rangemode:'tozero'}), showlegend:false, margin:{l:8,r:16,t:8,b:44}}));
+  small('c-hist-mgrs', H.map(r=>r.n_managers), ':d', '');
+  small('c-hist-top10', H.map(r=>r.avg_top10!=null?r.avg_top10*100:null), ':.0f', '%');
+  small('c-hist-turnover', H.map(r=>r.avg_turnover!=null?r.avg_turnover*100:null), ':.0f', '%');
 }
 function renderLead(){
   const ins = DATA.insights[cur]; document.getElementById('headline').textContent = ins.headline;
@@ -243,7 +300,7 @@ const ASSET_ORDER = DATA.asset_order;
 function renderAsset(){
   const S = SERIES(); const key = wmode==='ew'?'avg_weight':'share'; const dkey = wmode==='ew'?'d_avg_weight':'d_share';
   const rows = DATA.exposure_asset;
-  const traces = ASSET_ORDER.map((a,i)=>({type:'bar', name:a, x:P.map(ql), y:P.map(p=>{const r=rows.find(r=>r.period===p&&r.underlying_asset===a); return r?r[key]*100:0;}),
+  const traces = ASSET_ORDER.map((a,i)=>({type:'bar', name:a, x:P.map(ql), y:P.map(p=>{const r=rows.find(r=>r.period===p&&r.underlying_asset===a); return r&&r[key]!=null?r[key]*100:0;}),
     marker:{color:S[i%8], line:{width:2,color:css('--surface')}}, hovertemplate:'%{x} · '+a+': %{y:.1f}%<extra></extra>'}));
   plot('c-asset-mix', traces, base({barmode:'stack', bargap:0.35, yaxis:Object.assign(base().yaxis,{title:{text:'% del valor'},ticksuffix:'%'}), margin:{l:8,r:16,t:8,b:80}, legend:{orientation:'h',y:-0.2,x:0}}));
   const dr = ASSET_ORDER.map(a=>{const r=rows.find(r=>r.period===cur&&r.underlying_asset===a); return {a, d:r&&r[dkey]!=null?r[dkey]*100:0};}).sort((x,y)=>x.d-y.d);
@@ -331,16 +388,22 @@ function renderDetail(){
   const S = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight);
   plot('c-detail-sector', [{type:'bar', orientation:'h', x:S.map(r=>r.weight*100), y:S.map(r=>r.sector), marker:{color:css('--s1')}, text:S.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}%<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
+  const A = DATA.managers.filter(r=>r.cik===cik).sort((a,b)=>a.period<b.period?-1:1);
+  plot('c-detail-aum', [{type:'scatter', mode:'lines+markers', x:A.map(r=>ql(r.period)), y:A.map(r=>r.total_value/1e9), line:{width:2, color:css('--s1')}, marker:{size:A.map(r=>r.period===cur?10:5), color:css('--s1'), line:{width:2,color:css('--surface')}},
+    customdata:A.map(r=>[r.n_positions, pct(r.top10_weight,0), r.turnover==null?'—':pct(r.turnover,0)]), hovertemplate:'%{x}: $%{y:.1f}B<br>%{customdata[0]} posiciones · top-10 %{customdata[1]} · rotación %{customdata[2]}<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{tickangle:-45, nticks:16, showgrid:false}), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'B', rangemode:'tozero'}), showlegend:false, margin:{l:8,r:16,t:8,b:56}}));
   const rows = DATA.moves.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,15);
   const el=document.getElementById('t-detail-moves');
   if(!rows.length){ el.innerHTML='<tbody><tr><td class="meta">Sin trimestre previo para comparar.</td></tr></tbody>'; } else movesTable(el, rows, false);
 }
-function renderAll(){ renderPeriods(); renderLead(); renderAsset(); renderSector(); renderManagers(); renderMoves(); renderConsensus(); renderOptions(); renderDetail(); }
+let histDone=false;
+function renderAll(){ renderPeriods(); renderLead(); if(!histDone){ renderHistory(); histDone=true; } renderAsset(); renderSector(); renderManagers(); renderMoves(); renderConsensus(); renderOptions(); renderDetail(); }
 document.querySelectorAll('.wbtn').forEach(b=>b.onclick=()=>{wmode=b.dataset.w; document.querySelectorAll('.wbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderAsset();});
 document.querySelectorAll('.abtn').forEach(b=>b.onclick=()=>{amode=b.dataset.a; document.querySelectorAll('.abtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderMoves();});
 document.getElementById('moves-mgr').onchange=renderMoves;
 document.getElementById('detail-mgr').onchange=renderDetail;
 renderAll();
-if (window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', renderAll); }
-new MutationObserver(renderAll).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+const rethemed=()=>{histDone=false; renderAll();};
+if (window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', rethemed); }
+new MutationObserver(rethemed).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
 </script>

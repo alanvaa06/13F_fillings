@@ -74,3 +74,28 @@ def test_parse_cover_handles_us_dates():
     c = parse_cover(xml)
     assert c["cik"] == "1067983" and c["period"] == "2026-06-30" and c["table_entry_total"] == 40
     assert c["manager"] == "Berkshire Hathaway Inc" and c["is_amendment"] is False
+
+
+TEXT_13F = """<TABLE>
+                                                    VALUE   SHARES/  SH/ PUT/ INVSTMT  OTHER   VOTING AUTHORITY
+NAME OF ISSUER              TITLE OF CLASS  CUSIP   (x$1000) PRN AMT  PRN CALL DSCRETN MANAGERS SOLE  SHARED NONE
+APPLE INC                   COM             037833100  152,340   400,000  SH       SOLE            400,000  0  0
+BANK OF AMERICA CORP        COM             060505104    5,000 1,000,000  SH  PUT  SOLE          1,000,000  0  0
+INTL BUSINESS MACHS CORP    COM             459200101   64,500   350,000  SH       DEFINED   4     350,000  0  0
+BERKSHIRE HATHAWAY INC DEL  CL B NEW        084670702   10,000    50,000  SH       SOLE             50,000  0  0
+</TABLE>"""
+
+
+def test_parse_text_table_pre_2013():
+    from sec13f.parser import parse_text_table
+
+    meta = dict(cik="1", manager="X", accession="a", form="13F-HR", filing_date="2012-02-14", report_period="2011-12-31")
+    df = parse_text_table(TEXT_13F, meta)
+    assert len(df) == 4
+    aapl = df.iloc[0]
+    assert aapl["cusip"] == "037833100" and aapl["value_usd"] == 152_340_000 and aapl["shares"] == 400_000
+    assert df.iloc[1]["put_call"] == "Put"
+    ibm = df.iloc[2]
+    assert ibm["discretion"] == "DEFINED" and ibm["other_managers"] == "4" and ibm["vote_sole"] == 350_000
+    brk = df.iloc[3]
+    assert brk["issuer"] == "BERKSHIRE HATHAWAY INC DEL" and brk["title_of_class"] == "CL B NEW"

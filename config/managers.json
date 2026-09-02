@@ -1,20 +1,366 @@
 {
-  "_comment": "Sample universe of 13F filers. manager_type is the declared classification; the pipeline also infers a type from portfolio characteristics. Verify CIKs with `python -m sec13f.cli verify` when online.",
-  "managers": [
-    {"cik": "1067983", "name": "Berkshire Hathaway Inc", "short": "Berkshire", "manager_type": "Conglomerate / Long-only Value", "style": "value"},
-    {"cik": "1350694", "name": "Bridgewater Associates, LP", "short": "Bridgewater", "manager_type": "Hedge Fund - Global Macro", "style": "macro"},
-    {"cik": "1037389", "name": "Renaissance Technologies LLC", "short": "Renaissance", "manager_type": "Hedge Fund - Quant", "style": "quant"},
-    {"cik": "1423053", "name": "Citadel Advisors LLC", "short": "Citadel", "manager_type": "Hedge Fund - Multi-strategy", "style": "multistrat"},
-    {"cik": "1336528", "name": "Pershing Square Capital Management, L.P.", "short": "Pershing Square", "manager_type": "Hedge Fund - Activist", "style": "activist"},
-    {"cik": "1791786", "name": "Elliott Investment Management L.P.", "short": "Elliott", "manager_type": "Hedge Fund - Activist", "style": "activist"},
-    {"cik": "1167483", "name": "Tiger Global Management LLC", "short": "Tiger Global", "manager_type": "Hedge Fund - Long/Short Growth", "style": "growth"},
-    {"cik": "1061768", "name": "Baupost Group LLC/MA", "short": "Baupost", "manager_type": "Hedge Fund - Value", "style": "value"},
-    {"cik": "1029160", "name": "Soros Fund Management LLC", "short": "Soros", "manager_type": "Family Office - Macro", "style": "macro"},
-    {"cik": "1649339", "name": "Scion Asset Management, LLC", "short": "Scion", "manager_type": "Hedge Fund - Contrarian Value", "style": "value"},
-    {"cik": "1536411", "name": "Duquesne Family Office LLC", "short": "Duquesne", "manager_type": "Family Office - Macro", "style": "macro"},
-    {"cik": "102909",  "name": "Vanguard Group Inc", "short": "Vanguard", "manager_type": "Asset Manager - Index", "style": "index"},
-    {"cik": "1364742", "name": "BlackRock Inc.", "short": "BlackRock", "manager_type": "Asset Manager - Index/Active", "style": "index"},
-    {"cik": "1179392", "name": "Two Sigma Investments, LP", "short": "Two Sigma", "manager_type": "Hedge Fund - Quant", "style": "quant"},
-    {"cik": "1656456", "name": "Appaloosa LP", "short": "Appaloosa", "manager_type": "Hedge Fund - Opportunistic", "style": "value"}
-  ]
+ "_comment": "Universe of 13F filers. manager_type is the declared classification (the pipeline also infers one from the portfolio). `since` = first quarter the filer reports (used by the sample generator and to avoid pointless requests); `previous_ciks` = older CIKs whose filings are merged into this manager (e.g. Elliott moved from 1048445 to 1791786 in 2020). Verify CIKs with `python -m sec13f.cli verify` when online.",
+ "managers": [
+  {
+   "cik": "1067983",
+   "name": "Berkshire Hathaway Inc",
+   "short": "Berkshire",
+   "manager_type": "Conglomerate / Long-only Value",
+   "style": "value"
+  },
+  {
+   "cik": "1350694",
+   "name": "Bridgewater Associates, LP",
+   "short": "Bridgewater",
+   "manager_type": "Hedge Fund - Global Macro",
+   "style": "macro"
+  },
+  {
+   "cik": "1037389",
+   "name": "Renaissance Technologies LLC",
+   "short": "Renaissance",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1423053",
+   "name": "Citadel Advisors LLC",
+   "short": "Citadel",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1336528",
+   "name": "Pershing Square Capital Management, L.P.",
+   "short": "Pershing Square",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1791786",
+   "name": "Elliott Investment Management L.P.",
+   "short": "Elliott",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist",
+   "previous_ciks": [
+    "1048445"
+   ]
+  },
+  {
+   "cik": "1167483",
+   "name": "Tiger Global Management LLC",
+   "short": "Tiger Global",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1061768",
+   "name": "Baupost Group LLC/MA",
+   "short": "Baupost",
+   "manager_type": "Hedge Fund - Value",
+   "style": "value"
+  },
+  {
+   "cik": "1029160",
+   "name": "Soros Fund Management LLC",
+   "short": "Soros",
+   "manager_type": "Family Office - Macro",
+   "style": "macro"
+  },
+  {
+   "cik": "1649339",
+   "name": "Scion Asset Management, LLC",
+   "short": "Scion",
+   "manager_type": "Hedge Fund - Contrarian Value",
+   "style": "value",
+   "since": "2016-12-31"
+  },
+  {
+   "cik": "1536411",
+   "name": "Duquesne Family Office LLC",
+   "short": "Duquesne",
+   "manager_type": "Family Office - Macro",
+   "style": "macro",
+   "since": "2012-03-31"
+  },
+  {
+   "cik": "102909",
+   "name": "Vanguard Group Inc",
+   "short": "Vanguard",
+   "manager_type": "Asset Manager - Index",
+   "style": "index"
+  },
+  {
+   "cik": "1364742",
+   "name": "BlackRock Inc.",
+   "short": "BlackRock",
+   "manager_type": "Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "1179392",
+   "name": "Two Sigma Investments, LP",
+   "short": "Two Sigma",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1656456",
+   "name": "Appaloosa LP",
+   "short": "Appaloosa",
+   "manager_type": "Hedge Fund - Opportunistic",
+   "style": "value",
+   "previous_ciks": [
+    "1006438"
+   ]
+  },
+  {
+   "cik": "1061165",
+   "name": "Lone Pine Capital LLC",
+   "short": "Lone Pine",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1103804",
+   "name": "Viking Global Investors LP",
+   "short": "Viking",
+   "manager_type": "Hedge Fund - Long/Short",
+   "style": "growth"
+  },
+  {
+   "cik": "1135730",
+   "name": "Coatue Management LLC",
+   "short": "Coatue",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1009207",
+   "name": "D. E. Shaw & Co., Inc.",
+   "short": "D.E. Shaw",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1273087",
+   "name": "Millennium Management LLC",
+   "short": "Millennium",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1167557",
+   "name": "AQR Capital Management LLC",
+   "short": "AQR",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1603466",
+   "name": "Point72 Asset Management, L.P.",
+   "short": "Point72",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat",
+   "since": "2014-06-30"
+  },
+  {
+   "cik": "1079114",
+   "name": "Greenlight Capital Inc",
+   "short": "Greenlight",
+   "manager_type": "Hedge Fund - Value",
+   "style": "value"
+  },
+  {
+   "cik": "1040273",
+   "name": "Third Point LLC",
+   "short": "Third Point",
+   "manager_type": "Hedge Fund - Event Driven",
+   "style": "activist"
+  },
+  {
+   "cik": "921669",
+   "name": "Icahn Carl C",
+   "short": "Icahn",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1418814",
+   "name": "ValueAct Holdings, L.P.",
+   "short": "ValueAct",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1517137",
+   "name": "Starboard Value LP",
+   "short": "Starboard",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1345471",
+   "name": "Trian Fund Management, L.P.",
+   "short": "Trian",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1159159",
+   "name": "Jana Partners LLC",
+   "short": "Jana",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "934639",
+   "name": "Maverick Capital Ltd",
+   "short": "Maverick",
+   "manager_type": "Hedge Fund - Long/Short",
+   "style": "growth"
+  },
+  {
+   "cik": "1138995",
+   "name": "Glenview Capital Management, LLC",
+   "short": "Glenview",
+   "manager_type": "Hedge Fund - Long/Short",
+   "style": "value"
+  },
+  {
+   "cik": "1035674",
+   "name": "Paulson & Co. Inc.",
+   "short": "Paulson",
+   "manager_type": "Hedge Fund - Event Driven",
+   "style": "value"
+  },
+  {
+   "cik": "923093",
+   "name": "Tudor Investment Corp",
+   "short": "Tudor",
+   "manager_type": "Hedge Fund - Global Macro",
+   "style": "macro"
+  },
+  {
+   "cik": "1165408",
+   "name": "Adage Capital Partners GP, L.L.C.",
+   "short": "Adage",
+   "manager_type": "Hedge Fund - Long/Short",
+   "style": "quant"
+  },
+  {
+   "cik": "1318757",
+   "name": "Marshall Wace, LLP",
+   "short": "Marshall Wace",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1218710",
+   "name": "Balyasny Asset Management LLC",
+   "short": "Balyasny",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1595888",
+   "name": "Jane Street Group, LLC",
+   "short": "Jane Street",
+   "manager_type": "Market Maker - Quant",
+   "style": "multistrat",
+   "since": "2014-03-31"
+  },
+  {
+   "cik": "1446194",
+   "name": "Susquehanna International Group, LLP",
+   "short": "Susquehanna",
+   "manager_type": "Market Maker - Quant",
+   "style": "multistrat"
+  },
+  {
+   "cik": "909661",
+   "name": "Farallon Capital Management, L.L.C.",
+   "short": "Farallon",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "value"
+  },
+  {
+   "cik": "1541617",
+   "name": "Altimeter Capital Management, LP",
+   "short": "Altimeter",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth",
+   "since": "2013-03-31"
+  },
+  {
+   "cik": "1166559",
+   "name": "Bill & Melinda Gates Foundation Trust",
+   "short": "Gates Foundation",
+   "manager_type": "Foundation / Endowment",
+   "style": "value"
+  },
+  {
+   "cik": "1374",
+   "name": "Norges Bank",
+   "short": "Norges Bank",
+   "manager_type": "Sovereign Wealth Fund",
+   "style": "index"
+  },
+  {
+   "cik": "919079",
+   "name": "California Public Employees Retirement System",
+   "short": "CalPERS",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "315066",
+   "name": "FMR LLC",
+   "short": "Fidelity",
+   "manager_type": "Asset Manager - Active",
+   "style": "index"
+  },
+  {
+   "cik": "80255",
+   "name": "Price T Rowe Associates Inc /MD/",
+   "short": "T. Rowe Price",
+   "manager_type": "Asset Manager - Active",
+   "style": "index"
+  },
+  {
+   "cik": "93751",
+   "name": "State Street Corp",
+   "short": "State Street",
+   "manager_type": "Asset Manager - Index",
+   "style": "index"
+  },
+  {
+   "cik": "902219",
+   "name": "Wellington Management Group LLP",
+   "short": "Wellington",
+   "manager_type": "Asset Manager - Active",
+   "style": "index"
+  },
+  {
+   "cik": "29440",
+   "name": "Dodge & Cox",
+   "short": "Dodge & Cox",
+   "manager_type": "Asset Manager - Value",
+   "style": "value"
+  },
+  {
+   "cik": "813917",
+   "name": "Harris Associates L P",
+   "short": "Harris (Oakmark)",
+   "manager_type": "Asset Manager - Value",
+   "style": "value"
+  },
+  {
+   "cik": "1088875",
+   "name": "Baillie Gifford & Co",
+   "short": "Baillie Gifford",
+   "manager_type": "Asset Manager - Growth",
+   "style": "growth"
+  }
+ ]
 }

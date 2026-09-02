@@ -38,13 +38,15 @@ def position_changes(h: pd.DataFrame) -> pd.DataFrame:
             j[c] = j[f"{c}_cur"].fillna(j[f"{c}_prev"])
             j.drop(columns=[f"{c}_prev", f"{c}_cur"], inplace=True)
         for c in ("value_usd", "shares", "weight"):
-            j[f"{c}_prev"] = j[f"{c}_prev"].fillna(0.0)
-            j[f"{c}_cur"] = j[f"{c}_cur"].fillna(0.0)
+            j[f"{c}_prev"] = pd.to_numeric(j[f"{c}_prev"]).astype(float).fillna(0.0)
+            j[f"{c}_cur"] = pd.to_numeric(j[f"{c}_cur"]).astype(float).fillna(0.0)
+        for c in ("implied_price_prev", "implied_price_cur"):
+            j[c] = pd.to_numeric(j[c]).astype(float)
         j["period_prev"], j["period"] = prev, cur
         j["d_shares"] = j["shares_cur"] - j["shares_prev"]
         j["d_value"] = j["value_usd_cur"] - j["value_usd_prev"]
         j["d_weight"] = j["weight_cur"] - j["weight_prev"]
-        j["pct_shares"] = np.where(j["shares_prev"] > 0, j["d_shares"] / j["shares_prev"], np.nan)
+        j["pct_shares"] = j["d_shares"].div(j["shares_prev"].where(j["shares_prev"] > 0))
         px = j["implied_price_cur"].fillna(j["implied_price_prev"])
         j["flow_effect"] = j["d_shares"] * px
         j["price_effect"] = j["d_value"] - j["flow_effect"]

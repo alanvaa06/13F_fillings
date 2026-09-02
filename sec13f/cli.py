@@ -22,7 +22,7 @@ from .classify import SecurityClassifier, infer_manager_type, manager_fingerprin
 from .config import Settings
 from .dashboard import build_dashboard
 from .ingest import fetch_universe, iter_local_filings
-from .managers import load_managers
+from .managers import cik_alias_map, load_managers
 from .parser import aggregate_positions, parse_all
 from .report import build_report
 from .tracker import (add_weights, consensus, equal_weight_exposure, exposure, manager_summary, manager_turnover,
@@ -37,7 +37,7 @@ def cmd_sample(args, settings: Settings):
     if args.clean and settings.raw_dir.exists():
         shutil.rmtree(settings.raw_dir)
     managers = load_managers(settings.managers_file, args.cik)
-    paths = generate_sample(managers, settings, seed=args.seed)
+    paths = generate_sample(managers, settings, seed=args.seed, quarters=args.quarters)
     log.info("Wrote %d sample filings for %d managers under %s", len(paths), len(managers), settings.raw_dir)
 
 
@@ -74,6 +74,10 @@ def cmd_build(args, settings: Settings):
     mshort = {m.cik: m.short for m in managers}
 
     filings, raw = parse_all(folders)
+    aliases = cik_alias_map(managers)
+    if aliases:  # merge filings submitted under previous CIKs into the canonical manager
+        raw["cik"] = raw["cik"].replace(aliases)
+        filings["cik"] = filings["cik"].replace(aliases)
     source = "sample" if (filings["source"] == "sample").all() else ("sec" if (filings["source"] == "sec").all() else "mixed")
     log.info("Parsed %d filings, %d holding rows (%s)", len(filings), len(raw), source)
     h = aggregate_positions(raw)
@@ -117,7 +121,7 @@ def cmd_build(args, settings: Settings):
     (odir / "report.md").write_text(report, encoding="utf-8")
     dash = build_dashboard(odir / "dashboard.html", h=h, changes=changes, msum=msum, fp=fp, exp_asset_ew=exp_asset_ew, exp_asset_vw=exp_asset_vw,
                            exp_sector_ew=exp_sector_ew, rotation=rot, cons=cons, pc=pc, insights=insights, managers=managers,
-                           source=source, n_filings=len(filings), title=args.title)
+                           source=source, n_filings=len(filings), title=args.title, detail_quarters=args.detail_quarters)
     log.info("Report: %s", odir / "report.md")
     log.info("Dashboard: %s", dash)
     print(insights[-1]["headline"])
@@ -132,12 +136,13 @@ def main(argv=None):
 
     s = sub.add_parser("sample", help="generate offline sample filings")
     s.add_argument("--seed", type=int, default=13)
+    s.add_argument("--quarters", type=int, default=60)
     s.add_argument("--cik", nargs="*")
     s.add_argument("--clean", action="store_true", help="delete data/raw first")
     s.set_defaults(fn=cmd_sample)
 
     f = sub.add_parser("fetch", help="download 13F filings from SEC EDGAR")
-    f.add_argument("--quarters", type=int, default=4)
+    f.add_argument("--quarters", type=int, default=60)
     f.add_argument("--cik", nargs="*")
     f.add_argument("--clean", action="store_true")
     f.set_defaults(fn=cmd_fetch)
@@ -148,11 +153,13 @@ def main(argv=None):
 
     b = sub.add_parser("build", help="parse, classify, track, analyze, render")
     b.add_argument("--title", default="13F Holdings Tracker")
+    b.add_argument("--detail-quarters", type=int, default=12, help="quarters with position-level detail embedded in the dashboard")
     b.set_defaults(fn=cmd_build)
 
     a = sub.add_parser("all", help="sample|fetch then build")
     a.add_argument("--source", choices=["sec", "sample"], default="sample")
-    a.add_argument("--quarters", type=int, default=4)
+    a.add_argument("--quarters", type=int, default=60)
+    a.add_argument("--detail-quarters", type=int, default=12)
     a.add_argument("--seed", type=int, default=13)
     a.add_argument("--cik", nargs="*")
     a.add_argument("--clean", action="store_true")

@@ -277,7 +277,7 @@ def infer_manager_type(fp: pd.DataFrame, turnover: pd.Series | None = None) -> p
         elif r.options_share > 0.2:
             label, conf = "Multi-strategy / Options-heavy", 0.85
             why.append(f"options {r.options_share:.0%}")
-        elif r.n_positions >= 120 and r.top10_weight < 0.35:
+        elif r.n_positions >= 120 and r.top10_weight < 0.45:
             label, conf = ("Index / Broad Asset Manager", 0.8) if (np.isnan(to) or to < 0.15) else ("Quant / Systematic", 0.8)
             why.append(f"{r.n_positions} positions, top-10 {r.top10_weight:.0%}")
         elif r.n_positions <= 20 and r.top10_weight > 0.7:
