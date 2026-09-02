@@ -11,8 +11,11 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import shutil
 import sys
+
+import pandas as pd
 
 from .analysis import build_insights
 from .classify import SecurityClassifier, infer_manager_type, manager_fingerprint
@@ -60,6 +63,26 @@ def cmd_verify(args, settings: Settings):
             print(f"OK   {m.cik:>8}  config='{m.name}'  edgar='{sub.get('name')}'  13F filings (recent): {n13}")
         except Exception as exc:  # noqa: BLE001
             print(f"FAIL {m.cik:>8}  {m.name}: {exc}")
+
+
+def cmd_enrich(args, settings: Settings):
+    """Grow config/issuers.json from the securities held (OpenFIGI + SEC SIC codes). Needs a prior build."""
+    from .enrich import EnrichConfig, enrich_master
+
+    pq = settings.processed_dir / "holdings.parquet"
+    if pq.exists():
+        holdings = pd.read_parquet(pq, columns=["cusip", "issuer", "title_of_class", "value_usd"])
+    elif (settings.output_dir / "holdings.csv").exists():
+        holdings = pd.read_csv(settings.output_dir / "holdings.csv", usecols=["cusip", "issuer", "title_of_class", "value_usd"], dtype={"cusip": str})
+    else:
+        log.error("No holdings found. Run `build` first.")
+        sys.exit(2)
+    cfg = EnrichConfig(top_n=args.top, user_agent=settings.user_agent, openfigi_api_key=os.environ.get("OPENFIGI_API_KEY", ""), sec_sleep=args.sec_sleep)
+    stats = enrich_master(holdings, settings.issuers_file, settings.cache_dir / "enrich_cache.json", cfg)
+    print("Issuer master enrichment")
+    for k, v in stats.items():
+        print(f"  {k:16s} {v}")
+    print("Re-run `build` to apply the new classifications.")
 
 
 def cmd_build(args, settings: Settings):
@@ -121,8 +144,9 @@ def cmd_build(args, settings: Settings):
     h.to_parquet(pdir / "holdings.parquet", index=False)
     if not changes.empty:
         changes.to_parquet(pdir / "changes.parquet", index=False)
+    position_tables = {"holdings": h, "changes": changes} if getattr(args, "position_csv", False) else {}
     for name, df in {
-        "filings": filings, "holdings": h, "changes": changes, "manager_summary": msum.merge(fp.drop(columns=["manager", "manager_type"]), on=["cik", "period"], how="left"),
+        "filings": filings, **position_tables, "manager_summary": msum.merge(fp.drop(columns=["manager", "manager_type"]), on=["cik", "period"], how="left"),
         "exposure_asset_value_weighted": exp_asset_vw, "exposure_asset_equal_weighted": exp_asset_ew,
         "exposure_sector_equal_weighted": exp_sector_ew, "exposure_sector_value_weighted": exp_sector_vw, "exposure_sector_by_manager_type": exp_sector_type,
         "sector_rotation": rot, "consensus": cons, "put_call": pc,
@@ -167,6 +191,11 @@ def main(argv=None):
     f.add_argument("--clean", action="store_true")
     f.set_defaults(fn=cmd_fetch)
 
+    e = sub.add_parser("enrich-issuers", help="grow config/issuers.json from held securities via OpenFIGI + SEC SIC codes")
+    e.add_argument("--top", type=int, default=2500, help="unknown CUSIPs to resolve, ranked by value held")
+    e.add_argument("--sec-sleep", type=float, default=0.13, help="seconds between SEC submissions requests (raise it while a fetch is running)")
+    e.set_defaults(fn=cmd_enrich)
+
     v = sub.add_parser("verify", help="check configured CIKs against EDGAR")
     v.add_argument("--cik", nargs="*")
     v.set_defaults(fn=cmd_verify)
@@ -174,6 +203,7 @@ def main(argv=None):
     b = sub.add_parser("build", help="parse, classify, track, analyze, render")
     b.add_argument("--title", default="13F Holdings Tracker")
     b.add_argument("--detail-quarters", type=int, default=12, help="quarters with position-level detail embedded in the dashboard")
+    b.add_argument("--position-csv", action="store_true", help="also write holdings.csv and changes.csv (multi-GB with real data; parquet is always written)")
     b.add_argument("--history-quarters", type=int, default=None, help="keep only the last N calendar quarters on disk (default: everything)")
     b.set_defaults(fn=cmd_build)
 
@@ -181,6 +211,7 @@ def main(argv=None):
     a.add_argument("--source", choices=["sec", "sample"], default="sample")
     a.add_argument("--quarters", type=int, default=60)
     a.add_argument("--detail-quarters", type=int, default=12)
+    a.add_argument("--position-csv", action="store_true", help="also write holdings.csv and changes.csv (multi-GB with real data; parquet is always written)")
     a.add_argument("--seed", type=int, default=13)
     a.add_argument("--cik", nargs="*")
     a.add_argument("--clean", action="store_true")

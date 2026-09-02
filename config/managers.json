@@ -370,6 +370,303 @@
    "short": "Baillie Gifford",
    "manager_type": "Asset Manager - Growth",
    "style": "growth"
+  },
+  {
+   "cik": "1422848",
+   "name": "Capital Research Global Investors",
+   "short": "Capital Research",
+   "manager_type": "Asset Manager - Active",
+   "style": "growth"
+  },
+  {
+   "cik": "1422849",
+   "name": "Capital World Investors",
+   "short": "Capital World",
+   "manager_type": "Asset Manager - Active",
+   "style": "value"
+  },
+  {
+   "cik": "1214717",
+   "name": "Geode Capital Management, LLC",
+   "short": "Geode",
+   "manager_type": "Asset Manager - Index",
+   "style": "index"
+  },
+  {
+   "cik": "73124",
+   "name": "Northern Trust Corp",
+   "short": "Northern Trust",
+   "manager_type": "Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "886982",
+   "name": "Goldman Sachs Group Inc",
+   "short": "Goldman Sachs",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "1610520",
+   "name": "UBS Group AG",
+   "short": "UBS",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "19617",
+   "name": "JPMorgan Chase & Co",
+   "short": "JPMorgan",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "70858",
+   "name": "Bank of America Corp",
+   "short": "Bank of America",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "895421",
+   "name": "Morgan Stanley",
+   "short": "Morgan Stanley",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "914208",
+   "name": "Invesco Ltd.",
+   "short": "Invesco",
+   "manager_type": "Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "38777",
+   "name": "Franklin Resources Inc",
+   "short": "Franklin Templeton",
+   "manager_type": "Asset Manager - Active",
+   "style": "value"
+  },
+  {
+   "cik": "354204",
+   "name": "Dimensional Fund Advisors LP",
+   "short": "Dimensional",
+   "manager_type": "Asset Manager - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "72971",
+   "name": "Wells Fargo & Company/MN",
+   "short": "Wells Fargo",
+   "manager_type": "Bank - Asset Manager - Index/Active",
+   "style": "index"
+  },
+  {
+   "cik": "884546",
+   "name": "Charles Schwab Investment Management Inc",
+   "short": "Schwab",
+   "manager_type": "Asset Manager - Index",
+   "style": "index"
+  },
+  {
+   "cik": "1102598",
+   "name": "Amundi Asset Management US, Inc.",
+   "short": "Amundi US",
+   "manager_type": "Asset Manager - Active",
+   "style": "value"
+  },
+  {
+   "cik": "1637460",
+   "name": "Man Group plc",
+   "short": "Man Group",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1556921",
+   "name": "Voloridge Investment Management, LLC",
+   "short": "Voloridge",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1564702",
+   "name": "PDT Partners, LLC",
+   "short": "PDT",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1729829",
+   "name": "Qube Research & Technologies Ltd",
+   "short": "Qube",
+   "manager_type": "Hedge Fund - Quant",
+   "style": "quant"
+  },
+  {
+   "cik": "1736225",
+   "name": "ExodusPoint Capital Management, LP",
+   "short": "ExodusPoint",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1393825",
+   "name": "Hudson Bay Capital Management LP",
+   "short": "Hudson Bay",
+   "manager_type": "Hedge Fund - Multi-strategy",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1747057",
+   "name": "D1 Capital Partners L.P.",
+   "short": "D1 Capital",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1387322",
+   "name": "Whale Rock Capital Management LLC",
+   "short": "Whale Rock",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1569049",
+   "name": "Light Street Capital Management, LLC",
+   "short": "Light Street",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1602189",
+   "name": "Dragoneer Investment Group, LLC",
+   "short": "Dragoneer",
+   "manager_type": "Hedge Fund - Long/Short Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1647251",
+   "name": "TCI Fund Management Ltd",
+   "short": "TCI",
+   "manager_type": "Hedge Fund - Activist",
+   "style": "activist"
+  },
+  {
+   "cik": "1034524",
+   "name": "Polen Capital Management LLC",
+   "short": "Polen",
+   "manager_type": "Asset Manager - Growth",
+   "style": "growth"
+  },
+  {
+   "cik": "1697748",
+   "name": "ARK Investment Management LLC",
+   "short": "ARK Invest",
+   "manager_type": "Asset Manager - Growth",
+   "style": "growth",
+   "previous_ciks": [
+    "1579984"
+   ]
+  },
+  {
+   "cik": "1112520",
+   "name": "Akre Capital Management LLC",
+   "short": "Akre",
+   "manager_type": "Asset Manager - Value",
+   "style": "value"
+  },
+  {
+   "cik": "915191",
+   "name": "Fairfax Financial Holdings Ltd",
+   "short": "Fairfax",
+   "manager_type": "Conglomerate / Long-only Value",
+   "style": "value"
+  },
+  {
+   "cik": "1449434",
+   "name": "Apollo Management Holdings, L.P.",
+   "short": "Apollo",
+   "manager_type": "Alternatives - Opportunistic / Credit",
+   "style": "value"
+  },
+  {
+   "cik": "1393818",
+   "name": "Blackstone Inc.",
+   "short": "Blackstone",
+   "manager_type": "Alternatives - Opportunistic / Credit",
+   "style": "value"
+  },
+  {
+   "cik": "1001085",
+   "name": "Brookfield Corp",
+   "short": "Brookfield",
+   "manager_type": "Conglomerate / Long-only Value",
+   "style": "value"
+  },
+  {
+   "cik": "1021944",
+   "name": "Temasek Holdings (Private) Ltd",
+   "short": "Temasek",
+   "manager_type": "Sovereign Wealth Fund",
+   "style": "macro"
+  },
+  {
+   "cik": "1283718",
+   "name": "Canada Pension Plan Investment Board",
+   "short": "CPP Investments",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "937567",
+   "name": "Ontario Teachers Pension Plan Board",
+   "short": "Ontario Teachers",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "810265",
+   "name": "New York State Common Retirement Fund",
+   "short": "NY State Common",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "1081019",
+   "name": "California State Teachers Retirement System",
+   "short": "CalSTRS",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "854157",
+   "name": "State of Wisconsin Investment Board",
+   "short": "SWIB",
+   "manager_type": "Pension Fund",
+   "style": "index"
+  },
+  {
+   "cik": "1082621",
+   "name": "Harvard Management Co Inc",
+   "short": "Harvard",
+   "manager_type": "Foundation / Endowment",
+   "style": "macro"
+  },
+  {
+   "cik": "1533421",
+   "name": "Tower Research Capital LLC (TRC)",
+   "short": "Tower Research",
+   "manager_type": "Market Maker - Quant",
+   "style": "multistrat"
+  },
+  {
+   "cik": "1466697",
+   "name": "Flow Traders U.S. LLC",
+   "short": "Flow Traders",
+   "manager_type": "Market Maker - Quant",
+   "style": "multistrat"
   }
  ]
 }

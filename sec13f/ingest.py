@@ -68,18 +68,20 @@ def list_13f_filings(client: EdgarClient, manager: Manager, form_types=("13F-HR"
             ):
                 if form in form_types and (not since or (rdate or fdate) >= since):
                     refs.append(FilingRef(manager.cik, manager.name, acc, form, fdate, rdate, pdoc, filer_cik=cik))
-    # keep the latest filing per report period (amendments supersede originals
-    # only when they are restatements; we keep both and let the parser decide)
+    # Keep EVERY filing (original and amendments) for the latest `max_filings` report periods. An amendment can be a
+    # full restatement or only the holdings omitted from the original ("NEW HOLDINGS"); the parser combines them.
     refs.sort(key=lambda r: (r.report_period, r.filing_date), reverse=True)
-    seen: set[str] = set()
+    periods: list[str] = []
+    for r in refs:
+        if r.report_period not in periods:
+            periods.append(r.report_period)
+    keep = set(periods[:max_filings])
+    seen_acc: set[str] = set()
     out: list[FilingRef] = []
     for r in refs:
-        if r.report_period in seen:
-            continue
-        seen.add(r.report_period)
-        out.append(r)
-        if len(out) >= max_filings:
-            break
+        if r.report_period in keep and r.accession not in seen_acc:
+            seen_acc.add(r.accession)
+            out.append(r)
     return out
 
 

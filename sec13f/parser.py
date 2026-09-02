@@ -11,6 +11,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 from lxml import etree
 
@@ -178,7 +179,41 @@ def parse_text_table(text: str, meta: dict) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=HOLDING_COLUMNS)
 
 
-def parse_filing_folder(folder: Path) -> tuple[dict, pd.DataFrame]:
+PARSER_VERSION = 3  # bump when parse_infotable / parse_cover / parse_text_table change, so cached results are rebuilt
+
+
+def _cache_is_fresh(folder: Path) -> bool:
+    cache, ccover = folder / "parsed.parquet", folder / "parsed_cover.json"
+    if not (cache.exists() and ccover.exists()):
+        return False
+    try:
+        if json.loads(ccover.read_text(encoding="utf-8")).get("_parser_version") != PARSER_VERSION:
+            return False
+    except (OSError, ValueError):
+        return False
+    stamp = cache.stat().st_mtime
+    return all(stamp >= p.stat().st_mtime for p in (folder / "infotable.xml", folder / "infotable.txt", folder / "primary_doc.xml", folder / "meta.json") if p.exists())
+
+
+def parse_filing_folder(folder: Path, use_cache: bool = True) -> tuple[dict, pd.DataFrame]:
+    """Parse one filing folder. Results are cached next to the raw files (parsed.parquet + parsed_cover.json):
+    parsing 4,000 XML tables takes about an hour, reading the cache takes a minute. The cache is invalidated by
+    PARSER_VERSION and by the raw files' modification times."""
+    if use_cache and _cache_is_fresh(folder):
+        cover = json.loads((folder / "parsed_cover.json").read_text(encoding="utf-8"))
+        cover.pop("_parser_version", None)
+        return cover, pd.read_parquet(folder / "parsed.parquet")
+    cover, holdings = _parse_filing_folder(folder)
+    if use_cache:
+        try:
+            holdings.to_parquet(folder / "parsed.parquet", index=False)
+            (folder / "parsed_cover.json").write_text(json.dumps({**cover, "_parser_version": PARSER_VERSION}, default=str), encoding="utf-8")
+        except Exception as exc:  # noqa: BLE001 - a cache miss is never worth failing the build
+            log.debug("Could not cache %s: %s", folder, exc)
+    return cover, holdings
+
+
+def _parse_filing_folder(folder: Path) -> tuple[dict, pd.DataFrame]:
     meta = json.loads((folder / "meta.json").read_text())
     # Identity comes from meta.json (written from the submissions API); the cover page only enriches it.
     # A missing or unreadable cover must never drop the filing from the universe.
@@ -250,8 +285,93 @@ def parse_all(folders: list[Path]) -> tuple[pd.DataFrame, pd.DataFrame]:
     for c in NUMERIC_COLUMNS:
         holdings[c] = pd.to_numeric(holdings[c], errors="coerce").astype(float).fillna(0.0)
     filings = pd.DataFrame(covers)
-    # Keep only the latest filing per (cik, period); amendments that restate replace originals.
     if not holdings.empty:
-        latest = holdings.groupby(["cik", "period"])["filing_date"].transform("max")
-        holdings = holdings[holdings["filing_date"] == latest].copy()
+        keep = select_accessions(filings)
+        holdings = holdings[holdings["accession"].isin(keep)].copy()
+        filings["used"] = filings["accession"].isin(keep)
+        holdings, factors = normalize_value_units(holdings)
+        filings["unit_factor"] = [factors.get((c, p), 1.0) for c, p in zip(filings["cik"], filings["period"])]
     return filings, holdings
+
+
+def _is_amendment(form: str) -> bool:
+    return str(form or "").upper().endswith("/A")
+
+
+def select_accessions(filings: pd.DataFrame) -> set[str]:
+    """Which accessions make up each (cik, period) book.
+
+    Base = the latest original 13F-HR. Amendments are applied in filing order: a RESTATEMENT replaces the book,
+    a NEW HOLDINGS amendment adds the positions omitted from the original. When the cover page did not say which,
+    an amendment with at least half as many rows as the current book is treated as a restatement.
+    """
+    if filings.empty:
+        return set()
+    f = filings.copy()
+    f["filing_date"] = f["filing_date"].fillna("") if "filing_date" in f else ""
+    f["form"] = f["submission_type"] if "submission_type" in f else ""
+    f["amendment_type"] = f["amendment_type"].fillna("") if "amendment_type" in f else ""
+    keep: set[str] = set()
+    for (_cik, _period), grp in f.groupby(["cik", "period"], sort=False):
+        grp = grp.sort_values("filing_date")
+        originals = grp[~grp["form"].map(_is_amendment)]
+        book: list[str] = [originals["accession"].iloc[-1]] if not originals.empty else []
+        book_rows = int(originals["n_rows"].iloc[-1]) if not originals.empty else 0
+        for a in grp[grp["form"].map(_is_amendment)].itertuples():
+            atype = str(a.amendment_type or "").upper()
+            restates = atype.startswith("RESTAT") or (not atype and (book_rows == 0 or a.n_rows >= 0.5 * book_rows))
+            if restates:
+                book, book_rows = [a.accession], int(a.n_rows)
+            else:
+                book.append(a.accession)
+                book_rows += int(a.n_rows)
+        keep.update(book)
+    return keep
+
+
+def normalize_value_units(holdings: pd.DataFrame, threshold: float = 200.0, max_fixes_per_manager: int = 80) -> tuple[pd.DataFrame, dict]:
+    """Detect filings reported in the wrong unit and rescale them by 1000.
+
+    The SEC switched 13F values from thousands to dollars for filings made from 2023-01-03, but filers moved at their
+    own pace (many 2022Q4 and some 2023 tables are still in thousands, a few earlier ones already in dollars).
+
+    Per manager, the quarter whose book total deviates most from the median of its neighbouring quarters (up to two on
+    each side) is rescaled by x1000 or /1000 when the deviation exceeds `threshold` AND the rescaled total lands within
+    5x of the neighbours; then references are recomputed and the search repeats. Fixing the worst quarter first matters:
+    a corrupt quarter also distorts its neighbours' references. Returns the factor applied per (cik, period).
+    """
+    factors: dict[tuple[str, str], float] = {}
+    if holdings.empty:
+        return holdings, factors
+    tot = holdings.groupby(["cik", "period"])["value_usd"].sum()
+    log_thr = np.log10(threshold)
+    for cik, s in tot.groupby(level=0):
+        s = s.droplevel(0).sort_index().astype(float).copy()
+        if len(s) < 2:
+            continue
+        for _ in range(max_fixes_per_manager):
+            vals = s.to_numpy()
+            worst, worst_dev = None, 0.0
+            for i, (period, total) in enumerate(s.items()):
+                lo, hi = max(0, i - 2), min(len(vals), i + 3)
+                neigh = [v for j, v in enumerate(vals[lo:hi], start=lo) if j != i and v > 0]
+                if not neigh or total <= 0:
+                    continue
+                ref = float(np.median(neigh))
+                dev = abs(np.log10(total / ref))
+                if dev > worst_dev:
+                    worst_dev, worst = dev, (period, total, ref)
+            if worst is None or worst_dev < log_thr:
+                break
+            period, total, ref = worst
+            f = 1000.0 if total < ref else 0.001
+            if not (ref / 5 <= total * f <= ref * 5):
+                break  # not a unit error: rescaling would not bring it back in line
+            s[period] = total * f
+            factors[(cik, period)] = factors.get((cik, period), 1.0) * f
+            log.info("Unit fix: cik %s period %s rescaled x%g (book total %.3g vs neighbours %.3g)", cik, period, f, total, ref)
+    if factors:
+        key = list(zip(holdings["cik"], holdings["period"]))
+        factor = pd.Series([factors.get(k, 1.0) for k in key], index=holdings.index)
+        holdings = holdings.assign(value_usd=holdings["value_usd"] * factor)
+    return holdings, factors

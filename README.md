@@ -21,7 +21,9 @@ python -m sec13f.cli all --source sample --clean            # ~2 min; --quarters
 # 2) Datos reales de la SEC (requiere internet). La SEC exige identificarse en el User-Agent:
 export SEC_USER_AGENT="Tu Nombre tu@email.com"
 python -m sec13f.cli verify                      # comprueba los CIK del universo contra EDGAR
-python -m sec13f.cli all --source sec --quarters 60 --clean  # ~3,000 filings; ~20-30 min a 8 req/s, cacheado en disco
+python -m sec13f.cli fetch --quarters 40                  # ~3,600 filings para 92 managers; ~1 filing/s, cacheado en disco
+python -m sec13f.cli build --history-quarters 40         # parsea, clasifica y genera dashboard + reporte (10 anos)
+python -m sec13f.cli enrich-issuers --top 2500           # opcional: amplia el maestro de emisores y vuelve a correr build
 
 # Re-generar solo los productos (sin volver a descargar). --detail-quarters controla cuántos
 # trimestres llevan detalle por posición en el dashboard (las series agregadas siempre cubren todo).
@@ -43,27 +45,43 @@ Salidas en `output/`:
 | `company_moves.csv` | Por empresa (CUSIP) y trimestre: tenedores antes/después, compradores/vendedores, Δ títulos agregados, flujo neto/bruto, efecto precio y clasificación del movimiento (MAJOR / MINOR / NONE) |
 | `consensus.csv`, `put_call.csv` | Crowding (tenedores, compradores/vendedores netos) y nocional de puts vs calls por subyacente |
 
-Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas o cientos de MB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio; se generan localmente con `build`. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo).
+Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas de MB o varios GB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio. `holdings.csv` y `changes.csv` solo se escriben con `build --position-csv`; sus equivalentes Parquet (`data/processed/`) se escriben siempre. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo).
 
 ## Datos publicados
 
-El sitio y `output/` se generan con datos reales de EDGAR: los últimos **12 trimestres** (2023Q3–2026Q2) de los 50 managers, 594 filings. Cosas que conviene saber al leer el corte actual:
+El sitio y `output/` se generan con datos reales de EDGAR: los últimos **40 trimestres** (2016Q3–2026Q2) de los **92 managers**, ~4,200 filings (originales y enmiendas) y ~16 millones de renglones de tenencias. Cosas que conviene saber al leer el corte actual:
 
-- **Managers sin filing en el último trimestre** se listan en la lectura del trimestre (bullet *Cobertura*) y no entran en los agregados de ese periodo. En 2026Q2: Vanguard (último 13F público bajo su CIK: 2025Q4), Scion (dejó de reportar tras 2025Q3) y Pershing Square (2026Q2 aún no presentado).
+- **Managers sin filing en el último trimestre** se listan en la lectura del trimestre (bullet *Cobertura*) y no entran en los agregados de ese periodo; el cambio del titular se calcula solo sobre los managers presentes en ambos trimestres. En 2026Q2 faltan Vanguard (último 13F público bajo su CIK: 2025Q4), Scion (dejó de reportar tras 2025Q3), Pershing Square (2026Q2 aún no presentado) y Amundi US (último 2021Q1; se conserva por su historia).
 - **Norges Bank** presenta en Q1 y Q3 un 13F-HR *placeholder* (una fila `NA` / CUSIP `000000000` / $0) con todas las posiciones bajo tratamiento confidencial y publica la tabla real como 13F-HR/A cerca de un año después. El parser descarta esas filas, así que esos trimestres cuentan como sin datos hasta que llegue la enmienda.
-- **Cambios de entidad filer**: BlackRock (1364742 → 2012383 desde 2024Q3), Jana (1159159 → 1998597) y Greenlight, hoy DME Capital Management (1079114 → 1489933), se fusionan vía `previous_ciks`.
-- **Sector sin clasificar**: el maestro `config/issuers.json` cubre ~220 emisores; en el universo real cerca de un 28 % del valor queda como *Unclassified* en la vista sectorial. Ampliar el maestro (o conectar un proveedor de datos) es la mejora de mayor impacto pendiente.
-- Para regenerar: `SEC_USER_AGENT="Tu Nombre tu@email.com" python -m sec13f.cli all --source sec --quarters 12` y commit de `output/`; el workflow de Pages publica solo.
+- **Enmiendas**: ~500 de los libros trimestrales incorporan una 13F-HR/A (restatement o posiciones añadidas). `filings.csv` marca con `used` qué filings forman cada libro.
+- **Unidades**: ~100 libros llegaron en miles cuando ya tocaba dólares (o al revés) y se reescalaron; el factor queda en `unit_factor`. Renaissance, Baupost, Flow Traders o T. Rowe siguieron reportando en miles varios trimestres después del cambio de la SEC.
+- **Cambios de entidad filer**: BlackRock (1364742 → 2012383 desde 2024Q3; su 13F de 2016 cubría solo parte del grupo, de ahí el salto de 2017Q1), Jana (1159159 → 1998597), Greenlight, hoy DME Capital Management (1079114 → 1489933), y ARK (1579984 → 1697748) se fusionan vía `previous_ciks`.
+- **Sector**: con el maestro enriquecido (~3,200 emisores) el valor *Unclassified* de la vista sectorial baja de ~28 % a ~1 %. Los sectores de los emisores enriquecidos derivan del código SIC de la SEC con una tabla de equivalencias estilo GICS y anulaciones puntuales; no son clasificaciones GICS oficiales.
+- Para regenerar: `SEC_USER_AGENT="Tu Nombre tu@email.com" python -m sec13f.cli fetch --quarters 40 && python -m sec13f.cli build --history-quarters 40`, commit de `output/` y el workflow de Pages publica solo. La primera corrida parsea todo el XML (~1 h); las siguientes leen la caché por filing (`parsed.parquet` junto a cada filing).
 
 ## Universo de managers
 
-`config/managers.json` define el universo: CIK, nombre, tipo declarado, estilo, `since` (primer trimestre que reporta) y `previous_ciks` (CIKs anteriores cuyos filings se fusionan, p. ej. Elliott pasó de 1048445 a 1791786 en 2020). El universo actual tiene 50 filers: hedge funds (Berkshire, Bridgewater, Renaissance, Citadel, Millennium, D.E. Shaw, Two Sigma, AQR, Point72, Pershing Square, Elliott, Third Point, Icahn, ValueAct, Starboard, Trian, Jana, Tiger Global, Lone Pine, Viking, Coatue, Altimeter, Maverick, Baupost, Greenlight, Appaloosa, Glenview, Paulson, Tudor, Adage, Marshall Wace, Balyasny, Farallon, Scion), market makers (Jane Street, Susquehanna), family offices y fundaciones (Soros, Duquesne, Gates Foundation), fondos soberanos y de pensiones (Norges Bank, CalPERS) y asset managers (Vanguard, BlackRock, State Street, Fidelity, T. Rowe Price, Wellington, Dodge & Cox, Harris, Baillie Gifford). Para expandir basta añadir filas; `python -m sec13f.cli verify` confirma cada CIK contra EDGAR y `EdgarClient.lookup_cik("nombre")` ayuda a resolverlos.
+`config/managers.json` define el universo: CIK, nombre, tipo declarado, estilo, `since` (primer trimestre que reporta) y `previous_ciks` (CIKs anteriores cuyos filings se fusionan, p. ej. Elliott pasó de 1048445 a 1791786 en 2020; BlackRock, Jana y Greenlight/DME también cambiaron de entidad filer). El universo actual tiene **92 filers**:
+
+- **Hedge funds** (activistas, valor, long/short, event driven, macro, quant, multi-estrategia): Berkshire, Bridgewater, Renaissance, Citadel, Millennium, D.E. Shaw, Two Sigma, AQR, Point72, Pershing Square, Elliott, Third Point, Icahn, ValueAct, Starboard, Trian, Jana, TCI, Tiger Global, Lone Pine, Viking, Coatue, Altimeter, Maverick, D1, Whale Rock, Light Street, Dragoneer, Baupost, Greenlight/DME, Appaloosa, Glenview, Paulson, Tudor, Adage, Marshall Wace, Man Group, Balyasny, ExodusPoint, Hudson Bay, Farallon, Scion, Voloridge, PDT, Qube.
+- **Market makers**: Jane Street, Susquehanna, Tower Research, Flow Traders.
+- **Asset managers índice y activos**: Vanguard, BlackRock, State Street, Fidelity (FMR), T. Rowe Price, Wellington, Capital Research, Capital World, Geode, Northern Trust, Invesco, Franklin Templeton, Dimensional, Schwab, Amundi US, Dodge & Cox, Harris (Oakmark), Baillie Gifford, Polen, ARK, Akre; y los brazos de inversión de los bancos: Goldman Sachs, JPMorgan, Bank of America, Morgan Stanley, UBS, Wells Fargo.
+- **Alternativos y conglomerados**: Apollo, Blackstone, Brookfield, Fairfax.
+- **Soberanos, pensiones, fundaciones y family offices**: Norges Bank, Temasek, CPP Investments, Ontario Teachers, CalPERS, CalSTRS, NY State Common, SWIB, Gates Foundation, Harvard, Soros, Duquesne.
+
+Para expandir basta añadir filas; `python -m sec13f.cli verify --cik <cik...>` confirma cada CIK contra EDGAR (la búsqueda por nombre de EDGAR, `browse-edgar?company=...&type=13F-HR&output=atom`, sirve para resolverlos). El `manager_type` declarado debe contener una de las palabras clave que entiende el comparador de perfil (index, quant, multi, activist, macro, value, opportunistic, growth, conglomerate, family office).
+
+## Maestro de emisores y enriquecimiento
+
+`config/issuers.json` arranca con ~220 emisores curados (con `ref_price`, que usa el generador de muestra) y crece con `python -m sec13f.cli enrich-issuers --top 2500`, que toma los CUSIP no clasificados con más valor en cartera y los resuelve en cuatro pasos: CUSIP → ticker/nombre con la API de OpenFIGI (coincidencia exacta; sin API key admite 25 peticiones/min, `OPENFIGI_API_KEY` la acelera), ticker → CIK con `company_tickers_exchange.json` de la SEC (con respaldo por nombre normalizado), CIK → código SIC vía la API de submissions, y SIC → sector estilo GICS con una tabla de rangos y anulaciones por descripción. Las entradas añadidas llevan `source`, `sic` y `cik` para auditarlas o sustituirlas por datos de un proveedor; los resultados se cachean en `data/cache/enrich_cache.json`. Tras enriquecer, vuelve a correr `build`.
 
 ## Cómo funciona
 
 **Ingesta (`sec13f/ingest.py`, `sec13f/edgar_client.py`).** Usa la API `data.sec.gov/submissions/CIK##########.json` para listar filings 13F-HR/13F-HR/A, el índice JSON de cada accession para localizar el XML del *information table* y la portada, y guarda todo en `data/raw/<cik>/<accession>/`. El cliente respeta la política de acceso de la SEC (User-Agent descriptivo, ≤10 req/s, backoff en 403/429/5xx) y cachea en disco para que las re-ejecuciones no descarguen de nuevo.
 
 **Parser (`sec13f/parser.py`).** Lectura del XML independiente del namespace (EDGAR lo ha cambiado varias veces). Normaliza fechas y unidades: los filings presentados antes del 3-ene-2023 reportan valores en miles de dólares, los posteriores en dólares. Agrega renglones duplicados de sub-managers, conserva puts/calls como posiciones separadas y cuadra el total contra la portada (`reconciliation_gap_pct`). Si hay enmiendas, prevalece el filing más reciente por trimestre. Para el histórico anterior a mediados de 2013 (cuando EDGAR aún no exigía XML) la ingesta guarda el *complete submission* de texto y un parser best-effort anclado en el CUSIP de 9 caracteres extrae emisor, clase, valor, títulos, put/call, discreción y voto; esas filas quedan marcadas con `text_format` en `filings.csv` para poder auditarlas.
+
+**Enmiendas y unidades.** La ingesta baja *todos* los filings de cada trimestre (original y 13F-HR/A) y el parser los combina: una enmienda `RESTATEMENT` sustituye el libro, una `NEW HOLDINGS` añade las posiciones omitidas en el original (sin el tipo en la portada, una enmienda con al menos la mitad de filas que el libro se trata como restatement). Antes, una enmienda aditiva de una fila borraba el libro completo de ese trimestre. Los valores se normalizan a dólares con la regla de la SEC (miles antes del 3-ene-2023, dólares después), pero como muchos filers tardaron trimestres en cambiar de unidad, cada libro se compara con la mediana de sus trimestres vecinos: si difiere en más de 200x y reescalarlo por 1000 lo devuelve a rango, se corrige y el factor queda en `filings.csv` (`unit_factor`), junto con `used` (si el filing forma parte del libro final).
 
 **Clasificación (`sec13f/classify.py`).** Tres capas con score de confianza:
 1. Maestro de valores por CUSIP (`config/issuers.json`; 220+ emisores con ticker, sector, industria y país; se amplía con el tiempo o se puede sustituir por un proveedor de datos).

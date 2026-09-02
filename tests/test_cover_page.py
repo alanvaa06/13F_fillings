@@ -68,12 +68,37 @@ def test_placeholder_confidential_table_yields_no_rows(tmp_path: Path):
       <votingAuthority><Sole>0</Sole><Shared>0</Shared><None>0</None></votingAuthority></infoTable></informationTable>"""
     d = _folder(tmp_path, None)
     (d / "infotable.xml").write_bytes(placeholder)
-    cover, holdings = parse_filing_folder(d)
+    cover, holdings = parse_filing_folder(d, use_cache=False)  # the file is rewritten below within the same second
     assert holdings.empty and cover["n_rows"] == 0
     # a real row next to a placeholder row keeps the real one
     (d / "infotable.xml").write_bytes(INFOTABLE.replace(b"</informationTable>", placeholder.split(b"informationtable\">")[1]))
-    _, holdings = parse_filing_folder(d)
+    _, holdings = parse_filing_folder(d, use_cache=False)
     assert len(holdings) == 1 and holdings.iloc[0]["cusip"] == "037833100"
+
+
+def test_parse_cache_roundtrip_and_invalidation(tmp_path: Path):
+    import time
+
+    from sec13f import parser
+
+    d = _folder(tmp_path, None)
+    cover1, h1 = parse_filing_folder(d)
+    assert (d / "parsed.parquet").exists() and (d / "parsed_cover.json").exists()
+    cover2, h2 = parse_filing_folder(d)  # served from cache
+    assert cover2 == cover1 and h2.equals(h1) and "_parser_version" not in cover2
+    # a newer raw file invalidates the cache
+    time.sleep(0.05)
+    (d / "infotable.xml").write_bytes(INFOTABLE.replace(b"<value>1000</value>", b"<value>2000</value>"))
+    import os
+    os.utime(d / "infotable.xml", None)
+    _, h3 = parse_filing_folder(d)
+    assert h3.iloc[0]["value_usd"] == 2000
+    # a parser version bump invalidates it too
+    (d / "parsed_cover.json").write_text('{"_parser_version": -1}', encoding="utf-8")
+    assert parser._cache_is_fresh(d) is False
+    # and use_cache=False bypasses it without touching the files
+    cover4, _ = parse_filing_folder(d, use_cache=False)
+    assert cover4["cik"] == "1067983"
 
 
 def test_xml_cover_enriches_meta(tmp_path: Path):

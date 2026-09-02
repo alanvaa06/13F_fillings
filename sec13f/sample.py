@@ -152,7 +152,8 @@ def filing_date_for(period: date) -> date:
 
 
 def _load_issuers(settings: Settings) -> list[dict]:
-    return json.loads(settings.issuers_file.read_text())["issuers"]
+    # enriched master entries (from SEC/OpenFIGI) carry no reference price; the sample generator needs one
+    return [i for i in json.loads(settings.issuers_file.read_text(encoding="utf-8"))["issuers"] if i.get("ref_price")]
 
 
 def _market_path(periods: list[date], rng: np.random.Generator) -> np.ndarray:

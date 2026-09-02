@@ -28,7 +28,7 @@ def test_cli_build_end_to_end(tmp_path: Path, monkeypatch):
 
     s = Settings(raw_dir=tmp_path / "raw", cache_dir=tmp_path / "cache", processed_dir=tmp_path / "proc", output_dir=tmp_path / "out")
     monkeypatch.setattr(cli, "Settings", lambda: s)
-    cli.main(["all", "--source", "sample", "--cik", "1067983", "1336528", "1029160"])
+    cli.main(["all", "--source", "sample", "--cik", "1067983", "1336528", "1029160", "--position-csv"])
     out = s.output_dir
     assert (out / "dashboard.html").stat().st_size > 100_000
     report = (out / "report.md").read_text(encoding="utf-8")
