@@ -426,7 +426,7 @@ function renderLead(){
   const ins = DATA.insights[cur]; document.getElementById('headline').textContent = ins.headline;
   const k = DATA.kpis[cur]; const prev = prevOf(cur);
   const tiles = [
-    {l:'Valor reportado', v:usd(k.total_value), d: k.total_value_chg==null?'primer trimestre del universo':`<span class="${k.total_value_chg>=0?'up':'down'}">${(k.total_value_chg*100).toFixed(1)}%</span> vs ${prev?ql(prev):''}`},
+    {l:'Valor reportado', v:usd(k.total_value), d: k.total_value_chg==null?'primer trimestre del universo':`<span class="${k.total_value_chg>=0?'up':'down'}">${(k.total_value_chg*100).toFixed(1)}%</span> vs ${prev?ql(prev):''} <span title="Solo managers presentes en ambos trimestres; un filer que entra o sale del universo no cuenta como cambio">(mismos managers)</span>`},
     {l:'Flujo neto estimado', v:usd(k.net_flow), d:`bruto ${usd(k.gross_flow)} · efecto precio ${usd(k.price_effect)}`},
     {l:'Posiciones', v:(k.n_positions||0).toLocaleString(), d:`${k.n_new||0} nuevas · ${k.n_exit||0} salidas`},
     {l:'Rotación promedio', v:pct(k.avg_turnover,0), d:`${k.n_add||0} aumentos · ${k.n_trim||0} reducciones`},
@@ -541,13 +541,17 @@ function renderCompanies(){
     kp.innerHTML=''; emptyChart(document.getElementById('c-companies-buy'), 'Sin trimestre previo para comparar.'); emptyChart(document.getElementById('c-companies-sell'), 'Sin trimestre previo para comparar.');
     document.getElementById('t-companies').innerHTML=''; document.getElementById('cap-companies').textContent=''; document.getElementById('companies-foot').textContent=''; return;
   }
-  const n = m => all.filter(r=>r.magnitude===m).length;
-  const buyFlow = all.filter(r=>r.net_flow>0).reduce((a,r)=>a+r.net_flow,0), sellFlow = all.filter(r=>r.net_flow<0).reduce((a,r)=>a+r.net_flow,0);
+  // KPIs come from full-universe totals computed in Python; the embedded rows are only the top movers per quarter.
+  const T = (DATA.companies_totals||{})[cur] || {
+    total:all.length, major:all.filter(r=>r.magnitude==='MAJOR').length, minor:all.filter(r=>r.magnitude==='MINOR').length, none:all.filter(r=>r.magnitude==='NONE').length,
+    n_bought:all.filter(r=>r.net_flow>0).length, n_sold:all.filter(r=>r.net_flow<0).length,
+    buy_flow:all.filter(r=>r.net_flow>0).reduce((a,r)=>a+r.net_flow,0), sell_flow:all.filter(r=>r.net_flow<0).reduce((a,r)=>a+r.net_flow,0),
+    entries:all.filter(r=>r.holders_prev===0&&r.holders_cur>0).length, exits:all.filter(r=>r.holders_prev>0&&r.holders_cur===0).length };
   kp.innerHTML = [
-    {l:'Emisoras en cartera', v:all.length.toLocaleString(), d:`${n('MAJOR')} cambio mayor · ${n('MINOR')} menor · ${n('NONE')} sin cambio`},
-    {l:'Compradas netas', v:all.filter(r=>r.net_flow>0).length, d:`flujo ${usd(buyFlow)}`},
-    {l:'Vendidas netas', v:all.filter(r=>r.net_flow<0).length, d:`flujo ${usd(sellFlow)}`},
-    {l:'Entradas / salidas del universo', v:`${all.filter(r=>r.holders_prev===0&&r.holders_cur>0).length} / ${all.filter(r=>r.holders_prev>0&&r.holders_cur===0).length}`, d:'emisoras que ningún manager tenía / que ya nadie tiene'},
+    {l:'Emisoras en cartera', v:T.total.toLocaleString(), d:`${T.major.toLocaleString()} cambio mayor · ${T.minor.toLocaleString()} menor · ${T.none.toLocaleString()} sin cambio`},
+    {l:'Compradas netas', v:T.n_bought.toLocaleString(), d:`flujo ${usd(T.buy_flow)}`},
+    {l:'Vendidas netas', v:T.n_sold.toLocaleString(), d:`flujo ${usd(T.sell_flow)}`},
+    {l:'Entradas / salidas del universo', v:`${T.entries.toLocaleString()} / ${T.exits.toLocaleString()}`, d:'emisoras que ningún manager tenía / que ya nadie tiene'},
   ].map(t=>`<div class="kpi"><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="d">${t.d}</div></div>`).join('');
   // ranking charts
   const M = {
@@ -590,7 +594,9 @@ function renderCompanies(){
     {k:'price_effect', h:'Efecto precio', cls:'num mono', f:r=>signed(r.price_effect, usd)},
     {k:'value_cur', h:'Valor agregado', cls:'num mono', tip:'Valor total en manos del universo, trimestre actual', f:r=>usd(r.value_cur)},
   ], rows, {defaultKey:'gross_flow', defaultDir:-1, sticky:1, empty:'Sin emisoras con estos filtros.'});
-  document.getElementById('cap-companies').textContent = `${rows.length} de ${all.length} emisoras en ${ql(cur)}`;
+  document.getElementById('cap-companies').textContent = T.total>all.length
+    ? `${rows.length.toLocaleString()} filas · el dashboard incluye las ${all.length.toLocaleString()} emisoras con más movimiento de las ${T.total.toLocaleString()} en cartera en ${ql(cur)} (la lista completa está en company_moves.csv)`
+    : `${rows.length.toLocaleString()} de ${T.total.toLocaleString()} emisoras en ${ql(cur)}`;
 }
 // ---------- consensus
 function renderConsensus(){

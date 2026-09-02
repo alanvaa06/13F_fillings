@@ -70,8 +70,26 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
     tot = cur["value_usd"].sum()
     facts.update(n_managers=n_mgr, total_value=tot, n_positions=len(cur))
     if prev:
-        ptot = h.loc[h["period"] == prev, "value_usd"].sum()
-        facts["total_value_chg"] = tot / ptot - 1 if ptot else np.nan
+        # like-for-like: only managers present in both quarters, otherwise a filer entering or leaving
+        # the universe (late filing, confidential placeholder, deregistration) shows up as a fake move
+        prev_h = h[h["period"] == prev]
+        common = set(cur["cik"]) & set(prev_h["cik"])
+        ptot = prev_h.loc[prev_h["cik"].isin(common), "value_usd"].sum()
+        ctot = cur.loc[cur["cik"].isin(common), "value_usd"].sum()
+        facts["total_value_chg"] = ctot / ptot - 1 if ptot else np.nan
+        facts["n_common_managers"] = len(common)
+
+    # --- coverage: managers seen earlier in the history but without a filing for this quarter
+    seen_before = h[h["period"] <= period].groupby("cik")["period"].max()
+    missing = seen_before[seen_before < period]
+    if not missing.empty:
+        names = h.drop_duplicates("cik").set_index("cik")
+        label_col = "manager_short" if "manager_short" in names else "manager"
+        parts = [f"{names.loc[c, label_col]} (último {quarter_label(p)})" for c, p in missing.sort_values(ascending=False).items()]
+        bullets.append(dict(kind="coverage", text=(
+            f"Sin filing para {quarter_label(period)}: {len(missing)} de {len(seen_before)} managers del universo: " + ", ".join(parts)
+            + ". Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial).")))
+        facts["missing_managers"] = [dict(cik=str(c), manager=str(names.loc[c, "manager"]), last_period=str(p)) for c, p in missing.items()]
 
     # --- flows
     ch = changes[changes["period"] == period] if not changes.empty else pd.DataFrame()
@@ -219,8 +237,10 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
                             + ", ".join(pretty(r.issuer) for r in top_put.itertuples()) + ".")))
         facts.update(put_notional=puts, call_notional=calls)
 
-    headline = (f"{quarter_label(period)}: {n_mgr} managers, {_usd(tot)} en posiciones reportadas"
-                + (f", {facts['total_value_chg']:+.1%} vs trimestre anterior" if prev else ""))
+    headline = f"{quarter_label(period)}: {n_mgr} managers, {_usd(tot)} en posiciones reportadas"
+    if prev and not pd.isna(facts.get("total_value_chg", np.nan)):
+        same = f" (mismos {facts['n_common_managers']} managers)" if facts["n_common_managers"] != n_mgr else ""
+        headline += f", {facts['total_value_chg']:+.1%} vs trimestre anterior{same}"
     return dict(period=period, label=quarter_label(period), headline=headline, bullets=bullets, facts=facts)
 
 

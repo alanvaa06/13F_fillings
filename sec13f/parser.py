@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import logging
 import re
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -107,6 +107,12 @@ def parse_infotable(xml: bytes, meta: dict) -> pd.DataFrame:
             }
         )
     df = pd.DataFrame(rows, columns=HOLDING_COLUMNS)
+    # Placeholder tables: some filers (e.g. Norges Bank) submit a single "NA" / 000000000 / $0 row when every
+    # position is under confidential treatment and file the real table later as 13F-HR/A. Treat as no data.
+    placeholder = (df["cusip"].isin({"000000000", "", "NA"}) | df["issuer"].isin({"NA", "N/A", "NONE"})) & (df["value_usd"] == 0) & (df["shares"] == 0)
+    if placeholder.any():
+        log.info("Dropped %d placeholder row(s) from %s (%s)", int(placeholder.sum()), meta.get("accession"), meta.get("report_period"))
+        df = df[~placeholder].reset_index(drop=True)
     return df
 
 
@@ -174,13 +180,22 @@ def parse_text_table(text: str, meta: dict) -> pd.DataFrame:
 
 def parse_filing_folder(folder: Path) -> tuple[dict, pd.DataFrame]:
     meta = json.loads((folder / "meta.json").read_text())
-    cover = {}
+    # Identity comes from meta.json (written from the submissions API); the cover page only enriches it.
+    # A missing or unreadable cover must never drop the filing from the universe.
+    cover = {"cik": str(meta.get("cik", "")).lstrip("0"), "period": _to_date(meta.get("report_period", "")), "manager": meta.get("manager", ""),
+             "submission_type": meta.get("form", ""), "cover_parsed": False}
     pdoc = folder / "primary_doc.xml"
     if pdoc.exists():
-        try:
-            cover = parse_cover(pdoc.read_bytes())
-        except etree.XMLSyntaxError as exc:
-            log.warning("Bad cover page in %s: %s", folder, exc)
+        raw = pdoc.read_bytes()
+        if raw.lstrip()[:15].lower().startswith((b"<!doctype html", b"<html")):
+            log.warning("Cover page in %s is an HTML rendering, not XML; using meta.json (re-run fetch to repair)", folder)
+        else:
+            try:
+                parsed = parse_cover(raw)
+                cover.update({k: v for k, v in parsed.items() if v not in ("", None)})
+                cover["cover_parsed"] = True
+            except etree.XMLSyntaxError as exc:
+                log.warning("Bad cover page in %s: %s", folder, exc)
     if (folder / "infotable.xml").exists():
         holdings = parse_infotable((folder / "infotable.xml").read_bytes(), meta)
     else:

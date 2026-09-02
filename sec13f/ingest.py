@@ -86,19 +86,46 @@ def list_13f_filings(client: EdgarClient, manager: Manager, form_types=("13F-HR"
 _INFOTABLE_PAT = re.compile(r"(infotable|information_table|form13fInfoTable|13f.*table)", re.I)
 
 
+def _pick_infotable(xml_items: list[dict], primary: str) -> str:
+    """Name of the information-table XML among the filing's index items.
+
+    The table has no fixed name (infotable.xml, form13fInfoTable.xml, <filer>13Fq22026_holding.xml, ...)
+    but it is always by far the largest XML in the folder, so size decides; the filename pattern is only
+    the tie-breaker when the index carries no sizes. The cover document (``primary``) is never eligible."""
+    candidates = [it for it in xml_items if it.get("name") and it["name"] != primary]
+    sized = sorted(candidates, key=lambda it: int(it.get("size") or 0), reverse=True)
+    if sized and int(sized[0].get("size") or 0) > 0:
+        return sized[0]["name"]
+    return next((it["name"] for it in candidates if _INFOTABLE_PAT.search(it["name"])), next((it["name"] for it in candidates), ""))
+
+
+_XSL_PREFIX = re.compile(r"^xsl[^/]*/", re.I)
+
+
+def _raw_primary_name(primary_document: str) -> str:
+    """The submissions API points at the XSL-rendered HTML view (``xslForm13F_X02/primary_doc.xml``);
+    the raw XML is the same file name without that folder prefix."""
+    return _XSL_PREFIX.sub("", primary_document or "")
+
+
 def download_filing(client: EdgarClient, ref: FilingRef, settings: Settings) -> Path:
     dest = settings.raw_dir / ref.cik / ref.folder_name
+    filer = ref.filer_cik or ref.cik
     if ((dest / "infotable.xml").exists() or (dest / "infotable.txt").exists()) and (dest / "meta.json").exists():
+        # Complete folder. Repair only a missing cover page (e.g. after an HTML rendering was deleted).
+        want = _raw_primary_name(ref.primary_document)
+        if (dest / "infotable.xml").exists() and want.lower().endswith(".xml") and not (dest / "primary_doc.xml").exists():
+            (dest / "primary_doc.xml").write_bytes(client.filing_file(filer, ref.accession, want))
+            log.info("Repaired cover page for %s %s (%s)", ref.manager, ref.form, ref.report_period)
         return dest
     dest.mkdir(parents=True, exist_ok=True)
-    filer = ref.filer_cik or ref.cik
     idx = client.filing_index(filer, ref.accession)
     items = idx.get("directory", {}).get("item", [])
-    xml_files = [it["name"] for it in items if it["name"].lower().endswith(".xml")]
-    primary = ref.primary_document if ref.primary_document.lower().endswith(".xml") else next((n for n in xml_files if "primary" in n.lower()), "")
-    infotable = next((n for n in xml_files if _INFOTABLE_PAT.search(n) and n != primary), "")
-    if not infotable:
-        infotable = next((n for n in xml_files if n != primary), "")
+    xml_items = [it for it in items if it["name"].lower().endswith(".xml")]
+    xml_files = [it["name"] for it in xml_items]
+    want = _raw_primary_name(ref.primary_document)
+    primary = want if want.lower().endswith(".xml") else next((n for n in xml_files if "primary" in n.lower()), "")
+    infotable = _pick_infotable(xml_items, primary)
     if infotable:
         (dest / "infotable.xml").write_bytes(client.filing_file(filer, ref.accession, infotable))
         if primary:

@@ -91,11 +91,14 @@
    "style": "index"
   },
   {
-   "cik": "1364742",
+   "cik": "2012383",
    "name": "BlackRock Inc.",
    "short": "BlackRock",
    "manager_type": "Asset Manager - Index/Active",
-   "style": "index"
+   "style": "index",
+   "previous_ciks": [
+    "1364742"
+   ]
   },
   {
    "cik": "1179392",
@@ -165,11 +168,14 @@
    "since": "2014-06-30"
   },
   {
-   "cik": "1079114",
-   "name": "Greenlight Capital Inc",
+   "cik": "1489933",
+   "name": "DME Capital Management, LP (ex Greenlight Capital)",
    "short": "Greenlight",
    "manager_type": "Hedge Fund - Value",
-   "style": "value"
+   "style": "value",
+   "previous_ciks": [
+    "1079114"
+   ]
   },
   {
    "cik": "1040273",
@@ -207,11 +213,14 @@
    "style": "activist"
   },
   {
-   "cik": "1159159",
+   "cik": "1998597",
    "name": "Jana Partners LLC",
    "short": "Jana",
    "manager_type": "Hedge Fund - Activist",
-   "style": "activist"
+   "style": "activist",
+   "previous_ciks": [
+    "1159159"
+   ]
   },
   {
    "cik": "934639",
@@ -300,7 +309,7 @@
    "style": "value"
   },
   {
-   "cik": "1374",
+   "cik": "1374170",
    "name": "Norges Bank",
    "short": "Norges Bank",
    "manager_type": "Sovereign Wealth Fund",
@@ -342,7 +351,7 @@
    "style": "index"
   },
   {
-   "cik": "29440",
+   "cik": "200217",
    "name": "Dodge & Cox",
    "short": "Dodge & Cox",
    "manager_type": "Asset Manager - Value",

@@ -8,3 +8,6 @@ data/processed/
 .env
 output/holdings.csv
 output/changes.csv
+output/consensus.csv
+output/company_moves.csv
+output/put_call.csv

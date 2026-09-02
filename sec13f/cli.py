@@ -79,6 +79,13 @@ def cmd_build(args, settings: Settings):
         filings["cik"] = filings["cik"].replace(aliases)
     source = "sample" if (filings["source"] == "sample").all() else ("sec" if (filings["source"] == "sec").all() else "mixed")
     log.info("Parsed %d filings, %d holding rows (%s)", len(filings), len(raw), source)
+    # `fetch --quarters N` takes the last N filings *per manager*; a filer that stopped reporting drags in old
+    # quarters where it is alone. Cap the history to the last N calendar quarters present so the series stay comparable.
+    hq = getattr(args, "history_quarters", None) or (getattr(args, "quarters", None) if args.cmd == "all" else None)
+    if hq:
+        keep = sorted(raw["period"].unique())[-hq:]
+        raw, filings = raw[raw["period"].isin(keep)], filings[filings["period"].isin(keep)]
+        log.info("History capped to the last %d quarters (%s .. %s)", len(keep), keep[0], keep[-1])
     h = aggregate_positions(raw)
     h = SecurityClassifier(settings.issuers_file).classify_frame(h)
     h["manager_type"] = h["cik"].map(mtype).fillna("Unknown")
@@ -167,6 +174,7 @@ def main(argv=None):
     b = sub.add_parser("build", help="parse, classify, track, analyze, render")
     b.add_argument("--title", default="13F Holdings Tracker")
     b.add_argument("--detail-quarters", type=int, default=12, help="quarters with position-level detail embedded in the dashboard")
+    b.add_argument("--history-quarters", type=int, default=None, help="keep only the last N calendar quarters on disk (default: everything)")
     b.set_defaults(fn=cmd_build)
 
     a = sub.add_parser("all", help="sample|fetch then build")

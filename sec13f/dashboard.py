@@ -24,7 +24,7 @@ def _records(df: pd.DataFrame, cols: list[str] | None = None) -> list[dict]:
 
 def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_asset_vw, exp_sector_ew, rotation, cons, pc,
                     insights: list[dict], managers, source: str, n_filings: int, title: str = "13F Holdings Tracker", detail_quarters: int = 12,
-                    exp_sector_vw: pd.DataFrame | None = None, company_moves: pd.DataFrame | None = None) -> Path:
+                    exp_sector_vw: pd.DataFrame | None = None, company_moves: pd.DataFrame | None = None, company_rows: int = 400) -> Path:
     periods = sorted(h["period"].unique())
     detail_periods = periods[-detail_quarters:]
     short = {m.cik: m.short for m in managers}
@@ -104,19 +104,38 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
 
     cons_det = cons[cons["period"].isin(detail_periods)]
     pcr_det = pcr[pcr["period"].isin(detail_periods)] if not pcr.empty else pcr
-    # aggregated moves per company (universe-wide): buyers/sellers, aggregate share change, flow decomposition and MAJOR/MINOR/NONE label
-    cm = pd.DataFrame()
+    # aggregated moves per company (universe-wide): buyers/sellers, aggregate share change, flow decomposition and MAJOR/MINOR/NONE label.
+    # The real universe has ~7,000 issuers per quarter; embed only the rows any view can show (top by gross flow, by
+    # intensity and by breadth) and ship full-universe totals separately for the KPIs.
+    cm, cm_totals = pd.DataFrame(), {}
     if company_moves is not None and not company_moves.empty:
-        cm = company_moves[company_moves["period"].isin(detail_periods)][[
+        full = company_moves[company_moves["period"].isin(detail_periods)]
+        for p, grp in full.groupby("period"):
+            cm_totals[p] = dict(
+                total=int(len(grp)), major=int((grp["magnitude"] == "MAJOR").sum()), minor=int((grp["magnitude"] == "MINOR").sum()), none=int((grp["magnitude"] == "NONE").sum()),
+                n_bought=int((grp["net_flow"] > 0).sum()), n_sold=int((grp["net_flow"] < 0).sum()),
+                buy_flow=float(grp.loc[grp["net_flow"] > 0, "net_flow"].sum()), sell_flow=float(grp.loc[grp["net_flow"] < 0, "net_flow"].sum()),
+                entries=int(((grp["holders_prev"] == 0) & (grp["holders_cur"] > 0)).sum()), exits=int(((grp["holders_prev"] > 0) & (grp["holders_cur"] == 0)).sum()),
+            )
+        keep = []
+        for _, grp in full.groupby("period"):
+            elig = grp[grp["eligible_intensity"] & grp["pct_shares"].notna()]
+            keep += [grp.nlargest(company_rows, "gross_flow"),
+                     elig.reindex(elig["pct_shares"].abs().sort_values(ascending=False).index).head(company_rows // 3),
+                     grp.reindex(grp["net_buyers"].abs().sort_values(ascending=False).index).head(company_rows // 3)]
+        cm = pd.concat(keep).drop_duplicates(subset=["period", "cusip"])[[
             "period", "cusip", "issuer", "ticker", "sector", "holders_prev", "holders_cur", "buyers", "sellers", "new_holders", "exits",
             "value_prev", "value_cur", "pct_shares", "net_flow", "gross_flow", "price_effect", "net_buyers", "magnitude", "eligible_intensity"]]
+    # options: the dashboard charts the top 15 underlyings per quarter; keep a margin, not the whole option universe
+    if not pcr_det.empty:
+        pcr_det = pcr_det.assign(_tot=pcr_det["put"] + pcr_det["call"]).sort_values("_tot", ascending=False).groupby("period").head(60).drop(columns="_tot")
     data = dict(
         periods=periods, detail_periods=detail_periods, asset_order=asset_order, history=_records(hist),
         insights={i["period"]: {k: v for k, v in i.items() if k != "facts"} for i in insights},
         kpis=kpis,
         exposure_asset=_records(ea), exposure_sector=_records(es), rotation=_records(rot, ["period", "manager_type", "sector", "net_flow", "flow_pct"]),
         managers=_records(mg), moves=_records(mv), consensus=_records(cons_det.groupby("period").head(60)), putcall=_records(pcr_det),
-        holdings=_records(hd), mgr_sector=_records(ms), companies=_records(cm),
+        holdings=_records(hd), mgr_sector=_records(ms), companies=_records(cm), companies_totals=cm_totals,
     )
     env = Environment(loader=FileSystemLoader(Path(__file__).parent / "templates"), autoescape=False)
     html = env.get_template("dashboard.html.j2").render(

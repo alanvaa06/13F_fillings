@@ -43,6 +43,18 @@ Salidas en `output/`:
 | `company_moves.csv` | Por empresa (CUSIP) y trimestre: tenedores antes/después, compradores/vendedores, Δ títulos agregados, flujo neto/bruto, efecto precio y clasificación del movimiento (MAJOR / MINOR / NONE) |
 | `consensus.csv`, `put_call.csv` | Crowding (tenedores, compradores/vendedores netos) y nocional de puts vs calls por subyacente |
 
+Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas o cientos de MB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio; se generan localmente con `build`. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo).
+
+## Datos publicados
+
+El sitio y `output/` se generan con datos reales de EDGAR: los últimos **12 trimestres** (2023Q3–2026Q2) de los 50 managers, 594 filings. Cosas que conviene saber al leer el corte actual:
+
+- **Managers sin filing en el último trimestre** se listan en la lectura del trimestre (bullet *Cobertura*) y no entran en los agregados de ese periodo. En 2026Q2: Vanguard (último 13F público bajo su CIK: 2025Q4), Scion (dejó de reportar tras 2025Q3) y Pershing Square (2026Q2 aún no presentado).
+- **Norges Bank** presenta en Q1 y Q3 un 13F-HR *placeholder* (una fila `NA` / CUSIP `000000000` / $0) con todas las posiciones bajo tratamiento confidencial y publica la tabla real como 13F-HR/A cerca de un año después. El parser descarta esas filas, así que esos trimestres cuentan como sin datos hasta que llegue la enmienda.
+- **Cambios de entidad filer**: BlackRock (1364742 → 2012383 desde 2024Q3), Jana (1159159 → 1998597) y Greenlight, hoy DME Capital Management (1079114 → 1489933), se fusionan vía `previous_ciks`.
+- **Sector sin clasificar**: el maestro `config/issuers.json` cubre ~220 emisores; en el universo real cerca de un 28 % del valor queda como *Unclassified* en la vista sectorial. Ampliar el maestro (o conectar un proveedor de datos) es la mejora de mayor impacto pendiente.
+- Para regenerar: `SEC_USER_AGENT="Tu Nombre tu@email.com" python -m sec13f.cli all --source sec --quarters 12` y commit de `output/`; el workflow de Pages publica solo.
+
 ## Universo de managers
 
 `config/managers.json` define el universo: CIK, nombre, tipo declarado, estilo, `since` (primer trimestre que reporta) y `previous_ciks` (CIKs anteriores cuyos filings se fusionan, p. ej. Elliott pasó de 1048445 a 1791786 en 2020). El universo actual tiene 50 filers: hedge funds (Berkshire, Bridgewater, Renaissance, Citadel, Millennium, D.E. Shaw, Two Sigma, AQR, Point72, Pershing Square, Elliott, Third Point, Icahn, ValueAct, Starboard, Trian, Jana, Tiger Global, Lone Pine, Viking, Coatue, Altimeter, Maverick, Baupost, Greenlight, Appaloosa, Glenview, Paulson, Tudor, Adage, Marshall Wace, Balyasny, Farallon, Scion), market makers (Jane Street, Susquehanna), family offices y fundaciones (Soros, Duquesne, Gates Foundation), fondos soberanos y de pensiones (Norges Bank, CalPERS) y asset managers (Vanguard, BlackRock, State Street, Fidelity, T. Rowe Price, Wellington, Dodge & Cox, Harris, Baillie Gifford). Para expandir basta añadir filas; `python -m sec13f.cli verify` confirma cada CIK contra EDGAR y `EdgarClient.lookup_cik("nombre")` ayuda a resolverlos.

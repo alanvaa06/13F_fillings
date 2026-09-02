@@ -1,372 +1,22 @@
 period,manager_type,sector,net_flow,gross_flow
-2020-12-31,Hedge Fund - Activist,Consumer Discretionary,-32988078.177888583,32988078.177888583
-2020-12-31,Hedge Fund - Activist,Consumer Staples,86429000.0,86429000.0
-2020-12-31,Hedge Fund - Activist,ETF - Broad Equity,-33013688.545725938,33013688.545725938
-2020-12-31,Hedge Fund - Activist,Health Care,70419019.1503343,70419019.1503343
-2020-12-31,Hedge Fund - Activist,Unclassified,129028823.74778989,402349257.00108784
-2021-03-31,Hedge Fund - Activist,Consumer Discretionary,-77706000.0,77706000.0
-2021-03-31,Hedge Fund - Activist,Consumer Staples,110686154.85238062,110686154.85238062
-2021-03-31,Hedge Fund - Activist,ETF - Broad Equity,-13871589.82637603,13871589.82637603
-2021-03-31,Hedge Fund - Activist,Health Care,-72879045.73465002,72879045.73465002
-2021-03-31,Hedge Fund - Activist,Unclassified,-96497473.67976353,475629845.8405795
-2021-06-30,Hedge Fund - Activist,Consumer Discretionary,-102128455.4643993,102128455.4643993
-2021-06-30,Hedge Fund - Activist,Consumer Staples,-14916027.422110979,14916027.422110979
-2021-06-30,Hedge Fund - Activist,ETF - Broad Equity,36936026.41794792,36936026.41794792
-2021-06-30,Hedge Fund - Activist,Health Care,25424663.13010943,25424663.13010943
-2021-06-30,Hedge Fund - Activist,Unclassified,-213110639.2993581,549547724.918601
-2021-06-30,Hedge Fund - Value,Communication Services,-547000.0,547000.0
-2021-06-30,Hedge Fund - Value,ETF - Broad Equity,23278000.0,23278000.0
-2021-06-30,Hedge Fund - Value,ETF - Commodity,0.0,0.0
-2021-06-30,Hedge Fund - Value,Energy,20181830.958260924,75839260.71137239
-2021-06-30,Hedge Fund - Value,Financials,-8722000.0,39684000.0
-2021-06-30,Hedge Fund - Value,Health Care,2281539.617179945,4424224.572173516
-2021-06-30,Hedge Fund - Value,Materials,15374000.000000002,15374000.000000002
-2021-06-30,Hedge Fund - Value,Real Estate,0.0,0.0
-2021-06-30,Hedge Fund - Value,Unclassified,53661701.47498518,265480913.43311587
-2021-06-30,Hedge Fund - Value,Utilities,12000.0,12000.0
-2021-09-30,Hedge Fund - Activist,Consumer Discretionary,-292900000.0,292900000.0
-2021-09-30,Hedge Fund - Activist,Consumer Staples,-169971000.0,169971000.0
-2021-09-30,Hedge Fund - Activist,ETF - Broad Equity,-139819000.0,139819000.0
-2021-09-30,Hedge Fund - Activist,Health Care,-158330000.0,158330000.0
-2021-09-30,Hedge Fund - Activist,Unclassified,-421580000.0,480226000.0
-2021-09-30,Hedge Fund - Value,Consumer Staples,803000.0,803000.0
-2021-09-30,Hedge Fund - Value,ETF - Broad Equity,-23278000.0,23278000.0
-2021-09-30,Hedge Fund - Value,ETF - Commodity,34252680.35899206,34252680.35899206
-2021-09-30,Hedge Fund - Value,Energy,13785252.074998315,20095431.021192167
-2021-09-30,Hedge Fund - Value,Financials,-2341587.82244898,34574412.177551016
-2021-09-30,Hedge Fund - Value,Health Care,2840731.8714008704,2840731.8714008704
-2021-09-30,Hedge Fund - Value,Materials,-95971.49963353237,483971.49963353237
-2021-09-30,Hedge Fund - Value,Real Estate,-1136000.0,1136000.0
-2021-09-30,Hedge Fund - Value,Unclassified,-56421714.3649514,175636189.5251326
-2021-09-30,Hedge Fund - Value,Utilities,-12000.0,12000.0
-2021-12-31,Asset Manager - Index/Active,Communication Services,-277158730000.0,277158730000.0
-2021-12-31,Asset Manager - Index/Active,Consumer Discretionary,-282918391000.0,282918391000.0
-2021-12-31,Asset Manager - Index/Active,Consumer Staples,-128744622000.0,128744622000.0
-2021-12-31,Asset Manager - Index/Active,ETF - Broad Equity,-112783996000.0,112783996000.0
-2021-12-31,Asset Manager - Index/Active,ETF - Commodity,-786317000.0,786317000.0
-2021-12-31,Asset Manager - Index/Active,ETF - Fixed Income,-12542071000.0,12542071000.0
-2021-12-31,Asset Manager - Index/Active,ETF - International Equity,-14529205000.0,14529205000.0
-2021-12-31,Asset Manager - Index/Active,ETF - Sector,-1668260000.0,1668260000.0
-2021-12-31,Asset Manager - Index/Active,ETF - Thematic,-2195000.0,2195000.0
-2021-12-31,Asset Manager - Index/Active,Energy,-97257522512.34343,98446027487.65659
-2021-12-31,Asset Manager - Index/Active,Financials,-389851206000.0,389851206000.0
-2021-12-31,Asset Manager - Index/Active,Health Care,-329108893000.0,329108893000.0
-2021-12-31,Asset Manager - Index/Active,Industrials,-93291882000.0,93291882000.0
-2021-12-31,Asset Manager - Index/Active,Information Technology,-548182477000.0,548182477000.0
-2021-12-31,Asset Manager - Index/Active,Materials,-35915447000.0,35915447000.0
-2021-12-31,Asset Manager - Index/Active,Real Estate,-60888023000.0,60888023000.0
-2021-12-31,Asset Manager - Index/Active,Unclassified,-1154350464000.0,1154350464000.0
-2021-12-31,Asset Manager - Index/Active,Utilities,-31189669000.0,31189669000.0
-2021-12-31,Hedge Fund - Activist,Consumer Discretionary,274946000.0,274946000.0
-2021-12-31,Hedge Fund - Activist,Consumer Staples,208868000.0,208868000.0
-2021-12-31,Hedge Fund - Activist,ETF - Broad Equity,157285000.0,157285000.0
-2021-12-31,Hedge Fund - Activist,Health Care,188881000.0,188881000.0
-2021-12-31,Hedge Fund - Activist,Unclassified,682555031.1279914,682555031.1279914
-2021-12-31,Hedge Fund - Value,Consumer Discretionary,105678000.0,105678000.0
-2021-12-31,Hedge Fund - Value,Consumer Staples,-803000.0,803000.0
-2021-12-31,Hedge Fund - Value,ETF - Commodity,0.0,0.0
-2021-12-31,Hedge Fund - Value,Energy,-37946649.40527215,49524649.40527214
-2021-12-31,Hedge Fund - Value,Financials,61512246.72781919,75289753.27218081
-2021-12-31,Hedge Fund - Value,Health Care,1069001.4999429444,1069001.4999429444
-2021-12-31,Hedge Fund - Value,Information Technology,15939000.0,15939000.0
-2021-12-31,Hedge Fund - Value,Materials,0.0,0.0
-2021-12-31,Hedge Fund - Value,Unclassified,-111429598.8447471,359719666.7293896
-2022-03-31,Asset Manager - Index/Active,Communication Services,243136155000.0,243136155000.0
-2022-03-31,Asset Manager - Index/Active,Consumer Discretionary,295541052000.0,295541052000.0
-2022-03-31,Asset Manager - Index/Active,Consumer Staples,146905552000.0,146905552000.0
-2022-03-31,Asset Manager - Index/Active,ETF - Broad Equity,101409799000.0,101409799000.0
-2022-03-31,Asset Manager - Index/Active,ETF - Commodity,866293000.0,866293000.0
-2022-03-31,Asset Manager - Index/Active,ETF - Fixed Income,11936719000.0,11936719000.0
-2022-03-31,Asset Manager - Index/Active,ETF - International Equity,15183483000.0,15183483000.0
-2022-03-31,Asset Manager - Index/Active,ETF - Sector,1891187000.0,1891187000.0
-2022-03-31,Asset Manager - Index/Active,Energy,141270113265.41867,141270113265.41867
-2022-03-31,Asset Manager - Index/Active,Financials,387021160000.0,387021160000.0
-2022-03-31,Asset Manager - Index/Active,Health Care,356771576000.0,356771576000.0
-2022-03-31,Asset Manager - Index/Active,Industrials,103100512000.0,103100512000.0
-2022-03-31,Asset Manager - Index/Active,Information Technology,619499011000.0,619499011000.0
-2022-03-31,Asset Manager - Index/Active,Materials,45196416000.0,45196416000.0
-2022-03-31,Asset Manager - Index/Active,Real Estate,68556694000.0,68556694000.0
-2022-03-31,Asset Manager - Index/Active,Unclassified,1138407916000.0,1138407916000.0
-2022-03-31,Asset Manager - Index/Active,Utilities,34737971000.0,34737971000.0
-2022-03-31,Hedge Fund - Activist,Consumer Discretionary,-274946000.0,274946000.0
-2022-03-31,Hedge Fund - Activist,Consumer Staples,-208868000.0,208868000.0
-2022-03-31,Hedge Fund - Activist,ETF - Broad Equity,-157285000.0,157285000.0
-2022-03-31,Hedge Fund - Activist,Health Care,-188881000.0,188881000.0
-2022-03-31,Hedge Fund - Activist,Unclassified,-658638000.0,774566000.0
-2022-03-31,Hedge Fund - Value,Consumer Discretionary,-105678000.0,105678000.0
-2022-03-31,Hedge Fund - Value,ETF - Broad Equity,829000.0,829000.0
-2022-03-31,Hedge Fund - Value,ETF - Commodity,13013084.471710974,13013084.471710974
-2022-03-31,Hedge Fund - Value,ETF - Sector,1123000.0,1123000.0
-2022-03-31,Hedge Fund - Value,Energy,7720575.360040087,71925544.51405591
-2022-03-31,Hedge Fund - Value,Financials,-7749001.563630526,7749001.563630526
-2022-03-31,Hedge Fund - Value,Health Care,2373980.198654192,2373980.198654192
-2022-03-31,Hedge Fund - Value,Information Technology,0.0,0.0
-2022-03-31,Hedge Fund - Value,Materials,-18823.529411764706,18823.529411764706
-2022-03-31,Hedge Fund - Value,Unclassified,61227402.516185984,222046523.39884526
-2022-06-30,Asset Manager - Index/Active,Communication Services,3320261214.362622,7343182463.390256
-2022-06-30,Asset Manager - Index/Active,Consumer Discretionary,59169401392.100075,63473654118.40079
-2022-06-30,Asset Manager - Index/Active,Consumer Staples,4114686971.3614554,6748302076.585972
-2022-06-30,Asset Manager - Index/Active,ETF - Broad Equity,-2411204965.567966,9745702737.126059
-2022-06-30,Asset Manager - Index/Active,ETF - Commodity,-201355062.44951475,210608975.9234063
-2022-06-30,Asset Manager - Index/Active,ETF - Fixed Income,70493155.0518931,2197316504.079312
-2022-06-30,Asset Manager - Index/Active,ETF - International Equity,977352586.1351902,1071445729.1336546
-2022-06-30,Asset Manager - Index/Active,ETF - Sector,577619017.7753069,1218814674.4516556
-2022-06-30,Asset Manager - Index/Active,Energy,693154204.4489657,10285747512.600641
-2022-06-30,Asset Manager - Index/Active,Financials,-3065291664.5666933,14018613408.033794
-2022-06-30,Asset Manager - Index/Active,Health Care,5856530703.15551,14347039659.477766
-2022-06-30,Asset Manager - Index/Active,Industrials,1144875845.0689826,2860952304.8855352
-2022-06-30,Asset Manager - Index/Active,Information Technology,-1357767133.7454805,7819435756.880368
-2022-06-30,Asset Manager - Index/Active,Materials,1969318470.5740457,3296414918.6672597
-2022-06-30,Asset Manager - Index/Active,Real Estate,211529364.51957628,1541371858.5968761
-2022-06-30,Asset Manager - Index/Active,Unclassified,6177480667.32894,74024038873.07458
-2022-06-30,Asset Manager - Index/Active,Utilities,1097692933.2227852,1694087393.860124
-2022-06-30,Hedge Fund - Activist,Consumer Discretionary,34099000.0,34099000.0
-2022-06-30,Hedge Fund - Activist,Consumer Staples,214582000.00000003,214582000.00000003
-2022-06-30,Hedge Fund - Activist,ETF - Broad Equity,157661000.0,157661000.0
-2022-06-30,Hedge Fund - Activist,Health Care,159808000.0,159808000.0
-2022-06-30,Hedge Fund - Activist,Unclassified,546713503.1523457,546713503.1523457
-2022-06-30,Hedge Fund - Value,Communication Services,22170000.0,22170000.0
-2022-06-30,Hedge Fund - Value,Consumer Discretionary,2034999.9999999998,2034999.9999999998
-2022-06-30,Hedge Fund - Value,ETF - Broad Equity,-829000.0,829000.0
-2022-06-30,Hedge Fund - Value,ETF - Commodity,14625498.20585252,16265498.20585252
-2022-06-30,Hedge Fund - Value,ETF - Sector,0.0,0.0
-2022-06-30,Hedge Fund - Value,Energy,-31569656.254567854,47657516.02187665
-2022-06-30,Hedge Fund - Value,Financials,-4603525.317349061,6692398.20265094
-2022-06-30,Hedge Fund - Value,Health Care,-52548052.66297401,52548052.66297401
-2022-06-30,Hedge Fund - Value,Information Technology,-15338000.0,15338000.0
-2022-06-30,Hedge Fund - Value,Materials,0.0,0.0
-2022-06-30,Hedge Fund - Value,Unclassified,-31447330.292771596,213608604.24222863
-2022-09-30,Asset Manager - Index/Active,Communication Services,71325858888.62138,73049741925.37427
-2022-09-30,Asset Manager - Index/Active,Consumer Discretionary,30258820983.86043,35244403276.92955
-2022-09-30,Asset Manager - Index/Active,Consumer Staples,-1174456003.0893133,3256782132.1713376
-2022-09-30,Asset Manager - Index/Active,ETF - Broad Equity,6585354537.197511,11924888978.265127
-2022-09-30,Asset Manager - Index/Active,ETF - Commodity,161142380.8400001,254687622.39056835
-2022-09-30,Asset Manager - Index/Active,ETF - Fixed Income,-360138195.3595215,2485756508.128361
-2022-09-30,Asset Manager - Index/Active,ETF - International Equity,27116770.527588442,660501181.4996977
-2022-09-30,Asset Manager - Index/Active,ETF - Sector,-625825589.5135853,803828361.7817055
-2022-09-30,Asset Manager - Index/Active,ETF - Thematic,0.0,0.0
-2022-09-30,Asset Manager - Index/Active,Energy,-2881214876.222818,7089311458.901453
-2022-09-30,Asset Manager - Index/Active,Financials,-3345096535.1522813,9064215805.667267
-2022-09-30,Asset Manager - Index/Active,Health Care,-867216156.5311974,9572118965.322927
-2022-09-30,Asset Manager - Index/Active,Industrials,-1248208211.0754788,1866135143.7475114
-2022-09-30,Asset Manager - Index/Active,Information Technology,-1574869462.9911938,8305515877.451102
-2022-09-30,Asset Manager - Index/Active,Materials,-1128396756.795085,2083955378.454617
-2022-09-30,Asset Manager - Index/Active,Real Estate,146562550.62493014,1082792052.633823
-2022-09-30,Asset Manager - Index/Active,Unclassified,-8323027232.198931,46972083793.19568
-2022-09-30,Asset Manager - Index/Active,Utilities,-120521546.94949786,965998987.8367034
-2022-09-30,Hedge Fund - Activist,Consumer Discretionary,-34099000.0,34099000.0
-2022-09-30,Hedge Fund - Activist,Consumer Staples,-16253459.338804055,16253459.338804055
-2022-09-30,Hedge Fund - Activist,ETF - Broad Equity,-94787534.10513757,94787534.10513757
-2022-09-30,Hedge Fund - Activist,Financials,5423000.0,5423000.0
-2022-09-30,Hedge Fund - Activist,Health Care,-10136132.243548116,10136132.243548116
-2022-09-30,Hedge Fund - Activist,Unclassified,276270671.0205457,276270671.0205457
-2022-09-30,Hedge Fund - Value,Communication Services,-22170000.0,22170000.0
-2022-09-30,Hedge Fund - Value,Consumer Discretionary,0.0,0.0
-2022-09-30,Hedge Fund - Value,ETF - Commodity,-3882170.01852289,3882170.01852289
-2022-09-30,Hedge Fund - Value,ETF - Sector,-1051000.0,1051000.0
-2022-09-30,Hedge Fund - Value,Energy,21489681.56720237,21489681.56720237
-2022-09-30,Hedge Fund - Value,Financials,-33047843.024275642,33047843.024275642
-2022-09-30,Hedge Fund - Value,Health Care,-18285831.982247747,18285831.982247747
-2022-09-30,Hedge Fund - Value,Information Technology,18426000.0,18426000.0
-2022-09-30,Hedge Fund - Value,Materials,0.0,0.0
-2022-09-30,Hedge Fund - Value,Unclassified,108258763.23470178,360884772.40382785
-2022-12-31,Asset Manager - Index/Active,Communication Services,1906520932.400337,4033147703.1483493
-2022-12-31,Asset Manager - Index/Active,Consumer Discretionary,3536685059.5862556,8484509789.925984
-2022-12-31,Asset Manager - Index/Active,Consumer Staples,2158162496.4147987,3825426055.222748
-2022-12-31,Asset Manager - Index/Active,ETF - Broad Equity,-4292034011.0940013,15832501160.272686
-2022-12-31,Asset Manager - Index/Active,ETF - Commodity,-76095030.96897529,279879289.7374427
-2022-12-31,Asset Manager - Index/Active,ETF - Fixed Income,-458107299.36530036,2671948097.347032
-2022-12-31,Asset Manager - Index/Active,ETF - International Equity,-1164585137.8269227,1992547719.5702856
-2022-12-31,Asset Manager - Index/Active,ETF - Sector,12604874.052976597,495433547.7070234
-2022-12-31,Asset Manager - Index/Active,ETF - Thematic,37.0,37.0
-2022-12-31,Asset Manager - Index/Active,Energy,4977599618.100259,6855116411.257918
-2022-12-31,Asset Manager - Index/Active,Financials,4115251586.7072406,11943497724.37938
-2022-12-31,Asset Manager - Index/Active,Health Care,7493782784.000522,12258922823.098267
-2022-12-31,Asset Manager - Index/Active,Industrials,1574984377.8280082,2290784376.2927027
-2022-12-31,Asset Manager - Index/Active,Information Technology,6483375228.551413,9654483949.38716
-2022-12-31,Asset Manager - Index/Active,Materials,-799624856.7722365,1690524582.409472
-2022-12-31,Asset Manager - Index/Active,Real Estate,1117044206.0834293,4766766877.232557
-2022-12-31,Asset Manager - Index/Active,Unclassified,14564429113.011488,59680782530.22515
-2022-12-31,Asset Manager - Index/Active,Utilities,1644268501.2022333,1876949444.232608
-2022-12-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2022-12-31,Hedge Fund - Activist,ETF - Broad Equity,-13809547.241074266,13809547.241074266
-2022-12-31,Hedge Fund - Activist,Financials,-5423000.0,5423000.0
-2022-12-31,Hedge Fund - Activist,Health Care,-133974398.72681896,133974398.72681896
-2022-12-31,Hedge Fund - Activist,Unclassified,85547859.09743246,274362955.6774747
-2022-12-31,Hedge Fund - Value,Consumer Discretionary,-2427000.0,2427000.0
-2022-12-31,Hedge Fund - Value,ETF - Commodity,-7605308.549243925,7605308.549243925
-2022-12-31,Hedge Fund - Value,Energy,45987248.13138493,45987248.13138493
-2022-12-31,Hedge Fund - Value,Financials,12372204.67716427,27337917.72283573
-2022-12-31,Hedge Fund - Value,Health Care,11968170.0,56046170.0
-2022-12-31,Hedge Fund - Value,Information Technology,-18426000.0,18426000.0
-2022-12-31,Hedge Fund - Value,Materials,5237650.110240056,5237650.110240056
-2022-12-31,Hedge Fund - Value,Unclassified,-190630629.73713124,249586800.5598597
-2023-03-31,Asset Manager - Index/Active,Communication Services,1007369754.9736352,2999299372.7806144
-2023-03-31,Asset Manager - Index/Active,Consumer Discretionary,1576735840.0774639,5367290901.372063
-2023-03-31,Asset Manager - Index/Active,Consumer Staples,2330243354.871041,5491388058.437737
-2023-03-31,Asset Manager - Index/Active,ETF - Broad Equity,-3575446373.954185,11762844124.94387
-2023-03-31,Asset Manager - Index/Active,ETF - Commodity,973838182.4354988,1148960797.2211797
-2023-03-31,Asset Manager - Index/Active,ETF - Fixed Income,3917402116.9600954,6128331613.575168
-2023-03-31,Asset Manager - Index/Active,ETF - International Equity,-909681232.663509,1553938348.7757185
-2023-03-31,Asset Manager - Index/Active,ETF - Sector,36615870.37168346,583846415.2214503
-2023-03-31,Asset Manager - Index/Active,ETF - Thematic,6620.000000000001,6760.000000000001
-2023-03-31,Asset Manager - Index/Active,Energy,-2998076228.20551,6954260494.618629
-2023-03-31,Asset Manager - Index/Active,Financials,-1323787251.989375,9632949224.910522
-2023-03-31,Asset Manager - Index/Active,Health Care,-141157820.02370295,10282522085.942274
-2023-03-31,Asset Manager - Index/Active,Industrials,-683312324.3231725,3580481793.739377
-2023-03-31,Asset Manager - Index/Active,Information Technology,4462212486.822274,7806379799.524681
-2023-03-31,Asset Manager - Index/Active,Materials,-9150732917.382393,11648516820.375113
-2023-03-31,Asset Manager - Index/Active,Real Estate,472224284.70886153,1207966696.4335482
-2023-03-31,Asset Manager - Index/Active,Unclassified,14987943776.958536,59150823039.66378
-2023-03-31,Asset Manager - Index/Active,Utilities,-606004726.4017696,1243521311.1959684
-2023-03-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2023-03-31,Hedge Fund - Activist,ETF - Broad Equity,45073839.063182846,45073839.063182846
-2023-03-31,Hedge Fund - Activist,Health Care,-23150178.0,23150178.0
-2023-03-31,Hedge Fund - Activist,Unclassified,-31481171.890314944,131410558.42172799
-2023-03-31,Hedge Fund - Contrarian Value,Communication Services,7384000.0,7384000.0
-2023-03-31,Hedge Fund - Contrarian Value,Consumer Discretionary,6991750.0,18587750.0
-2023-03-31,Hedge Fund - Contrarian Value,Energy,6125362.0,6125362.0
-2023-03-31,Hedge Fund - Contrarian Value,Financials,28514380.0,28514380.0
-2023-03-31,Hedge Fund - Contrarian Value,Health Care,6388250.0,6388250.0
-2023-03-31,Hedge Fund - Contrarian Value,Unclassified,8014615.970000001,50819628.03
-2023-03-31,Hedge Fund - Value,Consumer Discretionary,-91952.00000000001,91952.00000000001
-2023-03-31,Hedge Fund - Value,ETF - Broad Equity,1318321.0,1318321.0
-2023-03-31,Hedge Fund - Value,ETF - Commodity,4482121.087317604,6102632.307019361
-2023-03-31,Hedge Fund - Value,Energy,73984946.67475316,75182455.87865183
-2023-03-31,Hedge Fund - Value,Financials,57351668.3813,70102421.93390743
-2023-03-31,Hedge Fund - Value,Health Care,45639525.80527428,45639525.80527428
-2023-03-31,Hedge Fund - Value,Materials,-13600.0,13600.0
-2023-03-31,Hedge Fund - Value,Unclassified,30968793.860695317,152736436.6489797
-2023-06-30,Asset Manager - Index,Communication Services,-724013932.9153217,3092530250.35986
-2023-06-30,Asset Manager - Index,Consumer Discretionary,197008521.60281235,3168514440.646723
-2023-06-30,Asset Manager - Index,Consumer Staples,918579304.9468453,1570605750.8426945
-2023-06-30,Asset Manager - Index,ETF - Broad Equity,1513790249.1404088,1584107315.5031173
-2023-06-30,Asset Manager - Index,ETF - Commodity,178.27007562117393,178.27007562117393
-2023-06-30,Asset Manager - Index,ETF - Fixed Income,727781686.1073859,727781686.1073859
-2023-06-30,Asset Manager - Index,ETF - International Equity,76929433.6289818,82207118.13533746
-2023-06-30,Asset Manager - Index,ETF - Sector,1474573.03,1474573.03
-2023-06-30,Asset Manager - Index,Energy,-1061069310.8759903,3092552252.1482363
-2023-06-30,Asset Manager - Index,Financials,-3899814167.4385962,8919316556.689737
-2023-06-30,Asset Manager - Index,Health Care,5485667.755526558,3901780538.3179245
-2023-06-30,Asset Manager - Index,Industrials,142362166.7119093,6253997019.568211
-2023-06-30,Asset Manager - Index,Information Technology,1693963638.909914,9152720355.367779
-2023-06-30,Asset Manager - Index,Materials,-398795593.0708287,664687026.1870258
-2023-06-30,Asset Manager - Index,Real Estate,-1065921405.6283596,1706156230.9702442
-2023-06-30,Asset Manager - Index,Unclassified,7559633727.397173,39973780497.686966
-2023-06-30,Asset Manager - Index,Utilities,-446151615.6216159,1034074287.4318359
-2023-06-30,Asset Manager - Index/Active,Communication Services,-150324669.6369202,5005784799.505603
-2023-06-30,Asset Manager - Index/Active,Consumer Discretionary,3030559353.475294,10688359431.062777
-2023-06-30,Asset Manager - Index/Active,Consumer Staples,-2018967368.5667367,3734835897.065737
-2023-06-30,Asset Manager - Index/Active,ETF - Broad Equity,832076831.7489076,10609046474.624844
-2023-06-30,Asset Manager - Index/Active,ETF - Commodity,-106429655.74042077,1030915622.9045529
-2023-06-30,Asset Manager - Index/Active,ETF - Fixed Income,-3653758667.7704253,4874319173.922375
-2023-06-30,Asset Manager - Index/Active,ETF - International Equity,-662369482.1886929,1906477775.5184941
-2023-06-30,Asset Manager - Index/Active,ETF - Sector,-52234383.582309715,454301859.11179566
-2023-06-30,Asset Manager - Index/Active,ETF - Thematic,-6674.000000000001,6706.000000000001
-2023-06-30,Asset Manager - Index/Active,Energy,-4207693034.7131,8884314731.673424
-2023-06-30,Asset Manager - Index/Active,Financials,-2072537398.837373,12073239237.098785
-2023-06-30,Asset Manager - Index/Active,Health Care,-3568687416.650548,10420761808.672775
-2023-06-30,Asset Manager - Index/Active,Industrials,223392704.6030604,4093541936.2870445
-2023-06-30,Asset Manager - Index/Active,Information Technology,5804086742.947164,11610144573.116869
-2023-06-30,Asset Manager - Index/Active,Materials,355955814.49164,1498623960.8951
-2023-06-30,Asset Manager - Index/Active,Real Estate,-152229443.8563213,1526544037.6081872
-2023-06-30,Asset Manager - Index/Active,Unclassified,7994819220.009447,64830940329.53652
-2023-06-30,Asset Manager - Index/Active,Utilities,-201987081.9683476,1780116274.8447306
-2023-06-30,Hedge Fund - Activist,Consumer Staples,300869.359598007,300869.359598007
-2023-06-30,Hedge Fund - Activist,ETF - Broad Equity,-2393711.9941392737,2393711.9941392737
-2023-06-30,Hedge Fund - Activist,Unclassified,74508706.52582847,209806764.3734108
-2023-06-30,Hedge Fund - Contrarian Value,Communication Services,9001000.0,23769000.0
-2023-06-30,Hedge Fund - Contrarian Value,Consumer Discretionary,-13117800.0,29263200.0
-2023-06-30,Hedge Fund - Contrarian Value,ETF - Broad Equity,1627314187.0,1627314187.0
-2023-06-30,Hedge Fund - Contrarian Value,ETF - International Equity,811500.0,811500.0
-2023-06-30,Hedge Fund - Contrarian Value,Energy,2629542.0,14880266.0
-2023-06-30,Hedge Fund - Contrarian Value,Financials,-28136380.0,28136380.0
-2023-06-30,Hedge Fund - Contrarian Value,Health Care,7614500.0,7614500.0
-2023-06-30,Hedge Fund - Contrarian Value,Unclassified,22123081.76,67346331.76
-2023-06-30,Hedge Fund - Value,Consumer Discretionary,2641171.0,2641171.0
-2023-06-30,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
-2023-06-30,Hedge Fund - Value,ETF - Commodity,-5238167.358061829,5238167.358061829
-2023-06-30,Hedge Fund - Value,Energy,-76039211.16063131,97263672.87165089
-2023-06-30,Hedge Fund - Value,Financials,-80208194.86598808,80208194.86598808
-2023-06-30,Hedge Fund - Value,Health Care,-40421808.68141878,41137114.68141878
-2023-06-30,Hedge Fund - Value,Materials,16821240.53760296,16821240.53760296
-2023-06-30,Hedge Fund - Value,Unclassified,-8730458.155510124,185667430.6159688
-2023-06-30,Hedge Fund - Value,Utilities,32630000.0,32630000.0
-2023-09-30,Asset Manager - Index,Communication Services,-618399969.1738265,7346241644.320965
-2023-09-30,Asset Manager - Index,Consumer Discretionary,5945773241.461089,8768872683.201971
-2023-09-30,Asset Manager - Index,Consumer Staples,419291364.80689484,1085862541.2796881
-2023-09-30,Asset Manager - Index,ETF - Broad Equity,1833692355.8750896,2203885183.531986
-2023-09-30,Asset Manager - Index,ETF - Commodity,374446.60189477925,374446.60189477925
-2023-09-30,Asset Manager - Index,ETF - Fixed Income,-62963782.06206492,830103569.3728719
-2023-09-30,Asset Manager - Index,ETF - International Equity,-25749191.933225475,94661556.25571458
-2023-09-30,Asset Manager - Index,ETF - Sector,869466.0055781243,885203.2789345257
-2023-09-30,Asset Manager - Index,Energy,-767317254.5254567,4025496419.3205075
-2023-09-30,Asset Manager - Index,Financials,1425271229.0866401,6680555658.5114565
-2023-09-30,Asset Manager - Index,Health Care,-3251133835.3441567,6964214410.449936
-2023-09-30,Asset Manager - Index,Industrials,330767633.28048927,915029136.3447049
-2023-09-30,Asset Manager - Index,Information Technology,1123956616.7533803,6206604987.269693
-2023-09-30,Asset Manager - Index,Materials,310893459.8075197,862589196.9159949
-2023-09-30,Asset Manager - Index,Real Estate,301790078.2511526,4087393447.328604
-2023-09-30,Asset Manager - Index,Unclassified,13683443455.89824,39211994903.27142
-2023-09-30,Asset Manager - Index,Utilities,73627521.85290134,301968032.57139015
-2023-09-30,Asset Manager - Index/Active,Communication Services,-2671659455.5291986,7464559186.787751
-2023-09-30,Asset Manager - Index/Active,Consumer Discretionary,1637486496.6993191,7536482393.640753
-2023-09-30,Asset Manager - Index/Active,Consumer Staples,-632916447.4211485,2893494762.615408
-2023-09-30,Asset Manager - Index/Active,ETF - Broad Equity,-4727289208.97854,10773847302.568241
-2023-09-30,Asset Manager - Index/Active,ETF - Commodity,420421357.7427844,1482064114.1442237
-2023-09-30,Asset Manager - Index/Active,ETF - Fixed Income,416947768.0588855,1508679639.0469978
-2023-09-30,Asset Manager - Index/Active,ETF - International Equity,-602826636.818524,665884776.2812313
-2023-09-30,Asset Manager - Index/Active,ETF - Sector,-309026197.1049884,453494026.078623
-2023-09-30,Asset Manager - Index/Active,ETF - Thematic,-16.0,16.0
-2023-09-30,Asset Manager - Index/Active,Energy,-874302032.1622986,5428008904.75457
-2023-09-30,Asset Manager - Index/Active,Financials,-365420785.1046591,9981904153.92266
-2023-09-30,Asset Manager - Index/Active,Health Care,-5372120740.028911,10697356664.973192
-2023-09-30,Asset Manager - Index/Active,Industrials,-484646679.4621892,1691201687.8252964
-2023-09-30,Asset Manager - Index/Active,Information Technology,-3725390317.9428678,7819160589.477156
-2023-09-30,Asset Manager - Index/Active,Materials,-184280031.08394504,994533827.5763006
-2023-09-30,Asset Manager - Index/Active,Real Estate,-73534718.93557267,3458343244.697709
-2023-09-30,Asset Manager - Index/Active,Unclassified,9806127395.92394,54696017107.729454
-2023-09-30,Asset Manager - Index/Active,Utilities,-48792436.61309311,638343052.6762463
-2023-09-30,Hedge Fund - Activist,Communication Services,283943168.8193727,283943168.8193727
-2023-09-30,Hedge Fund - Activist,Consumer Discretionary,62473266.79821418,229670986.12178582
-2023-09-30,Hedge Fund - Activist,Industrials,0.0,0.0
-2023-09-30,Hedge Fund - Activist,Real Estate,1245896090.0,1245896090.0
-2023-09-30,Hedge Fund - Activist,Unclassified,-1307722394.0,1307722394.0
-2023-09-30,Hedge Fund - Contrarian Value,Communication Services,-9062206.040081397,18711293.959918603
-2023-09-30,Hedge Fund - Contrarian Value,Consumer Discretionary,12241350.0,28386750.0
-2023-09-30,Hedge Fund - Contrarian Value,ETF - Broad Equity,-1579949187.0,1674679187.0
-2023-09-30,Hedge Fund - Contrarian Value,ETF - International Equity,-811500.0,811500.0
-2023-09-30,Hedge Fund - Contrarian Value,Energy,-6768502.32,6768502.32
-2023-09-30,Hedge Fund - Contrarian Value,Financials,-2248000.0,2248000.0
-2023-09-30,Hedge Fund - Contrarian Value,Health Care,-14629500.0,14629500.0
-2023-09-30,Hedge Fund - Contrarian Value,Unclassified,-38062865.2,53038134.8
-2023-09-30,Hedge Fund - Value,Consumer Discretionary,0.0,0.0
-2023-09-30,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
-2023-09-30,Hedge Fund - Value,ETF - Commodity,34922514.67279465,34922514.67279465
-2023-09-30,Hedge Fund - Value,Energy,-36218458.1059533,57536686.35579533
-2023-09-30,Hedge Fund - Value,Financials,-1420111.006604604,5859888.993395396
-2023-09-30,Hedge Fund - Value,Health Care,4056141.6610097457,6729957.896614825
-2023-09-30,Hedge Fund - Value,Materials,3429560.4961256445,3429560.4961256445
-2023-09-30,Hedge Fund - Value,Unclassified,-249508600.024738,389996461.6436441
-2023-09-30,Hedge Fund - Value,Utilities,4939361.0,4939361.0
-2023-12-31,Asset Manager - Active,Communication Services,373352110.3250028,4304191180.921112
-2023-12-31,Asset Manager - Active,Consumer Discretionary,2423409355.8754,6384510411.47166
-2023-12-31,Asset Manager - Active,Consumer Staples,1146654598.6713266,2832115427.9165783
-2023-12-31,Asset Manager - Active,ETF - Broad Equity,1751734331.7608984,4368372089.096525
+2023-12-31,Asset Manager - Active,Communication Services,239174303.52568185,4438633980.722809
+2023-12-31,Asset Manager - Active,Consumer Discretionary,2420767716.355806,6391703542.320959
+2023-12-31,Asset Manager - Active,Consumer Staples,1146713497.4344985,2837368601.379643
+2023-12-31,Asset Manager - Active,ETF - Broad Equity,1751794494.2021878,4368471943.4646225
 2023-12-31,Asset Manager - Active,ETF - Commodity,-16547531.286531545,38392099.751560025
 2023-12-31,Asset Manager - Active,ETF - Fixed Income,1206716851.3726904,4171516098.6929326
-2023-12-31,Asset Manager - Active,ETF - International Equity,395875430.55146134,465660684.3137937
-2023-12-31,Asset Manager - Active,ETF - Sector,4406614.406945744,8516146.456547452
+2023-12-31,Asset Manager - Active,ETF - International Equity,395884974.5125366,465681909.4905327
+2023-12-31,Asset Manager - Active,ETF - Sector,4406817.406945744,8516349.456547452
 2023-12-31,Asset Manager - Active,ETF - Thematic,252419.25502620725,308132.8126627736
-2023-12-31,Asset Manager - Active,Energy,-1152007504.1495194,5374328415.932462
-2023-12-31,Asset Manager - Active,Financials,4544987926.59684,8383879836.02215
-2023-12-31,Asset Manager - Active,Health Care,-3346209897.0634956,11638544284.908855
-2023-12-31,Asset Manager - Active,Industrials,-1593165971.1523416,3195366833.251577
-2023-12-31,Asset Manager - Active,Information Technology,1022096052.4325107,9034935955.741705
-2023-12-31,Asset Manager - Active,Materials,-61191386.76969737,1219967005.9660268
-2023-12-31,Asset Manager - Active,Real Estate,205235416.55851752,1428550219.4676657
-2023-12-31,Asset Manager - Active,Unclassified,-2637906377.506901,57040911715.33104
-2023-12-31,Asset Manager - Active,Utilities,672315985.0693468,1151293116.3658726
+2023-12-31,Asset Manager - Active,Energy,-716075361.0173755,5812243249.205883
+2023-12-31,Asset Manager - Active,Financials,4571550465.063959,8422762439.599196
+2023-12-31,Asset Manager - Active,Health Care,-3344990878.3042336,11718980252.278137
+2023-12-31,Asset Manager - Active,Industrials,-1592085224.7756867,3199577187.2999477
+2023-12-31,Asset Manager - Active,Information Technology,864071986.9729486,9200158854.268518
+2023-12-31,Asset Manager - Active,Materials,-60404554.129546165,1221350949.119687
+2023-12-31,Asset Manager - Active,Real Estate,205365775.2350591,1429326441.1137471
+2023-12-31,Asset Manager - Active,Unclassified,-3117851086.3475738,57760126001.51262
+2023-12-31,Asset Manager - Active,Utilities,672122809.8770053,1151750562.055874
 2023-12-31,Asset Manager - Growth,Communication Services,-326604858.22889584,1089557143.1888957
 2023-12-31,Asset Manager - Growth,Consumer Discretionary,-950624750.4842346,3126888748.8212137
 2023-12-31,Asset Manager - Growth,Consumer Staples,-2561918.751864518,18931859.2501404
@@ -459,20 +109,20 @@ period,manager_type,sector,net_flow,gross_flow
 2023-12-31,Foundation / Endowment,Materials,-1918000.0,1918000.0
 2023-12-31,Foundation / Endowment,Real Estate,-1808949.9999999998,1808949.9999999998
 2023-12-31,Foundation / Endowment,Unclassified,-13255258.0,33710524.0
-2023-12-31,Hedge Fund - Activist,Communication Services,-2216367.3904180853,2216367.3904180853
+2023-12-31,Hedge Fund - Activist,Communication Services,595264886.8741721,780534529.1258279
 2023-12-31,Hedge Fund - Activist,Consumer Discretionary,-1791525938.594623,1797155938.594623
-2023-12-31,Hedge Fund - Activist,Consumer Staples,1692250.0,1692250.0
-2023-12-31,Hedge Fund - Activist,ETF - Broad Equity,4898067958.0,4898067958.0
+2023-12-31,Hedge Fund - Activist,Consumer Staples,205115959.0,205115959.0
+2023-12-31,Hedge Fund - Activist,ETF - Broad Equity,5161357852.0,5161357852.0
 2023-12-31,Hedge Fund - Activist,ETF - Fixed Income,0.0,0.0
 2023-12-31,Hedge Fund - Activist,ETF - Sector,430697899.99999994,1160633900.0
 2023-12-31,Hedge Fund - Activist,Energy,-348170906.24,348170906.24
-2023-12-31,Hedge Fund - Activist,Financials,-7271250.0,7271250.0
-2023-12-31,Hedge Fund - Activist,Health Care,351186014.2199476,367622706.2199476
-2023-12-31,Hedge Fund - Activist,Industrials,-107994300.0,221055300.0
-2023-12-31,Hedge Fund - Activist,Information Technology,-235096807.70952252,235096807.70952252
+2023-12-31,Hedge Fund - Activist,Financials,-460195630.1836312,460195630.1836312
+2023-12-31,Hedge Fund - Activist,Health Care,370156126.17994857,386592818.17994857
+2023-12-31,Hedge Fund - Activist,Industrials,-107946694.01001757,221102905.98998243
+2023-12-31,Hedge Fund - Activist,Information Technology,-109411047.7095225,360782567.7095225
 2023-12-31,Hedge Fund - Activist,Materials,0.0,0.0
 2023-12-31,Hedge Fund - Activist,Real Estate,197594554.77830312,197594554.77830312
-2023-12-31,Hedge Fund - Activist,Unclassified,316453714.79905325,2088060424.1963394
+2023-12-31,Hedge Fund - Activist,Unclassified,65721040.86714097,5336864780.128252
 2023-12-31,Hedge Fund - Activist,Utilities,97894.0,97894.0
 2023-12-31,Hedge Fund - Contrarian Value,Communication Services,6624980.75,11688319.25
 2023-12-31,Hedge Fund - Contrarian Value,Consumer Discretionary,9331420.0,26524780.0
@@ -565,24 +215,24 @@ period,manager_type,sector,net_flow,gross_flow
 2023-12-31,Hedge Fund - Opportunistic,Industrials,1652500.0,155577500.0
 2023-12-31,Hedge Fund - Opportunistic,Information Technology,-231374900.0,559649600.0
 2023-12-31,Hedge Fund - Opportunistic,Unclassified,39636483.0,124110569.0
-2023-12-31,Hedge Fund - Quant,Communication Services,-5719253239.791112,10139795451.837315
-2023-12-31,Hedge Fund - Quant,Consumer Discretionary,-12347955500.204325,19592728231.18379
-2023-12-31,Hedge Fund - Quant,Consumer Staples,-2883220259.5870357,5906282287.137285
-2023-12-31,Hedge Fund - Quant,ETF - Broad Equity,6484850770.835937,8555240637.50134
-2023-12-31,Hedge Fund - Quant,ETF - Commodity,274274496.9577459,323238575.1210762
-2023-12-31,Hedge Fund - Quant,ETF - Fixed Income,-27313398.80032024,1108391626.209353
-2023-12-31,Hedge Fund - Quant,ETF - International Equity,35169036.55338481,47608102.55338481
-2023-12-31,Hedge Fund - Quant,ETF - Sector,-424880951.04845184,1312636178.7196567
-2023-12-31,Hedge Fund - Quant,ETF - Thematic,130193698.96655692,131393858.96655692
-2023-12-31,Hedge Fund - Quant,Energy,-3998147741.8285418,6583958736.620342
-2023-12-31,Hedge Fund - Quant,Financials,-8911681138.537529,14174222759.088451
-2023-12-31,Hedge Fund - Quant,Health Care,-7920191474.527359,14218765833.48063
-2023-12-31,Hedge Fund - Quant,Industrials,-3306500447.493915,4727506521.268775
-2023-12-31,Hedge Fund - Quant,Information Technology,-16590287932.28176,24015807445.652374
-2023-12-31,Hedge Fund - Quant,Materials,-1005349598.8774437,1996391961.5825918
-2023-12-31,Hedge Fund - Quant,Real Estate,-232823667.21162155,976501442.21303
-2023-12-31,Hedge Fund - Quant,Unclassified,-33609511667.14995,70935777042.2323
-2023-12-31,Hedge Fund - Quant,Utilities,-211289585.57453758,698149778.7556257
+2023-12-31,Hedge Fund - Quant,Communication Services,-5718696267.551059,10141905753.786415
+2023-12-31,Hedge Fund - Quant,Consumer Discretionary,-12347455171.358736,19596668241.53448
+2023-12-31,Hedge Fund - Quant,Consumer Staples,-2883688134.8665047,5907399442.26659
+2023-12-31,Hedge Fund - Quant,ETF - Broad Equity,6485903066.990825,8556532931.554525
+2023-12-31,Hedge Fund - Quant,ETF - Commodity,274316617.0625529,323286853.22588325
+2023-12-31,Hedge Fund - Quant,ETF - Fixed Income,-27056645.361940745,1108714384.4229116
+2023-12-31,Hedge Fund - Quant,ETF - International Equity,35199887.625695184,47665178.660177946
+2023-12-31,Hedge Fund - Quant,ETF - Sector,-424899837.4913008,1312725984.7735958
+2023-12-31,Hedge Fund - Quant,ETF - Thematic,130193651.50501846,131395309.50501846
+2023-12-31,Hedge Fund - Quant,Energy,-3997415774.551388,6585357963.853168
+2023-12-31,Hedge Fund - Quant,Financials,-8911893890.294638,14177055687.256512
+2023-12-31,Hedge Fund - Quant,Health Care,-7920257382.034508,14221220474.318459
+2023-12-31,Hedge Fund - Quant,Industrials,-3306561635.7426825,4728542121.056811
+2023-12-31,Hedge Fund - Quant,Information Technology,-16590549423.509455,24018318228.007755
+2023-12-31,Hedge Fund - Quant,Materials,-1005454847.949285,1996797450.4777339
+2023-12-31,Hedge Fund - Quant,Real Estate,-232903009.83305022,976727115.3401045
+2023-12-31,Hedge Fund - Quant,Unclassified,-33611025045.57056,70949377644.41016
+2023-12-31,Hedge Fund - Quant,Utilities,-211389407.04086024,698374942.70543
 2023-12-31,Hedge Fund - Value,Communication Services,-171487.35840095943,171487.35840095943
 2023-12-31,Hedge Fund - Value,Consumer Discretionary,-2101290.0,2101290.0
 2023-12-31,Hedge Fund - Value,Consumer Staples,-98077.0,98077.0
@@ -626,24 +276,38 @@ period,manager_type,sector,net_flow,gross_flow
 2023-12-31,Pension Fund,Real Estate,-3489720.2894531935,48610561.79592594
 2023-12-31,Pension Fund,Unclassified,-441635976.6178643,2566703111.238572
 2023-12-31,Pension Fund,Utilities,19580141.273747526,185264436.99390575
-2024-03-31,Asset Manager - Active,Communication Services,683887955.1881906,7615151491.025751
-2024-03-31,Asset Manager - Active,Consumer Discretionary,1636107856.3477674,8729742848.168568
-2024-03-31,Asset Manager - Active,Consumer Staples,1180227726.1987107,4594565960.27924
-2024-03-31,Asset Manager - Active,ETF - Broad Equity,1724988170.7326279,5324879149.493946
-2024-03-31,Asset Manager - Active,ETF - Commodity,-4964487.159646612,5311241.9779481385
-2024-03-31,Asset Manager - Active,ETF - Fixed Income,-970838350.5728406,1306228455.6079183
-2024-03-31,Asset Manager - Active,ETF - International Equity,17135250.296199586,366943404.89196175
-2024-03-31,Asset Manager - Active,ETF - Sector,-214574959.03116375,232039692.5326968
+2023-12-31,Sovereign Wealth Fund,Communication Services,2361032873.924422,3563895942.462331
+2023-12-31,Sovereign Wealth Fund,Consumer Discretionary,2281827645.4989076,2687160362.4320374
+2023-12-31,Sovereign Wealth Fund,Consumer Staples,949289368.6121154,992768277.0313103
+2023-12-31,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2023-12-31,Sovereign Wealth Fund,ETF - Sector,1131773.4488299163,1131773.4488299163
+2023-12-31,Sovereign Wealth Fund,Energy,462645602.2922778,1312467323.3613384
+2023-12-31,Sovereign Wealth Fund,Financials,2272979282.8560185,6406566064.693849
+2023-12-31,Sovereign Wealth Fund,Health Care,861064103.7021841,4178543935.126377
+2023-12-31,Sovereign Wealth Fund,Industrials,-293347870.2525166,1359065171.769385
+2023-12-31,Sovereign Wealth Fund,Information Technology,5523434815.334355,8014298378.327227
+2023-12-31,Sovereign Wealth Fund,Materials,586215973.6486862,1046436919.647574
+2023-12-31,Sovereign Wealth Fund,Real Estate,1417892926.31145,1804278517.3006651
+2023-12-31,Sovereign Wealth Fund,Unclassified,3891402362.091576,24054266457.47087
+2023-12-31,Sovereign Wealth Fund,Utilities,348063530.4748333,410083733.6302861
+2024-03-31,Asset Manager - Active,Communication Services,31479641734.187077,38421306864.479164
+2024-03-31,Asset Manager - Active,Consumer Discretionary,41694543216.152824,48795398004.01291
+2024-03-31,Asset Manager - Active,Consumer Staples,20731313509.240257,24151670114.024963
+2024-03-31,Asset Manager - Active,ETF - Broad Equity,3198899815.9922447,6798812563.232438
+2024-03-31,Asset Manager - Active,ETF - Commodity,59259940.840353385,69535669.97794813
+2024-03-31,Asset Manager - Active,ETF - Fixed Income,-737104322.193762,1539962681.1156635
+2024-03-31,Asset Manager - Active,ETF - International Equity,169787480.16213977,519596048.75790197
+2024-03-31,Asset Manager - Active,ETF - Sector,-211886632.03116375,234728425.5326968
 2024-03-31,Asset Manager - Active,ETF - Thematic,235726.24201915413,358990.0349648528
-2024-03-31,Asset Manager - Active,Energy,-2450811925.9577403,7599213809.739297
-2024-03-31,Asset Manager - Active,Financials,6200979361.311621,11137888673.230907
-2024-03-31,Asset Manager - Active,Health Care,657461769.6255494,17254296084.70696
-2024-03-31,Asset Manager - Active,Industrials,2028715498.3373935,3236824484.077186
-2024-03-31,Asset Manager - Active,Information Technology,-6083598810.904582,26492726519.2869
-2024-03-31,Asset Manager - Active,Materials,-623016560.6557349,1217992227.1627579
-2024-03-31,Asset Manager - Active,Real Estate,1106771085.230405,1730759448.956173
-2024-03-31,Asset Manager - Active,Unclassified,13983013974.325417,63465513918.2289
-2024-03-31,Asset Manager - Active,Utilities,-252430641.041027,1098650035.334682
+2024-03-31,Asset Manager - Active,Energy,21510123834.8687,31562535206.920116
+2024-03-31,Asset Manager - Active,Financials,70527308936.62074,75486653734.75314
+2024-03-31,Asset Manager - Active,Health Care,81475529503.52527,98083193752.9564
+2024-03-31,Asset Manager - Active,Industrials,20579881290.058895,21794562156.489075
+2024-03-31,Asset Manager - Active,Information Technology,74466773828.06262,107060093209.25237
+2024-03-31,Asset Manager - Active,Materials,2933664673.868769,4774997543.134911
+2024-03-31,Asset Manager - Active,Real Estate,8730097692.357763,9355338129.699587
+2024-03-31,Asset Manager - Active,Unclassified,201719764596.19128,251354860815.3732
+2024-03-31,Asset Manager - Active,Utilities,4018412881.929718,5370475397.109964
 2024-03-31,Asset Manager - Growth,Communication Services,-594854328.9942191,1387621407.0462868
 2024-03-31,Asset Manager - Growth,Consumer Discretionary,-665509717.9002508,2016895809.233647
 2024-03-31,Asset Manager - Growth,Consumer Staples,-225974556.24392882,268832361.8197964
@@ -738,20 +402,20 @@ period,manager_type,sector,net_flow,gross_flow
 2024-03-31,Foundation / Endowment,Industrials,0.0,0.0
 2024-03-31,Foundation / Endowment,Information Technology,-719966355.8475015,719966355.8475015
 2024-03-31,Foundation / Endowment,Unclassified,-1086562.0,1925938.0
-2024-03-31,Hedge Fund - Activist,Communication Services,1652569.0,9793431.0
+2024-03-31,Hedge Fund - Activist,Communication Services,23891196.914507262,141286659.0658686
 2024-03-31,Hedge Fund - Activist,Consumer Discretionary,-464456435.81484544,561003551.8148454
 2024-03-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2024-03-31,Hedge Fund - Activist,ETF - Broad Equity,-4000930653.0,4206497703.0
+2024-03-31,Hedge Fund - Activist,ETF - Broad Equity,-3934605377.0577435,4272822978.9422565
 2024-03-31,Hedge Fund - Activist,ETF - Fixed Income,39446500.0,476553500.0
 2024-03-31,Hedge Fund - Activist,ETF - Sector,-285496650.0,652665150.0
 2024-03-31,Hedge Fund - Activist,Energy,942256571.9198949,2890172371.919895
-2024-03-31,Hedge Fund - Activist,Financials,27976815.0,34176975.0
-2024-03-31,Hedge Fund - Activist,Health Care,30486072.891427472,59505927.13142747
+2024-03-31,Hedge Fund - Activist,Financials,-379301777.63946813,441455567.63946813
+2024-03-31,Hedge Fund - Activist,Health Care,-15781927.108572528,105773927.13142747
 2024-03-31,Hedge Fund - Activist,Industrials,-326980500.0,326980500.0
-2024-03-31,Hedge Fund - Activist,Information Technology,-486316495.5342247,781080493.7060624
+2024-03-31,Hedge Fund - Activist,Information Technology,-612002255.5342247,906766253.7060624
 2024-03-31,Hedge Fund - Activist,Materials,0.0,0.0
 2024-03-31,Hedge Fund - Activist,Real Estate,18074727.0,18074727.0
-2024-03-31,Hedge Fund - Activist,Unclassified,309876844.4336953,2484425301.7663045
+2024-03-31,Hedge Fund - Activist,Unclassified,-535529032.51044345,3989462041.985158
 2024-03-31,Hedge Fund - Activist,Utilities,0.0,0.0
 2024-03-31,Hedge Fund - Contrarian Value,Communication Services,-14251025.0,14251025.0
 2024-03-31,Hedge Fund - Contrarian Value,Consumer Discretionary,-4708775.0,23262275.0
@@ -844,29 +508,34 @@ period,manager_type,sector,net_flow,gross_flow
 2024-03-31,Hedge Fund - Opportunistic,Industrials,-298947850.0,415519350.0
 2024-03-31,Hedge Fund - Opportunistic,Information Technology,-186290830.0,910666330.0
 2024-03-31,Hedge Fund - Opportunistic,Unclassified,91903748.0,356038568.0
-2024-03-31,Hedge Fund - Quant,Communication Services,-37594.05724710226,3628575698.023327
-2024-03-31,Hedge Fund - Quant,Consumer Discretionary,-860119764.8017215,5320458511.044773
-2024-03-31,Hedge Fund - Quant,Consumer Staples,366176299.8773047,3520790257.55966
-2024-03-31,Hedge Fund - Quant,ETF - Broad Equity,-152010349.77506977,3307918495.777805
-2024-03-31,Hedge Fund - Quant,ETF - Commodity,-201287290.68901178,345289615.25369006
-2024-03-31,Hedge Fund - Quant,ETF - Fixed Income,-264837142.90961078,761435475.5676763
-2024-03-31,Hedge Fund - Quant,ETF - International Equity,26170326.034707773,96589552.43738411
-2024-03-31,Hedge Fund - Quant,ETF - Sector,-9290017.054130906,962839238.6912448
-2024-03-31,Hedge Fund - Quant,ETF - Thematic,-54817589.2,54817589.2
-2024-03-31,Hedge Fund - Quant,Energy,196454858.05224535,2758646237.2131624
-2024-03-31,Hedge Fund - Quant,Financials,816602920.6907331,6259798127.410924
-2024-03-31,Hedge Fund - Quant,Health Care,-1350067886.675512,7278048961.685725
-2024-03-31,Hedge Fund - Quant,Industrials,359015922.9043295,1893139952.3500452
-2024-03-31,Hedge Fund - Quant,Information Technology,-2762935734.90093,8184214905.528141
-2024-03-31,Hedge Fund - Quant,Materials,147060951.02217603,1124526951.8880148
-2024-03-31,Hedge Fund - Quant,Real Estate,62793771.06998664,560087678.0483536
-2024-03-31,Hedge Fund - Quant,Unclassified,1835224388.5460281,39010259865.78832
-2024-03-31,Hedge Fund - Quant,Utilities,-26457692.090211973,600674051.1112065
-2024-03-31,Hedge Fund - Value,Communication Services,-758235.6817590726,760706.5565259485
-2024-03-31,Hedge Fund - Value,Financials,0.0,0.0
-2024-03-31,Hedge Fund - Value,Health Care,-243.0,243.0
+2024-03-31,Hedge Fund - Quant,Communication Services,-1076411.7074338794,3630340520.0053306
+2024-03-31,Hedge Fund - Quant,Consumer Discretionary,-861111956.1242537,5322117246.624833
+2024-03-31,Hedge Fund - Quant,Consumer Staples,366287654.74845445,3521555058.638426
+2024-03-31,Hedge Fund - Quant,ETF - Broad Equity,-152117422.0126555,3308660252.653892
+2024-03-31,Hedge Fund - Quant,ETF - Commodity,-201287070.0566748,345316147.3233014
+2024-03-31,Hedge Fund - Quant,ETF - Fixed Income,-264907007.22738585,761618956.7339061
+2024-03-31,Hedge Fund - Quant,ETF - International Equity,26171241.553146206,96634993.17387652
+2024-03-31,Hedge Fund - Quant,ETF - Sector,-9230006.80883413,962939282.3067544
+2024-03-31,Hedge Fund - Quant,ETF - Thematic,-54815483.2,54821747.2
+2024-03-31,Hedge Fund - Quant,Energy,196409196.27910507,2760612801.1509266
+2024-03-31,Hedge Fund - Quant,Financials,816711787.776682,6262199174.717149
+2024-03-31,Hedge Fund - Quant,Health Care,-1351375128.0364287,7280180830.578256
+2024-03-31,Hedge Fund - Quant,Industrials,357664857.34643024,1894920134.0317576
+2024-03-31,Hedge Fund - Quant,Information Technology,-2764448487.065606,8187051504.447867
+2024-03-31,Hedge Fund - Quant,Materials,147100946.87723264,1124864298.769375
+2024-03-31,Hedge Fund - Quant,Real Estate,63004408.59425105,560356912.4931719
+2024-03-31,Hedge Fund - Quant,Unclassified,1835465915.2395926,39022863700.381615
+2024-03-31,Hedge Fund - Quant,Utilities,-26427558.066380575,600821811.4768591
+2024-03-31,Hedge Fund - Value,Communication Services,82183034.31824093,83701976.55652595
+2024-03-31,Hedge Fund - Value,ETF - Broad Equity,-264964.24558417016,939439.376178551
+2024-03-31,Hedge Fund - Value,ETF - Commodity,-24678965.922241565,33034957.061278995
+2024-03-31,Hedge Fund - Value,Energy,-68633513.52,68633513.52
+2024-03-31,Hedge Fund - Value,Financials,15264860.600144684,54934005.399855316
+2024-03-31,Hedge Fund - Value,Health Care,-44438893.03130427,46029936.80486129
+2024-03-31,Hedge Fund - Value,Materials,-21592324.43520792,21592324.43520792
 2024-03-31,Hedge Fund - Value,Real Estate,-82735.0,82735.0
-2024-03-31,Hedge Fund - Value,Unclassified,-12837.396653478743,588004.3607713311
+2024-03-31,Hedge Fund - Value,Unclassified,42037172.614535116,271224677.5916067
+2024-03-31,Hedge Fund - Value,Utilities,-11763934.121718181,11763934.121718181
 2024-03-31,Market Maker - Quant,Communication Services,-11119114852.24184,16516404591.965664
 2024-03-31,Market Maker - Quant,Consumer Discretionary,-18207684264.209938,25421947907.035526
 2024-03-31,Market Maker - Quant,Consumer Staples,1175186355.8462806,3976274506.414584
@@ -898,24 +567,38 @@ period,manager_type,sector,net_flow,gross_flow
 2024-03-31,Pension Fund,Real Estate,-4690731.930693399,198823332.9085933
 2024-03-31,Pension Fund,Unclassified,-418216629.19104195,2557379120.2541513
 2024-03-31,Pension Fund,Utilities,26354117.66333935,127139700.10959433
-2024-06-30,Asset Manager - Active,Communication Services,-1999475617.0058508,12043209329.43951
-2024-06-30,Asset Manager - Active,Consumer Discretionary,3535103275.217071,18638688260.20205
-2024-06-30,Asset Manager - Active,Consumer Staples,-3363850512.3694916,7048446000.382832
-2024-06-30,Asset Manager - Active,ETF - Broad Equity,608640821.3567389,6144321881.569501
-2024-06-30,Asset Manager - Active,ETF - Commodity,-4359275.258095957,29534921.108694278
-2024-06-30,Asset Manager - Active,ETF - Fixed Income,-181316058.18842208,1738854964.1627262
-2024-06-30,Asset Manager - Active,ETF - International Equity,-14825271.406963376,337746747.8031817
-2024-06-30,Asset Manager - Active,ETF - Sector,80183383.96916857,80318771.2175168
+2024-03-31,Sovereign Wealth Fund,Communication Services,-2626406119.3693705,6094826127.33441
+2024-03-31,Sovereign Wealth Fund,Consumer Discretionary,-1484408883.2676947,3015788541.613107
+2024-03-31,Sovereign Wealth Fund,Consumer Staples,3568765366.06937,4243598514.429003
+2024-03-31,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2024-03-31,Sovereign Wealth Fund,ETF - Sector,1704537.1749076892,1704537.1749076892
+2024-03-31,Sovereign Wealth Fund,Energy,680314045.7735381,779447252.0184917
+2024-03-31,Sovereign Wealth Fund,Financials,2116802580.5797737,5036506978.555064
+2024-03-31,Sovereign Wealth Fund,Health Care,3011568784.28544,4100873923.846814
+2024-03-31,Sovereign Wealth Fund,Industrials,1436074149.295982,1623545113.5758457
+2024-03-31,Sovereign Wealth Fund,Information Technology,-2289581353.0681915,6348546715.527319
+2024-03-31,Sovereign Wealth Fund,Materials,404928686.5842322,688196051.1010991
+2024-03-31,Sovereign Wealth Fund,Real Estate,472865417.565826,640534095.9996083
+2024-03-31,Sovereign Wealth Fund,Unclassified,4470561049.97485,21565316826.185635
+2024-03-31,Sovereign Wealth Fund,Utilities,437717777.3612067,460447713.35224605
+2024-06-30,Asset Manager - Active,Communication Services,-2002221686.2295022,12047571487.50582
+2024-06-30,Asset Manager - Active,Consumer Discretionary,3536221327.3118668,18649478090.380207
+2024-06-30,Asset Manager - Active,Consumer Staples,-3364385644.6082053,7051451610.158802
+2024-06-30,Asset Manager - Active,ETF - Broad Equity,608893817.2789055,6144740392.357028
+2024-06-30,Asset Manager - Active,ETF - Commodity,-4359584.258095957,29535230.108694278
+2024-06-30,Asset Manager - Active,ETF - Fixed Income,-181276669.89406934,1738898052.457079
+2024-06-30,Asset Manager - Active,ETF - International Equity,-14842383.406963376,337763859.8031817
+2024-06-30,Asset Manager - Active,ETF - Sector,80183119.04147466,80319036.14521073
 2024-06-30,Asset Manager - Active,ETF - Thematic,-20197.896487306916,222465.65273292895
-2024-06-30,Asset Manager - Active,Energy,540109055.93216,9482225297.605427
-2024-06-30,Asset Manager - Active,Financials,-1832413540.4427903,20603209251.83126
-2024-06-30,Asset Manager - Active,Health Care,-3556615393.4154987,18918553551.919518
-2024-06-30,Asset Manager - Active,Industrials,-1788633069.972725,5788284137.472227
-2024-06-30,Asset Manager - Active,Information Technology,152693261495.7823,182809821434.20148
-2024-06-30,Asset Manager - Active,Materials,-590722081.5967942,2181168090.752383
-2024-06-30,Asset Manager - Active,Real Estate,-443540964.23992115,3274109546.3396115
-2024-06-30,Asset Manager - Active,Unclassified,8740824552.374918,112706466679.12999
-2024-06-30,Asset Manager - Active,Utilities,-231103313.83717453,1423714518.6957784
+2024-06-30,Asset Manager - Active,Energy,539022344.3513099,9489706216.251936
+2024-06-30,Asset Manager - Active,Financials,-1834079609.2932658,20611060882.714935
+2024-06-30,Asset Manager - Active,Health Care,-3557349865.9019146,18927152282.525345
+2024-06-30,Asset Manager - Active,Industrials,-1786230390.3366976,5792286699.346366
+2024-06-30,Asset Manager - Active,Information Technology,152742035204.38895,182875828041.44583
+2024-06-30,Asset Manager - Active,Materials,-589683753.4314449,2183085020.509505
+2024-06-30,Asset Manager - Active,Real Estate,-443467995.0891201,3274680785.8009973
+2024-06-30,Asset Manager - Active,Unclassified,8741897261.054739,112750277892.7921
+2024-06-30,Asset Manager - Active,Utilities,-232086108.41234297,1424724966.7920358
 2024-06-30,Asset Manager - Growth,Communication Services,-1847583973.0842257,2038072754.0532796
 2024-06-30,Asset Manager - Growth,Consumer Discretionary,-918239228.3609838,1381752490.6347241
 2024-06-30,Asset Manager - Growth,Consumer Staples,10687605.451120753,11142359.058961373
@@ -1010,20 +693,20 @@ period,manager_type,sector,net_flow,gross_flow
 2024-06-30,Foundation / Endowment,Industrials,0.0,0.0
 2024-06-30,Foundation / Endowment,Information Technology,-719589499.9930782,719589499.9930782
 2024-06-30,Foundation / Endowment,Unclassified,-45713200.0,45713200.0
-2024-06-30,Hedge Fund - Activist,Communication Services,-278691611.07596755,526668426.3937528
+2024-06-30,Hedge Fund - Activist,Communication Services,-3204809706.227742,3594771221.5478587
 2024-06-30,Hedge Fund - Activist,Consumer Discretionary,1938135590.9923682,2070412885.8205414
-2024-06-30,Hedge Fund - Activist,Consumer Staples,-137782320.0,137782320.0
-2024-06-30,Hedge Fund - Activist,ETF - Broad Equity,1071019506.0,1442527556.0
+2024-06-30,Hedge Fund - Activist,Consumer Staples,-137662836.96,137901803.04
+2024-06-30,Hedge Fund - Activist,ETF - Broad Equity,939427110.1432291,1574119951.8567708
 2024-06-30,Hedge Fund - Activist,ETF - Fixed Income,-163380000.0,163380000.0
 2024-06-30,Hedge Fund - Activist,ETF - Sector,-695626250.0,695626250.0
 2024-06-30,Hedge Fund - Activist,Energy,-1142634519.0,1142634519.0
-2024-06-30,Hedge Fund - Activist,Financials,321287747.0699074,321287747.0699074
+2024-06-30,Hedge Fund - Activist,Financials,247872323.02367842,394703171.1161364
 2024-06-30,Hedge Fund - Activist,Health Care,-176567850.0,176567850.0
 2024-06-30,Hedge Fund - Activist,Industrials,-10226003.510607531,10226003.510607531
-2024-06-30,Hedge Fund - Activist,Information Technology,-1619077.2182353772,294124786.21823543
+2024-06-30,Hedge Fund - Activist,Information Technology,108419722.79269886,404163586.22916967
 2024-06-30,Hedge Fund - Activist,Materials,0.0,0.0
 2024-06-30,Hedge Fund - Activist,Real Estate,-41266500.0,41266500.0
-2024-06-30,Hedge Fund - Activist,Unclassified,1601342087.826439,3304297021.95982
+2024-06-30,Hedge Fund - Activist,Unclassified,926468079.4227599,5232023540.785343
 2024-06-30,Hedge Fund - Activist,Utilities,0.0,0.0
 2024-06-30,Hedge Fund - Contrarian Value,Consumer Discretionary,-7915050.0,12235050.0
 2024-06-30,Hedge Fund - Contrarian Value,ETF - Commodity,-7624612.0,7624612.0
@@ -1111,29 +794,34 @@ period,manager_type,sector,net_flow,gross_flow
 2024-06-30,Hedge Fund - Opportunistic,Industrials,8129300.000000002,13589600.000000002
 2024-06-30,Hedge Fund - Opportunistic,Information Technology,-273633240.7629842,361360830.7629842
 2024-06-30,Hedge Fund - Opportunistic,Unclassified,83548045.18237899,193377175.182379
-2024-06-30,Hedge Fund - Quant,Communication Services,4950644094.053583,9720216237.938759
-2024-06-30,Hedge Fund - Quant,Consumer Discretionary,13301507183.321472,17876440904.199635
-2024-06-30,Hedge Fund - Quant,Consumer Staples,1679984628.366253,5558929234.911769
-2024-06-30,Hedge Fund - Quant,ETF - Broad Equity,4668622051.683716,8050982035.952845
-2024-06-30,Hedge Fund - Quant,ETF - Commodity,149756443.19085604,442781371.9576035
-2024-06-30,Hedge Fund - Quant,ETF - Fixed Income,295721850.2054134,957187562.4212483
-2024-06-30,Hedge Fund - Quant,ETF - International Equity,41926781.95157462,91228174.39353652
-2024-06-30,Hedge Fund - Quant,ETF - Sector,25808196.61110338,1441078225.8015416
-2024-06-30,Hedge Fund - Quant,ETF - Thematic,-14873411.0,177236315.0
-2024-06-30,Hedge Fund - Quant,Energy,4439073546.820291,7516237848.739207
-2024-06-30,Hedge Fund - Quant,Financials,12728228781.573082,17239619450.93295
-2024-06-30,Hedge Fund - Quant,Health Care,7698207618.518422,13306560342.683949
-2024-06-30,Hedge Fund - Quant,Industrials,4104385436.3603907,5484273265.614424
-2024-06-30,Hedge Fund - Quant,Information Technology,26508517124.060284,31938197138.93283
-2024-06-30,Hedge Fund - Quant,Materials,1259118961.986501,2081992965.090637
-2024-06-30,Hedge Fund - Quant,Real Estate,518191104.4753796,1160992093.45675
-2024-06-30,Hedge Fund - Quant,Unclassified,44243557646.45136,77576350254.48003
-2024-06-30,Hedge Fund - Quant,Utilities,202577054.94959763,1083597967.419061
-2024-06-30,Hedge Fund - Value,Communication Services,-497707.26130362187,497707.26130362187
-2024-06-30,Hedge Fund - Value,Financials,0.0,0.0
-2024-06-30,Hedge Fund - Value,Health Care,156933.0,156933.0
+2024-06-30,Hedge Fund - Quant,Communication Services,4649590763.676001,10626689499.43228
+2024-06-30,Hedge Fund - Quant,Consumer Discretionary,13212410168.566725,20093841158.864727
+2024-06-30,Hedge Fund - Quant,Consumer Staples,1379874683.0965018,6339665688.454463
+2024-06-30,Hedge Fund - Quant,ETF - Broad Equity,4758549513.388808,8533038218.367218
+2024-06-30,Hedge Fund - Quant,ETF - Commodity,142829952.4720511,460382230.6764084
+2024-06-30,Hedge Fund - Quant,ETF - Fixed Income,387437267.5755821,1108661145.5510795
+2024-06-30,Hedge Fund - Quant,ETF - International Equity,40233375.83468236,114664080.94820657
+2024-06-30,Hedge Fund - Quant,ETF - Sector,-13574114.960279949,1556350785.372925
+2024-06-30,Hedge Fund - Quant,ETF - Thematic,-15444409.0,178949157.0
+2024-06-30,Hedge Fund - Quant,Energy,3955652999.0173397,8500918059.17636
+2024-06-30,Hedge Fund - Quant,Financials,12745602181.5496,18265019838.740627
+2024-06-30,Hedge Fund - Quant,Health Care,7898105239.284357,14548832521.403439
+2024-06-30,Hedge Fund - Quant,Industrials,3788254172.090427,6269443640.205874
+2024-06-30,Hedge Fund - Quant,Information Technology,28058993165.51983,35309718272.441315
+2024-06-30,Hedge Fund - Quant,Materials,1186662432.9923556,2379879909.146249
+2024-06-30,Hedge Fund - Quant,Real Estate,524626950.67993975,1293286193.3847253
+2024-06-30,Hedge Fund - Quant,Unclassified,45373204164.501335,87498529994.92665
+2024-06-30,Hedge Fund - Quant,Utilities,191358196.46427462,1181333117.520415
+2024-06-30,Hedge Fund - Value,Communication Services,32913479.420527227,33908893.94313447
+2024-06-30,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
+2024-06-30,Hedge Fund - Value,ETF - Commodity,-9533543.55121064,9533543.55121064
+2024-06-30,Hedge Fund - Value,Energy,-22292660.128485095,22292660.128485095
+2024-06-30,Hedge Fund - Value,Financials,-43248644.88754002,43248644.88754002
+2024-06-30,Hedge Fund - Value,Health Care,-38875948.92820536,39189814.92820536
 2024-06-30,Hedge Fund - Value,Information Technology,18805.0,18805.0
-2024-06-30,Hedge Fund - Value,Unclassified,467246.7517826338,891636.7588457916
+2024-06-30,Hedge Fund - Value,Materials,-10484000.20055439,10484000.20055439
+2024-06-30,Hedge Fund - Value,Unclassified,-2857898.392436873,318209086.05928737
+2024-06-30,Hedge Fund - Value,Utilities,-22316200.0,22316200.0
 2024-06-30,Market Maker - Quant,Communication Services,-13587421051.939514,20432262688.99377
 2024-06-30,Market Maker - Quant,Consumer Discretionary,-1545618131.3739343,32852009690.92271
 2024-06-30,Market Maker - Quant,Consumer Staples,-2737317633.5656137,4847586043.769528
@@ -1165,6 +853,20 @@ period,manager_type,sector,net_flow,gross_flow
 2024-06-30,Pension Fund,Real Estate,-80076259.18535033,143716405.7685699
 2024-06-30,Pension Fund,Unclassified,-2331006878.5062737,4708133063.347304
 2024-06-30,Pension Fund,Utilities,-350990684.4595241,354453492.7771398
+2024-06-30,Sovereign Wealth Fund,Communication Services,844538281.0778828,5486444089.046424
+2024-06-30,Sovereign Wealth Fund,Consumer Discretionary,2768429445.0455217,5277537288.640191
+2024-06-30,Sovereign Wealth Fund,Consumer Staples,1002235463.4153508,1378700437.767177
+2024-06-30,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2024-06-30,Sovereign Wealth Fund,ETF - Sector,5584600.195620737,5584600.195620737
+2024-06-30,Sovereign Wealth Fund,Energy,1395468987.3750274,1581482640.3590753
+2024-06-30,Sovereign Wealth Fund,Financials,2331549485.217613,4031477600.8857946
+2024-06-30,Sovereign Wealth Fund,Health Care,1313958413.4220371,3119030162.4654603
+2024-06-30,Sovereign Wealth Fund,Industrials,449962682.07343423,1131289612.1455953
+2024-06-30,Sovereign Wealth Fund,Information Technology,36436582366.67046,40110201354.72587
+2024-06-30,Sovereign Wealth Fund,Materials,-89245655.29977547,473107827.1088003
+2024-06-30,Sovereign Wealth Fund,Real Estate,-384546438.7763969,969963036.5334818
+2024-06-30,Sovereign Wealth Fund,Unclassified,5182687376.824538,21006411652.966003
+2024-06-30,Sovereign Wealth Fund,Utilities,289976871.1900147,301219919.9806731
 2024-09-30,Asset Manager - Active,Communication Services,563568753.5331111,5381784841.781116
 2024-09-30,Asset Manager - Active,Consumer Discretionary,-1590466056.4666264,18317626568.95282
 2024-09-30,Asset Manager - Active,Consumer Staples,-352429865.7291087,8693414158.532396
@@ -1212,6 +914,24 @@ period,manager_type,sector,net_flow,gross_flow
 2024-09-30,Asset Manager - Index,Real Estate,477058299.60370916,1602404194.8967555
 2024-09-30,Asset Manager - Index,Unclassified,42673293735.96508,102248684158.28162
 2024-09-30,Asset Manager - Index,Utilities,1390259254.626039,1423831378.5700595
+2024-09-30,Asset Manager - Index/Active,Communication Services,2521691105.3491,6047607952.944052
+2024-09-30,Asset Manager - Index/Active,Consumer Discretionary,5037141146.890195,10166810891.563578
+2024-09-30,Asset Manager - Index/Active,Consumer Staples,7557501550.474546,8142739658.758866
+2024-09-30,Asset Manager - Index/Active,ETF - Broad Equity,7212586053.744878,12245296255.809334
+2024-09-30,Asset Manager - Index/Active,ETF - Commodity,1825717978.2118485,1829753632.9750972
+2024-09-30,Asset Manager - Index/Active,ETF - Fixed Income,120869952.25444534,1670170695.885634
+2024-09-30,Asset Manager - Index/Active,ETF - International Equity,-1553835774.903015,1960458005.4443858
+2024-09-30,Asset Manager - Index/Active,ETF - Sector,36789077.70389924,332550446.80294126
+2024-09-30,Asset Manager - Index/Active,ETF - Thematic,-46200891.0,46203039.0
+2024-09-30,Asset Manager - Index/Active,Energy,399985158.2854703,6245175589.512372
+2024-09-30,Asset Manager - Index/Active,Financials,9603456390.619465,17131537003.08542
+2024-09-30,Asset Manager - Index/Active,Health Care,1156199712.9620519,8402662159.506244
+2024-09-30,Asset Manager - Index/Active,Industrials,1057508657.3504496,3374071340.508131
+2024-09-30,Asset Manager - Index/Active,Information Technology,79102908917.04005,82678446901.32462
+2024-09-30,Asset Manager - Index/Active,Materials,708639158.9826678,1032371956.6051013
+2024-09-30,Asset Manager - Index/Active,Real Estate,2502431745.340288,2658007394.7539196
+2024-09-30,Asset Manager - Index/Active,Unclassified,27984431353.45249,85833597193.5698
+2024-09-30,Asset Manager - Index/Active,Utilities,1549328811.5457432,1648548624.0339885
 2024-09-30,Asset Manager - Value,Communication Services,-999205115.6593342,1898454091.9404087
 2024-09-30,Asset Manager - Value,Consumer Discretionary,11022777.041735329,457891255.7573008
 2024-09-30,Asset Manager - Value,Consumer Staples,1487193461.4966042,2445294404.1023207
@@ -1261,19 +981,20 @@ period,manager_type,sector,net_flow,gross_flow
 2024-09-30,Foundation / Endowment,Industrials,0.0,0.0
 2024-09-30,Foundation / Endowment,Information Technology,-2552690204.9795136,2552690204.9795136
 2024-09-30,Foundation / Endowment,Unclassified,-250440000.0259049,995159999.8996403
-2024-09-30,Hedge Fund - Activist,Communication Services,14810541.630622346,14810541.630622346
+2024-09-30,Hedge Fund - Activist,Communication Services,147413826.99518424,1500098802.5140555
 2024-09-30,Hedge Fund - Activist,Consumer Discretionary,872080877.8753769,1621867542.5993178
-2024-09-30,Hedge Fund - Activist,ETF - Broad Equity,1198502300.0,7345530700.0
+2024-09-30,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2024-09-30,Hedge Fund - Activist,ETF - Broad Equity,1221469912.8100293,7368498312.810029
 2024-09-30,Hedge Fund - Activist,ETF - Fixed Income,-170462800.0,170462800.0
 2024-09-30,Hedge Fund - Activist,ETF - Sector,840771800.0,1000787800.0
 2024-09-30,Hedge Fund - Activist,Energy,-1340630300.0,1340630300.0
-2024-09-30,Hedge Fund - Activist,Financials,-316239000.0,316239000.0
-2024-09-30,Hedge Fund - Activist,Health Care,-99423840.0,100755840.0
+2024-09-30,Hedge Fund - Activist,Financials,-340564250.0,546006890.0
+2024-09-30,Hedge Fund - Activist,Health Care,-225070711.70215935,226402711.70215935
 2024-09-30,Hedge Fund - Activist,Industrials,-7526664.60272055,7526664.60272055
 2024-09-30,Hedge Fund - Activist,Information Technology,129555072.39331746,451288627.60668254
 2024-09-30,Hedge Fund - Activist,Materials,0.0,0.0
 2024-09-30,Hedge Fund - Activist,Real Estate,44381500.0,44381500.0
-2024-09-30,Hedge Fund - Activist,Unclassified,3789947055.152113,5405774824.628554
+2024-09-30,Hedge Fund - Activist,Unclassified,3701810569.4582143,7564683832.028789
 2024-09-30,Hedge Fund - Activist,Utilities,0.0,0.0
 2024-09-30,Hedge Fund - Contrarian Value,Consumer Discretionary,52699068.0,52699068.0
 2024-09-30,Hedge Fund - Contrarian Value,Health Care,1884743.2,1884743.2
@@ -1359,31 +1080,36 @@ period,manager_type,sector,net_flow,gross_flow
 2024-09-30,Hedge Fund - Opportunistic,Industrials,-127780750.0,127780750.0
 2024-09-30,Hedge Fund - Opportunistic,Information Technology,-338024599.308455,338024599.308455
 2024-09-30,Hedge Fund - Opportunistic,Unclassified,193667547.25,463584347.25
-2024-09-30,Hedge Fund - Quant,Communication Services,2030451178.958905,7086326094.321819
-2024-09-30,Hedge Fund - Quant,Consumer Discretionary,-1332663793.752285,12103240898.171055
-2024-09-30,Hedge Fund - Quant,Consumer Staples,-444273193.54333705,3365895579.861393
-2024-09-30,Hedge Fund - Quant,ETF - Broad Equity,497266803.8963264,7082831789.719005
-2024-09-30,Hedge Fund - Quant,ETF - Commodity,111190109.435553,321377280.995553
-2024-09-30,Hedge Fund - Quant,ETF - Fixed Income,1014980002.2846364,1490492362.7767856
-2024-09-30,Hedge Fund - Quant,ETF - International Equity,257833645.2231345,480469033.7120285
-2024-09-30,Hedge Fund - Quant,ETF - Sector,481867537.26032835,1009172818.466126
-2024-09-30,Hedge Fund - Quant,ETF - Thematic,-7429252.123668172,19538051.576480802
-2024-09-30,Hedge Fund - Quant,Energy,-182035819.8757685,4798360624.265549
-2024-09-30,Hedge Fund - Quant,Financials,-1189000342.7360768,13118666450.774977
-2024-09-30,Hedge Fund - Quant,Health Care,1714158571.3904305,10757865340.089863
-2024-09-30,Hedge Fund - Quant,Industrials,-402907818.25740796,4249597711.265514
-2024-09-30,Hedge Fund - Quant,Information Technology,2726203074.810711,16874508930.043737
-2024-09-30,Hedge Fund - Quant,Materials,506307048.2063859,2099863329.7384455
-2024-09-30,Hedge Fund - Quant,Real Estate,43192963.20248911,980704931.1239668
-2024-09-30,Hedge Fund - Quant,Unclassified,5523589669.407728,64402767012.08701
-2024-09-30,Hedge Fund - Quant,Utilities,443363189.27284324,795447288.4961989
-2024-09-30,Hedge Fund - Value,Communication Services,43221.3324836175,116727.3324836175
+2024-09-30,Hedge Fund - Quant,Communication Services,2426768402.9872036,8138329176.607409
+2024-09-30,Hedge Fund - Quant,Consumer Discretionary,-1964142210.357073,14092345275.026836
+2024-09-30,Hedge Fund - Quant,Consumer Staples,-482885114.8160281,4035259403.6681156
+2024-09-30,Hedge Fund - Quant,ETF - Broad Equity,912359661.590685,7823267917.468652
+2024-09-30,Hedge Fund - Quant,ETF - Commodity,135498151.3617227,350648617.1787508
+2024-09-30,Hedge Fund - Quant,ETF - Fixed Income,1031883502.8380709,1615707151.487012
+2024-09-30,Hedge Fund - Quant,ETF - International Equity,276206379.9311101,535463332.4240529
+2024-09-30,Hedge Fund - Quant,ETF - Sector,526134156.37978095,1103445417.5855787
+2024-09-30,Hedge Fund - Quant,ETF - Thematic,-4466098.123668172,26123889.576480802
+2024-09-30,Hedge Fund - Quant,Energy,-301252747.801881,5795078166.4094925
+2024-09-30,Hedge Fund - Quant,Financials,-506596465.30273926,15289017141.310364
+2024-09-30,Hedge Fund - Quant,Health Care,1421260202.7790377,13075368188.303116
+2024-09-30,Hedge Fund - Quant,Industrials,-331173965.14257824,4952219719.767656
+2024-09-30,Hedge Fund - Quant,Information Technology,3242915192.433545,20818534574.50591
+2024-09-30,Hedge Fund - Quant,Materials,762668584.6551661,2454524705.27336
+2024-09-30,Hedge Fund - Quant,Real Estate,108742694.94628523,1199215215.034528
+2024-09-30,Hedge Fund - Quant,Unclassified,7514510134.996411,76495425565.36093
+2024-09-30,Hedge Fund - Quant,Utilities,550345113.0154743,925770307.8489182
+2024-09-30,Hedge Fund - Value,Communication Services,22779541.34386371,22853047.34386371
 2024-09-30,Hedge Fund - Value,Consumer Discretionary,2040.9999999999998,2040.9999999999998
 2024-09-30,Hedge Fund - Value,Consumer Staples,194832.0,194832.0
-2024-09-30,Hedge Fund - Value,Financials,0.0,0.0
-2024-09-30,Hedge Fund - Value,Health Care,-156933.0,156933.0
+2024-09-30,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
+2024-09-30,Hedge Fund - Value,ETF - Commodity,1543431.0042600909,1543431.0042600909
+2024-09-30,Hedge Fund - Value,Energy,0.0,0.0
+2024-09-30,Hedge Fund - Value,Financials,43033923.629149854,50327162.57883155
+2024-09-30,Hedge Fund - Value,Health Care,-55337135.4,55337135.4
+2024-09-30,Hedge Fund - Value,Industrials,78775590.0,78775590.0
 2024-09-30,Hedge Fund - Value,Information Technology,-18805.0,18805.0
-2024-09-30,Hedge Fund - Value,Unclassified,-631063.7260557538,998962.1490350817
+2024-09-30,Hedge Fund - Value,Materials,-10327797.7,10327797.7
+2024-09-30,Hedge Fund - Value,Unclassified,-32558302.246401988,184501024.4110751
 2024-09-30,Market Maker - Quant,Communication Services,1503163883.82693,41587339804.302216
 2024-09-30,Market Maker - Quant,Consumer Discretionary,2787113342.86884,92182817290.05905
 2024-09-30,Market Maker - Quant,Consumer Staples,2460500874.0240297,8818124286.546349
@@ -1414,24 +1140,38 @@ period,manager_type,sector,net_flow,gross_flow
 2024-09-30,Pension Fund,Real Estate,-86805505.70433447,221759320.09813568
 2024-09-30,Pension Fund,Unclassified,544464326.1965228,3930467215.925284
 2024-09-30,Pension Fund,Utilities,-150199521.5067466,152322547.3925571
-2024-12-31,Asset Manager - Active,Communication Services,4507748496.85054,10292099370.315783
-2024-12-31,Asset Manager - Active,Consumer Discretionary,1578847904.1819205,12922084329.883427
-2024-12-31,Asset Manager - Active,Consumer Staples,-938630978.632196,3709896539.251792
-2024-12-31,Asset Manager - Active,ETF - Broad Equity,471347872.8060369,4063152137.5323505
-2024-12-31,Asset Manager - Active,ETF - Commodity,-27384643.115386914,30325720.756568458
-2024-12-31,Asset Manager - Active,ETF - Fixed Income,38410457.05456394,1440630615.6339326
-2024-12-31,Asset Manager - Active,ETF - International Equity,391826744.7235085,558685441.0214903
-2024-12-31,Asset Manager - Active,ETF - Sector,14740703.14013859,14802622.723635787
+2024-09-30,Sovereign Wealth Fund,Communication Services,1368388555.2687051,4575827939.450917
+2024-09-30,Sovereign Wealth Fund,Consumer Discretionary,451328177.0595277,2406525099.4354687
+2024-09-30,Sovereign Wealth Fund,Consumer Staples,-350031626.1554821,1372747573.5981758
+2024-09-30,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2024-09-30,Sovereign Wealth Fund,ETF - Sector,-1822745.350009116,1822745.350009116
+2024-09-30,Sovereign Wealth Fund,Energy,-127446219.70395271,720211596.0222785
+2024-09-30,Sovereign Wealth Fund,Financials,710401103.2749075,7324427848.88806
+2024-09-30,Sovereign Wealth Fund,Health Care,-106779413.2390802,2208945047.194176
+2024-09-30,Sovereign Wealth Fund,Industrials,-34329038.81915882,1168705666.5380425
+2024-09-30,Sovereign Wealth Fund,Information Technology,14447333681.890331,15764257900.671247
+2024-09-30,Sovereign Wealth Fund,Materials,-45358603.84878754,326500774.35403913
+2024-09-30,Sovereign Wealth Fund,Real Estate,-1781883509.843262,2036423330.4071846
+2024-09-30,Sovereign Wealth Fund,Unclassified,2633357319.3718686,26509429467.063854
+2024-09-30,Sovereign Wealth Fund,Utilities,-67079561.91668858,406154387.41619617
+2024-12-31,Asset Manager - Active,Communication Services,-26250046585.14946,41049894452.31578
+2024-12-31,Asset Manager - Active,Consumer Discretionary,-40038302557.81808,54539234791.88342
+2024-12-31,Asset Manager - Active,Consumer Staples,-17441189688.632195,20212455249.251793
+2024-12-31,Asset Manager - Active,ETF - Broad Equity,-1447074762.193963,5981574772.532351
+2024-12-31,Asset Manager - Active,ETF - Commodity,-83945257.11538692,86886334.75656846
+2024-12-31,Asset Manager - Active,ETF - Fixed Income,-82781790.94543606,1561822863.6339326
+2024-12-31,Asset Manager - Active,ETF - International Equity,184392762.7235085,766119423.0214903
+2024-12-31,Asset Manager - Active,ETF - Sector,-12745669.85986141,42288995.723635785
 2024-12-31,Asset Manager - Active,ETF - Thematic,73948.10552587427,159134.89230184603
-2024-12-31,Asset Manager - Active,Energy,-346516846.428251,7877928279.199232
-2024-12-31,Asset Manager - Active,Financials,1819685576.0646372,13618683201.449942
-2024-12-31,Asset Manager - Active,Health Care,-8927646454.819736,17021482258.173971
-2024-12-31,Asset Manager - Active,Industrials,-1601879837.4789894,7611400855.48114
-2024-12-31,Asset Manager - Active,Information Technology,-10096543724.62818,36081913921.5538
-2024-12-31,Asset Manager - Active,Materials,-688096813.3336091,2233521873.406043
-2024-12-31,Asset Manager - Active,Real Estate,-60868791.61597313,1385805566.280874
-2024-12-31,Asset Manager - Active,Unclassified,9255115176.526058,87328432375.14655
-2024-12-31,Asset Manager - Active,Utilities,-586881284.8631258,1531914023.5048203
+2024-12-31,Asset Manager - Active,Energy,-22397538670.42825,29928950103.199234
+2024-12-31,Asset Manager - Active,Financials,-59557003957.93536,74995372735.44994
+2024-12-31,Asset Manager - Active,Health Care,-89910071609.81973,98003907413.17397
+2024-12-31,Asset Manager - Active,Industrials,-20635216117.47899,26644737135.48114
+2024-12-31,Asset Manager - Active,Information Technology,-109232458875.62817,135217829072.5538
+2024-12-31,Asset Manager - Active,Materials,-4052959772.333609,5598384832.406043
+2024-12-31,Asset Manager - Active,Real Estate,-7496819751.6159725,8821756526.280874
+2024-12-31,Asset Manager - Active,Unclassified,-172914513055.4057,269684745957.0783
+2024-12-31,Asset Manager - Active,Utilities,-4679527549.863126,5624560288.50482
 2024-12-31,Asset Manager - Growth,Communication Services,-1584283771.0228915,1589553883.0429487
 2024-12-31,Asset Manager - Growth,Consumer Discretionary,-3206719560.672499,3922218118.2566032
 2024-12-31,Asset Manager - Growth,Consumer Staples,14508537.843864053,15111250.417227717
@@ -1461,6 +1201,24 @@ period,manager_type,sector,net_flow,gross_flow
 2024-12-31,Asset Manager - Index,Real Estate,1546490534.5108175,2164520903.089221
 2024-12-31,Asset Manager - Index,Unclassified,52346870029.08867,131420820195.30763
 2024-12-31,Asset Manager - Index,Utilities,-113875015.370001,1239618999.440584
+2024-12-31,Asset Manager - Index/Active,Communication Services,7802484671.350781,8713866716.96011
+2024-12-31,Asset Manager - Index/Active,Consumer Discretionary,12742310504.532871,15164650602.997456
+2024-12-31,Asset Manager - Index/Active,Consumer Staples,3515983385.0724835,6601177259.796246
+2024-12-31,Asset Manager - Index/Active,ETF - Broad Equity,-3871743304.721776,15022919559.329695
+2024-12-31,Asset Manager - Index/Active,ETF - Commodity,203317703.06029388,475578217.99206215
+2024-12-31,Asset Manager - Index/Active,ETF - Fixed Income,3377756061.1765027,5826557542.818171
+2024-12-31,Asset Manager - Index/Active,ETF - International Equity,511027812.8152931,1364123084.9805076
+2024-12-31,Asset Manager - Index/Active,ETF - Sector,-218259845.49227333,611996379.4012458
+2024-12-31,Asset Manager - Index/Active,ETF - Thematic,9724.0,11872.0
+2024-12-31,Asset Manager - Index/Active,Energy,1188818531.5287173,8315250229.346095
+2024-12-31,Asset Manager - Index/Active,Financials,6340304510.499289,28186634778.79956
+2024-12-31,Asset Manager - Index/Active,Health Care,4873234949.246957,11168500877.724281
+2024-12-31,Asset Manager - Index/Active,Industrials,5646756747.230585,7799663966.149674
+2024-12-31,Asset Manager - Index/Active,Information Technology,34571492974.07377,59123969795.11857
+2024-12-31,Asset Manager - Index/Active,Materials,40948715.02799207,1332990438.967144
+2024-12-31,Asset Manager - Index/Active,Real Estate,1850674548.1413667,3189351864.684168
+2024-12-31,Asset Manager - Index/Active,Unclassified,44014747705.751144,111403690214.64612
+2024-12-31,Asset Manager - Index/Active,Utilities,781564672.5803453,1838157179.611341
 2024-12-31,Asset Manager - Value,Communication Services,-540795058.0064273,3504262228.503091
 2024-12-31,Asset Manager - Value,Consumer Discretionary,22024471.631078765,1572365092.4933982
 2024-12-31,Asset Manager - Value,Consumer Staples,58288779.69282329,847701148.6606988
@@ -1510,18 +1268,19 @@ period,manager_type,sector,net_flow,gross_flow
 2024-12-31,Foundation / Endowment,Industrials,0.0,0.0
 2024-12-31,Foundation / Endowment,Information Technology,-210750000.00878513,210750000.00878513
 2024-12-31,Foundation / Endowment,Unclassified,-292813.0,292813.0
-2024-12-31,Hedge Fund - Activist,Communication Services,-1923039270.0,1923039270.0
-2024-12-31,Hedge Fund - Activist,Consumer Discretionary,-6503451328.0,6503451328.0
-2024-12-31,Hedge Fund - Activist,ETF - Broad Equity,521631624.0,1672359824.0
+2024-12-31,Hedge Fund - Activist,Communication Services,-1991637493.9659038,2332463542.075162
+2024-12-31,Hedge Fund - Activist,Consumer Discretionary,-6385660837.0,6621241819.0
+2024-12-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2024-12-31,Hedge Fund - Activist,ETF - Broad Equity,492503448.00463116,1701487999.9953687
 2024-12-31,Hedge Fund - Activist,ETF - Sector,-1263031586.0,2157952094.0
 2024-12-31,Hedge Fund - Activist,Energy,-537477860.0230882,537477860.0230882
 2024-12-31,Hedge Fund - Activist,Financials,48863420.26544467,48863420.26544467
 2024-12-31,Hedge Fund - Activist,Health Care,467636804.0,1032043484.0
 2024-12-31,Hedge Fund - Activist,Industrials,-1272634267.0,1272634267.0
-2024-12-31,Hedge Fund - Activist,Information Technology,-225334208.53062594,656158608.5306259
+2024-12-31,Hedge Fund - Activist,Information Technology,-564946622.5411396,995771022.5411396
 2024-12-31,Hedge Fund - Activist,Materials,0.0,0.0
 2024-12-31,Hedge Fund - Activist,Real Estate,-1504096815.9999998,1504096815.9999998
-2024-12-31,Hedge Fund - Activist,Unclassified,-2357501354.711705,4337948588.81695
+2024-12-31,Hedge Fund - Activist,Unclassified,-2436834037.1699605,5730786162.383376
 2024-12-31,Hedge Fund - Activist,Utilities,0.0,0.0
 2024-12-31,Hedge Fund - Contrarian Value,Consumer Discretionary,-41822918.0,56371418.0
 2024-12-31,Hedge Fund - Contrarian Value,Consumer Staples,7498000.0,7498000.0
@@ -1608,30 +1367,35 @@ period,manager_type,sector,net_flow,gross_flow
 2024-12-31,Hedge Fund - Opportunistic,Industrials,5428800.0,5428800.0
 2024-12-31,Hedge Fund - Opportunistic,Information Technology,-107108341.89345628,277189410.4265437
 2024-12-31,Hedge Fund - Opportunistic,Unclassified,202583659.86717606,594216398.427176
-2024-12-31,Hedge Fund - Quant,Communication Services,-2921557459.235198,8075649077.587357
-2024-12-31,Hedge Fund - Quant,Consumer Discretionary,1823307315.8998363,11675838370.594948
-2024-12-31,Hedge Fund - Quant,Consumer Staples,233912751.26549566,3389367933.269366
-2024-12-31,Hedge Fund - Quant,ETF - Broad Equity,5537672346.94757,12834629107.820633
-2024-12-31,Hedge Fund - Quant,ETF - Commodity,-229214479.1597846,365356248.815665
-2024-12-31,Hedge Fund - Quant,ETF - Fixed Income,-243968441.6294252,1195624521.6151912
-2024-12-31,Hedge Fund - Quant,ETF - International Equity,15575578.101239696,410431090.7061816
-2024-12-31,Hedge Fund - Quant,ETF - Sector,319866020.870492,1088938974.1242306
-2024-12-31,Hedge Fund - Quant,ETF - Thematic,-57395778.6180774,122824702.11990342
-2024-12-31,Hedge Fund - Quant,Energy,1832930294.2213688,5027487742.61286
-2024-12-31,Hedge Fund - Quant,Financials,190965055.7141216,13463210597.188856
-2024-12-31,Hedge Fund - Quant,Health Care,4341020908.748008,13238218008.72816
-2024-12-31,Hedge Fund - Quant,Industrials,1324713516.7293835,5991602573.529858
-2024-12-31,Hedge Fund - Quant,Information Technology,298562060.00582916,20604125704.38361
-2024-12-31,Hedge Fund - Quant,Materials,157438679.56726447,1808431267.8768919
-2024-12-31,Hedge Fund - Quant,Real Estate,62463567.391260326,965288064.2899183
-2024-12-31,Hedge Fund - Quant,Unclassified,5392466187.62839,72093039333.89783
-2024-12-31,Hedge Fund - Quant,Utilities,1088633407.9977539,1768830641.724768
-2024-12-31,Hedge Fund - Value,Communication Services,93061.58029660839,108144.41970339161
+2024-12-31,Hedge Fund - Quant,Communication Services,-3181432769.1599326,9344037771.1602
+2024-12-31,Hedge Fund - Quant,Consumer Discretionary,2229738555.4633703,13592830942.832642
+2024-12-31,Hedge Fund - Quant,Consumer Staples,226586970.9224412,4070314679.549822
+2024-12-31,Hedge Fund - Quant,ETF - Broad Equity,5839416857.239986,13934073593.001402
+2024-12-31,Hedge Fund - Quant,ETF - Commodity,-218916365.1597846,409895154.815665
+2024-12-31,Hedge Fund - Quant,ETF - Fixed Income,-133467528.23602691,1437125832.9783654
+2024-12-31,Hedge Fund - Quant,ETF - International Equity,54988923.21790634,479335930.4895149
+2024-12-31,Hedge Fund - Quant,ETF - Sector,294896033.610492,1163765763.3842306
+2024-12-31,Hedge Fund - Quant,ETF - Thematic,-57439966.6180774,127913336.11990342
+2024-12-31,Hedge Fund - Quant,Energy,1752925175.9771996,6004977154.744593
+2024-12-31,Hedge Fund - Quant,Financials,-255090985.1461465,15202538202.31654
+2024-12-31,Hedge Fund - Quant,Health Care,4557531438.959799,15292243409.705463
+2024-12-31,Hedge Fund - Quant,Industrials,1376436147.6915815,6358468797.222568
+2024-12-31,Hedge Fund - Quant,Information Technology,-2034897883.719847,24705820855.727432
+2024-12-31,Hedge Fund - Quant,Materials,270605308.31105113,2265934205.7166405
+2024-12-31,Hedge Fund - Quant,Real Estate,85591035.8669648,1099512865.8773143
+2024-12-31,Hedge Fund - Quant,Unclassified,6242495997.808269,84116764153.78331
+2024-12-31,Hedge Fund - Quant,Utilities,1234643050.3100014,2097829519.209723
+2024-12-31,Hedge Fund - Value,Communication Services,11260814.894173332,11275897.733580116
 2024-12-31,Hedge Fund - Value,Consumer Discretionary,187288.79518833788,187288.79518833788
 2024-12-31,Hedge Fund - Value,Consumer Staples,-18424.276979813665,18424.276979813665
-2024-12-31,Hedge Fund - Value,Financials,-62971.52484775774,62971.52484775774
-2024-12-31,Hedge Fund - Value,Health Care,87784.0,87784.0
-2024-12-31,Hedge Fund - Value,Unclassified,122620.68551905685,545176.4635894946
+2024-12-31,Hedge Fund - Value,ETF - Broad Equity,-31468749.0,50637469.0
+2024-12-31,Hedge Fund - Value,ETF - Commodity,-3153557.222361977,3153557.222361977
+2024-12-31,Hedge Fund - Value,Energy,-26254908.141176116,26254908.141176116
+2024-12-31,Hedge Fund - Value,Financials,-7489802.299600563,7489802.299600563
+2024-12-31,Hedge Fund - Value,Health Care,-37226579.8252387,58205460.1747613
+2024-12-31,Hedge Fund - Value,Industrials,35551500.72263432,35551500.72263432
+2024-12-31,Hedge Fund - Value,Materials,0.0,0.0
+2024-12-31,Hedge Fund - Value,Unclassified,-162835612.81316644,394184691.7105808
 2024-12-31,Market Maker - Quant,Communication Services,4530687680.321865,14041454542.917704
 2024-12-31,Market Maker - Quant,Consumer Discretionary,10412469351.760061,30844529005.698902
 2024-12-31,Market Maker - Quant,Consumer Staples,4182393574.7205,7669324083.662252
@@ -1663,24 +1427,38 @@ period,manager_type,sector,net_flow,gross_flow
 2024-12-31,Pension Fund,Real Estate,81056270.61222865,122455739.1451865
 2024-12-31,Pension Fund,Unclassified,-253063533.13188115,3285831993.703315
 2024-12-31,Pension Fund,Utilities,170463219.9543761,191182501.87620494
-2025-03-31,Asset Manager - Active,Communication Services,-1800455843.0927353,14972779551.880072
-2025-03-31,Asset Manager - Active,Consumer Discretionary,5667289068.075134,11372464130.427399
-2025-03-31,Asset Manager - Active,Consumer Staples,1448438131.8847725,4762601620.886828
-2025-03-31,Asset Manager - Active,ETF - Broad Equity,-557550302.4615867,3745649307.5010867
-2025-03-31,Asset Manager - Active,ETF - Commodity,212645288.00236508,213504619.7494192
-2025-03-31,Asset Manager - Active,ETF - Fixed Income,-798418210.192598,1704190900.7414794
-2025-03-31,Asset Manager - Active,ETF - International Equity,-94647253.12834772,282137130.5590263
-2025-03-31,Asset Manager - Active,ETF - Sector,3095809.344299419,6256415.54384198
+2024-12-31,Sovereign Wealth Fund,Communication Services,7107831238.983323,8508826469.767328
+2024-12-31,Sovereign Wealth Fund,Consumer Discretionary,3817315195.111362,5196884030.093943
+2024-12-31,Sovereign Wealth Fund,Consumer Staples,854550481.6883962,1067001975.1792902
+2024-12-31,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2024-12-31,Sovereign Wealth Fund,ETF - Sector,-7964145.0,85379753.0
+2024-12-31,Sovereign Wealth Fund,Energy,385542258.63115114,873744860.7841793
+2024-12-31,Sovereign Wealth Fund,Financials,-2296669213.4187927,8131760966.22024
+2024-12-31,Sovereign Wealth Fund,Health Care,2804469360.199667,3284055859.0004644
+2024-12-31,Sovereign Wealth Fund,Industrials,888379398.9005445,1196031727.0908213
+2024-12-31,Sovereign Wealth Fund,Information Technology,14213592652.959867,17509484069.181755
+2024-12-31,Sovereign Wealth Fund,Materials,-33135503.684390485,365935421.93664235
+2024-12-31,Sovereign Wealth Fund,Real Estate,45598007.53076835,380037097.3847374
+2024-12-31,Sovereign Wealth Fund,Unclassified,6982699026.496538,26634683842.812008
+2024-12-31,Sovereign Wealth Fund,Utilities,233573604.17876738,405564710.20493305
+2025-03-31,Asset Manager - Active,Communication Services,28121565871.907265,44894801266.88007
+2025-03-31,Asset Manager - Active,Consumer Discretionary,44024310220.075134,49729485282.4274
+2025-03-31,Asset Manager - Active,Consumer Staples,18997782484.884773,22311945973.88683
+2025-03-31,Asset Manager - Active,ETF - Broad Equity,1932887922.538413,6236087532.501087
+2025-03-31,Asset Manager - Active,ETF - Commodity,256217543.00236508,257076874.7494192
+2025-03-31,Asset Manager - Active,ETF - Fixed Income,-689175019.192598,1813434091.7414794
+2025-03-31,Asset Manager - Active,ETF - International Equity,148525513.8716523,525309897.55902636
+2025-03-31,Asset Manager - Active,ETF - Sector,74564889.34429944,77725495.54384199
 2025-03-31,Asset Manager - Active,ETF - Thematic,81127.9329728818,119411.12704846896
-2025-03-31,Asset Manager - Active,Energy,343559326.45177734,5547719968.346164
-2025-03-31,Asset Manager - Active,Financials,2870906132.8681445,16667080971.175396
-2025-03-31,Asset Manager - Active,Health Care,-5357091034.561312,17873491328.079323
-2025-03-31,Asset Manager - Active,Industrials,1386698664.6684022,6185158385.552335
-2025-03-31,Asset Manager - Active,Information Technology,-8086488965.749921,18183279263.16483
-2025-03-31,Asset Manager - Active,Materials,527827358.6055745,2196509603.34284
-2025-03-31,Asset Manager - Active,Real Estate,849967571.8598064,1054078670.9736097
-2025-03-31,Asset Manager - Active,Unclassified,2112220830.3660836,74826006531.9127
-2025-03-31,Asset Manager - Active,Utilities,12823202.148104412,1170088579.5960538
+2025-03-31,Asset Manager - Active,Energy,22787239706.45178,27991400348.346165
+2025-03-31,Asset Manager - Active,Financials,66685144021.86814,80481318860.1754
+2025-03-31,Asset Manager - Active,Health Care,65627563466.43869,88858145829.07932
+2025-03-31,Asset Manager - Active,Industrials,15966964483.668402,20765424204.552334
+2025-03-31,Asset Manager - Active,Information Technology,74667200803.25008,100936969032.16483
+2025-03-31,Asset Manager - Active,Materials,3898079734.6055746,5566761979.34284
+2025-03-31,Asset Manager - Active,Real Estate,6632519481.859806,6836630580.97361
+2025-03-31,Asset Manager - Active,Unclassified,165841619288.87277,238558252673.79105
+2025-03-31,Asset Manager - Active,Utilities,3513159416.1481047,4670424793.596054
 2025-03-31,Asset Manager - Growth,Communication Services,-1774578625.4108913,1774578625.4108913
 2025-03-31,Asset Manager - Growth,Consumer Discretionary,-2817765503.17988,3299700713.1541276
 2025-03-31,Asset Manager - Growth,Consumer Staples,-9253587.21202429,18354696.87331649
@@ -1710,6 +1488,24 @@ period,manager_type,sector,net_flow,gross_flow
 2025-03-31,Asset Manager - Index,Real Estate,1391568612.4226608,1586289926.475601
 2025-03-31,Asset Manager - Index,Unclassified,14793300517.628525,70030747899.20045
 2025-03-31,Asset Manager - Index,Utilities,1181008264.8927567,1291417898.1169112
+2025-03-31,Asset Manager - Index/Active,Communication Services,5744261343.532076,9561468130.493492
+2025-03-31,Asset Manager - Index/Active,Consumer Discretionary,4766962895.760816,9553201539.059052
+2025-03-31,Asset Manager - Index/Active,Consumer Staples,366901139.2339481,3942437606.202001
+2025-03-31,Asset Manager - Index/Active,ETF - Broad Equity,13517004247.859774,23827937488.782635
+2025-03-31,Asset Manager - Index/Active,ETF - Commodity,535833129.83865064,543100626.0158192
+2025-03-31,Asset Manager - Index/Active,ETF - Fixed Income,2217375465.6183996,3302667366.859393
+2025-03-31,Asset Manager - Index/Active,ETF - International Equity,2182610725.1190457,2836803068.0720716
+2025-03-31,Asset Manager - Index/Active,ETF - Sector,-376435636.05335325,552564035.7202326
+2025-03-31,Asset Manager - Index/Active,ETF - Thematic,272840.0,272840.0
+2025-03-31,Asset Manager - Index/Active,Energy,-2418465269.5282803,5948578336.0840845
+2025-03-31,Asset Manager - Index/Active,Financials,7703314411.298359,15571950449.074
+2025-03-31,Asset Manager - Index/Active,Health Care,3756017032.6272564,9255047556.983135
+2025-03-31,Asset Manager - Index/Active,Industrials,1311342745.7522116,3937274773.2565794
+2025-03-31,Asset Manager - Index/Active,Information Technology,15396138827.580402,21510422128.037407
+2025-03-31,Asset Manager - Index/Active,Materials,-471644942.8816688,2310091947.4628778
+2025-03-31,Asset Manager - Index/Active,Real Estate,-65694330.74602489,1313095378.441062
+2025-03-31,Asset Manager - Index/Active,Unclassified,2827605741.555472,63175608929.35346
+2025-03-31,Asset Manager - Index/Active,Utilities,610039808.4980295,778626650.373374
 2025-03-31,Asset Manager - Value,Communication Services,-648090237.2280135,2339685566.768209
 2025-03-31,Asset Manager - Value,Consumer Discretionary,242442909.38539153,1952600858.939416
 2025-03-31,Asset Manager - Value,Consumer Staples,490127752.38372856,1840934795.5661426
@@ -1758,18 +1554,19 @@ period,manager_type,sector,net_flow,gross_flow
 2025-03-31,Foundation / Endowment,Industrials,0.0,0.0
 2025-03-31,Foundation / Endowment,Information Technology,0.0,0.0
 2025-03-31,Foundation / Endowment,Unclassified,0.0,0.0
-2025-03-31,Hedge Fund - Activist,Communication Services,1674292589.9999998,1674292589.9999998
-2025-03-31,Hedge Fund - Activist,Consumer Discretionary,3297188620.0,3297188620.0
-2025-03-31,Hedge Fund - Activist,ETF - Broad Equity,-3342973931.521921,5612223931.521921
+2025-03-31,Hedge Fund - Activist,Communication Services,2110728205.0474486,2316575776.907833
+2025-03-31,Hedge Fund - Activist,Consumer Discretionary,3302173432.0,3302173432.0
+2025-03-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2025-03-31,Hedge Fund - Activist,ETF - Broad Equity,-3280831296.354078,5674366566.689766
 2025-03-31,Hedge Fund - Activist,ETF - Sector,338263270.0,2195004190.0
 2025-03-31,Hedge Fund - Activist,Energy,1297922646.6557577,2465594646.5442424
-2025-03-31,Hedge Fund - Activist,Financials,9006985.78,9006985.78
+2025-03-31,Hedge Fund - Activist,Financials,373193474.78,373193474.78
 2025-03-31,Hedge Fund - Activist,Health Care,-195514617.72,195514617.72
 2025-03-31,Hedge Fund - Activist,Industrials,3246836267.0,3246836267.0
 2025-03-31,Hedge Fund - Activist,Information Technology,-5683829.438675284,473896167.9378967
 2025-03-31,Hedge Fund - Activist,Materials,46044789.0,46044789.0
 2025-03-31,Hedge Fund - Activist,Real Estate,1518863401.0,1518863401.0
-2025-03-31,Hedge Fund - Activist,Unclassified,2263261537.4854136,5221673660.052608
+2025-03-31,Hedge Fund - Activist,Unclassified,1997992589.7692091,6065315444.46158
 2025-03-31,Hedge Fund - Activist,Utilities,0.0,0.0
 2025-03-31,Hedge Fund - Contrarian Value,Consumer Discretionary,36170249.99999999,96957750.0
 2025-03-31,Hedge Fund - Contrarian Value,Consumer Staples,6600000.0,6600000.0
@@ -1859,30 +1656,35 @@ period,manager_type,sector,net_flow,gross_flow
 2025-03-31,Hedge Fund - Opportunistic,Industrials,123862000.0,123862000.0
 2025-03-31,Hedge Fund - Opportunistic,Information Technology,-372253708.38,977750508.38
 2025-03-31,Hedge Fund - Opportunistic,Unclassified,-306006588.7069044,504342760.0530956
-2025-03-31,Hedge Fund - Quant,Communication Services,215194337.5046404,7137352636.827784
-2025-03-31,Hedge Fund - Quant,Consumer Discretionary,-887989789.0743024,12509427121.098793
-2025-03-31,Hedge Fund - Quant,Consumer Staples,546973461.8391432,5060249966.868493
-2025-03-31,Hedge Fund - Quant,ETF - Broad Equity,-1042416523.7918565,6809496444.003721
-2025-03-31,Hedge Fund - Quant,ETF - Commodity,28037166.973465066,535797788.3340327
-2025-03-31,Hedge Fund - Quant,ETF - Fixed Income,96689680.95599209,858433655.534158
-2025-03-31,Hedge Fund - Quant,ETF - International Equity,-52003478.11974343,234617669.87560523
-2025-03-31,Hedge Fund - Quant,ETF - Sector,684925617.281675,1897264661.6595418
-2025-03-31,Hedge Fund - Quant,ETF - Thematic,-1056331.5414260735,62349413.87388997
-2025-03-31,Hedge Fund - Quant,Energy,-199202835.46456695,6719637365.8079605
-2025-03-31,Hedge Fund - Quant,Financials,-911969778.2647775,16646393564.152733
-2025-03-31,Hedge Fund - Quant,Health Care,-665857130.4990761,14731243463.770243
-2025-03-31,Hedge Fund - Quant,Industrials,-1366567979.9300225,5498940053.613656
-2025-03-31,Hedge Fund - Quant,Information Technology,352766977.33883107,20257770707.544003
-2025-03-31,Hedge Fund - Quant,Materials,130429226.77841635,2023754180.1052697
-2025-03-31,Hedge Fund - Quant,Real Estate,854411777.3065585,1688177463.6507976
-2025-03-31,Hedge Fund - Quant,Unclassified,10463250474.545914,80020218432.44194
-2025-03-31,Hedge Fund - Quant,Utilities,-100380636.72723073,1844670802.3311267
-2025-03-31,Hedge Fund - Value,Communication Services,1258.939529968411,202464.93952996843
+2025-03-31,Hedge Fund - Quant,Communication Services,476395771.6228206,9045056711.59916
+2025-03-31,Hedge Fund - Quant,Consumer Discretionary,-1605476691.1568544,14430656503.478737
+2025-03-31,Hedge Fund - Quant,Consumer Staples,647671498.5037308,6057095709.004687
+2025-03-31,Hedge Fund - Quant,ETF - Broad Equity,-785821511.6186699,8264938822.1852455
+2025-03-31,Hedge Fund - Quant,ETF - Commodity,64991978.97346507,594634146.3340328
+2025-03-31,Hedge Fund - Quant,ETF - Fixed Income,209363694.6036522,1201415602.547172
+2025-03-31,Hedge Fund - Quant,ETF - International Equity,-40481042.11974343,361432147.8756052
+2025-03-31,Hedge Fund - Quant,ETF - Sector,655992584.3051847,1974441018.6830516
+2025-03-31,Hedge Fund - Quant,ETF - Thematic,1438850.4585739265,74635413.87388997
+2025-03-31,Hedge Fund - Quant,Energy,546911250.6895719,7785481172.056209
+2025-03-31,Hedge Fund - Quant,Financials,-215770740.99599162,19066841782.758377
+2025-03-31,Hedge Fund - Quant,Health Care,-1211096429.855571,16498883931.012877
+2025-03-31,Hedge Fund - Quant,Industrials,-1290150196.5830276,6088815660.696503
+2025-03-31,Hedge Fund - Quant,Information Technology,-510210122.30976653,24048370070.327065
+2025-03-31,Hedge Fund - Quant,Materials,-7198754.28911432,2504006243.8112597
+2025-03-31,Hedge Fund - Quant,Real Estate,850123779.1359544,1887159311.753188
+2025-03-31,Hedge Fund - Quant,Unclassified,10413544694.002783,93142305691.88739
+2025-03-31,Hedge Fund - Quant,Utilities,-407382227.3558039,2182212717.6399155
+2025-03-31,Hedge Fund - Value,Communication Services,-26399384.859017856,43565508.6717136
 2025-03-31,Hedge Fund - Value,Consumer Discretionary,65631.0790873785,65631.0790873785
 2025-03-31,Hedge Fund - Value,Consumer Staples,3875.6079845083514,3875.6079845083514
-2025-03-31,Hedge Fund - Value,Financials,-178543.759007073,178543.759007073
-2025-03-31,Hedge Fund - Value,Health Care,19216.0,194784.0
-2025-03-31,Hedge Fund - Value,Unclassified,234017.9062992994,820476.1676557253
+2025-03-31,Hedge Fund - Value,ETF - Broad Equity,-11328903.0,11328903.0
+2025-03-31,Hedge Fund - Value,ETF - Commodity,-6114993.157761872,9653612.939315269
+2025-03-31,Hedge Fund - Value,Energy,54778708.91,352339312.91
+2025-03-31,Hedge Fund - Value,Financials,13218454.676241683,17518862.193527542
+2025-03-31,Hedge Fund - Value,Health Care,1314946.8485023994,1962294.1514976006
+2025-03-31,Hedge Fund - Value,Industrials,-26502450.346556816,26502450.346556816
+2025-03-31,Hedge Fund - Value,Materials,0.0,0.0
+2025-03-31,Hedge Fund - Value,Unclassified,99637112.7507903,171962548.9950442
 2025-03-31,Market Maker - Quant,Communication Services,-1399167761.7813838,14750536097.40131
 2025-03-31,Market Maker - Quant,Consumer Discretionary,-5056031315.151132,26180642177.33554
 2025-03-31,Market Maker - Quant,Consumer Staples,-513416703.84106034,7184108273.3540745
@@ -1914,6 +1716,20 @@ period,manager_type,sector,net_flow,gross_flow
 2025-03-31,Pension Fund,Real Estate,-212922804.77713946,221711152.46931273
 2025-03-31,Pension Fund,Unclassified,-770264274.030576,3316266523.1913314
 2025-03-31,Pension Fund,Utilities,-17264026.795865458,52966836.04498681
+2025-03-31,Sovereign Wealth Fund,Communication Services,-2652926445.016888,5603121218.570767
+2025-03-31,Sovereign Wealth Fund,Consumer Discretionary,-853905405.7414978,2630099075.7977934
+2025-03-31,Sovereign Wealth Fund,Consumer Staples,-1061433979.5657634,1998378079.6989608
+2025-03-31,Sovereign Wealth Fund,ETF - Broad Equity,0.0,0.0
+2025-03-31,Sovereign Wealth Fund,ETF - Sector,0.0,0.0
+2025-03-31,Sovereign Wealth Fund,Energy,-686662860.8791409,1188012605.4722016
+2025-03-31,Sovereign Wealth Fund,Financials,2037470896.578953,5315578603.207673
+2025-03-31,Sovereign Wealth Fund,Health Care,97836193.07622798,2438379268.407256
+2025-03-31,Sovereign Wealth Fund,Industrials,-437533739.7995236,1204683976.0219996
+2025-03-31,Sovereign Wealth Fund,Information Technology,-5749917107.612668,8387842769.44146
+2025-03-31,Sovereign Wealth Fund,Materials,195710996.62291953,568334106.569171
+2025-03-31,Sovereign Wealth Fund,Real Estate,-879395657.0623968,1595403420.498726
+2025-03-31,Sovereign Wealth Fund,Unclassified,-3139406832.973056,21791770580.31468
+2025-03-31,Sovereign Wealth Fund,Utilities,89414881.10118102,154425541.35678867
 2025-06-30,Asset Manager - Active,Communication Services,1495456220.3333294,13244213406.943672
 2025-06-30,Asset Manager - Active,Consumer Discretionary,-1069042299.0368524,19686762628.602974
 2025-06-30,Asset Manager - Active,Consumer Staples,620764771.4925689,8497298103.617351
@@ -1961,6 +1777,24 @@ period,manager_type,sector,net_flow,gross_flow
 2025-06-30,Asset Manager - Index,Real Estate,1242958705.5946312,1715264456.8898814
 2025-06-30,Asset Manager - Index,Unclassified,33914966379.903206,86541427415.80711
 2025-06-30,Asset Manager - Index,Utilities,1254226174.635527,1698972209.813668
+2025-06-30,Asset Manager - Index/Active,Communication Services,1166392880.4213402,8457334469.44248
+2025-06-30,Asset Manager - Index/Active,Consumer Discretionary,8787082437.52551,14778573267.167728
+2025-06-30,Asset Manager - Index/Active,Consumer Staples,1008160451.4356465,5643605058.382804
+2025-06-30,Asset Manager - Index/Active,ETF - Broad Equity,5785412263.875794,16068180782.282373
+2025-06-30,Asset Manager - Index/Active,ETF - Commodity,-551174099.0985333,644568004.3567063
+2025-06-30,Asset Manager - Index/Active,ETF - Fixed Income,-878874781.8894137,2422642773.0031624
+2025-06-30,Asset Manager - Index/Active,ETF - International Equity,-1327137068.2651021,2810961572.821819
+2025-06-30,Asset Manager - Index/Active,ETF - Sector,67301596.33074096,212275173.18394852
+2025-06-30,Asset Manager - Index/Active,ETF - Thematic,572670.0,572670.0
+2025-06-30,Asset Manager - Index/Active,Energy,1398401157.6071346,6290967912.961003
+2025-06-30,Asset Manager - Index/Active,Financials,-3888944445.6963916,26357525876.301575
+2025-06-30,Asset Manager - Index/Active,Health Care,1904305940.3029048,13325821833.982288
+2025-06-30,Asset Manager - Index/Active,Industrials,-1242766970.9706554,4098913453.5883126
+2025-06-30,Asset Manager - Index/Active,Information Technology,1766664387.2140408,15814649447.117859
+2025-06-30,Asset Manager - Index/Active,Materials,-1178417788.747704,1795171195.5776958
+2025-06-30,Asset Manager - Index/Active,Real Estate,1503073733.2143042,2825812483.853134
+2025-06-30,Asset Manager - Index/Active,Unclassified,2747398109.6027575,88379088435.26823
+2025-06-30,Asset Manager - Index/Active,Utilities,1293456237.101896,1885552577.5081353
 2025-06-30,Asset Manager - Value,Communication Services,-247649495.722723,2830854351.6598587
 2025-06-30,Asset Manager - Value,Consumer Discretionary,836908524.9714086,3140612218.7535334
 2025-06-30,Asset Manager - Value,Consumer Staples,-903009691.1575166,979936268.5906892
@@ -2009,19 +1843,19 @@ period,manager_type,sector,net_flow,gross_flow
 2025-06-30,Foundation / Endowment,Industrials,0.0,0.0
 2025-06-30,Foundation / Endowment,Information Technology,-1127150956.4112475,1127150956.4112475
 2025-06-30,Foundation / Endowment,Unclassified,0.0,0.0
-2025-06-30,Hedge Fund - Activist,Communication Services,-39787359.06899148,365812858.9310085
-2025-06-30,Hedge Fund - Activist,Consumer Discretionary,1174598690.8516378,1396434028.5978045
-2025-06-30,Hedge Fund - Activist,Consumer Staples,528159999.99999994,528159999.99999994
-2025-06-30,Hedge Fund - Activist,ETF - Broad Equity,-1712837762.4185274,2068679237.5814726
+2025-06-30,Hedge Fund - Activist,Communication Services,-920104518.0263362,1278615097.8796601
+2025-06-30,Hedge Fund - Activist,Consumer Discretionary,1900647956.8516378,2122483294.5978045
+2025-06-30,Hedge Fund - Activist,Consumer Staples,545839715.6119384,545839715.6119384
+2025-06-30,Hedge Fund - Activist,ETF - Broad Equity,-1729705067.4158669,2085546542.5788121
 2025-06-30,Hedge Fund - Activist,ETF - Sector,-1787350312.0,1787350312.0
 2025-06-30,Hedge Fund - Activist,Energy,-3930545579.159365,4031727172.840635
-2025-06-30,Hedge Fund - Activist,Financials,-42882187.59648653,46175982.40351347
+2025-06-30,Hedge Fund - Activist,Financials,-102007475.62379687,105301270.4308238
 2025-06-30,Hedge Fund - Activist,Health Care,-240168503.3004502,279493006.8660302
 2025-06-30,Hedge Fund - Activist,Industrials,-1052066677.0,1052066677.0
 2025-06-30,Hedge Fund - Activist,Information Technology,-365185593.8182349,584738129.3817651
 2025-06-30,Hedge Fund - Activist,Materials,-2608615961.0,2608615961.0
 2025-06-30,Hedge Fund - Activist,Real Estate,-122302500.0,122302500.0
-2025-06-30,Hedge Fund - Activist,Unclassified,-3675611639.361058,5200880784.1154585
+2025-06-30,Hedge Fund - Activist,Unclassified,-3540120582.646524,6843961606.021594
 2025-06-30,Hedge Fund - Activist,Utilities,0.0,0.0
 2025-06-30,Hedge Fund - Contrarian Value,Communication Services,73809000.0,73809000.0
 2025-06-30,Hedge Fund - Contrarian Value,Consumer Discretionary,109180390.0,242308390.0
@@ -2113,31 +1947,35 @@ period,manager_type,sector,net_flow,gross_flow
 2025-06-30,Hedge Fund - Opportunistic,Industrials,70485700.0,154455700.0
 2025-06-30,Hedge Fund - Opportunistic,Information Technology,207017700.0,1056315700.0
 2025-06-30,Hedge Fund - Opportunistic,Unclassified,-1106095.1099999845,371489304.89
-2025-06-30,Hedge Fund - Quant,Communication Services,2151477563.538209,9281917352.900839
-2025-06-30,Hedge Fund - Quant,Consumer Discretionary,1526648381.9297986,12774163728.004929
-2025-06-30,Hedge Fund - Quant,Consumer Staples,1014375019.7160087,5636586949.459172
-2025-06-30,Hedge Fund - Quant,ETF - Broad Equity,521672556.8189621,8247583215.762037
-2025-06-30,Hedge Fund - Quant,ETF - Commodity,-79636456.148051,509719473.6628728
-2025-06-30,Hedge Fund - Quant,ETF - Fixed Income,-434880671.47029173,1275572026.4571924
-2025-06-30,Hedge Fund - Quant,ETF - International Equity,243151886.56736776,557763773.4407487
-2025-06-30,Hedge Fund - Quant,ETF - Sector,-278386185.94598335,1920285156.691161
-2025-06-30,Hedge Fund - Quant,ETF - Thematic,3957508.173657612,58097932.15985889
-2025-06-30,Hedge Fund - Quant,Energy,257227195.880397,6483991978.335165
-2025-06-30,Hedge Fund - Quant,Financials,2809607562.900504,17045168484.38643
-2025-06-30,Hedge Fund - Quant,Health Care,3147353043.8282757,13891526657.216038
-2025-06-30,Hedge Fund - Quant,Industrials,1236556154.7950258,5515572451.889921
-2025-06-30,Hedge Fund - Quant,Information Technology,4876859572.86756,21940819918.79523
-2025-06-30,Hedge Fund - Quant,Materials,-213348444.4305784,2923988713.8479714
-2025-06-30,Hedge Fund - Quant,Real Estate,163869885.74236825,1428270395.399096
-2025-06-30,Hedge Fund - Quant,Unclassified,15981802216.608622,102761140256.86966
-2025-06-30,Hedge Fund - Quant,Utilities,336945175.7508984,1252984858.5288608
-2025-06-30,Hedge Fund - Value,Communication Services,155197.2260620903,155197.2260620903
+2025-06-30,Hedge Fund - Quant,Communication Services,2231044890.743914,11843263011.403801
+2025-06-30,Hedge Fund - Quant,Consumer Discretionary,1577473339.5596411,14808658790.33843
+2025-06-30,Hedge Fund - Quant,Consumer Staples,902264952.7892101,6637521840.165911
+2025-06-30,Hedge Fund - Quant,ETF - Broad Equity,-573551876.1510298,10641443325.397596
+2025-06-30,Hedge Fund - Quant,ETF - Commodity,-130517062.148051,604121443.6628728
+2025-06-30,Hedge Fund - Quant,ETF - Fixed Income,-568052040.9702917,1860505287.9571924
+2025-06-30,Hedge Fund - Quant,ETF - International Equity,217025643.2254924,699557652.782624
+2025-06-30,Hedge Fund - Quant,ETF - Sector,-189649095.67042083,2033193918.7745128
+2025-06-30,Hedge Fund - Quant,ETF - Thematic,2022696.1736576122,71757548.15985888
+2025-06-30,Hedge Fund - Quant,Energy,350202577.87351996,7593144666.784465
+2025-06-30,Hedge Fund - Quant,Financials,2328565464.250275,19706442960.6182
+2025-06-30,Hedge Fund - Quant,Health Care,4057815932.183367,16134977409.378927
+2025-06-30,Hedge Fund - Quant,Industrials,1416957073.353861,6200559495.815899
+2025-06-30,Hedge Fund - Quant,Information Technology,5001454014.204898,26604621167.87344
+2025-06-30,Hedge Fund - Quant,Materials,-100291088.08962733,3263761540.481128
+2025-06-30,Hedge Fund - Quant,Real Estate,199546994.4938374,1639788974.3907518
+2025-06-30,Hedge Fund - Quant,Unclassified,18337817447.67407,119581051313.33183
+2025-06-30,Hedge Fund - Quant,Utilities,318804513.749498,1302942284.3840728
+2025-06-30,Hedge Fund - Value,Communication Services,-11414290.958181374,55541925.47574073
 2025-06-30,Hedge Fund - Value,Consumer Discretionary,10805.251283966018,10805.251283966018
 2025-06-30,Hedge Fund - Value,Consumer Staples,64281.50165212031,64281.50165212031
-2025-06-30,Hedge Fund - Value,Financials,0.0,0.0
-2025-06-30,Hedge Fund - Value,Health Care,143914.98376623378,143914.98376623378
+2025-06-30,Hedge Fund - Value,ETF - Commodity,-2449436.126513837,4098312.2570031723
+2025-06-30,Hedge Fund - Value,Energy,-3696220.0098346663,3696220.0098346663
+2025-06-30,Hedge Fund - Value,Financials,-2204570.004604911,2204570.004604911
+2025-06-30,Hedge Fund - Value,Health Care,104428478.60467109,104428478.60467109
+2025-06-30,Hedge Fund - Value,Industrials,-2642932.784457759,2642932.784457759
 2025-06-30,Hedge Fund - Value,Information Technology,24099.999999999996,24099.999999999996
-2025-06-30,Hedge Fund - Value,Unclassified,49901.97684308699,693340.0271758453
+2025-06-30,Hedge Fund - Value,Materials,77091969.88874722,77091969.88874722
+2025-06-30,Hedge Fund - Value,Unclassified,127117675.09297706,402389540.5310387
 2025-06-30,Market Maker - Quant,Communication Services,7389690153.108135,14858585991.598774
 2025-06-30,Market Maker - Quant,Consumer Discretionary,6170551010.056092,26674002417.502617
 2025-06-30,Market Maker - Quant,Consumer Staples,-1251222963.901069,7650812882.117354
@@ -2169,24 +2007,38 @@ period,manager_type,sector,net_flow,gross_flow
 2025-06-30,Pension Fund,Real Estate,-116707468.71208298,171692071.5572055
 2025-06-30,Pension Fund,Unclassified,-2372492766.5531096,5446537882.211273
 2025-06-30,Pension Fund,Utilities,-221243969.73252288,235230818.1979863
-2025-09-30,Asset Manager - Active,Communication Services,-1377649043.1059008,18368811693.682278
-2025-09-30,Asset Manager - Active,Consumer Discretionary,-1907582260.034198,24484994498.900356
-2025-09-30,Asset Manager - Active,Consumer Staples,-2761643451.080577,10646259690.483448
-2025-09-30,Asset Manager - Active,ETF - Broad Equity,3263550914.1985106,5412370690.878345
+2025-06-30,Sovereign Wealth Fund,Communication Services,-551982561.5044531,5439367367.300057
+2025-06-30,Sovereign Wealth Fund,Consumer Discretionary,1225480662.0783405,5541750778.327878
+2025-06-30,Sovereign Wealth Fund,Consumer Staples,574467374.7644483,1242612162.5910456
+2025-06-30,Sovereign Wealth Fund,ETF - Broad Equity,5199067.284843629,5199067.284843629
+2025-06-30,Sovereign Wealth Fund,ETF - Sector,0.0,0.0
+2025-06-30,Sovereign Wealth Fund,Energy,800826536.9126997,2153014907.7979546
+2025-06-30,Sovereign Wealth Fund,Financials,1768657950.1205335,7299261308.492144
+2025-06-30,Sovereign Wealth Fund,Health Care,850208296.3516334,3728308122.70427
+2025-06-30,Sovereign Wealth Fund,Industrials,586615831.8685036,1251513819.8780587
+2025-06-30,Sovereign Wealth Fund,Information Technology,6841020616.252517,10341060389.117785
+2025-06-30,Sovereign Wealth Fund,Materials,-326184680.8366415,487555768.8816954
+2025-06-30,Sovereign Wealth Fund,Real Estate,181918853.4410537,1010317147.0495291
+2025-06-30,Sovereign Wealth Fund,Unclassified,4861561698.891739,24554864163.134155
+2025-06-30,Sovereign Wealth Fund,Utilities,-833192051.8675054,1497161893.9457533
+2025-09-30,Asset Manager - Active,Communication Services,-1376650686.809338,18377219602.257446
+2025-09-30,Asset Manager - Active,Consumer Discretionary,-1910053986.8817165,24493709947.273834
+2025-09-30,Asset Manager - Active,Consumer Staples,-2761564622.1912723,10647951809.158705
+2025-09-30,Asset Manager - Active,ETF - Broad Equity,3264529446.4257784,5413500474.224962
 2025-09-30,Asset Manager - Active,ETF - Commodity,-279466424.08126044,286841069.8969067
-2025-09-30,Asset Manager - Active,ETF - Fixed Income,-256058379.4198199,2145426867.414405
-2025-09-30,Asset Manager - Active,ETF - International Equity,102690993.91694504,613662770.8805767
-2025-09-30,Asset Manager - Active,ETF - Sector,-1018314438.2220308,1173918220.481561
+2025-09-30,Asset Manager - Active,ETF - Fixed Income,-256058290.51375747,2145426956.3204675
+2025-09-30,Asset Manager - Active,ETF - International Equity,102699331.91694504,613671108.8805767
+2025-09-30,Asset Manager - Active,ETF - Sector,-1018313132.5642992,1173919526.1392925
 2025-09-30,Asset Manager - Active,ETF - Thematic,-1170664.0450680505,1245620.1687302154
-2025-09-30,Asset Manager - Active,Energy,1116953344.5581284,10003168169.356146
-2025-09-30,Asset Manager - Active,Financials,-7884199984.7183,36297353791.96355
-2025-09-30,Asset Manager - Active,Health Care,-7442018403.459938,27391662407.623135
-2025-09-30,Asset Manager - Active,Industrials,-1907726320.5519443,13879101851.3062
-2025-09-30,Asset Manager - Active,Information Technology,1973604624.116772,42391405748.4005
-2025-09-30,Asset Manager - Active,Materials,432102876.7230286,3804692976.369797
-2025-09-30,Asset Manager - Active,Real Estate,-170935203.47439006,4128377534.4502673
-2025-09-30,Asset Manager - Active,Unclassified,9761766257.142923,153190997329.65463
-2025-09-30,Asset Manager - Active,Utilities,-449478055.6162698,736473344.0108814
+2025-09-30,Asset Manager - Active,Energy,1116048781.7009408,10009572444.914938
+2025-09-30,Asset Manager - Active,Financials,-7885413763.906662,36306404591.37406
+2025-09-30,Asset Manager - Active,Health Care,-7444438345.202806,27403503324.980713
+2025-09-30,Asset Manager - Active,Industrials,-1906594036.1349921,13884272856.34099
+2025-09-30,Asset Manager - Active,Information Technology,1978435254.7235935,42417401336.66145
+2025-09-30,Asset Manager - Active,Materials,431683544.4493031,3807257878.73821
+2025-09-30,Asset Manager - Active,Real Estate,-171390760.9764116,4129363048.339438
+2025-09-30,Asset Manager - Active,Unclassified,9752822494.758524,153252583058.78302
+2025-09-30,Asset Manager - Active,Utilities,-448062648.72515607,738031353.457772
 2025-09-30,Asset Manager - Growth,Communication Services,-1618665813.936767,1622922467.6055584
 2025-09-30,Asset Manager - Growth,Consumer Discretionary,-1760356882.6077175,1893190804.6077175
 2025-09-30,Asset Manager - Growth,Consumer Staples,-28291944.71176292,43384134.65027075
@@ -2217,6 +2069,24 @@ period,manager_type,sector,net_flow,gross_flow
 2025-09-30,Asset Manager - Index,Real Estate,1909588511.599123,2658867246.629177
 2025-09-30,Asset Manager - Index,Unclassified,23603594628.28636,110218879930.13611
 2025-09-30,Asset Manager - Index,Utilities,462752719.6558927,640018974.5453959
+2025-09-30,Asset Manager - Index/Active,Communication Services,3306522833.8261724,8236774592.572551
+2025-09-30,Asset Manager - Index/Active,Consumer Discretionary,4324934792.327701,9318639331.912672
+2025-09-30,Asset Manager - Index/Active,Consumer Staples,1135872597.83323,3632759991.6181674
+2025-09-30,Asset Manager - Index/Active,ETF - Broad Equity,8662356000.621407,13481212778.680578
+2025-09-30,Asset Manager - Index/Active,ETF - Commodity,628883680.6833488,659302737.6472414
+2025-09-30,Asset Manager - Index/Active,ETF - Fixed Income,1186302096.9118066,2623445303.9048486
+2025-09-30,Asset Manager - Index/Active,ETF - International Equity,-87022310.1904091,955821690.2995784
+2025-09-30,Asset Manager - Index/Active,ETF - Sector,-38309959.752929375,166213783.593134
+2025-09-30,Asset Manager - Index/Active,ETF - Thematic,-761635.925416071,1024952.373691933
+2025-09-30,Asset Manager - Index/Active,Energy,5229426828.552878,9967706087.645525
+2025-09-30,Asset Manager - Index/Active,Financials,2975890440.2739415,17582139478.237057
+2025-09-30,Asset Manager - Index/Active,Health Care,2254027202.805498,10047317440.55979
+2025-09-30,Asset Manager - Index/Active,Industrials,4232368676.2779274,6106556835.362539
+2025-09-30,Asset Manager - Index/Active,Information Technology,14127909232.997332,24266286678.926315
+2025-09-30,Asset Manager - Index/Active,Materials,121791355.94183092,1510550372.7966964
+2025-09-30,Asset Manager - Index/Active,Real Estate,719666690.4454389,2198209838.82864
+2025-09-30,Asset Manager - Index/Active,Unclassified,7912248015.499205,87392989289.03307
+2025-09-30,Asset Manager - Index/Active,Utilities,145361366.5810911,771997052.1745663
 2025-09-30,Asset Manager - Value,Communication Services,-1341276852.766929,2279511716.0999265
 2025-09-30,Asset Manager - Value,Consumer Discretionary,-551750980.4643863,898226257.1935513
 2025-09-30,Asset Manager - Value,Consumer Staples,163579080.0018819,409184705.3532763
@@ -2265,20 +2135,20 @@ period,manager_type,sector,net_flow,gross_flow
 2025-09-30,Foundation / Endowment,Industrials,-553368683.9842609,553368683.9842609
 2025-09-30,Foundation / Endowment,Information Technology,-8805150000.647358,8805150000.647358
 2025-09-30,Foundation / Endowment,Unclassified,-1212232497.0524814,1212232497.0524814
-2025-09-30,Hedge Fund - Activist,Communication Services,-126170601.66785653,126170601.66785653
-2025-09-30,Hedge Fund - Activist,Consumer Discretionary,-5478710.51835989,5478710.51835989
+2025-09-30,Hedge Fund - Activist,Communication Services,-160423136.56437355,557863238.5190071
+2025-09-30,Hedge Fund - Activist,Consumer Discretionary,-87158750.51835988,87158750.51835988
 2025-09-30,Hedge Fund - Activist,Consumer Staples,-349098999.99999994,707221000.0
-2025-09-30,Hedge Fund - Activist,ETF - Broad Equity,3265064620.0,3363300380.0
+2025-09-30,Hedge Fund - Activist,ETF - Broad Equity,3180848809.0088325,3447516190.9911675
 2025-09-30,Hedge Fund - Activist,ETF - Fixed Income,308522000.0,308522000.0
 2025-09-30,Hedge Fund - Activist,ETF - Sector,3325335000.0,3325335000.0
 2025-09-30,Hedge Fund - Activist,Energy,4703756971.356426,4938776971.1774
-2025-09-30,Hedge Fund - Activist,Financials,-9415283.0,43926715.0
+2025-09-30,Hedge Fund - Activist,Financials,100133559.0,153475557.0
 2025-09-30,Hedge Fund - Activist,Health Care,-524859805.0534955,524859805.0534955
 2025-09-30,Hedge Fund - Activist,Industrials,-3002094.7095343396,3002094.7095343396
 2025-09-30,Hedge Fund - Activist,Information Technology,981344064.05,1051966735.95
 2025-09-30,Hedge Fund - Activist,Materials,3988144172.0,3988144172.0
 2025-09-30,Hedge Fund - Activist,Real Estate,117486000.0,117486000.0
-2025-09-30,Hedge Fund - Activist,Unclassified,6295663873.551489,7467328363.215389
+2025-09-30,Hedge Fund - Activist,Unclassified,6378566781.934122,8986948902.569664
 2025-09-30,Hedge Fund - Activist,Utilities,0.0,0.0
 2025-09-30,Hedge Fund - Contrarian Value,Communication Services,-73809000.0,73809000.0
 2025-09-30,Hedge Fund - Contrarian Value,Consumer Discretionary,-154968890.0,172761890.0
@@ -2316,20 +2186,20 @@ period,manager_type,sector,net_flow,gross_flow
 2025-09-30,Hedge Fund - Global Macro,Real Estate,-520956116.28239846,555475610.2908145
 2025-09-30,Hedge Fund - Global Macro,Unclassified,-7939082294.047151,15397922005.665749
 2025-09-30,Hedge Fund - Global Macro,Utilities,-178887673.0,241660229.0
-2025-09-30,Hedge Fund - Long/Short,Communication Services,-169801709.57662702,558133451.5678086
-2025-09-30,Hedge Fund - Long/Short,Consumer Discretionary,108133782.46606019,897430519.274909
-2025-09-30,Hedge Fund - Long/Short,Consumer Staples,67640233.98563674,584883958.9990853
+2025-09-30,Hedge Fund - Long/Short,Communication Services,1544641600.553335,2272576761.6977706
+2025-09-30,Hedge Fund - Long/Short,Consumer Discretionary,-1337090704.2221441,3457452249.836457
+2025-09-30,Hedge Fund - Long/Short,Consumer Staples,225289226.47347352,742532951.4869221
 2025-09-30,Hedge Fund - Long/Short,ETF - Broad Equity,373824206.0,381224206.0
 2025-09-30,Hedge Fund - Long/Short,ETF - Commodity,-2118500.0,2118500.0
 2025-09-30,Hedge Fund - Long/Short,ETF - Sector,-1518730.0,1518730.0
 2025-09-30,Hedge Fund - Long/Short,Energy,761749984.8589697,1652867106.1672914
-2025-09-30,Hedge Fund - Long/Short,Financials,269109910.937927,1263554913.4721937
-2025-09-30,Hedge Fund - Long/Short,Health Care,-25607270.35625564,3187253215.5802526
-2025-09-30,Hedge Fund - Long/Short,Industrials,813823225.5843524,1060156095.602509
-2025-09-30,Hedge Fund - Long/Short,Information Technology,-428818075.1447999,1511569987.3349857
+2025-09-30,Hedge Fund - Long/Short,Financials,727169377.8325639,6579292782.783419
+2025-09-30,Hedge Fund - Long/Short,Health Care,-1228066155.8881624,4557894511.262582
+2025-09-30,Hedge Fund - Long/Short,Industrials,851698368.9451166,1098031238.9632733
+2025-09-30,Hedge Fund - Long/Short,Information Technology,5530929.144964039,4328601332.417424
 2025-09-30,Hedge Fund - Long/Short,Materials,14497121.798112053,133358790.27725278
-2025-09-30,Hedge Fund - Long/Short,Real Estate,-32254414.098823205,117360266.56861275
-2025-09-30,Hedge Fund - Long/Short,Unclassified,-1683291006.728033,12264254788.74718
+2025-09-30,Hedge Fund - Long/Short,Real Estate,-529736914.1176116,856318902.5498244
+2025-09-30,Hedge Fund - Long/Short,Unclassified,1009927395.6774741,21805531182.969845
 2025-09-30,Hedge Fund - Long/Short,Utilities,-82359822.95921662,173144180.9151851
 2025-09-30,Hedge Fund - Long/Short Growth,Communication Services,-1219315906.219435,6225305654.060042
 2025-09-30,Hedge Fund - Long/Short Growth,Consumer Discretionary,39216724.060304135,2352311224.4802756
@@ -2369,33 +2239,36 @@ period,manager_type,sector,net_flow,gross_flow
 2025-09-30,Hedge Fund - Opportunistic,Industrials,-51204415.55982946,51204415.55982946
 2025-09-30,Hedge Fund - Opportunistic,Information Technology,48749685.0,631960015.0
 2025-09-30,Hedge Fund - Opportunistic,Unclassified,734830548.4399999,1236469570.44
-2025-09-30,Hedge Fund - Quant,Communication Services,1421423049.8909333,9511957832.258392
-2025-09-30,Hedge Fund - Quant,Consumer Discretionary,3743972623.3841543,15063275046.948696
-2025-09-30,Hedge Fund - Quant,Consumer Staples,3635794280.0464616,7872640278.608349
-2025-09-30,Hedge Fund - Quant,ETF - Broad Equity,7047446697.170866,18370337293.01725
-2025-09-30,Hedge Fund - Quant,ETF - Commodity,-37425153.39149999,1147333187.789944
-2025-09-30,Hedge Fund - Quant,ETF - Fixed Income,725550095.2047303,1278737232.2357378
-2025-09-30,Hedge Fund - Quant,ETF - International Equity,-86130627.2774829,388487962.0490443
-2025-09-30,Hedge Fund - Quant,ETF - Sector,-193365851.9594115,3160328576.8789515
-2025-09-30,Hedge Fund - Quant,ETF - Thematic,58061233.40081066,112176776.62888329
-2025-09-30,Hedge Fund - Quant,Energy,2485683407.324044,8108284914.314525
-2025-09-30,Hedge Fund - Quant,Financials,7334495713.263753,19720294943.03054
-2025-09-30,Hedge Fund - Quant,Health Care,564306091.8242282,16764401762.551826
-2025-09-30,Hedge Fund - Quant,Industrials,254498149.03955987,7023625583.963986
-2025-09-30,Hedge Fund - Quant,Information Technology,9689474533.550314,29043953457.059734
-2025-09-30,Hedge Fund - Quant,Materials,548751654.8109033,3446693531.0498796
-2025-09-30,Hedge Fund - Quant,Real Estate,428233549.279461,1812481817.883428
-2025-09-30,Hedge Fund - Quant,Unclassified,20676807348.37951,109629823783.30826
-2025-09-30,Hedge Fund - Quant,Utilities,-32711178.78430378,1362838299.294829
-2025-09-30,Hedge Fund - Value,Communication Services,-250983.47213716095,275119.47213716095
-2025-09-30,Hedge Fund - Value,Consumer Discretionary,269598.8630489641,269598.8630489641
+2025-09-30,Hedge Fund - Quant,Communication Services,2433082546.8454905,12264367904.866056
+2025-09-30,Hedge Fund - Quant,Consumer Discretionary,3541367551.879327,16694620417.01653
+2025-09-30,Hedge Fund - Quant,Consumer Staples,4086778195.6033115,8785539194.96965
+2025-09-30,Hedge Fund - Quant,ETF - Broad Equity,6700274701.50186,19480935149.88936
+2025-09-30,Hedge Fund - Quant,ETF - Commodity,-19678524.39149999,1223717626.789944
+2025-09-30,Hedge Fund - Quant,ETF - Fixed Income,432122794.3681195,1634863539.0723486
+2025-09-30,Hedge Fund - Quant,ETF - International Equity,-124128654.44536981,466198986.901814
+2025-09-30,Hedge Fund - Quant,ETF - Sector,-178236424.37111914,3305198653.8205605
+2025-09-30,Hedge Fund - Quant,ETF - Thematic,70510428.40081066,133537859.62888329
+2025-09-30,Hedge Fund - Quant,Energy,2061115840.3028936,9143486500.233335
+2025-09-30,Hedge Fund - Quant,Financials,5243207337.866053,23282486240.150146
+2025-09-30,Hedge Fund - Quant,Health Care,-80815675.31683865,19384112920.50524
+2025-09-30,Hedge Fund - Quant,Industrials,105069482.6829857,8033919417.520932
+2025-09-30,Hedge Fund - Quant,Information Technology,9468691322.970448,33202854916.877495
+2025-09-30,Hedge Fund - Quant,Materials,-19160912.592740186,4132902067.4374213
+2025-09-30,Hedge Fund - Quant,Real Estate,378170210.85840106,1979098785.911346
+2025-09-30,Hedge Fund - Quant,Unclassified,18191247935.000774,125897006132.72192
+2025-09-30,Hedge Fund - Quant,Utilities,6651328.652799142,1440397485.6110601
+2025-09-30,Hedge Fund - Value,Communication Services,1009322.5707024261,29462425.429297574
+2025-09-30,Hedge Fund - Value,Consumer Discretionary,24622883.863048963,24622883.863048963
 2025-09-30,Hedge Fund - Value,Consumer Staples,0.0,0.0
-2025-09-30,Hedge Fund - Value,Financials,-35249.974339502485,35249.974339502485
-2025-09-30,Hedge Fund - Value,Health Care,227153.21076573164,227153.21076573164
-2025-09-30,Hedge Fund - Value,Industrials,353658.0,353658.0
+2025-09-30,Hedge Fund - Value,ETF - Commodity,1092146.4013650264,2953102.2330802367
+2025-09-30,Hedge Fund - Value,Energy,-80760000.0,80760000.0
+2025-09-30,Hedge Fund - Value,Financials,1663469.2656604976,1733969.2143395024
+2025-09-30,Hedge Fund - Value,Health Care,18647560.163670767,20318401.11660022
+2025-09-30,Hedge Fund - Value,Industrials,-21000769.5,21708085.5
 2025-09-30,Hedge Fund - Value,Information Technology,0.0,0.0
+2025-09-30,Hedge Fund - Value,Materials,0.0,0.0
 2025-09-30,Hedge Fund - Value,Real Estate,44064.0,44064.0
-2025-09-30,Hedge Fund - Value,Unclassified,-263377.5375813727,783393.4546765633
+2025-09-30,Hedge Fund - Value,Unclassified,130273397.3509592,384563595.875188
 2025-09-30,Market Maker - Quant,Communication Services,5943076410.661662,18465298735.91291
 2025-09-30,Market Maker - Quant,Consumer Discretionary,10757386723.458616,37698234344.65348
 2025-09-30,Market Maker - Quant,Consumer Staples,888814682.2170112,8776438035.790476
@@ -2427,24 +2300,24 @@ period,manager_type,sector,net_flow,gross_flow
 2025-09-30,Pension Fund,Real Estate,-75260911.33436503,151785407.74083385
 2025-09-30,Pension Fund,Unclassified,-349428276.964575,5405148422.266953
 2025-09-30,Pension Fund,Utilities,-339787848.0852366,356336841.4999961
-2025-12-31,Asset Manager - Active,Communication Services,6086533635.494638,36980737779.13598
-2025-12-31,Asset Manager - Active,Consumer Discretionary,-617401974.7606275,20125026246.446728
-2025-12-31,Asset Manager - Active,Consumer Staples,-2044388195.1903455,7911427157.136986
-2025-12-31,Asset Manager - Active,ETF - Broad Equity,1479934210.0158622,6912949422.909651
-2025-12-31,Asset Manager - Active,ETF - Commodity,-35911581.88609691,120284906.76436295
-2025-12-31,Asset Manager - Active,ETF - Fixed Income,-605570120.1235465,1229403138.6203918
-2025-12-31,Asset Manager - Active,ETF - International Equity,47193240.781740926,505070644.4476479
-2025-12-31,Asset Manager - Active,ETF - Sector,-1742100.6293823773,136039825.63830394
+2025-12-31,Asset Manager - Active,Communication Services,6091107798.892671,36994378894.09707
+2025-12-31,Asset Manager - Active,Consumer Discretionary,-619195577.705282,20132844061.20887
+2025-12-31,Asset Manager - Active,Consumer Staples,-2044760145.943895,7914231506.947098
+2025-12-31,Asset Manager - Active,ETF - Broad Equity,1479605705.3395903,6914406803.609955
+2025-12-31,Asset Manager - Active,ETF - Commodity,-35911730.71422191,120285055.59248795
+2025-12-31,Asset Manager - Active,ETF - Fixed Income,-605564083.406269,1229409175.3376694
+2025-12-31,Asset Manager - Active,ETF - International Equity,47184902.781740926,505078982.4476479
+2025-12-31,Asset Manager - Active,ETF - Sector,-1741663.0823112482,136040263.18537506
 2025-12-31,Asset Manager - Active,ETF - Thematic,-254719.52227633286,379042.43021546165
-2025-12-31,Asset Manager - Active,Energy,681226422.0910718,10429261019.701433
-2025-12-31,Asset Manager - Active,Financials,-13528252108.353579,34115669825.69848
-2025-12-31,Asset Manager - Active,Health Care,10134938790.709724,31447270328.92064
-2025-12-31,Asset Manager - Active,Industrials,-97914452.92595562,12290017184.972755
-2025-12-31,Asset Manager - Active,Information Technology,-5436322552.772759,35374016466.13767
-2025-12-31,Asset Manager - Active,Materials,260696870.95861244,2301069839.1136894
-2025-12-31,Asset Manager - Active,Real Estate,-873279614.25102,3051036902.1090183
-2025-12-31,Asset Manager - Active,Unclassified,3839953033.5934386,168612885613.69006
-2025-12-31,Asset Manager - Active,Utilities,-397215740.12669957,1450792588.0922987
+2025-12-31,Asset Manager - Active,Energy,678884375.2458078,10433397582.618975
+2025-12-31,Asset Manager - Active,Financials,-13529833770.59984,34126329101.68578
+2025-12-31,Asset Manager - Active,Health Care,10139221855.317991,31458479694.500042
+2025-12-31,Asset Manager - Active,Industrials,-99036443.62114629,12293434485.978045
+2025-12-31,Asset Manager - Active,Information Technology,-5440402730.141917,35394736815.19713
+2025-12-31,Asset Manager - Active,Materials,259803301.4487015,2302121825.0150995
+2025-12-31,Asset Manager - Active,Real Estate,-873228470.2665231,3052172499.4360147
+2025-12-31,Asset Manager - Active,Unclassified,3831201615.6880736,168671359166.97128
+2025-12-31,Asset Manager - Active,Utilities,-396167699.99892503,1451883625.6001773
 2025-12-31,Asset Manager - Growth,Communication Services,2819928976.846402,4703346357.220905
 2025-12-31,Asset Manager - Growth,Consumer Discretionary,-673125777.846916,1457341673.8320582
 2025-12-31,Asset Manager - Growth,Consumer Staples,9968448.818257263,21254183.433007848
@@ -2475,6 +2348,24 @@ period,manager_type,sector,net_flow,gross_flow
 2025-12-31,Asset Manager - Index,Real Estate,2926089198.634217,3831309232.452219
 2025-12-31,Asset Manager - Index,Unclassified,27018106077.11774,96316755687.44138
 2025-12-31,Asset Manager - Index,Utilities,1518219050.1224115,1849738302.970066
+2025-12-31,Asset Manager - Index/Active,Communication Services,38317092475.17198,40977617914.73036
+2025-12-31,Asset Manager - Index/Active,Consumer Discretionary,5123658516.687553,10641953868.229776
+2025-12-31,Asset Manager - Index/Active,Consumer Staples,2909008548.676855,4142434218.9213943
+2025-12-31,Asset Manager - Index/Active,ETF - Broad Equity,2437052770.0448756,24344484864.96087
+2025-12-31,Asset Manager - Index/Active,ETF - Commodity,132920101.74691981,949569580.588555
+2025-12-31,Asset Manager - Index/Active,ETF - Fixed Income,-387533261.3213734,2466355732.513452
+2025-12-31,Asset Manager - Index/Active,ETF - International Equity,-352169348.74615717,1852882809.7911038
+2025-12-31,Asset Manager - Index/Active,ETF - Sector,289620998.2791177,554218370.1619463
+2025-12-31,Asset Manager - Index/Active,ETF - Thematic,419975.4024444425,493213.7154879208
+2025-12-31,Asset Manager - Index/Active,Energy,3733992068.6856894,5906843866.594906
+2025-12-31,Asset Manager - Index/Active,Financials,7747701874.343634,16723037543.740625
+2025-12-31,Asset Manager - Index/Active,Health Care,7739384945.3541355,13688684722.158934
+2025-12-31,Asset Manager - Index/Active,Industrials,5687056495.116925,6555425820.361712
+2025-12-31,Asset Manager - Index/Active,Information Technology,35865653501.26726,38977812332.16034
+2025-12-31,Asset Manager - Index/Active,Materials,2357084047.897472,2754441404.1524606
+2025-12-31,Asset Manager - Index/Active,Real Estate,2019505749.7150877,3211219501.673677
+2025-12-31,Asset Manager - Index/Active,Unclassified,18423758723.387505,90643518776.89911
+2025-12-31,Asset Manager - Index/Active,Utilities,669821370.1412619,1232586978.6436973
 2025-12-31,Asset Manager - Value,Communication Services,619727139.1196339,4545473774.113747
 2025-12-31,Asset Manager - Value,Consumer Discretionary,825135529.3194432,2636975280.2887344
 2025-12-31,Asset Manager - Value,Consumer Staples,155991340.808779,628622993.8992237
@@ -2523,20 +2414,20 @@ period,manager_type,sector,net_flow,gross_flow
 2025-12-31,Foundation / Endowment,Industrials,0.0,0.0
 2025-12-31,Foundation / Endowment,Information Technology,-725429999.9336905,725429999.9336905
 2025-12-31,Foundation / Endowment,Unclassified,0.0,0.0
-2025-12-31,Hedge Fund - Activist,Communication Services,410681364.9948032,3118910957.0051966
-2025-12-31,Hedge Fund - Activist,Consumer Discretionary,25467242.89559998,1721613030.476495
+2025-12-31,Hedge Fund - Activist,Communication Services,106591444.20018397,4119986666.321574
+2025-12-31,Hedge Fund - Activist,Consumer Discretionary,954158.8955999799,1746126114.476495
 2025-12-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2025-12-31,Hedge Fund - Activist,ETF - Broad Equity,-1103153500.0,1103153500.0
+2025-12-31,Hedge Fund - Activist,ETF - Broad Equity,-1099948476.0004804,1106358523.9995196
 2025-12-31,Hedge Fund - Activist,ETF - Fixed Income,0.0,0.0
 2025-12-31,Hedge Fund - Activist,ETF - Sector,467740000.00000006,1024420000.0
 2025-12-31,Hedge Fund - Activist,Energy,596406.3761144108,596406.3761144108
-2025-12-31,Hedge Fund - Activist,Financials,-5413023.0,29098409.0
-2025-12-31,Hedge Fund - Activist,Health Care,-32036110.2,32036110.2
-2025-12-31,Hedge Fund - Activist,Industrials,-5130080.639709023,5130080.639709023
-2025-12-31,Hedge Fund - Activist,Information Technology,-371108704.27835506,371108704.27835506
+2025-12-31,Hedge Fund - Activist,Financials,48035181.04434744,82546613.04434744
+2025-12-31,Hedge Fund - Activist,Health Care,-32034879.899554897,32037340.5004451
+2025-12-31,Hedge Fund - Activist,Industrials,-4960048.079702175,5300113.19971587
+2025-12-31,Hedge Fund - Activist,Information Technology,-345677344.28444624,396540064.27226394
 2025-12-31,Hedge Fund - Activist,Materials,-72696000.0,72696000.0
 2025-12-31,Hedge Fund - Activist,Real Estate,0.0,0.0
-2025-12-31,Hedge Fund - Activist,Unclassified,1639692519.3672254,2821924905.2109113
+2025-12-31,Hedge Fund - Activist,Unclassified,2321392200.2908144,6100939108.205781
 2025-12-31,Hedge Fund - Activist,Utilities,0.0,0.0
 2025-12-31,Hedge Fund - Event Driven,Communication Services,-50055100.0,273072100.0
 2025-12-31,Hedge Fund - Event Driven,Consumer Discretionary,-5624850.0,597131850.0
@@ -2567,32 +2458,32 @@ period,manager_type,sector,net_flow,gross_flow
 2025-12-31,Hedge Fund - Global Macro,Real Estate,574587298.5904579,594518117.4971651
 2025-12-31,Hedge Fund - Global Macro,Unclassified,12197846933.010746,16270544623.06226
 2025-12-31,Hedge Fund - Global Macro,Utilities,136605316.44180837,148662835.45423114
-2025-12-31,Hedge Fund - Long/Short,Communication Services,573041725.6874986,1063885708.7329289
-2025-12-31,Hedge Fund - Long/Short,Consumer Discretionary,-119026907.12419401,752230941.6282855
-2025-12-31,Hedge Fund - Long/Short,Consumer Staples,203895040.32875404,608458046.8031
+2025-12-31,Hedge Fund - Long/Short,Communication Services,309376771.40885884,3365570246.4542894
+2025-12-31,Hedge Fund - Long/Short,Consumer Discretionary,-677920801.7649504,3998065832.416297
+2025-12-31,Hedge Fund - Long/Short,Consumer Staples,-514022921.671246,1326376008.8031
 2025-12-31,Hedge Fund - Long/Short,ETF - Broad Equity,-377524206.0,377524206.0
 2025-12-31,Hedge Fund - Long/Short,ETF - Commodity,-6355500.0,6355500.0
 2025-12-31,Hedge Fund - Long/Short,ETF - Fixed Income,197423927.0,197423927.0
 2025-12-31,Hedge Fund - Long/Short,Energy,284426380.5495728,1469160082.9616365
-2025-12-31,Hedge Fund - Long/Short,Financials,80950493.82653141,2156557885.8197947
-2025-12-31,Hedge Fund - Long/Short,Health Care,-574251453.6517047,2627776425.2151494
-2025-12-31,Hedge Fund - Long/Short,Industrials,269493073.404198,795881384.3185086
-2025-12-31,Hedge Fund - Long/Short,Information Technology,588154429.0208366,1586970940.21844
+2025-12-31,Hedge Fund - Long/Short,Financials,-1593827097.775187,7389067862.167097
+2025-12-31,Hedge Fund - Long/Short,Health Care,-787817269.3616003,4713378242.925045
+2025-12-31,Hedge Fund - Long/Short,Industrials,474136489.6192886,1000524800.5335993
+2025-12-31,Hedge Fund - Long/Short,Information Technology,1403560461.6925263,2590442861.9533815
 2025-12-31,Hedge Fund - Long/Short,Materials,-7470129.446806467,129710694.82557136
-2025-12-31,Hedge Fund - Long/Short,Real Estate,199546021.34550506,357594597.4825798
-2025-12-31,Hedge Fund - Long/Short,Unclassified,959604978.0241551,12173117503.012209
+2025-12-31,Hedge Fund - Long/Short,Real Estate,300572491.8225545,458621067.95962936
+2025-12-31,Hedge Fund - Long/Short,Unclassified,645515451.9189596,20913553702.62804
 2025-12-31,Hedge Fund - Long/Short,Utilities,-162599750.11954677,305420402.1195468
-2025-12-31,Hedge Fund - Long/Short Growth,Communication Services,202944446.8135441,2910142815.054108
-2025-12-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,-1334750350.7388043,2409006958.2573066
+2025-12-31,Hedge Fund - Long/Short Growth,Communication Services,253893849.51488173,2988248320.3527703
+2025-12-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,-1483079701.3463912,2969681985.6497197
 2025-12-31,Hedge Fund - Long/Short Growth,Consumer Staples,-316126585.8982115,316126585.8982115
 2025-12-31,Hedge Fund - Long/Short Growth,ETF - Broad Equity,-3247805.1973046144,3247805.1973046144
-2025-12-31,Hedge Fund - Long/Short Growth,Energy,43181476.96724783,159819342.96724784
-2025-12-31,Hedge Fund - Long/Short Growth,Financials,-170586067.18924722,1454231692.7731562
+2025-12-31,Hedge Fund - Long/Short Growth,Energy,65836307.96724783,182474173.96724784
+2025-12-31,Hedge Fund - Long/Short Growth,Financials,-318021305.295613,1601666930.8795218
 2025-12-31,Hedge Fund - Long/Short Growth,Health Care,237090901.60573527,710936430.5455623
 2025-12-31,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
-2025-12-31,Hedge Fund - Long/Short Growth,Information Technology,442421426.2489891,2835192243.1628814
+2025-12-31,Hedge Fund - Long/Short Growth,Information Technology,230597081.87675816,3603243732.0528684
 2025-12-31,Hedge Fund - Long/Short Growth,Real Estate,-22626990.0,22626990.0
-2025-12-31,Hedge Fund - Long/Short Growth,Unclassified,-688634460.8956496,11885867233.715536
+2025-12-31,Hedge Fund - Long/Short Growth,Unclassified,-895299811.2156496,12552731384.035536
 2025-12-31,Hedge Fund - Long/Short Growth,Utilities,-9550001.0,9550001.0
 2025-12-31,Hedge Fund - Multi-strategy,Communication Services,15481750932.503609,29397104653.975555
 2025-12-31,Hedge Fund - Multi-strategy,Consumer Discretionary,4870621070.010692,29102153353.453705
@@ -2621,51 +2512,54 @@ period,manager_type,sector,net_flow,gross_flow
 2025-12-31,Hedge Fund - Opportunistic,Industrials,-46385880.93,48120880.93
 2025-12-31,Hedge Fund - Opportunistic,Information Technology,206310760.0,586030340.0
 2025-12-31,Hedge Fund - Opportunistic,Unclassified,-314020878.0,909378398.0
-2025-12-31,Hedge Fund - Quant,Communication Services,5876047678.097792,11421494176.79704
-2025-12-31,Hedge Fund - Quant,Consumer Discretionary,5795135372.370744,17362543154.401672
-2025-12-31,Hedge Fund - Quant,Consumer Staples,1567060499.209289,6058650411.311689
-2025-12-31,Hedge Fund - Quant,ETF - Broad Equity,3570792526.826538,21985545978.008347
-2025-12-31,Hedge Fund - Quant,ETF - Commodity,325475300.3509272,1298338395.3762937
-2025-12-31,Hedge Fund - Quant,ETF - Fixed Income,-1528440118.757353,1838475048.327447
-2025-12-31,Hedge Fund - Quant,ETF - International Equity,-45207937.076351136,489521846.86791945
-2025-12-31,Hedge Fund - Quant,ETF - Sector,-166592553.09665644,3059363477.995647
-2025-12-31,Hedge Fund - Quant,ETF - Thematic,59059715.664178036,100461300.08294459
-2025-12-31,Hedge Fund - Quant,Energy,698957676.2962805,6392658395.915247
-2025-12-31,Hedge Fund - Quant,Financials,3420734411.6707764,19899277856.17251
-2025-12-31,Hedge Fund - Quant,Health Care,1738985944.9006774,17636836999.758686
-2025-12-31,Hedge Fund - Quant,Industrials,914943345.4485557,6935399073.427049
-2025-12-31,Hedge Fund - Quant,Information Technology,-753921437.8287505,29559278455.67201
-2025-12-31,Hedge Fund - Quant,Materials,2242784666.0409327,5133375866.934977
-2025-12-31,Hedge Fund - Quant,Real Estate,959702665.5365243,2304707186.3896074
-2025-12-31,Hedge Fund - Quant,Unclassified,23393791744.733982,113656985392.76062
-2025-12-31,Hedge Fund - Quant,Utilities,89972811.3671229,1719996366.706725
-2025-12-31,Hedge Fund - Value,Communication Services,-253994.0245064989,253994.0245064989
-2025-12-31,Hedge Fund - Value,Consumer Discretionary,477871.8621793856,501446.1378206144
+2025-12-31,Hedge Fund - Quant,Communication Services,4875958254.376516,14313346805.841099
+2025-12-31,Hedge Fund - Quant,Consumer Discretionary,6441783932.020523,19504129425.762688
+2025-12-31,Hedge Fund - Quant,Consumer Staples,1809650795.6849813,7753955445.65115
+2025-12-31,Hedge Fund - Quant,ETF - Broad Equity,2888787675.5424376,23528696453.011875
+2025-12-31,Hedge Fund - Quant,ETF - Commodity,293123487.0957095,1336906682.6315114
+2025-12-31,Hedge Fund - Quant,ETF - Fixed Income,-1700524401.014879,2054053924.5849729
+2025-12-31,Hedge Fund - Quant,ETF - International Equity,-28591072.34868433,550408765.9151614
+2025-12-31,Hedge Fund - Quant,ETF - Sector,-161603669.88259184,3237116993.27321
+2025-12-31,Hedge Fund - Quant,ETF - Thematic,52043449.664178036,112624318.08294459
+2025-12-31,Hedge Fund - Quant,Energy,555738729.5857841,7592802326.804469
+2025-12-31,Hedge Fund - Quant,Financials,2795431330.7489357,22314969607.76829
+2025-12-31,Hedge Fund - Quant,Health Care,94974376.14516777,20496019981.111526
+2025-12-31,Hedge Fund - Quant,Industrials,1034163426.6739421,7711781687.000453
+2025-12-31,Hedge Fund - Quant,Information Technology,-1509314354.3318014,33359586766.680573
+2025-12-31,Hedge Fund - Quant,Materials,1848145438.118995,5960413310.598058
+2025-12-31,Hedge Fund - Quant,Real Estate,839386470.1417994,2478398103.2928176
+2025-12-31,Hedge Fund - Quant,Unclassified,17272698033.419983,132205825031.01956
+2025-12-31,Hedge Fund - Quant,Utilities,284923125.5173077,1941890848.63053
+2025-12-31,Hedge Fund - Value,Communication Services,18614724.975493502,69752005.0245065
+2025-12-31,Hedge Fund - Value,Consumer Discretionary,43460084.86217938,43483659.13782062
 2025-12-31,Hedge Fund - Value,Consumer Staples,-80200.45726459057,80200.45726459057
-2025-12-31,Hedge Fund - Value,Financials,-41912.60934731949,41912.60934731949
-2025-12-31,Hedge Fund - Value,Health Care,91041.35889961569,125884.64110038431
-2025-12-31,Hedge Fund - Value,Industrials,30314.45416634404,30314.45416634404
+2025-12-31,Hedge Fund - Value,ETF - Commodity,-5998090.36698922,5998090.36698922
+2025-12-31,Hedge Fund - Value,Energy,30062640.39474787,39827063.60525213
+2025-12-31,Hedge Fund - Value,Financials,32592369.61137703,37490234.38862297
+2025-12-31,Hedge Fund - Value,Health Care,19940786.410761308,64920713.687048525
+2025-12-31,Hedge Fund - Value,Industrials,-1232087.9505816074,1292716.8589142957
 2025-12-31,Hedge Fund - Value,Information Technology,-25000.0,25000.0
+2025-12-31,Hedge Fund - Value,Materials,55859949.77630952,55859949.77630952
 2025-12-31,Hedge Fund - Value,Real Estate,-1598.679844404772,1598.679844404772
-2025-12-31,Hedge Fund - Value,Unclassified,66649.5689138715,755889.4989798993
-2025-12-31,Market Maker - Quant,Communication Services,17871826305.316742,21227559876.70834
-2025-12-31,Market Maker - Quant,Consumer Discretionary,-5914521636.919611,16816206106.567396
-2025-12-31,Market Maker - Quant,Consumer Staples,398796798.1288452,3758370473.8271074
-2025-12-31,Market Maker - Quant,ETF - Broad Equity,-2581363788.779367,23339394766.326275
-2025-12-31,Market Maker - Quant,ETF - Commodity,7398400288.009817,7774908012.210813
-2025-12-31,Market Maker - Quant,ETF - Fixed Income,1735657957.982397,3711749207.509003
-2025-12-31,Market Maker - Quant,ETF - International Equity,238748390.2156199,1879747021.4048119
-2025-12-31,Market Maker - Quant,ETF - Sector,1910802847.0045109,4306117651.866416
-2025-12-31,Market Maker - Quant,ETF - Thematic,-179347179.83587664,758792875.7282399
-2025-12-31,Market Maker - Quant,Energy,-1254124778.3861566,4489448149.07338
-2025-12-31,Market Maker - Quant,Financials,1306092001.1835177,12972128376.91475
-2025-12-31,Market Maker - Quant,Health Care,-4179470104.5525875,10281350242.373875
-2025-12-31,Market Maker - Quant,Industrials,-36360903.56989287,3596429375.98579
-2025-12-31,Market Maker - Quant,Information Technology,-8354000392.941463,24173637930.831306
-2025-12-31,Market Maker - Quant,Materials,474413955.4502358,2771953878.4197555
-2025-12-31,Market Maker - Quant,Real Estate,-81511432.14166649,741535022.6504618
-2025-12-31,Market Maker - Quant,Unclassified,-3135446692.509404,64240357501.326935
-2025-12-31,Market Maker - Quant,Utilities,-123143069.932531,373413263.1021646
+2025-12-31,Hedge Fund - Value,Unclassified,142125655.76627833,353394684.9223786
+2025-12-31,Market Maker - Quant,Communication Services,28480233503.917908,36455008905.20559
+2025-12-31,Market Maker - Quant,Consumer Discretionary,-12327447442.580622,33860812520.498676
+2025-12-31,Market Maker - Quant,Consumer Staples,784144198.8584466,7051230432.611133
+2025-12-31,Market Maker - Quant,ETF - Broad Equity,-5379383683.122536,72211883461.50258
+2025-12-31,Market Maker - Quant,ETF - Commodity,12335066617.833216,13026028136.816172
+2025-12-31,Market Maker - Quant,ETF - Fixed Income,3768123597.073014,9367901666.768154
+2025-12-31,Market Maker - Quant,ETF - International Equity,624501873.4191457,4573162100.176941
+2025-12-31,Market Maker - Quant,ETF - Sector,4141773999.7146163,8218092902.785993
+2025-12-31,Market Maker - Quant,ETF - Thematic,-530049037.6180336,1288673051.594368
+2025-12-31,Market Maker - Quant,Energy,-1654422995.1073267,8137227347.322703
+2025-12-31,Market Maker - Quant,Financials,4644030130.444035,25488928242.239784
+2025-12-31,Market Maker - Quant,Health Care,-3008885346.5557485,19450780448.75289
+2025-12-31,Market Maker - Quant,Industrials,-445760613.37429565,6638395203.033176
+2025-12-31,Market Maker - Quant,Information Technology,-18475468192.349895,57625611465.104706
+2025-12-31,Market Maker - Quant,Materials,127647725.65681642,5120437260.862479
+2025-12-31,Market Maker - Quant,Real Estate,62369348.3154936,1123234544.949861
+2025-12-31,Market Maker - Quant,Unclassified,-304631789.12105304,119433635991.54852
+2025-12-31,Market Maker - Quant,Utilities,-81667864.93310827,961265625.1913222
 2025-12-31,Pension Fund,Communication Services,1196135805.8873897,1704820577.5966718
 2025-12-31,Pension Fund,Consumer Discretionary,284891863.6685615,710497615.3022048
 2025-12-31,Pension Fund,Consumer Staples,14246914.849432036,529227695.1788092
@@ -2727,6 +2621,24 @@ period,manager_type,sector,net_flow,gross_flow
 2026-03-31,Asset Manager - Index,Real Estate,-436059845.04754424,1205807094.9673266
 2026-03-31,Asset Manager - Index,Unclassified,11894984344.588305,32759128011.353954
 2026-03-31,Asset Manager - Index,Utilities,452064374.9755929,585477793.1697358
+2026-03-31,Asset Manager - Index/Active,Communication Services,-216014757.66124326,8256317603.132694
+2026-03-31,Asset Manager - Index/Active,Consumer Discretionary,1578745504.4210858,6216727507.545917
+2026-03-31,Asset Manager - Index/Active,Consumer Staples,1440664485.2347848,4560271936.423572
+2026-03-31,Asset Manager - Index/Active,ETF - Broad Equity,280063981.01591855,21083182937.922153
+2026-03-31,Asset Manager - Index/Active,ETF - Commodity,448953006.387422,3170983827.7595687
+2026-03-31,Asset Manager - Index/Active,ETF - Fixed Income,2448048772.1214414,4373742323.580796
+2026-03-31,Asset Manager - Index/Active,ETF - International Equity,1285879705.5292754,2129411992.4137354
+2026-03-31,Asset Manager - Index/Active,ETF - Sector,120292326.85569184,290271191.654
+2026-03-31,Asset Manager - Index/Active,ETF - Thematic,179421.48206484207,220827.22673792136
+2026-03-31,Asset Manager - Index/Active,Energy,6831274802.055878,9713545496.866282
+2026-03-31,Asset Manager - Index/Active,Financials,-2972574293.2654505,18359567647.509758
+2026-03-31,Asset Manager - Index/Active,Health Care,642524759.086055,10964899951.133131
+2026-03-31,Asset Manager - Index/Active,Industrials,461345944.22215176,6295046918.259932
+2026-03-31,Asset Manager - Index/Active,Information Technology,-4790152843.920309,26519024169.27715
+2026-03-31,Asset Manager - Index/Active,Materials,1736654216.1996562,3428310415.021089
+2026-03-31,Asset Manager - Index/Active,Real Estate,456447428.6990321,2674845838.490107
+2026-03-31,Asset Manager - Index/Active,Unclassified,18280942272.849747,91198505489.46841
+2026-03-31,Asset Manager - Index/Active,Utilities,563986915.5588692,1282688354.9750094
 2026-03-31,Asset Manager - Value,Communication Services,-667919829.9747522,2936703077.9431987
 2026-03-31,Asset Manager - Value,Consumer Discretionary,1514479723.1107948,2230417933.156924
 2026-03-31,Asset Manager - Value,Consumer Staples,-185753122.7579218,308797786.2554102
@@ -2775,20 +2687,20 @@ period,manager_type,sector,net_flow,gross_flow
 2026-03-31,Foundation / Endowment,Industrials,0.0,0.0
 2026-03-31,Foundation / Endowment,Information Technology,-3719621529.0,3719621529.0
 2026-03-31,Foundation / Endowment,Unclassified,-296888680.0112176,296888680.0112176
-2026-03-31,Hedge Fund - Activist,Communication Services,-1871757987.520193,1871757987.520193
-2026-03-31,Hedge Fund - Activist,Consumer Discretionary,-255676286.59199718,1516997843.413866
-2026-03-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2026-03-31,Hedge Fund - Activist,ETF - Broad Equity,-1639065858.9681683,1970803981.0318317
+2026-03-31,Hedge Fund - Activist,Communication Services,-2132280654.160189,2479961124.1601887
+2026-03-31,Hedge Fund - Activist,Consumer Discretionary,-361831505.5919972,1623153062.413866
+2026-03-31,Hedge Fund - Activist,Consumer Staples,-137325340.0,137325340.0
+2026-03-31,Hedge Fund - Activist,ETF - Broad Equity,-1905926385.9681683,2237664508.0318317
 2026-03-31,Hedge Fund - Activist,ETF - Fixed Income,94406000.0,707194000.0
 2026-03-31,Hedge Fund - Activist,ETF - Sector,-1137048800.0,2074276800.0
 2026-03-31,Hedge Fund - Activist,Energy,-455778032.9405161,509679911.0594839
-2026-03-31,Hedge Fund - Activist,Financials,10516156.665612826,18361014.665612824
+2026-03-31,Hedge Fund - Activist,Financials,494627926.6656128,502472784.6656128
 2026-03-31,Hedge Fund - Activist,Health Care,-98180673.39043581,98180673.39043581
 2026-03-31,Hedge Fund - Activist,Industrials,-17907908.589750696,17907908.589750696
 2026-03-31,Hedge Fund - Activist,Information Technology,1315227800.9925404,3050922305.0074596
 2026-03-31,Hedge Fund - Activist,Materials,-6597341.521490671,32799341.52149067
 2026-03-31,Hedge Fund - Activist,Real Estate,0.0,0.0
-2026-03-31,Hedge Fund - Activist,Unclassified,-2286792125.2257786,4728892798.17015
+2026-03-31,Hedge Fund - Activist,Unclassified,-3963154222.4188886,6982500270.895682
 2026-03-31,Hedge Fund - Activist,Utilities,0.0,0.0
 2026-03-31,Hedge Fund - Event Driven,Communication Services,-148418900.0,352048300.0
 2026-03-31,Hedge Fund - Event Driven,Consumer Discretionary,-594097300.0,594097300.0
@@ -2833,17 +2745,17 @@ period,manager_type,sector,net_flow,gross_flow
 2026-03-31,Hedge Fund - Long/Short,Real Estate,-94265148.7555367,176838580.9882574
 2026-03-31,Hedge Fund - Long/Short,Unclassified,-203803823.053258,21297920821.15035
 2026-03-31,Hedge Fund - Long/Short,Utilities,31880934.94428362,308864809.0557164
-2026-03-31,Hedge Fund - Long/Short Growth,Communication Services,-2786679154.9809847,3659959389.029862
-2026-03-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,-1174007858.98494,1974450560.564256
+2026-03-31,Hedge Fund - Long/Short Growth,Communication Services,-2887424024.3580775,3884290059.652769
+2026-03-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,-1708023217.5454588,2508465919.1247745
 2026-03-31,Hedge Fund - Long/Short Growth,Consumer Staples,266767918.0,1114828062.0
 2026-03-31,Hedge Fund - Long/Short Growth,ETF - Broad Equity,0.0,0.0
-2026-03-31,Hedge Fund - Long/Short Growth,Energy,-125919523.63387686,585999868.0037062
-2026-03-31,Hedge Fund - Long/Short Growth,Financials,-1105209738.5243533,1830556107.3741097
+2026-03-31,Hedge Fund - Long/Short Growth,Energy,-148574354.63387686,608654699.0037062
+2026-03-31,Hedge Fund - Long/Short Growth,Financials,-1132486287.6931078,1857832656.5428643
 2026-03-31,Hedge Fund - Long/Short Growth,Health Care,2428074.1537272595,219731059.13288233
-2026-03-31,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
-2026-03-31,Hedge Fund - Long/Short Growth,Information Technology,-4391763919.681628,8922387250.695
+2026-03-31,Hedge Fund - Long/Short Growth,Industrials,171407751.71088436,171407751.71088436
+2026-03-31,Hedge Fund - Long/Short Growth,Information Technology,-3998098493.5982275,9599583170.068722
 2026-03-31,Hedge Fund - Long/Short Growth,Real Estate,1101688076.0,1101688076.0
-2026-03-31,Hedge Fund - Long/Short Growth,Unclassified,-3445065678.726056,13064181746.208263
+2026-03-31,Hedge Fund - Long/Short Growth,Unclassified,-3641065742.3617043,13585956362.572615
 2026-03-31,Hedge Fund - Multi-strategy,Communication Services,-114729272.20233954,21486980036.97396
 2026-03-31,Hedge Fund - Multi-strategy,Consumer Discretionary,-5631166719.439771,27745832003.094646
 2026-03-31,Hedge Fund - Multi-strategy,Consumer Staples,-5832037705.61477,17484943837.431915
@@ -2870,50 +2782,53 @@ period,manager_type,sector,net_flow,gross_flow
 2026-03-31,Hedge Fund - Opportunistic,Industrials,258998849.88314658,385885249.8831466
 2026-03-31,Hedge Fund - Opportunistic,Information Technology,-261971730.67850816,506949180.67850816
 2026-03-31,Hedge Fund - Opportunistic,Unclassified,-622192155.0866325,1329576108.675424
-2026-03-31,Hedge Fund - Quant,Communication Services,2513003525.2014656,16698573298.73111
-2026-03-31,Hedge Fund - Quant,Consumer Discretionary,4108428590.8808956,20336592981.29763
-2026-03-31,Hedge Fund - Quant,Consumer Staples,-1273287279.4890227,8756061204.272577
-2026-03-31,Hedge Fund - Quant,ETF - Broad Equity,-4104090052.018335,23367036525.65359
-2026-03-31,Hedge Fund - Quant,ETF - Commodity,112338003.0007253,820695519.9677495
-2026-03-31,Hedge Fund - Quant,ETF - Fixed Income,88020419.99955553,437774622.4800635
-2026-03-31,Hedge Fund - Quant,ETF - International Equity,198021755.94880772,423052160.6941155
-2026-03-31,Hedge Fund - Quant,ETF - Sector,208019174.09355724,2072344348.4467986
-2026-03-31,Hedge Fund - Quant,ETF - Thematic,2732420.318090502,94566448.73521125
-2026-03-31,Hedge Fund - Quant,Energy,3701167843.302284,12740596483.94495
-2026-03-31,Hedge Fund - Quant,Financials,10444479498.328562,28959715480.80292
-2026-03-31,Hedge Fund - Quant,Health Care,2904324475.679806,20009946060.071526
-2026-03-31,Hedge Fund - Quant,Industrials,1238335218.263378,8427523977.31799
-2026-03-31,Hedge Fund - Quant,Information Technology,11951011347.882334,38942350829.90535
-2026-03-31,Hedge Fund - Quant,Materials,1580300558.0831697,5020678767.460983
-2026-03-31,Hedge Fund - Quant,Real Estate,447745610.85108155,2451232795.089278
-2026-03-31,Hedge Fund - Quant,Unclassified,36139943497.57514,138422004588.7842
-2026-03-31,Hedge Fund - Quant,Utilities,823833935.6899025,1833811768.7950764
-2026-03-31,Hedge Fund - Value,Communication Services,26950.478016409696,26950.478016409696
-2026-03-31,Hedge Fund - Value,Consumer Discretionary,275601.82540302956,275601.82540302956
+2026-03-31,Hedge Fund - Quant,Communication Services,1521161886.3366587,18865049986.30491
+2026-03-31,Hedge Fund - Quant,Consumer Discretionary,2948949122.3758626,22764815012.59877
+2026-03-31,Hedge Fund - Quant,Consumer Staples,-2819662876.707869,10476194448.149681
+2026-03-31,Hedge Fund - Quant,ETF - Broad Equity,-4084183755.662455,24496889288.849117
+2026-03-31,Hedge Fund - Quant,ETF - Commodity,183828169.52036214,913758937.1772684
+2026-03-31,Hedge Fund - Quant,ETF - Fixed Income,129675994.230612,544296875.71112
+2026-03-31,Hedge Fund - Quant,ETF - International Equity,261897269.56953794,564346365.0664979
+2026-03-31,Hedge Fund - Quant,ETF - Sector,477195956.9756236,2378301707.328865
+2026-03-31,Hedge Fund - Quant,ETF - Thematic,930874.3180905022,109534224.73521125
+2026-03-31,Hedge Fund - Quant,Energy,3510729601.605796,13972143498.614025
+2026-03-31,Hedge Fund - Quant,Financials,11478702470.637785,31632403390.49189
+2026-03-31,Hedge Fund - Quant,Health Care,2916696258.42863,21873127386.015182
+2026-03-31,Hedge Fund - Quant,Industrials,1424285470.3781664,9163053549.568985
+2026-03-31,Hedge Fund - Quant,Information Technology,12203869152.211271,42677629413.1959
+2026-03-31,Hedge Fund - Quant,Materials,2047620211.4703155,6004496634.404054
+2026-03-31,Hedge Fund - Quant,Real Estate,489300754.9825959,2625682500.29847
+2026-03-31,Hedge Fund - Quant,Unclassified,37706862416.76562,154531906608.79947
+2026-03-31,Hedge Fund - Quant,Utilities,637163042.2927742,2087379483.1115875
+2026-03-31,Hedge Fund - Value,Communication Services,110294402.06826909,198661132.06826907
+2026-03-31,Hedge Fund - Value,Consumer Discretionary,-21580338.88916077,22131542.539966833
 2026-03-31,Hedge Fund - Value,Consumer Staples,-273881.0,273881.0
-2026-03-31,Hedge Fund - Value,Financials,100973.062599652,322982.937400348
-2026-03-31,Hedge Fund - Value,Health Care,2860.750086581918,2860.750086581918
-2026-03-31,Hedge Fund - Value,Industrials,-20928.14699853017,20928.14699853017
+2026-03-31,Hedge Fund - Value,ETF - Commodity,-36100694.36466856,36100694.36466856
+2026-03-31,Hedge Fund - Value,Energy,-34103810.35518259,34103810.35518259
+2026-03-31,Hedge Fund - Value,Financials,-32443348.837566003,38855304.837566
+2026-03-31,Hedge Fund - Value,Health Care,27601894.24480984,39437940.49769185
+2026-03-31,Hedge Fund - Value,Industrials,-17385528.14699853,17385528.14699853
+2026-03-31,Hedge Fund - Value,Materials,6807607.78494788,6807607.78494788
 2026-03-31,Hedge Fund - Value,Real Estate,49336.635605593256,49336.635605593256
-2026-03-31,Hedge Fund - Value,Unclassified,-172810.5828855614,1384070.0638489965
-2026-03-31,Market Maker - Quant,Communication Services,-6469683404.097186,13471983228.079792
-2026-03-31,Market Maker - Quant,Consumer Discretionary,-7054245691.222698,12029131295.89842
-2026-03-31,Market Maker - Quant,Consumer Staples,-2228873110.6805325,6288636032.138695
-2026-03-31,Market Maker - Quant,ETF - Broad Equity,61149929667.68343,68648445961.23171
-2026-03-31,Market Maker - Quant,ETF - Commodity,2775725657.925603,6172361073.06015
-2026-03-31,Market Maker - Quant,ETF - Fixed Income,1583300689.8650935,4129178641.257615
-2026-03-31,Market Maker - Quant,ETF - International Equity,867371985.9169905,1846941313.435724
-2026-03-31,Market Maker - Quant,ETF - Sector,1148110668.7476726,3933232978.708256
-2026-03-31,Market Maker - Quant,ETF - Thematic,-203538940.6753735,571699927.795743
-2026-03-31,Market Maker - Quant,Energy,2571653046.671064,7015684480.719016
-2026-03-31,Market Maker - Quant,Financials,421348660.7647188,13071893169.688831
-2026-03-31,Market Maker - Quant,Health Care,-4597208758.083173,11678571823.83768
-2026-03-31,Market Maker - Quant,Industrials,774541271.1347288,4008054836.875345
-2026-03-31,Market Maker - Quant,Information Technology,14654429258.650017,37744214021.24614
-2026-03-31,Market Maker - Quant,Materials,-1769689675.360757,3337850420.7622313
-2026-03-31,Market Maker - Quant,Real Estate,137601572.50431088,825395924.9836416
-2026-03-31,Market Maker - Quant,Unclassified,5986605972.872195,69388944198.78069
-2026-03-31,Market Maker - Quant,Utilities,-94989620.57498911,378453814.2714607
+2026-03-31,Hedge Fund - Value,Unclassified,228330433.51977754,747069953.797622
+2026-03-31,Market Maker - Quant,Communication Services,39102735.4359816,25859014535.014877
+2026-03-31,Market Maker - Quant,Consumer Discretionary,5193793124.771619,30136701946.782753
+2026-03-31,Market Maker - Quant,Consumer Staples,-2547409169.282434,10810750829.700344
+2026-03-31,Market Maker - Quant,ETF - Broad Equity,115847452943.77809,134533356617.77757
+2026-03-31,Market Maker - Quant,ETF - Commodity,14650763920.23277,21424976188.9962
+2026-03-31,Market Maker - Quant,ETF - Fixed Income,2537089811.2844315,9052771877.252905
+2026-03-31,Market Maker - Quant,ETF - International Equity,1823757141.0444853,5671435184.3240795
+2026-03-31,Market Maker - Quant,ETF - Sector,3057103930.6330404,7546147448.198458
+2026-03-31,Market Maker - Quant,ETF - Thematic,13322619.109681834,937096029.4516562
+2026-03-31,Market Maker - Quant,Energy,5649561027.642766,13687688361.49897
+2026-03-31,Market Maker - Quant,Financials,3145291650.749407,24965244787.93944
+2026-03-31,Market Maker - Quant,Health Care,-7436088022.539768,20584556682.495735
+2026-03-31,Market Maker - Quant,Industrials,3180231703.789463,8981909638.846382
+2026-03-31,Market Maker - Quant,Information Technology,41059328235.40445,87203972124.54341
+2026-03-31,Market Maker - Quant,Materials,-712321050.0193065,6082667150.153888
+2026-03-31,Market Maker - Quant,Real Estate,559914821.2429613,1599235123.4880116
+2026-03-31,Market Maker - Quant,Unclassified,30112487879.407097,142048854654.7671
+2026-03-31,Market Maker - Quant,Utilities,243854532.94773036,947322363.650066
 2026-03-31,Pension Fund,Communication Services,-1322053191.0843246,1464625646.4477053
 2026-03-31,Pension Fund,Consumer Discretionary,169683753.74033135,1057473433.4685687
 2026-03-31,Pension Fund,Consumer Staples,-713782680.6243528,854093593.3785498
@@ -2975,6 +2890,24 @@ period,manager_type,sector,net_flow,gross_flow
 2026-06-30,Asset Manager - Index,Real Estate,-135489569.39579365,894067655.1514729
 2026-06-30,Asset Manager - Index,Unclassified,45738048246.926346,70744164669.39156
 2026-06-30,Asset Manager - Index,Utilities,428125550.52054775,664391832.2121933
+2026-06-30,Asset Manager - Index/Active,Communication Services,11624517445.463,13151676297.558645
+2026-06-30,Asset Manager - Index/Active,Consumer Discretionary,19196765140.1995,26873042798.543613
+2026-06-30,Asset Manager - Index/Active,Consumer Staples,-729041266.5776085,4472428070.939126
+2026-06-30,Asset Manager - Index/Active,ETF - Broad Equity,2616072076.747122,22600717465.081028
+2026-06-30,Asset Manager - Index/Active,ETF - Commodity,-3173872994.354975,4482765155.700907
+2026-06-30,Asset Manager - Index/Active,ETF - Fixed Income,-555110834.1831212,2362753308.9097686
+2026-06-30,Asset Manager - Index/Active,ETF - International Equity,1007556559.4226236,1760990880.6591742
+2026-06-30,Asset Manager - Index/Active,ETF - Sector,-422168754.82911867,649045573.649632
+2026-06-30,Asset Manager - Index/Active,ETF - Thematic,2875748.947571877,2943291.052428122
+2026-06-30,Asset Manager - Index/Active,Energy,12695121798.795078,27545339338.073524
+2026-06-30,Asset Manager - Index/Active,Financials,-918575683.1851126,15285189130.951382
+2026-06-30,Asset Manager - Index/Active,Health Care,12507675076.385649,21067934406.662994
+2026-06-30,Asset Manager - Index/Active,Industrials,1001642749.8150318,27857538099.387688
+2026-06-30,Asset Manager - Index/Active,Information Technology,20211553399.377422,42913957783.38155
+2026-06-30,Asset Manager - Index/Active,Materials,667737102.5155832,3219020697.40688
+2026-06-30,Asset Manager - Index/Active,Real Estate,1304817080.4389462,3413146513.733399
+2026-06-30,Asset Manager - Index/Active,Unclassified,82659618537.82877,176851259866.83417
+2026-06-30,Asset Manager - Index/Active,Utilities,1290884758.2505758,2263139333.550283
 2026-06-30,Asset Manager - Value,Communication Services,-1182977760.1228247,4174376216.847623
 2026-06-30,Asset Manager - Value,Consumer Discretionary,5026921036.041274,5241566543.744601
 2026-06-30,Asset Manager - Value,Consumer Staples,26338540.117352724,111520557.36135055
@@ -3021,19 +2954,20 @@ period,manager_type,sector,net_flow,gross_flow
 2026-06-30,Foundation / Endowment,Health Care,0.0,0.0
 2026-06-30,Foundation / Endowment,Industrials,0.0,0.0
 2026-06-30,Foundation / Endowment,Unclassified,-25386877.009657204,385425539.0096572
-2026-06-30,Hedge Fund - Activist,Communication Services,0.0,0.0
-2026-06-30,Hedge Fund - Activist,Consumer Discretionary,-3067000.109065026,66397000.109065026
+2026-06-30,Hedge Fund - Activist,Communication Services,-79592317.73949012,409481293.73949015
+2026-06-30,Hedge Fund - Activist,Consumer Discretionary,10542213.890934974,80006214.10906503
 2026-06-30,Hedge Fund - Activist,Consumer Staples,0.0,0.0
-2026-06-30,Hedge Fund - Activist,ETF - Broad Equity,3638541647.780891,4221509969.780891
+2026-06-30,Hedge Fund - Activist,ETF - Broad Equity,3894657620.780891,4477625942.780891
 2026-06-30,Hedge Fund - Activist,ETF - Fixed Income,285999000.0,1087599000.0
 2026-06-30,Hedge Fund - Activist,ETF - Sector,-61986800.0,799332700.0
 2026-06-30,Hedge Fund - Activist,Energy,-1244809101.925129,1247746546.074871
-2026-06-30,Hedge Fund - Activist,Financials,84044150.0,84044150.0
-2026-06-30,Hedge Fund - Activist,Health Care,-98530449.0160706,98530449.0160706
+2026-06-30,Hedge Fund - Activist,Financials,109604880.0,109604880.0
+2026-06-30,Hedge Fund - Activist,Health Care,98703563.54450613,295764461.57664734
+2026-06-30,Hedge Fund - Activist,Industrials,0.0,0.0
 2026-06-30,Hedge Fund - Activist,Information Technology,-428858341.0,428858341.0
 2026-06-30,Hedge Fund - Activist,Materials,-13301199.600002507,13301199.600002507
 2026-06-30,Hedge Fund - Activist,Real Estate,0.0,0.0
-2026-06-30,Hedge Fund - Activist,Unclassified,91226025.2678979,4023556954.211897
+2026-06-30,Hedge Fund - Activist,Unclassified,963850163.097254,6939526052.958302
 2026-06-30,Hedge Fund - Activist,Utilities,-105424417.7227347,105424417.7227347
 2026-06-30,Hedge Fund - Event Driven,Communication Services,986140150.0,1089123550.0
 2026-06-30,Hedge Fund - Event Driven,Consumer Discretionary,-45284600.0,45284600.0
@@ -3066,30 +3000,30 @@ period,manager_type,sector,net_flow,gross_flow
 2026-06-30,Hedge Fund - Global Macro,Real Estate,61015824.30072894,917944234.6296501
 2026-06-30,Hedge Fund - Global Macro,Unclassified,-402542347.38064694,19330944146.546265
 2026-06-30,Hedge Fund - Global Macro,Utilities,98524029.58466311,439695002.550787
-2026-06-30,Hedge Fund - Long/Short,Communication Services,825807977.3238094,987404391.4542778
-2026-06-30,Hedge Fund - Long/Short,Consumer Discretionary,-53391335.62048224,1116218649.526412
-2026-06-30,Hedge Fund - Long/Short,Consumer Staples,186037014.42895612,640465501.0071324
+2026-06-30,Hedge Fund - Long/Short,Communication Services,-89653330.31693554,3878288864.671273
+2026-06-30,Hedge Fund - Long/Short,Consumer Discretionary,-725179648.3852617,3454723053.8342824
+2026-06-30,Hedge Fund - Long/Short,Consumer Staples,549911427.4847963,1004339914.0629727
 2026-06-30,Hedge Fund - Long/Short,ETF - Broad Equity,167313617.00000003,547415663.0
-2026-06-30,Hedge Fund - Long/Short,Energy,258950447.0408373,1587286844.5201027
-2026-06-30,Hedge Fund - Long/Short,Financials,277941353.3139651,2657267929.9672956
-2026-06-30,Hedge Fund - Long/Short,Health Care,-607639507.9214574,5458034792.442285
-2026-06-30,Hedge Fund - Long/Short,Industrials,-259728457.90017545,625299776.529764
-2026-06-30,Hedge Fund - Long/Short,Information Technology,-587805015.4069049,2257384475.721458
+2026-06-30,Hedge Fund - Long/Short,Energy,499019238.04083735,1827355635.5201027
+2026-06-30,Hedge Fund - Long/Short,Financials,-1180899362.086429,6488319375.609112
+2026-06-30,Hedge Fund - Long/Short,Health Care,-844876333.0912111,7012510822.161185
+2026-06-30,Hedge Fund - Long/Short,Industrials,314200218.5858389,1199228453.0157785
+2026-06-30,Hedge Fund - Long/Short,Information Technology,-1497408960.7381861,5045141357.052739
 2026-06-30,Hedge Fund - Long/Short,Materials,16084212.698145345,135939616.01380846
-2026-06-30,Hedge Fund - Long/Short,Real Estate,1763733.4193112478,190196265.74877596
-2026-06-30,Hedge Fund - Long/Short,Unclassified,-1482336432.258851,14720544077.920027
-2026-06-30,Hedge Fund - Long/Short,Utilities,-169726778.995894,218032513.004106
-2026-06-30,Hedge Fund - Long/Short Growth,Communication Services,-2555704220.9912205,3064265071.2650814
-2026-06-30,Hedge Fund - Long/Short Growth,Consumer Discretionary,1569651808.0361884,2349812102.9617014
+2026-06-30,Hedge Fund - Long/Short,Real Estate,-21373665.149643682,213333664.31773087
+2026-06-30,Hedge Fund - Long/Short,Unclassified,-1119604129.058302,22985383042.326473
+2026-06-30,Hedge Fund - Long/Short,Utilities,-188752278.995894,237058013.004106
+2026-06-30,Hedge Fund - Long/Short Growth,Communication Services,-2830163305.4586735,3463932307.7325344
+2026-06-30,Hedge Fund - Long/Short Growth,Consumer Discretionary,1649684711.7475662,2429845006.6730795
 2026-06-30,Hedge Fund - Long/Short Growth,Consumer Staples,323925533.4081166,323925533.4081166
 2026-06-30,Hedge Fund - Long/Short Growth,ETF - Broad Equity,-2582823.0,2582823.0
-2026-06-30,Hedge Fund - Long/Short Growth,Energy,2714206642.5106535,3883850037.4893465
+2026-06-30,Hedge Fund - Long/Short Growth,Energy,3017736869.5106535,4187380264.4893465
 2026-06-30,Hedge Fund - Long/Short Growth,Financials,-862710646.124617,1707029543.26503
 2026-06-30,Hedge Fund - Long/Short Growth,Health Care,-385874756.67879295,559592516.678793
-2026-06-30,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
-2026-06-30,Hedge Fund - Long/Short Growth,Information Technology,5756085235.702852,11250512010.076109
+2026-06-30,Hedge Fund - Long/Short Growth,Industrials,-43247797.16877615,43247797.16877615
+2026-06-30,Hedge Fund - Long/Short Growth,Information Technology,7973144943.097493,13561203344.98717
 2026-06-30,Hedge Fund - Long/Short Growth,Real Estate,190372728.28646734,190372728.28646734
-2026-06-30,Hedge Fund - Long/Short Growth,Unclassified,878150325.1121922,16257020819.178148
+2026-06-30,Hedge Fund - Long/Short Growth,Unclassified,1568720184.0936687,17074661706.159624
 2026-06-30,Hedge Fund - Long/Short Growth,Utilities,1145207477.0,1145207477.0
 2026-06-30,Hedge Fund - Multi-strategy,Communication Services,2809447068.1078863,20002241623.8765
 2026-06-30,Hedge Fund - Multi-strategy,Consumer Discretionary,1708363176.0910902,24743042084.334778
@@ -3118,49 +3052,52 @@ period,manager_type,sector,net_flow,gross_flow
 2026-06-30,Hedge Fund - Opportunistic,Industrials,340964288.09630334,472907888.09630334
 2026-06-30,Hedge Fund - Opportunistic,Information Technology,-425606385.27,1353594305.27
 2026-06-30,Hedge Fund - Opportunistic,Unclassified,-356255143.8313543,789849184.1686456
-2026-06-30,Hedge Fund - Quant,Communication Services,3433679132.1815844,11372324446.006472
-2026-06-30,Hedge Fund - Quant,Consumer Discretionary,4279703488.0987024,18482407976.196148
-2026-06-30,Hedge Fund - Quant,Consumer Staples,1823443173.481368,6619980936.600187
-2026-06-30,Hedge Fund - Quant,ETF - Broad Equity,21814560386.088837,34555382162.46897
-2026-06-30,Hedge Fund - Quant,ETF - Commodity,62188159.40022888,1333406712.0682898
-2026-06-30,Hedge Fund - Quant,ETF - Fixed Income,149810120.965339,482070072.87448245
-2026-06-30,Hedge Fund - Quant,ETF - International Equity,161136974.59508306,580453565.1021727
-2026-06-30,Hedge Fund - Quant,ETF - Sector,243624590.3481195,2856209568.698638
-2026-06-30,Hedge Fund - Quant,ETF - Thematic,-45573411.529868685,94002342.31992885
-2026-06-30,Hedge Fund - Quant,Energy,6062136739.065968,15337473854.773882
-2026-06-30,Hedge Fund - Quant,Financials,9869693048.856966,30274669727.826004
-2026-06-30,Hedge Fund - Quant,Health Care,-356058064.7639706,22549122738.87201
-2026-06-30,Hedge Fund - Quant,Industrials,624943465.3417205,8784254741.429474
-2026-06-30,Hedge Fund - Quant,Information Technology,-15946318789.97971,50449048051.67696
-2026-06-30,Hedge Fund - Quant,Materials,1609630262.8236256,5731908796.442684
-2026-06-30,Hedge Fund - Quant,Real Estate,2245026852.303486,3467151762.953891
-2026-06-30,Hedge Fund - Quant,Unclassified,19414812983.173416,160653150657.37784
-2026-06-30,Hedge Fund - Quant,Utilities,-226887161.267149,1866122820.7911725
-2026-06-30,Hedge Fund - Value,Communication Services,67415.3111198741,67415.3111198741
-2026-06-30,Hedge Fund - Value,Consumer Discretionary,139327.41157819447,331746.8839636665
-2026-06-30,Hedge Fund - Value,Financials,83298.92388590125,190089.07611409875
-2026-06-30,Hedge Fund - Value,Health Care,0.0,0.0
+2026-06-30,Hedge Fund - Quant,Communication Services,5879412298.3347,14617896713.035923
+2026-06-30,Hedge Fund - Quant,Consumer Discretionary,5482604104.076869,20914130876.892387
+2026-06-30,Hedge Fund - Quant,Consumer Staples,1571808398.9652312,7105618618.120824
+2026-06-30,Hedge Fund - Quant,ETF - Broad Equity,22371099174.130486,36078059423.606384
+2026-06-30,Hedge Fund - Quant,ETF - Commodity,215573511.27123627,1504581848.539297
+2026-06-30,Hedge Fund - Quant,ETF - Fixed Income,422418097.2836484,809139144.6079118
+2026-06-30,Hedge Fund - Quant,ETF - International Equity,94473608.88113678,726282361.7903557
+2026-06-30,Hedge Fund - Quant,ETF - Sector,74562102.89495939,3332376813.351798
+2026-06-30,Hedge Fund - Quant,ETF - Thematic,-48807878.529868685,106687359.31992885
+2026-06-30,Hedge Fund - Quant,Energy,7263029754.222153,17319528385.362675
+2026-06-30,Hedge Fund - Quant,Financials,9025947389.09863,33284514848.68689
+2026-06-30,Hedge Fund - Quant,Health Care,-387430499.52287745,25262192158.695553
+2026-06-30,Hedge Fund - Quant,Industrials,-52840339.93252117,9979535928.49377
+2026-06-30,Hedge Fund - Quant,Information Technology,-17154008349.214165,56970150028.66436
+2026-06-30,Hedge Fund - Quant,Materials,1583255578.2566035,6682932554.049339
+2026-06-30,Hedge Fund - Quant,Real Estate,2208368814.7750006,3600906488.0755825
+2026-06-30,Hedge Fund - Quant,Unclassified,15691896206.201746,180923734663.91483
+2026-06-30,Hedge Fund - Quant,Utilities,-27357752.542226993,2186382572.882685
+2026-06-30,Hedge Fund - Value,Communication Services,5823785.494804427,180155159.12743533
+2026-06-30,Hedge Fund - Value,Consumer Discretionary,184603539.5823878,200045910.71315405
+2026-06-30,Hedge Fund - Value,ETF - Commodity,-5964072.203881517,5964072.203881517
+2026-06-30,Hedge Fund - Value,Energy,60917187.70817589,60917187.70817589
+2026-06-30,Hedge Fund - Value,Financials,61585435.923885904,61692226.076114096
+2026-06-30,Hedge Fund - Value,Health Care,32426889.844224222,41052253.406529315
 2026-06-30,Hedge Fund - Value,Industrials,-96723.0680068669,96723.0680068669
+2026-06-30,Hedge Fund - Value,Materials,9020966.491425568,9020966.491425568
 2026-06-30,Hedge Fund - Value,Real Estate,-14942.930394730483,14942.930394730483
-2026-06-30,Hedge Fund - Value,Unclassified,-479940.3371597279,953189.2628516871
-2026-06-30,Market Maker - Quant,Communication Services,12117992204.895285,14513666139.482145
-2026-06-30,Market Maker - Quant,Consumer Discretionary,10886418307.875385,16122816807.172516
-2026-06-30,Market Maker - Quant,Consumer Staples,1476539254.9381385,4332452911.201268
-2026-06-30,Market Maker - Quant,ETF - Broad Equity,18665145237.80294,80665804368.76656
-2026-06-30,Market Maker - Quant,ETF - Commodity,-2866619272.8904266,4940408643.067898
-2026-06-30,Market Maker - Quant,ETF - Fixed Income,-128419472.17262757,3542076417.144566
-2026-06-30,Market Maker - Quant,ETF - International Equity,-1426623686.5987074,2220997854.19411
-2026-06-30,Market Maker - Quant,ETF - Sector,-2149681930.006445,4148032703.4964404
-2026-06-30,Market Maker - Quant,ETF - Thematic,73389130.50714989,353185375.4883488
-2026-06-30,Market Maker - Quant,Energy,4449244650.9763365,10975643488.317492
-2026-06-30,Market Maker - Quant,Financials,774314733.937216,11120430052.775131
-2026-06-30,Market Maker - Quant,Health Care,-1507216644.7389908,13523681330.679409
-2026-06-30,Market Maker - Quant,Industrials,830115510.2894503,6930334523.097056
-2026-06-30,Market Maker - Quant,Information Technology,56674283377.9467,71585229997.68803
-2026-06-30,Market Maker - Quant,Materials,-314314582.5443907,1648122320.7042267
-2026-06-30,Market Maker - Quant,Real Estate,204893392.11834624,755123632.611901
-2026-06-30,Market Maker - Quant,Unclassified,82176304791.30894,133264801882.3731
-2026-06-30,Market Maker - Quant,Utilities,65238916.58215115,454190372.4644641
+2026-06-30,Hedge Fund - Value,Unclassified,-58866697.28641508,500729470.4136339
+2026-06-30,Market Maker - Quant,Communication Services,20440239944.37021,36358378509.575836
+2026-06-30,Market Maker - Quant,Consumer Discretionary,10872847768.872553,44903558765.05249
+2026-06-30,Market Maker - Quant,Consumer Staples,5953618433.932954,9920588171.415403
+2026-06-30,Market Maker - Quant,ETF - Broad Equity,91466910296.37558,165897933568.43323
+2026-06-30,Market Maker - Quant,ETF - Commodity,-9764752352.361753,12781945273.126894
+2026-06-30,Market Maker - Quant,ETF - Fixed Income,2505876430.633588,8190138610.567885
+2026-06-30,Market Maker - Quant,ETF - International Equity,-894772004.5175847,5663340929.877835
+2026-06-30,Market Maker - Quant,ETF - Sector,2676889.415885399,9693566115.286491
+2026-06-30,Market Maker - Quant,ETF - Thematic,-37532954.14058282,544688364.852771
+2026-06-30,Market Maker - Quant,Energy,20494602205.98961,30893833046.95865
+2026-06-30,Market Maker - Quant,Financials,5956385295.185399,26512321186.98684
+2026-06-30,Market Maker - Quant,Health Care,6916383413.654687,27027619355.658283
+2026-06-30,Market Maker - Quant,Industrials,4911362260.139303,14361868915.27436
+2026-06-30,Market Maker - Quant,Information Technology,103640579159.97784,144222382951.6015
+2026-06-30,Market Maker - Quant,Materials,1421379701.9233956,4704849230.349813
+2026-06-30,Market Maker - Quant,Real Estate,1391632139.2102752,2505578752.4251585
+2026-06-30,Market Maker - Quant,Unclassified,149969270723.05728,271142121275.29364
+2026-06-30,Market Maker - Quant,Utilities,333857234.80756056,1077004555.8932152
 2026-06-30,Pension Fund,Communication Services,-1819781672.2808988,1910102383.3179786
 2026-06-30,Pension Fund,Consumer Discretionary,-846428522.4917758,1978384561.7567842
 2026-06-30,Pension Fund,Consumer Staples,-67750919.9573763,668563826.7403272
