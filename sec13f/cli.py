@@ -115,7 +115,7 @@ def cmd_build(args, settings: Settings):
     }.items():
         if df is not None and not df.empty:
             df.to_csv(odir / f"{name}.csv", index=False)
-    (odir / "insights.json").write_text(json.dumps(insights, indent=2, default=str, ensure_ascii=False))
+    (odir / "insights.json").write_text(json.dumps(insights, indent=2, default=str, ensure_ascii=False), encoding="utf-8")
 
     report = build_report(insights, msum, fp, exp_asset_ew, exp_sector_ew, cons, changes, source)
     (odir / "report.md").write_text(report, encoding="utf-8")
