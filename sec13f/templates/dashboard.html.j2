@@ -120,7 +120,6 @@ td.meta{white-space:normal}
 .bar-cell i.neg{background:var(--s8)}
 .foot{color:var(--muted);font-size:12.5px;margin-top:8px}
 .meta{font-size:13px;color:var(--ink2)}
-.warn{border-left:3px solid var(--s4);padding:8px 14px;background:var(--surface);border-radius:0 6px 6px 0;font-size:13.5px;margin-top:14px;max-width:90ch}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin:6px 0 0}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
 @media (max-width:640px){.insights li{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.kpi{border-right:0}}
@@ -167,7 +166,6 @@ td.meta{white-space:normal}
   <p class="lede">Cambios en tenencias y exposición de {{ n_managers }} instituciones que reportan a la SEC, por tipo de activo, sector, fondo y tipo de manager. Los valores son los reportados en el 13F (posiciones largas en valores 13(f) de EE.UU.), normalizados a dólares.</p>
   <div class="kpis" id="kpis"></div>
   <ul class="insights" id="insights"></ul>
-  {% if source == 'sample' %}<div class="warn"><strong>Datos de muestra.</strong> Este corte se generó sin conexión a SEC con filings sintéticos que respetan el esquema XML de EDGAR (identificadores reales, tenencias simuladas). Ejecuta <span class="mono">python -m sec13f.cli all --source sec</span> con acceso a internet para reemplazarlo por los reportes reales.</div>{% endif %}
 </section>
 
 <section id="s-history">
@@ -434,7 +432,7 @@ function renderLead(){
     {l:'Rotación promedio', v:pct(k.avg_turnover,0), d:`${k.n_add||0} aumentos · ${k.n_trim||0} reducciones`},
   ];
   document.getElementById('kpis').innerHTML = tiles.map(t=>`<div class="kpi"><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="d">${t.d}</div></div>`).join('');
-  const TAG={flows:'Flujos',asset_mix:'Activos',sector:'Sectores',sector_positioning:'Posicionamiento',sector_driver:'Sectores',sector_extremes:'Extremos',
+  const TAG={flows:'Flujos',coverage:'Cobertura',asset_mix:'Activos',sector:'Sectores',sector_positioning:'Posicionamiento',sector_driver:'Sectores',sector_extremes:'Extremos',
              consensus_buy:'Consenso',consensus_sell:'Consenso',moves:'Movimientos',company_moves:'Empresas',turnover:'Rotación',type_mismatch:'Perfil',options:'Opciones'};
   document.getElementById('insights').innerHTML = ins.bullets.map(b=>`<li><span class="tag">${TAG[b.kind]||b.kind}</span><span>${esc(b.text)}</span></li>`).join('');
 }
