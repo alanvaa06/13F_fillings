@@ -170,7 +170,7 @@ td.meta{white-space:normal}
 
 <section id="s-history">
   <h2>Serie histórica <span class="meta" id="hist-span"></span></h2>
-  <p class="lede">Evolución trimestral del universo completo. Las vistas de detalle por posición (movimientos, consenso, opciones, detalle por manager) cubren los últimos <span id="n-detail"></span> trimestres; las series agregadas cubren todo el histórico.</p>
+  <p class="lede">Evolución trimestral del universo completo. Todas las vistas cubren los <span id="n-detail"></span> trimestres; el detalle por posición de cada trimestre (movimientos, emisoras, consenso, opciones, detalle por manager) se carga al seleccionarlo.</p>
   <div class="grid2">
     <div><h3>Valor reportado del universo</h3><div id="c-hist-value" class="chart"></div></div>
     <div><h3>Flujo neto estimado por trimestre</h3><div id="c-hist-flow" class="chart"></div></div>
@@ -309,10 +309,26 @@ td.meta{white-space:normal}
 <script id="data" type="application/json">{{ data_json }}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const ALLP = DATA.periods; const DETAIL = DATA.detail_periods; const P = ALLP; let cur = ALLP[ALLP.length-1];
-const hasDetail = () => DETAIL.includes(cur);
-const DETAIL_MSG = () => `Detalle por posición disponible para los últimos ${DETAIL.length} trimestres (desde ${ql(DETAIL[0])}). Selecciona un trimestre más reciente; las vistas agregadas sí cubren este periodo.`;
-const noDetailTable = (id, capId) => { document.getElementById(id).innerHTML = `<tbody><tr><td class="meta">${esc(DETAIL_MSG())}</td></tr></tbody>`; if(capId) document.getElementById(capId).textContent=''; }; let wmode = 'ew'; let smode = 'ew'; let hmode = 'ew'; let amode = 'ALL'; let mgrLabels = true; let cmetric = 'flow'; let cmag = 'ALL';
+const ALLP = DATA.periods; const P = ALLP; let cur = ALLP[ALLP.length-1];
+let wmode = 'ew'; let smode = 'ew'; let hmode = 'ew'; let amode = 'ALL'; let mgrLabels = true; let cmetric = 'flow'; let cmag = 'ALL';
+// Position-level detail lives in one JSON per quarter (dashboard_data/<period>.json); the most recent quarters are
+// embedded inline so the file also works without a server. DET caches whatever has been loaded.
+const DET = Object.assign({}, DATA.detail||{});
+const DETAIL_URL = DATA.detail_url || 'dashboard_data/{period}.json';
+const det = (key, p) => { const d = DET[p||cur]; if(!d) return key==='companies_totals' ? null : []; const v = d[key]; return v==null ? (key==='companies_totals' ? null : []) : v; };
+const hasDetail = (p) => !!DET[p||cur];
+let detailError = '';
+const DETAIL_MSG = () => detailError || 'Cargando el detalle del trimestre…';
+const noDetailTable = (id, capId) => { document.getElementById(id).innerHTML = `<tbody><tr><td class="meta">${esc(DETAIL_MSG())}</td></tr></tbody>`; if(capId) document.getElementById(capId).textContent=''; };
+async function ensureDetail(periods){
+  const missing = [...new Set(periods.filter(p=>p && !DET[p]))];
+  if(!missing.length) return true;
+  if(location.protocol==='file:'){ detailError='El detalle de este trimestre se carga desde dashboard_data/<trimestre>.json y el navegador no permite leerlo desde file://. Abre el dashboard por HTTP (GitHub Pages o `python -m http.server` dentro de output/).'; return false; }
+  try{
+    await Promise.all(missing.map(async p=>{ const r=await fetch(DETAIL_URL.replace('{period}', p)); if(!r.ok) throw new Error(`HTTP ${r.status} (${ql(p)})`); DET[p]=await r.json(); }));
+    detailError=''; return true;
+  }catch(e){ detailError='No se pudo cargar el detalle de este trimestre: '+e.message+'.'; return false; }
+}
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const SERIES = () => ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(css);
 const usd = x => { if (x==null||isNaN(x)) return '—'; const a=Math.abs(x), s=x<0?'-':''; if(a>=1e12) return s+'$'+(a/1e12).toFixed(2)+'T'; if(a>=1e9) return s+'$'+(a/1e9).toFixed(1)+'B'; if(a>=1e6) return s+'$'+(a/1e6).toFixed(0)+'M'; return s+'$'+a.toFixed(0); };
@@ -395,7 +411,7 @@ function renderPeriods(){
     document.getElementById('p-prev').onclick=()=>{const i=P.indexOf(cur); if(i>0){cur=P[i-1]; renderAll();}};
     document.getElementById('p-next').onclick=()=>{const i=P.indexOf(cur); if(i<P.length-1){cur=P[i+1]; renderAll();}}; }
   sel.value=cur; document.getElementById('period-span').textContent=`cierre ${cur}`;
-  document.querySelectorAll('.n-detail,#n-detail').forEach(e=>e.textContent=DETAIL.length);
+  document.querySelectorAll('.n-detail,#n-detail').forEach(e=>e.textContent=ALLP.length);
   document.getElementById('hist-span').textContent=`${ql(ALLP[0])} – ${ql(ALLP[ALLP.length-1])}`;
 }
 // ---------- history
@@ -532,7 +548,7 @@ function movesTable(el, rows, withMgr){
 function renderMoves(){
   if(!hasDetail()){ noDetailTable('t-moves','cap-moves'); return; }
   const mgr=document.getElementById('moves-mgr').value;
-  const all = DATA.moves.filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
+  const all = det('moves').filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
   const rows = [...all].sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,40);
   movesTable(document.getElementById('t-moves'), rows, true);
   document.getElementById('cap-moves').textContent = all.length>rows.length ? `${rows.length} de ${all.length} movimientos (mayor |flujo| primero)` : `${rows.length} movimientos`;
@@ -540,7 +556,7 @@ function renderMoves(){
 // ---------- companies (universe-wide aggregate per issuer)
 const MAG_ES = {MAJOR:'Mayor', MINOR:'Menor', NONE:'Sin cambio'};
 function renderCompanies(){
-  const all = (DATA.companies||[]).filter(r=>r.period===cur);
+  const all = det('companies').filter(r=>r.period===cur);
   const kp = document.getElementById('companies-kpis');
   if(!all.length){
     const msg = hasDetail() ? 'Sin trimestre previo para comparar.' : DETAIL_MSG();
@@ -548,7 +564,7 @@ function renderCompanies(){
     document.getElementById('t-companies').innerHTML=''; document.getElementById('cap-companies').textContent=''; document.getElementById('companies-foot').textContent=''; return;
   }
   // KPIs come from full-universe totals computed in Python; the embedded rows are only the top movers per quarter.
-  const T = (DATA.companies_totals||{})[cur] || {
+  const T = det('companies_totals') || {
     total:all.length, major:all.filter(r=>r.magnitude==='MAJOR').length, minor:all.filter(r=>r.magnitude==='MINOR').length, none:all.filter(r=>r.magnitude==='NONE').length,
     n_bought:all.filter(r=>r.net_flow>0).length, n_sold:all.filter(r=>r.net_flow<0).length,
     buy_flow:all.filter(r=>r.net_flow>0).reduce((a,r)=>a+r.net_flow,0), sell_flow:all.filter(r=>r.net_flow<0).reduce((a,r)=>a+r.net_flow,0),
@@ -606,7 +622,7 @@ function renderCompanies(){
 }
 // ---------- consensus
 function renderConsensus(){
-  const C = DATA.consensus.filter(r=>r.period===cur);
+  const C = det('consensus').filter(r=>r.period===cur);
   const emptyMsg = hasDetail() ? undefined : DETAIL_MSG();
   const issuerCol = {k:'issuer', h:'Emisor', cls:'txt', s:r=>title(r.issuer), f:r=>esc(title(r.issuer))};
   const held = [...C].sort((a,b)=>b.holders-a.holders||b.total_value-a.total_value).slice(0,12);
@@ -624,7 +640,7 @@ function renderConsensus(){
 }
 // ---------- options
 function renderOptions(){
-  const O = DATA.putcall.filter(r=>r.period===cur).sort((a,b)=>(b.put+b.call)-(a.put+a.call)).slice(0,15).reverse();
+  const O = det('putcall').filter(r=>r.period===cur).sort((a,b)=>(b.put+b.call)-(a.put+a.call)).slice(0,15).reverse();
   if(!O.length){ emptyChart(document.getElementById('c-putcall'), hasDetail() ? 'Sin opciones reportadas en este periodo.' : DETAIL_MSG()); return; }
   plot('c-putcall', [
     {type:'bar', orientation:'h', name:'Puts', x:O.map(r=>r.put/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s8'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · puts: $%{x:.2f}B<extra></extra>'},
@@ -648,11 +664,11 @@ function renderDetail(){
     document.querySelectorAll('.detail-delta-label').forEach(e=>e.textContent='');
     renderDetailAum(cik); noDetailTable('t-detail-moves'); return;
   }
-  const H = DATA.holdings.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight).slice(-15);
+  const H = det('holdings').filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight).slice(-15);
   plot('c-detail-top', [{type:'bar', orientation:'h', x:H.map(r=>r.weight*100), y:H.map(r=>title(r.issuer)+(r.put_call?' ('+r.put_call+')':'')), marker:{color:css('--s1')}, text:H.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
     customdata:H.map(r=>[usd(r.value_usd), r.asset_type, r.sector]), hovertemplate:'%{y}<br>%{x:.1f}% · %{customdata[0]}<br>%{customdata[1]} · %{customdata[2]}<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
-  const S = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight);
+  const S = det('mgr_sector').filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight);
   plot('c-detail-sector', [{type:'bar', orientation:'h', x:S.map(r=>r.weight*100), y:S.map(r=>r.sector), marker:{color:css('--s1')}, text:S.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}%<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
   // changes vs previous quarter: top positions (weight_prev comes from the position diff) and sector weights
@@ -666,24 +682,33 @@ function renderDetail(){
       base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp', zeroline:true, range:divRange(rows.map(r=>r.d*100))}), showlegend:false, margin:{l:8,r:16,t:8,b:36}}));
   };
   if(prev){
-    const topD = DATA.holdings.filter(r=>r.period===cur&&r.cik===cik&&r.weight_prev!=null).map(r=>({name:title(r.issuer)+(r.put_call?' ('+r.put_call+')':''), w0:r.weight_prev, w1:r.weight, d:r.weight-r.weight_prev}));
-    const exits = DATA.moves.filter(r=>r.period===cur&&r.cik===cik&&r.action==='EXIT').sort((a,b)=>b.weight_prev-a.weight_prev).slice(0,5)
+    const topD = det('holdings').filter(r=>r.period===cur&&r.cik===cik&&r.weight_prev!=null).map(r=>({name:title(r.issuer)+(r.put_call?' ('+r.put_call+')':''), w0:r.weight_prev, w1:r.weight, d:r.weight-r.weight_prev}));
+    const exits = det('moves').filter(r=>r.period===cur&&r.cik===cik&&r.action==='EXIT').sort((a,b)=>b.weight_prev-a.weight_prev).slice(0,5)
       .map(r=>({name:title(r.issuer)+(r.put_call?' ('+r.put_call+')':'')+' · salida', w0:r.weight_prev, w1:0, d:-r.weight_prev}));
     const rowsT = [...topD, ...exits].sort((a,b)=>a.d-b.d);
     dbar('c-detail-top-delta', rowsT, r=>r.name, '%{y}<br>%{customdata[0]} → %{customdata[1]} (%{x:+.2f} pp)<extra></extra>');
-    const S1 = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik), S0 = DATA.mgr_sector.filter(r=>r.period===prev&&r.cik===cik);
+    const S1 = det('mgr_sector').filter(r=>r.period===cur&&r.cik===cik), S0 = det('mgr_sector', prev).filter(r=>r.period===prev&&r.cik===cik);
     const secs=[...new Set([...S1.map(r=>r.sector), ...S0.map(r=>r.sector)])];
     const rowsS = secs.map(sc=>{const w1=(S1.find(r=>r.sector===sc)||{}).weight||0, w0=(S0.find(r=>r.sector===sc)||{}).weight||0; return {name:sc, w0, w1, d:w1-w0};})
       .filter(r=>Math.abs(r.d)>=0.0005 || r.w1>0.01).sort((a,b)=>a.d-b.d);
     dbar('c-detail-sector-delta', S0.length?rowsS:[], r=>r.name, '%{y}<br>%{customdata[0]} → %{customdata[1]} (%{x:+.2f} pp)<extra></extra>');
   } else { dbar('c-detail-top-delta', [], null, ''); dbar('c-detail-sector-delta', [], null, ''); }
   renderDetailAum(cik);
-  const rows = DATA.moves.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,15);
+  const rows = det('moves').filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,15);
   const el=document.getElementById('t-detail-moves');
   if(!rows.length){ el.innerHTML='<tbody><tr><td class="meta">Sin trimestre previo para comparar.</td></tr></tbody>'; } else movesTable(el, rows, false);
 }
 let histDone=false;
-function renderAll(){ renderPeriods(); renderLead(); if(!histDone){ renderHistory(); histDone=true; } renderAsset(); renderSector(); renderManagers(); renderMoves(); renderCompanies(); renderConsensus(); renderOptions(); renderDetail(); }
+function renderCore(){ renderPeriods(); renderLead(); if(!histDone){ renderHistory(); histDone=true; } renderAsset(); renderSector(); renderManagers(); }
+function renderDetailSections(){ renderMoves(); renderCompanies(); renderConsensus(); renderOptions(); renderDetail(); }
+let renderSeq = 0;
+function renderAll(){
+  renderCore();
+  const seq = ++renderSeq; const need = [cur, prevOf(cur)];
+  if(need.every(p=>!p || DET[p])){ renderDetailSections(); return; }
+  detailError=''; renderDetailSections();  // paints the "Cargando…" placeholders
+  ensureDetail(need).then(()=>{ if(seq===renderSeq) renderDetailSections(); });
+}
 document.querySelectorAll('.wbtn').forEach(b=>b.onclick=()=>{wmode=b.dataset.w; document.querySelectorAll('.wbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderAsset();});
 document.querySelectorAll('.swbtn').forEach(b=>b.onclick=()=>{smode=b.dataset.w; document.querySelectorAll('.swbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderSector();});
 document.querySelectorAll('.hwbtn').forEach(b=>b.onclick=()=>{hmode=b.dataset.w; document.querySelectorAll('.hwbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderHistory();});

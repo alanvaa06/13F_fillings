@@ -1,4 +1,5 @@
 """End-to-end: generate sample filings into a temp dir and build every artifact."""
+import json
 from pathlib import Path
 
 from sec13f.classify import SecurityClassifier
@@ -37,8 +38,15 @@ def test_cli_build_end_to_end(tmp_path: Path, monkeypatch):
     assert "Empresas que más se movieron" in report and "Resumen por magnitud" in report
     assert (out / "holdings.csv").exists() and (out / "changes.csv").exists() and (out / "consensus.csv").exists()
     assert (out / "sector_positioning.csv").exists() and (out / "company_moves.csv").exists()
-    import json
-
+    # one detail JSON per quarter, each with the position-level tables the page loads on demand
+    files = sorted((out / "dashboard_data").glob("*.json"))
+    insights_all = json.loads((out / "insights.json").read_text(encoding="utf-8"))
+    assert [f.stem for f in files] == sorted(i["period"] for i in insights_all)
+    payload = json.loads(files[-1].read_text(encoding="utf-8"))
+    assert {"moves", "consensus", "holdings", "mgr_sector", "companies", "putcall", "companies_totals"} <= set(payload)
+    assert payload["holdings"] and payload["companies_totals"]["total"] > 0
+    html = (out / "dashboard.html").read_text(encoding="utf-8")
+    assert '"detail_url":"dashboard_data/{period}.json"' in html and files[-1].stem in html
     insights = json.loads((out / "insights.json").read_text(encoding="utf-8"))
     kinds = {b["kind"] for b in insights[-1]["bullets"]}
     assert {"sector_positioning", "company_moves"} <= kinds

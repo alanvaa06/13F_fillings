@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths:
       - "output/dashboard.html"
+      - "output/dashboard_data/**"
       - "output/report.md"
       - "output/*.csv"
       - ".github/workflows/pages.yml"
@@ -30,6 +31,7 @@ jobs:
         run: |
           mkdir -p _site
           cp output/dashboard.html _site/index.html
+          cp -r output/dashboard_data _site/dashboard_data
           cp output/report.md _site/report.md
           cp output/insights.json _site/insights.json
           cp output/*.csv _site/ 2>/dev/null || true

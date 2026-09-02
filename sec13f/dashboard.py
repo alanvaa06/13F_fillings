@@ -26,7 +26,10 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
                     insights: list[dict], managers, source: str, n_filings: int, title: str = "13F Holdings Tracker", detail_quarters: int = 12,
                     exp_sector_vw: pd.DataFrame | None = None, company_moves: pd.DataFrame | None = None, company_rows: int = 400) -> Path:
     periods = sorted(h["period"].unique())
-    detail_periods = periods[-detail_quarters:]
+    # position-level detail exists for EVERY quarter; it is written as one JSON file per quarter (loaded on demand by
+    # the page) and the most recent `detail_quarters` are also embedded inline so the file works without a server
+    detail_periods = periods
+    inline_periods = periods[-max(1, detail_quarters):]
     short = {m.cik: m.short for m in managers}
 
     # exposure by asset: merge EW + VW
@@ -128,13 +131,27 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
     # options: the dashboard charts the top 15 underlyings per quarter; keep a margin, not the whole option universe
     if not pcr_det.empty:
         pcr_det = pcr_det.assign(_tot=pcr_det["put"] + pcr_det["call"]).sort_values("_tot", ascending=False).groupby("period").head(60).drop(columns="_tot")
+    # per-quarter detail payloads
+    detail: dict[str, dict] = {}
+    frames = dict(moves=mv, consensus=cons_det.groupby("period").head(60) if not cons_det.empty else cons_det, putcall=pcr_det, holdings=hd, mgr_sector=ms, companies=cm)
+    for p in periods:
+        payload = {k: _records(df[df["period"] == p]) if (df is not None and not df.empty) else [] for k, df in frames.items()}
+        payload["companies_totals"] = cm_totals.get(p)
+        detail[p] = _round(payload)
+    data_dir = out_path.parent / "dashboard_data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    for stale in data_dir.glob("*.json"):
+        if stale.stem not in detail:
+            stale.unlink()
+    for p, payload in detail.items():
+        (data_dir / f"{p}.json").write_text(json.dumps(payload, default=_json_default, separators=(",", ":")), encoding="utf-8")
     data = dict(
-        periods=periods, detail_periods=detail_periods, asset_order=asset_order, history=_records(hist),
+        periods=periods, detail_periods=detail_periods, inline_periods=inline_periods, detail_url="dashboard_data/{period}.json",
+        asset_order=asset_order, history=_records(hist),
         insights={i["period"]: {k: v for k, v in i.items() if k != "facts"} for i in insights},
         kpis=kpis,
         exposure_asset=_records(ea), exposure_sector=_records(es), rotation=_records(rot, ["period", "manager_type", "sector", "net_flow", "flow_pct"]),
-        managers=_records(mg), moves=_records(mv), consensus=_records(cons_det.groupby("period").head(60)), putcall=_records(pcr_det),
-        holdings=_records(hd), mgr_sector=_records(ms), companies=_records(cm), companies_totals=cm_totals,
+        managers=_records(mg), detail={p: detail[p] for p in inline_periods},
     )
     env = Environment(loader=FileSystemLoader(Path(__file__).parent / "templates"), autoescape=False)
     html = env.get_template("dashboard.html.j2").render(

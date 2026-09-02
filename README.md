@@ -22,7 +22,7 @@ python -m sec13f.cli all --source sample --clean            # ~2 min; --quarters
 export SEC_USER_AGENT="Tu Nombre tu@email.com"
 python -m sec13f.cli verify                      # comprueba los CIK del universo contra EDGAR
 python -m sec13f.cli fetch --quarters 40                  # ~3,600 filings para 92 managers; ~1 filing/s, cacheado en disco
-python -m sec13f.cli build --history-quarters 40 --detail-quarters 20   # dashboard + reporte: 10 anos agregados, 5 anos de detalle por posicion
+python -m sec13f.cli build --history-quarters 40         # dashboard + reporte: 10 anos, detalle por posicion de cada trimestre en output/dashboard_data/
 python -m sec13f.cli enrich-issuers --top 2500           # opcional: amplia el maestro de emisores y vuelve a correr build
 
 # Re-generar solo los productos (sin volver a descargar). --detail-quarters controla cuántos
@@ -34,7 +34,7 @@ Salidas en `output/`:
 
 | Archivo | Contenido |
 |---|---|
-| `dashboard.html` | Dashboard interactivo: navegación por secciones, modo claro/oscuro, selector de trimestre, exposición por activo y sector con conmutador equal-weight / por valor (market weight), rotación por tipo de manager, tablas compactas ordenables por cualquier columna (managers, movimientos con peso previo y actual, consenso), scatter de concentración vs. amplitud con etiquetas activables, puts/calls y detalle por manager |
+| `dashboard.html`, `dashboard_data/` | Dashboard interactivo (más un JSON de detalle por trimestre que la página carga al seleccionarlo): navegación por secciones, modo claro/oscuro, selector de trimestre, exposición por activo y sector con conmutador equal-weight / por valor (market weight), rotación por tipo de manager, tablas compactas ordenables por cualquier columna (managers, movimientos con peso previo y actual, consenso), scatter de concentración vs. amplitud con etiquetas activables, puts/calls y detalle por manager |
 | `report.md` | Reporte trimestral en Markdown con la lectura del trimestre, tablas y metodología |
 | `insights.json` | Insights estructurados por trimestre (para alimentar otros sistemas) |
 | `holdings.csv` | Posiciones clasificadas (una fila por manager × trimestre × CUSIP × put/call) con peso y precio implícito |
@@ -45,7 +45,7 @@ Salidas en `output/`:
 | `company_moves.csv` | Por empresa (CUSIP) y trimestre: tenedores antes/después, compradores/vendedores, Δ títulos agregados, flujo neto/bruto, efecto precio y clasificación del movimiento (MAJOR / MINOR / NONE) |
 | `consensus.csv`, `put_call.csv` | Crowding (tenedores, compradores/vendedores netos) y nocional de puts vs calls por subyacente |
 
-Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas de MB o varios GB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio. `holdings.csv` y `changes.csv` solo se escriben con `build --position-csv`; sus equivalentes Parquet (`data/processed/`) se escriben siempre. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo). El selector de trimestre recorre los 40 trimestres: las vistas agregadas (KPIs, lectura, activos, sectores, heatmap, tabla y scatter de managers, valor por manager) cubren todos; las vistas por posición (movimientos, emisoras, consenso, opciones, detalle de posiciones) cubren los últimos 20 (`--detail-quarters`) y lo indican al seleccionar un trimestre anterior.
+Con datos reales, `holdings.csv`, `changes.csv`, `consensus.csv`, `company_moves.csv` y `put_call.csv` pesan decenas de MB o varios GB, así que no se versionan (están en `.gitignore`) y no se publican en el sitio. `holdings.csv` y `changes.csv` solo se escriben con `build --position-csv`; sus equivalentes Parquet (`data/processed/`) se escriben siempre. El dashboard embebe solo las emisoras y subyacentes con más movimiento por trimestre (los KPIs sí usan el universo completo). El selector de trimestre recorre los 40 trimestres y todas las vistas responden a él. El detalle por posición de cada trimestre (movimientos, emisoras, consenso, opciones, detalle por manager) vive en `output/dashboard_data/<trimestre>.json` y se carga al seleccionarlo; los últimos 4 trimestres (`--detail-quarters`) van además embebidos en el HTML. Por eso el dashboard debe abrirse por HTTP (GitHub Pages o `python -m http.server` dentro de `output/`); abierto como archivo local solo muestra el detalle de los trimestres embebidos.
 
 ## Datos publicados
 

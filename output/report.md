@@ -1,6 +1,6 @@
 # 13F Tracker — Reporte trimestral 2026Q2
 
-_Generado 2026-09-02 13:00 · fuente de datos: **sec** · periodo de reporte 2026-06-30_
+_Generado 2026-09-02 13:31 · fuente de datos: **sec** · periodo de reporte 2026-06-30_
 
 > 2026Q2: 88 managers, $37.07T en posiciones reportadas, +19.3% vs trimestre anterior (mismos 87 managers)
 

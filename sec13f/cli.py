@@ -202,7 +202,7 @@ def main(argv=None):
 
     b = sub.add_parser("build", help="parse, classify, track, analyze, render")
     b.add_argument("--title", default="13F Holdings Tracker")
-    b.add_argument("--detail-quarters", type=int, default=12, help="quarters with position-level detail embedded in the dashboard")
+    b.add_argument("--detail-quarters", type=int, default=4, help="recent quarters whose position-level detail is embedded inline; every quarter also gets output/dashboard_data/<period>.json, loaded on demand")
     b.add_argument("--position-csv", action="store_true", help="also write holdings.csv and changes.csv (multi-GB with real data; parquet is always written)")
     b.add_argument("--history-quarters", type=int, default=None, help="keep only the last N calendar quarters on disk (default: everything)")
     b.set_defaults(fn=cmd_build)
@@ -210,7 +210,7 @@ def main(argv=None):
     a = sub.add_parser("all", help="sample|fetch then build")
     a.add_argument("--source", choices=["sec", "sample"], default="sample")
     a.add_argument("--quarters", type=int, default=60)
-    a.add_argument("--detail-quarters", type=int, default=12)
+    a.add_argument("--detail-quarters", type=int, default=4)
     a.add_argument("--position-csv", action="store_true", help="also write holdings.csv and changes.csv (multi-GB with real data; parquet is always written)")
     a.add_argument("--seed", type=int, default=13)
     a.add_argument("--cik", nargs="*")
