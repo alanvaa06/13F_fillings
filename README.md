@@ -37,6 +37,8 @@ Salidas en `output/`:
 | `changes.csv` | Diff trimestre a trimestre por posición: acción (NEW/EXIT/ADD/TRIM/HOLD), Δ títulos, efecto flujo y efecto precio |
 | `manager_summary.csv` | Por manager y trimestre: valor, posiciones, concentración (top-10, HHI), share de opciones/ETF/crédito, rotación, tipo inferido |
 | `exposure_*.csv`, `sector_rotation.csv` | Exposición por tipo de activo y sector (equal-weight y por valor), y flujo neto por tipo de manager × sector |
+| `sector_positioning.csv` | Por sector y trimestre (acciones directas): peso EW de managers activos, Δ QoQ/YoY, gap vs promedio 8T, percentil histórico, benchmark implícito (managers índice) y externo si está configurado, peso activo, % de managers sobreponderados, flujo neto y efecto precio |
+| `company_moves.csv` | Por empresa (CUSIP) y trimestre: tenedores antes/después, compradores/vendedores, Δ títulos agregados, flujo neto/bruto, efecto precio y clasificación del movimiento (MAJOR / MINOR / NONE) |
 | `consensus.csv`, `put_call.csv` | Crowding (tenedores, compradores/vendedores netos) y nocional de puts vs calls por subyacente |
 
 ## Universo de managers
@@ -57,6 +59,10 @@ Salidas en `output/`:
 Además, un modelo de *huella de cartera* infiere el tipo de manager (índice, quant, multi-estrategia/opciones, macro/allocator, concentrado/activista, valor concentrado, crédito) a partir del número de posiciones, concentración, share de opciones/ETF/crédito y rotación, y lo compara con el tipo declarado.
 
 **Tracker (`sec13f/tracker.py`).** Diff de cada libro entre trimestres consecutivos. El Δ de valor se descompone en **efecto flujo** (Δ títulos × precio implícito actual) y **efecto precio**. Calcula rotación (Σ|flujo| / valor promedio), exposición por tipo de activo y sector (ponderada por valor y equal-weight entre managers), rotación sectorial por tipo de manager, consenso (tenedores, compradores/vendedores netos, nuevos, salidas) y señal put/call.
+
+**Posicionamiento sectorial (`sec13f/sectors.py`).** Sobre el libro de acciones directas de cada manager (sin ETFs, opciones, deuda ni preferentes) calcula el peso sectorial equal-weight de los managers activos, su cambio QoQ/YoY, el gap contra el promedio de los últimos 8 trimestres, el percentil dentro de su historia y la descomposición flujo/precio del trimestre. El **benchmark implícito** es la mezcla sectorial ponderada por valor de los managers índice del universo (Vanguard, BlackRock, State Street), cuyos 13F replican de cerca el mercado estadounidense; el peso activo (EW − benchmark) y el % de managers sobreponderados miden dirección y amplitud del posicionamiento. Opcionalmente, `config/benchmarks.json` (ver `benchmarks.example.json`) añade índices externos como el S&P 500: cada corte se aplica *as-of* y el reporte muestra la fecha usada.
+
+**Movimientos por empresa (`sec13f/movers.py`).** Agrega los diffs de todos los managers por CUSIP (solo acciones directas: común, ADR, REIT) y mide cada movimiento de dos formas: intensidad (Δ % de los títulos agregados en manos del universo, independiente del precio) y materialidad (flujo bruto en dólares). Clasifica cada empresa en cambio **mayor** (|Δ títulos| ≥ 10%, o ≥ 3 compradores/vendedores netos con |Δ| ≥ 3%), **menor** (|Δ| ≥ 1%) o **sin cambio** (por debajo de 1%); las entradas nuevas al universo cuentan como mayor. Los umbrales viven en `MoverThresholds` y se imprimen en el reporte.
 
 **Análisis y salida (`sec13f/analysis.py`, `report.py`, `dashboard.py`).** Genera bullets de lectura del trimestre (flujos, mezcla de activos, rotación sectorial, consenso, mayores movimientos, rotación por manager, discrepancias de perfil, opciones), el reporte Markdown y el dashboard HTML (Plotly.js desde CDN, datos embebidos, tema claro/oscuro).
 

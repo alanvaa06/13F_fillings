@@ -1,19 +1,27 @@
 """Turn tracker tables into a structured, human-readable quarterly read."""
 from __future__ import annotations
 
+from typing import Optional
+
 import numpy as np
 import pandas as pd
 
 
 def _usd(x: float) -> str:
-    a = abs(x)
+    """Compact dollar amount with the sign in front of the currency symbol (-$1.2B)."""
+    a, sign = abs(x), ("-" if x < 0 else "")
     if a >= 1e12:
-        return f"${x / 1e12:,.2f}T"
+        return f"{sign}${a / 1e12:,.2f}T"
     if a >= 1e9:
-        return f"${x / 1e9:,.1f}B"
+        return f"{sign}${a / 1e9:,.1f}B"
     if a >= 1e6:
-        return f"${x / 1e6:,.0f}M"
-    return f"${x:,.0f}"
+        return f"{sign}${a / 1e6:,.0f}M"
+    return f"{sign}${a:,.0f}"
+
+
+def _n(count: int, singular: str, plural: str) -> str:
+    """'1 comprador' / '3 compradores'."""
+    return f"{count} {singular if count == 1 else plural}"
 
 
 _ACRONYMS = {"ETF", "ADR", "ADS", "MSCI", "EAFE", "S&P", "SPDR", "REIT", "PFD", "NV", "SA", "AG", "PLC", "LLC", "LP", "USA", "US", "FTSE", "QQQ", "SPD", "AT&T", "IBM", "HCA", "CVS", "GE", "RTX", "KKR", "PNC", "TJX", "UPS", "MGM", "PDD", "JD", "ASML", "SAP", "TSM", "NVR"}
@@ -33,7 +41,10 @@ def pretty(name: str) -> str:
 
 
 def _pp(x: float) -> str:
-    return f"{x * 100:+.1f} pp"
+    v = round(x * 100, 1)
+    if v == 0:
+        return "0.0 pp"
+    return f"{v:+.1f} pp"
 
 
 def quarter_label(period: str) -> str:
@@ -43,8 +54,11 @@ def quarter_label(period: str) -> str:
 
 def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, fp: pd.DataFrame,
                    exp_asset_ew: pd.DataFrame, exp_sector_ew: pd.DataFrame, cons: pd.DataFrame,
-                   pc: pd.DataFrame, period: str) -> dict:
+                   pc: pd.DataFrame, period: str, *, sector_pos: Optional[pd.DataFrame] = None,
+                   moves: Optional[pd.DataFrame] = None) -> dict:
     """Return {'period', 'headline', 'bullets': [...], 'facts': {...}} for one period."""
+    sector_pos = sector_pos if sector_pos is not None else pd.DataFrame()
+    moves = moves if moves is not None else pd.DataFrame()
     prev_periods = sorted(p for p in h["period"].unique() if p < period)
     prev = prev_periods[-1] if prev_periods else None
     cur = h[h["period"] == period]
@@ -100,6 +114,48 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
                   + " y ".join(f"{r.sector} ({_pp(r.d_avg_weight)})" for r in bot.itertuples()) + "."),
         ))
 
+    # --- sector positioning vs benchmark (direct equity, active managers)
+    sp = sector_pos[sector_pos["period"] == period] if not sector_pos.empty else pd.DataFrame()
+    if not sp.empty:
+        ow = sp.loc[sp["active_weight"].idxmax()]
+        uw = sp.loc[sp["active_weight"].idxmin()]
+        text = (f"Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark {sp['benchmark_name'].iloc[0]}: "
+                f"mayor sobreponderación en {ow['sector']} ({_pp(ow['active_weight'])}; {ow['overweight_breadth']:.0%} de los managers por encima del benchmark) "
+                f"y mayor infraponderación en {uw['sector']} ({_pp(uw['active_weight'])}; {uw['overweight_breadth']:.0%} por encima).")
+        da = sp.dropna(subset=["d_active_qoq"])
+        if not da.empty:
+            mv = da.loc[da["d_active_qoq"].abs().idxmax()]
+            text += f" Mayor cambio de peso activo en el trimestre: {mv['sector']} ({_pp(mv['d_active_qoq'])})."
+        bullets.append(dict(kind="sector_positioning", text=text))
+        facts.update(sector_top_overweight=dict(sector=ow["sector"], active_weight=float(ow["active_weight"]), breadth=float(ow["overweight_breadth"])),
+                     sector_top_underweight=dict(sector=uw["sector"], active_weight=float(uw["active_weight"]), breadth=float(uw["overweight_breadth"])),
+                     sector_benchmark=str(sp["benchmark_name"].iloc[0]))
+        dq = sp.dropna(subset=["d_qoq"])
+        if not dq.empty and "net_flow" in sp:
+            top = dq.loc[dq["d_qoq"].idxmax()]
+            hist = ""
+            if not pd.isna(top.get("hist_percentile", np.nan)):
+                hist = f"; su peso actual está en el percentil {top['hist_percentile'] * 100:.0f} de su historia"
+            bullets.append(dict(kind="sector_driver", text=(
+                f"El sector que más peso ganó, {top['sector']} ({_pp(top['d_qoq'])} QoQ"
+                + (f", {_pp(top['d_yoy'])} YoY" if not pd.isna(top.get("d_yoy", np.nan)) else "")
+                + f"), recibió flujo neto de {_usd(top['net_flow'])} frente a un efecto precio de {_usd(top['price_effect'])}"
+                + f" ({_n(int(top['n_buyers']), 'compra', 'compras')} / {_n(int(top['n_sellers']), 'venta', 'ventas')}){hist}.")))
+
+        # historical extremes: sectors at the top / bottom of their own history
+        hp = sp.dropna(subset=["hist_percentile"])
+        if not hp.empty:
+            highs = hp[hp["hist_percentile"] >= 0.95].sort_values("weight_ew", ascending=False)
+            lows = hp[hp["hist_percentile"] <= 0.05].sort_values("weight_ew", ascending=False)
+            parts = []
+            if not highs.empty:
+                parts.append("en máximos de su historia: " + ", ".join(f"{r.sector} ({r.weight_ew:.1%})" for r in highs.itertuples()))
+            if not lows.empty:
+                parts.append("en mínimos: " + ", ".join(f"{r.sector} ({r.weight_ew:.1%})" for r in lows.itertuples()))
+            if parts:
+                bullets.append(dict(kind="sector_extremes", text="Extremos históricos del peso sectorial (percentil dentro de la historia disponible): " + "; ".join(parts) + "."))
+                facts["sector_extremes"] = dict(highs=highs["sector"].tolist(), lows=lows["sector"].tolist())
+
     # --- consensus buys / sells
     c = cons[cons["period"] == period] if not cons.empty else pd.DataFrame()
     if not c.empty and "net_buyers" in c:
@@ -107,10 +163,10 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
         sells = c[c["net_buyers"] < 0].sort_values(["net_buyers", "net_flow"], ascending=[True, True]).head(3)
         if not buys.empty:
             bullets.append(dict(kind="consensus_buy", text="Compras de consenso (más compradores netos): "
-                                + ", ".join(f"{pretty(r.issuer)} ({r.buyers} compradores / {r.sellers} vendedores, flujo {_usd(r.net_flow)})" for r in buys.itertuples()) + "."))
+                                + ", ".join(f"{pretty(r.issuer)} ({_n(r.buyers, 'comprador', 'compradores')} / {_n(r.sellers, 'vendedor', 'vendedores')}, flujo {_usd(r.net_flow)})" for r in buys.itertuples()) + "."))
         if not sells.empty:
             bullets.append(dict(kind="consensus_sell", text="Ventas de consenso: "
-                                + ", ".join(f"{pretty(r.issuer)} ({r.sellers} vendedores / {r.buyers} compradores, flujo {_usd(r.net_flow)})" for r in sells.itertuples()) + "."))
+                                + ", ".join(f"{pretty(r.issuer)} ({_n(r.sellers, 'vendedor', 'vendedores')} / {_n(r.buyers, 'comprador', 'compradores')}, flujo {_usd(r.net_flow)})" for r in sells.itertuples()) + "."))
         crowded = c.nlargest(3, "holders")
         facts["most_held"] = [dict(issuer=r.issuer, holders=int(r.holders), value=float(r.total_value)) for r in crowded.itertuples()]
 
@@ -122,6 +178,23 @@ def build_insights(h: pd.DataFrame, changes: pd.DataFrame, msum: pd.DataFrame, f
             verb = {"NEW": "abre", "EXIT": "liquida", "ADD": "aumenta", "TRIM": "reduce"}.get(r.action, "mantiene")
             parts.append(f"{r.manager} {verb} {pretty(r.display_name)} ({_usd(r.flow_effect)})")
         bullets.append(dict(kind="moves", text="Movimientos individuales más grandes: " + "; ".join(parts) + "."))
+
+    # --- company-level moves (universe aggregate)
+    mv = moves[moves["period"] == period] if not moves.empty else pd.DataFrame()
+    if not mv.empty:
+        counts = mv["magnitude"].value_counts()
+        top = mv.reindex(mv["gross_flow"].sort_values(ascending=False).index).head(3)
+        parts = []
+        for r in top.itertuples():
+            size = "entrada nueva al universo" if pd.isna(r.pct_shares) else f"títulos agregados {r.pct_shares:+.0%}"
+            parts.append(f"{pretty(r.issuer)} ({size}, {_n(r.buyers, 'comprador', 'compradores')} / {_n(r.sellers, 'vendedor', 'vendedores')}, flujo neto {_usd(r.net_flow)})")
+        n_major, n_minor, n_none = int(counts.get("MAJOR", 0)), int(counts.get("MINOR", 0)), int(counts.get("NONE", 0))
+        bullets.append(dict(kind="company_moves", text=(
+            "Empresas con mayor movimiento agregado: " + "; ".join(parts)
+            + f". De {len(mv)} empresas en cartera, {n_major} tuvieron un cambio mayor, {n_minor} menor y {n_none} ninguno.")))
+        facts.update(companies_total=int(len(mv)), companies_major=n_major, companies_minor=n_minor, companies_none=n_none,
+                     top_company_moves=[dict(issuer=r.issuer, ticker=r.ticker, pct_shares=(None if pd.isna(r.pct_shares) else float(r.pct_shares)),
+                                             net_flow=float(r.net_flow), buyers=int(r.buyers), sellers=int(r.sellers), magnitude=r.magnitude) for r in top.itertuples()])
 
     # --- managers: turnover and type mismatch
     m = msum[msum["period"] == period]

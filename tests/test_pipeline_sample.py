@@ -31,5 +31,15 @@ def test_cli_build_end_to_end(tmp_path: Path, monkeypatch):
     cli.main(["all", "--source", "sample", "--cik", "1067983", "1336528", "1029160"])
     out = s.output_dir
     assert (out / "dashboard.html").stat().st_size > 100_000
-    assert "Lectura del trimestre" in (out / "report.md").read_text()
+    report = (out / "report.md").read_text(encoding="utf-8")
+    assert "Lectura del trimestre" in report
+    assert "Exposición sectorial (renta variable directa)" in report and "Posicionamiento relativo al benchmark" in report
+    assert "Empresas que más se movieron" in report and "Resumen por magnitud" in report
     assert (out / "holdings.csv").exists() and (out / "changes.csv").exists() and (out / "consensus.csv").exists()
+    assert (out / "sector_positioning.csv").exists() and (out / "company_moves.csv").exists()
+    import json
+
+    insights = json.loads((out / "insights.json").read_text(encoding="utf-8"))
+    kinds = {b["kind"] for b in insights[-1]["bullets"]}
+    assert {"sector_positioning", "company_moves"} <= kinds
+    assert insights[-1]["facts"]["companies_total"] == (insights[-1]["facts"]["companies_major"] + insights[-1]["facts"]["companies_minor"] + insights[-1]["facts"]["companies_none"])

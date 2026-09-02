@@ -1,0 +1,24 @@
+{
+  "_comment": "Copy to config/benchmarks.json and fill with vendor data. Weights are GICS sector weights (any scale; they are normalised). Each snapshot is applied as-of: the latest date on or before the reporting period is used. The report shows the snapshot date next to the number.",
+  "benchmarks": [
+    {
+      "name": "S&P 500",
+      "source": "S&P Dow Jones Indices factsheet (replace with your source)",
+      "weights": {
+        "2026-06-30": {
+          "Information Technology": 0.0,
+          "Financials": 0.0,
+          "Health Care": 0.0,
+          "Consumer Discretionary": 0.0,
+          "Communication Services": 0.0,
+          "Industrials": 0.0,
+          "Consumer Staples": 0.0,
+          "Energy": 0.0,
+          "Utilities": 0.0,
+          "Real Estate": 0.0,
+          "Materials": 0.0
+        }
+      }
+    }
+  ]
+}

@@ -13,9 +13,6 @@ import json
 import logging
 import shutil
 import sys
-from pathlib import Path
-
-import pandas as pd
 
 from .analysis import build_insights
 from .classify import SecurityClassifier, infer_manager_type, manager_fingerprint
@@ -23,8 +20,10 @@ from .config import Settings
 from .dashboard import build_dashboard
 from .ingest import fetch_universe, iter_local_filings
 from .managers import cik_alias_map, load_managers
+from .movers import MoverThresholds, company_moves
 from .parser import aggregate_positions, parse_all
 from .report import build_report
+from .sectors import SectorConfig, load_benchmarks, sector_positioning
 from .tracker import (add_weights, consensus, equal_weight_exposure, exposure, manager_summary, manager_turnover,
                       position_changes, put_call_signal, sector_rotation)
 
@@ -98,9 +97,16 @@ def cmd_build(args, settings: Settings):
     rot = sector_rotation(changes, "manager_type")
     cons = consensus(h, changes)
     pc = put_call_signal(h)
+    benchmarks = load_benchmarks(settings.benchmarks_file)
+    if benchmarks:
+        log.info("External benchmarks: %s", ", ".join(b.name for b in benchmarks))
+    sector_cfg = SectorConfig()
+    sector_pos = sector_positioning(h, changes, sector_cfg, benchmarks)
+    thresholds = MoverThresholds()
+    moves = company_moves(changes, thresholds)
 
     periods = sorted(h["period"].unique())
-    insights = [build_insights(h, changes, msum, fp, exp_asset_ew, exp_sector_ew, cons, pc, p) for p in periods]
+    insights = [build_insights(h, changes, msum, fp, exp_asset_ew, exp_sector_ew, cons, pc, p, sector_pos=sector_pos, moves=moves) for p in periods]
 
     # persist tables
     pdir, odir = settings.processed_dir, settings.output_dir
@@ -112,12 +118,14 @@ def cmd_build(args, settings: Settings):
         "exposure_asset_value_weighted": exp_asset_vw, "exposure_asset_equal_weighted": exp_asset_ew,
         "exposure_sector_equal_weighted": exp_sector_ew, "exposure_sector_by_manager_type": exp_sector_type,
         "sector_rotation": rot, "consensus": cons, "put_call": pc,
+        "sector_positioning": sector_pos, "company_moves": moves,
     }.items():
         if df is not None and not df.empty:
             df.to_csv(odir / f"{name}.csv", index=False)
     (odir / "insights.json").write_text(json.dumps(insights, indent=2, default=str, ensure_ascii=False), encoding="utf-8")
 
-    report = build_report(insights, msum, fp, exp_asset_ew, exp_sector_ew, cons, changes, source)
+    report = build_report(insights, msum, fp, exp_asset_ew, exp_sector_ew, cons, changes, source,
+                          sector_pos=sector_pos, moves=moves, benchmarks=benchmarks, sector_cfg=sector_cfg, thresholds=thresholds)
     (odir / "report.md").write_text(report, encoding="utf-8")
     dash = build_dashboard(odir / "dashboard.html", h=h, changes=changes, msum=msum, fp=fp, exp_asset_ew=exp_asset_ew, exp_asset_vw=exp_asset_vw,
                            exp_sector_ew=exp_sector_ew, rotation=rot, cons=cons, pc=pc, insights=insights, managers=managers,
@@ -130,6 +138,10 @@ def cmd_build(args, settings: Settings):
 
 
 def main(argv=None):
+    # Windows consoles default to cp1252; never let a stray glyph in a printed bullet kill a 20-minute run.
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="replace")
     ap = argparse.ArgumentParser(prog="sec13f", description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("-v", "--verbose", action="store_true")
     sub = ap.add_subparsers(dest="cmd", required=True)

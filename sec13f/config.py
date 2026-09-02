@@ -41,6 +41,7 @@ class Settings:
     output_dir: Path = OUTPUT_DIR
     managers_file: Path = CONFIG_DIR / "managers.json"
     issuers_file: Path = CONFIG_DIR / "issuers.json"
+    benchmarks_file: Path = CONFIG_DIR / "benchmarks.json"  # optional; see benchmarks.example.json
     quarters: int = 4
     form_types: tuple = field(default_factory=lambda: FORM_TYPES)
 
