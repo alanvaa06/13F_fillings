@@ -93,6 +93,7 @@ def cmd_build(args, settings: Settings):
     exp_asset_vw = exposure(h, "underlying_asset")
     exp_asset_ew = equal_weight_exposure(h, "underlying_asset")
     exp_sector_ew = equal_weight_exposure(h, "sector")
+    exp_sector_vw = exposure(h, "sector")
     exp_sector_type = exposure(h, "sector", "manager_type")
     rot = sector_rotation(changes, "manager_type")
     cons = consensus(h, changes)
@@ -116,7 +117,7 @@ def cmd_build(args, settings: Settings):
     for name, df in {
         "filings": filings, "holdings": h, "changes": changes, "manager_summary": msum.merge(fp.drop(columns=["manager", "manager_type"]), on=["cik", "period"], how="left"),
         "exposure_asset_value_weighted": exp_asset_vw, "exposure_asset_equal_weighted": exp_asset_ew,
-        "exposure_sector_equal_weighted": exp_sector_ew, "exposure_sector_by_manager_type": exp_sector_type,
+        "exposure_sector_equal_weighted": exp_sector_ew, "exposure_sector_value_weighted": exp_sector_vw, "exposure_sector_by_manager_type": exp_sector_type,
         "sector_rotation": rot, "consensus": cons, "put_call": pc,
         "sector_positioning": sector_pos, "company_moves": moves,
     }.items():
@@ -128,7 +129,7 @@ def cmd_build(args, settings: Settings):
                           sector_pos=sector_pos, moves=moves, benchmarks=benchmarks, sector_cfg=sector_cfg, thresholds=thresholds)
     (odir / "report.md").write_text(report, encoding="utf-8")
     dash = build_dashboard(odir / "dashboard.html", h=h, changes=changes, msum=msum, fp=fp, exp_asset_ew=exp_asset_ew, exp_asset_vw=exp_asset_vw,
-                           exp_sector_ew=exp_sector_ew, rotation=rot, cons=cons, pc=pc, insights=insights, managers=managers,
+                           exp_sector_ew=exp_sector_ew, exp_sector_vw=exp_sector_vw, rotation=rot, cons=cons, pc=pc, insights=insights, managers=managers, company_moves=moves,
                            source=source, n_filings=len(filings), title=args.title, detail_quarters=args.detail_quarters)
     log.info("Report: %s", odir / "report.md")
     log.info("Dashboard: %s", dash)

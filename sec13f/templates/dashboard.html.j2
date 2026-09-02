@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <meta charset="utf-8">
 <title>{{ title }}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +33,7 @@
   --chip:#262624;
 }
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
 h1,h2,h3{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:600;text-wrap:balance;margin:0}
 h1{font-size:30px;line-height:1.15}
@@ -40,16 +43,27 @@ h3{font-size:17px;font-weight:600;margin:0 0 8px}
 .num{font-variant-numeric:tabular-nums;text-align:right}
 a{color:var(--accent)}
 header{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px solid var(--border)}
-.bar{max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.bar{max-width:1240px;margin:0 auto;padding:12px 24px 8px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
 .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:500}
-.periods{display:flex;gap:6px;flex-wrap:wrap}
+.hdr-controls{display:flex;gap:12px 20px;align-items:center;flex-wrap:wrap}
+.periods{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .pill{border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}
 .pill[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 select.pill{padding-right:28px;font-weight:600}
-.periods{align-items:center}
 .pill:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.theme-toggle{display:inline-flex;align-items:center;gap:8px;padding-left:10px}
+.theme-toggle svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle .ico-sun{display:none}
+:root[data-theme="dark"] .theme-toggle .ico-sun{display:inline}
+:root[data-theme="dark"] .theme-toggle .ico-moon{display:none}
+.theme-toggle .lbl{font-size:13px}
+.nav{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{font-size:12.5px;font-weight:500;padding:8px 10px 9px;color:var(--ink2);text-decoration:none;border-bottom:2px solid transparent;white-space:nowrap;margin-bottom:-1px}
+.nav a:hover{color:var(--ink)}
+.nav a[aria-current="true"]{color:var(--ink);border-color:var(--accent)}
 main{max-width:1240px;margin:0 auto;padding:8px 24px 64px}
-section{padding:28px 0;border-bottom:1px solid var(--border)}
+section{padding:28px 0;border-bottom:1px solid var(--border);scroll-margin-top:calc(var(--hdr,120px) + 12px)}
 section:last-child{border-bottom:0}
 .lede{color:var(--ink2);max-width:68ch;margin:6px 0 0}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:18px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -64,24 +78,45 @@ section:last-child{border-bottom:0}
 .chart{width:100%;min-height:340px}
 .chart.tall{min-height:460px}
 .insights{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px;max-width:90ch}
-.insights li{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:baseline}
+.insights li{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:baseline}
 .insights .tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-top:3px}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 6px;font-size:13px;color:var(--ink2)}
-.controls select,.controls button{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--ink)}
+.controls .sep{width:1px;height:18px;background:var(--border);margin:0 6px}
+.controls select,.controls button{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--ink);cursor:pointer}
 .controls button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
-.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
-table{border-collapse:collapse;width:100%;font-size:13.5px}
-th,td{padding:8px 12px;border-bottom:1px solid var(--grid);white-space:nowrap;text-align:left;vertical-align:middle}
-th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);font-weight:500;background:var(--surface);position:sticky;top:0}
-tr:last-child td{border-bottom:0}
+.controls button:focus-visible,.controls select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* tables: compact, scrollable inside, sticky header + first column, sortable headers */
+.tablewrap{overflow:auto;max-height:520px;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+.tablewrap.short{max-height:440px}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:12.5px;line-height:1.35}
+th,td{padding:6px 10px;border-bottom:1px solid var(--grid);white-space:nowrap;text-align:left;vertical-align:middle}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);font-weight:500;background:var(--surface);position:sticky;top:0;z-index:2;box-shadow:inset 0 -1px 0 var(--grid)}
+th.sortable{cursor:pointer;user-select:none}
+th.sortable:hover{color:var(--ink)}
+th .si{display:inline-block;margin-left:4px;font-size:9px;opacity:.35;transform:translateY(-1px)}
+th[aria-sort] .si{opacity:1;color:var(--accent)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover td{background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
 td.num,th.num{text-align:right}
-.chip{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11.5px;font-weight:600;letter-spacing:.04em;background:var(--chip);color:var(--ink)}
+td.txt{max-width:240px;overflow:hidden;text-overflow:ellipsis}
+/* frozen leading columns: buildTable(opts.sticky=N) marks the first N cells of every row and sets their left offset */
+th.stick,td.stick{position:sticky;background:var(--surface);z-index:1}
+th.stick{z-index:3}
+td.stick-last,th.stick-last{box-shadow:inset -1px 0 0 var(--grid)}
+th.stick-last{box-shadow:inset -1px 0 0 var(--grid),inset 0 -1px 0 var(--grid)}
+tbody tr:hover td.stick{background:color-mix(in srgb,var(--accent) 8%,var(--surface))}
+td.meta{white-space:normal}
+.tcap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin:6px 2px 0}
+.chip{display:inline-block;padding:1px 7px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.04em;background:var(--chip);color:var(--ink)}
 .chip.NEW{background:color-mix(in srgb,var(--s3) 22%,var(--surface));color:var(--ink)}
 .chip.ADD{background:color-mix(in srgb,var(--s1) 22%,var(--surface))}
 .chip.TRIM{background:color-mix(in srgb,var(--s4) 26%,var(--surface))}
 .chip.EXIT{background:color-mix(in srgb,var(--s8) 24%,var(--surface))}
+.chip.MAJOR{background:color-mix(in srgb,var(--s1) 26%,var(--surface))}
+.chip.MINOR{background:color-mix(in srgb,var(--s4) 22%,var(--surface))}
+.chip.NONE{color:var(--ink2)}
 .bar-cell{display:flex;align-items:center;gap:8px;justify-content:flex-end}
-.bar-cell i{display:block;height:8px;border-radius:2px;background:var(--s1)}
+.bar-cell i{display:block;height:7px;border-radius:2px;background:var(--s1)}
 .bar-cell i.neg{background:var(--s8)}
 .foot{color:var(--muted);font-size:12.5px;margin-top:8px}
 .meta{font-size:13px;color:var(--ink2)}
@@ -89,21 +124,42 @@ td.num,th.num{text-align:right}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin:6px 0 0}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
 @media (max-width:640px){.insights li{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.kpi{border-right:0}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
 </style>
 
-<header><div class="bar">
+<script>
+// Resolve the theme before first paint: saved choice wins, otherwise the OS preference.
+(function(){
+  let t=null; try{ t=localStorage.getItem('sec13f-theme'); }catch(e){}
+  if(t!=='light'&&t!=='dark'){ t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'; }
+  document.documentElement.setAttribute('data-theme', t);
+})();
+</script>
+<header>
+<div class="bar">
   <div>
     <div class="eyebrow">SEC EDGAR · Formularios 13F-HR · {{ n_managers }} managers · fuente: {{ source }}</div>
     <h1>{{ title }}</h1>
   </div>
-  <div class="periods" role="group" aria-label="Periodo de reporte">
-    <button class="pill" id="p-prev" aria-label="Trimestre anterior">‹</button>
-    <select id="period-select" class="pill" aria-label="Trimestre"></select>
-    <button class="pill" id="p-next" aria-label="Trimestre siguiente">›</button>
-    <span class="meta" id="period-span"></span>
+  <div class="hdr-controls">
+    <div class="periods" role="group" aria-label="Periodo de reporte">
+      <button class="pill" id="p-prev" aria-label="Trimestre anterior">‹</button>
+      <select id="period-select" class="pill" aria-label="Trimestre"></select>
+      <button class="pill" id="p-next" aria-label="Trimestre siguiente">›</button>
+      <span class="meta" id="period-span"></span>
+    </div>
+    <button class="pill theme-toggle" id="theme-toggle" type="button" aria-label="Cambiar a modo claro">
+      <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <span class="lbl" id="theme-label">Claro</span>
+    </button>
   </div>
-</div></header>
+</div>
+<nav class="nav" aria-label="Secciones">
+  <a href="#s-lead">Resumen</a><a href="#s-history">Histórico</a><a href="#s-asset">Activos</a><a href="#s-sector">Sectores</a><a href="#s-managers">Managers</a>
+  <a href="#s-moves">Movimientos</a><a href="#s-companies">Emisoras</a><a href="#s-consensus">Consenso</a><a href="#s-options">Opciones</a><a href="#s-detail">Detalle</a><a href="#s-method">Metodología</a>
+</nav>
+</header>
 
 <main>
 <section id="s-lead">
@@ -121,9 +177,10 @@ td.num,th.num{text-align:right}
     <div><h3>Valor reportado del universo</h3><div id="c-hist-value" class="chart"></div></div>
     <div><h3>Flujo neto estimado por trimestre</h3><div id="c-hist-flow" class="chart"></div></div>
   </div>
-  <div class="grid2" style="margin-top:20px">
-    <div><h3>Mezcla de activos (equal-weight)</h3><div id="c-hist-asset" class="chart tall"></div></div>
-    <div><h3>Peso sectorial (equal-weight, 7 mayores + otros)</h3><div id="c-hist-sector" class="chart tall"></div></div>
+  <div class="controls" style="margin-top:18px"><span>Ponderación</span><button class="hwbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="hwbtn" data-w="vw" aria-pressed="false">Por valor (market weight)</button></div>
+  <div class="grid2">
+    <div><h3>Mezcla de activos <span class="meta hist-mode-label"></span></h3><div id="c-hist-asset" class="chart tall"></div></div>
+    <div><h3>Peso sectorial <span class="meta hist-mode-label"></span> <span class="meta">· 7 mayores + otros</span></h3><div id="c-hist-sector" class="chart tall"></div></div>
   </div>
   <div class="grid3" style="margin-top:20px">
     <div><h3>Managers reportando</h3><div id="c-hist-mgrs" class="chart" style="min-height:240px"></div></div>
@@ -134,8 +191,8 @@ td.num,th.num{text-align:right}
 
 <section id="s-asset">
   <h2>Exposición por tipo de activo</h2>
-  <p class="lede">Composición del valor reportado por instrumento subyacente. La vista <em>equal-weight</em> promedia la asignación de cada manager, la vista <em>por valor</em> suma dólares (dominada por los filers más grandes).</p>
-  <div class="controls"><span>Ponderación</span><button class="wbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="wbtn" data-w="vw" aria-pressed="false">Por valor</button></div>
+  <p class="lede">Composición del valor reportado por instrumento subyacente. <em>Equal-weight</em> promedia la asignación de cada manager (cada filer pesa igual); <em>por valor</em> (market weight) suma dólares y queda dominada por los filers más grandes.</p>
+  <div class="controls"><span>Ponderación</span><button class="wbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="wbtn" data-w="vw" aria-pressed="false">Por valor (market weight)</button></div>
   <div class="grid2">
     <div><h3>Mezcla por trimestre (últimos <span class="n-detail"></span>)</h3><div id="c-asset-mix" class="chart"></div></div>
     <div><h3>Cambio vs. trimestre anterior <span class="meta" id="asset-delta-label"></span></h3><div id="c-asset-delta" class="chart"></div></div>
@@ -144,13 +201,14 @@ td.num,th.num{text-align:right}
 
 <section id="s-sector">
   <h2>Rotación sectorial</h2>
-  <p class="lede">Peso promedio por sector (equal-weight entre managers) y su variación. Los ETFs se agrupan por su exposición (renta variable amplia, internacional, renta fija, commodities, sectoriales).</p>
+  <p class="lede">Peso por sector y su variación trimestral. <em>Equal-weight</em> promedia el peso que cada manager asigna al sector; <em>por valor</em> (market weight) es la participación del sector en los dólares agregados del universo. Los ETFs se agrupan por su exposición (renta variable amplia, internacional, renta fija, commodities, sectoriales).</p>
+  <div class="controls"><span>Ponderación</span><button class="swbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="swbtn" data-w="vw" aria-pressed="false">Por valor (market weight)</button></div>
   <div class="grid2">
-    <div><h3>Peso por sector</h3><div id="c-sector-level" class="chart tall"></div></div>
-    <div><h3>Variación del peso (pp)</h3><div id="c-sector-delta" class="chart tall"></div></div>
+    <div><h3>Peso por sector <span class="meta" id="sector-mode-label"></span></h3><div id="c-sector-level" class="chart tall"></div></div>
+    <div><h3>Variación del peso (pp) <span class="meta" id="sector-delta-label"></span></h3><div id="c-sector-delta" class="chart tall"></div></div>
   </div>
   <h3 style="margin-top:20px">Flujo neto por tipo de manager y sector <span class="meta">(% del valor del grupo)</span></h3>
-  <div id="c-rotation-heat" class="chart tall"></div>
+  <div id="c-rotation-heat" class="chart"></div>
   <p class="foot">Flujo = Δ títulos × precio implícito del trimestre; excluye el efecto de precio. Azul = compras netas, rojo = ventas netas.</p>
 </section>
 
@@ -158,29 +216,56 @@ td.num,th.num{text-align:right}
   <h2>Managers: tamaño, concentración y rotación</h2>
   <p class="lede">Huella de cartera de cada filer. El <em>tipo inferido</em> se deriva de la cartera (número de posiciones, concentración, opciones, ETFs, rotación) y se compara con el tipo declarado en la configuración.</p>
   <div class="grid2">
-    <div><h3>Concentración vs. amplitud</h3><div id="c-mgr-scatter" class="chart tall"></div><p class="foot">Eje X en escala logarítmica. Tamaño del marcador ∝ log del valor reportado.</p></div>
+    <div>
+      <h3>Concentración vs. amplitud</h3>
+      <div class="controls" style="margin-top:0"><span>Etiquetas</span><button id="lbl-btn" aria-pressed="true">Mostrar nombres</button></div>
+      <div id="c-mgr-scatter" class="chart tall"></div>
+      <p class="foot"><strong>Concentración</strong> = peso de las 10 mayores posiciones en el libro (eje Y). <strong>Amplitud</strong> = número de posiciones reportadas (eje X, escala logarítmica). Arriba a la izquierda quedan las carteras concentradas y estrechas (activistas, valor concentrado); abajo a la derecha, los libros amplios y diversificados (índices, quant, multi-estrategia). Tamaño del marcador ∝ log del valor reportado.</p>
+    </div>
     <div><h3>Rotación estimada por manager</h3><div id="c-mgr-turnover" class="chart tall"></div></div>
   </div>
   <div class="tablewrap" style="margin-top:18px"><table id="t-managers"></table></div>
+  <p class="tcap"><span id="cap-managers"></span><span>Clic en un encabezado para ordenar; pasa el cursor sobre el tipo inferido para ver el motivo.</span></p>
 </section>
 
 <section id="s-moves">
   <h2>Movimientos del trimestre</h2>
-  <p class="lede">Posiciones nuevas, salidas, aumentos y reducciones ordenadas por flujo estimado.</p>
+  <p class="lede">Posiciones nuevas, salidas, aumentos y reducciones. Por defecto se muestran las 40 de mayor flujo estimado; el peso previo y el actual son la participación de la posición en el libro del manager.</p>
   <div class="controls"><span>Acción</span>
     <button class="abtn" data-a="ALL" aria-pressed="true">Todas</button><button class="abtn" data-a="NEW">Nuevas</button><button class="abtn" data-a="EXIT">Salidas</button><button class="abtn" data-a="ADD">Aumentos</button><button class="abtn" data-a="TRIM">Reducciones</button>
-    <span style="margin-left:12px">Manager</span><select id="moves-mgr"><option value="ALL">Todos</option></select>
+    <span class="sep"></span><span>Manager</span><select id="moves-mgr"><option value="ALL">Todos</option></select>
   </div>
   <div class="tablewrap"><table id="t-moves"></table></div>
+  <p class="tcap"><span id="cap-moves"></span><span>Clic en un encabezado para ordenar.</span></p>
+</section>
+
+<section id="s-companies">
+  <h2>Cambios agregados por emisora</h2>
+  <p class="lede">Qué compañías compró y vendió el universo en conjunto, sumando las operaciones de todos los managers que reportaron ambos trimestres (solo acciones directas: común, ADR, REIT). <em>Δ títulos</em> es la variación % de los títulos agregados en manos del universo, independiente del precio; el flujo neto es en dólares al precio del trimestre.</p>
+  <div class="kpis" id="companies-kpis"></div>
+  <div class="controls"><span>Ranking por</span>
+    <button class="cmbtn" data-m="flow" aria-pressed="true">Flujo neto ($)</button><button class="cmbtn" data-m="pct">Δ títulos (%)</button><button class="cmbtn" data-m="breadth">Compradores netos</button>
+  </div>
+  <div class="grid2">
+    <div><h3>Más compradas <span class="meta" id="companies-buy-label"></span></h3><div id="c-companies-buy" class="chart tall"></div></div>
+    <div><h3>Más vendidas <span class="meta" id="companies-sell-label"></span></h3><div id="c-companies-sell" class="chart tall"></div></div>
+  </div>
+  <p class="foot" id="companies-foot"></p>
+  <div class="controls" style="margin-top:14px"><span>Cambio neto</span>
+    <button class="cgbtn" data-g="ALL" aria-pressed="true">Todos</button><button class="cgbtn" data-g="MAJOR">Mayor</button><button class="cgbtn" data-g="MINOR">Menor</button><button class="cgbtn" data-g="NONE">Sin cambio</button>
+    <span class="sep"></span><span>Sector</span><select id="companies-sector"><option value="ALL">Todos</option></select>
+  </div>
+  <div class="tablewrap"><table id="t-companies"></table></div>
+  <p class="tcap"><span id="cap-companies"></span><span>Mayor: |Δ títulos| ≥ 10 % o ≥ 3 compradores/vendedores netos con |Δ| ≥ 3 %; menor: ≥ 1 %; sin cambio: por debajo. Las entradas nuevas al universo cuentan como mayor.</span></p>
 </section>
 
 <section id="s-consensus">
   <h2>Consenso y crowding</h2>
   <p class="lede">Valores más compartidos entre managers y dirección neta de las operaciones (compradores menos vendedores, excluyendo puts).</p>
   <div class="grid3">
-    <div><h3>Más tenidos</h3><div class="tablewrap"><table id="t-held"></table></div></div>
-    <div><h3>Compras de consenso</h3><div class="tablewrap"><table id="t-bought"></table></div></div>
-    <div><h3>Ventas de consenso</h3><div class="tablewrap"><table id="t-sold"></table></div></div>
+    <div><h3>Más tenidos</h3><div class="tablewrap short"><table id="t-held"></table></div></div>
+    <div><h3>Compras de consenso</h3><div class="tablewrap short"><table id="t-bought"></table></div></div>
+    <div><h3>Ventas de consenso</h3><div class="tablewrap short"><table id="t-sold"></table></div></div>
   </div>
 </section>
 
@@ -197,10 +282,14 @@ td.num,th.num{text-align:right}
     <div><h3>Principales posiciones</h3><div id="c-detail-top" class="chart tall"></div></div>
     <div><h3>Exposición sectorial del manager</h3><div id="c-detail-sector" class="chart tall"></div></div>
   </div>
+  <div class="grid2" style="margin-top:20px">
+    <div><h3>Cambio en principales posiciones <span class="meta detail-delta-label"></span></h3><div id="c-detail-top-delta" class="chart tall"></div><p class="foot">Δ del peso en el libro del manager para sus 15 mayores posiciones actuales y las salidas más grandes del trimestre.</p></div>
+    <div><h3>Cambio en exposición sectorial <span class="meta detail-delta-label"></span></h3><div id="c-detail-sector-delta" class="chart tall"></div><p class="foot">Δ del peso sectorial del manager frente al trimestre previo (puntos porcentuales).</p></div>
+  </div>
   <h3 style="margin-top:18px">Valor reportado del manager en el tiempo</h3>
   <div id="c-detail-aum" class="chart" style="min-height:260px"></div>
   <h3 style="margin-top:18px">Cambios del trimestre</h3>
-  <div class="tablewrap"><table id="t-detail-moves"></table></div>
+  <div class="tablewrap short"><table id="t-detail-moves"></table></div>
 </section>
 
 <section id="s-method">
@@ -222,7 +311,7 @@ td.num,th.num{text-align:right}
 <script id="data" type="application/json">{{ data_json }}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('data').textContent);
-const ALLP = DATA.periods; const P = DATA.detail_periods; let cur = P[P.length-1]; let wmode = 'ew'; let amode = 'ALL';
+const ALLP = DATA.periods; const P = DATA.detail_periods; let cur = P[P.length-1]; let wmode = 'ew'; let smode = 'ew'; let hmode = 'ew'; let amode = 'ALL'; let mgrLabels = true; let cmetric = 'flow'; let cmag = 'ALL';
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const SERIES = () => ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(css);
 const usd = x => { if (x==null||isNaN(x)) return '—'; const a=Math.abs(x), s=x<0?'-':''; if(a>=1e12) return s+'$'+(a/1e12).toFixed(2)+'T'; if(a>=1e9) return s+'$'+(a/1e9).toFixed(1)+'B'; if(a>=1e6) return s+'$'+(a/1e6).toFixed(0)+'M'; return s+'$'+a.toFixed(0); };
@@ -233,6 +322,9 @@ const ACR = new Set(['ETF','ADR','ADS','MSCI','EAFE','S&P','SPDR','REIT','PFD','
 const title = s => String(s||'').split(' ').map(w => (w.startsWith('(')&&w.endsWith(')'))||ACR.has(w.toUpperCase()) ? w.toUpperCase() : w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()).join(' ');
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const prevOf = p => { const i=P.indexOf(p); return i>0?P[i-1]:null; };
+const signed = (v, f) => `<span class="${v>0?'up':v<0?'down':''}">${f(v)}</span>`;
+// x-range for diverging horizontal bars with "outside" text: pad both sides so labels on negative bars do not run into the axis labels
+const divRange = vals => { const lo=Math.min(0,...vals), hi=Math.max(0,...vals); const pad=Math.max(hi-lo, 1e-9)*0.24; return [lo-pad, hi+pad]; };
 const CFG = {displayModeBar:false, responsive:true};
 function base(extra){
   return Object.assign({
@@ -245,7 +337,55 @@ function base(extra){
     legend:{orientation:'h', y:-0.18, x:0, font:{color:css('--ink2')}},
   }, extra||{});
 }
-const plot = (id, traces, layout) => Plotly.react(id, traces, layout, CFG);
+// Every chart gets an explicit height (its CSS min-height unless the layout says otherwise). Without it Plotly's responsive
+// sizing re-measures a container whose height depends on the previous render and charts grow on each re-render.
+function plot(id, traces, layout){
+  const el = typeof id==='string' ? document.getElementById(id) : id;
+  if(!el.classList.contains('js-plotly-plot') && el.firstChild) el.innerHTML='';  // container currently holds an empty-state message
+  const h = layout.height || parseFloat(getComputedStyle(el).minHeight) || 340;
+  layout.height = h; el.style.height = h+'px';
+  return Plotly.react(el, traces, layout, CFG);
+}
+// Empty state for a chart container. Never wipe a Plotly div's innerHTML by hand: Plotly keeps internal state on the element
+// and the next react() call would diff against nodes that no longer exist and draw nothing.
+function emptyChart(el, msg){
+  if(el.classList.contains('js-plotly-plot')) Plotly.purge(el);
+  el.style.height=''; el.innerHTML=`<p class="meta">${esc(msg)}</p>`;
+}
+
+// ---------- generic sortable table
+// cols: [{k, h, cls, f(row)->html, s(row)->sort value, tip, nosort}]. Sort state survives re-renders (period change, theme change).
+const SORT = {};
+function buildTable(el, cols, rows, opts){
+  opts = opts||{};
+  const st = SORT[el.id] || (SORT[el.id] = {k: opts.defaultKey ?? null, dir: opts.defaultDir ?? -1});
+  const col = cols.find(c=>c.k===st.k);
+  let data = [...rows];
+  if(col){
+    const sv = col.s || (r=>r[col.k]);
+    data.sort((a,b)=>{
+      const x=sv(a), y=sv(b); const nx=(x==null||x!==x), ny=(y==null||y!==y);
+      if(nx&&ny) return 0; if(nx) return 1; if(ny) return -1;
+      if(typeof x==='number'&&typeof y==='number') return (x-y)*st.dir;
+      return String(x).localeCompare(String(y),'es',{numeric:true,sensitivity:'base'})*st.dir;
+    });
+  }
+  const icon = c => c.nosort?'':`<span class="si" aria-hidden="true">${c.k===st.k?(st.dir>0?'▲':'▼'):'⇅'}</span>`;
+  const head = '<thead><tr>'+cols.map(c=>`<th class="${c.cls||''}${c.nosort?'':' sortable'}"${c.k===st.k?` aria-sort="${st.dir>0?'ascending':'descending'}"`:''} data-k="${esc(c.k)}"${c.tip?` title="${esc(c.tip)}"`:''}>${esc(c.h)}${icon(c)}</th>`).join('')+'</tr></thead>';
+  const body = '<tbody>'+(data.length ? data.map(r=>'<tr>'+cols.map(c=>`<td class="${c.cls||''}">${c.f?c.f(r):esc(r[c.k]??'')}</td>`).join('')+'</tr>').join('')
+                                      : `<tr><td colspan="${cols.length}" class="meta">${esc(opts.empty||'Sin datos para este trimestre.')}</td></tr>`)+'</tbody>';
+  el.innerHTML = head+body;
+  if(opts.sticky){ // freeze the first N columns: measure header widths, then pin each cell with its cumulative left offset
+    const n=Math.min(opts.sticky, cols.length); const ths=[...el.querySelectorAll('thead th')]; const lefts=[]; let acc=0;
+    for(let i=0;i<n;i++){ lefts.push(acc); acc+=ths[i].offsetWidth; }
+    el.querySelectorAll('tr').forEach(tr=>{ for(let i=0;i<n&&i<tr.children.length;i++){ const c=tr.children[i]; if(c.colSpan>1) break; c.classList.add('stick'); if(i===n-1) c.classList.add('stick-last'); c.style.left=lefts[i]+'px'; } });
+  }
+  el.querySelectorAll('th.sortable').forEach(th=>th.onclick=()=>{
+    const k=th.dataset.k; const c=cols.find(c=>c.k===k);
+    if(st.k===k) st.dir=-st.dir; else { st.k=k; st.dir = (c.cls||'').includes('num') ? -1 : 1; }
+    buildTable(el, cols, rows, opts);
+  });
+}
 
 // ---------- header
 function renderPeriods(){
@@ -266,15 +406,17 @@ function renderHistory(){
   const fl = H.filter(r=>r.net_flow!=null);
   plot('c-hist-flow', [{type:'bar', x:fl.map(r=>ql(r.period)), y:fl.map(r=>r.net_flow/1e9), marker:{color:fl.map(r=>r.net_flow>=0?css('--div-pos'):css('--div-neg'))}, hovertemplate:'%{x}: $%{y:.1f}B<extra></extra>'}],
     base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{tickprefix:'$', ticksuffix:'B', zeroline:true}), showlegend:false, bargap:0.25}));
+  const hk = hmode==='ew'?'avg_weight':'share'; const hl = hmode==='ew'?'(equal-weight)':'(por valor)';
+  document.querySelectorAll('.hist-mode-label').forEach(e=>e.textContent=hl);
   const EA = DATA.exposure_asset;
-  plot('c-hist-asset', ASSET_ORDER.map((a,i)=>({type:'scatter', mode:'lines', stackgroup:'one', name:a, x, y:ALLP.map(p=>{const r=EA.find(r=>r.period===p&&r.underlying_asset===a); return r&&r.avg_weight!=null?r.avg_weight*100:0;}),
+  plot('c-hist-asset', ASSET_ORDER.map((a,i)=>({type:'scatter', mode:'lines', stackgroup:'one', name:a, x, y:ALLP.map(p=>{const r=EA.find(r=>r.period===p&&r.underlying_asset===a); return r&&r[hk]!=null?r[hk]*100:0;}),
     line:{width:0.5, color:css('--surface')}, fillcolor:S[i%8], hovertemplate:'%{x} · '+a+': %{y:.1f}%<extra></extra>'})),
     base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{ticksuffix:'%', range:[0,100]}), margin:{l:8,r:16,t:8,b:90}, legend:{orientation:'h',y:-0.32,x:0}, hovermode:'x unified'}));
   const ES = DATA.exposure_sector; const secs=[...new Set(ES.map(r=>r.sector))];
-  const avg = secs.map(sc=>({sc, m: ES.filter(r=>r.sector===sc).reduce((a,r)=>a+(r.avg_weight||0),0)})).sort((a,b)=>b.m-a.m);
+  const avg = secs.map(sc=>({sc, m: ES.filter(r=>r.sector===sc).reduce((a,r)=>a+(r[hk]||0),0)})).sort((a,b)=>b.m-a.m);
   const top = avg.slice(0,7).map(a=>a.sc), rest = avg.slice(7).map(a=>a.sc);
-  const series = top.map((sc,i)=>({type:'scatter', mode:'lines', name:sc, x, y:ALLP.map(p=>{const r=ES.find(r=>r.period===p&&r.sector===sc); return r?r.avg_weight*100:null;}), line:{width:2, color:S[i]}, hovertemplate:'%{x} · '+sc+': %{y:.1f}%<extra></extra>'}));
-  if(rest.length) series.push({type:'scatter', mode:'lines', name:'Otros ('+rest.length+')', x, y:ALLP.map(p=>ES.filter(r=>r.period===p&&rest.includes(r.sector)).reduce((a,r)=>a+r.avg_weight*100,0)), line:{width:2, color:css('--muted'), dash:'dot'}, hovertemplate:'%{x} · otros: %{y:.1f}%<extra></extra>'});
+  const series = top.map((sc,i)=>({type:'scatter', mode:'lines', name:sc, x, y:ALLP.map(p=>{const r=ES.find(r=>r.period===p&&r.sector===sc); return r&&r[hk]!=null?r[hk]*100:null;}), line:{width:2, color:S[i]}, hovertemplate:'%{x} · '+sc+': %{y:.1f}%<extra></extra>'}));
+  if(rest.length) series.push({type:'scatter', mode:'lines', name:'Otros ('+rest.length+')', x, y:ALLP.map(p=>ES.filter(r=>r.period===p&&rest.includes(r.sector)).reduce((a,r)=>a+(r[hk]||0)*100,0)), line:{width:2, color:css('--muted'), dash:'dot'}, hovertemplate:'%{x} · otros: %{y:.1f}%<extra></extra>'});
   plot('c-hist-sector', series, base({xaxis:ax(), yaxis:Object.assign(base().yaxis,{ticksuffix:'%', rangemode:'tozero'}), margin:{l:8,r:16,t:8,b:90}, legend:{orientation:'h',y:-0.32,x:0}, hovermode:'x unified'}));
   const small = (id, y, fmt, suf) => plot(id, [{type:'scatter', mode:'lines', x, y, line:{width:2, color:css('--s1')}, fill:'tozeroy', fillcolor:'rgba(42,120,214,0.10)', hovertemplate:'%{x}: %{y'+fmt+'}'+suf+'<extra></extra>'}],
     base({xaxis:ax({nticks:8}), yaxis:Object.assign(base().yaxis,{ticksuffix:suf, rangemode:'tozero'}), showlegend:false, margin:{l:8,r:16,t:8,b:44}}));
@@ -292,7 +434,8 @@ function renderLead(){
     {l:'Rotación promedio', v:pct(k.avg_turnover,0), d:`${k.n_add||0} aumentos · ${k.n_trim||0} reducciones`},
   ];
   document.getElementById('kpis').innerHTML = tiles.map(t=>`<div class="kpi"><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="d">${t.d}</div></div>`).join('');
-  const TAG={flows:'Flujos',asset_mix:'Activos',sector:'Sectores',consensus_buy:'Consenso',consensus_sell:'Consenso',moves:'Movimientos',turnover:'Rotación',type_mismatch:'Perfil',options:'Opciones'};
+  const TAG={flows:'Flujos',asset_mix:'Activos',sector:'Sectores',sector_positioning:'Posicionamiento',sector_driver:'Sectores',sector_extremes:'Extremos',
+             consensus_buy:'Consenso',consensus_sell:'Consenso',moves:'Movimientos',company_moves:'Empresas',turnover:'Rotación',type_mismatch:'Perfil',options:'Opciones'};
   document.getElementById('insights').innerHTML = ins.bullets.map(b=>`<li><span class="tag">${TAG[b.kind]||b.kind}</span><span>${esc(b.text)}</span></li>`).join('');
 }
 
@@ -308,69 +451,170 @@ function renderAsset(){
   document.getElementById('asset-delta-label').textContent = prevOf(cur)?`${ql(prevOf(cur))} → ${ql(cur)}`:'';
   plot('c-asset-delta', [{type:'bar', orientation:'h', x:dr.map(r=>r.d), y:dr.map(r=>r.a), marker:{color:dr.map(r=>r.d>=0?css('--div-pos'):css('--div-neg'))},
     text:dr.map(r=>(r.d>=0?'+':'')+r.d.toFixed(2)+' pp'), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:+.2f} pp<extra></extra>'}],
-    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true}), margin:{l:8,r:60,t:8,b:36}, showlegend:false}));
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true, range:divRange(dr.map(r=>r.d))}), margin:{l:8,r:16,t:8,b:36}, showlegend:false}));
 }
 // ---------- sectors
 function renderSector(){
-  const rows = DATA.exposure_sector.filter(r=>r.period===cur).sort((a,b)=>a.avg_weight-b.avg_weight);
-  plot('c-sector-level', [{type:'bar', orientation:'h', x:rows.map(r=>r.avg_weight*100), y:rows.map(r=>r.sector), marker:{color:css('--s1')},
-    text:rows.map(r=>pct(r.avg_weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}% (peso promedio)<extra></extra>'}],
+  const key = smode==='ew'?'avg_weight':'share'; const dkey = smode==='ew'?'d_avg_weight':'d_share';
+  const modeLabel = smode==='ew'?'equal-weight':'por valor';
+  document.getElementById('sector-mode-label').textContent = `(${modeLabel})`;
+  document.getElementById('sector-delta-label').textContent = (prevOf(cur)?`${ql(prevOf(cur))} → ${ql(cur)}, `:'')+modeLabel;
+  const rows = DATA.exposure_sector.filter(r=>r.period===cur&&r[key]!=null).sort((a,b)=>a[key]-b[key]);
+  plot('c-sector-level', [{type:'bar', orientation:'h', x:rows.map(r=>r[key]*100), y:rows.map(r=>r.sector), marker:{color:css('--s1')},
+    text:rows.map(r=>pct(r[key])), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}% ('+modeLabel+')<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), margin:{l:8,r:50,t:8,b:36}, showlegend:false}));
-  const d = rows.filter(r=>r.d_avg_weight!=null).sort((a,b)=>a.d_avg_weight-b.d_avg_weight);
-  plot('c-sector-delta', [{type:'bar', orientation:'h', x:d.map(r=>r.d_avg_weight*100), y:d.map(r=>r.sector), marker:{color:d.map(r=>r.d_avg_weight>=0?css('--div-pos'):css('--div-neg'))},
-    text:d.map(r=>pp(r.d_avg_weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:+.2f} pp<extra></extra>'}],
-    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true}), margin:{l:8,r:60,t:8,b:36}, showlegend:false}));
+  const d = rows.filter(r=>r[dkey]!=null).sort((a,b)=>a[dkey]-b[dkey]);
+  plot('c-sector-delta', [{type:'bar', orientation:'h', x:d.map(r=>r[dkey]*100), y:d.map(r=>r.sector), marker:{color:d.map(r=>r[dkey]>=0?css('--div-pos'):css('--div-neg'))},
+    text:d.map(r=>pp(r[dkey])), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:+.2f} pp<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true, range:divRange(d.map(r=>r[dkey]*100))}), margin:{l:8,r:16,t:8,b:36}, showlegend:false}));
+  // heatmap: explicit height from the row count, otherwise Plotly's responsive sizing + automargin keeps growing the container
   const H = DATA.rotation.filter(r=>r.period===cur);
   const types=[...new Set(H.map(r=>r.manager_type))].sort(), secs=[...new Set(H.map(r=>r.sector))].sort();
+  const heat=document.getElementById('c-rotation-heat');
+  if(!types.length){ emptyChart(heat, 'Sin trimestre previo para calcular flujos.'); return; }
+  const hh = Math.max(360, types.length*28 + 150); heat.style.height = hh+'px';
   const z = types.map(t=>secs.map(s=>{const r=H.find(r=>r.manager_type===t&&r.sector===s); return r?r.flow_pct*100:null;}));
   const m = Math.max(0.5, ...z.flat().filter(v=>v!=null).map(Math.abs));
   plot('c-rotation-heat', [{type:'heatmap', z, x:secs, y:types, zmin:-m, zmax:m, colorscale:[[0,css('--div-neg')],[0.5,css('--div-mid')],[1,css('--div-pos')]], xgap:2, ygap:2,
     hovertemplate:'%{y}<br>%{x}: %{z:+.2f}% del valor del grupo<extra></extra>', colorbar:{ticksuffix:'%', thickness:10, len:0.8, tickfont:{color:css('--muted')}, outlinewidth:0}}],
-    base({margin:{l:8,r:16,t:8,b:120}, xaxis:Object.assign(base().xaxis,{tickangle:-35, showgrid:false}), yaxis:Object.assign(base().yaxis,{showgrid:false, automargin:true})}));
+    base({height:hh, margin:{l:8,r:16,t:8,b:8}, xaxis:Object.assign(base().xaxis,{tickangle:-35, showgrid:false}), yaxis:Object.assign(base().yaxis,{showgrid:false, automargin:true})}));
 }
 // ---------- managers
 function renderManagers(){
   const M = DATA.managers.filter(r=>r.period===cur).sort((a,b)=>b.total_value-a.total_value);
   const sz = M.map(r=>Math.max(8, 8 + 6*Math.log10(Math.max(1, r.total_value/1e8))));
-  plot('c-mgr-scatter', [{type:'scatter', mode:'markers+text', x:M.map(r=>r.n_positions), y:M.map(r=>r.top10_weight*100), text:M.map(r=>r.short), textposition:'top center', textfont:{color:css('--ink2'), size:11},
+  plot('c-mgr-scatter', [{type:'scatter', mode: mgrLabels?'markers+text':'markers', x:M.map(r=>r.n_positions), y:M.map(r=>r.top10_weight*100), text:M.map(r=>r.short), textposition:'top center', textfont:{color:css('--ink2'), size:11},
     marker:{size:sz, color:css('--s1'), opacity:0.85, line:{width:2, color:css('--surface')}},
     customdata:M.map(r=>[r.manager, usd(r.total_value), r.inferred_type, r.manager_type]),
     hovertemplate:'<b>%{customdata[0]}</b><br>%{x} posiciones · top-10 %{y:.0f}%<br>valor %{customdata[1]}<br>declarado: %{customdata[3]}<br>inferido: %{customdata[2]}<extra></extra>'}],
-    base({xaxis:Object.assign(base().xaxis,{type:'log', title:{text:'Número de posiciones (log)'}}), yaxis:Object.assign(base().yaxis,{title:{text:'Peso del top-10 (%)'}, ticksuffix:'%', range:[0,110]}), showlegend:false, margin:{l:8,r:16,t:16,b:48}}));
+    base({xaxis:Object.assign(base().xaxis,{type:'log', title:{text:'Amplitud: número de posiciones (log)'}}), yaxis:Object.assign(base().yaxis,{title:{text:'Concentración: peso del top-10 (%)'}, ticksuffix:'%', range:[0,110]}), showlegend:false, margin:{l:8,r:16,t:16,b:48}}));
   const T = M.filter(r=>r.turnover!=null).sort((a,b)=>a.turnover-b.turnover);
   plot('c-mgr-turnover', [{type:'bar', orientation:'h', x:T.map(r=>r.turnover*100), y:T.map(r=>r.short), marker:{color:css('--s1')}, text:T.map(r=>pct(r.turnover,0)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
     customdata:T.map(r=>[usd(r.gross_flow), usd(r.net_flow)]), hovertemplate:'%{y}: rotación %{x:.0f}%<br>bruto %{customdata[0]} · neto %{customdata[1]}<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%', title:{text:'Σ|flujo| / valor promedio del libro'}}), showlegend:false, margin:{l:8,r:50,t:8,b:48}}));
-  const h = `<thead><tr><th>Manager</th><th>Tipo declarado</th><th>Tipo inferido</th><th class="num">Valor 13F</th><th class="num">Posiciones</th><th class="num">Top-10</th><th class="num">Opciones</th><th class="num">ETF</th><th class="num">Rotación</th><th class="num">Flujo neto</th><th class="num">Δ valor</th></tr></thead>`;
-  document.getElementById('t-managers').innerHTML = h + '<tbody>' + M.map(r=>`<tr><td><strong>${esc(r.manager)}</strong></td><td>${esc(r.manager_type)}</td><td title="${esc(r.inferred_reason)}">${esc(r.inferred_type)}</td><td class="num mono">${usd(r.total_value)}</td><td class="num mono">${r.n_positions}</td><td class="num mono">${pct(r.top10_weight,0)}</td><td class="num mono">${pct(r.options_share,0)}</td><td class="num mono">${pct(r.etf_share,0)}</td><td class="num mono">${pct(r.turnover,0)}</td><td class="num mono ${r.net_flow>0?'up':r.net_flow<0?'down':''}">${usd(r.net_flow)}</td><td class="num mono ${r.value_chg_pct>0?'up':r.value_chg_pct<0?'down':''}">${r.value_chg_pct==null?'—':((r.value_chg_pct*100).toFixed(1)+'%')}</td></tr>`).join('') + '</tbody>';
+  buildTable(document.getElementById('t-managers'), [
+    {k:'short', h:'Manager', cls:'txt', f:r=>`<strong title="${esc(r.manager)}">${esc(r.short)}</strong>`},
+    {k:'manager_type', h:'Tipo declarado', cls:'txt'},
+    {k:'inferred_type', h:'Tipo inferido', cls:'txt', tip:'Derivado de la huella de cartera; pasa el cursor para ver el motivo', f:r=>`<span title="${esc(r.inferred_reason)}">${esc(r.inferred_type)}</span>`},
+    {k:'total_value', h:'Valor 13F', cls:'num mono', f:r=>usd(r.total_value)},
+    {k:'n_positions', h:'Posiciones', cls:'num mono'},
+    {k:'top10_weight', h:'Top-10', cls:'num mono', tip:'Peso de las 10 mayores posiciones', f:r=>pct(r.top10_weight,0)},
+    {k:'options_share', h:'Opciones', cls:'num mono', tip:'Share del nocional en opciones', f:r=>pct(r.options_share,0)},
+    {k:'etf_share', h:'ETF', cls:'num mono', f:r=>pct(r.etf_share,0)},
+    {k:'turnover', h:'Rotación', cls:'num mono', tip:'Σ|flujo| / valor promedio del libro', f:r=>pct(r.turnover,0)},
+    {k:'net_flow', h:'Flujo neto', cls:'num mono', tip:'Compras − ventas a precio implícito del trimestre', f:r=>signed(r.net_flow, usd)},
+    {k:'value_chg_pct', h:'Δ valor', cls:'num mono', tip:'Cambio del valor reportado vs. trimestre previo', f:r=>r.value_chg_pct==null?'—':signed(r.value_chg_pct, v=>(v*100).toFixed(1)+'%')},
+  ], M, {defaultKey:'total_value', defaultDir:-1, sticky:1});
+  document.getElementById('cap-managers').textContent = `${M.length} managers en ${ql(cur)}`;
   const sel=document.getElementById('moves-mgr'); const v=sel.value; sel.innerHTML='<option value="ALL">Todos</option>'+M.map(r=>`<option value="${r.cik}">${esc(r.short)}</option>`).join(''); sel.value = [...sel.options].some(o=>o.value===v)?v:'ALL';
 }
 // ---------- moves
 function movesTable(el, rows, withMgr){
   const mx = Math.max(1, ...rows.map(r=>Math.abs(r.flow_effect)));
-  el.innerHTML = `<thead><tr>${withMgr?'<th>Manager</th>':''}<th>Acción</th><th>Emisor</th><th>Ticker</th><th>Tipo</th><th>Sector</th><th class="num">Δ títulos</th><th class="num">Peso prev → actual</th><th class="num">Flujo estimado</th></tr></thead><tbody>` +
-    rows.map(r=>`<tr>${withMgr?`<td>${esc(r.short)}</td>`:''}<td><span class="chip ${r.action}">${r.action}</span></td><td>${esc(title(r.issuer))}${r.put_call?' <span class="meta">('+r.put_call+')</span>':''}</td><td class="mono">${esc(r.ticker||'')}</td><td>${esc(r.asset_type)}</td><td>${esc(r.sector)}</td><td class="num mono">${r.pct_shares==null?'nueva':((r.pct_shares>=0?'+':'')+(r.pct_shares*100).toFixed(0)+'%')}</td><td class="num mono">${pct(r.weight_prev)} → ${pct(r.weight_cur)}</td><td><div class="bar-cell"><i class="${r.flow_effect<0?'neg':''}" style="width:${Math.max(2,Math.abs(r.flow_effect)/mx*70)}px"></i><span class="mono ${r.flow_effect>0?'up':'down'}">${usd(r.flow_effect)}</span></div></td></tr>`).join('') + '</tbody>';
+  const cols = [];
+  if(withMgr) cols.push({k:'short', h:'Manager', cls:'txt'});
+  cols.push(
+    {k:'action', h:'Acción', f:r=>`<span class="chip ${r.action}">${r.action}</span>`},
+    {k:'issuer', h:'Emisor', cls:'txt', s:r=>title(r.issuer), f:r=>`${esc(title(r.issuer))}${r.put_call?' <span class="meta">('+r.put_call+')</span>':''}`},
+    {k:'ticker', h:'Ticker', cls:'mono', f:r=>esc(r.ticker||'')},
+    {k:'asset_type', h:'Tipo', cls:'txt'},
+    {k:'sector', h:'Sector', cls:'txt'},
+    {k:'pct_shares', h:'Δ títulos', cls:'num mono', tip:'Cambio % en el número de títulos; "nueva" = posición inexistente el trimestre previo', s:r=>r.pct_shares==null?1e9:r.pct_shares, f:r=>r.pct_shares==null?'nueva':((r.pct_shares>=0?'+':'')+(r.pct_shares*100).toFixed(0)+'%')},
+    {k:'weight_prev', h:'Peso prev.', cls:'num mono', tip:'Peso de la posición en el libro del manager, trimestre previo', f:r=>pct(r.weight_prev)},
+    {k:'weight_cur', h:'Peso actual', cls:'num mono', tip:'Peso de la posición en el libro del manager, trimestre actual', f:r=>pct(r.weight_cur)},
+    {k:'d_weight', h:'Δ peso', cls:'num mono', s:r=>r.weight_cur-r.weight_prev, f:r=>signed(r.weight_cur-r.weight_prev, pp)},
+    {k:'flow_effect', h:'Flujo estimado', cls:'num', tip:'Δ títulos × precio implícito del trimestre', f:r=>`<div class="bar-cell"><i class="${r.flow_effect<0?'neg':''}" style="width:${Math.max(2,Math.abs(r.flow_effect)/mx*60)}px"></i><span class="mono ${r.flow_effect>0?'up':'down'}">${usd(r.flow_effect)}</span></div>`},
+  );
+  buildTable(el, cols, rows, {empty:'Sin movimientos con estos filtros.', sticky: withMgr?3:2});  // frozen through "Emisor"
 }
 function renderMoves(){
   const mgr=document.getElementById('moves-mgr').value;
-  let rows = DATA.moves.filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
-  rows = rows.sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,40);
+  const all = DATA.moves.filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
+  const rows = [...all].sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,40);
   movesTable(document.getElementById('t-moves'), rows, true);
+  document.getElementById('cap-moves').textContent = all.length>rows.length ? `${rows.length} de ${all.length} movimientos (mayor |flujo| primero)` : `${rows.length} movimientos`;
+}
+// ---------- companies (universe-wide aggregate per issuer)
+const MAG_ES = {MAJOR:'Mayor', MINOR:'Menor', NONE:'Sin cambio'};
+function renderCompanies(){
+  const all = (DATA.companies||[]).filter(r=>r.period===cur);
+  const kp = document.getElementById('companies-kpis');
+  if(!all.length){
+    kp.innerHTML=''; emptyChart(document.getElementById('c-companies-buy'), 'Sin trimestre previo para comparar.'); emptyChart(document.getElementById('c-companies-sell'), 'Sin trimestre previo para comparar.');
+    document.getElementById('t-companies').innerHTML=''; document.getElementById('cap-companies').textContent=''; document.getElementById('companies-foot').textContent=''; return;
+  }
+  const n = m => all.filter(r=>r.magnitude===m).length;
+  const buyFlow = all.filter(r=>r.net_flow>0).reduce((a,r)=>a+r.net_flow,0), sellFlow = all.filter(r=>r.net_flow<0).reduce((a,r)=>a+r.net_flow,0);
+  kp.innerHTML = [
+    {l:'Emisoras en cartera', v:all.length.toLocaleString(), d:`${n('MAJOR')} cambio mayor · ${n('MINOR')} menor · ${n('NONE')} sin cambio`},
+    {l:'Compradas netas', v:all.filter(r=>r.net_flow>0).length, d:`flujo ${usd(buyFlow)}`},
+    {l:'Vendidas netas', v:all.filter(r=>r.net_flow<0).length, d:`flujo ${usd(sellFlow)}`},
+    {l:'Entradas / salidas del universo', v:`${all.filter(r=>r.holders_prev===0&&r.holders_cur>0).length} / ${all.filter(r=>r.holders_prev>0&&r.holders_cur===0).length}`, d:'emisoras que ningún manager tenía / que ya nadie tiene'},
+  ].map(t=>`<div class="kpi"><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="d">${t.d}</div></div>`).join('');
+  // ranking charts
+  const M = {
+    flow:    {val:r=>r.net_flow/1e9, ok:r=>true, fmt:v=>usd(v*1e9), ax:{tickprefix:'$', ticksuffix:'B'}, label:'flujo neto, USD'},
+    pct:     {val:r=>r.pct_shares*100, ok:r=>r.pct_shares!=null&&r.eligible_intensity, fmt:v=>(v>=0?'+':'')+v.toFixed(0)+'%', ax:{ticksuffix:'%'}, label:'Δ títulos agregados, emisoras con ≥3 tenedores'},
+    breadth: {val:r=>r.net_buyers, ok:r=>true, fmt:v=>(v>0?'+':'')+v, ax:{}, label:'compradores − vendedores'},
+  }[cmetric];
+  const elig = all.filter(M.ok);
+  const buys = elig.filter(r=>M.val(r)>0).sort((a,b)=>M.val(b)-M.val(a)).slice(0,15).reverse();
+  const sells = elig.filter(r=>M.val(r)<0).sort((a,b)=>M.val(a)-M.val(b)).slice(0,15).reverse();
+  document.getElementById('companies-buy-label').textContent = `(${M.label})`; document.getElementById('companies-sell-label').textContent = `(${M.label})`;
+  document.getElementById('companies-foot').textContent = 'Barras = métrica seleccionada; el tooltip muestra compradores/vendedores, Δ títulos, flujo neto y tenedores. Solo acciones directas.';
+  const rank = (id, rows, color, msg) => {
+    const el=document.getElementById(id);
+    if(!rows.length){ emptyChart(el, msg); return; }
+    plot(id, [{type:'bar', orientation:'h', x:rows.map(M.val), y:rows.map(r=>title(r.issuer)), marker:{color:css(color)}, text:rows.map(r=>M.fmt(M.val(r))), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
+      customdata:rows.map(r=>[r.buyers, r.sellers, r.pct_shares==null?'nueva':((r.pct_shares>=0?'+':'')+(r.pct_shares*100).toFixed(0)+'%'), usd(r.net_flow), r.holders_prev+' → '+r.holders_cur, r.sector]),
+      hovertemplate:'<b>%{y}</b> · %{customdata[5]}<br>%{customdata[0]} compradores / %{customdata[1]} vendedores · tenedores %{customdata[4]}<br>Δ títulos %{customdata[2]} · flujo neto %{customdata[3]}<extra></extra>'}],
+      base({xaxis:Object.assign(base().xaxis, M.ax, {zeroline:true, range:divRange([0, ...rows.map(M.val)])}), showlegend:false, margin:{l:8,r:16,t:8,b:36}}));
+  };
+  rank('c-companies-buy', buys, '--div-pos', 'Ninguna emisora con compra neta bajo esta métrica.');
+  rank('c-companies-sell', sells, '--div-neg', 'Ninguna emisora con venta neta bajo esta métrica.');
+  // table
+  const secSel=document.getElementById('companies-sector'); const sv=secSel.value||'ALL';
+  const secs=[...new Set(all.map(r=>r.sector))].sort();
+  secSel.innerHTML='<option value="ALL">Todos</option>'+secs.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join(''); secSel.value=[...secSel.options].some(o=>o.value===sv)?sv:'ALL';
+  const rows = all.filter(r=>(cmag==='ALL'||r.magnitude===cmag)&&(secSel.value==='ALL'||r.sector===secSel.value));
+  const magRank = {MAJOR:2, MINOR:1, NONE:0};
+  buildTable(document.getElementById('t-companies'), [
+    {k:'issuer', h:'Emisor', cls:'txt', s:r=>title(r.issuer), f:r=>`<strong>${esc(title(r.issuer))}</strong>`},
+    {k:'sector', h:'Sector', cls:'txt'},
+    {k:'magnitude', h:'Cambio neto', s:r=>magRank[r.magnitude], f:r=>`<span class="chip ${r.magnitude}">${MAG_ES[r.magnitude]||r.magnitude}</span>`},
+    {k:'holders', h:'Tenedores', cls:'num mono', tip:'Managers con posición: trimestre previo → actual', s:r=>r.holders_cur, f:r=>`${r.holders_prev} → ${r.holders_cur}`},
+    {k:'buyers', h:'Compr.', cls:'num mono', f:r=>`<span class="up">${r.buyers}</span>`},
+    {k:'sellers', h:'Vend.', cls:'num mono', f:r=>`<span class="down">${r.sellers}</span>`},
+    {k:'net_buyers', h:'Neto', cls:'num mono', tip:'Compradores − vendedores', f:r=>signed(r.net_buyers, v=>(v>0?'+':'')+v)},
+    {k:'pct_shares', h:'Δ títulos', cls:'num mono', tip:'Variación % de los títulos agregados del universo; "nueva" = ningún manager la tenía', s:r=>r.pct_shares==null?1e9:r.pct_shares, f:r=>r.pct_shares==null?'nueva':signed(r.pct_shares, v=>(v>=0?'+':'')+(v*100).toFixed(1)+'%')},
+    {k:'net_flow', h:'Flujo neto', cls:'num mono', tip:'Compras − ventas al precio implícito del trimestre', f:r=>signed(r.net_flow, usd)},
+    {k:'gross_flow', h:'Flujo bruto', cls:'num mono', tip:'Compras + ventas', f:r=>usd(r.gross_flow)},
+    {k:'price_effect', h:'Efecto precio', cls:'num mono', f:r=>signed(r.price_effect, usd)},
+    {k:'value_cur', h:'Valor agregado', cls:'num mono', tip:'Valor total en manos del universo, trimestre actual', f:r=>usd(r.value_cur)},
+  ], rows, {defaultKey:'gross_flow', defaultDir:-1, sticky:1, empty:'Sin emisoras con estos filtros.'});
+  document.getElementById('cap-companies').textContent = `${rows.length} de ${all.length} emisoras en ${ql(cur)}`;
 }
 // ---------- consensus
 function renderConsensus(){
   const C = DATA.consensus.filter(r=>r.period===cur);
+  const issuerCol = {k:'issuer', h:'Emisor', cls:'txt', s:r=>title(r.issuer), f:r=>esc(title(r.issuer))};
   const held = [...C].sort((a,b)=>b.holders-a.holders||b.total_value-a.total_value).slice(0,12);
-  document.getElementById('t-held').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Tenedores</th><th class="num">Valor</th><th class="num">Neto</th></tr></thead><tbody>'+held.map(r=>`<tr><td>${esc(title(r.issuer))} <span class="mono meta">${esc(r.ticker||'')}</span></td><td class="num mono">${r.holders}</td><td class="num mono">${usd(r.total_value)}</td><td class="num mono ${r.net_buyers>0?'up':r.net_buyers<0?'down':''}">${r.net_buyers>0?'+':''}${r.net_buyers??0}</td></tr>`).join('')+'</tbody>';
+  buildTable(document.getElementById('t-held'), [issuerCol,
+    {k:'holders', h:'Tenedores', cls:'num mono'}, {k:'total_value', h:'Valor', cls:'num mono', f:r=>usd(r.total_value)},
+    {k:'net_buyers', h:'Neto', cls:'num mono', tip:'Compradores − vendedores', f:r=>signed(r.net_buyers??0, v=>(v>0?'+':'')+v)}], held, {sticky:1});
   const bought=[...C].filter(r=>r.net_buyers>0).sort((a,b)=>b.net_buyers-a.net_buyers||b.net_flow-a.net_flow).slice(0,12);
-  document.getElementById('t-bought').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Compr.</th><th class="num">Vend.</th><th class="num">Nuevos</th><th class="num">Flujo</th></tr></thead><tbody>'+bought.map(r=>`<tr><td>${esc(title(r.issuer))}</td><td class="num mono up">${r.buyers}</td><td class="num mono">${r.sellers}</td><td class="num mono">${r.new_holders}</td><td class="num mono">${usd(r.net_flow)}</td></tr>`).join('')+'</tbody>';
+  buildTable(document.getElementById('t-bought'), [issuerCol,
+    {k:'buyers', h:'Compr.', cls:'num mono', f:r=>`<span class="up">${r.buyers}</span>`}, {k:'sellers', h:'Vend.', cls:'num mono'}, {k:'new_holders', h:'Nuevos', cls:'num mono'},
+    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], bought, {empty:'Sin compras de consenso.', sticky:1});
   const sold=[...C].filter(r=>r.net_buyers<0).sort((a,b)=>a.net_buyers-b.net_buyers||a.net_flow-b.net_flow).slice(0,12);
-  document.getElementById('t-sold').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Vend.</th><th class="num">Compr.</th><th class="num">Salidas</th><th class="num">Flujo</th></tr></thead><tbody>'+sold.map(r=>`<tr><td>${esc(title(r.issuer))}</td><td class="num mono down">${r.sellers}</td><td class="num mono">${r.buyers}</td><td class="num mono">${r.exits}</td><td class="num mono">${usd(r.net_flow)}</td></tr>`).join('')+'</tbody>';
+  buildTable(document.getElementById('t-sold'), [issuerCol,
+    {k:'sellers', h:'Vend.', cls:'num mono', f:r=>`<span class="down">${r.sellers}</span>`}, {k:'buyers', h:'Compr.', cls:'num mono'}, {k:'exits', h:'Salidas', cls:'num mono'},
+    {k:'net_flow', h:'Flujo', cls:'num mono', f:r=>usd(r.net_flow)}], sold, {empty:'Sin ventas de consenso.', sticky:1});
 }
 // ---------- options
 function renderOptions(){
   const O = DATA.putcall.filter(r=>r.period===cur).sort((a,b)=>(b.put+b.call)-(a.put+a.call)).slice(0,15).reverse();
-  if(!O.length){ document.getElementById('c-putcall').innerHTML='<p class="meta">Sin opciones reportadas en este periodo.</p>'; return; }
+  if(!O.length){ emptyChart(document.getElementById('c-putcall'), 'Sin opciones reportadas en este periodo.'); return; }
   plot('c-putcall', [
     {type:'bar', orientation:'h', name:'Puts', x:O.map(r=>r.put/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s8'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · puts: $%{x:.2f}B<extra></extra>'},
     {type:'bar', orientation:'h', name:'Calls', x:O.map(r=>r.call/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s1'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · calls: $%{x:.2f}B<extra></extra>'},
@@ -389,6 +633,28 @@ function renderDetail(){
   const S = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight);
   plot('c-detail-sector', [{type:'bar', orientation:'h', x:S.map(r=>r.weight*100), y:S.map(r=>r.sector), marker:{color:css('--s1')}, text:S.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}%<extra></extra>'}],
     base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
+  // changes vs previous quarter: top positions (weight_prev comes from the position diff) and sector weights
+  const prev = prevOf(cur);
+  document.querySelectorAll('.detail-delta-label').forEach(e=>e.textContent = prev?`${ql(prev)} → ${ql(cur)}`:'');
+  const dbar = (id, rows, labelOf, hover) => {
+    const el=document.getElementById(id);
+    if(!rows.length){ emptyChart(el, 'Sin trimestre previo para comparar.'); return; }
+    plot(id, [{type:'bar', orientation:'h', x:rows.map(r=>r.d*100), y:rows.map(labelOf), marker:{color:rows.map(r=>r.d>=0?css('--div-pos'):css('--div-neg'))},
+      text:rows.map(r=>pp(r.d)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, customdata:rows.map(r=>[pct(r.w0), pct(r.w1)]), hovertemplate:hover}],
+      base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp', zeroline:true, range:divRange(rows.map(r=>r.d*100))}), showlegend:false, margin:{l:8,r:16,t:8,b:36}}));
+  };
+  if(prev){
+    const topD = DATA.holdings.filter(r=>r.period===cur&&r.cik===cik&&r.weight_prev!=null).map(r=>({name:title(r.issuer)+(r.put_call?' ('+r.put_call+')':''), w0:r.weight_prev, w1:r.weight, d:r.weight-r.weight_prev}));
+    const exits = DATA.moves.filter(r=>r.period===cur&&r.cik===cik&&r.action==='EXIT').sort((a,b)=>b.weight_prev-a.weight_prev).slice(0,5)
+      .map(r=>({name:title(r.issuer)+(r.put_call?' ('+r.put_call+')':'')+' · salida', w0:r.weight_prev, w1:0, d:-r.weight_prev}));
+    const rowsT = [...topD, ...exits].sort((a,b)=>a.d-b.d);
+    dbar('c-detail-top-delta', rowsT, r=>r.name, '%{y}<br>%{customdata[0]} → %{customdata[1]} (%{x:+.2f} pp)<extra></extra>');
+    const S1 = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik), S0 = DATA.mgr_sector.filter(r=>r.period===prev&&r.cik===cik);
+    const secs=[...new Set([...S1.map(r=>r.sector), ...S0.map(r=>r.sector)])];
+    const rowsS = secs.map(sc=>{const w1=(S1.find(r=>r.sector===sc)||{}).weight||0, w0=(S0.find(r=>r.sector===sc)||{}).weight||0; return {name:sc, w0, w1, d:w1-w0};})
+      .filter(r=>Math.abs(r.d)>=0.0005 || r.w1>0.01).sort((a,b)=>a.d-b.d);
+    dbar('c-detail-sector-delta', S0.length?rowsS:[], r=>r.name, '%{y}<br>%{customdata[0]} → %{customdata[1]} (%{x:+.2f} pp)<extra></extra>');
+  } else { dbar('c-detail-top-delta', [], null, ''); dbar('c-detail-sector-delta', [], null, ''); }
   const A = DATA.managers.filter(r=>r.cik===cik).sort((a,b)=>a.period<b.period?-1:1);
   plot('c-detail-aum', [{type:'scatter', mode:'lines+markers', x:A.map(r=>ql(r.period)), y:A.map(r=>r.total_value/1e9), line:{width:2, color:css('--s1')}, marker:{size:A.map(r=>r.period===cur?10:5), color:css('--s1'), line:{width:2,color:css('--surface')}},
     customdata:A.map(r=>[r.n_positions, pct(r.top10_weight,0), r.turnover==null?'—':pct(r.turnover,0)]), hovertemplate:'%{x}: $%{y:.1f}B<br>%{customdata[0]} posiciones · top-10 %{customdata[1]} · rotación %{customdata[2]}<extra></extra>'}],
@@ -398,13 +664,60 @@ function renderDetail(){
   if(!rows.length){ el.innerHTML='<tbody><tr><td class="meta">Sin trimestre previo para comparar.</td></tr></tbody>'; } else movesTable(el, rows, false);
 }
 let histDone=false;
-function renderAll(){ renderPeriods(); renderLead(); if(!histDone){ renderHistory(); histDone=true; } renderAsset(); renderSector(); renderManagers(); renderMoves(); renderConsensus(); renderOptions(); renderDetail(); }
+function renderAll(){ renderPeriods(); renderLead(); if(!histDone){ renderHistory(); histDone=true; } renderAsset(); renderSector(); renderManagers(); renderMoves(); renderCompanies(); renderConsensus(); renderOptions(); renderDetail(); }
 document.querySelectorAll('.wbtn').forEach(b=>b.onclick=()=>{wmode=b.dataset.w; document.querySelectorAll('.wbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderAsset();});
+document.querySelectorAll('.swbtn').forEach(b=>b.onclick=()=>{smode=b.dataset.w; document.querySelectorAll('.swbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderSector();});
+document.querySelectorAll('.hwbtn').forEach(b=>b.onclick=()=>{hmode=b.dataset.w; document.querySelectorAll('.hwbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderHistory();});
+document.querySelectorAll('.cmbtn').forEach(b=>b.onclick=()=>{cmetric=b.dataset.m; document.querySelectorAll('.cmbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderCompanies();});
+document.querySelectorAll('.cgbtn').forEach(b=>b.onclick=()=>{cmag=b.dataset.g; document.querySelectorAll('.cgbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderCompanies();});
+document.getElementById('companies-sector').onchange=renderCompanies;
 document.querySelectorAll('.abtn').forEach(b=>b.onclick=()=>{amode=b.dataset.a; document.querySelectorAll('.abtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderMoves();});
+document.getElementById('lbl-btn').onclick=function(){ mgrLabels=!mgrLabels; this.setAttribute('aria-pressed', mgrLabels); this.textContent = mgrLabels?'Mostrar nombres':'Ocultar nombres'; renderManagers(); };
 document.getElementById('moves-mgr').onchange=renderMoves;
 document.getElementById('detail-mgr').onchange=renderDetail;
 renderAll();
 const rethemed=()=>{histDone=false; renderAll();};
-if (window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', rethemed); }
 new MutationObserver(rethemed).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+
+// Section nav: highlight the last section whose top has scrolled past the sticky header (classic scroll-spy).
+(function(){
+  const links=[...document.querySelectorAll('.nav a')]; const byId=Object.fromEntries(links.map(a=>[a.getAttribute('href').slice(1), a]));
+  const sections=[...document.querySelectorAll('main section[id]')]; const hdr=document.querySelector('header');
+  let ticking=false;
+  const setHdr=()=>document.documentElement.style.setProperty('--hdr', hdr.offsetHeight+'px');  // keeps anchor jumps clear of the sticky header
+  setHdr(); window.addEventListener('resize', setHdr);
+  function spy(){
+    ticking=false;
+    const line = window.scrollY + hdr.offsetHeight + 12;
+    let active = sections[0];
+    for(const s of sections){ if(s.offsetTop <= line) active = s; }
+    if(window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) active = sections[sections.length-1];
+    links.forEach(a=>a.removeAttribute('aria-current')); byId[active.id]?.setAttribute('aria-current','true');
+  }
+  const onScroll=()=>{ if(!ticking){ ticking=true; setTimeout(spy, 40); } };  // timer, not rAF: rAF is paused in background/hidden tabs
+  window.addEventListener('scroll', onScroll, {passive:true}); window.addEventListener('resize', onScroll); spy();
+})();
+
+// Light / dark toggle. The attribute is always explicit (set before first paint), the choice persists per browser.
+const themeBtn=document.getElementById('theme-toggle'), themeLbl=document.getElementById('theme-label');
+function syncThemeButton(){
+  const dark=document.documentElement.getAttribute('data-theme')==='dark';
+  themeLbl.textContent=dark?'Claro':'Oscuro';
+  themeBtn.setAttribute('aria-label', dark?'Cambiar a modo claro':'Cambiar a modo oscuro');
+}
+themeBtn.onclick=()=>{
+  const next=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  try{ localStorage.setItem('sec13f-theme', next); }catch(e){}
+  syncThemeButton();
+};
+if (window.matchMedia){
+  // Follow the OS only while the user has not made an explicit choice.
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e=>{
+    let saved=null; try{ saved=localStorage.getItem('sec13f-theme'); }catch(err){}
+    if(saved!=='light'&&saved!=='dark'){ document.documentElement.setAttribute('data-theme', e.matches?'dark':'light'); syncThemeButton(); }
+  });
+}
+syncThemeButton();
 </script>
+</html>

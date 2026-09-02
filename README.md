@@ -1,5 +1,7 @@
 # 13F Holdings Tracker
 
+**Dashboard en vivo:** https://alanvaa06.github.io/13F_fillings/ (se publica automáticamente desde `output/dashboard.html` en cada push a `main`; el reporte queda en `/report.md` y los CSV en la raíz del sitio).
+
 Pipeline de datos que se conecta directamente a **SEC EDGAR**, descarga los formularios **13F-HR** de un universo de managers institucionales, los parsea, clasifica cada posición (tipo de activo, sector, subyacente) y construye un **tracker de cambios en tenencia y exposición** por tipo de activo, por fondo y por tipo de manager, con un reporte analítico y un dashboard interactivo.
 
 ```
@@ -30,7 +32,7 @@ Salidas en `output/`:
 
 | Archivo | Contenido |
 |---|---|
-| `dashboard.html` | Dashboard interactivo (selector de trimestre, exposición por activo/sector, rotación por tipo de manager, movimientos, consenso, puts/calls, detalle por manager) |
+| `dashboard.html` | Dashboard interactivo: navegación por secciones, modo claro/oscuro, selector de trimestre, exposición por activo y sector con conmutador equal-weight / por valor (market weight), rotación por tipo de manager, tablas compactas ordenables por cualquier columna (managers, movimientos con peso previo y actual, consenso), scatter de concentración vs. amplitud con etiquetas activables, puts/calls y detalle por manager |
 | `report.md` | Reporte trimestral en Markdown con la lectura del trimestre, tablas y metodología |
 | `insights.json` | Insights estructurados por trimestre (para alimentar otros sistemas) |
 | `holdings.csv` | Posiciones clasificadas (una fila por manager × trimestre × CUSIP × put/call) con peso y precio implícito |

@@ -1,0 +1,49 @@
+name: Publish dashboard to GitHub Pages
+
+# The dashboard is a self-contained HTML file committed under output/. This workflow serves it
+# (plus the Markdown report and the small CSV products) as a static site; nothing is rebuilt here.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "output/dashboard.html"
+      - "output/report.md"
+      - "output/*.csv"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp output/dashboard.html _site/index.html
+          cp output/report.md _site/report.md
+          cp output/insights.json _site/insights.json
+          cp output/*.csv _site/ 2>/dev/null || true
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

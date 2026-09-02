@@ -23,7 +23,8 @@ def _records(df: pd.DataFrame, cols: list[str] | None = None) -> list[dict]:
 
 
 def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_asset_vw, exp_sector_ew, rotation, cons, pc,
-                    insights: list[dict], managers, source: str, n_filings: int, title: str = "13F Holdings Tracker", detail_quarters: int = 12) -> Path:
+                    insights: list[dict], managers, source: str, n_filings: int, title: str = "13F Holdings Tracker", detail_quarters: int = 12,
+                    exp_sector_vw: pd.DataFrame | None = None, company_moves: pd.DataFrame | None = None) -> Path:
     periods = sorted(h["period"].unique())
     detail_periods = periods[-detail_quarters:]
     short = {m.cik: m.short for m in managers}
@@ -32,6 +33,11 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
     ea = exp_asset_vw[["period", "underlying_asset", "value_usd", "share", "d_share"]].merge(
         exp_asset_ew[["period", "underlying_asset", "avg_weight", "d_avg_weight"]], on=["period", "underlying_asset"], how="outer")
     asset_order = [a for a in ASSET_ORDER if a in set(ea["underlying_asset"])] + sorted(set(ea["underlying_asset"]) - set(ASSET_ORDER))
+
+    # exposure by sector: EW (average of manager weights) + VW (share of aggregate dollars) so the dashboard can switch between them
+    es = exp_sector_ew[["period", "sector", "avg_weight", "d_avg_weight"]]
+    if exp_sector_vw is not None and not exp_sector_vw.empty:
+        es = es.merge(exp_sector_vw[["period", "sector", "value_usd", "share", "d_share"]], on=["period", "sector"], how="outer")
 
     # rotation heat: flow as % of group's book value
     rot = pd.DataFrame()
@@ -66,9 +72,13 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
 
     # holdings for the detail view: top 15 per manager-period
     hdet = h[h["period"].isin(detail_periods)]
-    hd = hdet.sort_values("weight", ascending=False).groupby(["period", "cik"]).head(12)
+    hd = hdet.sort_values("weight", ascending=False).groupby(["period", "cik"]).head(15)
     hd = hd.drop(columns=["issuer"]).rename(columns={"display_name": "issuer"})
-    hd = hd[["period", "cik", "issuer", "ticker", "put_call", "asset_type", "sector", "value_usd", "weight"]]
+    if not changes.empty:  # previous-quarter weight of each top position, so the detail view can chart the change
+        hd = hd.merge(changes[["period", "cik", "cusip", "put_call", "weight_prev"]], on=["period", "cik", "cusip", "put_call"], how="left")
+    else:
+        hd["weight_prev"] = np.nan
+    hd = hd[["period", "cik", "issuer", "ticker", "put_call", "asset_type", "sector", "value_usd", "weight", "weight_prev"]]
     ms = hdet.groupby(["period", "cik", "sector"], as_index=False)["weight"].sum()
     ms = ms[ms["weight"] > 0.0005]
 
@@ -94,13 +104,19 @@ def build_dashboard(out_path: Path, *, h, changes, msum, fp, exp_asset_ew, exp_a
 
     cons_det = cons[cons["period"].isin(detail_periods)]
     pcr_det = pcr[pcr["period"].isin(detail_periods)] if not pcr.empty else pcr
+    # aggregated moves per company (universe-wide): buyers/sellers, aggregate share change, flow decomposition and MAJOR/MINOR/NONE label
+    cm = pd.DataFrame()
+    if company_moves is not None and not company_moves.empty:
+        cm = company_moves[company_moves["period"].isin(detail_periods)][[
+            "period", "cusip", "issuer", "ticker", "sector", "holders_prev", "holders_cur", "buyers", "sellers", "new_holders", "exits",
+            "value_prev", "value_cur", "pct_shares", "net_flow", "gross_flow", "price_effect", "net_buyers", "magnitude", "eligible_intensity"]]
     data = dict(
         periods=periods, detail_periods=detail_periods, asset_order=asset_order, history=_records(hist),
         insights={i["period"]: {k: v for k, v in i.items() if k != "facts"} for i in insights},
         kpis=kpis,
-        exposure_asset=_records(ea), exposure_sector=_records(exp_sector_ew), rotation=_records(rot, ["period", "manager_type", "sector", "net_flow", "flow_pct"]),
+        exposure_asset=_records(ea), exposure_sector=_records(es), rotation=_records(rot, ["period", "manager_type", "sector", "net_flow", "flow_pct"]),
         managers=_records(mg), moves=_records(mv), consensus=_records(cons_det.groupby("period").head(60)), putcall=_records(pcr_det),
-        holdings=_records(hd), mgr_sector=_records(ms),
+        holdings=_records(hd), mgr_sector=_records(ms), companies=_records(cm),
     )
     env = Environment(loader=FileSystemLoader(Path(__file__).parent / "templates"), autoescape=False)
     html = env.get_template("dashboard.html.j2").render(
