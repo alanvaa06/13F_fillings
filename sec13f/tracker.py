@@ -110,8 +110,11 @@ def exposure(h: pd.DataFrame, by: str, group_col: str | None = None) -> pd.DataF
 def equal_weight_exposure(h: pd.DataFrame, by: str) -> pd.DataFrame:
     """Average of each manager's own allocation (so Vanguard-sized filers do
     not dominate the picture)."""
-    w = h.groupby(["period", "cik", by], as_index=False)["weight"].sum()
-    e = w.groupby(["period", by], as_index=False)["weight"].mean().rename(columns={"weight": "avg_weight"})
+    # pivot with zeros so a manager that holds none of a category still counts in the average
+    w = h.pivot_table(index=["period", "cik"], columns=by, values="weight", aggfunc="sum", fill_value=0.0)
+    e = w.groupby(level="period").mean().stack().rename("avg_weight").reset_index()
+    e.columns = ["period", by, "avg_weight"]
+    e = e.sort_values(["period", by])
     e["avg_weight_prev"] = e.groupby(by)["avg_weight"].shift(1)
     e["d_avg_weight"] = e["avg_weight"] - e["avg_weight_prev"]
     return e

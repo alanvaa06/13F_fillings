@@ -43,6 +43,17 @@ def build_report(insights: list[dict], msum: pd.DataFrame, fp: pd.DataFrame, exp
     }, {"total_value": _usd, "top10_weight": lambda v: f"{v:.0%}", "turnover": lambda v: "" if pd.isna(v) else f"{v:.0%}",
         "net_flow": lambda v: "" if pd.isna(v) else _usd(v), "value_chg_pct": lambda v: "" if pd.isna(v) else f"{v:+.1%}"}))
 
+    if not changes.empty:
+        out.append("\n## Actividad por tipo de manager\n")
+        ch = changes[changes["period"] == period]
+        bt = ch.groupby("manager_type", as_index=False).agg(managers=("cik", "nunique"), net_flow=("flow_effect", "sum"), gross_flow=("abs_flow", "sum"),
+                                                              nuevas=("action", lambda x: int((x == "NEW").sum())), salidas=("action", lambda x: int((x == "EXIT").sum())))
+        book = msum[msum["period"] == period].groupby("manager_type", as_index=False)["total_value"].sum()
+        bt = bt.merge(book, on="manager_type", how="left")
+        bt["flow_pct"] = bt["net_flow"] / bt["total_value"]
+        out.append(_md_table(bt.sort_values("gross_flow", ascending=False), {"manager_type": "Tipo de manager", "managers": "Managers", "total_value": "Valor 13F", "net_flow": "Flujo neto", "flow_pct": "Flujo neto / valor", "gross_flow": "Flujo bruto", "nuevas": "Nuevas", "salidas": "Salidas"},
+                             {"total_value": _usd, "net_flow": _usd, "gross_flow": _usd, "flow_pct": lambda v: f"{v:+.1%}"}))
+
     out.append("\n## Exposición por tipo de activo (promedio simple entre managers)\n")
     ea = exp_asset_ew[exp_asset_ew["period"] == period].sort_values("avg_weight", ascending=False)
     out.append(_md_table(ea, {"underlying_asset": "Tipo de activo", "avg_weight": "Peso promedio", "d_avg_weight": "Δ vs. trimestre previo"},

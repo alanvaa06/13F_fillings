@@ -1,17 +1,17 @@
 # 13F Tracker — Reporte trimestral 2026Q2
 
-_Generado 2026-09-02 00:19 · fuente de datos: **sample** · periodo de reporte 2026-06-30_
+_Generado 2026-09-02 00:20 · fuente de datos: **sample** · periodo de reporte 2026-06-30_
 
 > 2026Q2: 15 managers, $11.26T en posiciones reportadas, +4.9% vs trimestre anterior
 
 ## Lectura del trimestre
 
 - El valor agregado del universo cambió $522.0B en el trimestre: $383.7B por precio y $138.3B por flujo neto (compras menos ventas). Actividad bruta de $383.0B con 85 posiciones nuevas y 86 salidas.
-- Mezcla de activos (promedio simple entre managers): sube Equity (+2.0 pp) y baja Fixed Income (ETF) (-1.7 pp).
-- Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Consumer Discretionary (+0.2 pp); mayor reducción en Financials (-1.0 pp) y Health Care (-0.7 pp).
+- Mezcla de activos (promedio simple entre managers): sube Equity (+2.0 pp) y baja Equity (ETF) (-1.2 pp).
+- Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Consumer Discretionary (+0.9 pp); mayor reducción en Financials (-0.9 pp) y Communication Services (-0.6 pp).
 - Compras de consenso (más compradores netos): Cisco Systems Inc (CSCO) (4 compradores / 0 vendedores, flujo $8.4B), Pool Corp (POOL) (3 compradores / 0 vendedores, flujo $10.1B), Blackstone Inc (BX) (3 compradores / 0 vendedores, flujo $9.1B).
-- Ventas de consenso: Deere & CO (DE) (3 vendedores / 0 compradores, flujo $-997M), Constellation Brands Inc (STZ) (3 vendedores / 0 compradores, flujo $-274M), Amazon Com Inc (AMZN) (3 vendedores / 0 compradores, flujo $-91M).
-- Movimientos individuales más grandes: Vanguard Group Inc abre Ishares TR MSCI Emerg Mkt ETF (EEM) ($54.2B); Vanguard Group Inc aumenta Cme Group Inc (CME) ($31.7B); BlackRock Inc. abre Ishares TR 20+yr Trs BD ETF (TLT) ($30.8B); Citadel Advisors LLC reduce Marsh & Mclennan Cos Inc (MMC) ($-17.1B).
+- Ventas de consenso: Deere & Co (DE) (3 vendedores / 0 compradores, flujo $-997M), Constellation Brands Inc (STZ) (3 vendedores / 0 compradores, flujo $-274M), Amazon Com Inc (AMZN) (3 vendedores / 0 compradores, flujo $-91M).
+- Movimientos individuales más grandes: Vanguard Group Inc abre Ishares Tr MSCI Emerg Mkt ETF (EEM) ($54.2B); Vanguard Group Inc aumenta Cme Group Inc (CME) ($31.7B); BlackRock Inc. abre Ishares Tr 20+yr Trs Bd ETF (TLT) ($30.8B); Citadel Advisors LLC reduce Marsh & Mclennan Cos Inc (MMC) ($-17.1B).
 - Mayor rotación de cartera: Renaissance Technologies LLC (51%), Citadel Advisors LLC (48%), Bridgewater Associates, LP (46%).
 - Opciones reportadas: puts $4.2B vs calls $8.0B (ratio 0.53). Mayor cobertura con puts en Honeywell Intl Inc (HON), Valero Energy Corp New (VLO), Qualcomm Inc (QCOM).
 
@@ -36,18 +36,36 @@ _Generado 2026-09-02 00:19 · fuente de datos: **sample** · periodo de reporte 
 | Scion Asset Management, LLC | Hedge Fund - Contrarian Value | Concentrated Value | $344M | 46 | 84% | 6% | $4M | -3.2% |
 
 
+## Actividad por tipo de manager
+
+| Tipo de manager | Managers | Valor 13F | Flujo neto | Flujo neto / valor | Flujo bruto | Nuevas | Salidas |
+|---|---|---|---|---|---|---|---|
+| Asset Manager - Index | 1 | $5.67T | $96.1B | +1.7% | $96.1B | 1 | 0 |
+| Asset Manager - Index/Active | 1 | $4.83T | $29.2B | +0.6% | $86.8B | 1 | 2 |
+| Hedge Fund - Multi-strategy | 1 | $178.9B | $2.7B | +1.5% | $83.5B | 15 | 13 |
+| Hedge Fund - Quant | 2 | $141.1B | $200M | +0.1% | $65.4B | 32 | 36 |
+| Conglomerate / Long-only Value | 1 | $342.9B | $9.5B | +2.8% | $31.4B | 3 | 2 |
+| Hedge Fund - Global Macro | 1 | $23.9B | $1.1B | +4.4% | $10.8B | 8 | 10 |
+| Hedge Fund - Long/Short Growth | 1 | $19.1B | $-1.2B | -6.4% | $3.6B | 3 | 4 |
+| Family Office - Macro | 2 | $11.5B | $511M | +4.4% | $2.7B | 15 | 14 |
+| Hedge Fund - Activist | 2 | $28.9B | $-427M | -1.5% | $1.9B | 2 | 1 |
+| Hedge Fund - Opportunistic | 1 | $8.2B | $784M | +9.6% | $893M | 2 | 2 |
+| Hedge Fund - Value | 1 | $6.4B | $-40M | -0.6% | $86M | 1 | 1 |
+| Hedge Fund - Contrarian Value | 1 | $344M | $4M | +1.2% | $22M | 2 | 1 |
+
+
 ## Exposición por tipo de activo (promedio simple entre managers)
 
 | Tipo de activo | Peso promedio | Δ vs. trimestre previo |
 |---|---|---|
 | Equity | 85.3% | +2.0 pp |
-| Equity (ETF) | 8.2% | -1.6 pp |
-| Fixed Income (ETF) | 6.7% | -1.7 pp |
-| Options | 4.9% | -0.0 pp |
-| Commodity (ETF) | 2.0% | +0.3 pp |
-| Debt | 1.6% | -0.0 pp |
-| Warrants/Rights | 0.4% | -0.1 pp |
-| Preferred | 0.4% | -0.2 pp |
+| Equity (ETF) | 6.0% | -1.2 pp |
+| Fixed Income (ETF) | 3.6% | -0.9 pp |
+| Options | 3.3% | -0.0 pp |
+| Debt | 0.8% | -0.0 pp |
+| Commodity (ETF) | 0.8% | +0.1 pp |
+| Preferred | 0.1% | -0.1 pp |
+| Warrants/Rights | 0.1% | -0.0 pp |
 
 
 ## Exposición sectorial (promedio simple entre managers)
@@ -55,22 +73,22 @@ _Generado 2026-09-02 00:19 · fuente de datos: **sample** · periodo de reporte 
 | Sector | Peso promedio | Δ vs. trimestre previo |
 |---|---|---|
 | Information Technology | 21.8% | +1.4 pp |
-| Financials | 20.1% | -1.0 pp |
-| Consumer Discretionary | 10.0% | +0.2 pp |
-| Health Care | 9.0% | -0.7 pp |
-| Communication Services | 8.0% | -0.7 pp |
-| ETF - Fixed Income | 6.7% | -1.7 pp |
-| Consumer Staples | 6.7% | +0.1 pp |
-| ETF - Broad Equity | 6.0% | -0.9 pp |
-| Industrials | 5.7% | +0.2 pp |
-| Materials | 4.0% | -0.6 pp |
-| Energy | 3.7% | +0.1 pp |
-| ETF - Sector | 3.4% | -0.2 pp |
-| Utilities | 2.8% | +0.1 pp |
-| ETF - International Equity | 2.3% | -0.4 pp |
-| Real Estate | 2.2% | +0.1 pp |
-| ETF - Commodity | 2.0% | +0.3 pp |
-| ETF - Thematic | 0.4% | -0.1 pp |
+| Financials | 18.7% | -0.9 pp |
+| Consumer Discretionary | 10.0% | +0.9 pp |
+| Health Care | 9.0% | -0.1 pp |
+| Communication Services | 7.0% | -0.6 pp |
+| Consumer Staples | 6.2% | +0.1 pp |
+| Industrials | 5.7% | +0.6 pp |
+| ETF - Broad Equity | 4.0% | -0.2 pp |
+| ETF - Fixed Income | 3.6% | -0.9 pp |
+| Materials | 3.5% | -0.5 pp |
+| Energy | 3.4% | +0.3 pp |
+| Real Estate | 1.9% | +0.1 pp |
+| Utilities | 1.9% | +0.3 pp |
+| ETF - Sector | 1.4% | -0.3 pp |
+| ETF - International Equity | 1.1% | -0.2 pp |
+| ETF - Commodity | 0.8% | +0.1 pp |
+| ETF - Thematic | 0.1% | -0.0 pp |
 
 
 ## Consenso: posiciones más compartidas

@@ -202,7 +202,7 @@ const pct = (x,d=1) => (x==null||isNaN(x))?'—':(x*100).toFixed(d)+'%';
 const pp = x => (x==null||isNaN(x))?'—':((x>=0?'+':'')+(x*100).toFixed(1)+' pp');
 const ql = p => p.slice(0,4)+'Q'+(Math.floor((+p.slice(5,7)-1)/3)+1);
 const ACR = new Set(['ETF','ADR','ADS','MSCI','EAFE','S&P','SPDR','REIT','PFD','NV','SA','AG','PLC','LLC','LP','USA','US','FTSE','QQQ','AT&T','IBM','HCA','CVS','GE','RTX','KKR','PNC','TJX','UPS','PDD','JD','ASML','SAP','TSM','NVR']);
-const title = s => String(s||'').split(' ').map(w => (w.startsWith('(')&&w.endsWith(')'))||ACR.has(w.toUpperCase())||(w.length<=2&&/^[A-Za-z]+$/.test(w)) ? w.toUpperCase() : w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()).join(' ');
+const title = s => String(s||'').split(' ').map(w => (w.startsWith('(')&&w.endsWith(')'))||ACR.has(w.toUpperCase()) ? w.toUpperCase() : w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()).join(' ');
 const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const prevOf = p => { const i=P.indexOf(p); return i>0?P[i-1]:null; };
 const CFG = {displayModeBar:false, responsive:true};

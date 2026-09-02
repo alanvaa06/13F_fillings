@@ -66,3 +66,13 @@ def test_exposure_shares():
     ew = equal_weight_exposure(h, "underlying_asset")
     q2 = ew[ew.period == "2026-06-30"].set_index("underlying_asset")["avg_weight"]
     assert q2["Equity"] == pytest.approx((1.0 + 36 / 48) / 2)
+
+
+def test_equal_weight_exposure_sums_to_one_per_period():
+    h = _h()
+    ew = equal_weight_exposure(h, "underlying_asset")
+    s = ew.groupby("period")["avg_weight"].sum()
+    assert (s.round(9) == 1).all()
+    # manager 1 holds no options in Q2, so Options must average over both managers: (0 + 12/48)/2
+    q2 = ew[ew.period == "2026-06-30"].set_index("underlying_asset")["avg_weight"]
+    assert q2["Options"] == pytest.approx((0 + 12 / 48) / 2)

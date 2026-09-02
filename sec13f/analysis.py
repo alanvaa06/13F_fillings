@@ -25,7 +25,7 @@ def pretty(name: str) -> str:
     for w in (name or "").split():
         if w.startswith("(") and w.endswith(")"):
             out.append(w.upper())
-        elif w.upper() in _ACRONYMS or (len(w) <= 2 and w.isalpha()):
+        elif w.upper() in _ACRONYMS:
             out.append(w.upper())
         else:
             out.append(w[:1].upper() + w[1:].lower())

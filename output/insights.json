@@ -49,11 +49,11 @@
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Preferred (+0.3 pp) y baja Equity (ETF) (-8.6 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Debt (+0.2 pp) y baja Equity (ETF) (-0.3 pp)."
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.0 pp) y Industrials (+0.7 pp); mayor reducción en Financials (-0.4 pp) y Energy (-0.4 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.0 pp) y Industrials (+0.6 pp); mayor reducción en Financials (-1.9 pp) y Energy (-0.6 pp)."
       },
       {
         "kind": "consensus_buy",
@@ -61,11 +61,11 @@
       },
       {
         "kind": "consensus_sell",
-        "text": "Ventas de consenso: TJX Cos Inc New (TJX) (4 vendedores / 0 compradores, flujo $-7.2B), Bristol Myers Squibb CO (BMY) (4 vendedores / 0 compradores, flujo $-2.8B), Select Sector SPDR TR Sbi Int-utils (XLU) (4 vendedores / 0 compradores, flujo $-479M)."
+        "text": "Ventas de consenso: TJX Cos Inc New (TJX) (4 vendedores / 0 compradores, flujo $-7.2B), Bristol Myers Squibb Co (BMY) (4 vendedores / 0 compradores, flujo $-2.8B), Select Sector SPDR Tr Sbi Int-utils (XLU) (4 vendedores / 0 compradores, flujo $-479M)."
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: Vanguard Group Inc aumenta Medtronic PLC (MDT) ($56.7B); BlackRock Inc. abre Ishares TR S&P 500 Index (IVV) ($51.4B); Vanguard Group Inc abre Vanguard Intl Equity Index F FTSE Emr Mkt ETF (VWO) ($20.1B); Vanguard Group Inc aumenta Heico Corp (HEI) ($12.7B)."
+        "text": "Movimientos individuales más grandes: Vanguard Group Inc aumenta Medtronic PLC (MDT) ($56.7B); BlackRock Inc. abre Ishares Tr S&P 500 Index (IVV) ($51.4B); Vanguard Group Inc abre Vanguard Intl Equity Index F FTSE Emr Mkt ETF (VWO) ($20.1B); Vanguard Group Inc aumenta Heico Corp (HEI) ($12.7B)."
       },
       {
         "kind": "turnover",
@@ -124,15 +124,15 @@
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+0.7 pp) y baja Fixed Income (ETF) (-2.6 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+0.7 pp) y baja Equity (ETF) (-0.8 pp)."
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.2 pp) y Consumer Discretionary (+0.8 pp); mayor reducción en Utilities (-1.0 pp) y Financials (-0.9 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.2 pp) y Communication Services (+0.5 pp); mayor reducción en Financials (-0.8 pp) y Health Care (-0.8 pp)."
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Ishares TR 7-10 YR Treas BD (IEF) (4 compradores / 0 vendedores, flujo $79.0B), International Business Machs (IBM) (3 compradores / 0 vendedores, flujo $11.3B), Chubb Ltd (CB) (3 compradores / 0 vendedores, flujo $3.0B)."
+        "text": "Compras de consenso (más compradores netos): Ishares Tr 7-10 Yr Treas Bd (IEF) (4 compradores / 0 vendedores, flujo $79.0B), International Business Machs (IBM) (3 compradores / 0 vendedores, flujo $11.3B), Chubb Ltd (CB) (3 compradores / 0 vendedores, flujo $3.0B)."
       },
       {
         "kind": "consensus_sell",
@@ -140,7 +140,7 @@
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: BlackRock Inc. abre Ishares TR 7-10 YR Treas BD (IEF) ($78.1B); Vanguard Group Inc abre Ishares TR Iboxx HI YD ETF (HYG) ($53.5B); Vanguard Group Inc aumenta Conocophillips (COP) ($26.2B); BlackRock Inc. liquida Cigna Group (CI) ($-25.9B)."
+        "text": "Movimientos individuales más grandes: BlackRock Inc. abre Ishares Tr 7-10 Yr Treas Bd (IEF) ($78.1B); Vanguard Group Inc abre Ishares Tr Iboxx Hi Yd ETF (HYG) ($53.5B); Vanguard Group Inc aumenta Conocophillips (COP) ($26.2B); BlackRock Inc. liquida Cigna Group (CI) ($-25.9B)."
       },
       {
         "kind": "turnover",
@@ -199,11 +199,11 @@
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+2.0 pp) y baja Fixed Income (ETF) (-1.7 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+2.0 pp) y baja Equity (ETF) (-1.2 pp)."
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Consumer Discretionary (+0.2 pp); mayor reducción en Financials (-1.0 pp) y Health Care (-0.7 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Consumer Discretionary (+0.9 pp); mayor reducción en Financials (-0.9 pp) y Communication Services (-0.6 pp)."
       },
       {
         "kind": "consensus_buy",
@@ -211,11 +211,11 @@
       },
       {
         "kind": "consensus_sell",
-        "text": "Ventas de consenso: Deere & CO (DE) (3 vendedores / 0 compradores, flujo $-997M), Constellation Brands Inc (STZ) (3 vendedores / 0 compradores, flujo $-274M), Amazon Com Inc (AMZN) (3 vendedores / 0 compradores, flujo $-91M)."
+        "text": "Ventas de consenso: Deere & Co (DE) (3 vendedores / 0 compradores, flujo $-997M), Constellation Brands Inc (STZ) (3 vendedores / 0 compradores, flujo $-274M), Amazon Com Inc (AMZN) (3 vendedores / 0 compradores, flujo $-91M)."
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: Vanguard Group Inc abre Ishares TR MSCI Emerg Mkt ETF (EEM) ($54.2B); Vanguard Group Inc aumenta Cme Group Inc (CME) ($31.7B); BlackRock Inc. abre Ishares TR 20+yr Trs BD ETF (TLT) ($30.8B); Citadel Advisors LLC reduce Marsh & Mclennan Cos Inc (MMC) ($-17.1B)."
+        "text": "Movimientos individuales más grandes: Vanguard Group Inc abre Ishares Tr MSCI Emerg Mkt ETF (EEM) ($54.2B); Vanguard Group Inc aumenta Cme Group Inc (CME) ($31.7B); BlackRock Inc. abre Ishares Tr 20+yr Trs Bd ETF (TLT) ($30.8B); Citadel Advisors LLC reduce Marsh & Mclennan Cos Inc (MMC) ($-17.1B)."
       },
       {
         "kind": "turnover",
