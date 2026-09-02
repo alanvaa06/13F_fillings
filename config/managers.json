@@ -1,0 +1,20 @@
+{
+  "_comment": "Sample universe of 13F filers. manager_type is the declared classification; the pipeline also infers a type from portfolio characteristics. Verify CIKs with `python -m sec13f.cli verify` when online.",
+  "managers": [
+    {"cik": "1067983", "name": "Berkshire Hathaway Inc", "short": "Berkshire", "manager_type": "Conglomerate / Long-only Value", "style": "value"},
+    {"cik": "1350694", "name": "Bridgewater Associates, LP", "short": "Bridgewater", "manager_type": "Hedge Fund - Global Macro", "style": "macro"},
+    {"cik": "1037389", "name": "Renaissance Technologies LLC", "short": "Renaissance", "manager_type": "Hedge Fund - Quant", "style": "quant"},
+    {"cik": "1423053", "name": "Citadel Advisors LLC", "short": "Citadel", "manager_type": "Hedge Fund - Multi-strategy", "style": "multistrat"},
+    {"cik": "1336528", "name": "Pershing Square Capital Management, L.P.", "short": "Pershing Square", "manager_type": "Hedge Fund - Activist", "style": "activist"},
+    {"cik": "1791786", "name": "Elliott Investment Management L.P.", "short": "Elliott", "manager_type": "Hedge Fund - Activist", "style": "activist"},
+    {"cik": "1167483", "name": "Tiger Global Management LLC", "short": "Tiger Global", "manager_type": "Hedge Fund - Long/Short Growth", "style": "growth"},
+    {"cik": "1061768", "name": "Baupost Group LLC/MA", "short": "Baupost", "manager_type": "Hedge Fund - Value", "style": "value"},
+    {"cik": "1029160", "name": "Soros Fund Management LLC", "short": "Soros", "manager_type": "Family Office - Macro", "style": "macro"},
+    {"cik": "1649339", "name": "Scion Asset Management, LLC", "short": "Scion", "manager_type": "Hedge Fund - Contrarian Value", "style": "value"},
+    {"cik": "1536411", "name": "Duquesne Family Office LLC", "short": "Duquesne", "manager_type": "Family Office - Macro", "style": "macro"},
+    {"cik": "102909",  "name": "Vanguard Group Inc", "short": "Vanguard", "manager_type": "Asset Manager - Index", "style": "index"},
+    {"cik": "1364742", "name": "BlackRock Inc.", "short": "BlackRock", "manager_type": "Asset Manager - Index/Active", "style": "index"},
+    {"cik": "1179392", "name": "Two Sigma Investments, LP", "short": "Two Sigma", "manager_type": "Hedge Fund - Quant", "style": "quant"},
+    {"cik": "1656456", "name": "Appaloosa LP", "short": "Appaloosa", "manager_type": "Hedge Fund - Opportunistic", "style": "value"}
+  ]
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+data/raw/
+data/cache/
+data/processed/
+*.parquet
+.env
+output/holdings.csv
+output/changes.csv

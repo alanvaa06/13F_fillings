@@ -1,0 +1,454 @@
+period,manager_type,sector,net_flow,gross_flow
+2025-12-31,Asset Manager - Index,Communication Services,0.0,0.0
+2025-12-31,Asset Manager - Index,Consumer Discretionary,-9607816252.458681,9607816252.458681
+2025-12-31,Asset Manager - Index,Consumer Staples,-11723679800.0,11723679800.0
+2025-12-31,Asset Manager - Index,ETF - International Equity,20103978059.0,20103978059.0
+2025-12-31,Asset Manager - Index,Energy,-5785945321.698715,5785945321.698715
+2025-12-31,Asset Manager - Index,Financials,0.0,0.0
+2025-12-31,Asset Manager - Index,Health Care,72911273367.33302,72911273367.33302
+2025-12-31,Asset Manager - Index,Industrials,12745982547.854713,12745982547.854713
+2025-12-31,Asset Manager - Index,Information Technology,0.0,0.0
+2025-12-31,Asset Manager - Index,Materials,0.0,0.0
+2025-12-31,Asset Manager - Index,Real Estate,9090660170.084538,9090660170.084538
+2025-12-31,Asset Manager - Index,Utilities,-3629905373.4810977,3629905373.4810977
+2025-12-31,Asset Manager - Index/Active,Communication Services,0.0,0.0
+2025-12-31,Asset Manager - Index/Active,Consumer Discretionary,10076231624.260487,10076231624.260487
+2025-12-31,Asset Manager - Index/Active,Consumer Staples,0.0,0.0
+2025-12-31,Asset Manager - Index/Active,ETF - Broad Equity,51418565692.0,51418565692.0
+2025-12-31,Asset Manager - Index/Active,Energy,0.0,0.0
+2025-12-31,Asset Manager - Index/Active,Financials,-5333658755.253423,5333658755.253423
+2025-12-31,Asset Manager - Index/Active,Health Care,1547788354.402046,4475048645.257008
+2025-12-31,Asset Manager - Index/Active,Industrials,6859426390.343994,6859426390.343994
+2025-12-31,Asset Manager - Index/Active,Information Technology,0.0,0.0
+2025-12-31,Asset Manager - Index/Active,Materials,0.0,0.0
+2025-12-31,Asset Manager - Index/Active,Real Estate,3727414609.1142163,3727414609.1142163
+2025-12-31,Asset Manager - Index/Active,Utilities,0.0,0.0
+2025-12-31,Conglomerate / Long-only Value,Communication Services,0.0,0.0
+2025-12-31,Conglomerate / Long-only Value,Consumer Discretionary,0.0,0.0
+2025-12-31,Conglomerate / Long-only Value,Consumer Staples,0.0,0.0
+2025-12-31,Conglomerate / Long-only Value,Energy,76391618.62217389,76391618.62217389
+2025-12-31,Conglomerate / Long-only Value,Financials,141898147.85798967,141898147.85798967
+2025-12-31,Conglomerate / Long-only Value,Health Care,4808028545.0,4808028545.0
+2025-12-31,Conglomerate / Long-only Value,Information Technology,-97175366.31402299,97175366.31402299
+2025-12-31,Conglomerate / Long-only Value,Real Estate,0.0,0.0
+2025-12-31,Family Office - Macro,Communication Services,4906301.31302637,10227597.544846173
+2025-12-31,Family Office - Macro,Consumer Discretionary,26195249.972906165,52300664.880132996
+2025-12-31,Family Office - Macro,Consumer Staples,78463293.58457562,131680976.4660293
+2025-12-31,Family Office - Macro,ETF - Broad Equity,-38052257.50815663,146166299.80912852
+2025-12-31,Family Office - Macro,ETF - Commodity,-64484865.0,64484865.0
+2025-12-31,Family Office - Macro,ETF - Fixed Income,-17928145.638252303,17928145.638252303
+2025-12-31,Family Office - Macro,ETF - International Equity,0.0,0.0
+2025-12-31,Family Office - Macro,ETF - Sector,-241474866.1990039,312122089.47017276
+2025-12-31,Family Office - Macro,Energy,46914784.0,46914784.0
+2025-12-31,Family Office - Macro,Financials,-279240105.7492859,912635438.6310385
+2025-12-31,Family Office - Macro,Health Care,13145495.283182442,241699290.71681756
+2025-12-31,Family Office - Macro,Industrials,15162266.95096346,20834488.643233933
+2025-12-31,Family Office - Macro,Information Technology,116954939.1486163,216958909.49456754
+2025-12-31,Family Office - Macro,Materials,36926495.19734819,60262837.2026518
+2025-12-31,Family Office - Macro,Real Estate,-21840171.66389577,21840171.66389577
+2025-12-31,Family Office - Macro,Utilities,-8490784.325815722,8490784.325815722
+2025-12-31,Hedge Fund - Activist,Consumer Discretionary,-424021300.0,424021300.0
+2025-12-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2025-12-31,Hedge Fund - Activist,Energy,-253801695.0,253801695.0
+2025-12-31,Hedge Fund - Activist,Financials,-403521950.0,403521950.0
+2025-12-31,Hedge Fund - Activist,Health Care,1128609225.4454713,1555289879.0564585
+2025-12-31,Hedge Fund - Activist,Industrials,1126535737.0,1126535737.0
+2025-12-31,Hedge Fund - Activist,Information Technology,3606640373.3549747,3606640373.3549747
+2025-12-31,Hedge Fund - Activist,Materials,0.0,0.0
+2025-12-31,Hedge Fund - Activist,Real Estate,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Communication Services,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Consumer Discretionary,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Consumer Staples,-393714.0586797066,393714.0586797066
+2025-12-31,Hedge Fund - Contrarian Value,Energy,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Financials,3217290.8787010503,3217290.8787010503
+2025-12-31,Hedge Fund - Contrarian Value,Health Care,916722.0,916722.0
+2025-12-31,Hedge Fund - Contrarian Value,Industrials,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Information Technology,-730143.6531724042,730143.6531724042
+2025-12-31,Hedge Fund - Contrarian Value,Materials,0.0,0.0
+2025-12-31,Hedge Fund - Contrarian Value,Real Estate,0.0,0.0
+2025-12-31,Hedge Fund - Global Macro,Communication Services,297237161.82008696,401630872.17991304
+2025-12-31,Hedge Fund - Global Macro,Consumer Discretionary,-373193293.5515475,474616972.86857516
+2025-12-31,Hedge Fund - Global Macro,Consumer Staples,25840088.47171264,25840088.47171264
+2025-12-31,Hedge Fund - Global Macro,ETF - Broad Equity,-132957949.05863318,376136510.9657688
+2025-12-31,Hedge Fund - Global Macro,ETF - Commodity,164969120.44662118,370354654.6779436
+2025-12-31,Hedge Fund - Global Macro,ETF - Fixed Income,-258966266.0,258966266.0
+2025-12-31,Hedge Fund - Global Macro,ETF - International Equity,-874921974.3427005,874921974.3427005
+2025-12-31,Hedge Fund - Global Macro,ETF - Sector,-53367507.34131947,385691870.22586596
+2025-12-31,Hedge Fund - Global Macro,ETF - Thematic,-113267077.70654815,113267077.70654815
+2025-12-31,Hedge Fund - Global Macro,Energy,0.0,0.0
+2025-12-31,Hedge Fund - Global Macro,Financials,533949544.51554966,987634776.755741
+2025-12-31,Hedge Fund - Global Macro,Health Care,137035888.3176737,402743669.6823263
+2025-12-31,Hedge Fund - Global Macro,Industrials,-65886554.75810887,65886554.75810887
+2025-12-31,Hedge Fund - Global Macro,Information Technology,-444683265.79200006,2116459312.8052702
+2025-12-31,Hedge Fund - Global Macro,Materials,19171513.454144407,19171513.454144407
+2025-12-31,Hedge Fund - Global Macro,Real Estate,0.0,0.0
+2025-12-31,Hedge Fund - Long/Short Growth,Communication Services,-117820238.9960281,117820238.9960281
+2025-12-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,121454706.2102677,163410960.62874624
+2025-12-31,Hedge Fund - Long/Short Growth,Consumer Staples,147334830.0,147334830.0
+2025-12-31,Hedge Fund - Long/Short Growth,ETF - Sector,165340012.0,165340012.0
+2025-12-31,Hedge Fund - Long/Short Growth,Financials,-942434881.2921306,942434881.2921306
+2025-12-31,Hedge Fund - Long/Short Growth,Health Care,-83630700.0,83630700.0
+2025-12-31,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
+2025-12-31,Hedge Fund - Long/Short Growth,Information Technology,2357800867.1461153,3993966500.741099
+2025-12-31,Hedge Fund - Long/Short Growth,Materials,0.0,0.0
+2025-12-31,Hedge Fund - Long/Short Growth,Real Estate,0.0,0.0
+2025-12-31,Hedge Fund - Multi-strategy,Communication Services,4582872627.314066,4972248025.506673
+2025-12-31,Hedge Fund - Multi-strategy,Consumer Discretionary,4487127541.8532295,5145125787.434256
+2025-12-31,Hedge Fund - Multi-strategy,Consumer Staples,1816711579.7284222,2496377179.728422
+2025-12-31,Hedge Fund - Multi-strategy,ETF - Broad Equity,2140564755.9755645,2140564755.9755645
+2025-12-31,Hedge Fund - Multi-strategy,ETF - Commodity,-1395194698.0,1395194698.0
+2025-12-31,Hedge Fund - Multi-strategy,ETF - Fixed Income,-100115424.0,100115424.0
+2025-12-31,Hedge Fund - Multi-strategy,ETF - International Equity,-2206305774.0,2206305774.0
+2025-12-31,Hedge Fund - Multi-strategy,ETF - Sector,-260509613.4878966,260509613.4878966
+2025-12-31,Hedge Fund - Multi-strategy,ETF - Thematic,0.0,0.0
+2025-12-31,Hedge Fund - Multi-strategy,Energy,602505001.9732909,732146669.3589537
+2025-12-31,Hedge Fund - Multi-strategy,Financials,10995287239.193129,13148312760.132366
+2025-12-31,Hedge Fund - Multi-strategy,Health Care,5777967944.278351,9551913422.209799
+2025-12-31,Hedge Fund - Multi-strategy,Industrials,-1323009461.9462495,4776992628.053751
+2025-12-31,Hedge Fund - Multi-strategy,Information Technology,2362733444.8633184,4198396564.8633184
+2025-12-31,Hedge Fund - Multi-strategy,Materials,1633044080.56,3008334823.44
+2025-12-31,Hedge Fund - Multi-strategy,Real Estate,3766234767.227893,3766234767.227893
+2025-12-31,Hedge Fund - Multi-strategy,Utilities,0.0,0.0
+2025-12-31,Hedge Fund - Opportunistic,Communication Services,0.0,0.0
+2025-12-31,Hedge Fund - Opportunistic,Consumer Discretionary,181674176.25494036,185243307.74505964
+2025-12-31,Hedge Fund - Opportunistic,Consumer Staples,0.0,0.0
+2025-12-31,Hedge Fund - Opportunistic,Energy,0.0,0.0
+2025-12-31,Hedge Fund - Opportunistic,Financials,25795666.789342407,25795666.789342407
+2025-12-31,Hedge Fund - Opportunistic,Health Care,-6008232.666393106,6008232.666393106
+2025-12-31,Hedge Fund - Opportunistic,Industrials,0.0,0.0
+2025-12-31,Hedge Fund - Opportunistic,Information Technology,-314390116.28290695,357633236.1350027
+2025-12-31,Hedge Fund - Opportunistic,Utilities,-254604641.5944949,254604641.5944949
+2025-12-31,Hedge Fund - Quant,Communication Services,1869495034.0683818,3599492657.3833632
+2025-12-31,Hedge Fund - Quant,Consumer Discretionary,227660379.11553898,5931800996.435302
+2025-12-31,Hedge Fund - Quant,Consumer Staples,-756693564.9366039,2835695720.6780524
+2025-12-31,Hedge Fund - Quant,ETF - Broad Equity,1427149266.9161122,2150391429.047661
+2025-12-31,Hedge Fund - Quant,ETF - Commodity,0.0,0.0
+2025-12-31,Hedge Fund - Quant,ETF - Fixed Income,-418548835.8857472,664215003.7966495
+2025-12-31,Hedge Fund - Quant,ETF - International Equity,-1025981045.4219623,1025981045.4219623
+2025-12-31,Hedge Fund - Quant,ETF - Sector,1486280062.8087687,2625667864.638876
+2025-12-31,Hedge Fund - Quant,ETF - Thematic,0.0,0.0
+2025-12-31,Hedge Fund - Quant,Energy,-2831554190.1790223,3509351949.0159035
+2025-12-31,Hedge Fund - Quant,Financials,-1508327569.9013505,8958828388.898043
+2025-12-31,Hedge Fund - Quant,Health Care,-866398732.7972416,7547547175.166794
+2025-12-31,Hedge Fund - Quant,Industrials,1237947560.0962756,2593817882.858742
+2025-12-31,Hedge Fund - Quant,Information Technology,3869258367.8479323,8458580851.363457
+2025-12-31,Hedge Fund - Quant,Materials,769177143.2046407,2672763728.4464245
+2025-12-31,Hedge Fund - Quant,Real Estate,102083153.82006252,1659844018.5659661
+2025-12-31,Hedge Fund - Quant,Utilities,496272415.6975599,856156500.5899212
+2025-12-31,Hedge Fund - Value,Communication Services,0.0,0.0
+2025-12-31,Hedge Fund - Value,Consumer Discretionary,0.0,0.0
+2025-12-31,Hedge Fund - Value,Consumer Staples,0.0,0.0
+2025-12-31,Hedge Fund - Value,ETF - Broad Equity,84995092.99999999,84995092.99999999
+2025-12-31,Hedge Fund - Value,Energy,0.0,0.0
+2025-12-31,Hedge Fund - Value,Financials,29749815.406999264,29749815.406999264
+2025-12-31,Hedge Fund - Value,Health Care,2858621.255013166,2858621.255013166
+2025-12-31,Hedge Fund - Value,Industrials,0.0,0.0
+2025-12-31,Hedge Fund - Value,Information Technology,0.0,0.0
+2025-12-31,Hedge Fund - Value,Materials,0.0,0.0
+2025-12-31,Hedge Fund - Value,Real Estate,0.0,0.0
+2026-03-31,Asset Manager - Index,Communication Services,0.0,0.0
+2026-03-31,Asset Manager - Index,Consumer Discretionary,0.0,0.0
+2026-03-31,Asset Manager - Index,Consumer Staples,0.0,0.0
+2026-03-31,Asset Manager - Index,ETF - Fixed Income,53514613773.00001,53514613773.00001
+2026-03-31,Asset Manager - Index,ETF - International Equity,0.0,0.0
+2026-03-31,Asset Manager - Index,Energy,20515498271.256107,31851965389.539585
+2026-03-31,Asset Manager - Index,Financials,0.0,0.0
+2026-03-31,Asset Manager - Index,Health Care,0.0,0.0
+2026-03-31,Asset Manager - Index,Industrials,0.0,0.0
+2026-03-31,Asset Manager - Index,Information Technology,-3024991805.0,3024991805.0
+2026-03-31,Asset Manager - Index,Materials,0.0,0.0
+2026-03-31,Asset Manager - Index,Real Estate,0.0,0.0
+2026-03-31,Asset Manager - Index,Utilities,0.0,0.0
+2026-03-31,Asset Manager - Index/Active,Communication Services,2122482831.4104962,2122482831.4104962
+2026-03-31,Asset Manager - Index/Active,Consumer Discretionary,-19434182198.0,19434182198.0
+2026-03-31,Asset Manager - Index/Active,Consumer Staples,2221827267.514748,2221827267.514748
+2026-03-31,Asset Manager - Index/Active,ETF - Broad Equity,0.0,0.0
+2026-03-31,Asset Manager - Index/Active,ETF - Fixed Income,78123555698.0,78123555698.0
+2026-03-31,Asset Manager - Index/Active,Energy,11739831210.035395,11739831210.035395
+2026-03-31,Asset Manager - Index/Active,Financials,-9632421900.075853,9632421900.075853
+2026-03-31,Asset Manager - Index/Active,Health Care,-25903435101.0,25903435101.0
+2026-03-31,Asset Manager - Index/Active,Industrials,0.0,0.0
+2026-03-31,Asset Manager - Index/Active,Information Technology,11163784925.539766,11163784925.539766
+2026-03-31,Asset Manager - Index/Active,Materials,0.0,0.0
+2026-03-31,Asset Manager - Index/Active,Real Estate,-2775418717.3240047,2775418717.3240047
+2026-03-31,Asset Manager - Index/Active,Utilities,-2052031915.3152037,2052031915.3152037
+2026-03-31,Conglomerate / Long-only Value,Communication Services,-6406510039.0,6406510039.0
+2026-03-31,Conglomerate / Long-only Value,Consumer Discretionary,-1641541775.0,1641541775.0
+2026-03-31,Conglomerate / Long-only Value,Consumer Staples,0.0,0.0
+2026-03-31,Conglomerate / Long-only Value,Energy,-145200560.9242298,145200560.9242298
+2026-03-31,Conglomerate / Long-only Value,Financials,0.0,0.0
+2026-03-31,Conglomerate / Long-only Value,Health Care,-281923488.15674883,281923488.15674883
+2026-03-31,Conglomerate / Long-only Value,Information Technology,1363955119.9025,1566988059.6175
+2026-03-31,Conglomerate / Long-only Value,Real Estate,0.0,0.0
+2026-03-31,Conglomerate / Long-only Value,Utilities,2962098645.0,2962098645.0
+2026-03-31,Family Office - Macro,Communication Services,87119540.9587266,99250845.98749141
+2026-03-31,Family Office - Macro,Consumer Discretionary,125468209.85437655,164873489.39119056
+2026-03-31,Family Office - Macro,Consumer Staples,24632617.37615236,77319806.62384763
+2026-03-31,Family Office - Macro,ETF - Broad Equity,59019637.273599625,245835465.27359962
+2026-03-31,Family Office - Macro,ETF - Commodity,0.0,0.0
+2026-03-31,Family Office - Macro,ETF - Fixed Income,-7080303.261697675,90227944.57385713
+2026-03-31,Family Office - Macro,ETF - International Equity,-6776287.171793901,6776287.171793901
+2026-03-31,Family Office - Macro,ETF - Sector,-15597413.829919234,94153516.69463892
+2026-03-31,Family Office - Macro,Energy,264267710.0,264267710.0
+2026-03-31,Family Office - Macro,Financials,29915511.659454476,76088571.54154158
+2026-03-31,Family Office - Macro,Health Care,125550783.80517682,195637916.57056582
+2026-03-31,Family Office - Macro,Industrials,158596192.54202032,162586666.5420203
+2026-03-31,Family Office - Macro,Information Technology,203912894.04696462,251498161.42267874
+2026-03-31,Family Office - Macro,Materials,-62143485.97406048,62143485.97406048
+2026-03-31,Family Office - Macro,Real Estate,-2987645.55545577,2987645.55545577
+2026-03-31,Family Office - Macro,Utilities,-113238964.05206802,113238964.05206802
+2026-03-31,Hedge Fund - Activist,Consumer Discretionary,494307989.84704816,494307989.84704816
+2026-03-31,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2026-03-31,Hedge Fund - Activist,Financials,0.0,0.0
+2026-03-31,Hedge Fund - Activist,Health Care,-14888339.45238611,14888339.45238611
+2026-03-31,Hedge Fund - Activist,Industrials,0.0,0.0
+2026-03-31,Hedge Fund - Activist,Information Technology,603381174.8516659,603381174.8516659
+2026-03-31,Hedge Fund - Activist,Materials,0.0,0.0
+2026-03-31,Hedge Fund - Activist,Real Estate,-282407814.9095302,282407814.9095302
+2026-03-31,Hedge Fund - Contrarian Value,Communication Services,609616.0855056922,609616.0855056922
+2026-03-31,Hedge Fund - Contrarian Value,Consumer Discretionary,12979989.0,12979989.0
+2026-03-31,Hedge Fund - Contrarian Value,Consumer Staples,0.0,0.0
+2026-03-31,Hedge Fund - Contrarian Value,ETF - Broad Equity,1414343.0,1414343.0
+2026-03-31,Hedge Fund - Contrarian Value,Energy,-469016.3037273696,469016.3037273696
+2026-03-31,Hedge Fund - Contrarian Value,Financials,0.0,0.0
+2026-03-31,Hedge Fund - Contrarian Value,Health Care,0.0,0.0
+2026-03-31,Hedge Fund - Contrarian Value,Industrials,0.0,0.0
+2026-03-31,Hedge Fund - Contrarian Value,Information Technology,16345896.0,16345896.0
+2026-03-31,Hedge Fund - Contrarian Value,Materials,0.0,0.0
+2026-03-31,Hedge Fund - Contrarian Value,Real Estate,0.0,0.0
+2026-03-31,Hedge Fund - Global Macro,Communication Services,-11622470.522124086,11622470.522124086
+2026-03-31,Hedge Fund - Global Macro,Consumer Discretionary,458963831.5391761,458963831.5391761
+2026-03-31,Hedge Fund - Global Macro,Consumer Staples,0.0,0.0
+2026-03-31,Hedge Fund - Global Macro,ETF - Broad Equity,260782227.3363798,260782227.3363798
+2026-03-31,Hedge Fund - Global Macro,ETF - Commodity,178580182.2424781,178580182.2424781
+2026-03-31,Hedge Fund - Global Macro,ETF - Fixed Income,729680740.5060639,729680740.5060639
+2026-03-31,Hedge Fund - Global Macro,ETF - International Equity,0.0,0.0
+2026-03-31,Hedge Fund - Global Macro,ETF - Sector,-760175973.4799837,852854128.4418718
+2026-03-31,Hedge Fund - Global Macro,ETF - Thematic,18844545.677863404,18844545.677863404
+2026-03-31,Hedge Fund - Global Macro,Energy,-33202440.909334082,33202440.909334082
+2026-03-31,Hedge Fund - Global Macro,Financials,-39960900.686225995,203796849.31377405
+2026-03-31,Hedge Fund - Global Macro,Health Care,258404691.1172339,564717834.2633938
+2026-03-31,Hedge Fund - Global Macro,Industrials,-65488166.52821116,159186217.47178882
+2026-03-31,Hedge Fund - Global Macro,Information Technology,9143344.503316045,288517923.49668396
+2026-03-31,Hedge Fund - Global Macro,Materials,-28232192.575533234,54441277.42446677
+2026-03-31,Hedge Fund - Global Macro,Real Estate,354233856.9190911,468804611.0809089
+2026-03-31,Hedge Fund - Long/Short Growth,Communication Services,49261355.69820159,49261355.69820159
+2026-03-31,Hedge Fund - Long/Short Growth,Consumer Discretionary,-2326085135.0543737,2758849510.60905
+2026-03-31,Hedge Fund - Long/Short Growth,Consumer Staples,-4697927.0,289971733.0
+2026-03-31,Hedge Fund - Long/Short Growth,ETF - Sector,0.0,0.0
+2026-03-31,Hedge Fund - Long/Short Growth,Energy,360360140.00000006,360360140.00000006
+2026-03-31,Hedge Fund - Long/Short Growth,Financials,-1828731214.566405,2748158205.4903975
+2026-03-31,Hedge Fund - Long/Short Growth,Health Care,-116098099.0,116098099.0
+2026-03-31,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
+2026-03-31,Hedge Fund - Long/Short Growth,Information Technology,3203897457.0741625,3318818332.1574335
+2026-03-31,Hedge Fund - Long/Short Growth,Materials,0.0,0.0
+2026-03-31,Hedge Fund - Long/Short Growth,Real Estate,0.0,0.0
+2026-03-31,Hedge Fund - Multi-strategy,Communication Services,2106055681.9682324,7001792861.136695
+2026-03-31,Hedge Fund - Multi-strategy,Consumer Discretionary,-2989064556.4830537,5599076668.022881
+2026-03-31,Hedge Fund - Multi-strategy,Consumer Staples,-41145287.448765874,589234268.7766119
+2026-03-31,Hedge Fund - Multi-strategy,ETF - Broad Equity,-3830527909.0583324,4163191552.410344
+2026-03-31,Hedge Fund - Multi-strategy,ETF - Commodity,493218842.43718874,493218842.43718874
+2026-03-31,Hedge Fund - Multi-strategy,ETF - Fixed Income,3578213351.383084,3578213351.383084
+2026-03-31,Hedge Fund - Multi-strategy,ETF - International Equity,0.0,0.0
+2026-03-31,Hedge Fund - Multi-strategy,ETF - Sector,-1117745679.0,1117745679.0
+2026-03-31,Hedge Fund - Multi-strategy,ETF - Thematic,0.0,0.0
+2026-03-31,Hedge Fund - Multi-strategy,Energy,-349679459.15022445,2233724574.399782
+2026-03-31,Hedge Fund - Multi-strategy,Financials,2863153539.204214,17356740252.838642
+2026-03-31,Hedge Fund - Multi-strategy,Health Care,4381033372.004902,7489039625.270323
+2026-03-31,Hedge Fund - Multi-strategy,Industrials,2246629655.1644163,3054070323.3964386
+2026-03-31,Hedge Fund - Multi-strategy,Information Technology,93052286.98077756,4507350600.778916
+2026-03-31,Hedge Fund - Multi-strategy,Materials,-1363437105.7426395,3477093653.3508153
+2026-03-31,Hedge Fund - Multi-strategy,Real Estate,-208117626.78166366,5655178786.781664
+2026-03-31,Hedge Fund - Multi-strategy,Utilities,-494854940.93051755,494854940.93051755
+2026-03-31,Hedge Fund - Opportunistic,Communication Services,106907461.36474524,106907461.36474524
+2026-03-31,Hedge Fund - Opportunistic,Consumer Discretionary,0.0,0.0
+2026-03-31,Hedge Fund - Opportunistic,Consumer Staples,0.0,0.0
+2026-03-31,Hedge Fund - Opportunistic,Energy,0.0,0.0
+2026-03-31,Hedge Fund - Opportunistic,Financials,1793851.0231322634,1793851.0231322634
+2026-03-31,Hedge Fund - Opportunistic,Health Care,3594414.5800534487,3594414.5800534487
+2026-03-31,Hedge Fund - Opportunistic,Industrials,0.0,0.0
+2026-03-31,Hedge Fund - Opportunistic,Information Technology,0.0,0.0
+2026-03-31,Hedge Fund - Opportunistic,Utilities,0.0,0.0
+2026-03-31,Hedge Fund - Quant,Communication Services,32976005.513380766,5337685545.061922
+2026-03-31,Hedge Fund - Quant,Consumer Discretionary,4467471156.411964,8695545112.65091
+2026-03-31,Hedge Fund - Quant,Consumer Staples,1293190808.510148,5504072995.332543
+2026-03-31,Hedge Fund - Quant,ETF - Broad Equity,-678520699.582615,2022930913.5826151
+2026-03-31,Hedge Fund - Quant,ETF - Commodity,-138445543.53374392,216741077.86927927
+2026-03-31,Hedge Fund - Quant,ETF - Fixed Income,-363349727.7921625,625555621.6688795
+2026-03-31,Hedge Fund - Quant,ETF - International Equity,-771133489.2246525,771133489.2246525
+2026-03-31,Hedge Fund - Quant,ETF - Sector,1088222594.1103556,1088222594.1103556
+2026-03-31,Hedge Fund - Quant,ETF - Thematic,116379146.80090748,116379146.80090748
+2026-03-31,Hedge Fund - Quant,Energy,1194066303.1386955,3045441031.27666
+2026-03-31,Hedge Fund - Quant,Financials,5285606019.077263,9160433237.060743
+2026-03-31,Hedge Fund - Quant,Health Care,-60635607.20450911,4861316218.515411
+2026-03-31,Hedge Fund - Quant,Industrials,-184893124.28092334,3766039164.95158
+2026-03-31,Hedge Fund - Quant,Information Technology,929933077.2486031,6268521010.880321
+2026-03-31,Hedge Fund - Quant,Materials,1832784964.559476,2043053602.241411
+2026-03-31,Hedge Fund - Quant,Real Estate,1154426820.052201,2176916539.4389224
+2026-03-31,Hedge Fund - Quant,Utilities,320801753.3603477,320801753.3603477
+2026-03-31,Hedge Fund - Value,Communication Services,0.0,0.0
+2026-03-31,Hedge Fund - Value,Consumer Discretionary,234809917.23080802,234809917.23080802
+2026-03-31,Hedge Fund - Value,Consumer Staples,0.0,0.0
+2026-03-31,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
+2026-03-31,Hedge Fund - Value,Energy,0.0,0.0
+2026-03-31,Hedge Fund - Value,Financials,-161682380.73691824,161682380.73691824
+2026-03-31,Hedge Fund - Value,Health Care,-9887529.107184362,9887529.107184362
+2026-03-31,Hedge Fund - Value,Industrials,0.0,0.0
+2026-03-31,Hedge Fund - Value,Information Technology,0.0,0.0
+2026-03-31,Hedge Fund - Value,Materials,0.0,0.0
+2026-03-31,Hedge Fund - Value,Real Estate,0.0,0.0
+2026-06-30,Asset Manager - Index,Communication Services,0.0,0.0
+2026-06-30,Asset Manager - Index,Consumer Discretionary,0.0,0.0
+2026-06-30,Asset Manager - Index,Consumer Staples,0.0,0.0
+2026-06-30,Asset Manager - Index,ETF - Fixed Income,0.0,0.0
+2026-06-30,Asset Manager - Index,ETF - International Equity,54174195018.0,54174195018.0
+2026-06-30,Asset Manager - Index,Energy,0.0,0.0
+2026-06-30,Asset Manager - Index,Financials,41891488273.76026,41891488273.76026
+2026-06-30,Asset Manager - Index,Health Care,0.0,0.0
+2026-06-30,Asset Manager - Index,Industrials,0.0,0.0
+2026-06-30,Asset Manager - Index,Information Technology,0.0,0.0
+2026-06-30,Asset Manager - Index,Materials,0.0,0.0
+2026-06-30,Asset Manager - Index,Real Estate,0.0,0.0
+2026-06-30,Asset Manager - Index,Utilities,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Communication Services,-5411808080.380128,5411808080.380128
+2026-06-30,Asset Manager - Index/Active,Consumer Discretionary,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Consumer Staples,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,ETF - Broad Equity,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,ETF - Fixed Income,30787939482.0,30787939482.0
+2026-06-30,Asset Manager - Index/Active,Energy,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Financials,2665671630.361271,24200606288.36127
+2026-06-30,Asset Manager - Index/Active,Health Care,-1622265505.7354877,1622265505.7354877
+2026-06-30,Asset Manager - Index/Active,Industrials,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Information Technology,2795948479.523653,24744848361.52365
+2026-06-30,Asset Manager - Index/Active,Materials,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Real Estate,0.0,0.0
+2026-06-30,Asset Manager - Index/Active,Utilities,0.0,0.0
+2026-06-30,Conglomerate / Long-only Value,Communication Services,0.0,0.0
+2026-06-30,Conglomerate / Long-only Value,Consumer Discretionary,6221262477.0,6221262477.0
+2026-06-30,Conglomerate / Long-only Value,Consumer Staples,-4146376774.0,4146376774.0
+2026-06-30,Conglomerate / Long-only Value,Energy,340481691.80568564,340481691.80568564
+2026-06-30,Conglomerate / Long-only Value,Financials,-4596262998.55779,5594172424.390806
+2026-06-30,Conglomerate / Long-only Value,Health Care,-966265566.4691671,2061321932.1023555
+2026-06-30,Conglomerate / Long-only Value,Industrials,8289438686.0,8289438686.0
+2026-06-30,Conglomerate / Long-only Value,Information Technology,4321601947.328392,4740510552.671608
+2026-06-30,Conglomerate / Long-only Value,Real Estate,0.0,0.0
+2026-06-30,Conglomerate / Long-only Value,Utilities,0.0,0.0
+2026-06-30,Family Office - Macro,Communication Services,123947820.55162106,213243870.6314549
+2026-06-30,Family Office - Macro,Consumer Discretionary,-2334240.1438428126,159986874.35630196
+2026-06-30,Family Office - Macro,Consumer Staples,-91650336.456795,94087801.99256928
+2026-06-30,Family Office - Macro,ETF - Broad Equity,285344716.8457118,939118171.8457118
+2026-06-30,Family Office - Macro,ETF - Commodity,-9572891.383628925,9572891.383628925
+2026-06-30,Family Office - Macro,ETF - Fixed Income,-233729909.93965274,299061241.13785076
+2026-06-30,Family Office - Macro,ETF - International Equity,-11178670.07450157,11178670.07450157
+2026-06-30,Family Office - Macro,ETF - Sector,19126223.08112528,19126223.08112528
+2026-06-30,Family Office - Macro,Energy,-32489331.469104804,48239513.99154166
+2026-06-30,Family Office - Macro,Financials,41059509.837708384,250021853.2392722
+2026-06-30,Family Office - Macro,Health Care,206667071.97258246,231052297.17788595
+2026-06-30,Family Office - Macro,Industrials,-40197690.658478126,67273139.22521968
+2026-06-30,Family Office - Macro,Information Technology,184949314.6140155,301683060.1547626
+2026-06-30,Family Office - Macro,Materials,7653664.892213663,20477396.804609604
+2026-06-30,Family Office - Macro,Real Estate,45933510.588579655,45933510.588579655
+2026-06-30,Family Office - Macro,Utilities,17519367.822093505,17519367.822093505
+2026-06-30,Hedge Fund - Activist,Consumer Discretionary,0.0,0.0
+2026-06-30,Hedge Fund - Activist,Consumer Staples,0.0,0.0
+2026-06-30,Hedge Fund - Activist,Energy,245476381.0,245476381.0
+2026-06-30,Hedge Fund - Activist,Financials,-654315994.0178189,654315994.0178189
+2026-06-30,Hedge Fund - Activist,Health Care,0.0,0.0
+2026-06-30,Hedge Fund - Activist,Industrials,489139325.004,489139325.004
+2026-06-30,Hedge Fund - Activist,Information Technology,0.0,0.0
+2026-06-30,Hedge Fund - Activist,Materials,-507320483.61409503,507320483.61409503
+2026-06-30,Hedge Fund - Activist,Real Estate,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Communication Services,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Consumer Discretionary,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Consumer Staples,4485674.945520581,4669229.054479419
+2026-06-30,Hedge Fund - Contrarian Value,ETF - Broad Equity,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Energy,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Financials,5335062.157536795,5335062.157536795
+2026-06-30,Hedge Fund - Contrarian Value,Health Care,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Industrials,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Information Technology,-5552501.0,11820043.0
+2026-06-30,Hedge Fund - Contrarian Value,Materials,0.0,0.0
+2026-06-30,Hedge Fund - Contrarian Value,Real Estate,0.0,0.0
+2026-06-30,Hedge Fund - Global Macro,Communication Services,6995067.985682213,6995067.985682213
+2026-06-30,Hedge Fund - Global Macro,Consumer Discretionary,734834416.086697,803599483.6944536
+2026-06-30,Hedge Fund - Global Macro,Consumer Staples,870464408.294361,870464408.294361
+2026-06-30,Hedge Fund - Global Macro,ETF - Broad Equity,3055475.4607270043,34047914.59131447
+2026-06-30,Hedge Fund - Global Macro,ETF - Commodity,0.0,0.0
+2026-06-30,Hedge Fund - Global Macro,ETF - Fixed Income,-1609282623.4196336,2184094137.230403
+2026-06-30,Hedge Fund - Global Macro,ETF - International Equity,-1013936719.9897528,1013936719.9897528
+2026-06-30,Hedge Fund - Global Macro,ETF - Sector,483628149.1498268,531144766.8501733
+2026-06-30,Hedge Fund - Global Macro,ETF - Thematic,0.0,0.0
+2026-06-30,Hedge Fund - Global Macro,Energy,-204117135.0,204117135.0
+2026-06-30,Hedge Fund - Global Macro,Financials,-49936640.35517353,923948010.4347367
+2026-06-30,Hedge Fund - Global Macro,Health Care,1642003647.6998522,2230475898.445526
+2026-06-30,Hedge Fund - Global Macro,Industrials,98270170.07305485,98270170.07305485
+2026-06-30,Hedge Fund - Global Macro,Information Technology,835067035.8786876,959620751.3893923
+2026-06-30,Hedge Fund - Global Macro,Materials,-364393575.82207596,510607166.17792404
+2026-06-30,Hedge Fund - Global Macro,Real Estate,-380910671.3009879,380910671.3009879
+2026-06-30,Hedge Fund - Long/Short Growth,Communication Services,-19775635.042577174,19775635.042577174
+2026-06-30,Hedge Fund - Long/Short Growth,Consumer Discretionary,306557328.2016721,437353103.4456464
+2026-06-30,Hedge Fund - Long/Short Growth,Consumer Staples,-142636903.0,142636903.0
+2026-06-30,Hedge Fund - Long/Short Growth,ETF - Broad Equity,104338091.0,104338091.0
+2026-06-30,Hedge Fund - Long/Short Growth,ETF - Sector,-80710627.6902806,80710627.6902806
+2026-06-30,Hedge Fund - Long/Short Growth,Energy,0.0,0.0
+2026-06-30,Hedge Fund - Long/Short Growth,Financials,-359548762.53068596,359548762.53068596
+2026-06-30,Hedge Fund - Long/Short Growth,Health Care,181368518.0,181368518.0
+2026-06-30,Hedge Fund - Long/Short Growth,Industrials,0.0,0.0
+2026-06-30,Hedge Fund - Long/Short Growth,Information Technology,-1103735484.97833,1936406296.565628
+2026-06-30,Hedge Fund - Long/Short Growth,Materials,-215391222.02598038,215391222.02598038
+2026-06-30,Hedge Fund - Long/Short Growth,Real Estate,0.0,0.0
+2026-06-30,Hedge Fund - Long/Short Growth,Utilities,109039269.0,109039269.0
+2026-06-30,Hedge Fund - Multi-strategy,Communication Services,-2392598167.8937426,6640349234.106257
+2026-06-30,Hedge Fund - Multi-strategy,Consumer Discretionary,5464891332.837332,6668497455.413184
+2026-06-30,Hedge Fund - Multi-strategy,Consumer Staples,1150287628.5218709,3916102321.4781294
+2026-06-30,Hedge Fund - Multi-strategy,ETF - Broad Equity,404556721.3514622,1070488076.6485379
+2026-06-30,Hedge Fund - Multi-strategy,ETF - Commodity,0.0,0.0
+2026-06-30,Hedge Fund - Multi-strategy,ETF - Fixed Income,628497965.0109158,4912257870.989084
+2026-06-30,Hedge Fund - Multi-strategy,ETF - International Equity,325176979.6114754,325176979.6114754
+2026-06-30,Hedge Fund - Multi-strategy,ETF - Sector,-116545321.0,116545321.0
+2026-06-30,Hedge Fund - Multi-strategy,ETF - Thematic,0.0,0.0
+2026-06-30,Hedge Fund - Multi-strategy,Energy,832861076.7302303,2943544891.0351653
+2026-06-30,Hedge Fund - Multi-strategy,Financials,-12059316699.19102,32150268040.16718
+2026-06-30,Hedge Fund - Multi-strategy,Health Care,4375099138.579362,11781128206.978672
+2026-06-30,Hedge Fund - Multi-strategy,Industrials,1497697073.7129078,1617720323.528066
+2026-06-30,Hedge Fund - Multi-strategy,Information Technology,-1774239255.0130415,5977032210.515158
+2026-06-30,Hedge Fund - Multi-strategy,Materials,4639522494.89088,4639522494.89088
+2026-06-30,Hedge Fund - Multi-strategy,Real Estate,8345054.530787349,379816675.2134988
+2026-06-30,Hedge Fund - Multi-strategy,Utilities,-318573761.1931005,318573761.1931005
+2026-06-30,Hedge Fund - Opportunistic,Communication Services,0.0,0.0
+2026-06-30,Hedge Fund - Opportunistic,Consumer Discretionary,0.0,0.0
+2026-06-30,Hedge Fund - Opportunistic,Consumer Staples,0.0,0.0
+2026-06-30,Hedge Fund - Opportunistic,Energy,2505747.755286402,2505747.755286402
+2026-06-30,Hedge Fund - Opportunistic,Financials,87555189.23248248,151463379.3674491
+2026-06-30,Hedge Fund - Opportunistic,Health Care,0.0,0.0
+2026-06-30,Hedge Fund - Opportunistic,Industrials,0.0,0.0
+2026-06-30,Hedge Fund - Opportunistic,Information Technology,268736734.0,313929218.0
+2026-06-30,Hedge Fund - Opportunistic,Utilities,425298694.2385102,425298694.2385102
+2026-06-30,Hedge Fund - Quant,Communication Services,-2576008428.4639935,4389286072.463993
+2026-06-30,Hedge Fund - Quant,Consumer Discretionary,4338052747.158301,6799874530.900111
+2026-06-30,Hedge Fund - Quant,Consumer Staples,-1018914467.5742879,3043573905.3239408
+2026-06-30,Hedge Fund - Quant,ETF - Broad Equity,-967625776.3165292,1725233650.5562983
+2026-06-30,Hedge Fund - Quant,ETF - Commodity,1220195243.214205,1220195243.214205
+2026-06-30,Hedge Fund - Quant,ETF - Fixed Income,90919804.78291707,720442052.5610126
+2026-06-30,Hedge Fund - Quant,ETF - International Equity,411626284.10162586,475685548.10162586
+2026-06-30,Hedge Fund - Quant,ETF - Sector,-5101872036.934852,5647262193.455379
+2026-06-30,Hedge Fund - Quant,ETF - Thematic,-242112294.9193121,618342691.0806879
+2026-06-30,Hedge Fund - Quant,Energy,2817077246.3790445,3476231736.3790445
+2026-06-30,Hedge Fund - Quant,Financials,1045812867.6865073,13989418308.743969
+2026-06-30,Hedge Fund - Quant,Health Care,-1688610554.9716907,4661176443.106076
+2026-06-30,Hedge Fund - Quant,Industrials,-781410994.4324027,3127800565.24386
+2026-06-30,Hedge Fund - Quant,Information Technology,1469406288.051617,10232890958.117037
+2026-06-30,Hedge Fund - Quant,Materials,728174178.1100804,4229985879.600289
+2026-06-30,Hedge Fund - Quant,Real Estate,355331705.08984387,934583608.217115
+2026-06-30,Hedge Fund - Quant,Utilities,99591253.2,99591253.2
+2026-06-30,Hedge Fund - Value,Communication Services,0.0,0.0
+2026-06-30,Hedge Fund - Value,Consumer Discretionary,0.0,0.0
+2026-06-30,Hedge Fund - Value,Consumer Staples,0.0,0.0
+2026-06-30,Hedge Fund - Value,ETF - Broad Equity,0.0,0.0
+2026-06-30,Hedge Fund - Value,Energy,0.0,0.0
+2026-06-30,Hedge Fund - Value,Financials,23132253.0,23132253.0
+2026-06-30,Hedge Fund - Value,Health Care,-62988357.103746645,62988357.103746645
+2026-06-30,Hedge Fund - Value,Industrials,0.0,0.0
+2026-06-30,Hedge Fund - Value,Information Technology,0.0,0.0
+2026-06-30,Hedge Fund - Value,Materials,0.0,0.0
+2026-06-30,Hedge Fund - Value,Real Estate,0.0,0.0

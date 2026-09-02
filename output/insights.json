@@ -1,0 +1,262 @@
+[
+  {
+    "period": "2025-09-30",
+    "label": "2025Q3",
+    "headline": "2025Q3: 15 managers, $9.60T en posiciones reportadas",
+    "bullets": [
+      {
+        "kind": "type_mismatch",
+        "text": "Perfil de cartera distinto al tipo declarado: Pershing Square Capital Management, L.P. (declarado Hedge Fund - Activist, cartera parece Multi-strategy / Options-heavy: options 24%); Citadel Advisors LLC (declarado Hedge Fund - Multi-strategy, cartera parece Index / Broad Asset Manager: 150 positions, top-10 31%)."
+      },
+      {
+        "kind": "options",
+        "text": "Opciones reportadas: puts $6.1B vs calls $8.0B (ratio 0.76). Mayor cobertura con puts en Nike Inc (NKE), Honeywell Intl Inc (HON), Albemarle Corp (ALB)."
+      }
+    ],
+    "facts": {
+      "n_managers": 15,
+      "total_value": 9600285953244.0,
+      "n_positions": 1344,
+      "most_held": [
+        {
+          "issuer": "BLACKROCK INC (BLK)",
+          "holders": 9,
+          "value": 159727136600.0
+        },
+        {
+          "issuer": "AFFIRM HLDGS INC (AFRM)",
+          "holders": 9,
+          "value": 117949216350.0
+        },
+        {
+          "issuer": "STANLEY BLACK & DECKER INC (SWK)",
+          "holders": 9,
+          "value": 112750853760.0
+        }
+      ],
+      "put_notional": 6113179948.0,
+      "call_notional": 8015282744.0
+    }
+  },
+  {
+    "period": "2025-12-31",
+    "label": "2025Q4",
+    "headline": "2025Q4: 15 managers, $10.26T en posiciones reportadas, +6.8% vs trimestre anterior",
+    "bullets": [
+      {
+        "kind": "flows",
+        "text": "El valor agregado del universo cambió $656.6B en el trimestre: $457.6B por precio y $199.0B por flujo neto (compras menos ventas). Actividad bruta de $368.7B con 83 posiciones nuevas y 85 salidas."
+      },
+      {
+        "kind": "asset_mix",
+        "text": "Mezcla de activos (promedio simple entre managers): sube Preferred (+0.3 pp) y baja Equity (ETF) (-8.6 pp)."
+      },
+      {
+        "kind": "sector",
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.0 pp) y Industrials (+0.7 pp); mayor reducción en Financials (-0.4 pp) y Energy (-0.4 pp)."
+      },
+      {
+        "kind": "consensus_buy",
+        "text": "Compras de consenso (más compradores netos): Oracle Corp (ORCL) (4 compradores / 0 vendedores, flujo $528M), Broadcom Inc (AVGO) (5 compradores / 1 vendedores, flujo $70M), Chipotle Mexican Grill Inc (CMG) (3 compradores / 0 vendedores, flujo $2.8B)."
+      },
+      {
+        "kind": "consensus_sell",
+        "text": "Ventas de consenso: TJX Cos Inc New (TJX) (4 vendedores / 0 compradores, flujo $-7.2B), Bristol Myers Squibb CO (BMY) (4 vendedores / 0 compradores, flujo $-2.8B), Select Sector SPDR TR Sbi Int-utils (XLU) (4 vendedores / 0 compradores, flujo $-479M)."
+      },
+      {
+        "kind": "moves",
+        "text": "Movimientos individuales más grandes: Vanguard Group Inc aumenta Medtronic PLC (MDT) ($56.7B); BlackRock Inc. abre Ishares TR S&P 500 Index (IVV) ($51.4B); Vanguard Group Inc abre Vanguard Intl Equity Index F FTSE Emr Mkt ETF (VWO) ($20.1B); Vanguard Group Inc aumenta Heico Corp (HEI) ($12.7B)."
+      },
+      {
+        "kind": "turnover",
+        "text": "Mayor rotación de cartera: Two Sigma Investments, LP (52%), Renaissance Technologies LLC (46%), Citadel Advisors LLC (41%)."
+      },
+      {
+        "kind": "type_mismatch",
+        "text": "Perfil de cartera distinto al tipo declarado: Pershing Square Capital Management, L.P. (declarado Hedge Fund - Activist, cartera parece Multi-strategy / Options-heavy: options 27%; turnover 13%)."
+      },
+      {
+        "kind": "options",
+        "text": "Opciones reportadas: puts $5.5B vs calls $8.8B (ratio 0.63). Mayor cobertura con puts en Nike Inc (NKE), Honeywell Intl Inc (HON), Qualcomm Inc (QCOM)."
+      }
+    ],
+    "facts": {
+      "n_managers": 15,
+      "total_value": 10256891420423.0,
+      "n_positions": 1342,
+      "total_value_chg": 0.06839436558211354,
+      "net_flow": 198996874293.69287,
+      "gross_flow": 368675753393.2936,
+      "price_effect": 457608592885.3071,
+      "n_new": 83,
+      "n_exit": 85,
+      "n_add": 146,
+      "n_trim": 144,
+      "most_held": [
+        {
+          "issuer": "STANLEY BLACK & DECKER INC (SWK)",
+          "holders": 10,
+          "value": 139278928182.0
+        },
+        {
+          "issuer": "AFFIRM HLDGS INC (AFRM)",
+          "holders": 9,
+          "value": 127606077280.0
+        },
+        {
+          "issuer": "MICRON TECHNOLOGY INC (MU)",
+          "holders": 9,
+          "value": 110031051749.0
+        }
+      ],
+      "put_notional": 5540435035.0,
+      "call_notional": 8838893192.0
+    }
+  },
+  {
+    "period": "2026-03-31",
+    "label": "2026Q1",
+    "headline": "2026Q1: 15 managers, $10.74T en posiciones reportadas, +4.7% vs trimestre anterior",
+    "bullets": [
+      {
+        "kind": "flows",
+        "text": "El valor agregado del universo cambió $484.6B en el trimestre: $348.7B por precio y $135.9B por flujo neto (compras menos ventas). Actividad bruta de $407.2B con 83 posiciones nuevas y 76 salidas."
+      },
+      {
+        "kind": "asset_mix",
+        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+0.7 pp) y baja Fixed Income (ETF) (-2.6 pp)."
+      },
+      {
+        "kind": "sector",
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+2.2 pp) y Consumer Discretionary (+0.8 pp); mayor reducción en Utilities (-1.0 pp) y Financials (-0.9 pp)."
+      },
+      {
+        "kind": "consensus_buy",
+        "text": "Compras de consenso (más compradores netos): Ishares TR 7-10 YR Treas BD (IEF) (4 compradores / 0 vendedores, flujo $79.0B), International Business Machs (IBM) (3 compradores / 0 vendedores, flujo $11.3B), Chubb Ltd (CB) (3 compradores / 0 vendedores, flujo $3.0B)."
+      },
+      {
+        "kind": "consensus_sell",
+        "text": "Ventas de consenso: Verizon Communications Inc (VZ) (4 vendedores / 0 compradores, flujo $-6.9B), Novo Nordisk A S (NVO) (3 vendedores / 0 compradores, flujo $-581M), Cigna Group (CI) (2 vendedores / 0 compradores, flujo $-26.0B)."
+      },
+      {
+        "kind": "moves",
+        "text": "Movimientos individuales más grandes: BlackRock Inc. abre Ishares TR 7-10 YR Treas BD (IEF) ($78.1B); Vanguard Group Inc abre Ishares TR Iboxx HI YD ETF (HYG) ($53.5B); Vanguard Group Inc aumenta Conocophillips (COP) ($26.2B); BlackRock Inc. liquida Cigna Group (CI) ($-25.9B)."
+      },
+      {
+        "kind": "turnover",
+        "text": "Mayor rotación de cartera: Tiger Global Management LLC (47%), Two Sigma Investments, LP (45%), Renaissance Technologies LLC (43%)."
+      },
+      {
+        "kind": "type_mismatch",
+        "text": "Perfil de cartera distinto al tipo declarado: Pershing Square Capital Management, L.P. (declarado Hedge Fund - Activist, cartera parece Multi-strategy / Options-heavy: options 24%; turnover 23%)."
+      },
+      {
+        "kind": "options",
+        "text": "Opciones reportadas: puts $4.3B vs calls $8.5B (ratio 0.50). Mayor cobertura con puts en Honeywell Intl Inc (HON), Qualcomm Inc (QCOM), Albemarle Corp (ALB)."
+      }
+    ],
+    "facts": {
+      "n_managers": 15,
+      "total_value": 10741471494464.0,
+      "n_positions": 1349,
+      "total_value_chg": 0.047244340822028,
+      "net_flow": 135860981286.01181,
+      "gross_flow": 407173999201.4437,
+      "price_effect": 348719092754.9882,
+      "n_new": 83,
+      "n_exit": 76,
+      "n_add": 157,
+      "n_trim": 130,
+      "most_held": [
+        {
+          "issuer": "STANLEY BLACK & DECKER INC (SWK)",
+          "holders": 10,
+          "value": 161952247843.0
+        },
+        {
+          "issuer": "AFFIRM HLDGS INC (AFRM)",
+          "holders": 9,
+          "value": 128307204884.0
+        },
+        {
+          "issuer": "MICRON TECHNOLOGY INC (MU)",
+          "holders": 9,
+          "value": 114691036575.0
+        }
+      ],
+      "put_notional": 4253731518.0,
+      "call_notional": 8483146275.0
+    }
+  },
+  {
+    "period": "2026-06-30",
+    "label": "2026Q2",
+    "headline": "2026Q2: 15 managers, $11.26T en posiciones reportadas, +4.9% vs trimestre anterior",
+    "bullets": [
+      {
+        "kind": "flows",
+        "text": "El valor agregado del universo cambió $522.0B en el trimestre: $383.7B por precio y $138.3B por flujo neto (compras menos ventas). Actividad bruta de $383.0B con 85 posiciones nuevas y 86 salidas."
+      },
+      {
+        "kind": "asset_mix",
+        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+2.0 pp) y baja Fixed Income (ETF) (-1.7 pp)."
+      },
+      {
+        "kind": "sector",
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.4 pp) y Consumer Discretionary (+0.2 pp); mayor reducción en Financials (-1.0 pp) y Health Care (-0.7 pp)."
+      },
+      {
+        "kind": "consensus_buy",
+        "text": "Compras de consenso (más compradores netos): Cisco Systems Inc (CSCO) (4 compradores / 0 vendedores, flujo $8.4B), Pool Corp (POOL) (3 compradores / 0 vendedores, flujo $10.1B), Blackstone Inc (BX) (3 compradores / 0 vendedores, flujo $9.1B)."
+      },
+      {
+        "kind": "consensus_sell",
+        "text": "Ventas de consenso: Deere & CO (DE) (3 vendedores / 0 compradores, flujo $-997M), Constellation Brands Inc (STZ) (3 vendedores / 0 compradores, flujo $-274M), Amazon Com Inc (AMZN) (3 vendedores / 0 compradores, flujo $-91M)."
+      },
+      {
+        "kind": "moves",
+        "text": "Movimientos individuales más grandes: Vanguard Group Inc abre Ishares TR MSCI Emerg Mkt ETF (EEM) ($54.2B); Vanguard Group Inc aumenta Cme Group Inc (CME) ($31.7B); BlackRock Inc. abre Ishares TR 20+yr Trs BD ETF (TLT) ($30.8B); Citadel Advisors LLC reduce Marsh & Mclennan Cos Inc (MMC) ($-17.1B)."
+      },
+      {
+        "kind": "turnover",
+        "text": "Mayor rotación de cartera: Renaissance Technologies LLC (51%), Citadel Advisors LLC (48%), Bridgewater Associates, LP (46%)."
+      },
+      {
+        "kind": "options",
+        "text": "Opciones reportadas: puts $4.2B vs calls $8.0B (ratio 0.53). Mayor cobertura con puts en Honeywell Intl Inc (HON), Valero Energy Corp New (VLO), Qualcomm Inc (QCOM)."
+      }
+    ],
+    "facts": {
+      "n_managers": 15,
+      "total_value": 11263488926163.0,
+      "n_positions": 1348,
+      "total_value_chg": 0.04859831653121649,
+      "net_flow": 138274125517.63647,
+      "gross_flow": 383039084831.34283,
+      "price_effect": 383743306181.3635,
+      "n_new": 85,
+      "n_exit": 86,
+      "n_add": 165,
+      "n_trim": 136,
+      "most_held": [
+        {
+          "issuer": "UBER TECHNOLOGIES INC (UBER)",
+          "holders": 10,
+          "value": 59985410221.0
+        },
+        {
+          "issuer": "TESLA INC (TSLA)",
+          "holders": 10,
+          "value": 38471287767.0
+        },
+        {
+          "issuer": "STANLEY BLACK & DECKER INC (SWK)",
+          "holders": 9,
+          "value": 179602416549.0
+        }
+      ],
+      "put_notional": 4209416478.0,
+      "call_notional": 8012315218.0
+    }
+  }
+]

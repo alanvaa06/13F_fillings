@@ -1,0 +1,346 @@
+<title>{{ title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.35.2/plotly.min.js"></script>
+<style>
+:root{
+  color-scheme:light;
+  --page:#f6f6f3;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;--axis:#c3c2b7;--border:rgba(11,11,11,.10);
+  --accent:#1c5cab;--accent-ink:#ffffff;--up:#006300;--down:#b32d2d;
+  --s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;--s7:#4a3aa7;--s8:#e34948;
+  --div-neg:#e34948;--div-mid:#f0efec;--div-pos:#2a78d6;--seq-lo:#cde2fb;--seq-hi:#0d366b;
+  --chip:#eceae3;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --page:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);
+    --accent:#3987e5;--accent-ink:#0b0b0b;--up:#0ca30c;--down:#e66767;
+    --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767;
+    --div-neg:#e66767;--div-mid:#383835;--div-pos:#3987e5;--seq-lo:#184f95;--seq-hi:#b7d3f6;
+    --chip:#262624;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0d0d0d;--surface:#1a1a19;--ink:#ffffff;--ink2:#c3c2b7;--muted:#898781;--grid:#2c2c2a;--axis:#383835;--border:rgba(255,255,255,.10);
+  --accent:#3987e5;--accent-ink:#0b0b0b;--up:#0ca30c;--down:#e66767;
+  --s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;--s5:#d55181;--s6:#008300;--s7:#9085e9;--s8:#e66767;
+  --div-neg:#e66767;--div-mid:#383835;--div-pos:#3987e5;--seq-lo:#184f95;--seq-hi:#b7d3f6;
+  --chip:#262624;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-weight:600;text-wrap:balance;margin:0}
+h1{font-size:30px;line-height:1.15}
+h2{font-size:22px;margin:0 0 4px}
+h3{font-size:17px;font-weight:600;margin:0 0 8px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+a{color:var(--accent)}
+header{position:sticky;top:0;z-index:5;background:var(--page);border-bottom:1px solid var(--border)}
+.bar{max-width:1240px;margin:0 auto;padding:14px 24px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);font-weight:500}
+.periods{display:flex;gap:6px;flex-wrap:wrap}
+.pill{border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}
+.pill[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.pill:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{max-width:1240px;margin:0 auto;padding:8px 24px 64px}
+section{padding:28px 0;border-bottom:1px solid var(--border)}
+section:last-child{border-bottom:0}
+.lede{color:var(--ink2);max-width:68ch;margin:6px 0 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin-top:18px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.kpi{padding:16px 18px 14px 0;border-right:1px solid var(--border);margin-right:18px}
+.kpi:last-child{border-right:0}
+.kpi .l{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.kpi .v{font-family:"Source Serif 4",Georgia,serif;font-size:30px;font-weight:500;line-height:1.1;margin-top:6px}
+.kpi .d{font-size:13px;color:var(--ink2);margin-top:4px}
+.up{color:var(--up)} .down{color:var(--down)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;align-items:start}
+.chart{width:100%;min-height:340px}
+.chart.tall{min-height:460px}
+.insights{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px;max-width:90ch}
+.insights li{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:baseline}
+.insights .tag{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-top:3px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 6px;font-size:13px;color:var(--ink2)}
+.controls select,.controls button{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--ink)}
+.controls button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--grid);white-space:nowrap;text-align:left;vertical-align:middle}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);font-weight:500;background:var(--surface);position:sticky;top:0}
+tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right}
+.chip{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11.5px;font-weight:600;letter-spacing:.04em;background:var(--chip);color:var(--ink)}
+.chip.NEW{background:color-mix(in srgb,var(--s3) 22%,var(--surface));color:var(--ink)}
+.chip.ADD{background:color-mix(in srgb,var(--s1) 22%,var(--surface))}
+.chip.TRIM{background:color-mix(in srgb,var(--s4) 26%,var(--surface))}
+.chip.EXIT{background:color-mix(in srgb,var(--s8) 24%,var(--surface))}
+.bar-cell{display:flex;align-items:center;gap:8px;justify-content:flex-end}
+.bar-cell i{display:block;height:8px;border-radius:2px;background:var(--s1)}
+.bar-cell i.neg{background:var(--s8)}
+.foot{color:var(--muted);font-size:12.5px;margin-top:8px}
+.meta{font-size:13px;color:var(--ink2)}
+.warn{border-left:3px solid var(--s4);padding:8px 14px;background:var(--surface);border-radius:0 6px 6px 0;font-size:13.5px;margin-top:14px;max-width:90ch}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink2);margin:6px 0 0}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+@media (max-width:640px){.insights li{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.kpi{border-right:0}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<header><div class="bar">
+  <div>
+    <div class="eyebrow">SEC EDGAR · Formularios 13F-HR · {{ n_managers }} managers · fuente: {{ source }}</div>
+    <h1>{{ title }}</h1>
+  </div>
+  <div class="periods" id="periods" role="group" aria-label="Periodo de reporte"></div>
+</div></header>
+
+<main>
+<section id="s-lead">
+  <h2 id="headline"></h2>
+  <p class="lede">Cambios en tenencias y exposición de {{ n_managers }} instituciones que reportan a la SEC, por tipo de activo, sector, fondo y tipo de manager. Los valores son los reportados en el 13F (posiciones largas en valores 13(f) de EE.UU.), normalizados a dólares.</p>
+  <div class="kpis" id="kpis"></div>
+  <ul class="insights" id="insights"></ul>
+  {% if source == 'sample' %}<div class="warn"><strong>Datos de muestra.</strong> Este corte se generó sin conexión a SEC con filings sintéticos que respetan el esquema XML de EDGAR (identificadores reales, tenencias simuladas). Ejecuta <span class="mono">python -m sec13f.cli all --source sec</span> con acceso a internet para reemplazarlo por los reportes reales.</div>{% endif %}
+</section>
+
+<section id="s-asset">
+  <h2>Exposición por tipo de activo</h2>
+  <p class="lede">Composición del valor reportado por instrumento subyacente. La vista <em>equal-weight</em> promedia la asignación de cada manager, la vista <em>por valor</em> suma dólares (dominada por los filers más grandes).</p>
+  <div class="controls"><span>Ponderación</span><button class="wbtn" data-w="ew" aria-pressed="true">Equal-weight</button><button class="wbtn" data-w="vw" aria-pressed="false">Por valor</button></div>
+  <div class="grid2">
+    <div><h3>Mezcla por trimestre</h3><div id="c-asset-mix" class="chart"></div></div>
+    <div><h3>Cambio vs. trimestre anterior <span class="meta" id="asset-delta-label"></span></h3><div id="c-asset-delta" class="chart"></div></div>
+  </div>
+</section>
+
+<section id="s-sector">
+  <h2>Rotación sectorial</h2>
+  <p class="lede">Peso promedio por sector (equal-weight entre managers) y su variación. Los ETFs se agrupan por su exposición (renta variable amplia, internacional, renta fija, commodities, sectoriales).</p>
+  <div class="grid2">
+    <div><h3>Peso por sector</h3><div id="c-sector-level" class="chart tall"></div></div>
+    <div><h3>Variación del peso (pp)</h3><div id="c-sector-delta" class="chart tall"></div></div>
+  </div>
+  <h3 style="margin-top:20px">Flujo neto por tipo de manager y sector <span class="meta">(% del valor del grupo)</span></h3>
+  <div id="c-rotation-heat" class="chart tall"></div>
+  <p class="foot">Flujo = Δ títulos × precio implícito del trimestre; excluye el efecto de precio. Azul = compras netas, rojo = ventas netas.</p>
+</section>
+
+<section id="s-managers">
+  <h2>Managers: tamaño, concentración y rotación</h2>
+  <p class="lede">Huella de cartera de cada filer. El <em>tipo inferido</em> se deriva de la cartera (número de posiciones, concentración, opciones, ETFs, rotación) y se compara con el tipo declarado en la configuración.</p>
+  <div class="grid2">
+    <div><h3>Concentración vs. amplitud</h3><div id="c-mgr-scatter" class="chart tall"></div><p class="foot">Eje X en escala logarítmica. Tamaño del marcador ∝ log del valor reportado.</p></div>
+    <div><h3>Rotación estimada por manager</h3><div id="c-mgr-turnover" class="chart tall"></div></div>
+  </div>
+  <div class="tablewrap" style="margin-top:18px"><table id="t-managers"></table></div>
+</section>
+
+<section id="s-moves">
+  <h2>Movimientos del trimestre</h2>
+  <p class="lede">Posiciones nuevas, salidas, aumentos y reducciones ordenadas por flujo estimado.</p>
+  <div class="controls"><span>Acción</span>
+    <button class="abtn" data-a="ALL" aria-pressed="true">Todas</button><button class="abtn" data-a="NEW">Nuevas</button><button class="abtn" data-a="EXIT">Salidas</button><button class="abtn" data-a="ADD">Aumentos</button><button class="abtn" data-a="TRIM">Reducciones</button>
+    <span style="margin-left:12px">Manager</span><select id="moves-mgr"><option value="ALL">Todos</option></select>
+  </div>
+  <div class="tablewrap"><table id="t-moves"></table></div>
+</section>
+
+<section id="s-consensus">
+  <h2>Consenso y crowding</h2>
+  <p class="lede">Valores más compartidos entre managers y dirección neta de las operaciones (compradores menos vendedores, excluyendo puts).</p>
+  <div class="grid3">
+    <div><h3>Más tenidos</h3><div class="tablewrap"><table id="t-held"></table></div></div>
+    <div><h3>Compras de consenso</h3><div class="tablewrap"><table id="t-bought"></table></div></div>
+    <div><h3>Ventas de consenso</h3><div class="tablewrap"><table id="t-sold"></table></div></div>
+  </div>
+</section>
+
+<section id="s-options">
+  <h2>Opciones: puts vs. calls</h2>
+  <p class="lede">Nocional del subyacente reportado en puts y calls, por emisor. Una lectura de cobertura o de apuestas direccionales; el 13F no distingue entre opciones compradas y suscritas.</p>
+  <div id="c-putcall" class="chart tall"></div>
+</section>
+
+<section id="s-detail">
+  <h2>Detalle por manager</h2>
+  <div class="controls"><span>Manager</span><select id="detail-mgr"></select><span id="detail-meta" class="meta"></span></div>
+  <div class="grid2">
+    <div><h3>Principales posiciones</h3><div id="c-detail-top" class="chart tall"></div></div>
+    <div><h3>Exposición sectorial del manager</h3><div id="c-detail-sector" class="chart tall"></div></div>
+  </div>
+  <h3 style="margin-top:18px">Cambios del trimestre</h3>
+  <div class="tablewrap"><table id="t-detail-moves"></table></div>
+</section>
+
+<section id="s-method">
+  <h2>Metodología y límites</h2>
+  <div class="grid2">
+    <div>
+      <h3>Pipeline</h3>
+      <p class="meta">1) Descubrimiento de filings vía <span class="mono">data.sec.gov/submissions</span> · 2) descarga del <span class="mono">informationTable</span> XML y la portada · 3) parseo y normalización (valores a USD, agregación de sub-managers) · 4) clasificación de activo y sector con score de confianza · 5) diff trimestral y descomposición flujo/precio · 6) agregación por manager, tipo de manager, sector y tipo de activo.</p>
+    </div>
+    <div>
+      <h3>Qué no ve el 13F</h3>
+      <p class="meta">Posiciones cortas, bonos soberanos, derivados OTC, acciones extranjeras sin ADR, efectivo y posiciones confidenciales. Rezago de hasta 45 días tras el cierre del trimestre. Las opciones se reportan por nocional del subyacente. Los cambios de precio implícito son aproximaciones (valor/títulos).</p>
+    </div>
+  </div>
+  <p class="foot">Generado {{ generated_at }} · {{ n_filings }} filings · {{ n_rows }} renglones de tenencias · sec13f v{{ version }}</p>
+</section>
+</main>
+
+<script id="data" type="application/json">{{ data_json }}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('data').textContent);
+const P = DATA.periods; let cur = P[P.length-1]; let wmode = 'ew'; let amode = 'ALL';
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const SERIES = () => ['--s1','--s2','--s3','--s4','--s5','--s6','--s7','--s8'].map(css);
+const usd = x => { if (x==null||isNaN(x)) return '—'; const a=Math.abs(x), s=x<0?'-':''; if(a>=1e12) return s+'$'+(a/1e12).toFixed(2)+'T'; if(a>=1e9) return s+'$'+(a/1e9).toFixed(1)+'B'; if(a>=1e6) return s+'$'+(a/1e6).toFixed(0)+'M'; return s+'$'+a.toFixed(0); };
+const pct = (x,d=1) => (x==null||isNaN(x))?'—':(x*100).toFixed(d)+'%';
+const pp = x => (x==null||isNaN(x))?'—':((x>=0?'+':'')+(x*100).toFixed(1)+' pp');
+const ql = p => p.slice(0,4)+'Q'+(Math.floor((+p.slice(5,7)-1)/3)+1);
+const ACR = new Set(['ETF','ADR','ADS','MSCI','EAFE','S&P','SPDR','REIT','PFD','NV','SA','AG','PLC','LLC','LP','USA','US','FTSE','QQQ','AT&T','IBM','HCA','CVS','GE','RTX','KKR','PNC','TJX','UPS','PDD','JD','ASML','SAP','TSM','NVR']);
+const title = s => String(s||'').split(' ').map(w => (w.startsWith('(')&&w.endsWith(')'))||ACR.has(w.toUpperCase())||(w.length<=2&&/^[A-Za-z]+$/.test(w)) ? w.toUpperCase() : w.charAt(0).toUpperCase()+w.slice(1).toLowerCase()).join(' ');
+const esc = s => String(s??'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const prevOf = p => { const i=P.indexOf(p); return i>0?P[i-1]:null; };
+const CFG = {displayModeBar:false, responsive:true};
+function base(extra){
+  return Object.assign({
+    paper_bgcolor:'rgba(0,0,0,0)', plot_bgcolor:'rgba(0,0,0,0)',
+    font:{family:'"IBM Plex Sans",system-ui,sans-serif', size:12.5, color:css('--ink2')},
+    margin:{l:8,r:16,t:8,b:36}, hovermode:'closest',
+    hoverlabel:{bgcolor:css('--surface'), bordercolor:css('--border'), font:{color:css('--ink'), size:12.5}},
+    xaxis:{gridcolor:css('--grid'), zerolinecolor:css('--axis'), linecolor:css('--axis'), tickfont:{color:css('--muted')}, automargin:true},
+    yaxis:{gridcolor:css('--grid'), zerolinecolor:css('--axis'), linecolor:css('--axis'), tickfont:{color:css('--muted')}, automargin:true},
+    legend:{orientation:'h', y:-0.18, x:0, font:{color:css('--ink2')}},
+  }, extra||{});
+}
+const plot = (id, traces, layout) => Plotly.react(id, traces, layout, CFG);
+
+// ---------- header
+function renderPeriods(){
+  const el=document.getElementById('periods'); el.innerHTML='';
+  P.forEach(p=>{ const b=document.createElement('button'); b.className='pill'; b.textContent=ql(p); b.setAttribute('aria-pressed', p===cur); b.onclick=()=>{cur=p; renderAll();}; el.appendChild(b); });
+}
+function renderLead(){
+  const ins = DATA.insights[cur]; document.getElementById('headline').textContent = ins.headline;
+  const k = DATA.kpis[cur]; const prev = prevOf(cur);
+  const tiles = [
+    {l:'Valor reportado', v:usd(k.total_value), d: k.total_value_chg==null?'primer trimestre del universo':`<span class="${k.total_value_chg>=0?'up':'down'}">${(k.total_value_chg*100).toFixed(1)}%</span> vs ${prev?ql(prev):''}`},
+    {l:'Flujo neto estimado', v:usd(k.net_flow), d:`bruto ${usd(k.gross_flow)} · efecto precio ${usd(k.price_effect)}`},
+    {l:'Posiciones', v:(k.n_positions||0).toLocaleString(), d:`${k.n_new||0} nuevas · ${k.n_exit||0} salidas`},
+    {l:'Rotación promedio', v:pct(k.avg_turnover,0), d:`${k.n_add||0} aumentos · ${k.n_trim||0} reducciones`},
+  ];
+  document.getElementById('kpis').innerHTML = tiles.map(t=>`<div class="kpi"><div class="l">${t.l}</div><div class="v">${t.v}</div><div class="d">${t.d}</div></div>`).join('');
+  const TAG={flows:'Flujos',asset_mix:'Activos',sector:'Sectores',consensus_buy:'Consenso',consensus_sell:'Consenso',moves:'Movimientos',turnover:'Rotación',type_mismatch:'Perfil',options:'Opciones'};
+  document.getElementById('insights').innerHTML = ins.bullets.map(b=>`<li><span class="tag">${TAG[b.kind]||b.kind}</span><span>${esc(b.text)}</span></li>`).join('');
+}
+
+// ---------- asset mix
+const ASSET_ORDER = DATA.asset_order;
+function renderAsset(){
+  const S = SERIES(); const key = wmode==='ew'?'avg_weight':'share'; const dkey = wmode==='ew'?'d_avg_weight':'d_share';
+  const rows = DATA.exposure_asset;
+  const traces = ASSET_ORDER.map((a,i)=>({type:'bar', name:a, x:P.map(ql), y:P.map(p=>{const r=rows.find(r=>r.period===p&&r.underlying_asset===a); return r?r[key]*100:0;}),
+    marker:{color:S[i%8], line:{width:2,color:css('--surface')}}, hovertemplate:'%{x} · '+a+': %{y:.1f}%<extra></extra>'}));
+  plot('c-asset-mix', traces, base({barmode:'stack', bargap:0.35, yaxis:Object.assign(base().yaxis,{title:{text:'% del valor'},ticksuffix:'%'}), margin:{l:8,r:16,t:8,b:80}, legend:{orientation:'h',y:-0.2,x:0}}));
+  const dr = ASSET_ORDER.map(a=>{const r=rows.find(r=>r.period===cur&&r.underlying_asset===a); return {a, d:r&&r[dkey]!=null?r[dkey]*100:0};}).sort((x,y)=>x.d-y.d);
+  document.getElementById('asset-delta-label').textContent = prevOf(cur)?`${ql(prevOf(cur))} → ${ql(cur)}`:'';
+  plot('c-asset-delta', [{type:'bar', orientation:'h', x:dr.map(r=>r.d), y:dr.map(r=>r.a), marker:{color:dr.map(r=>r.d>=0?css('--div-pos'):css('--div-neg'))},
+    text:dr.map(r=>(r.d>=0?'+':'')+r.d.toFixed(2)+' pp'), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:+.2f} pp<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true}), margin:{l:8,r:60,t:8,b:36}, showlegend:false}));
+}
+// ---------- sectors
+function renderSector(){
+  const rows = DATA.exposure_sector.filter(r=>r.period===cur).sort((a,b)=>a.avg_weight-b.avg_weight);
+  plot('c-sector-level', [{type:'bar', orientation:'h', x:rows.map(r=>r.avg_weight*100), y:rows.map(r=>r.sector), marker:{color:css('--s1')},
+    text:rows.map(r=>pct(r.avg_weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}% (peso promedio)<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), margin:{l:8,r:50,t:8,b:36}, showlegend:false}));
+  const d = rows.filter(r=>r.d_avg_weight!=null).sort((a,b)=>a.d_avg_weight-b.d_avg_weight);
+  plot('c-sector-delta', [{type:'bar', orientation:'h', x:d.map(r=>r.d_avg_weight*100), y:d.map(r=>r.sector), marker:{color:d.map(r=>r.d_avg_weight>=0?css('--div-pos'):css('--div-neg'))},
+    text:d.map(r=>pp(r.d_avg_weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:+.2f} pp<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:' pp',zeroline:true}), margin:{l:8,r:60,t:8,b:36}, showlegend:false}));
+  const H = DATA.rotation.filter(r=>r.period===cur);
+  const types=[...new Set(H.map(r=>r.manager_type))].sort(), secs=[...new Set(H.map(r=>r.sector))].sort();
+  const z = types.map(t=>secs.map(s=>{const r=H.find(r=>r.manager_type===t&&r.sector===s); return r?r.flow_pct*100:null;}));
+  const m = Math.max(0.5, ...z.flat().filter(v=>v!=null).map(Math.abs));
+  plot('c-rotation-heat', [{type:'heatmap', z, x:secs, y:types, zmin:-m, zmax:m, colorscale:[[0,css('--div-neg')],[0.5,css('--div-mid')],[1,css('--div-pos')]], xgap:2, ygap:2,
+    hovertemplate:'%{y}<br>%{x}: %{z:+.2f}% del valor del grupo<extra></extra>', colorbar:{ticksuffix:'%', thickness:10, len:0.8, tickfont:{color:css('--muted')}, outlinewidth:0}}],
+    base({margin:{l:8,r:16,t:8,b:120}, xaxis:Object.assign(base().xaxis,{tickangle:-35, showgrid:false}), yaxis:Object.assign(base().yaxis,{showgrid:false, automargin:true})}));
+}
+// ---------- managers
+function renderManagers(){
+  const M = DATA.managers.filter(r=>r.period===cur).sort((a,b)=>b.total_value-a.total_value);
+  const sz = M.map(r=>Math.max(8, 8 + 6*Math.log10(Math.max(1, r.total_value/1e8))));
+  plot('c-mgr-scatter', [{type:'scatter', mode:'markers+text', x:M.map(r=>r.n_positions), y:M.map(r=>r.top10_weight*100), text:M.map(r=>r.short), textposition:'top center', textfont:{color:css('--ink2'), size:11},
+    marker:{size:sz, color:css('--s1'), opacity:0.85, line:{width:2, color:css('--surface')}},
+    customdata:M.map(r=>[r.manager, usd(r.total_value), r.inferred_type, r.manager_type]),
+    hovertemplate:'<b>%{customdata[0]}</b><br>%{x} posiciones · top-10 %{y:.0f}%<br>valor %{customdata[1]}<br>declarado: %{customdata[3]}<br>inferido: %{customdata[2]}<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{type:'log', title:{text:'Número de posiciones (log)'}}), yaxis:Object.assign(base().yaxis,{title:{text:'Peso del top-10 (%)'}, ticksuffix:'%', range:[0,110]}), showlegend:false, margin:{l:8,r:16,t:16,b:48}}));
+  const T = M.filter(r=>r.turnover!=null).sort((a,b)=>a.turnover-b.turnover);
+  plot('c-mgr-turnover', [{type:'bar', orientation:'h', x:T.map(r=>r.turnover*100), y:T.map(r=>r.short), marker:{color:css('--s1')}, text:T.map(r=>pct(r.turnover,0)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
+    customdata:T.map(r=>[usd(r.gross_flow), usd(r.net_flow)]), hovertemplate:'%{y}: rotación %{x:.0f}%<br>bruto %{customdata[0]} · neto %{customdata[1]}<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%', title:{text:'Σ|flujo| / valor promedio del libro'}}), showlegend:false, margin:{l:8,r:50,t:8,b:48}}));
+  const h = `<thead><tr><th>Manager</th><th>Tipo declarado</th><th>Tipo inferido</th><th class="num">Valor 13F</th><th class="num">Posiciones</th><th class="num">Top-10</th><th class="num">Opciones</th><th class="num">ETF</th><th class="num">Rotación</th><th class="num">Flujo neto</th><th class="num">Δ valor</th></tr></thead>`;
+  document.getElementById('t-managers').innerHTML = h + '<tbody>' + M.map(r=>`<tr><td><strong>${esc(r.manager)}</strong></td><td>${esc(r.manager_type)}</td><td title="${esc(r.inferred_reason)}">${esc(r.inferred_type)}</td><td class="num mono">${usd(r.total_value)}</td><td class="num mono">${r.n_positions}</td><td class="num mono">${pct(r.top10_weight,0)}</td><td class="num mono">${pct(r.options_share,0)}</td><td class="num mono">${pct(r.etf_share,0)}</td><td class="num mono">${pct(r.turnover,0)}</td><td class="num mono ${r.net_flow>0?'up':r.net_flow<0?'down':''}">${usd(r.net_flow)}</td><td class="num mono ${r.value_chg_pct>0?'up':r.value_chg_pct<0?'down':''}">${r.value_chg_pct==null?'—':((r.value_chg_pct*100).toFixed(1)+'%')}</td></tr>`).join('') + '</tbody>';
+  const sel=document.getElementById('moves-mgr'); const v=sel.value; sel.innerHTML='<option value="ALL">Todos</option>'+M.map(r=>`<option value="${r.cik}">${esc(r.short)}</option>`).join(''); sel.value = [...sel.options].some(o=>o.value===v)?v:'ALL';
+}
+// ---------- moves
+function movesTable(el, rows, withMgr){
+  const mx = Math.max(1, ...rows.map(r=>Math.abs(r.flow_effect)));
+  el.innerHTML = `<thead><tr>${withMgr?'<th>Manager</th>':''}<th>Acción</th><th>Emisor</th><th>Ticker</th><th>Tipo</th><th>Sector</th><th class="num">Δ títulos</th><th class="num">Peso prev → actual</th><th class="num">Flujo estimado</th></tr></thead><tbody>` +
+    rows.map(r=>`<tr>${withMgr?`<td>${esc(r.short)}</td>`:''}<td><span class="chip ${r.action}">${r.action}</span></td><td>${esc(title(r.issuer))}${r.put_call?' <span class="meta">('+r.put_call+')</span>':''}</td><td class="mono">${esc(r.ticker||'')}</td><td>${esc(r.asset_type)}</td><td>${esc(r.sector)}</td><td class="num mono">${r.pct_shares==null?'nueva':((r.pct_shares>=0?'+':'')+(r.pct_shares*100).toFixed(0)+'%')}</td><td class="num mono">${pct(r.weight_prev)} → ${pct(r.weight_cur)}</td><td><div class="bar-cell"><i class="${r.flow_effect<0?'neg':''}" style="width:${Math.max(2,Math.abs(r.flow_effect)/mx*70)}px"></i><span class="mono ${r.flow_effect>0?'up':'down'}">${usd(r.flow_effect)}</span></div></td></tr>`).join('') + '</tbody>';
+}
+function renderMoves(){
+  const mgr=document.getElementById('moves-mgr').value;
+  let rows = DATA.moves.filter(r=>r.period===cur && (amode==='ALL'||r.action===amode) && (mgr==='ALL'||r.cik===mgr));
+  rows = rows.sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,40);
+  movesTable(document.getElementById('t-moves'), rows, true);
+}
+// ---------- consensus
+function renderConsensus(){
+  const C = DATA.consensus.filter(r=>r.period===cur);
+  const held = [...C].sort((a,b)=>b.holders-a.holders||b.total_value-a.total_value).slice(0,12);
+  document.getElementById('t-held').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Tenedores</th><th class="num">Valor</th><th class="num">Neto</th></tr></thead><tbody>'+held.map(r=>`<tr><td>${esc(title(r.issuer))} <span class="mono meta">${esc(r.ticker||'')}</span></td><td class="num mono">${r.holders}</td><td class="num mono">${usd(r.total_value)}</td><td class="num mono ${r.net_buyers>0?'up':r.net_buyers<0?'down':''}">${r.net_buyers>0?'+':''}${r.net_buyers??0}</td></tr>`).join('')+'</tbody>';
+  const bought=[...C].filter(r=>r.net_buyers>0).sort((a,b)=>b.net_buyers-a.net_buyers||b.net_flow-a.net_flow).slice(0,12);
+  document.getElementById('t-bought').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Compr.</th><th class="num">Vend.</th><th class="num">Nuevos</th><th class="num">Flujo</th></tr></thead><tbody>'+bought.map(r=>`<tr><td>${esc(title(r.issuer))}</td><td class="num mono up">${r.buyers}</td><td class="num mono">${r.sellers}</td><td class="num mono">${r.new_holders}</td><td class="num mono">${usd(r.net_flow)}</td></tr>`).join('')+'</tbody>';
+  const sold=[...C].filter(r=>r.net_buyers<0).sort((a,b)=>a.net_buyers-b.net_buyers||a.net_flow-b.net_flow).slice(0,12);
+  document.getElementById('t-sold').innerHTML = '<thead><tr><th>Emisor</th><th class="num">Vend.</th><th class="num">Compr.</th><th class="num">Salidas</th><th class="num">Flujo</th></tr></thead><tbody>'+sold.map(r=>`<tr><td>${esc(title(r.issuer))}</td><td class="num mono down">${r.sellers}</td><td class="num mono">${r.buyers}</td><td class="num mono">${r.exits}</td><td class="num mono">${usd(r.net_flow)}</td></tr>`).join('')+'</tbody>';
+}
+// ---------- options
+function renderOptions(){
+  const O = DATA.putcall.filter(r=>r.period===cur).sort((a,b)=>(b.put+b.call)-(a.put+a.call)).slice(0,15).reverse();
+  if(!O.length){ document.getElementById('c-putcall').innerHTML='<p class="meta">Sin opciones reportadas en este periodo.</p>'; return; }
+  plot('c-putcall', [
+    {type:'bar', orientation:'h', name:'Puts', x:O.map(r=>r.put/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s8'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · puts: $%{x:.2f}B<extra></extra>'},
+    {type:'bar', orientation:'h', name:'Calls', x:O.map(r=>r.call/1e9), y:O.map(r=>title(r.issuer)), marker:{color:css('--s1'), line:{width:2,color:css('--surface')}}, hovertemplate:'%{y} · calls: $%{x:.2f}B<extra></extra>'},
+  ], base({barmode:'group', bargap:0.3, xaxis:Object.assign(base().xaxis,{title:{text:'Nocional (USD, miles de millones)'}, tickprefix:'$', ticksuffix:'B'}), margin:{l:8,r:16,t:8,b:70}}));
+}
+// ---------- detail
+function renderDetail(){
+  const sel=document.getElementById('detail-mgr'); const M = DATA.managers.filter(r=>r.period===cur).sort((a,b)=>b.total_value-a.total_value);
+  const v=sel.value; sel.innerHTML=M.map(r=>`<option value="${r.cik}">${esc(r.short)}</option>`).join(''); sel.value=[...sel.options].some(o=>o.value===v)?v:M[0].cik;
+  const cik=sel.value; const m=M.find(r=>r.cik===cik);
+  document.getElementById('detail-meta').textContent = m?`${m.manager} · ${usd(m.total_value)} · ${m.n_positions} posiciones · ${m.manager_type}`:'';
+  const H = DATA.holdings.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight).slice(-15);
+  plot('c-detail-top', [{type:'bar', orientation:'h', x:H.map(r=>r.weight*100), y:H.map(r=>title(r.issuer)+(r.put_call?' ('+r.put_call+')':'')), marker:{color:css('--s1')}, text:H.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false,
+    customdata:H.map(r=>[usd(r.value_usd), r.asset_type, r.sector]), hovertemplate:'%{y}<br>%{x:.1f}% · %{customdata[0]}<br>%{customdata[1]} · %{customdata[2]}<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
+  const S = DATA.mgr_sector.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>a.weight-b.weight);
+  plot('c-detail-sector', [{type:'bar', orientation:'h', x:S.map(r=>r.weight*100), y:S.map(r=>r.sector), marker:{color:css('--s1')}, text:S.map(r=>pct(r.weight)), textposition:'outside', textfont:{color:css('--ink2')}, cliponaxis:false, hovertemplate:'%{y}: %{x:.1f}%<extra></extra>'}],
+    base({xaxis:Object.assign(base().xaxis,{ticksuffix:'%'}), showlegend:false, margin:{l:8,r:50,t:8,b:36}}));
+  const rows = DATA.moves.filter(r=>r.period===cur&&r.cik===cik).sort((a,b)=>Math.abs(b.flow_effect)-Math.abs(a.flow_effect)).slice(0,15);
+  const el=document.getElementById('t-detail-moves');
+  if(!rows.length){ el.innerHTML='<tbody><tr><td class="meta">Sin trimestre previo para comparar.</td></tr></tbody>'; } else movesTable(el, rows, false);
+}
+function renderAll(){ renderPeriods(); renderLead(); renderAsset(); renderSector(); renderManagers(); renderMoves(); renderConsensus(); renderOptions(); renderDetail(); }
+document.querySelectorAll('.wbtn').forEach(b=>b.onclick=()=>{wmode=b.dataset.w; document.querySelectorAll('.wbtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderAsset();});
+document.querySelectorAll('.abtn').forEach(b=>b.onclick=()=>{amode=b.dataset.a; document.querySelectorAll('.abtn').forEach(x=>x.setAttribute('aria-pressed', x===b)); renderMoves();});
+document.getElementById('moves-mgr').onchange=renderMoves;
+document.getElementById('detail-mgr').onchange=renderDetail;
+renderAll();
+if (window.matchMedia){ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', renderAll); }
+new MutationObserver(renderAll).observe(document.documentElement, {attributes:true, attributeFilter:['data-theme']});
+</script>
