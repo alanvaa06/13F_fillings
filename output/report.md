@@ -1,183 +1,182 @@
-# 13F Tracker — Reporte trimestral 2026Q2
+# 13F Tracker — Reporte trimestral 2026Q3
 
-_Generado 2026-09-02 13:31 · fuente de datos: **sec** · periodo de reporte 2026-06-30_
+_Generado 2026-11-19 01:52 · fuente de datos: **sec** · periodo de reporte 2026-09-30_
 
-> 2026Q2: 88 managers, $37.07T en posiciones reportadas, +19.3% vs trimestre anterior (mismos 87 managers)
+> 2026Q3: 87 managers, $36.46T en posiciones reportadas, +1.0% vs trimestre anterior
 
 ## Lectura del trimestre
 
-- Sin filing para 2026Q2: 4 de 92 managers del universo: Pershing Square (último 2026Q1), Vanguard (último 2025Q4), Scion (último 2025Q3), Amundi US (último 2021Q1). Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial).
-- El valor agregado del universo cambió $5.83T en el trimestre: $4.32T por precio y $1.50T por flujo neto (compras menos ventas). Actividad bruta de $6.04T con 28238 posiciones nuevas y 25217 salidas.
-- Mezcla de activos (promedio simple entre managers): sube Options (+0.5 pp) y baja Equity (-0.6 pp).
-- Rotación sectorial: mayor incremento de peso en Information Technology (+5.8 pp) y Consumer Staples (0.0 pp); mayor reducción en Consumer Discretionary (-1.7 pp) y Industrials (-0.9 pp).
-- Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.5 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-1.2 pp).
-- El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.4B frente a un efecto precio de $1.15T (7571 compras / 7041 ventas); su peso actual está en el percentil 100 de su historia.
-- Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Real Estate (2.1%).
-- Compras de consenso (más compradores netos): Space Exploration Techn Corp (SPCX) (54 compradores / 0 vendedores, flujo $138.7B), Cerebras Systems Inc (CBRS) (42 compradores / 0 vendedores, flujo $11.3B), Kla Corp (KLAC) (44 compradores / 3 vendedores, flujo $143.9B).
-- Ventas de consenso: Carnival Corp Common Stock (CCL) (38 vendedores / 1 comprador, flujo -$8.2B), Sleep Number Corp (SNBRQ) (28 vendedores / 1 comprador, flujo -$15M), Ascendis Pharma A/s (ASND) (26 vendedores / 1 comprador, flujo -$2.8B).
-- Movimientos individuales más grandes: FMR LLC abre Space Exploration Techn Corp (SPCX) ($51.7B); BlackRock Inc. aumenta Kla Corp (KLAC) ($34.3B); Jane Street Group, LLC aumenta State Str SPDR S&P 500 ETF T (SPY) ($31.5B); Bank of America Corp aumenta Vanguard Index Fds Growth ETF (VOO) ($24.1B).
-- Empresas con mayor movimiento agregado: Kla Corp (KLAC) (títulos agregados +924%, 44 compradores / 3 vendedores, flujo neto $143.9B); Space Exploration Techn Corp (SPCX) (entrada nueva al universo, 54 compradores / 0 vendedores, flujo neto $138.7B); Micron Technology Inc (MU) (títulos agregados -1%, 24 compradores / 31 vendedores, flujo neto -$2.1B). De 8985 empresas en cartera, 6360 tuvieron un cambio mayor, 1740 menor y 885 ninguno.
-- Mayor rotación de cartera: Dragoneer Investment Group, LLC (175%), Ontario Teachers Pension Plan Board (161%), Flow Traders U.S. LLC (152%).
-- Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 23%; turnover 66%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 51%; turnover 27%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 8 positions, top-10 100%; turnover 12%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 60%; turnover 88%).
-- Opciones reportadas: puts $1.98T vs calls $1.80T (ratio 1.10). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Micron Technology Inc (MU).
+- Sin filing para 2026Q3: 5 de 92 managers del universo: Norges Bank (último 2026Q2), Pershing Square (último 2026Q1), Vanguard (último 2025Q4), Scion (último 2025Q3), Amundi US (último 2021Q1). Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial).
+- El valor agregado del universo cambió $371.7B en el trimestre: -$113.3B por precio y $485.0B por flujo neto (compras menos ventas). Actividad bruta de $5.59T con 27866 posiciones nuevas y 24521 salidas.
+- Mezcla de activos (promedio simple entre managers): sube Options (+0.6 pp) y baja Equity (-0.5 pp).
+- Rotación sectorial: mayor incremento de peso en Health Care (+0.7 pp) y Energy (+0.4 pp); mayor reducción en Industrials (-0.5 pp) y Financials (-0.3 pp).
+- Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.2 pp; 59% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.5 pp; 27% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-2.0 pp).
+- El sector que más peso ganó, Health Care (+0.8 pp QoQ, +1.3 pp YoY), recibió flujo neto de $12.3B frente a un efecto precio de $93.8B (8685 compras / 8041 ventas); su peso actual está en el percentil 45 de su historia.
+- Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (29.9%), Materials (4.1%); en mínimos: Consumer Discretionary (8.7%), Consumer Staples (3.2%), Real Estate (1.9%).
+- Compras de consenso (más compradores netos): Exxonmobil Holdings Corp (XOM) (43 compradores / 0 vendedores, flujo $218.6B), Sk Hynix Inc (41 compradores / 0 vendedores, flujo $17.8B), Teva Pharmaceutical Inds Ltd (TEVA) (39 compradores / 0 vendedores, flujo $8.8B).
+- Ventas de consenso: First Ctzns Bancshares Inc D (FCNCA) (30 vendedores / 9 compradores, flujo -$454M), Axia Energia-adr (AXIAY) (21 vendedores / 0 compradores, flujo -$246M), Selectquote Inc (SLQT) (25 vendedores / 5 compradores, flujo -$3M).
+- Movimientos individuales más grandes: BlackRock Inc. abre Exxonmobil Holdings Corp (XOM) ($53.9B); BlackRock Inc. liquida Exxon Mobil Corp (XOM) (-$45.8B); Jane Street Group, LLC reduce State Str SPDR S&P 500 ETF T (SPY) (-$44.1B); Goldman Sachs Group Inc aumenta State Str SPDR S&P 500 ETF T (SPY) ($37.4B).
+- Empresas con mayor movimiento agregado: Exxonmobil Holdings Corp (XOM) (entrada nueva al universo, 43 compradores / 0 vendedores, flujo neto $218.6B); Exxon Mobil Corp (XOM) (títulos agregados -100%, 0 compradores / 42 vendedores, flujo neto -$184.4B); Crowdstrike Hldgs Inc (CRWD) (títulos agregados +305%, 41 compradores / 6 vendedores, flujo neto $76.5B). De 9218 empresas en cartera, 6205 tuvieron un cambio mayor, 2007 menor y 1006 ninguno.
+- Mayor rotación de cartera: Flow Traders U.S. LLC (153%), ExodusPoint Capital Management, LP (124%), Lone Pine Capital LLC (119%).
+- Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 24%; turnover 49%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 53%; turnover 17%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 9 positions, top-10 100%; turnover 5%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 61%; turnover 103%).
+- Opciones reportadas: puts $2.05T vs calls $1.92T (ratio 1.07). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Micron Technology Inc (MU).
 
 ## Managers en el universo
 
 | Manager | Tipo declarado | Tipo inferido | Valor 13F | Posiciones | Top-10 | Rotación | Flujo neto | Δ valor |
 |---|---|---|---|---|---|---|---|---|
-| BlackRock Inc. | Asset Manager - Index/Active | Index / Broad Asset Manager | $6.73T | 5696 | 28% | 6% | $161.0B | +17.6% |
-| State Street Corp | Asset Manager - Index | Index / Broad Asset Manager | $3.37T | 4177 | 29% | 5% | $83.2B | +16.4% |
-| FMR LLC | Asset Manager - Active | Quant / Systematic | $2.30T | 5572 | 34% | 20% | $75.3B | +21.4% |
-| Morgan Stanley | Bank - Asset Manager - Index/Active | Index / Broad Asset Manager | $1.89T | 8402 | 21% | 11% | $51.1B | +13.9% |
-| Geode Capital Management, LLC | Asset Manager - Index | Index / Broad Asset Manager | $1.88T | 4447 | 31% | 5% | $37.3B | +16.7% |
-| JPMorgan Chase & Co | Bank - Asset Manager - Index/Active | Quant / Systematic | $1.81T | 7720 | 25% | 22% | $32.2B | +16.0% |
-| Bank of America Corp | Bank - Asset Manager - Index/Active | Macro / Allocator (ETF-heavy) | $1.55T | 5665 | 18% | 14% | $69.6B | +13.5% |
-| Susquehanna International Group, LLP | Market Maker - Quant | Multi-strategy / Options-heavy | $1.28T | 13275 | 27% | 35% | $180.0B | +43.7% |
-| Invesco Ltd. | Asset Manager - Index/Active | Index / Broad Asset Manager | $1.26T | 3819 | 29% | 14% | $50.0B | +23.5% |
-| Jane Street Group, LLC | Market Maker - Quant | Multi-strategy / Options-heavy | $1.21T | 11385 | 32% | 44% | $235.6B | +55.1% |
-| Goldman Sachs Group Inc | Bank - Asset Manager - Index/Active | Quant / Systematic | $1.15T | 6524 | 19% | 30% | $149.6B | +32.2% |
-| Norges Bank | Sovereign Wealth Fund | Index / Broad Asset Manager | $1.00T | 1617 | 32% |  |  | +7.3% |
-| Price T Rowe Associates Inc /MD/ | Asset Manager - Active | Quant / Systematic | $999.1B | 3241 | 32% | 22% | $26.6B | +15.5% |
-| Citadel Advisors LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $875.0B | 13572 | 23% | 44% | $125.3B | +41.5% |
-| Northern Trust Corp | Asset Manager - Index/Active | Index / Broad Asset Manager | $859.8B | 4440 | 28% | 5% | $4.0B | +13.6% |
-| Capital World Investors | Asset Manager - Active | Quant / Systematic | $846.4B | 637 | 30% | 20% | $14.5B | +15.5% |
-| UBS Group AG | Bank - Asset Manager - Index/Active | Quant / Systematic | $786.0B | 10407 | 13% | 28% | $31.7B | +18.0% |
-| Charles Schwab Investment Management Inc | Asset Manager - Index | Index / Broad Asset Manager | $751.3B | 3439 | 22% | 8% | $21.2B | +14.8% |
-| Capital Research Global Investors | Asset Manager - Active | Quant / Systematic | $716.9B | 426 | 37% | 18% | -$16.1B | +11.2% |
-| Wells Fargo & Company/MN | Bank - Asset Manager - Index/Active | Macro / Allocator (ETF-heavy) | $617.4B | 7294 | 19% | 15% | $38.6B | +16.4% |
-| Wellington Management Group LLP | Asset Manager - Active | Quant / Systematic | $580.2B | 1921 | 25% | 28% | -$14.7B | +8.3% |
-| Dimensional Fund Advisors LP | Asset Manager - Quant | Index / Broad Asset Manager | $551.8B | 3221 | 17% | 9% | $9.3B | +14.6% |
-| Franklin Resources Inc | Asset Manager - Active | Quant / Systematic | $461.9B | 3192 | 24% | 23% | $10.2B | +13.1% |
-| Berkshire Hathaway Inc | Conglomerate / Long-only Value | Concentrated Value | $299.3B | 29 | 88% | 8% | $15.1B | +13.7% |
-| AQR Capital Management LLC | Hedge Fund - Quant | Quant / Systematic | $286.8B | 3900 | 12% | 34% | $39.4B | +31.4% |
-| Millennium Management LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $276.3B | 5796 | 18% | 59% | -$2.0B | +15.0% |
-| D. E. Shaw & Co., Inc. | Hedge Fund - Quant | Multi-strategy / Options-heavy | $210.2B | 4833 | 15% | 66% | $9.9B | +26.4% |
-| Dodge & Cox | Asset Manager - Value | Quant / Systematic | $191.0B | 222 | 28% | 15% | $5.8B | +5.0% |
-| Canada Pension Plan Investment Board | Pension Fund | Quant / Systematic | $180.8B | 1694 | 28% | 25% | $8.0B | +16.6% |
-| California Public Employees Retirement System | Pension Fund | Quant / Systematic | $177.4B | 1061 | 43% | 26% | -$8.5B | +9.2% |
-| Two Sigma Investments, LP | Hedge Fund - Quant | Quant / Systematic | $138.1B | 5017 | 8% | 64% | -$3.9B | +11.4% |
-| Marshall Wace, LLP | Hedge Fund - Quant | Macro / Allocator (ETF-heavy) | $126.7B | 3103 | 38% | 72% | $9.9B | +26.2% |
-| Baillie Gifford & Co | Asset Manager - Growth | Quant / Systematic | $110.2B | 273 | 45% | 25% | $4.5B | +12.6% |
-| California State Teachers Retirement System | Pension Fund | Index / Broad Asset Manager | $108.6B | 3002 | 33% | 6% | $588M | +14.9% |
-| Qube Research & Technologies Ltd | Hedge Fund - Quant | Quant / Systematic | $107.6B | 3406 | 8% | 87% | $6.0B | +19.7% |
-| Point72 Asset Management, L.P. | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $90.7B | 3923 | 11% | 82% | -$3.0B | +16.2% |
-| Balyasny Asset Management LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $80.2B | 2950 | 14% | 90% | -$6.8B | +4.0% |
-| New York State Common Retirement Fund | Pension Fund | Index / Broad Asset Manager | $79.3B | 3173 | 32% | 13% | -$2.4B | +10.8% |
-| Brookfield Corp | Conglomerate / Long-only Value | Concentrated Value | $77.0B | 139 | 95% | 7% | $2.6B | +3.7% |
-| Harris Associates L P | Asset Manager - Value | Quant / Systematic | $75.4B | 162 | 31% | 17% | -$2.6B | +0.5% |
-| Renaissance Technologies LLC | Hedge Fund - Quant | Quant / Systematic | $72.6B | 3140 | 12% | 67% | -$1.0B | +13.6% |
-| Tudor Investment Corp | Hedge Fund - Global Macro | Multi-strategy / Options-heavy | $71.9B | 3457 | 35% | 74% | $9.6B | +33.5% |
-| Adage Capital Partners GP, L.L.C. | Hedge Fund - Long/Short | Quant / Systematic | $71.3B | 1002 | 29% | 29% | -$2.3B | +10.0% |
-| Man Group plc | Hedge Fund - Quant | Quant / Systematic | $62.7B | 2316 | 17% | 47% | $1.3B | +13.8% |
-| TCI Fund Management Ltd | Hedge Fund - Activist | Concentrated / Activist | $52.8B | 11 | 99% | 6% | $711M | +16.8% |
-| State of Wisconsin Investment Board | Pension Fund | Index / Broad Asset Manager | $49.6B | 2529 | 27% | 11% | -$3M | +13.4% |
-| Coatue Management LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $48.6B | 66 | 62% | 44% | $11.1B | +67.4% |
-| Temasek Holdings (Private) Ltd | Sovereign Wealth Fund | Concentrated Value | $37.3B | 196 | 51% | 27% | $3.9B | +22.2% |
-| Hudson Bay Capital Management LP | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $36.8B | 1335 | 26% | 74% | $3.9B | +27.1% |
-| Viking Global Investors LP | Hedge Fund - Long/Short | Long-only Stock Picker | $35.1B | 90 | 36% | 65% | -$2.7B | -1.9% |
-| D1 Capital Partners L.P. | Hedge Fund - Long/Short Growth | Concentrated Value | $34.8B | 55 | 77% | 124% | $22.3B | +209.7% |
-| Bill & Melinda Gates Foundation Trust | Foundation / Endowment | Concentrated Value | $34.4B | 24 | 95% | 6% | -$853M | +8.7% |
-| Blackstone Inc. | Alternatives - Opportunistic / Credit | Concentrated Value | $32.9B | 518 | 66% | 41% | $5.9B | +27.5% |
-| Bridgewater Associates, LP | Hedge Fund - Global Macro | Macro / Allocator (ETF-heavy) | $24.4B | 997 | 40% | 70% | -$4.5B | +8.8% |
-| Tiger Global Management LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $24.0B | 46 | 67% | 37% | -$3.7B | +5.0% |
-| Voloridge Investment Management, LLC | Hedge Fund - Quant | Quant / Systematic | $23.5B | 784 | 12% | 98% | -$4.1B | -5.8% |
-| Elliott Investment Management L.P. | Hedge Fund - Activist | Multi-strategy / Options-heavy | $22.7B | 29 | 80% | 44% | $2.5B | +12.7% |
-| Farallon Capital Management, L.L.C. | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $21.7B | 89 | 62% | 68% | -$835M | +13.7% |
-| Lone Pine Capital LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $16.4B | 34 | 54% | 103% | $1.4B | +30.4% |
-| Ontario Teachers Pension Plan Board | Pension Fund | Concentrated Value | $15.8B | 60 | 81% | 161% | $12.3B | +356.1% |
-| ExodusPoint Capital Management, LP | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $15.5B | 1510 | 31% | 142% | $1.4B | +23.3% |
-| ARK Investment Management LLC | Asset Manager - Growth | Quant / Systematic | $15.4B | 191 | 39% | 32% | -$677M | +19.8% |
-| Whale Rock Capital Management LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $12.5B | 35 | 59% | 55% | $524M | +60.9% |
-| Polen Capital Management LLC | Asset Manager - Growth | Concentrated Value | $11.6B | 219 | 59% | 46% | -$3.6B | -19.7% |
-| Maverick Capital Ltd | Hedge Fund - Long/Short | Quant / Systematic | $11.3B | 179 | 43% | 76% | $524M | +30.6% |
-| Altimeter Capital Management, LP | Hedge Fund - Long/Short Growth | Concentrated / Activist | $9.8B | 20 | 83% | 51% | $3.0B | +72.5% |
-| Apollo Management Holdings, L.P. | Alternatives - Opportunistic / Credit | Multi-strategy / Options-heavy | $8.9B | 87 | 75% | 63% | -$59M | +17.6% |
-| Icahn Carl C | Hedge Fund - Activist | Concentrated / Activist | $8.3B | 12 | 99% | 8% | $319M | -3.4% |
-| Soros Fund Management LLC | Family Office - Macro | Quant / Systematic | $8.1B | 266 | 25% | 77% | -$1.7B | -10.7% |
-| Appaloosa LP | Hedge Fund - Opportunistic | Concentrated Value | $7.7B | 27 | 79% | 48% | -$339M | +30.2% |
-| ValueAct Holdings, L.P. | Hedge Fund - Activist | Concentrated / Activist | $5.6B | 18 | 87% | 25% | -$373M | -1.4% |
-| Glenview Capital Management, LLC | Hedge Fund - Long/Short | Concentrated Value | $5.5B | 45 | 61% | 75% | $380M | +37.9% |
-| Baupost Group LLC/MA | Hedge Fund - Value | Concentrated Value | $5.4B | 23 | 75% | 31% | -$302M | +5.9% |
-| Duquesne Family Office LLC | Family Office - Macro | Long-only Stock Picker | $5.2B | 95 | 46% | 65% | $1.3B | +54.3% |
-| Akre Capital Management LLC | Asset Manager - Value | Concentrated / Activist | $5.1B | 20 | 88% | 20% | -$1.0B | -16.5% |
-| Third Point LLC | Hedge Fund - Event Driven | Concentrated Value | $4.7B | 43 | 60% | 88% | $2.3B | +124.7% |
-| Starboard Value LP | Hedge Fund - Activist | Concentrated Value | $4.5B | 22 | 84% | 48% | -$723M | -1.1% |
-| Harvard Management Co Inc | Foundation / Endowment | Concentrated / Activist | $4.3B | 19 | 91% | 112% | $2.4B | +134.8% |
-| Trian Fund Management, L.P. | Hedge Fund - Activist | Concentrated / Activist | $4.2B | 8 | 100% | 14% | -$161M | +9.6% |
-| Tower Research Capital LLC (TRC) | Market Maker - Quant | Macro / Allocator (ETF-heavy) | $4.1B | 5180 | 19% | 110% | -$978M | +6.1% |
-| DME Capital Management, LP (ex Greenlight Capital) | Hedge Fund - Value | Concentrated Value | $3.9B | 46 | 53% | 30% | $290M | +22.5% |
-| Dragoneer Investment Group, LLC | Hedge Fund - Long/Short Growth | Concentrated / Activist | $2.8B | 12 | 98% | 175% | -$256M | -5.6% |
-| Fairfax Financial Holdings Ltd | Conglomerate / Long-only Value | Concentrated Value | $2.6B | 32 | 91% | 55% | $734M | +35.8% |
-| Paulson & Co. Inc. | Hedge Fund - Event Driven | Concentrated / Activist | $2.6B | 8 | 100% | 12% | -$312M | -17.2% |
-| Flow Traders U.S. LLC | Market Maker - Quant | Macro / Allocator (ETF-heavy) | $2.4B | 979 | 30% | 152% | -$899M | -23.0% |
-| PDT Partners, LLC | Hedge Fund - Quant | Quant / Systematic | $1.9B | 489 | 12% | 74% | $22M | +12.7% |
-| Jana Partners LLC | Hedge Fund - Activist | Concentrated / Activist | $1.9B | 10 | 100% | 8% | -$46M | +14.1% |
-| Light Street Capital Management, LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $903M | 28 | 65% | 61% | $110M | +69.0% |
+| BlackRock Inc. | Asset Manager - Index/Active | Index / Broad Asset Manager | $6.79T | 5805 | 31% | 5% | $70.6B | +0.9% |
+| State Street Corp | Asset Manager - Index | Index / Broad Asset Manager | $3.44T | 4310 | 32% | 5% | $47.6B | +1.5% |
+| FMR LLC | Asset Manager - Active | Quant / Systematic | $2.32T | 5782 | 36% | 19% | $27.7B | +0.6% |
+| Morgan Stanley | Bank - Asset Manager - Index/Active | Index / Broad Asset Manager | $1.96T | 7896 | 23% | 10% | $60.5B | +3.4% |
+| Geode Capital Management, LLC | Asset Manager - Index | Index / Broad Asset Manager | $1.92T | 4380 | 34% | 5% | $40.8B | +2.6% |
+| JPMorgan Chase & Co | Bank - Asset Manager - Index/Active | Quant / Systematic | $1.84T | 8235 | 28% | 19% | $26.3B | +2.0% |
+| Bank of America Corp | Bank - Asset Manager - Index/Active | Macro / Allocator (ETF-heavy) | $1.56T | 5755 | 19% | 10% | $18.2B | +0.4% |
+| Invesco Ltd. | Asset Manager - Index/Active | Index / Broad Asset Manager | $1.27T | 3853 | 32% | 10% | $34.4B | +0.8% |
+| Susquehanna International Group, LLP | Market Maker - Quant | Multi-strategy / Options-heavy | $1.26T | 13390 | 26% | 23% | $1.0B | -2.1% |
+| Jane Street Group, LLC | Market Maker - Quant | Multi-strategy / Options-heavy | $1.19T | 11479 | 30% | 36% | $528M | -0.9% |
+| Goldman Sachs Group Inc | Bank - Asset Manager - Index/Active | Multi-strategy / Options-heavy | $1.17T | 6552 | 24% | 31% | $21.7B | +1.3% |
+| Price T Rowe Associates Inc /MD/ | Asset Manager - Active | Index / Broad Asset Manager | $993.7B | 3263 | 35% | 15% | -$3.3B | -0.5% |
+| Citadel Advisors LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $899.6B | 13843 | 22% | 33% | $41.1B | +2.8% |
+| Northern Trust Corp | Asset Manager - Index/Active | Index / Broad Asset Manager | $859.9B | 4415 | 31% | 5% | -$3.6B | +0.0% |
+| Capital World Investors | Asset Manager - Active | Index / Broad Asset Manager | $824.4B | 648 | 29% | 13% | -$7.1B | -2.6% |
+| Charles Schwab Investment Management Inc | Asset Manager - Index | Index / Broad Asset Manager | $774.4B | 3452 | 25% | 10% | $21.7B | +3.1% |
+| UBS Group AG | Bank - Asset Manager - Index/Active | Multi-strategy / Options-heavy | $765.0B | 11150 | 14% | 24% | -$14.4B | -2.7% |
+| Capital Research Global Investors | Asset Manager - Active | Quant / Systematic | $704.4B | 424 | 40% | 15% | -$2.7B | -1.7% |
+| Wells Fargo & Company/MN | Bank - Asset Manager - Index/Active | Macro / Allocator (ETF-heavy) | $643.7B | 7338 | 22% | 12% | $1.6B | +4.3% |
+| Wellington Management Group LLP | Asset Manager - Active | Quant / Systematic | $560.3B | 1899 | 29% | 23% | -$14.1B | -3.4% |
+| Dimensional Fund Advisors LP | Asset Manager - Quant | Index / Broad Asset Manager | $550.8B | 3224 | 19% | 8% | $6.1B | -0.2% |
+| Franklin Resources Inc | Asset Manager - Active | Quant / Systematic | $473.6B | 3172 | 26% | 16% | $2.4B | +2.5% |
+| AQR Capital Management LLC | Hedge Fund - Quant | Quant / Systematic | $337.4B | 4057 | 13% | 31% | $50.3B | +17.6% |
+| Berkshire Hathaway Inc | Conglomerate / Long-only Value | Concentrated Value | $304.2B | 30 | 89% | 2% | -$689M | +1.7% |
+| Millennium Management LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $302.2B | 6103 | 19% | 53% | $28.0B | +9.4% |
+| D. E. Shaw & Co., Inc. | Hedge Fund - Quant | Multi-strategy / Options-heavy | $209.0B | 4902 | 13% | 49% | $1.8B | -0.6% |
+| California Public Employees Retirement System | Pension Fund | Long-only Stock Picker | $190.8B | 1043 | 46% | 16% | $11.9B | +7.6% |
+| Dodge & Cox | Asset Manager - Value | Index / Broad Asset Manager | $186.6B | 225 | 29% | 10% | -$4.9B | -2.3% |
+| Canada Pension Plan Investment Board | Pension Fund | Quant / Systematic | $181.3B | 1710 | 30% | 23% | -$819M | +0.3% |
+| Two Sigma Investments, LP | Hedge Fund - Quant | Quant / Systematic | $141.9B | 4830 | 9% | 62% | $4.9B | +2.7% |
+| Qube Research & Technologies Ltd | Hedge Fund - Quant | Quant / Systematic | $123.0B | 3627 | 10% | 76% | $16.0B | +14.3% |
+| Marshall Wace, LLP | Hedge Fund - Quant | Quant / Systematic | $114.3B | 3082 | 31% | 86% | -$11.9B | -9.8% |
+| California State Teachers Retirement System | Pension Fund | Index / Broad Asset Manager | $109.2B | 3002 | 36% | 5% | -$875M | -0.2% |
+| Baillie Gifford & Co | Asset Manager - Growth | Quant / Systematic | $105.9B | 278 | 45% | 18% | -$7.8B | -3.9% |
+| Point72 Asset Management, L.P. | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $90.0B | 3856 | 10% | 74% | $2.9B | -0.7% |
+| Balyasny Asset Management LLC | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $85.6B | 2961 | 16% | 75% | $6.2B | +6.7% |
+| Brookfield Corp | Conglomerate / Long-only Value | Concentrated Value | $81.7B | 289 | 89% | 12% | $7.2B | +6.1% |
+| Harris Associates L P | Asset Manager - Value | Quant / Systematic | $76.8B | 176 | 31% | 19% | -$2.0B | +1.8% |
+| Tudor Investment Corp | Hedge Fund - Global Macro | Multi-strategy / Options-heavy | $76.6B | 3508 | 38% | 59% | $5.7B | +6.6% |
+| Renaissance Technologies LLC | Hedge Fund - Quant | Quant / Systematic | $73.4B | 3151 | 12% | 58% | $1.0B | +1.1% |
+| Adage Capital Partners GP, L.L.C. | Hedge Fund - Long/Short | Quant / Systematic | $71.4B | 1054 | 32% | 23% | -$354M | +0.1% |
+| New York State Common Retirement Fund | Pension Fund | Index / Broad Asset Manager | $71.3B | 2975 | 40% | 14% | -$8.2B | -10.0% |
+| Man Group plc | Hedge Fund - Quant | Quant / Systematic | $67.8B | 2329 | 16% | 45% | $4.1B | +8.1% |
+| Coatue Management LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $54.5B | 73 | 56% | 32% | $9.4B | +12.1% |
+| State of Wisconsin Investment Board | Pension Fund | Index / Broad Asset Manager | $50.4B | 2658 | 29% | 9% | $886M | +1.7% |
+| TCI Fund Management Ltd | Hedge Fund - Activist | Concentrated / Activist | $49.6B | 12 | 99% | 1% | $179M | -6.0% |
+| Temasek Holdings (Private) Ltd | Sovereign Wealth Fund | Concentrated Value | $36.7B | 190 | 53% | 17% | -$1.1B | -1.5% |
+| Blackstone Inc. | Alternatives - Opportunistic / Credit | Concentrated Value | $34.7B | 402 | 65% | 41% | -$2.3B | -11.9% |
+| Hudson Bay Capital Management LP | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $33.0B | 1335 | 24% | 73% | -$4.2B | -10.5% |
+| Viking Global Investors LP | Hedge Fund - Long/Short | Long-only Stock Picker | $32.7B | 79 | 34% | 68% | -$1.7B | -6.8% |
+| D1 Capital Partners L.P. | Hedge Fund - Long/Short Growth | Concentrated Value | $31.8B | 44 | 75% | 29% | $87M | -8.5% |
+| Bill & Melinda Gates Foundation Trust | Foundation / Endowment | Concentrated Value | $29.9B | 25 | 94% | 8% | -$2.2B | -13.2% |
+| Elliott Investment Management L.P. | Hedge Fund - Activist | Multi-strategy / Options-heavy | $28.6B | 39 | 76% | 28% | $3.5B | +26.3% |
+| Farallon Capital Management, L.L.C. | Hedge Fund - Multi-strategy | Concentrated Value | $23.2B | 116 | 61% | 36% | -$556M | +0.7% |
+| Bridgewater Associates, LP | Hedge Fund - Global Macro | Quant / Systematic | $23.0B | 974 | 28% | 60% | -$1.1B | -5.7% |
+| Voloridge Investment Management, LLC | Hedge Fund - Quant | Quant / Systematic | $22.2B | 630 | 15% | 92% | -$1.0B | -5.5% |
+| Tiger Global Management LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $20.2B | 45 | 67% | 27% | -$3.6B | -15.9% |
+| ExodusPoint Capital Management, LP | Hedge Fund - Multi-strategy | Multi-strategy / Options-heavy | $19.0B | 1606 | 25% | 124% | $3.5B | +22.1% |
+| ARK Investment Management LLC | Asset Manager - Growth | Quant / Systematic | $17.4B | 182 | 40% | 32% | $284M | +12.8% |
+| Lone Pine Capital LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $15.3B | 31 | 56% | 119% | $687M | -6.3% |
+| Maverick Capital Ltd | Hedge Fund - Long/Short | Long-only Stock Picker | $12.8B | 502 | 49% | 65% | $1.2B | +13.2% |
+| Whale Rock Capital Management LLC | Hedge Fund - Long/Short Growth | Long-only Stock Picker | $11.4B | 40 | 50% | 53% | $385M | -8.1% |
+| Ontario Teachers Pension Plan Board | Pension Fund | Concentrated Value | $11.3B | 66 | 71% | 46% | -$3.1B | -28.3% |
+| Altimeter Capital Management, LP | Hedge Fund - Long/Short Growth | Concentrated / Activist | $10.3B | 17 | 86% | 33% | $279M | +4.9% |
+| Icahn Carl C | Hedge Fund - Activist | Concentrated / Activist | $9.4B | 10 | 100% | 7% | -$111M | +14.1% |
+| Polen Capital Management LLC | Asset Manager - Growth | Concentrated Value | $9.2B | 256 | 58% | 45% | -$2.8B | -20.7% |
+| Tower Research Capital LLC (TRC) | Market Maker - Quant | Quant / Systematic | $9.0B | 5890 | 27% | 107% | $5.1B | +120.7% |
+| Soros Fund Management LLC | Family Office - Macro | Multi-strategy / Options-heavy | $8.5B | 263 | 34% | 89% | $555M | +4.5% |
+| Apollo Management Holdings, L.P. | Alternatives - Opportunistic / Credit | Multi-strategy / Options-heavy | $8.1B | 80 | 72% | 54% | $525M | -8.9% |
+| Appaloosa LP | Hedge Fund - Opportunistic | Concentrated Value | $7.6B | 24 | 80% | 35% | $121M | -2.1% |
+| ValueAct Holdings, L.P. | Hedge Fund - Activist | Concentrated Value | $6.2B | 21 | 78% | 31% | $228M | +9.6% |
+| Glenview Capital Management, LLC | Hedge Fund - Long/Short | Concentrated Value | $6.1B | 140 | 56% | 61% | $293M | +11.6% |
+| Dragoneer Investment Group, LLC | Hedge Fund - Long/Short Growth | Concentrated / Activist | $6.0B | 14 | 97% | 105% | $3.4B | +112.8% |
+| Baupost Group LLC/MA | Hedge Fund - Value | Concentrated Value | $5.0B | 21 | 77% | 23% | -$321M | -6.8% |
+| Starboard Value LP | Hedge Fund - Activist | Concentrated Value | $4.7B | 22 | 84% | 25% | $99M | +3.3% |
+| Third Point LLC | Hedge Fund - Event Driven | Concentrated Value | $4.6B | 39 | 61% | 103% | $254M | -1.9% |
+| Duquesne Family Office LLC | Family Office - Macro | Concentrated Value | $4.5B | 65 | 64% | 69% | -$1.1B | -14.2% |
+| Akre Capital Management LLC | Asset Manager - Value | Concentrated Value | $4.4B | 21 | 86% | 15% | -$632M | -13.6% |
+| Flow Traders U.S. LLC | Market Maker - Quant | Macro / Allocator (ETF-heavy) | $4.1B | 962 | 46% | 153% | $1.7B | +69.2% |
+| Harvard Management Co Inc | Foundation / Endowment | Concentrated / Activist | $4.0B | 18 | 89% | 51% | -$131M | -7.3% |
+| DME Capital Management, LP (ex Greenlight Capital) | Hedge Fund - Value | Concentrated Value | $3.6B | 45 | 53% | 29% | $22M | -9.1% |
+| Paulson & Co. Inc. | Hedge Fund - Event Driven | Concentrated / Activist | $2.9B | 9 | 100% | 5% | $122M | +13.2% |
+| Fairfax Financial Holdings Ltd | Conglomerate / Long-only Value | Concentrated Value | $2.6B | 34 | 90% | 49% | $110M | +0.4% |
+| Trian Fund Management, L.P. | Hedge Fund - Activist | Concentrated / Activist | $2.6B | 8 | 100% | 54% | -$1.4B | -38.6% |
+| PDT Partners, LLC | Hedge Fund - Quant | Quant / Systematic | $1.8B | 515 | 13% | 61% | -$117M | -7.0% |
+| Jana Partners LLC | Hedge Fund - Activist | Concentrated / Activist | $1.6B | 10 | 100% | 30% | -$41M | -16.5% |
+| Light Street Capital Management, LLC | Hedge Fund - Long/Short Growth | Concentrated Value | $738M | 22 | 75% | 63% | -$135M | -18.2% |
 
 
 ## Actividad por tipo de manager
 
 | Tipo de manager | Managers | Valor 13F | Flujo neto | Flujo neto / valor | Flujo bruto | Nuevas | Salidas |
 |---|---|---|---|---|---|---|---|
-| Bank - Asset Manager - Index/Active | 6 | $7.80T | $372.8B | +4.8% | $1.36T | 4633 | 4108 |
-| Asset Manager - Active | 6 | $5.91T | $95.8B | +1.6% | $1.18T | 1229 | 888 |
-| Market Maker - Quant | 4 | $2.50T | $413.7B | +16.6% | $825.0B | 6008 | 5725 |
-| Hedge Fund - Multi-strategy | 7 | $1.40T | $117.9B | +8.4% | $681.6B | 6913 | 5772 |
-| Asset Manager - Index/Active | 3 | $8.85T | $215.0B | +2.4% | $593.1B | 796 | 661 |
-| Hedge Fund - Quant | 9 | $1.03T | $57.5B | +5.6% | $559.8B | 5006 | 4464 |
-| Asset Manager - Index | 3 | $6.00T | $141.7B | +2.4% | $302.4B | 374 | 548 |
-| Pension Fund | 6 | $611.4B | $9.9B | +1.6% | $123.5B | 891 | 826 |
-| Hedge Fund - Long/Short Growth | 8 | $149.8B | $34.5B | +23.0% | $84.4B | 82 | 71 |
-| Hedge Fund - Global Macro | 2 | $96.3B | $5.1B | +5.3% | $63.1B | 1156 | 1209 |
-| Hedge Fund - Long/Short | 4 | $123.2B | -$4.1B | -3.3% | $54.0B | 313 | 315 |
-| Asset Manager - Quant | 1 | $551.8B | $9.3B | +1.7% | $44.5B | 110 | 104 |
-| Asset Manager - Value | 3 | $271.6B | $2.2B | +0.8% | $42.3B | 22 | 18 |
-| Asset Manager - Growth | 3 | $137.2B | $251M | +0.2% | $36.2B | 112 | 103 |
-| Conglomerate / Long-only Value | 3 | $378.9B | $18.4B | +4.9% | $29.5B | 23 | 13 |
-| Hedge Fund - Activist | 7 | $100.0B | $2.3B | +2.3% | $17.4B | 12 | 20 |
-| Alternatives - Opportunistic / Credit | 2 | $41.9B | $5.9B | +14.1% | $17.4B | 299 | 197 |
-| Family Office - Macro | 2 | $13.4B | -$407M | -3.0% | $9.4B | 146 | 118 |
-| Sovereign Wealth Fund | 1 | $1.04T | $3.9B | +0.4% | $9.0B | 67 | 22 |
-| Foundation / Endowment | 2 | $38.7B | $1.6B | +4.0% | $5.3B | 8 | 4 |
-| Hedge Fund - Opportunistic | 1 | $7.7B | -$339M | -4.4% | $3.3B | 8 | 12 |
-| Hedge Fund - Event Driven | 2 | $7.3B | $2.0B | +27.5% | $3.3B | 20 | 11 |
-| Hedge Fund - Value | 2 | $9.3B | -$12M | -0.1% | $2.7B | 10 | 8 |
+| Bank - Asset Manager - Index/Active | 6 | $7.93T | $113.9B | +1.4% | $1.31T | 5121 | 4221 |
+| Asset Manager - Active | 6 | $5.87T | $2.8B | +0.0% | $1.00T | 1101 | 903 |
+| Market Maker - Quant | 4 | $2.46T | $8.3B | +0.3% | $733.2B | 6209 | 5307 |
+| Hedge Fund - Multi-strategy | 7 | $1.45T | $77.0B | +5.3% | $628.9B | 6374 | 5732 |
+| Hedge Fund - Quant | 9 | $1.09T | $65.2B | +6.0% | $573.0B | 4748 | 4613 |
+| Asset Manager - Index/Active | 3 | $8.93T | $101.5B | +1.1% | $530.2B | 673 | 555 |
+| Asset Manager - Index | 3 | $6.13T | $110.1B | +1.8% | $354.3B | 485 | 490 |
+| Pension Fund | 6 | $614.3B | -$211M | -0.0% | $98.1B | 597 | 664 |
+| Hedge Fund - Long/Short Growth | 8 | $150.3B | $10.5B | +7.0% | $65.9B | 50 | 60 |
+| Hedge Fund - Global Macro | 2 | $99.6B | $4.6B | +4.6% | $57.9B | 1031 | 1003 |
+| Hedge Fund - Long/Short | 4 | $123.1B | -$577M | -0.5% | $50.7B | 693 | 234 |
+| Asset Manager - Quant | 1 | $550.8B | $6.1B | +1.1% | $43.7B | 98 | 95 |
+| Asset Manager - Value | 3 | $267.8B | -$7.5B | -2.8% | $34.6B | 30 | 12 |
+| Asset Manager - Growth | 3 | $132.5B | -$10.4B | -7.8% | $29.5B | 110 | 76 |
+| Alternatives - Opportunistic / Credit | 2 | $42.8B | -$1.8B | -4.2% | $19.9B | 186 | 313 |
+| Conglomerate / Long-only Value | 3 | $388.6B | $6.7B | +1.7% | $16.0B | 169 | 16 |
+| Hedge Fund - Activist | 7 | $102.7B | $2.5B | +2.4% | $13.7B | 26 | 14 |
+| Family Office - Macro | 2 | $13.0B | -$585M | -4.5% | $10.7B | 116 | 149 |
+| Sovereign Wealth Fund | 1 | $36.7B | -$1.1B | -2.9% | $6.4B | 20 | 26 |
+| Hedge Fund - Event Driven | 2 | $7.5B | $376M | +5.0% | $4.9B | 13 | 16 |
+| Foundation / Endowment | 2 | $33.8B | -$2.4B | -7.0% | $4.6B | 3 | 3 |
+| Hedge Fund - Opportunistic | 1 | $7.6B | $121M | +1.6% | $2.7B | 4 | 7 |
+| Hedge Fund - Value | 2 | $8.6B | -$299M | -3.5% | $2.3B | 9 | 12 |
 
 
 ## Exposición por tipo de activo (promedio simple entre managers)
 
 | Tipo de activo | Peso promedio | Δ vs. trimestre previo |
 |---|---|---|
-| Equity | 84.8% | -0.6 pp |
-| Options | 8.5% | +0.5 pp |
-| Equity (ETF) | 4.9% | +0.2 pp |
-| Preferred | 0.7% | +0.1 pp |
-| Fixed Income (ETF) | 0.4% | -0.1 pp |
-| Debt | 0.4% | -0.1 pp |
-| Commodity (ETF) | 0.2% | -0.1 pp |
+| Equity | 84.4% | -0.5 pp |
+| Options | 9.1% | +0.6 pp |
+| Equity (ETF) | 4.7% | -0.2 pp |
+| Preferred | 0.6% | -0.1 pp |
+| Debt | 0.5% | +0.1 pp |
+| Fixed Income (ETF) | 0.4% | 0.0 pp |
+| Commodity (ETF) | 0.3% | +0.1 pp |
 | Warrants/Rights | 0.0% | 0.0 pp |
 
 
 ## Exposición sectorial (renta variable directa)
 
-_Pesos sobre el libro de **acciones directas** (sin ETFs, opciones, deuda ni preferentes). **EW** = promedio simple de los 82 managers activos (se excluyen los managers índice). Benchmark: **Índice implícito (managers índice, ponderado por valor)**, construido con los 6 managers índice del universo. Peso activo = EW − benchmark. Percentil histórico = posición del peso actual dentro de toda su historia disponible (mínimo 4 trimestres); vs prom. = diferencia contra el promedio de los 8 trimestres previos._
+_Pesos sobre el libro de **acciones directas** (sin ETFs, opciones, deuda ni preferentes). **EW** = promedio simple de los 81 managers activos (se excluyen los managers índice). Benchmark: **Índice implícito (managers índice, ponderado por valor)**, construido con los 6 managers índice del universo. Peso activo = EW − benchmark. Percentil histórico = posición del peso actual dentro de toda su historia disponible (mínimo 4 trimestres); vs prom. = diferencia contra el promedio de los 8 trimestres previos._
 
 ### Nivel, cambio e historia
 
 | Sector | Peso EW | Δ QoQ | Δ YoY | vs prom. 8T | Percentil hist. (0-100) | Mín. hist. | Máx. hist. |
 |---|---|---|---|---|---|---|---|
-| Information Technology | 30.1% | +6.3 pp | +6.6 pp | +6.5 pp | 100 | 12.0% | 30.1% |
-| Financials | 13.3% | -0.7 pp | -2.1 pp | -0.7 pp | 82 | 11.5% | 15.8% |
-| Industrials | 11.6% | -1.0 pp | -0.1 pp | -0.2 pp | 82 | 8.4% | 12.6% |
-| Health Care | 10.5% | -0.1 pp | -0.3 pp | -0.4 pp | 22 | 9.3% | 13.3% |
-| Consumer Discretionary | 8.8% | -1.8 pp | -2.1 pp | -2.1 pp | 2 | 8.8% | 14.1% |
-| Communication Services | 7.1% | -0.9 pp | -0.6 pp | -1.2 pp | 8 | 6.9% | 9.7% |
-| Energy | 4.7% | -0.6 pp | +0.1 pp | -0.4 pp | 38 | 2.7% | 6.5% |
-| Materials | 4.2% | -0.3 pp | +0.5 pp | +0.5 pp | 98 | 2.2% | 4.4% |
-| Consumer Staples | 3.3% | +0.1 pp | -0.7 pp | -0.5 pp | 5 | 3.2% | 6.0% |
-| Unclassified | 2.4% | -0.3 pp | -0.9 pp | -0.9 pp | 2 | 2.4% | 17.6% |
-| Real Estate | 2.1% | -0.4 pp | -0.2 pp | -0.4 pp | 2 | 2.1% | 3.9% |
-| Utilities | 1.9% | -0.2 pp | -0.2 pp | -0.3 pp | 35 | 1.2% | 2.7% |
+| Information Technology | 29.9% | -0.2 pp | +5.8 pp | +5.6 pp | 98 | 12.5% | 30.0% |
+| Financials | 13.2% | -0.1 pp | -2.6 pp | -1.0 pp | 80 | 11.5% | 15.8% |
+| Health Care | 11.4% | +0.8 pp | +1.3 pp | +0.6 pp | 45 | 9.3% | 13.3% |
+| Industrials | 11.1% | -0.5 pp | -0.7 pp | -0.8 pp | 75 | 8.4% | 12.6% |
+| Consumer Discretionary | 8.7% | -0.1 pp | -2.3 pp | -2.0 pp | 2 | 8.7% | 14.1% |
+| Communication Services | 7.6% | +0.5 pp | -0.5 pp | -0.5 pp | 12 | 6.9% | 9.7% |
+| Energy | 5.2% | +0.6 pp | +0.5 pp | +0.3 pp | 55 | 2.7% | 6.5% |
+| Materials | 4.1% | -0.1 pp | +0.4 pp | +0.3 pp | 95 | 2.2% | 4.4% |
+| Consumer Staples | 3.2% | -0.1 pp | -0.3 pp | -0.6 pp | 2 | 3.2% | 5.2% |
+| Unclassified | 2.1% | -0.4 pp | -0.8 pp | -1.1 pp | 2 | 2.1% | 17.6% |
+| Real Estate | 1.9% | -0.2 pp | -0.5 pp | -0.6 pp | 2 | 1.9% | 3.9% |
+| Utilities | 1.8% | -0.1 pp | -0.3 pp | -0.3 pp | 22 | 1.2% | 2.7% |
 
 
 ### Flujo vs. precio en el trimestre (managers activos)
@@ -186,18 +185,18 @@ _Descomposición en dólares del Δ valor de cada sector: flujo neto (compras �
 
 | Sector | Flujo neto | Efecto precio | Flujo bruto | Compras | Ventas | Δ peso EW |
 |---|---|---|---|---|---|---|
-| Information Technology | $255.4B | $1.15T | $1.19T | 7571 | 7041 | +6.3 pp |
-| Consumer Discretionary | $49.4B | $42.4B | $270.6B | 4474 | 4392 | -1.8 pp |
-| Communication Services | $27.2B | $87.6B | $231.2B | 2123 | 2025 | -0.9 pp |
-| Industrials | $21.5B | $202.8B | $417.4B | 7878 | 7544 | -1.0 pp |
-| Materials | $9.6B | $2.9B | $113.0B | 3403 | 3057 | -0.3 pp |
-| Consumer Staples | $6.8B | $10.4B | $95.0B | 1601 | 1616 | +0.1 pp |
-| Utilities | $6.8B | -$1.5B | $68.0B | 1283 | 1199 | -0.2 pp |
-| Health Care | $4.6B | $163.7B | $376.8B | 8959 | 8254 | -0.1 pp |
-| Energy | $1.6B | -$88.0B | $128.8B | 2784 | 2454 | -0.6 pp |
-| Unclassified | $186M | $16.4B | $81.5B | 10524 | 9470 | -0.3 pp |
-| Real Estate | $36M | $29.1B | $73.3B | 3446 | 3369 | -0.4 pp |
-| Financials | -$5.1B | $162.8B | $341.3B | 9893 | 8893 | -0.7 pp |
+| Information Technology | $35.9B | $122.4B | $939.0B | 7230 | 7142 | -0.2 pp |
+| Unclassified | $15.3B | -$12.6B | $85.9B | 10722 | 9327 | -0.4 pp |
+| Energy | $15.2B | $60.6B | $311.0B | 2692 | 2512 | +0.6 pp |
+| Health Care | $12.3B | $93.8B | $375.7B | 8685 | 8041 | +0.8 pp |
+| Communication Services | $8.8B | $34.7B | $169.2B | 2038 | 2029 | +0.5 pp |
+| Utilities | $1.1B | -$38.0B | $56.0B | 1287 | 1123 | -0.1 pp |
+| Consumer Staples | -$233M | -$15.5B | $95.1B | 1484 | 1642 | -0.1 pp |
+| Real Estate | -$1.7B | -$17.6B | $70.0B | 3423 | 3301 | -0.2 pp |
+| Materials | -$3.0B | -$13.7B | $101.9B | 3280 | 3043 | -0.1 pp |
+| Consumer Discretionary | -$23.8B | -$57.2B | $234.4B | 4305 | 4271 | -0.1 pp |
+| Industrials | -$32.2B | -$163.4B | $327.8B | 7651 | 7327 | -0.5 pp |
+| Financials | -$32.5B | -$25.3B | $338.0B | 9654 | 8756 | -0.1 pp |
 
 
 ### Posicionamiento relativo al benchmark
@@ -206,52 +205,52 @@ _Benchmark = Índice implícito (managers índice, ponderado por valor). Peso ac
 
 | Sector | Peso EW | Benchmark | Peso activo | Δ activo QoQ | % managers OW |
 |---|---|---|---|---|---|
-| Financials | 13.3% | 11.3% | +2.0 pp | 0.0 pp | 56% |
-| Materials | 4.2% | 2.4% | +1.7 pp | 0.0 pp | 57% |
-| Unclassified | 2.4% | 0.7% | +1.7 pp | -0.2 pp | 62% |
-| Energy | 4.7% | 3.5% | +1.2 pp | +0.5 pp | 41% |
-| Industrials | 11.6% | 10.5% | +1.1 pp | -0.8 pp | 52% |
-| Health Care | 10.5% | 9.6% | +0.9 pp | +0.4 pp | 48% |
-| Consumer Discretionary | 8.8% | 8.7% | +0.2 pp | -1.2 pp | 52% |
-| Utilities | 1.9% | 2.2% | -0.3 pp | +0.1 pp | 34% |
-| Real Estate | 2.1% | 2.8% | -0.7 pp | -0.3 pp | 26% |
-| Consumer Staples | 3.3% | 4.2% | -0.9 pp | +0.8 pp | 26% |
-| Communication Services | 7.1% | 8.5% | -1.4 pp | -0.2 pp | 37% |
-| Information Technology | 30.1% | 35.6% | -5.5 pp | +1.0 pp | 29% |
+| Financials | 13.2% | 11.0% | +2.2 pp | +0.2 pp | 59% |
+| Materials | 4.1% | 2.3% | +1.8 pp | 0.0 pp | 57% |
+| Industrials | 11.1% | 9.4% | +1.7 pp | +0.7 pp | 47% |
+| Health Care | 11.4% | 10.0% | +1.4 pp | +0.5 pp | 52% |
+| Unclassified | 2.1% | 0.7% | +1.3 pp | -0.4 pp | 67% |
+| Energy | 5.2% | 4.0% | +1.2 pp | +0.1 pp | 40% |
+| Consumer Discretionary | 8.7% | 8.1% | +0.6 pp | +0.4 pp | 58% |
+| Utilities | 1.8% | 1.9% | -0.1 pp | +0.2 pp | 38% |
+| Real Estate | 1.9% | 2.6% | -0.7 pp | 0.0 pp | 28% |
+| Consumer Staples | 3.2% | 4.1% | -0.9 pp | 0.0 pp | 25% |
+| Communication Services | 7.6% | 8.6% | -1.0 pp | +0.3 pp | 41% |
+| Information Technology | 29.9% | 37.4% | -7.5 pp | -2.0 pp | 27% |
 
 
 ### Trayectoria del peso EW (últimos 8 trimestres)
 
-| Sector | 2024Q3 | 2024Q4 | 2025Q1 | 2025Q2 | 2025Q3 | 2025Q4 | 2026Q1 | 2026Q2 |
+| Sector | 2024Q4 | 2025Q1 | 2025Q2 | 2025Q3 | 2025Q4 | 2026Q1 | 2026Q2 | 2026Q3 |
 |---|---|---|---|---|---|---|---|---|
-| Information Technology | 23.4% | 23.8% | 21.6% | 23.5% | 24.0% | 24.1% | 23.8% | 30.1% |
-| Financials | 12.1% | 13.0% | 14.5% | 15.4% | 15.8% | 15.2% | 14.1% | 13.3% |
-| Industrials | 11.7% | 11.6% | 11.8% | 11.7% | 11.9% | 12.1% | 12.6% | 11.6% |
-| Health Care | 11.3% | 11.2% | 11.2% | 10.8% | 10.1% | 10.5% | 10.6% | 10.5% |
-| Consumer Discretionary | 11.3% | 11.2% | 10.4% | 11.0% | 11.0% | 10.9% | 10.7% | 8.8% |
-| Communication Services | 8.6% | 8.6% | 8.0% | 7.7% | 8.1% | 8.3% | 8.0% | 7.1% |
-| Energy | 5.3% | 5.2% | 5.2% | 4.6% | 4.7% | 4.5% | 5.3% | 4.7% |
-| Materials | 3.5% | 3.2% | 3.5% | 3.6% | 3.7% | 4.0% | 4.4% | 4.2% |
-| Consumer Staples | 3.5% | 3.9% | 5.2% | 3.9% | 3.5% | 3.3% | 3.2% | 3.3% |
-| Unclassified | 4.0% | 3.5% | 3.6% | 3.3% | 2.9% | 2.7% | 2.8% | 2.4% |
-| Real Estate | 2.7% | 2.5% | 2.5% | 2.3% | 2.4% | 2.5% | 2.5% | 2.1% |
-| Utilities | 2.5% | 2.3% | 2.2% | 2.1% | 2.1% | 2.0% | 2.1% | 1.9% |
+| Information Technology | 23.8% | 21.6% | 23.5% | 24.1% | 24.1% | 23.7% | 30.0% | 29.9% |
+| Financials | 13.0% | 14.5% | 15.4% | 15.8% | 15.2% | 14.0% | 13.3% | 13.2% |
+| Health Care | 11.2% | 11.2% | 10.8% | 10.1% | 10.7% | 10.8% | 10.6% | 11.4% |
+| Industrials | 11.6% | 11.8% | 11.7% | 11.8% | 12.0% | 12.6% | 11.6% | 11.1% |
+| Consumer Discretionary | 11.2% | 10.4% | 11.0% | 11.0% | 10.9% | 10.7% | 8.8% | 8.7% |
+| Communication Services | 8.6% | 8.0% | 7.7% | 8.1% | 8.3% | 8.0% | 7.2% | 7.6% |
+| Energy | 5.2% | 5.2% | 4.6% | 4.6% | 4.3% | 5.2% | 4.6% | 5.2% |
+| Materials | 3.2% | 3.5% | 3.6% | 3.7% | 4.0% | 4.4% | 4.2% | 4.1% |
+| Consumer Staples | 3.9% | 5.2% | 3.9% | 3.5% | 3.4% | 3.3% | 3.3% | 3.2% |
+| Unclassified | 3.5% | 3.6% | 3.3% | 2.9% | 2.7% | 2.8% | 2.5% | 2.1% |
+| Real Estate | 2.5% | 2.5% | 2.3% | 2.4% | 2.5% | 2.5% | 2.1% | 1.9% |
+| Utilities | 2.3% | 2.2% | 2.1% | 2.1% | 1.9% | 2.1% | 1.9% | 1.8% |
 
 
 ## Consenso: posiciones más compartidas
 
 | Emisor | Ticker | Sector | Tenedores | Valor agregado | Compradores netos |
 |---|---|---|---|---|---|
-| AMAZON COM INC (AMZN) | AMZN | Consumer Discretionary | 71 | $836.7B | 16 |
-| ALPHABET INC (GOOGL) | GOOGL | Communication Services | 67 | $825.0B | 7 |
-| META PLATFORMS INC (META) | META | Communication Services | 65 | $491.5B | 0 |
-| NVIDIA CORPORATION (NVDA) | NVDA | Information Technology | 63 | $1.68T | -3 |
-| MICROSOFT CORP (MSFT) | MSFT | Information Technology | 62 | $971.5B | -4 |
-| ADVANCED MICRO DEVICES INC (AMD) | AMD | Information Technology | 62 | $347.8B | 17 |
-| BROADCOM INC (AVGO) | AVGO | Information Technology | 60 | $714.1B | -11 |
-| TAIWAN SEMICONDUCTOR MANUFAC (TSM) | TSM | Information Technology | 59 | $140.5B | -12 |
-| ALPHABET INC (GOOG) | GOOG | Communication Services | 57 | $588.8B | 16 |
-| VISA INC (V) | V | Financials | 57 | $229.7B | -1 |
+| AMAZON COM INC (AMZN) | AMZN | Consumer Discretionary | 69 | $837.6B | -4 |
+| META PLATFORMS INC (META) | META | Communication Services | 65 | $624.2B | 7 |
+| NVIDIA CORPORATION (NVDA) | NVDA | Information Technology | 64 | $1.85T | 9 |
+| ALPHABET INC (GOOGL) | GOOGL | Communication Services | 61 | $768.2B | -8 |
+| MICROSOFT CORP (MSFT) | MSFT | Information Technology | 60 | $1.32T | 6 |
+| BROADCOM INC (AVGO) | AVGO | Information Technology | 60 | $634.6B | 3 |
+| ALPHABET INC (GOOG) | GOOG | Communication Services | 58 | $542.9B | -4 |
+| SPACE EXPLORATION TECHN CORP (SPCX) | SPCX | Information Technology | 58 | $143.3B | 13 |
+| ADVANCED MICRO DEVICES INC (AMD) | AMD | Information Technology | 57 | $364.2B | -5 |
+| INTEL CORP (INTC) | INTC | Information Technology | 57 | $218.3B | 32 |
 
 
 ## Consenso: compras y ventas netas
@@ -260,28 +259,28 @@ _Benchmark = Índice implícito (managers índice, ponderado por valor). Peso ac
 
 | Emisor | Compradores | Vendedores | Nuevos | Flujo neto |
 |---|---|---|---|---|
-| SPACE EXPLORATION TECHN CORP (SPCX) | 54 | 0 | 54 | $138.7B |
-| CEREBRAS SYSTEMS INC (CBRS) | 42 | 0 | 42 | $11.3B |
-| KLA CORP (KLAC) | 44 | 3 | 6 | $143.9B |
-| BOOKING HOLDINGS INC (BKNG) | 45 | 6 | 1 | $57.2B |
-| HONEYWELL INTL INC (HON) | 39 | 0 | 39 | $22.8B |
-| CARNIVAL CORP LTD (CCL) | 40 | 1 | 38 | $10.8B |
-| HONEYWELL AEROSPACE INC (HONA) | 38 | 0 | 38 | $23.5B |
-| CARVANA CO (CVNA) | 44 | 6 | 3 | $20.3B |
+| EXXONMOBIL HOLDINGS CORP (XOM) | 43 | 0 | 43 | $218.6B |
+| SK HYNIX INC | 41 | 0 | 41 | $17.8B |
+| TEVA PHARMACEUTICAL INDS LTD (TEVA) | 39 | 0 | 39 | $8.8B |
+| ONEOK INC (OKE) | 37 | 0 | 37 | $19.0B |
+| MONSTER BEVERAGE CORP NEW (MNST) | 40 | 4 | 3 | $13.2B |
+| GATES INDL CORP LTD (GTES) | 36 | 0 | 36 | $3.1B |
+| WAVE LIFE SCIENCES INC (WVE) | 36 | 0 | 36 | $295M |
+| CROWDSTRIKE HLDGS INC (CRWD) | 41 | 6 | 3 | $76.5B |
 
 
 **Más vendidos:**
 
 | Emisor | Compradores | Vendedores | Salidas | Flujo neto |
 |---|---|---|---|---|
-| CARNIVAL CORP COMMON STOCK (CCL) | 1 | 38 | 38 | -$8.2B |
-| SLEEP NUMBER CORP (SNBRQ) | 1 | 28 | 28 | -$15M |
-| ASCENDIS PHARMA A/S (ASND) | 1 | 26 | 26 | -$2.8B |
-| BANK OF AMER CORP (BAC) | 15 | 35 | 3 | -$4.6B |
-| SPOTIFY TECHNOLOGY S A (SPOT) | 17 | 37 | 7 | -$1.5B |
-| MID-AMERICA APARTMENT COMMUNITIES INC (MAA) | 9 | 28 | 7 | $196M |
-| PROGRESSIVE CORP (PGR) | 13 | 31 | 6 | -$860M |
-| SANGAMO BIOSCIENCES INC (SGMOQ) | 1 | 19 | 19 | -$9M |
+| FIRST CTZNS BANCSHARES INC D (FCNCA) | 9 | 30 | 5 | -$454M |
+| AXIA ENERGIA-ADR (AXIAY) | 0 | 21 | 20 | -$246M |
+| SELECTQUOTE INC (SLQT) | 5 | 25 | 7 | -$3M |
+| ACCURAY INC DEL (ARAY) | 2 | 22 | 5 | -$2M |
+| FRANKLIN STR PPTYS CORP (FSP) | 3 | 23 | 6 | -$2M |
+| TECHNIPFMC PLC (FTI) | 11 | 30 | 4 | -$565M |
+| PLAYSTUDIOS INC | 4 | 23 | 9 | -$1M |
+| INSMED INC (INSM) | 13 | 31 | 3 | -$972M |
 
 
 ## Empresas que más se movieron (agregado del universo)
@@ -292,9 +291,9 @@ _Solo acciones directas (común, ADR, REIT; sin opciones, ETFs, preferentes ni d
 
 | Magnitud | Empresas | % del universo | Flujo neto | Flujo bruto |
 |---|---|---|---|---|
-| Mayor | 6360 | 71% | $647.0B | $2.23T |
-| Menor | 1740 | 19% | $70.8B | $1.14T |
-| Sin cambio | 885 | 10% | $20.7B | $849.9B |
+| Mayor | 6205 | 67% | $233.2B | $2.00T |
+| Menor | 2007 | 22% | -$33.3B | $1.23T |
+| Sin cambio | 1006 | 11% | -$473M | $720.8B |
 
 
 ### Mayores movimientos por monto (flujo bruto)
@@ -303,86 +302,86 @@ _Ordenado por flujo bruto (compras + ventas en dólares). Un nombre puede tener 
 
 | Emisor | Sector | Cambio neto | Tenedores (prev → act.) | Compr. / Vend. | Δ títulos | Flujo neto | Efecto precio | Valor agregado |
 |---|---|---|---|---|---|---|---|---|
-| Kla Corp (KLAC) | Information Technology | Mayor | 41 → 45 | 44 / 3 | +923.8% | $143.9B | -$60.5B | $159.5B |
-| Space Exploration Techn Corp (SPCX) | Information Technology | Mayor | 0 → 54 | 54 / 0 | nueva | $138.7B | -$0 | $138.7B |
-| Micron Technology Inc (MU) | Information Technology | Sin cambio | 51 → 51 | 24 / 31 | -0.5% | -$2.1B | $357.5B | $503.2B |
-| Alphabet Inc (GOOGL) | Communication Services | Mayor | 62 → 66 | 37 / 30 | +4.6% | $35.2B | $149.3B | $796.0B |
-| Apple Inc (AAPL) | Information Technology | Sin cambio | 54 → 52 | 24 / 29 | +0.7% | $10.0B | $162.4B | $1.33T |
-| Booking Holdings Inc (BKNG) | Consumer Discretionary | Mayor | 50 → 45 | 45 / 6 | +2351.4% | $57.2B | -$54.9B | $59.9B |
-| Marvell Technology Inc (MRVL) | Information Technology | Mayor | 41 → 47 | 27 / 22 | -8.2% | -$8.6B | $74.7B | $103.6B |
-| Sandisk Corp (SNDK) | Information Technology | Mayor | 47 → 49 | 18 / 32 | -8.0% | -$11.2B | $99.3B | $126.8B |
-| Nvidia Corporation (NVDA) | Information Technology | Sin cambio | 66 → 62 | 31 / 34 | +0.7% | $11.7B | $208.3B | $1.62T |
-| Honeywell Intl Inc (HON) | Industrials | Mayor | 44 → 0 | 0 / 44 | -100.0% | -$53.2B | -$0 | $0 |
-| Microsoft Corp (MSFT) | Information Technology | Sin cambio | 64 → 61 | 30 / 34 | +0.1% | $955M | $8.0B | $933.2B |
-| Advanced Micro Devices Inc (AMD) | Information Technology | Mayor | 53 → 61 | 39 / 22 | +10.0% | $30.0B | $197.6B | $334.3B |
-| Meta Platforms Inc (META) | Communication Services | Sin cambio | 64 → 64 | 33 / 33 | -0.4% | -$2.0B | -$5.7B | $473.1B |
-| Alphabet Inc (GOOG) | Communication Services | Mayor | 57 → 56 | 38 / 22 | +5.2% | $28.1B | $101.9B | $562.4B |
-| Broadcom Inc (AVGO) | Information Technology | Menor | 64 → 59 | 27 / 38 | +2.0% | $13.8B | $123.0B | $689.2B |
+| Exxonmobil Holdings Corp (XOM) | Energy | Mayor | 0 → 43 | 43 / 0 | nueva | $218.6B | -$0 | $218.6B |
+| Exxon Mobil Corp (XOM) | Energy | Mayor | 42 → 0 | 0 / 42 | -100.0% | -$184.4B | $0 | $0 |
+| Crowdstrike Hldgs Inc (CRWD) | Information Technology | Mayor | 44 → 45 | 41 / 6 | +305.4% | $76.5B | -$47.1B | $101.6B |
+| Nvidia Corporation (NVDA) | Information Technology | Sin cambio | 62 → 64 | 36 / 27 | +0.1% | $2.7B | $228.7B | $1.85T |
+| Space Exploration Techn Corp (SPCX) | Information Technology | Mayor | 55 → 58 | 37 / 24 | +16.3% | $20.4B | -$17.7B | $143.3B |
+| Microsoft Corp (MSFT) | Information Technology | Menor | 61 → 60 | 35 / 29 | +2.5% | $32.3B | $352.1B | $1.32T |
+| Apple Inc (AAPL) | Information Technology | Sin cambio | 52 → 53 | 21 / 33 | +0.7% | $10.6B | $203.3B | $1.55T |
+| Micron Technology Inc (MU) | Information Technology | Sin cambio | 51 → 52 | 34 / 20 | -0.9% | -$4.2B | -$39.6B | $459.4B |
+| Amazon Com Inc (AMZN) | Consumer Discretionary | Sin cambio | 70 → 69 | 33 / 37 | -0.3% | -$2.3B | $36.6B | $837.6B |
+| Amphenol Corp (APH) | Information Technology | Mayor | 43 → 45 | 41 / 6 | +97.4% | $41.9B | -$46.6B | $84.9B |
+| Meta Platforms Inc (META) | Communication Services | Menor | 64 → 65 | 37 / 30 | +2.5% | $15.4B | $135.7B | $624.2B |
+| Advanced Micro Devices Inc (AMD) | Information Technology | Mayor | 61 → 57 | 27 / 32 | +3.3% | $11.7B | $18.2B | $364.2B |
+| Intel Corp (INTC) | Information Technology | Mayor | 53 → 57 | 44 / 12 | +11.9% | $23.1B | -$31.7B | $218.3B |
+| Broadcom Inc (AVGO) | Information Technology | Sin cambio | 59 → 60 | 31 / 28 | -1.0% | -$6.3B | -$48.2B | $634.6B |
+| Alphabet Inc (GOOGL) | Communication Services | Sin cambio | 66 → 61 | 30 / 38 | +0.4% | $2.9B | -$30.7B | $768.2B |
 
 
 ### Mayor intensidad de compra (Δ títulos agregados, ≥3 tenedores)
 
 | Emisor | Sector | Cambio neto | Tenedores (prev → act.) | Compr. / Vend. | Δ títulos | Flujo neto | Valor agregado |
 |---|---|---|---|---|---|---|---|
-| Newbridge Acquisition Ltd | Financials | Mayor | 1 → 3 | 3 / 0 | +9687566.7% | $3M | $3M |
-| Tidal Trust Ii | Unclassified | Mayor | 1 → 5 | 4 / 1 | +5574950.0% | $914,294 | $914,306 |
-| Ea Series Trust | Real Estate | Mayor | 2 → 3 | 2 / 0 | +3065400.0% | $2M | $2M |
-| Im Cannabis Corp | Unclassified | Mayor | 1 → 3 | 2 / 0 | +2951666.7% | $14,912 | $14,913 |
-| Tidal Trust Ii | Unclassified | Mayor | 2 → 4 | 3 / 1 | +2695850.0% | $850,798 | $850,832 |
-| Versigent PLC | Unclassified | Mayor | 3 → 38 | 38 / 0 | +1062998.5% | $1.4B | $1.4B |
-| Cyabra Inc | Unclassified | Mayor | 1 → 5 | 5 / 0 | +722035.7% | $79,251 | $79,262 |
-| Tidal Trust Ii | Unclassified | Mayor | 1 → 3 | 3 / 0 | +277777.3% | $947,832 | $948,173 |
-| Tidal Trust Ii | Unclassified | Mayor | 3 → 8 | 7 / 0 | +241458.8% | $987,179 | $987,588 |
-| Black Titan Corp | Unclassified | Mayor | 3 → 4 | 2 / 1 | +163805.3% | $69,149 | $69,192 |
+| Paranovus Entertainment Tech | Information Technology | Mayor | 1 → 3 | 3 / 0 | +3704800.0% | $149,303 | $149,307 |
+| Tidal Trust I | Real Estate | Mayor | 1 → 3 | 3 / 1 | +2809400.0% | $409,417 | $409,434 |
+| Inno Holdings Inc | Unclassified | Mayor | 2 → 6 | 5 / 1 | +1213538.5% | $523,328 | $523,805 |
+| Taoping Inc | Unclassified | Mayor | 1 → 4 | 3 / 1 | +141126.9% | $15,048 | $15,058 |
+| Nft Limited | Unclassified | Mayor | 1 → 3 | 3 / 0 | +115220.0% | $62,219 | $62,273 |
+| Bank Of Montreal | Financials | Mayor | 1 → 3 | 3 / 1 | +97162.0% | $1M | $1M |
+| Ea Series Trust | Real Estate | Mayor | 1 → 6 | 6 / 0 | +80366.2% | $3M | $3M |
+| Investment Managers Ser Tr I | Financials | Mayor | 1 → 3 | 3 / 0 | +60391.8% | $2M | $2M |
+| Tidal Trust Ii | Unclassified | Mayor | 1 → 4 | 4 / 0 | +59577.6% | $222,889 | $223,263 |
+| Rbb Fd Inc | Unclassified | Mayor | 1 → 4 | 4 / 0 | +54104.5% | $918,367 | $920,064 |
 
 
 ### Mayor intensidad de venta (Δ títulos agregados, ≥3 tenedores)
 
 | Emisor | Sector | Cambio neto | Tenedores (prev → act.) | Compr. / Vend. | Δ títulos | Flujo neto | Valor agregado |
 |---|---|---|---|---|---|---|---|
-| Tidal Trust Ii | Unclassified | Mayor | 2 → 4 | 3 / 2 | +508.8% | -$288,647 | $520,570 |
-| Top Ships Inc | Unclassified | Mayor | 3 → 5 | 4 / 1 | +152.9% | -$4,355 | $68,904 |
-| Creative Global Technology H | Information Technology | Mayor | 3 → 3 | 3 / 2 | +122.0% | -$27,676 | $101,070 |
-| Tidal Trust Ii | Unclassified | Mayor | 4 → 4 | 4 / 2 | +120.8% | -$196,502 | $699,006 |
-| Kennedy-wilson Holdings Inc | Unclassified | Mayor | 31 → 0 | 0 / 31 | -100.0% | -$646M | $0 |
-| Society Pass Inc | Unclassified | Mayor | 8 → 0 | 0 / 8 | -100.0% | -$132,468 | $0 |
-| Smart Digital Group Ltd | Information Technology | Mayor | 5 → 0 | 0 / 5 | -100.0% | -$130,274 | $0 |
-| Ip Strategy Holdings Inc | Unclassified | Mayor | 8 → 0 | 0 / 8 | -100.0% | -$129,503 | $0 |
-| Fitness Champs Hldgs Ltd | Unclassified | Mayor | 3 → 0 | 0 / 3 | -100.0% | -$128,489 | $0 |
-| Veris Residential Inc | Unclassified | Mayor | 33 → 0 | 0 / 33 | -100.0% | -$768M | $0 |
+| Jiade Limited | Unclassified | Mayor | 3 → 4 | 3 / 2 | +160.7% | -$305,803 | $142,399 |
+| Leggett & Platt Inc (LEG) | Consumer Discretionary | Mayor | 33 → 0 | 0 / 33 | -100.0% | -$829M | $0 |
+| Sphere 3d Corp New | Unclassified | Mayor | 5 → 0 | 0 / 5 | -100.0% | -$175,610 | $0 |
+| Cheche Group Inc | Unclassified | Mayor | 6 → 0 | 0 / 6 | -100.0% | -$160,675 | $0 |
+| Cyclerion Therapeutics Inc | Health Care | Mayor | 8 → 0 | 0 / 8 | -100.0% | -$4M | $0 |
+| U Power Ltd | Utilities | Mayor | 4 → 0 | 0 / 4 | -100.0% | -$109,948 | $0 |
+| Palladyne Ai Corp | Information Technology | Mayor | 7 → 0 | 0 / 7 | -100.0% | -$104,350 | $0 |
+| Two Rds Shared Tr | Unclassified | Mayor | 3 → 0 | 0 / 3 | -100.0% | -$543,498 | $0 |
+| Tidal Trust Ii | Unclassified | Mayor | 4 → 0 | 0 / 4 | -100.0% | -$520,570 | $0 |
+| Biorestorative Therapies Inc | Unclassified | Mayor | 8 → 0 | 0 / 8 | -100.0% | -$490,014 | $0 |
 
 
 ## Movimientos individuales más grandes (por manager, flujo estimado)
 
 | Manager | Acción | Emisor | Tipo | Δ títulos | Flujo | Peso previo | Peso actual |
 |---|---|---|---|---|---|---|---|
-| FMR LLC | NEW | SPACE EXPLORATION TECHN CORP (SPCX) | Common Stock |  | $51.7B | 0.0% | 2.2% |
-| BlackRock Inc. | ADD | KLA CORP (KLAC) | Common Stock | +902% | $34.3B | 0.3% | 0.6% |
-| Jane Street Group, LLC | ADD | STATE STR SPDR S&P 500 ETF T (SPY) | Put Option | +37% | $31.5B | 9.5% | 9.6% |
-| Bank of America Corp | ADD | VANGUARD INDEX FDS GROWTH ETF (VOO) | ETF | +512% | $24.1B | 1.7% | 1.9% |
-| Susquehanna International Group, LLP | TRIM | STATE STR SPDR S&P 500 ETF T (SPY) | Put Option | -27% | -$22.6B | 8.2% | 4.8% |
-| FMR LLC | TRIM | MARVELL TECHNOLOGY INC (MRVL) | Common Stock | -57% | -$22.1B | 0.7% | 0.7% |
-| D1 Capital Partners L.P. | NEW | SPACE EXPLORATION TECHN CORP (SPCX) | Common Stock |  | $21.5B | 0.0% | 61.9% |
-| Jane Street Group, LLC | ADD | STATE STR SPDR S&P 500 ETF T TR UNIT (SPY) | ETF | +118% | $17.9B | 1.7% | 2.7% |
-| State Street Corp | ADD | KLA CORP (KLAC) | Common Stock | +922% | $17.1B | 0.3% | 0.6% |
-| Susquehanna International Group, LLP | ADD | SANDISK CORP (SNDK) | Put Option | +215% | $17.1B | 0.2% | 1.9% |
-| Citadel Advisors LLC | ADD | STATE STR SPDR S&P 500 ETF T (SPY) | Call Option | +77% | $15.5B | 2.8% | 4.1% |
-| Capital World Investors | TRIM | MICRON TECHNOLOGY INC (MU) | Common Stock | -30% | -$14.5B | 1.9% | 4.0% |
-| Susquehanna International Group, LLP | ADD | MICRON TECHNOLOGY INC (MU) | Call Option | +59% | $13.9B | 0.8% | 2.9% |
-| Susquehanna International Group, LLP | ADD | INVESCO QQQ TR (QQQ) | Call Option | +52% | $13.9B | 2.4% | 3.2% |
-| FMR LLC | TRIM | SANDISK CORP (SNDK) | Common Stock | -41% | -$12.6B | 0.4% | 0.8% |
-| Capital World Investors | ADD | KLA CORP (KLAC) | Common Stock | +1010% | $12.4B | 0.8% | 1.6% |
-| Invesco Ltd. | ADD | KLA CORP (KLAC) | Common Stock | +916% | $12.2B | 0.6% | 1.1% |
-| Bank of America Corp | ADD | VANGUARD WORLD FD INF TECH ETF | ETF | +668% | $12.1B | 0.8% | 0.9% |
-| Susquehanna International Group, LLP | ADD | VANECK ETF TRUST | Put Option | +166% | $11.8B | 0.5% | 1.5% |
-| Price T Rowe Associates Inc /MD/ | TRIM | APPLE INC (AAPL) | Common Stock | -20% | -$11.8B | 5.9% | 4.6% |
+| BlackRock Inc. | NEW | EXXONMOBIL HOLDINGS CORP (XOM) | Common Stock |  | $53.9B | 0.0% | 0.8% |
+| BlackRock Inc. | EXIT | EXXON MOBIL CORP (XOM) | Common Stock | -100% | -$45.8B | 0.7% | 0.0% |
+| Jane Street Group, LLC | TRIM | STATE STR SPDR S&P 500 ETF T (SPY) | Put Option | -37% | -$44.1B | 9.6% | 6.2% |
+| Goldman Sachs Group Inc | ADD | STATE STR SPDR S&P 500 ETF T (SPY) | Put Option | +213% | $37.4B | 1.5% | 4.7% |
+| State Street Corp | NEW | EXXONMOBIL HOLDINGS CORP (XOM) | Common Stock |  | $34.6B | 0.0% | 1.0% |
+| State Street Corp | EXIT | EXXON MOBIL CORP (XOM) | Common Stock | -100% | -$28.3B | 0.8% | 0.0% |
+| FMR LLC | NEW | EXXONMOBIL HOLDINGS CORP (XOM) | Common Stock |  | $23.8B | 0.0% | 1.0% |
+| FMR LLC | TRIM | NVIDIA CORPORATION (NVDA) | Common Stock | -9% | -$21.3B | 8.9% | 9.2% |
+| Marshall Wace, LLP | TRIM | ISHARES-S&P 500 ETP (IVV) | ETF | -62% | -$18.9B | 23.5% | 10.1% |
+| FMR LLC | EXIT | EXXON MOBIL CORP (XOM) | Common Stock | -100% | -$18.8B | 0.8% | 0.0% |
+| BlackRock Inc. | ADD | CROWDSTRIKE HLDGS INC (CRWD) | Common Stock | +322% | $18.6B | 0.2% | 0.4% |
+| Jane Street Group, LLC | TRIM | STATE STR SPDR S&P 500 ETF T TR UNIT (SPY) | ETF | -55% | -$18.5B | 2.7% | 1.3% |
+| Invesco Ltd. | ADD | SPACE EXPLORATION TECHN CORP (SPCX) | Common Stock | +2929% | $17.1B | 0.1% | 1.4% |
+| FMR LLC | ADD | ADVANCED MICRO DEVICES INC (AMD) | Common Stock | +109% | $17.0B | 0.6% | 1.4% |
+| Geode Capital Management, LLC | NEW | EXXONMOBIL HOLDINGS CORP (XOM) | Common Stock |  | $16.3B | 0.0% | 0.8% |
+| FMR LLC | ADD | APPLE INC (AAPL) | Common Stock | +14% | $14.9B | 4.1% | 5.3% |
+| Geode Capital Management, LLC | EXIT | EXXON MOBIL CORP (XOM) | Common Stock | -100% | -$13.4B | 0.7% | 0.0% |
+| Goldman Sachs Group Inc | ADD | INVESCO QQQ TR (QQQ) | Call Option | +313% | $13.4B | 0.4% | 1.5% |
+| Capital World Investors | TRIM | MICRON TECHNOLOGY INC (MU) | Common Stock | -38% | -$11.9B | 4.0% | 2.4% |
+| Morgan Stanley | NEW | EXXONMOBIL HOLDINGS CORP (XOM) | Common Stock |  | $11.9B | 0.0% | 0.6% |
 
 
 ## Serie histórica (un corte por año)
 
 | Trimestre | Managers | Valor 13F | Flujo neto (trim.) | Equity directo (EW) | Sector líder (EW) |
 |---|---|---|---|---|---|
-| 2016Q4 | 87 | $10.80T | $405.6B | 86.0% | Unclassified (14.6%) |
+| 2016Q4 | 87 | $10.80T |  | 86.0% | Unclassified (14.6%) |
 | 2017Q4 | 87 | $14.80T | $107.6B | 87.2% | Unclassified (14.0%) |
 | 2018Q4 | 92 | $13.98T | $298.8B | 87.2% | Information Technology (14.5%) |
 | 2019Q4 | 92 | $17.95T | $472.6B | 87.1% | Information Technology (14.4%) |
@@ -391,8 +390,8 @@ _Ordenado por flujo bruto (compras + ventas en dólares). Un nombre puede tener 
 | 2022Q4 | 91 | $20.85T | $130.8B | 87.9% | Information Technology (19.0%) |
 | 2023Q4 | 91 | $28.00T | $2.43T | 86.0% | Information Technology (21.9%) |
 | 2024Q4 | 91 | $31.97T | -$691.7B | 85.5% | Information Technology (22.8%) |
-| 2025Q4 | 90 | $38.48T | -$1.03T | 85.2% | Information Technology (23.3%) |
-| 2026Q2 | 88 | $37.07T | $1.50T | 84.8% | Information Technology (28.5%) |
+| 2025Q4 | 90 | $38.49T | -$965.4B | 85.2% | Information Technology (23.3%) |
+| 2026Q3 | 87 | $36.46T | $485.0B | 84.4% | Information Technology (28.4%) |
 
 
 ## Metodología

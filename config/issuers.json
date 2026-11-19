@@ -44140,6 +44140,72 @@
    "sic": 3089,
    "cik": 1833197,
    "sec_name": "Latham Group, Inc."
+  },
+  {
+   "ticker": "XOM",
+   "cusip": "30233Q108",
+   "issuer": "EXXONMOBIL HOLDINGS CORP",
+   "title_of_class": "COM",
+   "asset_type": "Common Stock",
+   "sector": "Energy",
+   "industry": "Integrated Oil & Gas",
+   "country": "US",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (holding-company successor of 30231G102)"
+  },
+  {
+   "ticker": "OKE",
+   "cusip": "30609A109",
+   "issuer": "ONEOK INC",
+   "title_of_class": "COM",
+   "asset_type": "Common Stock",
+   "sector": "Energy",
+   "industry": "Natural Gas Transmisison & Distribution",
+   "country": "US",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (successor of 682680103)"
+  },
+  {
+   "ticker": "TEVA",
+   "cusip": "M8769Q102",
+   "issuer": "TEVA PHARMACEUTICAL INDS LTD",
+   "title_of_class": "ORD",
+   "asset_type": "Common Stock",
+   "sector": "Health Care",
+   "industry": "Pharmaceutical Preparations",
+   "country": "IL",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (ordinary shares; previously ADR 881624209)"
+  },
+  {
+   "ticker": "",
+   "cusip": "78392B206",
+   "issuer": "SK HYNIX INC",
+   "title_of_class": "ADR",
+   "asset_type": "ADR",
+   "sector": "Information Technology",
+   "industry": "Semiconductors",
+   "country": "KR",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (new US ADR listing)"
+  },
+  {
+   "ticker": "GTES",
+   "cusip": "G39104107",
+   "issuer": "GATES INDL CORP LTD",
+   "title_of_class": "SHS",
+   "asset_type": "Common Stock",
+   "sector": "Industrials",
+   "industry": "Industrial Machinery",
+   "country": "",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (successor of G39108108)"
+  },
+  {
+   "ticker": "WVE",
+   "cusip": "94352A104",
+   "issuer": "WAVE LIFE SCIENCES INC",
+   "title_of_class": "COM",
+   "asset_type": "Common Stock",
+   "sector": "Health Care",
+   "industry": "Pharmaceutical Preparations",
+   "country": "US",
+   "source": "manual: new CUSIP in 2026Q3 13Fs (successor of Y95308105)"
   }
  ]
 }

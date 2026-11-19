@@ -1,125 +1,26 @@
 [
   {
-    "period": "2016-09-30",
-    "label": "2016Q3",
-    "headline": "2016Q3: 86 managers, $10.13T en posiciones reportadas",
-    "bullets": [
-      {
-        "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.2 pp; 61% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.5 pp; 13% por encima). Un 17% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
-      },
-      {
-        "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 23%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 89%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 68%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 63%)."
-      },
-      {
-        "kind": "options",
-        "text": "Opciones reportadas: puts $258.1B vs calls $226.1B (ratio 1.14). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr Put (IWM), Procter And Gamble Co (PG)."
-      }
-    ],
-    "facts": {
-      "n_managers": 86,
-      "total_value": 10127895314000.0,
-      "n_positions": 141461,
-      "sector_top_overweight": {
-        "sector": "Consumer Discretionary",
-        "active_weight": 0.0322338864565109,
-        "breadth": 0.6075949367088608
-      },
-      "sector_top_underweight": {
-        "sector": "Real Estate",
-        "active_weight": -0.024827048246014234,
-        "breadth": 0.12658227848101267
-      },
-      "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
-      "most_held": [
-        {
-          "issuer": "APPLE INC (AAPL)",
-          "holders": 57,
-          "value": 173094440000.0
-        },
-        {
-          "issuer": "ALPHABET INC (GOOG)",
-          "holders": 55,
-          "value": 88909470000.0
-        },
-        {
-          "issuer": "FACEBOOK INC (META)",
-          "holders": 54,
-          "value": 107265029000.0
-        }
-      ],
-      "put_notional": 258078007000.0,
-      "call_notional": 226056591000.0
-    }
-  },
-  {
     "period": "2016-12-31",
     "label": "2016Q4",
-    "headline": "2016Q4: 87 managers, $10.80T en posiciones reportadas, +6.6% vs trimestre anterior (mismos 86 managers)",
+    "headline": "2016Q4: 87 managers, $10.80T en posiciones reportadas",
     "bullets": [
       {
-        "kind": "flows",
-        "text": "El valor agregado del universo cambió $670.7B en el trimestre: $265.1B por precio y $405.6B por flujo neto (compras menos ventas). Actividad bruta de $2.01T con 19029 posiciones nuevas y 16174 salidas."
-      },
-      {
-        "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+1.2 pp) y baja Equity (ETF) (-0.8 pp)."
-      },
-      {
-        "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Financials (+1.5 pp) y Information Technology (+0.7 pp); mayor reducción en Consumer Staples (-0.9 pp) y Health Care (-0.4 pp)."
-      },
-      {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.0 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.2 pp; 11% por encima). Mayor cambio de peso activo en el trimestre: Consumer Staples (-0.8 pp). Un 16% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
-      },
-      {
-        "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Financials (+1.6 pp QoQ), recibió flujo neto de $70.0B frente a un efecto precio de $110.6B (7363 compras / 5451 ventas)."
-      },
-      {
-        "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Intercontinental Exchange In (ICE) (42 compradores / 3 vendedores, flujo $11.5B), Lamb Weston Hldgs Inc (LW) (38 compradores / 0 vendedores, flujo $1.7B), Adient PLC (ADNT) (38 compradores / 0 vendedores, flujo $1.6B)."
-      },
-      {
-        "kind": "consensus_sell",
-        "text": "Ventas de consenso: Northwest Biotherapeutics (17 vendedores / 0 compradores, flujo -$2M), Interoil Corp (15 vendedores / 1 comprador, flujo -$191M), Visteon Corp (VC) (26 vendedores / 12 compradores, flujo -$86M)."
-      },
-      {
-        "kind": "moves",
-        "text": "Movimientos individuales más grandes: Bank of America Corp reduce Procter And Gamble Co (PG) (-$9.0B); Capital World Investors abre Broadcom Ltd (AVGO) ($7.7B); Morgan Stanley abre Westpac Bkg Corp Note 4.322%11/2 ($7.3B); Capital World Investors liquida Broadcom Ltd (-$7.2B)."
-      },
-      {
-        "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +4%, 27 compradores / 31 vendedores, flujo neto $7.3B); Broadcom Ltd (AVGO) (títulos agregados +53%, 27 compradores / 20 vendedores, flujo neto $13.7B); Procter And Gamble Co (PG) (títulos agregados -14%, 18 compradores / 26 vendedores, flujo neto -$10.1B). De 6269 empresas en cartera, 4339 tuvieron un cambio mayor, 1407 menor y 523 ninguno."
-      },
-      {
-        "kind": "turnover",
-        "text": "Mayor rotación de cartera: Voloridge Investment Management, LLC (173%), Duquesne Family Office LLC (146%), Tower Research Capital LLC (TRC) (145%)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Consumer Discretionary (+3.0 pp; 62% de los managers por encima del benchmark) y mayor infraponderación en Real Estate (-2.2 pp; 11% por encima). Un 16% del libro de acciones directas queda sin sector asignado (emisores no resueltos en el maestro) y se excluye de este ranking."
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 25%; turnover 51%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 83%; turnover 15%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 63%; turnover 26%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 62%; turnover 58%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 25%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 83%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 63%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 62%)."
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $267.3B vs calls $226.5B (ratio 1.18). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr Put (IWM), Powershares QQQ Trust."
+        "text": "Opciones reportadas: puts $267.3B vs calls $226.5B (ratio 1.18). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr (IWM), Powershares QQQ Trust."
       }
     ],
     "facts": {
       "n_managers": 87,
       "total_value": 10798896576000.0,
       "n_positions": 144409,
-      "total_value_chg": 0.06622564216998184,
-      "n_common_managers": 86,
-      "net_flow": 405631433139.03326,
-      "gross_flow": 2012599490538.8176,
-      "price_effect": 265095042860.96667,
-      "n_new": 19029,
-      "n_exit": 16174,
-      "n_add": 65938,
-      "n_trim": 50106,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.029905387605988792,
@@ -146,39 +47,6 @@
           "issuer": "VISA INC (V)",
           "holders": 56,
           "value": 61138209000.0
-        }
-      ],
-      "companies_total": 6269,
-      "companies_major": 4339,
-      "companies_minor": 1407,
-      "companies_none": 523,
-      "top_company_moves": [
-        {
-          "issuer": "APPLE INC (AAPL)",
-          "ticker": "AAPL",
-          "pct_shares": 0.04125368384497649,
-          "net_flow": 7340903563.15782,
-          "buyers": 27,
-          "sellers": 31,
-          "magnitude": "MAJOR"
-        },
-        {
-          "issuer": "BROADCOM LTD (AVGO)",
-          "ticker": "AVGO",
-          "pct_shares": 0.5337406465704164,
-          "net_flow": 13730515846.656713,
-          "buyers": 27,
-          "sellers": 20,
-          "magnitude": "MAJOR"
-        },
-        {
-          "issuer": "PROCTER AND GAMBLE CO (PG)",
-          "ticker": "PG",
-          "pct_shares": -0.13963785017735855,
-          "net_flow": -10097885518.268982,
-          "buyers": 18,
-          "sellers": 26,
-          "magnitude": "MAJOR"
         }
       ],
       "put_notional": 267308072000.0,
@@ -236,7 +104,7 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $269.9B vs calls $226.7B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr Put (IWM), Powershares QQQ Trust."
+        "text": "Opciones reportadas: puts $269.9B vs calls $226.7B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr (IWM), Powershares QQQ Trust."
       }
     ],
     "facts": {
@@ -340,11 +208,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.7 pp QoQ), recibió flujo neto de -$22.8B frente a un efecto precio de $23.6B (3737 compras / 3705 ventas); su peso actual está en el percentil 100 de su historia."
-      },
-      {
-        "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (13.8%), Real Estate (3.9%), Utilities (1.6%)."
+        "text": "El sector que más peso ganó, Information Technology (+0.7 pp QoQ), recibió flujo neto de -$22.8B frente a un efecto precio de $23.6B (3737 compras / 3705 ventas)."
       },
       {
         "kind": "consensus_buy",
@@ -372,7 +236,7 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $301.6B vs calls $236.9B (ratio 1.27). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Powershares QQQ Trust, Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $301.6B vs calls $236.9B (ratio 1.27). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Powershares QQQ Trust, Ishares Tr (IWM)."
       }
     ],
     "facts": {
@@ -399,14 +263,6 @@
         "breadth": 0.3625
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
-      "sector_extremes": {
-        "highs": [
-          "Information Technology",
-          "Real Estate",
-          "Utilities"
-        ],
-        "lows": []
-      },
       "most_held": [
         {
           "issuer": "FACEBOOK INC (META)",
@@ -484,7 +340,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+1.2 pp QoQ, +0.4 pp YoY), recibió flujo neto de $15.0B frente a un efecto precio de $27.5B (5024 compras / 4012 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+1.2 pp QoQ), recibió flujo neto de $15.0B frente a un efecto precio de $27.5B (5024 compras / 4012 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -516,7 +372,7 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $347.0B vs calls $261.3B (ratio 1.33). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr Put (IWM), Powershares QQQ Trust."
+        "text": "Opciones reportadas: puts $347.0B vs calls $261.3B (ratio 1.33). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr (IWM), Powershares QQQ Trust."
       }
     ],
     "facts": {
@@ -539,7 +395,7 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.025185917531000968,
+        "active_weight": -0.02518907371672774,
         "breadth": 0.3125
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -627,11 +483,11 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Real Estate (+0.6 pp QoQ, +0.1 pp YoY), recibió flujo neto de $12.9B frente a un efecto precio de $5.3B (2689 compras / 1850 ventas); su peso actual está en el percentil 67 de su historia."
+        "text": "El sector que más peso ganó, Real Estate (+0.6 pp QoQ, +0.1 pp YoY), recibió flujo neto de $12.9B frente a un efecto precio de $5.3B (2689 compras / 1850 ventas); su peso actual está en el percentil 60 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Health Care (10.8%), Industrials (8.7%), Utilities (1.7%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Health Care (10.8%), Consumer Discretionary (10.7%), Industrials (8.7%), Utilities (1.7%)."
       },
       {
         "kind": "consensus_buy",
@@ -659,7 +515,7 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $369.9B vs calls $276.3B (ratio 1.34). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr Put (IWM), Amazon Com Inc (AMZN)."
+        "text": "Opciones reportadas: puts $369.9B vs calls $276.3B (ratio 1.34). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Ishares Tr (IWM), Amazon Com Inc (AMZN)."
       }
     ],
     "facts": {
@@ -682,13 +538,14 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.025290675470111323,
+        "active_weight": -0.025293575652314187,
         "breadth": 0.3375
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
       "sector_extremes": {
         "highs": [
           "Health Care",
+          "Consumer Discretionary",
           "Industrials",
           "Utilities"
         ],
@@ -826,7 +683,7 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.028207880685180153,
+        "active_weight": -0.028210668073323952,
         "breadth": 0.3170731707317073
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -915,7 +772,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Real Estate (+0.7 pp QoQ, -0.3 pp YoY), recibió flujo neto de $9.1B frente a un efecto precio de $10.8B (2743 compras / 2205 ventas); su peso actual está en el percentil 75 de su historia."
+        "text": "El sector que más peso ganó, Real Estate (+0.7 pp QoQ, -0.3 pp YoY), recibió flujo neto de $9.1B frente a un efecto precio de $10.8B (2743 compras / 2205 ventas); su peso actual está en el percentil 71 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1057,7 +914,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+0.6 pp QoQ, -0.1 pp YoY), recibió flujo neto de -$14.1B frente a un efecto precio de $111.2B (5952 compras / 5178 ventas); su peso actual está en el percentil 78 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+0.6 pp QoQ, -0.1 pp YoY), recibió flujo neto de -$14.1B frente a un efecto precio de $111.2B (5952 compras / 5178 ventas); su peso actual está en el percentil 75 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1255,7 +1112,7 @@
       },
       "sector_top_underweight": {
         "sector": "Health Care",
-        "active_weight": -0.02909425955258546,
+        "active_weight": -0.029103292925835356,
         "breadth": 0.36470588235294116
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -1344,7 +1201,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Communication Services (+0.9 pp QoQ, +1.7 pp YoY), recibió flujo neto de $11.6B frente a un efecto precio de $74.5B (1862 compras / 1751 ventas); su peso actual está en el percentil 91 de su historia."
+        "text": "El sector que más peso ganó, Communication Services (+0.9 pp QoQ, +1.7 pp YoY), recibió flujo neto de $11.6B frente a un efecto precio de $74.5B (1862 compras / 1751 ventas); su peso actual está en el percentil 90 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1399,7 +1256,7 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.02525443881162219,
+        "active_weight": -0.025256958481854358,
         "breadth": 0.2823529411764706
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -1487,7 +1344,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+0.9 pp QoQ, +1.1 pp YoY), recibió flujo neto de $14.2B frente a un efecto precio de $36.5B (5695 compras / 5222 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+0.9 pp QoQ, +1.1 pp YoY), recibió flujo neto de $14.2B frente a un efecto precio de $36.5B (5698 compras / 5222 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1542,7 +1399,7 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.02784278487275188,
+        "active_weight": -0.02784518000996053,
         "breadth": 0.23529411764705882
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -1773,7 +1630,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.9 pp QoQ, -0.5 pp YoY), recibió flujo neto de $17.1B frente a un efecto precio de $156.7B (4966 compras / 4566 ventas); su peso actual está en el percentil 64 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+0.9 pp QoQ, -0.5 pp YoY), recibió flujo neto de $17.1B frente a un efecto precio de $156.7B (4966 compras / 4566 ventas); su peso actual está en el percentil 62 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1828,7 +1685,7 @@
       },
       "sector_top_underweight": {
         "sector": "Financials",
-        "active_weight": -0.02443177664493279,
+        "active_weight": -0.024434279690703553,
         "breadth": 0.3058823529411765
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -2486,7 +2343,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Financials (+0.7 pp QoQ, +0.5 pp YoY), recibió flujo neto de -$1.6B frente a un efecto precio de $137.0B (11440 compras / 9247 ventas); su peso actual está en el percentil 58 de su historia."
+        "text": "El sector que más peso ganó, Financials (+0.7 pp QoQ, +0.5 pp YoY), recibió flujo neto de -$1.6B frente a un efecto precio de $137.0B (11440 compras / 9246 ventas); su peso actual está en el percentil 56 de su historia."
       },
       {
         "kind": "consensus_buy",
@@ -2625,10 +2482,6 @@
         "text": "El sector que más peso ganó, Information Technology (+0.9 pp QoQ, +2.4 pp YoY), recibió flujo neto de $15.8B frente a un efecto precio de $218.4B (6274 compras / 6462 ventas); su peso actual está en el percentil 95 de su historia."
       },
       {
-        "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (19.5%); en mínimos: Consumer Staples (4.0%)."
-      },
-      {
         "kind": "consensus_buy",
         "text": "Compras de consenso (más compradores netos): Organon & Co (OGN) (43 compradores / 0 vendedores, flujo $3.1B), Costar Group Inc (CSGP) (44 compradores / 2 vendedores, flujo $14.1B), Seagate Technology Hldngs Pl (STX) (40 compradores / 0 vendedores, flujo $10.7B)."
       },
@@ -2688,14 +2541,6 @@
         "breadth": 0.34523809523809523
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
-      "sector_extremes": {
-        "highs": [
-          "Information Technology"
-        ],
-        "lows": [
-          "Consumer Staples"
-        ]
-      },
       "most_held": [
         {
           "issuer": "FACEBOOK INC (META)",
@@ -2932,7 +2777,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Consumer Discretionary (+1.2 pp QoQ, -0.2 pp YoY), recibió flujo neto de $33.1B frente a un efecto precio de $63.3B (4785 compras / 4549 ventas); su peso actual está en el percentil 77 de su historia."
+        "text": "El sector que más peso ganó, Consumer Discretionary (+1.2 pp QoQ, -0.2 pp YoY), recibió flujo neto de $33.1B frente a un efecto precio de $63.3B (4785 compras / 4549 ventas); su peso actual está en el percentil 76 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3087,11 +2932,11 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Energy (+1.9 pp QoQ, +2.2 pp YoY), recibió flujo neto de $33.6B frente a un efecto precio de $105.1B (2721 compras / 2353 ventas); su peso actual está en el percentil 91 de su historia."
+        "text": "El sector que más peso ganó, Energy (+1.9 pp QoQ, +2.2 pp YoY), recibió flujo neto de $33.6B frente a un efecto precio de $105.1B (2722 compras / 2353 ventas); su peso actual está en el percentil 95 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en mínimos: Consumer Staples (3.5%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Energy (5.7%); en mínimos: Consumer Staples (3.5%)."
       },
       {
         "kind": "consensus_buy",
@@ -3124,9 +2969,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 24469751637534.0,
+      "total_value": 24469751824916.0,
       "n_positions": 202853,
-      "total_value_chg": -0.14570315856170368,
+      "total_value_chg": -0.14570315201975537,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3135,26 +2980,28 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -563234232721.6787,
-      "gross_flow": 3830027262867.3936,
-      "price_effect": -3610163033744.3213,
+      "net_flow": -563238045788.6874,
+      "gross_flow": 3830031170017.948,
+      "price_effect": -3610159033300.313,
       "n_new": 26454,
       "n_exit": 28311,
       "n_add": 79837,
       "n_trim": 83260,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
-        "active_weight": 0.015027419035068726,
+        "active_weight": 0.015027418972898582,
         "breadth": 0.4880952380952381
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.029435182827441203,
+        "active_weight": -0.029435182953489958,
         "breadth": 0.2976190476190476
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
       "sector_extremes": {
-        "highs": [],
+        "highs": [
+          "Energy"
+        ],
         "lows": [
           "Consumer Staples"
         ]
@@ -3163,17 +3010,17 @@
         {
           "issuer": "AMAZON COM INC (AMZN)",
           "holders": 67,
-          "value": 575754542518.0
+          "value": 575754542399.0
         },
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "holders": 64,
-          "value": 928092741779.0
+          "value": 928092741803.0
         },
         {
           "issuer": "META PLATFORMS INC (META)",
           "holders": 62,
-          "value": 228426191624.0
+          "value": 228426191225.0
         }
       ],
       "companies_total": 9632,
@@ -3185,7 +3032,7 @@
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
           "pct_shares": 0.0034600080010418325,
-          "net_flow": 3657179181.7347474,
+          "net_flow": 3657179182.925618,
           "buyers": 24,
           "sellers": 29,
           "magnitude": "NONE"
@@ -3194,7 +3041,7 @@
           "issuer": "CHEVRON CORP NEW (CVX)",
           "ticker": "CVX",
           "pct_shares": 0.1287161481333187,
-          "net_flow": 16878769307.80495,
+          "net_flow": 16878769114.398174,
           "buyers": 21,
           "sellers": 26,
           "magnitude": "MAJOR"
@@ -3203,7 +3050,7 @@
           "issuer": "MICROSOFT CORP (MSFT)",
           "ticker": "MSFT",
           "pct_shares": -0.004205659211487906,
-          "net_flow": -4061886695.50165,
+          "net_flow": -4061886696.0758543,
           "buyers": 27,
           "sellers": 40,
           "magnitude": "NONE"
@@ -3277,9 +3124,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 20427517071279.0,
+      "total_value": 20427517252461.0,
       "n_positions": 201934,
-      "total_value_chg": -0.16519311785962887,
+      "total_value_chg": -0.16519311684800364,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3288,21 +3135,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 516313663867.8294,
-      "gross_flow": 3317493313066.3457,
-      "price_effect": -4558548230122.829,
+      "net_flow": 516314863624.775,
+      "gross_flow": 3317492194874.3545,
+      "price_effect": -4558549436081.775,
       "n_new": 28171,
       "n_exit": 29087,
       "n_add": 80651,
       "n_trim": 77860,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
-        "active_weight": 0.017351183068434098,
+        "active_weight": 0.017351183012364102,
         "breadth": 0.5119047619047619
       },
       "sector_top_underweight": {
         "sector": "Health Care",
-        "active_weight": -0.02515479242290468,
+        "active_weight": -0.025154792603476084,
         "breadth": 0.38095238095238093
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -3320,17 +3167,17 @@
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "holders": 68,
-          "value": 784577750793.0
+          "value": 784577750237.0
         },
         {
           "issuer": "META PLATFORMS INC (META)",
           "holders": 65,
-          "value": 165076992370.0
+          "value": 165076991583.0
         },
         {
           "issuer": "AMAZON COM INC (AMZN)",
           "holders": 64,
-          "value": 378696781043.0
+          "value": 378696781740.0
         }
       ],
       "companies_total": 9572,
@@ -3342,7 +3189,7 @@
           "issuer": "AMAZON COM INC (AMZN)",
           "ticker": "AMZN",
           "pct_shares": 19.18782554180744,
-          "net_flow": 358935370773.5522,
+          "net_flow": 358935371433.72034,
           "buyers": 63,
           "sellers": 6,
           "magnitude": "MAJOR"
@@ -3351,7 +3198,7 @@
           "issuer": "MICROSOFT CORP (MSFT)",
           "ticker": "MSFT",
           "pct_shares": 0.01479807113040857,
-          "net_flow": 11416168141.660055,
+          "net_flow": 11416168150.094051,
           "buyers": 32,
           "sellers": 35,
           "magnitude": "MINOR"
@@ -3360,7 +3207,7 @@
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
           "pct_shares": 0.008150696143546651,
-          "net_flow": 6787757375.207403,
+          "net_flow": 6787757367.905116,
           "buyers": 24,
           "sellers": 27,
           "magnitude": "NONE"
@@ -3381,7 +3228,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$1.01T en el trimestre: -$1.70T por precio y $697.1B por flujo neto (compras menos ventas). Actividad bruta de $2.82T con 22200 posiciones nuevas y 23340 salidas."
+        "text": "El valor agregado del universo cambió -$1.01T en el trimestre: -$1.70T por precio y $697.0B por flujo neto (compras menos ventas). Actividad bruta de $2.82T con 22200 posiciones nuevas y 23340 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3397,7 +3244,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Consumer Discretionary (+0.8 pp QoQ, +0.2 pp YoY), recibió flujo neto de $60.9B frente a un efecto precio de -$42.5B (4533 compras / 4786 ventas); su peso actual está en el percentil 52 de su historia."
+        "text": "El sector que más peso ganó, Consumer Discretionary (+0.8 pp QoQ, +0.2 pp YoY), recibió flujo neto de $60.9B frente a un efecto precio de -$42.5B (4533 compras / 4786 ventas); su peso actual está en el percentil 50 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3434,9 +3281,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 19420766585688.0,
+      "total_value": 19420766706907.0,
       "n_positions": 200629,
-      "total_value_chg": -0.04928403594416708,
+      "total_value_chg": -0.04928403844244522,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3445,21 +3292,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 697070017568.1348,
-      "gross_flow": 2819749254056.0947,
-      "price_effect": -1703820503159.1348,
+      "net_flow": 696993200636.1333,
+      "gross_flow": 2819826124967.7847,
+      "price_effect": -1703743746197.1333,
       "n_new": 22200,
       "n_exit": 23340,
       "n_add": 82577,
       "n_trim": 79118,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
-        "active_weight": 0.016726376552888514,
+        "active_weight": 0.01672637658976596,
         "breadth": 0.4642857142857143
       },
       "sector_top_underweight": {
         "sector": "Health Care",
-        "active_weight": -0.02543211556892426,
+        "active_weight": -0.025432115527903656,
         "breadth": 0.36904761904761907
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -3473,17 +3320,17 @@
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "holders": 68,
-          "value": 717567920524.0
+          "value": 717567920881.0
         },
         {
           "issuer": "AMAZON COM INC (AMZN)",
           "holders": 65,
-          "value": 406598427063.0
+          "value": 406598427581.0
         },
         {
           "issuer": "META PLATFORMS INC (META)",
           "holders": 65,
-          "value": 138495442188.0
+          "value": 138495440271.0
         }
       ],
       "companies_total": 9631,
@@ -3495,7 +3342,7 @@
           "issuer": "ALPHABET INC (GOOGL)",
           "ticker": "GOOGL",
           "pct_shares": 18.970792006146674,
-          "net_flow": 227263364338.8614,
+          "net_flow": 227263364065.21082,
           "buyers": 60,
           "sellers": 2,
           "magnitude": "MAJOR"
@@ -3504,7 +3351,7 @@
           "issuer": "ALPHABET INC (GOOG)",
           "ticker": "GOOG",
           "pct_shares": 18.522546803379164,
-          "net_flow": 196760219825.4588,
+          "net_flow": 196760219528.49387,
           "buyers": 54,
           "sellers": 0,
           "magnitude": "MAJOR"
@@ -3513,7 +3360,7 @@
           "issuer": "TESLA INC (TSLA)",
           "ticker": "TSLA",
           "pct_shares": 2.131601454841293,
-          "net_flow": 170778341490.31906,
+          "net_flow": 170778340346.4448,
           "buyers": 49,
           "sellers": 3,
           "magnitude": "MAJOR"
@@ -3550,7 +3397,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+1.0 pp QoQ, +0.8 pp YoY), recibió flujo neto de $21.2B frente a un efecto precio de $104.4B (6989 compras / 6746 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+1.0 pp QoQ, +0.8 pp YoY), recibió flujo neto de $21.2B frente a un efecto precio de $104.4B (6990 compras / 6747 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3582,14 +3429,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $657.6B vs calls $622.8B (ratio 1.06). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $657.6B vs calls $622.8B (ratio 1.06). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 20852648903237.0,
+      "total_value": 20852648903236.0,
       "n_positions": 198392,
-      "total_value_chg": 0.07372944374936341,
+      "total_value_chg": 0.07372943704739265,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3598,21 +3445,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 130836895330.93414,
-      "gross_flow": 2491169310981.0015,
-      "price_effect": 1301045422218.0657,
+      "net_flow": 130836877310.76485,
+      "gross_flow": 2491169329000.832,
+      "price_effect": 1301045319030.235,
       "n_new": 23912,
       "n_exit": 26321,
       "n_add": 84547,
       "n_trim": 75041,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
-        "active_weight": 0.020936186783014038,
+        "active_weight": 0.020936186783015356,
         "breadth": 0.5952380952380952
       },
       "sector_top_underweight": {
         "sector": "Health Care",
-        "active_weight": -0.02781019437910673,
+        "active_weight": -0.027810194379117054,
         "breadth": 0.38095238095238093
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -3683,7 +3530,7 @@
   {
     "period": "2023-03-31",
     "label": "2023Q1",
-    "headline": "2023Q1: 91 managers, $23.27T en posiciones reportadas, +11.6% vs trimestre anterior",
+    "headline": "2023Q1: 91 managers, $22.18T en posiciones reportadas, +6.4% vs trimestre anterior",
     "bullets": [
       {
         "kind": "coverage",
@@ -3691,7 +3538,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $2.42T en el trimestre: $1.32T por precio y $1.10T por flujo neto (compras menos ventas). Actividad bruta de $3.75T con 22727 posiciones nuevas y 26217 salidas."
+        "text": "El valor agregado del universo cambió $1.33T en el trimestre: $1.32T por precio y $10.7B por flujo neto (compras menos ventas). Actividad bruta de $2.77T con 22727 posiciones nuevas y 26217 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3707,7 +3554,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.4 pp QoQ, +2.0 pp YoY), recibió flujo neto de $292.5B frente a un efecto precio de $352.1B (7391 compras / 6361 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.4 pp QoQ, +2.0 pp YoY), recibió flujo neto de $15.6B frente a un efecto precio de $352.1B (7206 compras / 6499 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3715,7 +3562,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Linde PLC (LIN) (49 compradores / 0 vendedores, flujo $83.8B), GE Healthcare Technologies I (GEHC) (36 compradores / 1 vendedor, flujo $17.3B), Frontline PLC (FRO) (35 compradores / 0 vendedores, flujo $611M)."
+        "text": "Compras de consenso (más compradores netos): Linde PLC (LIN) (49 compradores / 0 vendedores, flujo $79.2B), GE Healthcare Technologies I (GEHC) (36 compradores / 1 vendedor, flujo $16.2B), Frontline PLC (FRO) (35 compradores / 0 vendedores, flujo $607M)."
       },
       {
         "kind": "consensus_sell",
@@ -3723,11 +3570,11 @@
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: FMR LLC aumenta Microsoft Corp (MSFT) ($58.3B); FMR LLC aumenta Apple Inc (AAPL) ($49.8B); FMR LLC aumenta Nvidia Corporation (NVDA) ($37.6B); FMR LLC aumenta Amazon Com Inc (AMZN) ($26.5B)."
+        "text": "Movimientos individuales más grandes: Vanguard Group Inc abre Linde PLC (LIN) ($15.7B); Vanguard Group Inc liquida Linde PLC (LIN) (-$15.2B); BlackRock Inc. abre Linde PLC (LIN) ($12.2B); Dimensional Fund Advisors LP liquida Dimensional ETF Trust ETF (-$11.3B)."
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Linde PLC (LIN) (entrada nueva al universo, 49 compradores / 0 vendedores, flujo neto $83.8B); Microsoft Corp (MSFT) (títulos agregados +7%, 33 compradores / 33 vendedores, flujo neto $59.7B); Apple Inc (AAPL) (títulos agregados +6%, 26 compradores / 28 vendedores, flujo neto $59.3B). De 9288 empresas en cartera, 6307 tuvieron un cambio mayor, 2037 menor y 944 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Linde PLC (LIN) (entrada nueva al universo, 49 compradores / 0 vendedores, flujo neto $79.2B); Linde PLC (LIN) (títulos agregados -100%, 0 compradores / 44 vendedores, flujo neto -$70.4B); Apple Inc (AAPL) (títulos agregados +1%, 25 compradores / 29 vendedores, flujo neto $8.0B). De 9288 empresas en cartera, 5759 tuvieron un cambio mayor, 2339 menor y 1190 ninguno."
       },
       {
         "kind": "turnover",
@@ -3739,14 +3586,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $781.0B vs calls $653.9B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $781.0B vs calls $653.9B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 23271822114541.0,
+      "total_value": 22178606214941.0,
       "n_positions": 195085,
-      "total_value_chg": 0.11601275322524929,
+      "total_value_chg": 0.06358699644625165,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3755,21 +3602,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 1103936533177.4927,
-      "gross_flow": 3745925060890.7573,
-      "price_effect": 1315236676252.5078,
+      "net_flow": 10720633585.55759,
+      "gross_flow": 2770343701472.07,
+      "price_effect": 1315236676247.4424,
       "n_new": 22727,
       "n_exit": 26217,
-      "n_add": 86686,
-      "n_trim": 73561,
+      "n_add": 84871,
+      "n_trim": 74995,
       "sector_top_overweight": {
         "sector": "Communication Services",
-        "active_weight": 0.016003913756740346,
+        "active_weight": 0.0160039136552773,
         "breadth": 0.4523809523809524
       },
       "sector_top_underweight": {
         "sector": "Consumer Staples",
-        "active_weight": -0.019123080827341092,
+        "active_weight": -0.01912308087663936,
         "breadth": 0.20238095238095238
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -3787,60 +3634,60 @@
         {
           "issuer": "AMAZON COM INC (AMZN)",
           "holders": 66,
-          "value": 401917136830.0
+          "value": 373268888901.0
         },
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "holders": 65,
-          "value": 953931892878.0
+          "value": 896121004203.0
         },
         {
           "issuer": "ALPHABET INC (GOOGL)",
           "holders": 61,
-          "value": 280090470592.0
+          "value": 258532401223.0
         }
       ],
       "companies_total": 9288,
-      "companies_major": 6307,
-      "companies_minor": 2037,
-      "companies_none": 944,
+      "companies_major": 5759,
+      "companies_minor": 2339,
+      "companies_none": 1190,
       "top_company_moves": [
         {
           "issuer": "LINDE PLC (LIN)",
           "ticker": "LIN",
           "pct_shares": null,
-          "net_flow": 83835155827.0,
+          "net_flow": 79190805267.0,
           "buyers": 49,
           "sellers": 0,
           "magnitude": "MAJOR"
         },
         {
-          "issuer": "MICROSOFT CORP (MSFT)",
-          "ticker": "MSFT",
-          "pct_shares": 0.0667121503420136,
-          "net_flow": 59710873945.588356,
-          "buyers": 33,
-          "sellers": 33,
-          "magnitude": "MINOR"
+          "issuer": "LINDE PLC (LIN)",
+          "ticker": "LIN",
+          "pct_shares": -1.0,
+          "net_flow": -70371311975.0,
+          "buyers": 0,
+          "sellers": 44,
+          "magnitude": "MAJOR"
         },
         {
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
-          "pct_shares": 0.05882471707035196,
-          "net_flow": 59345277838.70467,
-          "buyers": 26,
-          "sellers": 28,
-          "magnitude": "MINOR"
+          "pct_shares": 0.007890881827898608,
+          "net_flow": 7989221621.704679,
+          "buyers": 25,
+          "sellers": 29,
+          "magnitude": "NONE"
         }
       ],
       "put_notional": 781037418732.0,
-      "call_notional": 653892490271.0
+      "call_notional": 653892486607.0
     }
   },
   {
     "period": "2023-06-30",
     "label": "2023Q2",
-    "headline": "2023Q2: 91 managers, $23.75T en posiciones reportadas, +2.0% vs trimestre anterior",
+    "headline": "2023Q2: 91 managers, $23.75T en posiciones reportadas, +7.1% vs trimestre anterior",
     "bullets": [
       {
         "kind": "coverage",
@@ -3848,7 +3695,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $474.2B en el trimestre: $1.67T por precio y -$1.19T por flujo neto (compras menos ventas). Actividad bruta de $3.66T con 21330 posiciones nuevas y 25412 salidas."
+        "text": "El valor agregado del universo cambió $1.57T en el trimestre: $1.57T por precio y $1.4B por flujo neto (compras menos ventas). Actividad bruta de $2.57T con 21330 posiciones nuevas y 25412 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3864,7 +3711,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.0 pp QoQ, +2.2 pp YoY), recibió flujo neto de -$316.5B frente a un efecto precio de $364.0B (6686 compras / 6985 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.0 pp QoQ, +2.2 pp YoY), recibió flujo neto de $11.4B frente a un efecto precio de $312.9B (6877 compras / 6759 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3872,7 +3719,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Canadian Pacific Kansas City (CP) (37 compradores / 2 vendedores, flujo $17.4B), Rb Global Inc (RBA) (35 compradores / 0 vendedores, flujo $2.6B), Churchill Downs Inc (CHR) (37 compradores / 2 vendedores, flujo $1.6B)."
+        "text": "Compras de consenso (más compradores netos): Churchill Downs Inc (CHR) (38 compradores / 1 vendedor, flujo $2.2B), Canadian Pacific Kansas City (CP) (37 compradores / 2 vendedores, flujo $17.4B), Rb Global Inc (RBA) (35 compradores / 0 vendedores, flujo $2.6B)."
       },
       {
         "kind": "consensus_sell",
@@ -3880,11 +3727,11 @@
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: FMR LLC reduce Microsoft Corp (MSFT) (-$65.0B); FMR LLC reduce Apple Inc (AAPL) (-$61.3B); FMR LLC reduce Nvidia Corporation (NVDA) (-$59.8B); FMR LLC reduce Amazon Com Inc (AMZN) (-$35.8B)."
+        "text": "Movimientos individuales más grandes: Susquehanna International Group, LLP reduce SPDR S&P 500 ETF Tr (SPY) (-$9.4B); JPMorgan Chase & Co aumenta Microsoft Corp (MSFT) ($6.3B); Millennium Management LLC aumenta SPDR S&P 500 ETF Tr (SPY) ($6.2B); JPMorgan Chase & Co aumenta Vanguard 500 Index Fund ETF (VOO) ($5.6B)."
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -5%, 38 compradores / 29 vendedores, flujo neto -$59.9B); Apple Inc (AAPL) (títulos agregados -5%, 27 compradores / 25 vendedores, flujo neto -$59.5B); Nvidia Corporation (NVDA) (títulos agregados -11%, 35 compradores / 30 vendedores, flujo neto -$51.6B). De 8859 empresas en cartera, 6063 tuvieron un cambio mayor, 1896 menor y 900 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +1%, 39 compradores / 28 vendedores, flujo neto $8.3B); Apple Inc (AAPL) (títulos agregados +0%, 27 compradores / 25 vendedores, flujo neto $890M); Nvidia Corporation (NVDA) (títulos agregados +1%, 35 compradores / 30 vendedores, flujo neto $6.1B). De 8859 empresas en cartera, 5553 tuvieron un cambio mayor, 2153 menor y 1153 ninguno."
       },
       {
         "kind": "turnover",
@@ -3896,14 +3743,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $853.2B vs calls $715.8B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $853.2B vs calls $715.8B (ratio 1.19). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 23745976809813.0,
+      "total_value": 23745976809812.0,
       "n_positions": 190798,
-      "total_value_chg": 0.020374627003346468,
+      "total_value_chg": 0.07067038296640638,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -3912,21 +3759,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -1193627482020.3496,
-      "gross_flow": 3660072479355.9756,
-      "price_effect": 1667782178372.3496,
+      "net_flow": 1440153192.8286781,
+      "gross_flow": 2568552503512.0127,
+      "price_effect": 1565930442754.1714,
       "n_new": 21330,
       "n_exit": 25412,
-      "n_add": 77853,
-      "n_trim": 80481,
+      "n_add": 79722,
+      "n_trim": 78298,
       "sector_top_overweight": {
         "sector": "Communication Services",
-        "active_weight": 0.0156703647122335,
+        "active_weight": 0.015670364712234444,
         "breadth": 0.44047619047619047
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.024816013051106756,
+        "active_weight": -0.02481601305110373,
         "breadth": 0.35714285714285715
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -3955,36 +3802,36 @@
         }
       ],
       "companies_total": 8859,
-      "companies_major": 6063,
-      "companies_minor": 1896,
-      "companies_none": 900,
+      "companies_major": 5553,
+      "companies_minor": 2153,
+      "companies_none": 1153,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "ticker": "MSFT",
-          "pct_shares": -0.05318164317917449,
-          "net_flow": -59936780208.65565,
-          "buyers": 38,
-          "sellers": 29,
-          "magnitude": "MAJOR"
+          "pct_shares": 0.00788983508196318,
+          "net_flow": 8349449370.193295,
+          "buyers": 39,
+          "sellers": 28,
+          "magnitude": "NONE"
         },
         {
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
-          "pct_shares": -0.04741216750289869,
-          "net_flow": -59519097385.21207,
+          "pct_shares": 0.0007269243265459132,
+          "net_flow": 890449293.5182313,
           "buyers": 27,
           "sellers": 25,
-          "magnitude": "MINOR"
+          "magnitude": "NONE"
         },
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
           "ticker": "NVDA",
-          "pct_shares": -0.106083431084187,
-          "net_flow": -51566616846.04526,
+          "pct_shares": 0.01429774845684291,
+          "net_flow": 6140634669.557212,
           "buyers": 35,
           "sellers": 30,
-          "magnitude": "MAJOR"
+          "magnitude": "MINOR"
         }
       ],
       "put_notional": 853188082698.0,
@@ -4050,14 +3897,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $843.4B vs calls $704.2B (ratio 1.20). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $843.4B vs calls $704.2B (ratio 1.20). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 22944989865979.0,
+      "total_value": 22944989865980.0,
       "n_positions": 191728,
-      "total_value_chg": -0.03373148008394389,
+      "total_value_chg": -0.033731480083861065,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4066,21 +3913,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 86230022798.80727,
-      "gross_flow": 2361091298590.577,
-      "price_effect": -887216966535.8073,
+      "net_flow": 86230022798.83672,
+      "gross_flow": 2361091298590.607,
+      "price_effect": -887216966533.8367,
       "n_new": 22874,
       "n_exit": 21967,
       "n_add": 81199,
       "n_trim": 76096,
       "sector_top_overweight": {
         "sector": "Communication Services",
-        "active_weight": 0.021071210264104204,
+        "active_weight": 0.021071210264103135,
         "breadth": 0.4880952380952381
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.026652061967038093,
+        "active_weight": -0.026652061967041202,
         "breadth": 0.34523809523809523
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -4211,9 +4058,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 28001740786413.0,
+      "total_value": 28001740786414.0,
       "n_positions": 192507,
-      "total_value_chg": 0.22038584239828962,
+      "total_value_chg": 0.22038584239828007,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4222,21 +4069,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 2431261596652.679,
-      "gross_flow": 4848659025717.179,
-      "price_effect": 2625489323783.3213,
+      "net_flow": 2431261596652.436,
+      "gross_flow": 4848659025717.422,
+      "price_effect": 2625489323783.5635,
       "n_new": 22950,
       "n_exit": 22182,
       "n_add": 93600,
       "n_trim": 65634,
       "sector_top_overweight": {
         "sector": "Communication Services",
-        "active_weight": 0.024363420331473012,
+        "active_weight": 0.024363420331472055,
         "breadth": 0.4880952380952381
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.02907682949135268,
+        "active_weight": -0.029076829491355566,
         "breadth": 0.35714285714285715
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -4364,9 +4211,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 32077600950476.0,
+      "total_value": 32077600950475.0,
       "n_positions": 192345,
-      "total_value_chg": 0.1455573849908891,
+      "total_value_chg": 0.1455573849908125,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4375,21 +4222,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 1628905119264.3655,
-      "gross_flow": 4836085527176.609,
-      "price_effect": 2446955044542.634,
+      "net_flow": 1628905119264.2463,
+      "gross_flow": 4836085527176.49,
+      "price_effect": 2446955044540.753,
       "n_new": 22207,
       "n_exit": 22379,
       "n_add": 85009,
       "n_trim": 75335,
       "sector_top_overweight": {
         "sector": "Communication Services",
-        "active_weight": 0.023266695980430616,
+        "active_weight": 0.023266695980431504,
         "breadth": 0.4642857142857143
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.03579060076711926,
+        "active_weight": -0.03579060076711674,
         "breadth": 0.34523809523809523
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -4522,7 +4369,7 @@
       "n_managers": 91,
       "total_value": 30242957442908.0,
       "n_positions": 191671,
-      "total_value_chg": -0.05719391267446938,
+      "total_value_chg": -0.05719391267443996,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4533,7 +4380,7 @@
       ],
       "net_flow": -1070003123576.678,
       "gross_flow": 7125914787992.82,
-      "price_effect": -764640384266.3223,
+      "price_effect": -764640384265.3223,
       "n_new": 22424,
       "n_exit": 23126,
       "n_add": 81638,
@@ -4639,7 +4486,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+0.6 pp QoQ, +0.8 pp YoY), recibió flujo neto de -$3.8B frente a un efecto precio de $120.4B (7150 compras / 7492 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+0.6 pp QoQ, +0.8 pp YoY), recibió flujo neto de -$3.8B frente a un efecto precio de $120.4B (7152 compras / 7492 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4831,9 +4678,9 @@
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 31966194259365.0,
+      "total_value": 31966194259366.0,
       "n_positions": 193982,
-      "total_value_chg": -0.009242094384157129,
+      "total_value_chg": -0.009242094384126154,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4842,21 +4689,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -691688419907.3843,
-      "gross_flow": 5059940715897.649,
-      "price_effect": 393497930829.3843,
+      "net_flow": -691688419907.2825,
+      "gross_flow": 5059940715897.751,
+      "price_effect": 393497930830.28253,
       "n_new": 23300,
       "n_exit": 21362,
       "n_add": 87090,
       "n_trim": 72717,
       "sector_top_overweight": {
         "sector": "Energy",
-        "active_weight": 0.015219415057793242,
+        "active_weight": 0.01521941505779302,
         "breadth": 0.40476190476190477
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.05413852860104823,
+        "active_weight": -0.05413852860105062,
         "breadth": 0.25
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -4980,14 +4827,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $1.02T vs calls $896.0B (ratio 1.14). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $1.02T vs calls $896.0B (ratio 1.14). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 91,
-      "total_value": 30864435677614.0,
+      "total_value": 30864435677615.0,
       "n_positions": 194098,
-      "total_value_chg": -0.03446636696291183,
+      "total_value_chg": -0.03446636696291072,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -4996,21 +4843,21 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 341506449293.27747,
-      "gross_flow": 3502731870639.9355,
-      "price_effect": -1443265031257.2776,
+      "net_flow": 341506449293.419,
+      "gross_flow": 3502731870640.077,
+      "price_effect": -1443265031257.419,
       "n_new": 22387,
       "n_exit": 22307,
       "n_add": 84557,
       "n_trim": 75585,
       "sector_top_overweight": {
         "sector": "Industrials",
-        "active_weight": 0.012865547995129595,
+        "active_weight": 0.012866034531059917,
         "breadth": 0.5
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.04962898968925697,
+        "active_weight": -0.04962898968925927,
         "breadth": 0.2619047619047619
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -5142,7 +4989,7 @@
       "n_managers": 91,
       "total_value": 34302243889269.0,
       "n_positions": 193420,
-      "total_value_chg": 0.11138412662274733,
+      "total_value_chg": 0.11138412662271135,
       "n_common_managers": 91,
       "missing_managers": [
         {
@@ -5153,7 +5000,7 @@
       ],
       "net_flow": 274426193630.75073,
       "gross_flow": 3848186156012.3047,
-      "price_effect": 3163382017701.2495,
+      "price_effect": 3163382017700.2495,
       "n_new": 23893,
       "n_exit": 24562,
       "n_add": 84879,
@@ -5234,39 +5081,39 @@
   {
     "period": "2025-09-30",
     "label": "2025Q3",
-    "headline": "2025Q3: 90 managers, $38.19T en posiciones reportadas, +14.0% vs trimestre anterior",
+    "headline": "2025Q3: 91 managers, $39.06T en posiciones reportadas, +13.9% vs trimestre anterior",
     "bullets": [
       {
         "kind": "coverage",
-        "text": "Sin filing para 2025Q3: 2 de 92 managers del universo: Norges Bank (último 2025Q2), Amundi US (último 2021Q1). Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial)."
+        "text": "Sin filing para 2025Q3: 1 de 92 managers del universo: Amundi US (último 2021Q1). Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial)."
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $4.68T en el trimestre: $2.54T por precio y $2.14T por flujo neto (compras menos ventas). Actividad bruta de $5.42T con 26284 posiciones nuevas y 22396 salidas."
+        "text": "El valor agregado del universo cambió $4.75T en el trimestre: $2.61T por precio y $2.15T por flujo neto (compras menos ventas). Actividad bruta de $5.49T con 26366 posiciones nuevas y 22669 salidas."
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Options (+0.7 pp) y baja Equity (-0.9 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Options (+0.6 pp) y baja Equity (-0.8 pp)."
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.2 pp) y Materials (+0.1 pp); mayor reducción en Health Care (-1.0 pp) y Consumer Staples (-0.4 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Information Technology (+1.3 pp) y Materials (+0.1 pp); mayor reducción en Health Care (-1.0 pp) y Consumer Staples (-0.4 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.4 pp; 53% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.7 pp; 22% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.1 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.4 pp; 54% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.6 pp; 23% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-1.0 pp)."
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.5 pp QoQ, +0.5 pp YoY), recibió flujo neto de $452.4B frente a un efecto precio de $427.6B (7517 compras / 6416 ventas); su peso actual está en el percentil 97 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+0.6 pp QoQ, +0.6 pp YoY), recibió flujo neto de $454.2B frente a un efecto precio de $459.8B (7643 compras / 6549 ventas); su peso actual está en el percentil 97 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.0%), Financials (15.8%), Industrials (11.9%), Materials (3.7%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.1%), Financials (15.8%), Industrials (11.8%), Materials (3.7%)."
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Southstate Bk Corp (SSB) (40 compradores / 0 vendedores, flujo $5.2B), Viper Energy Inc (VNOM) (36 compradores / 0 vendedores, flujo $3.8B), Gci Liberty Inc (36 compradores / 0 vendedores, flujo $392M)."
+        "text": "Compras de consenso (más compradores netos): Southstate Bk Corp (SSB) (41 compradores / 0 vendedores, flujo $5.3B), Gci Liberty Inc (37 compradores / 0 vendedores, flujo $393M), Viper Energy Inc (VNOM) (36 compradores / 0 vendedores, flujo $3.8B)."
       },
       {
         "kind": "consensus_sell",
@@ -5278,7 +5125,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +5%, 32 compradores / 34 vendedores, flujo neto $100.2B); Microsoft Corp (MSFT) (títulos agregados +6%, 43 compradores / 24 vendedores, flujo neto $93.3B); Apple Inc (AAPL) (títulos agregados +4%, 27 compradores / 27 vendedores, flujo neto $57.1B). De 8547 empresas en cartera, 5978 tuvieron un cambio mayor, 1797 menor y 772 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +5%, 32 compradores / 35 vendedores, flujo neto $100.2B); Microsoft Corp (MSFT) (títulos agregados +6%, 44 compradores / 24 vendedores, flujo neto $93.6B); Apple Inc (AAPL) (títulos agregados +4%, 27 compradores / 28 vendedores, flujo neto $56.1B). De 8547 empresas en cartera, 5971 tuvieron un cambio mayor, 1798 menor y 778 ninguno."
       },
       {
         "kind": "turnover",
@@ -5294,39 +5141,34 @@
       }
     ],
     "facts": {
-      "n_managers": 90,
-      "total_value": 38185874115293.0,
-      "n_positions": 195602,
-      "total_value_chg": 0.13983957838304506,
-      "n_common_managers": 90,
+      "n_managers": 91,
+      "total_value": 39055979020633.0,
+      "n_positions": 197118,
+      "total_value_chg": 0.13858379488844874,
+      "n_common_managers": 91,
       "missing_managers": [
         {
           "cik": "1102598",
           "manager": "Amundi Asset Management US, Inc.",
           "last_period": "2021-03-31"
-        },
-        {
-          "cik": "1374170",
-          "manager": "Norges Bank",
-          "last_period": "2025-06-30"
         }
       ],
-      "net_flow": 2140758418555.9722,
-      "gross_flow": 5416478752256.498,
-      "price_effect": 2544020594860.0283,
-      "n_new": 26284,
-      "n_exit": 22396,
-      "n_add": 88018,
-      "n_trim": 71230,
+      "net_flow": 2147243148793.8755,
+      "gross_flow": 5486124382181.217,
+      "price_effect": 2606491981692.1245,
+      "n_new": 26366,
+      "n_exit": 22669,
+      "n_add": 88761,
+      "n_trim": 71805,
       "sector_top_overweight": {
         "sector": "Financials",
-        "active_weight": 0.024151427595744984,
-        "breadth": 0.5301204819277109
+        "active_weight": 0.02400635931341255,
+        "breadth": 0.5357142857142857
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.0765440092825774,
-        "breadth": 0.21686746987951808
+        "active_weight": -0.07554590041527343,
+        "breadth": 0.2261904761904762
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
       "sector_extremes": {
@@ -5341,50 +5183,50 @@
       "most_held": [
         {
           "issuer": "AMAZON COM INC (AMZN)",
-          "holders": 69,
-          "value": 911852893930.0
+          "holders": 70,
+          "value": 940103467045.0
         },
         {
           "issuer": "MICROSOFT CORP (MSFT)",
-          "holders": 68,
-          "value": 1738100516190.0
+          "holders": 69,
+          "value": 1790963468490.0
         },
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
-          "holders": 66,
-          "value": 1972846272807.0
+          "holders": 67,
+          "value": 2033513460975.0
         }
       ],
       "companies_total": 8547,
-      "companies_major": 5978,
-      "companies_minor": 1797,
-      "companies_none": 772,
+      "companies_major": 5971,
+      "companies_minor": 1798,
+      "companies_none": 778,
       "top_company_moves": [
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
           "ticker": "NVDA",
-          "pct_shares": 0.053442927199831645,
-          "net_flow": 100202760830.565,
+          "pct_shares": 0.05175621084664066,
+          "net_flow": 100184076895.9449,
           "buyers": 32,
-          "sellers": 34,
-          "magnitude": "MINOR"
+          "sellers": 35,
+          "magnitude": "MAJOR"
         },
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "ticker": "MSFT",
-          "pct_shares": 0.05671977292258454,
-          "net_flow": 93304365209.24318,
-          "buyers": 43,
+          "pct_shares": 0.05513053931199036,
+          "net_flow": 93588558676.79398,
+          "buyers": 44,
           "sellers": 24,
           "magnitude": "MAJOR"
         },
         {
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
-          "pct_shares": 0.03842432245722892,
-          "net_flow": 57135238742.28801,
+          "pct_shares": 0.036543903154950846,
+          "net_flow": 56105187058.85149,
           "buyers": 27,
-          "sellers": 27,
+          "sellers": 28,
           "magnitude": "MINOR"
         }
       ],
@@ -5395,7 +5237,7 @@
   {
     "period": "2025-12-31",
     "label": "2025Q4",
-    "headline": "2025Q4: 90 managers, $38.48T en posiciones reportadas, -1.7% vs trimestre anterior (mismos 89 managers)",
+    "headline": "2025Q4: 90 managers, $38.49T en posiciones reportadas, -1.5% vs trimestre anterior",
     "bullets": [
       {
         "kind": "coverage",
@@ -5403,35 +5245,35 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$641.3B en el trimestre: $384.0B por precio y -$1.03T por flujo neto (compras menos ventas). Actividad bruta de $6.31T con 26536 posiciones nuevas y 24012 salidas."
+        "text": "El valor agregado del universo cambió -$569.6B en el trimestre: $395.9B por precio y -$965.4B por flujo neto (compras menos ventas). Actividad bruta de $6.39T con 26670 posiciones nuevas y 24081 salidas."
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+1.3 pp) y baja Options (-1.6 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Equity (+1.1 pp) y baja Options (-1.5 pp)."
       },
       {
         "kind": "sector",
-        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.7 pp) y Communication Services (+0.3 pp); mayor reducción en Information Technology (-0.6 pp) y Financials (-0.3 pp)."
+        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.9 pp) y Communication Services (+0.3 pp); mayor reducción en Information Technology (-0.7 pp) y Financials (-0.3 pp)."
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.1 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.8 pp; 22% por encima). Mayor cambio de peso activo en el trimestre: Industrials (+0.6 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.1 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.8 pp; 22% por encima). Mayor cambio de peso activo en el trimestre: Industrials (+0.7 pp)."
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+0.4 pp QoQ, -0.7 pp YoY), recibió flujo neto de -$117.3B frente a un efecto precio de $158.6B (8931 compras / 7914 ventas); su peso actual está en el percentil 21 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+0.6 pp QoQ, -0.5 pp YoY), recibió flujo neto de -$107.1B frente a un efecto precio de $167.8B (9040 compras / 7990 ventas); su peso actual está en el percentil 19 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.1%), Industrials (12.1%), Materials (4.0%); en mínimos: Consumer Staples (3.3%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (24.1%), Industrials (12.0%), Materials (4.0%)."
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Netflix Inc (NFLX) (53 compradores / 4 vendedores, flujo $177.3B), Servicenow Inc (NOW) (45 compradores / 2 vendedores, flujo $57.8B), Qnity Electronics Inc (Q) (43 compradores / 0 vendedores, flujo $7.8B)."
+        "text": "Compras de consenso (más compradores netos): Netflix Inc (NFLX) (54 compradores / 4 vendedores, flujo $182.6B), Servicenow Inc (NOW) (46 compradores / 2 vendedores, flujo $59.5B), Qnity Electronics Inc (Q) (44 compradores / 0 vendedores, flujo $8.0B)."
       },
       {
         "kind": "consensus_sell",
-        "text": "Ventas de consenso: Light & Wonder I (LNWO) (34 vendedores / 1 comprador, flujo -$2.8B), Chubb Limited (CB) (35 vendedores / 12 compradores, flujo -$586M), Irobot Corp (23 vendedores / 0 compradores, flujo -$30M)."
+        "text": "Ventas de consenso: Light & Wonder I (LNWO) (35 vendedores / 1 comprador, flujo -$2.9B), Chubb Limited (CB) (36 vendedores / 12 compradores, flujo -$817M), Fti Consulting Inc (FCN) (31 vendedores / 8 compradores, flujo -$193M)."
       },
       {
         "kind": "moves",
@@ -5439,7 +5281,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Netflix Inc (NFLX) (títulos agregados +873%, 53 compradores / 4 vendedores, flujo neto $177.3B); Nvidia Corporation (NVDA) (títulos agregados -3%, 35 compradores / 31 vendedores, flujo neto -$53.9B); Microsoft Corp (MSFT) (títulos agregados -3%, 32 compradores / 36 vendedores, flujo neto -$51.9B). De 8673 empresas en cartera, 6010 tuvieron un cambio mayor, 1892 menor y 771 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Netflix Inc (NFLX) (títulos agregados +876%, 54 compradores / 4 vendedores, flujo neto $182.6B); Nvidia Corporation (NVDA) (títulos agregados -3%, 36 compradores / 31 vendedores, flujo neto -$52.3B); Microsoft Corp (MSFT) (títulos agregados -3%, 33 compradores / 36 vendedores, flujo neto -$50.6B). De 8673 empresas en cartera, 6005 tuvieron un cambio mayor, 1882 menor y 786 ninguno."
       },
       {
         "kind": "turnover",
@@ -5456,10 +5298,10 @@
     ],
     "facts": {
       "n_managers": 90,
-      "total_value": 38477929309971.0,
-      "n_positions": 199691,
-      "total_value_chg": -0.01679527990669838,
-      "n_common_managers": 89,
+      "total_value": 38485024999179.0,
+      "n_positions": 199695,
+      "total_value_chg": -0.014584014562532,
+      "n_common_managers": 90,
       "missing_managers": [
         {
           "cik": "1102598",
@@ -5472,21 +5314,21 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": -1025321831674.9381,
-      "gross_flow": 6306678822132.951,
-      "price_effect": 384002585585.9379,
-      "n_new": 26536,
-      "n_exit": 24012,
-      "n_add": 82725,
-      "n_trim": 78824,
+      "net_flow": -965437465955.3423,
+      "gross_flow": 6393855607638.08,
+      "price_effect": 395864643128.34235,
+      "n_new": 26670,
+      "n_exit": 24081,
+      "n_add": 83582,
+      "n_trim": 79257,
       "sector_top_overweight": {
         "sector": "Financials",
-        "active_weight": 0.02148442527351266,
+        "active_weight": 0.021153356248001687,
         "breadth": 0.5180722891566265
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.0779894025964685,
+        "active_weight": -0.07818592739341754,
         "breadth": 0.21686746987951808
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -5496,9 +5338,7 @@
           "Industrials",
           "Materials"
         ],
-        "lows": [
-          "Consumer Staples"
-        ]
+        "lows": []
       },
       "most_held": [
         {
@@ -5518,34 +5358,34 @@
         }
       ],
       "companies_total": 8673,
-      "companies_major": 6010,
-      "companies_minor": 1892,
-      "companies_none": 771,
+      "companies_major": 6005,
+      "companies_minor": 1882,
+      "companies_none": 786,
       "top_company_moves": [
         {
           "issuer": "NETFLIX INC (NFLX)",
           "ticker": "NFLX",
-          "pct_shares": 8.72929000902286,
-          "net_flow": 177324267830.52252,
-          "buyers": 53,
+          "pct_shares": 8.757519151374956,
+          "net_flow": 182591816111.34406,
+          "buyers": 54,
           "sellers": 4,
           "magnitude": "MAJOR"
         },
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
           "ticker": "NVDA",
-          "pct_shares": -0.027345904388630726,
-          "net_flow": -53940752233.093956,
-          "buyers": 35,
+          "pct_shares": -0.02574183187889712,
+          "net_flow": -52337795550.093956,
+          "buyers": 36,
           "sellers": 31,
           "magnitude": "MINOR"
         },
         {
           "issuer": "MICROSOFT CORP (MSFT)",
           "ticker": "MSFT",
-          "pct_shares": -0.03196981675216885,
-          "net_flow": -51915107497.221275,
-          "buyers": 32,
+          "pct_shares": -0.030245852578960012,
+          "net_flow": -50609643981.2721,
+          "buyers": 33,
           "sellers": 36,
           "magnitude": "MAJOR"
         }
@@ -5557,7 +5397,7 @@
   {
     "period": "2026-03-31",
     "label": "2026Q1",
-    "headline": "2026Q1: 88 managers, $30.25T en posiciones reportadas, -1.3% vs trimestre anterior",
+    "headline": "2026Q1: 88 managers, $30.26T en posiciones reportadas, -1.3% vs trimestre anterior",
     "bullets": [
       {
         "kind": "coverage",
@@ -5565,7 +5405,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$394.5B en el trimestre: -$1.14T por precio y $743.9B por flujo neto (compras menos ventas). Actividad bruta de $4.65T con 27188 posiciones nuevas y 26428 salidas."
+        "text": "El valor agregado del universo cambió -$394.6B en el trimestre: -$1.14T por precio y $743.6B por flujo neto (compras menos ventas). Actividad bruta de $4.65T con 27188 posiciones nuevas y 26428 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5577,15 +5417,15 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 54% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-6.6 pp; 22% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+1.2 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 52% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-6.6 pp; 22% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (+1.2 pp)."
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Energy (+0.8 pp QoQ, +0.1 pp YoY), recibió flujo neto de $13.4B frente a un efecto precio de $179.0B (2877 compras / 2220 ventas); su peso actual está en el percentil 64 de su historia."
+        "text": "El sector que más peso ganó, Energy (+0.9 pp QoQ, 0.0 pp YoY), recibió flujo neto de $13.4B frente a un efecto precio de $179.0B (2877 compras / 2220 ventas); su peso actual está en el percentil 55 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Industrials (12.6%), Materials (4.4%); en mínimos: Consumer Staples (3.2%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Industrials (12.6%), Materials (4.4%); en mínimos: Consumer Staples (3.3%)."
       },
       {
         "kind": "consensus_buy",
@@ -5601,7 +5441,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -1%, 30 compradores / 38 vendedores, flujo neto -$9.9B); Nvidia Corporation (NVDA) (títulos agregados +0%, 29 compradores / 37 vendedores, flujo neto $3.8B); Amazon Com Inc (AMZN) (títulos agregados +3%, 36 compradores / 36 vendedores, flujo neto $16.9B). De 8878 empresas en cartera, 6337 tuvieron un cambio mayor, 1730 menor y 811 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -1%, 30 compradores / 38 vendedores, flujo neto -$9.9B); Nvidia Corporation (NVDA) (títulos agregados +0%, 29 compradores / 37 vendedores, flujo neto $3.8B); Amazon Com Inc (AMZN) (títulos agregados +3%, 36 compradores / 36 vendedores, flujo neto $16.9B). De 8878 empresas en cartera, 6338 tuvieron un cambio mayor, 1729 menor y 811 ninguno."
       },
       {
         "kind": "turnover",
@@ -5613,14 +5453,14 @@
       },
       {
         "kind": "options",
-        "text": "Opciones reportadas: puts $1.35T vs calls $1.27T (ratio 1.06). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr Put (IWM)."
+        "text": "Opciones reportadas: puts $1.35T vs calls $1.27T (ratio 1.06). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Ishares Tr (IWM)."
       }
     ],
     "facts": {
       "n_managers": 88,
-      "total_value": 30250952835868.0,
-      "n_positions": 194551,
-      "total_value_chg": -0.012874477006420637,
+      "total_value": 30258015977496.0,
+      "n_positions": 194555,
+      "total_value_chg": -0.012872558548591706,
       "n_common_managers": 88,
       "missing_managers": [
         {
@@ -5644,21 +5484,21 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": 743938776173.708,
-      "gross_flow": 4651928537487.45,
-      "price_effect": -1138483530419.708,
+      "net_flow": 743568036702.8768,
+      "gross_flow": 4653388386200.619,
+      "price_effect": -1138145338528.877,
       "n_new": 27188,
       "n_exit": 26428,
-      "n_add": 86478,
-      "n_trim": 70883,
+      "n_add": 86481,
+      "n_trim": 70885,
       "sector_top_overweight": {
         "sector": "Financials",
-        "active_weight": 0.0201661263727254,
-        "breadth": 0.5365853658536586
+        "active_weight": 0.019884560055616493,
+        "breadth": 0.524390243902439
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.06552456835623635,
+        "active_weight": -0.06579042160907364,
         "breadth": 0.21951219512195122
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
@@ -5689,8 +5529,8 @@
         }
       ],
       "companies_total": 8878,
-      "companies_major": 6337,
-      "companies_minor": 1730,
+      "companies_major": 6338,
+      "companies_minor": 1729,
       "companies_none": 811,
       "top_company_moves": [
         {
@@ -5728,7 +5568,7 @@
   {
     "period": "2026-06-30",
     "label": "2026Q2",
-    "headline": "2026Q2: 88 managers, $37.07T en posiciones reportadas, +19.3% vs trimestre anterior (mismos 87 managers)",
+    "headline": "2026Q2: 88 managers, $37.09T en posiciones reportadas, +19.3% vs trimestre anterior (mismos 87 managers)",
     "bullets": [
       {
         "kind": "coverage",
@@ -5736,11 +5576,11 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $5.83T en el trimestre: $4.32T por precio y $1.50T por flujo neto (compras menos ventas). Actividad bruta de $6.04T con 28238 posiciones nuevas y 25217 salidas."
+        "text": "El valor agregado del universo cambió $5.84T en el trimestre: $4.32T por precio y $1.52T por flujo neto (compras menos ventas). Actividad bruta de $6.06T con 28329 posiciones nuevas y 25219 salidas."
       },
       {
         "kind": "asset_mix",
-        "text": "Mezcla de activos (promedio simple entre managers): sube Options (+0.5 pp) y baja Equity (-0.6 pp)."
+        "text": "Mezcla de activos (promedio simple entre managers): sube Options (+0.4 pp) y baja Equity (-0.6 pp)."
       },
       {
         "kind": "sector",
@@ -5748,23 +5588,23 @@
       },
       {
         "kind": "sector_positioning",
-        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.5 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-1.2 pp)."
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.0 pp; 56% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-5.6 pp; 29% por encima). Mayor cambio de peso activo en el trimestre: Consumer Discretionary (-1.2 pp)."
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.4B frente a un efecto precio de $1.15T (7571 compras / 7041 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.7B frente a un efecto precio de $1.15T (7575 compras / 7038 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
-        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.1%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Consumer Staples (3.3%), Real Estate (2.1%)."
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (30.0%), Materials (4.2%); en mínimos: Consumer Discretionary (8.8%), Real Estate (2.1%)."
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Space Exploration Techn Corp (SPCX) (54 compradores / 0 vendedores, flujo $138.7B), Cerebras Systems Inc (CBRS) (42 compradores / 0 vendedores, flujo $11.3B), Kla Corp (KLAC) (44 compradores / 3 vendedores, flujo $143.9B)."
+        "text": "Compras de consenso (más compradores netos): Space Exploration Techn Corp (SPCX) (55 compradores / 0 vendedores, flujo $140.6B), Cerebras Systems Inc (CBRS) (43 compradores / 0 vendedores, flujo $11.4B), Kla Corp (KLAC) (44 compradores / 3 vendedores, flujo $143.9B)."
       },
       {
         "kind": "consensus_sell",
-        "text": "Ventas de consenso: Carnival Corp Common Stock (CCL) (38 vendedores / 1 comprador, flujo -$8.2B), Sleep Number Corp (SNBRQ) (28 vendedores / 1 comprador, flujo -$15M), Ascendis Pharma A/s (ASND) (26 vendedores / 1 comprador, flujo -$2.8B)."
+        "text": "Ventas de consenso: Sleep Number Corp (SNBRQ) (28 vendedores / 1 comprador, flujo -$15M), Bank Of Amer Corp (BAC) (35 vendedores / 15 compradores, flujo -$4.6B), Spotify Technology S A (SPOT) (37 vendedores / 17 compradores, flujo -$1.5B)."
       },
       {
         "kind": "moves",
@@ -5772,7 +5612,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Kla Corp (KLAC) (títulos agregados +924%, 44 compradores / 3 vendedores, flujo neto $143.9B); Space Exploration Techn Corp (SPCX) (entrada nueva al universo, 54 compradores / 0 vendedores, flujo neto $138.7B); Micron Technology Inc (MU) (títulos agregados -1%, 24 compradores / 31 vendedores, flujo neto -$2.1B). De 8985 empresas en cartera, 6360 tuvieron un cambio mayor, 1740 menor y 885 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Kla Corp (KLAC) (títulos agregados +924%, 44 compradores / 3 vendedores, flujo neto $143.9B); Space Exploration Techn Corp (SPCX) (entrada nueva al universo, 55 compradores / 0 vendedores, flujo neto $140.6B); Micron Technology Inc (MU) (títulos agregados -1%, 24 compradores / 31 vendedores, flujo neto -$2.1B). De 8985 empresas en cartera, 6357 tuvieron un cambio mayor, 1742 menor y 886 ninguno."
       },
       {
         "kind": "turnover",
@@ -5789,9 +5629,9 @@
     ],
     "facts": {
       "n_managers": 88,
-      "total_value": 37066326522871.0,
-      "n_positions": 199173,
-      "total_value_chg": 0.19267146420161607,
+      "total_value": 37086912200954.0,
+      "n_positions": 199266,
+      "total_value_chg": 0.19307357864767938,
       "n_common_managers": 87,
       "missing_managers": [
         {
@@ -5815,22 +5655,199 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": 1504736165343.1892,
-      "gross_flow": 6042931361828.97,
-      "price_effect": 4321116856634.8105,
-      "n_new": 28238,
-      "n_exit": 25217,
-      "n_add": 88424,
-      "n_trim": 71729,
+      "net_flow": 1519020936250.776,
+      "gross_flow": 6061434485928.229,
+      "price_effect": 4320354622182.2246,
+      "n_new": 28329,
+      "n_exit": 25219,
+      "n_add": 88443,
+      "n_trim": 71713,
       "sector_top_overweight": {
         "sector": "Financials",
-        "active_weight": 0.020014806737948754,
+        "active_weight": 0.019900922031757765,
         "breadth": 0.5609756097560976
       },
       "sector_top_underweight": {
         "sector": "Information Technology",
-        "active_weight": -0.05537908250710388,
+        "active_weight": -0.05579970448521426,
         "breadth": 0.2926829268292683
+      },
+      "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
+      "sector_extremes": {
+        "highs": [
+          "Information Technology",
+          "Materials"
+        ],
+        "lows": [
+          "Consumer Discretionary",
+          "Real Estate"
+        ]
+      },
+      "most_held": [
+        {
+          "issuer": "AMAZON COM INC (AMZN)",
+          "holders": 71,
+          "value": 836688342161.0
+        },
+        {
+          "issuer": "ALPHABET INC (GOOGL)",
+          "holders": 67,
+          "value": 824979972684.0
+        },
+        {
+          "issuer": "META PLATFORMS INC (META)",
+          "holders": 65,
+          "value": 491539037792.0
+        }
+      ],
+      "companies_total": 8985,
+      "companies_major": 6357,
+      "companies_minor": 1742,
+      "companies_none": 886,
+      "top_company_moves": [
+        {
+          "issuer": "KLA CORP (KLAC)",
+          "ticker": "KLAC",
+          "pct_shares": 9.23807808519155,
+          "net_flow": 143931081063.48386,
+          "buyers": 44,
+          "sellers": 3,
+          "magnitude": "MAJOR"
+        },
+        {
+          "issuer": "SPACE EXPLORATION TECHN CORP (SPCX)",
+          "ticker": "SPCX",
+          "pct_shares": null,
+          "net_flow": 140560256290.0,
+          "buyers": 55,
+          "sellers": 0,
+          "magnitude": "MAJOR"
+        },
+        {
+          "issuer": "MICRON TECHNOLOGY INC (MU)",
+          "ticker": "MU",
+          "pct_shares": -0.005054125354928839,
+          "net_flow": -2116507732.487279,
+          "buyers": 24,
+          "sellers": 31,
+          "magnitude": "NONE"
+        }
+      ],
+      "put_notional": 1981893329037.0,
+      "call_notional": 1802811723264.0
+    }
+  },
+  {
+    "period": "2026-09-30",
+    "label": "2026Q3",
+    "headline": "2026Q3: 87 managers, $36.46T en posiciones reportadas, +1.0% vs trimestre anterior",
+    "bullets": [
+      {
+        "kind": "coverage",
+        "text": "Sin filing para 2026Q3: 5 de 92 managers del universo: Norges Bank (último 2026Q2), Pershing Square (último 2026Q1), Vanguard (último 2025Q4), Scion (último 2025Q3), Amundi US (último 2021Q1). Sus posiciones no entran en los agregados de este trimestre (deregistro, cambio de entidad filer o presentación tardía/confidencial)."
+      },
+      {
+        "kind": "flows",
+        "text": "El valor agregado del universo cambió $371.7B en el trimestre: -$113.3B por precio y $485.0B por flujo neto (compras menos ventas). Actividad bruta de $5.59T con 27866 posiciones nuevas y 24521 salidas."
+      },
+      {
+        "kind": "asset_mix",
+        "text": "Mezcla de activos (promedio simple entre managers): sube Options (+0.6 pp) y baja Equity (-0.5 pp)."
+      },
+      {
+        "kind": "sector",
+        "text": "Rotación sectorial: mayor incremento de peso en Health Care (+0.7 pp) y Energy (+0.4 pp); mayor reducción en Industrials (-0.5 pp) y Financials (-0.3 pp)."
+      },
+      {
+        "kind": "sector_positioning",
+        "text": "Posicionamiento sectorial de los managers activos en acciones directas, frente al benchmark Índice implícito (managers índice, ponderado por valor): mayor sobreponderación en Financials (+2.2 pp; 59% de los managers por encima del benchmark) y mayor infraponderación en Information Technology (-7.5 pp; 27% por encima). Mayor cambio de peso activo en el trimestre: Information Technology (-2.0 pp)."
+      },
+      {
+        "kind": "sector_driver",
+        "text": "El sector que más peso ganó, Health Care (+0.8 pp QoQ, +1.3 pp YoY), recibió flujo neto de $12.3B frente a un efecto precio de $93.8B (8685 compras / 8041 ventas); su peso actual está en el percentil 45 de su historia."
+      },
+      {
+        "kind": "sector_extremes",
+        "text": "Extremos históricos del peso sectorial (percentil dentro de la historia disponible): en máximos de su historia: Information Technology (29.9%), Materials (4.1%); en mínimos: Consumer Discretionary (8.7%), Consumer Staples (3.2%), Real Estate (1.9%)."
+      },
+      {
+        "kind": "consensus_buy",
+        "text": "Compras de consenso (más compradores netos): Exxonmobil Holdings Corp (XOM) (43 compradores / 0 vendedores, flujo $218.6B), Sk Hynix Inc (41 compradores / 0 vendedores, flujo $17.8B), Teva Pharmaceutical Inds Ltd (TEVA) (39 compradores / 0 vendedores, flujo $8.8B)."
+      },
+      {
+        "kind": "consensus_sell",
+        "text": "Ventas de consenso: First Ctzns Bancshares Inc D (FCNCA) (30 vendedores / 9 compradores, flujo -$454M), Axia Energia-adr (AXIAY) (21 vendedores / 0 compradores, flujo -$246M), Selectquote Inc (SLQT) (25 vendedores / 5 compradores, flujo -$3M)."
+      },
+      {
+        "kind": "moves",
+        "text": "Movimientos individuales más grandes: BlackRock Inc. abre Exxonmobil Holdings Corp (XOM) ($53.9B); BlackRock Inc. liquida Exxon Mobil Corp (XOM) (-$45.8B); Jane Street Group, LLC reduce State Str SPDR S&P 500 ETF T (SPY) (-$44.1B); Goldman Sachs Group Inc aumenta State Str SPDR S&P 500 ETF T (SPY) ($37.4B)."
+      },
+      {
+        "kind": "company_moves",
+        "text": "Empresas con mayor movimiento agregado: Exxonmobil Holdings Corp (XOM) (entrada nueva al universo, 43 compradores / 0 vendedores, flujo neto $218.6B); Exxon Mobil Corp (XOM) (títulos agregados -100%, 0 compradores / 42 vendedores, flujo neto -$184.4B); Crowdstrike Hldgs Inc (CRWD) (títulos agregados +305%, 41 compradores / 6 vendedores, flujo neto $76.5B). De 9218 empresas en cartera, 6205 tuvieron un cambio mayor, 2007 menor y 1006 ninguno."
+      },
+      {
+        "kind": "turnover",
+        "text": "Mayor rotación de cartera: Flow Traders U.S. LLC (153%), ExodusPoint Capital Management, LP (124%), Lone Pine Capital LLC (119%)."
+      },
+      {
+        "kind": "type_mismatch",
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 24%; turnover 49%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 53%; turnover 17%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 9 positions, top-10 100%; turnover 5%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 61%; turnover 103%)."
+      },
+      {
+        "kind": "options",
+        "text": "Opciones reportadas: puts $2.05T vs calls $1.92T (ratio 1.07). Mayor cobertura con puts en SPDR S&P 500 ETF Tr (SPY), Invesco QQQ Tr Puts (QQQ), Micron Technology Inc (MU)."
+      }
+    ],
+    "facts": {
+      "n_managers": 87,
+      "total_value": 36455356859380.0,
+      "n_positions": 201008,
+      "total_value_chg": 0.010300491845957271,
+      "n_common_managers": 87,
+      "missing_managers": [
+        {
+          "cik": "102909",
+          "manager": "Vanguard Group Inc",
+          "last_period": "2025-12-31"
+        },
+        {
+          "cik": "1102598",
+          "manager": "Amundi Asset Management US, Inc.",
+          "last_period": "2021-03-31"
+        },
+        {
+          "cik": "1336528",
+          "manager": "Pershing Square Capital Management, L.P.",
+          "last_period": "2026-03-31"
+        },
+        {
+          "cik": "1374170",
+          "manager": "Norges Bank",
+          "last_period": "2026-06-30"
+        },
+        {
+          "cik": "1649339",
+          "manager": "Scion Asset Management, LLC",
+          "last_period": "2025-09-30"
+        }
+      ],
+      "net_flow": 484950178236.49176,
+      "gross_flow": 5594440322844.535,
+      "price_effect": -113270554979.4917,
+      "n_new": 27866,
+      "n_exit": 24521,
+      "n_add": 83545,
+      "n_trim": 76796,
+      "sector_top_overweight": {
+        "sector": "Financials",
+        "active_weight": 0.021580986842079833,
+        "breadth": 0.5925925925925926
+      },
+      "sector_top_underweight": {
+        "sector": "Information Technology",
+        "active_weight": -0.07534716485003556,
+        "breadth": 0.2716049382716049
       },
       "sector_benchmark": "Índice implícito (managers índice, ponderado por valor)",
       "sector_extremes": {
@@ -5847,55 +5864,55 @@
       "most_held": [
         {
           "issuer": "AMAZON COM INC (AMZN)",
-          "holders": 71,
-          "value": 836686847770.0
-        },
-        {
-          "issuer": "ALPHABET INC (GOOGL)",
-          "holders": 67,
-          "value": 824963871736.0
+          "holders": 69,
+          "value": 837553747495.0
         },
         {
           "issuer": "META PLATFORMS INC (META)",
           "holders": 65,
-          "value": 491531205244.0
-        }
-      ],
-      "companies_total": 8985,
-      "companies_major": 6360,
-      "companies_minor": 1740,
-      "companies_none": 885,
-      "top_company_moves": [
-        {
-          "issuer": "KLA CORP (KLAC)",
-          "ticker": "KLAC",
-          "pct_shares": 9.237882478543176,
-          "net_flow": 143928029568.48987,
-          "buyers": 44,
-          "sellers": 3,
-          "magnitude": "MAJOR"
+          "value": 624184101614.0
         },
         {
-          "issuer": "SPACE EXPLORATION TECHN CORP (SPCX)",
-          "ticker": "SPCX",
+          "issuer": "NVIDIA CORPORATION (NVDA)",
+          "holders": 64,
+          "value": 1849225000152.0
+        }
+      ],
+      "companies_total": 9218,
+      "companies_major": 6205,
+      "companies_minor": 2007,
+      "companies_none": 1006,
+      "top_company_moves": [
+        {
+          "issuer": "EXXONMOBIL HOLDINGS CORP (XOM)",
+          "ticker": "XOM",
           "pct_shares": null,
-          "net_flow": 138701295731.0,
-          "buyers": 54,
+          "net_flow": 218613850238.0,
+          "buyers": 43,
           "sellers": 0,
           "magnitude": "MAJOR"
         },
         {
-          "issuer": "MICRON TECHNOLOGY INC (MU)",
-          "ticker": "MU",
-          "pct_shares": -0.005074006109723637,
-          "net_flow": -2126568524.12963,
-          "buyers": 24,
-          "sellers": 31,
-          "magnitude": "NONE"
+          "issuer": "EXXON MOBIL CORP (XOM)",
+          "ticker": "XOM",
+          "pct_shares": -1.0,
+          "net_flow": -184423706084.0,
+          "buyers": 0,
+          "sellers": 42,
+          "magnitude": "MAJOR"
+        },
+        {
+          "issuer": "CROWDSTRIKE HLDGS INC (CRWD)",
+          "ticker": "CRWD",
+          "pct_shares": 3.053890153187173,
+          "net_flow": 76538036290.24199,
+          "buyers": 41,
+          "sellers": 6,
+          "magnitude": "MAJOR"
         }
       ],
-      "put_notional": 1981893329037.0,
-      "call_notional": 1802798393264.0
+      "put_notional": 2047180591131.0,
+      "call_notional": 1917727111399.0
     }
   }
 ]
