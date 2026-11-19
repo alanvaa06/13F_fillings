@@ -60,7 +60,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $2.39T en el trimestre: $550.7B por precio y $1.84T por flujo neto (compras menos ventas). Actividad bruta de $3.62T con 17336 posiciones nuevas y 18128 salidas."
+        "text": "El valor agregado del universo cambió $2.39T en el trimestre: $550.8B por precio y $1.84T por flujo neto (compras menos ventas). Actividad bruta de $3.62T con 17219 posiciones nuevas y 18011 salidas."
       },
       {
         "kind": "asset_mix",
@@ -92,7 +92,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +26%, 35 compradores / 24 vendedores, flujo neto $58.9B); Comcast Corp New (CMCSA) (títulos agregados +134%, 46 compradores / 7 vendedores, flujo neto $47.2B); Microsoft Corp (MSFT) (títulos agregados +15%, 29 compradores / 29 vendedores, flujo neto $27.8B). De 6120 empresas en cartera, 5151 tuvieron un cambio mayor, 736 menor y 233 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +26%, 35 compradores / 24 vendedores, flujo neto $58.9B); Comcast Corp New (CMCSA) (títulos agregados +134%, 46 compradores / 7 vendedores, flujo neto $47.2B); Microsoft Corp (MSFT) (títulos agregados +15%, 29 compradores / 29 vendedores, flujo neto $27.8B). De 6109 empresas en cartera, 5137 tuvieron un cambio mayor, 739 menor y 233 ninguno."
       },
       {
         "kind": "turnover",
@@ -113,13 +113,13 @@
       "n_positions": 143659,
       "total_value_chg": 0.2214428827214281,
       "n_common_managers": 87,
-      "net_flow": 1840636207127.652,
-      "gross_flow": 3616023156005.6567,
-      "price_effect": 550702580872.3478,
-      "n_new": 17336,
-      "n_exit": 18128,
-      "n_add": 65807,
-      "n_trim": 53373,
+      "net_flow": 1840557469300.8472,
+      "gross_flow": 3615280195692.4155,
+      "price_effect": 550781318699.1527,
+      "n_new": 17219,
+      "n_exit": 18011,
+      "n_add": 65862,
+      "n_trim": 53426,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.024812567481541745,
@@ -148,9 +148,9 @@
           "value": 173189469000.0
         }
       ],
-      "companies_total": 6120,
-      "companies_major": 5151,
-      "companies_minor": 736,
+      "companies_total": 6109,
+      "companies_major": 5137,
+      "companies_minor": 739,
       "companies_none": 233,
       "top_company_moves": [
         {
@@ -192,7 +192,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $83.4B en el trimestre: $338.4B por precio y -$255.0B por flujo neto (compras menos ventas). Actividad bruta de $2.04T con 16828 posiciones nuevas y 17151 salidas."
+        "text": "El valor agregado del universo cambió $83.4B en el trimestre: $338.0B por precio y -$254.6B por flujo neto (compras menos ventas). Actividad bruta de $2.03T con 16548 posiciones nuevas y 16871 salidas."
       },
       {
         "kind": "asset_mix",
@@ -208,7 +208,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.7 pp QoQ), recibió flujo neto de -$22.8B frente a un efecto precio de $23.6B (3737 compras / 3705 ventas)."
+        "text": "El sector que más peso ganó, Information Technology (+0.7 pp QoQ), recibió flujo neto de -$22.8B frente a un efecto precio de $23.6B (3734 compras / 3701 ventas)."
       },
       {
         "kind": "consensus_buy",
@@ -224,15 +224,15 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +2%, 23 compradores / 34 vendedores, flujo neto $3.6B); Yahoo Inc (títulos agregados -100%, 0 compradores / 46 vendedores, flujo neto -$20.3B); Altaba Inc (entrada nueva al universo, 42 compradores / 0 vendedores, flujo neto $15.3B). De 6096 empresas en cartera, 3489 tuvieron un cambio mayor, 1799 menor y 808 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +2%, 23 compradores / 34 vendedores, flujo neto $3.6B); Yahoo Inc (títulos agregados -100%, 0 compradores / 46 vendedores, flujo neto -$20.3B); Altaba Inc (entrada nueva al universo, 42 compradores / 0 vendedores, flujo neto $15.3B). De 6078 empresas en cartera, 3468 tuvieron un cambio mayor, 1801 menor y 809 ninguno."
       },
       {
         "kind": "turnover",
-        "text": "Mayor rotación de cartera: Voloridge Investment Management, LLC (147%), Tower Research Capital LLC (TRC) (122%), Flow Traders U.S. LLC (108%)."
+        "text": "Mayor rotación de cartera: Voloridge Investment Management, LLC (146%), Tower Research Capital LLC (TRC) (122%), Flow Traders U.S. LLC (108%)."
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 80%; turnover 10%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 57%; turnover 31%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 66%; turnover 46%); California State Teachers Retirement System (declarado Pension Fund, cartera parece Index / Broad Asset Manager: 3008 positions, top-10 15%; turnover 10%)."
+        "text": "Perfil de cartera distinto al tipo declarado: Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 80%; turnover 10%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 57%; turnover 30%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 66%; turnover 46%); California State Teachers Retirement System (declarado Pension Fund, cartera parece Index / Broad Asset Manager: 3008 positions, top-10 15%; turnover 10%)."
       },
       {
         "kind": "options",
@@ -245,13 +245,13 @@
       "n_positions": 143526,
       "total_value_chg": 0.006323026822374178,
       "n_common_managers": 87,
-      "net_flow": -255031961562.3525,
-      "gross_flow": 2038962334649.8818,
-      "price_effect": 338434173562.3524,
-      "n_new": 16828,
-      "n_exit": 17151,
-      "n_add": 62069,
-      "n_trim": 56769,
+      "net_flow": -254612745162.23132,
+      "gross_flow": 2029732625096.061,
+      "price_effect": 338014957162.2314,
+      "n_new": 16548,
+      "n_exit": 16871,
+      "n_add": 62204,
+      "n_trim": 56905,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.028027128102259435,
@@ -280,10 +280,10 @@
           "value": 80563470000.0
         }
       ],
-      "companies_total": 6096,
-      "companies_major": 3489,
-      "companies_minor": 1799,
-      "companies_none": 808,
+      "companies_total": 6078,
+      "companies_major": 3468,
+      "companies_minor": 1801,
+      "companies_none": 809,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -324,7 +324,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $724.0B en el trimestre: $538.2B por precio y $185.8B por flujo neto (compras menos ventas). Actividad bruta de $2.02T con 16434 posiciones nuevas y 15509 salidas."
+        "text": "El valor agregado del universo cambió $724.0B en el trimestre: $538.0B por precio y $186.0B por flujo neto (compras menos ventas). Actividad bruta de $2.02T con 16311 posiciones nuevas y 15386 salidas."
       },
       {
         "kind": "asset_mix",
@@ -340,7 +340,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+1.2 pp QoQ), recibió flujo neto de $15.0B frente a un efecto precio de $27.5B (5024 compras / 4012 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+1.2 pp QoQ), recibió flujo neto de $15.0B frente a un efecto precio de $27.5B (5012 compras / 4001 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -360,7 +360,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Dowdupont Inc (entrada nueva al universo, 49 compradores / 0 vendedores, flujo neto $69.8B); Cincinnati Bell Inc (títulos agregados +8%, 15 compradores / 11 vendedores, flujo neto $37.2B); Du Pont E I De Nemours & Co (títulos agregados -100%, 0 compradores / 40 vendedores, flujo neto -$32.7B). De 6101 empresas en cartera, 3393 tuvieron un cambio mayor, 1848 menor y 860 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Dowdupont Inc (entrada nueva al universo, 49 compradores / 0 vendedores, flujo neto $69.8B); Cincinnati Bell Inc (títulos agregados +8%, 15 compradores / 11 vendedores, flujo neto $37.2B); Du Pont E I De Nemours & Co (títulos agregados -100%, 0 compradores / 40 vendedores, flujo neto -$32.7B). De 6093 empresas en cartera, 3383 tuvieron un cambio mayor, 1850 menor y 860 ninguno."
       },
       {
         "kind": "turnover",
@@ -381,13 +381,13 @@
       "n_positions": 144357,
       "total_value_chg": 0.05454303659074089,
       "n_common_managers": 87,
-      "net_flow": 185764341313.52353,
-      "gross_flow": 2024819134247.1694,
-      "price_effect": 538220158686.47656,
-      "n_new": 16434,
-      "n_exit": 15509,
-      "n_add": 67306,
-      "n_trim": 49803,
+      "net_flow": 186022387921.45874,
+      "gross_flow": 2021726163879.169,
+      "price_effect": 537962112078.54126,
+      "n_new": 16311,
+      "n_exit": 15386,
+      "n_add": 67367,
+      "n_trim": 49861,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.02298499521144433,
@@ -423,9 +423,9 @@
           "value": 251022146000.0
         }
       ],
-      "companies_total": 6101,
-      "companies_major": 3393,
-      "companies_minor": 1848,
+      "companies_total": 6093,
+      "companies_major": 3383,
+      "companies_minor": 1850,
       "companies_none": 860,
       "top_company_moves": [
         {
@@ -467,7 +467,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $798.0B en el trimestre: $690.3B por precio y $107.6B por flujo neto (compras menos ventas). Actividad bruta de $1.94T con 18457 posiciones nuevas y 14973 salidas."
+        "text": "El valor agregado del universo cambió $798.0B en el trimestre: $689.0B por precio y $108.9B por flujo neto (compras menos ventas). Actividad bruta de $1.94T con 18308 posiciones nuevas y 14824 salidas."
       },
       {
         "kind": "asset_mix",
@@ -503,7 +503,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +1%, 31 compradores / 25 vendedores, flujo neto $2.7B); Intuitive Surgical Inc (ISRG) (títulos agregados +175%, 39 compradores / 4 vendedores, flujo neto $14.0B); Microsoft Corp (MSFT) (títulos agregados +1%, 35 compradores / 27 vendedores, flujo neto $2.5B). De 6145 empresas en cartera, 3404 tuvieron un cambio mayor, 1851 menor y 890 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +1%, 31 compradores / 25 vendedores, flujo neto $2.7B); Intuitive Surgical Inc (ISRG) (títulos agregados +175%, 39 compradores / 4 vendedores, flujo neto $14.0B); Microsoft Corp (MSFT) (títulos agregados +1%, 35 compradores / 27 vendedores, flujo neto $2.5B). De 6136 empresas en cartera, 3390 tuvieron un cambio mayor, 1854 menor y 892 ninguno."
       },
       {
         "kind": "turnover",
@@ -524,13 +524,13 @@
       "n_positions": 147857,
       "total_value_chg": 0.0570066173145336,
       "n_common_managers": 87,
-      "net_flow": 107610082163.3662,
-      "gross_flow": 1942262191607.6946,
-      "price_effect": 690347002836.6338,
-      "n_new": 18457,
-      "n_exit": 14973,
-      "n_add": 66499,
-      "n_trim": 52993,
+      "net_flow": 108912282673.5716,
+      "gross_flow": 1938437171877.6912,
+      "price_effect": 689044802326.4285,
+      "n_new": 18308,
+      "n_exit": 14824,
+      "n_add": 66576,
+      "n_trim": 53059,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.023245319936699052,
@@ -568,10 +568,10 @@
           "value": 96217519000.0
         }
       ],
-      "companies_total": 6145,
-      "companies_major": 3404,
-      "companies_minor": 1851,
-      "companies_none": 890,
+      "companies_total": 6136,
+      "companies_major": 3390,
+      "companies_minor": 1854,
+      "companies_none": 892,
       "top_company_moves": [
         {
           "issuer": "APPLE INC (AAPL)",
@@ -612,7 +612,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$169.0B en el trimestre: -$115.9B por precio y -$53.1B por flujo neto (compras menos ventas). Actividad bruta de $2.22T con 17538 posiciones nuevas y 17128 salidas."
+        "text": "El valor agregado del universo cambió -$169.0B en el trimestre: -$114.6B por precio y -$54.4B por flujo neto (compras menos ventas). Actividad bruta de $2.21T con 17466 posiciones nuevas y 17056 salidas."
       },
       {
         "kind": "asset_mix",
@@ -648,7 +648,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Booking Hldgs Inc (BKNG) (títulos agregados +1227309%, 49 compradores / 1 vendedor, flujo neto $56.8B); Priceline Grp Inc (títulos agregados -100%, 0 compradores / 49 vendedores, flujo neto -$47.3B); Apple Inc (AAPL) (títulos agregados -3%, 19 compradores / 39 vendedores, flujo neto -$10.6B). De 6161 empresas en cartera, 3387 tuvieron un cambio mayor, 1848 menor y 926 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Booking Hldgs Inc (BKNG) (títulos agregados +1227309%, 49 compradores / 1 vendedor, flujo neto $56.8B); Priceline Grp Inc (títulos agregados -100%, 0 compradores / 49 vendedores, flujo neto -$47.3B); Apple Inc (AAPL) (títulos agregados -3%, 19 compradores / 39 vendedores, flujo neto -$10.6B). De 6156 empresas en cartera, 3381 tuvieron un cambio mayor, 1848 menor y 927 ninguno."
       },
       {
         "kind": "turnover",
@@ -669,13 +669,13 @@
       "n_positions": 150387,
       "total_value_chg": -0.011420127604425567,
       "n_common_managers": 87,
-      "net_flow": -53061506617.25159,
-      "gross_flow": 2221316164673.415,
-      "price_effect": -115905895382.74844,
-      "n_new": 17538,
-      "n_exit": 17128,
-      "n_add": 63921,
-      "n_trim": 57734,
+      "net_flow": -54405197916.513016,
+      "gross_flow": 2212505322215.4487,
+      "price_effect": -114562204083.48697,
+      "n_new": 17466,
+      "n_exit": 17056,
+      "n_add": 63952,
+      "n_trim": 57773,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.023950285249334943,
@@ -712,10 +712,10 @@
           "value": 166187533000.0
         }
       ],
-      "companies_total": 6161,
-      "companies_major": 3387,
+      "companies_total": 6156,
+      "companies_major": 3381,
       "companies_minor": 1848,
-      "companies_none": 926,
+      "companies_none": 927,
       "top_company_moves": [
         {
           "issuer": "BOOKING HLDGS INC (BKNG)",
@@ -756,7 +756,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $514.6B en el trimestre: $466.5B por precio y $48.1B por flujo neto (compras menos ventas). Actividad bruta de $2.32T con 22300 posiciones nuevas y 18617 salidas."
+        "text": "El valor agregado del universo cambió $514.6B en el trimestre: $467.6B por precio y $47.0B por flujo neto (compras menos ventas). Actividad bruta de $2.31T con 22072 posiciones nuevas y 18389 salidas."
       },
       {
         "kind": "asset_mix",
@@ -792,7 +792,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Broadcom Inc (AVGO) (títulos agregados +284%, 45 compradores / 1 vendedor, flujo neto $43.0B); Broadcom Ltd (AVGO) (títulos agregados -100%, 0 compradores / 39 vendedores, flujo neto -$40.5B); Time Warner Inc (títulos agregados -100%, 0 compradores / 51 vendedores, flujo neto -$29.9B). De 6277 empresas en cartera, 3879 tuvieron un cambio mayor, 1652 menor y 746 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Broadcom Inc (AVGO) (títulos agregados +284%, 45 compradores / 1 vendedor, flujo neto $43.0B); Broadcom Ltd (AVGO) (títulos agregados -100%, 0 compradores / 39 vendedores, flujo neto -$40.5B); Time Warner Inc (títulos agregados -100%, 0 compradores / 51 vendedores, flujo neto -$29.9B). De 6261 empresas en cartera, 3858 tuvieron un cambio mayor, 1657 menor y 746 ninguno."
       },
       {
         "kind": "turnover",
@@ -813,13 +813,13 @@
       "n_positions": 154074,
       "total_value_chg": 0.035128552149798375,
       "n_common_managers": 89,
-      "net_flow": 48121374674.23053,
-      "gross_flow": 2318322167546.9463,
-      "price_effect": 466467017325.76953,
-      "n_new": 22300,
-      "n_exit": 18617,
-      "n_add": 70272,
-      "n_trim": 53157,
+      "net_flow": 46966750948.864914,
+      "gross_flow": 2313230111875.3936,
+      "price_effect": 467621641051.1351,
+      "n_new": 22072,
+      "n_exit": 18389,
+      "n_add": 70389,
+      "n_trim": 53261,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.021088808969472767,
@@ -854,9 +854,9 @@
           "value": 302462847000.0
         }
       ],
-      "companies_total": 6277,
-      "companies_major": 3879,
-      "companies_minor": 1652,
+      "companies_total": 6261,
+      "companies_major": 3858,
+      "companies_minor": 1657,
       "companies_none": 746,
       "top_company_moves": [
         {
@@ -898,7 +898,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $825.8B en el trimestre: $841.0B por precio y -$15.2B por flujo neto (compras menos ventas). Actividad bruta de $2.08T con 18882 posiciones nuevas y 16472 salidas."
+        "text": "El valor agregado del universo cambió $825.8B en el trimestre: $841.0B por precio y -$15.2B por flujo neto (compras menos ventas). Actividad bruta de $2.08T con 18851 posiciones nuevas y 16441 salidas."
       },
       {
         "kind": "asset_mix",
@@ -934,7 +934,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Amazon Com Inc (AMZN) (títulos agregados -2%, 30 compradores / 29 vendedores, flujo neto -$8.5B); Facebook Inc (META) (títulos agregados -4%, 27 compradores / 40 vendedores, flujo neto -$6.5B); Microsoft Corp (MSFT) (títulos agregados -1%, 31 compradores / 37 vendedores, flujo neto -$5.2B). De 6221 empresas en cartera, 3474 tuvieron un cambio mayor, 1821 menor y 926 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Amazon Com Inc (AMZN) (títulos agregados -2%, 30 compradores / 29 vendedores, flujo neto -$8.5B); Facebook Inc (META) (títulos agregados -4%, 27 compradores / 40 vendedores, flujo neto -$6.5B); Microsoft Corp (MSFT) (títulos agregados -1%, 31 compradores / 37 vendedores, flujo neto -$5.2B). De 6217 empresas en cartera, 3470 tuvieron un cambio mayor, 1821 menor y 926 ninguno."
       },
       {
         "kind": "turnover",
@@ -955,13 +955,13 @@
       "n_positions": 156485,
       "total_value_chg": 0.05445800025493974,
       "n_common_managers": 89,
-      "net_flow": -15213827464.498177,
-      "gross_flow": 2084460327095.104,
-      "price_effect": 840977384464.4983,
-      "n_new": 18882,
-      "n_exit": 16472,
-      "n_add": 71206,
-      "n_trim": 55999,
+      "net_flow": -15243577523.632088,
+      "gross_flow": 2084179468036.21,
+      "price_effect": 841007134523.6321,
+      "n_new": 18851,
+      "n_exit": 16441,
+      "n_add": 71220,
+      "n_trim": 56010,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.015888364699004037,
@@ -997,8 +997,8 @@
           "value": 169350509000.0
         }
       ],
-      "companies_total": 6221,
-      "companies_major": 3474,
+      "companies_total": 6217,
+      "companies_major": 3470,
       "companies_minor": 1821,
       "companies_none": 926,
       "top_company_moves": [
@@ -1041,7 +1041,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$2.02T en el trimestre: -$2.32T por precio y $298.8B por flujo neto (compras menos ventas). Actividad bruta de $2.41T con 18107 posiciones nuevas y 20069 salidas."
+        "text": "El valor agregado del universo cambió -$2.02T en el trimestre: -$2.31T por precio y $288.8B por flujo neto (compras menos ventas). Actividad bruta de $2.34T con 17877 posiciones nuevas y 19839 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1065,7 +1065,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Cigna Corp New (CI) (47 compradores / 0 vendedores, flujo $40.0B), Linde PLC (LIN) (44 compradores / 1 vendedor, flujo $36.0B), Dell Technologies Inc (DELL) (43 compradores / 0 vendedores, flujo $5.0B)."
+        "text": "Compras de consenso (más compradores netos): Linde PLC (LIN) (44 compradores / 1 vendedor, flujo $36.0B), Dell Technologies Inc (DELL) (43 compradores / 0 vendedores, flujo $5.0B), Resideo Technologies Inc (REZI) (37 compradores / 0 vendedores, flujo $1.0B)."
       },
       {
         "kind": "consensus_sell",
@@ -1077,7 +1077,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Cigna Corp New (CI) (entrada nueva al universo, 47 compradores / 0 vendedores, flujo neto $40.0B); Linde PLC (LIN) (títulos agregados +4429798%, 44 compradores / 1 vendedor, flujo neto $36.0B); Aetna Inc New (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$30.1B). De 6317 empresas en cartera, 3921 tuvieron un cambio mayor, 1748 menor y 648 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Linde PLC (LIN) (títulos agregados +4429798%, 44 compradores / 1 vendedor, flujo neto $36.0B); Aetna Inc New (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$30.1B); Express Scripts Hldg Co (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$25.9B). De 6305 empresas en cartera, 3905 tuvieron un cambio mayor, 1752 menor y 648 ninguno."
       },
       {
         "kind": "turnover",
@@ -1098,13 +1098,13 @@
       "n_positions": 154916,
       "total_value_chg": -0.126276231266636,
       "n_common_managers": 89,
-      "net_flow": 298756416997.92334,
-      "gross_flow": 2408999801951.8687,
-      "price_effect": -2317796406997.9233,
-      "n_new": 18107,
-      "n_exit": 20069,
-      "n_add": 67385,
-      "n_trim": 59806,
+      "net_flow": 288816393430.66504,
+      "gross_flow": 2344548120867.068,
+      "price_effect": -2307856383430.665,
+      "n_new": 17877,
+      "n_exit": 19839,
+      "n_add": 67498,
+      "n_trim": 59917,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.024555428905717686,
@@ -1141,20 +1141,11 @@
           "value": 268566395000.0
         }
       ],
-      "companies_total": 6317,
-      "companies_major": 3921,
-      "companies_minor": 1748,
+      "companies_total": 6305,
+      "companies_major": 3905,
+      "companies_minor": 1752,
       "companies_none": 648,
       "top_company_moves": [
-        {
-          "issuer": "CIGNA CORP NEW (CI)",
-          "ticker": "CI",
-          "pct_shares": null,
-          "net_flow": 40032135000.0,
-          "buyers": 47,
-          "sellers": 0,
-          "magnitude": "MAJOR"
-        },
         {
           "issuer": "LINDE PLC (LIN)",
           "ticker": "LIN",
@@ -1172,6 +1163,15 @@
           "buyers": 0,
           "sellers": 48,
           "magnitude": "MAJOR"
+        },
+        {
+          "issuer": "EXPRESS SCRIPTS HLDG CO",
+          "ticker": "",
+          "pct_shares": -1.0,
+          "net_flow": -25937314000.0,
+          "buyers": 0,
+          "sellers": 48,
+          "magnitude": "MAJOR"
         }
       ],
       "put_notional": 317385412000.0,
@@ -1185,7 +1185,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.41T en el trimestre: $1.82T por precio y -$404.9B por flujo neto (compras menos ventas). Actividad bruta de $2.38T con 19440 posiciones nuevas y 19248 salidas."
+        "text": "El valor agregado del universo cambió $1.41T en el trimestre: $1.82T por precio y -$406.0B por flujo neto (compras menos ventas). Actividad bruta de $2.37T con 19208 posiciones nuevas y 19016 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1221,7 +1221,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Twenty First Centy Fox Inc (títulos agregados -100%, 0 compradores / 47 vendedores, flujo neto -$28.8B); Amazon Com Inc (AMZN) (títulos agregados -3%, 31 compradores / 34 vendedores, flujo neto -$7.9B); Apple Inc (AAPL) (títulos agregados -6%, 21 compradores / 34 vendedores, flujo neto -$19.2B). De 6300 empresas en cartera, 3564 tuvieron un cambio mayor, 1969 menor y 767 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Twenty First Centy Fox Inc (títulos agregados -100%, 0 compradores / 47 vendedores, flujo neto -$28.8B); Amazon Com Inc (AMZN) (títulos agregados -3%, 31 compradores / 34 vendedores, flujo neto -$7.9B); Apple Inc (AAPL) (títulos agregados -6%, 21 compradores / 34 vendedores, flujo neto -$19.2B). De 6285 empresas en cartera, 3545 tuvieron un cambio mayor, 1973 menor y 767 ninguno."
       },
       {
         "kind": "turnover",
@@ -1242,13 +1242,13 @@
       "n_positions": 155194,
       "total_value_chg": 0.10106474271457744,
       "n_common_managers": 92,
-      "net_flow": -404930895755.35583,
-      "gross_flow": 2379889645268.8936,
-      "price_effect": 1817489091755.356,
-      "n_new": 19440,
-      "n_exit": 19248,
-      "n_add": 63730,
-      "n_trim": 62487,
+      "net_flow": -406029617031.46893,
+      "gross_flow": 2370802670145.658,
+      "price_effect": 1818587813031.469,
+      "n_new": 19208,
+      "n_exit": 19016,
+      "n_add": 63836,
+      "n_trim": 62599,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.027402485481473393,
@@ -1284,9 +1284,9 @@
           "value": 310368503000.0
         }
       ],
-      "companies_total": 6300,
-      "companies_major": 3564,
-      "companies_minor": 1969,
+      "companies_total": 6285,
+      "companies_major": 3545,
+      "companies_minor": 1973,
       "companies_none": 767,
       "top_company_moves": [
         {
@@ -1328,7 +1328,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.27T en el trimestre: $548.1B por precio y $717.0B por flujo neto (compras menos ventas). Actividad bruta de $2.57T con 21506 posiciones nuevas y 18612 salidas."
+        "text": "El valor agregado del universo cambió $1.27T en el trimestre: $548.6B por precio y $716.5B por flujo neto (compras menos ventas). Actividad bruta de $2.57T con 21290 posiciones nuevas y 18396 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1344,7 +1344,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+0.9 pp QoQ, +1.1 pp YoY), recibió flujo neto de $14.2B frente a un efecto precio de $36.5B (5698 compras / 5222 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+0.9 pp QoQ, +1.1 pp YoY), recibió flujo neto de $14.2B frente a un efecto precio de $36.5B (5696 compras / 5220 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1364,7 +1364,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Dowdupont Inc (títulos agregados -100%, 0 compradores / 46 vendedores, flujo neto -$52.5B); Dupont De Nemours Inc (DD) (entrada nueva al universo, 43 compradores / 0 vendedores, flujo neto $24.8B); Alibaba Group Hldg Ltd (BABA) (títulos agregados +12%, 40 compradores / 21 vendedores, flujo neto $10.7B). De 6409 empresas en cartera, 3870 tuvieron un cambio mayor, 1641 menor y 898 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Dowdupont Inc (títulos agregados -100%, 0 compradores / 46 vendedores, flujo neto -$52.5B); Dupont De Nemours Inc (DD) (entrada nueva al universo, 43 compradores / 0 vendedores, flujo neto $24.8B); Alibaba Group Hldg Ltd (BABA) (títulos agregados +12%, 40 compradores / 21 vendedores, flujo neto $10.7B). De 6390 empresas en cartera, 3844 tuvieron un cambio mayor, 1647 menor y 899 ninguno."
       },
       {
         "kind": "turnover",
@@ -1385,13 +1385,13 @@
       "n_positions": 158093,
       "total_value_chg": 0.08220458642361383,
       "n_common_managers": 92,
-      "net_flow": 717020725530.5859,
-      "gross_flow": 2574603081296.6826,
-      "price_effect": 548052253469.4142,
-      "n_new": 21506,
-      "n_exit": 18612,
-      "n_add": 72659,
-      "n_trim": 54411,
+      "net_flow": 716479376217.5922,
+      "gross_flow": 2565561141318.5396,
+      "price_effect": 548593602782.40784,
+      "n_new": 21290,
+      "n_exit": 18396,
+      "n_add": 72754,
+      "n_trim": 54520,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.027725162030843256,
@@ -1428,10 +1428,10 @@
           "value": 217420333000.0
         }
       ],
-      "companies_total": 6409,
-      "companies_major": 3870,
-      "companies_minor": 1641,
-      "companies_none": 898,
+      "companies_total": 6390,
+      "companies_major": 3844,
+      "companies_minor": 1647,
+      "companies_none": 899,
       "top_company_moves": [
         {
           "issuer": "DOWDUPONT INC",
@@ -1472,7 +1472,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$547.5B en el trimestre: -$37.1B por precio y -$510.4B por flujo neto (compras menos ventas). Actividad bruta de $2.32T con 18214 posiciones nuevas y 17526 salidas."
+        "text": "El valor agregado del universo cambió -$547.5B en el trimestre: -$37.9B por precio y -$509.6B por flujo neto (compras menos ventas). Actividad bruta de $2.32T con 18056 posiciones nuevas y 17368 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1488,7 +1488,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Consumer Discretionary (+1.2 pp QoQ, +2.7 pp YoY), recibió flujo neto de -$6.3B frente a un efecto precio de -$7.3B (4236 compras / 3876 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Consumer Discretionary (+1.2 pp QoQ, +2.7 pp YoY), recibió flujo neto de -$6.3B frente a un efecto precio de -$7.3B (4234 compras / 3874 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1508,7 +1508,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: L3harris Technologies Inc (LHX) (títulos agregados +2326%, 43 compradores / 2 vendedores, flujo neto $21.3B); Fidelity Natl Information Sv (FIS) (títulos agregados +76%, 36 compradores / 17 vendedores, flujo neto $17.0B); Worldpay Inc (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$17.5B). De 6480 empresas en cartera, 3659 tuvieron un cambio mayor, 1774 menor y 1047 ninguno."
+        "text": "Empresas con mayor movimiento agregado: L3harris Technologies Inc (LHX) (títulos agregados +2326%, 43 compradores / 2 vendedores, flujo neto $21.3B); Fidelity Natl Information Sv (FIS) (títulos agregados +76%, 36 compradores / 17 vendedores, flujo neto $17.0B); Worldpay Inc (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$17.5B). De 6466 empresas en cartera, 3643 tuvieron un cambio mayor, 1776 menor y 1047 ninguno."
       },
       {
         "kind": "turnover",
@@ -1529,13 +1529,13 @@
       "n_positions": 158752,
       "total_value_chg": -0.032872628891332356,
       "n_common_managers": 92,
-      "net_flow": -510391097513.4528,
-      "gross_flow": 2321258153934.4014,
-      "price_effect": -37082699486.547165,
-      "n_new": 18214,
-      "n_exit": 17526,
-      "n_add": 69814,
-      "n_trim": 59868,
+      "net_flow": -509623026101.64886,
+      "gross_flow": 2315552021216.4014,
+      "price_effect": -37850770898.35112,
+      "n_new": 18056,
+      "n_exit": 17368,
+      "n_add": 69894,
+      "n_trim": 59939,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.04156142945848035,
@@ -1570,9 +1570,9 @@
           "value": 309006588000.0
         }
       ],
-      "companies_total": 6480,
-      "companies_major": 3659,
-      "companies_minor": 1774,
+      "companies_total": 6466,
+      "companies_major": 3643,
+      "companies_minor": 1776,
       "companies_none": 1047,
       "top_company_moves": [
         {
@@ -1614,7 +1614,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.84T en el trimestre: $1.37T por precio y $472.6B por flujo neto (compras menos ventas). Actividad bruta de $2.61T con 20285 posiciones nuevas y 18684 salidas."
+        "text": "El valor agregado del universo cambió $1.84T en el trimestre: $1.37T por precio y $472.8B por flujo neto (compras menos ventas). Actividad bruta de $2.61T con 20034 posiciones nuevas y 18433 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1650,11 +1650,11 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +3%, 16 compradores / 36 vendedores, flujo neto $14.4B); Microsoft Corp (MSFT) (títulos agregados +1%, 24 compradores / 35 vendedores, flujo neto $6.8B); Truist Finl Corp (TFC) (entrada nueva al universo, 41 compradores / 0 vendedores, flujo neto $32.7B). De 6524 empresas en cartera, 4037 tuvieron un cambio mayor, 1840 menor y 647 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +3%, 16 compradores / 36 vendedores, flujo neto $14.4B); Microsoft Corp (MSFT) (títulos agregados +1%, 24 compradores / 35 vendedores, flujo neto $6.8B); Truist Finl Corp (TFC) (entrada nueva al universo, 41 compradores / 0 vendedores, flujo neto $32.7B). De 6504 empresas en cartera, 4012 tuvieron un cambio mayor, 1845 menor y 647 ninguno."
       },
       {
         "kind": "turnover",
-        "text": "Mayor rotación de cartera: Qube Research & Technologies Ltd (190%), Flow Traders U.S. LLC (146%), ExodusPoint Capital Management, LP (136%)."
+        "text": "Mayor rotación de cartera: Qube Research & Technologies Ltd (190%), Flow Traders U.S. LLC (145%), ExodusPoint Capital Management, LP (136%)."
       },
       {
         "kind": "type_mismatch",
@@ -1671,13 +1671,13 @@
       "n_positions": 160388,
       "total_value_chg": 0.11419508275363066,
       "n_common_managers": 92,
-      "net_flow": 472572580350.0543,
-      "gross_flow": 2610407638519.6216,
-      "price_effect": 1366758795649.9458,
-      "n_new": 20285,
-      "n_exit": 18684,
-      "n_add": 69564,
-      "n_trim": 59905,
+      "net_flow": 472798313141.3753,
+      "gross_flow": 2606951295575.8057,
+      "price_effect": 1366533062858.6248,
+      "n_new": 20034,
+      "n_exit": 18433,
+      "n_add": 69694,
+      "n_trim": 60011,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.03572238682696603,
@@ -1712,9 +1712,9 @@
           "value": 332884376000.0
         }
       ],
-      "companies_total": 6524,
-      "companies_major": 4037,
-      "companies_minor": 1840,
+      "companies_total": 6504,
+      "companies_major": 4012,
+      "companies_minor": 1845,
       "companies_none": 647,
       "top_company_moves": [
         {
@@ -1756,7 +1756,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$4.14T en el trimestre: -$3.78T por precio y -$359.5B por flujo neto (compras menos ventas). Actividad bruta de $2.45T con 20165 posiciones nuevas y 23362 salidas."
+        "text": "El valor agregado del universo cambió -$4.14T en el trimestre: -$3.79T por precio y -$347.7B por flujo neto (compras menos ventas). Actividad bruta de $2.43T con 20013 posiciones nuevas y 23210 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1772,7 +1772,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+1.3 pp QoQ, +1.4 pp YoY), recibió flujo neto de -$23.2B frente a un efecto precio de -$146.5B (6482 compras / 6935 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+1.3 pp QoQ, +1.4 pp YoY), recibió flujo neto de -$23.2B frente a un efecto precio de -$146.5B (6469 compras / 6918 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1780,7 +1780,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Trane Technologies PLC (TT) (41 compradores / 0 vendedores, flujo $8.9B), Equitable Hldgs Inc (EQH) (42 compradores / 2 vendedores, flujo $4.0B), Ingersoll Rand Inc (IR) (36 compradores / 0 vendedores, flujo $5.5B)."
+        "text": "Compras de consenso (más compradores netos): Trane Technologies PLC (TT) (41 compradores / 0 vendedores, flujo $8.9B), Equitable Hldgs Inc (EQH) (42 compradores / 2 vendedores, flujo $4.0B), Ovintiv Inc (OVV) (36 compradores / 0 vendedores, flujo $230M)."
       },
       {
         "kind": "consensus_sell",
@@ -1792,7 +1792,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -5%, 29 compradores / 35 vendedores, flujo neto -$26.0B); Apple Inc (AAPL) (títulos agregados -4%, 25 compradores / 30 vendedores, flujo neto -$17.5B); Amazon Com Inc (AMZN) (títulos agregados -2%, 36 compradores / 29 vendedores, flujo neto -$7.1B). De 6500 empresas en cartera, 4125 tuvieron un cambio mayor, 1799 menor y 576 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -5%, 29 compradores / 35 vendedores, flujo neto -$26.0B); Apple Inc (AAPL) (títulos agregados -4%, 25 compradores / 30 vendedores, flujo neto -$17.5B); Amazon Com Inc (AMZN) (títulos agregados -2%, 36 compradores / 29 vendedores, flujo neto -$7.1B). De 6487 empresas en cartera, 4109 tuvieron un cambio mayor, 1801 menor y 577 ninguno."
       },
       {
         "kind": "turnover",
@@ -1800,7 +1800,7 @@
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 20%; turnover 49%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 75%; turnover 12%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 76%; turnover 32%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 69%; turnover 56%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 20%; turnover 48%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 75%; turnover 12%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 76%; turnover 32%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 69%; turnover 56%)."
       },
       {
         "kind": "options",
@@ -1813,13 +1813,13 @@
       "n_positions": 157170,
       "total_value_chg": -0.23067332807321128,
       "n_common_managers": 92,
-      "net_flow": -359452080954.3367,
-      "gross_flow": 2450189333757.8457,
-      "price_effect": -3780270084045.663,
-      "n_new": 20165,
-      "n_exit": 23362,
-      "n_add": 61784,
-      "n_trim": 67167,
+      "net_flow": -347736577224.8788,
+      "gross_flow": 2433478689765.933,
+      "price_effect": -3791985587775.121,
+      "n_new": 20013,
+      "n_exit": 23210,
+      "n_add": 61856,
+      "n_trim": 67239,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.03093409202286844,
@@ -1854,10 +1854,10 @@
           "value": 188024221000.0
         }
       ],
-      "companies_total": 6500,
-      "companies_major": 4125,
-      "companies_minor": 1799,
-      "companies_none": 576,
+      "companies_total": 6487,
+      "companies_major": 4109,
+      "companies_minor": 1801,
+      "companies_none": 577,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -1898,7 +1898,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $3.06T en el trimestre: $3.01T por precio y $53.5B por flujo neto (compras menos ventas). Actividad bruta de $2.47T con 25979 posiciones nuevas y 19360 salidas."
+        "text": "El valor agregado del universo cambió $3.06T en el trimestre: $3.01T por precio y $53.0B por flujo neto (compras menos ventas). Actividad bruta de $2.47T con 25862 posiciones nuevas y 19243 salidas."
       },
       {
         "kind": "asset_mix",
@@ -1914,7 +1914,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.9 pp QoQ, +2.7 pp YoY), recibió flujo neto de $780M frente a un efecto precio de $394.1B (5535 compras / 4629 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+0.9 pp QoQ, +2.7 pp YoY), recibió flujo neto de $589M frente a un efecto precio de $394.3B (5519 compras / 4617 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -1934,7 +1934,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Raytheon Technologies Corp (RTX) (títulos agregados +3453%, 46 compradores / 2 vendedores, flujo neto $42.5B); United Technologies Corp (títulos agregados -100%, 0 compradores / 38 vendedores, flujo neto -$37.7B); Allergan PLC (títulos agregados -100%, 0 compradores / 49 vendedores, flujo neto -$29.1B). De 6547 empresas en cartera, 4138 tuvieron un cambio mayor, 1622 menor y 787 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Raytheon Technologies Corp (RTX) (títulos agregados +3453%, 46 compradores / 2 vendedores, flujo neto $42.5B); United Technologies Corp (títulos agregados -100%, 0 compradores / 38 vendedores, flujo neto -$37.7B); Allergan PLC (títulos agregados -100%, 0 compradores / 49 vendedores, flujo neto -$29.1B). De 6537 empresas en cartera, 4122 tuvieron un cambio mayor, 1625 menor y 790 ninguno."
       },
       {
         "kind": "turnover",
@@ -1955,13 +1955,13 @@
       "n_positions": 163774,
       "total_value_chg": 0.22192636103844965,
       "n_common_managers": 92,
-      "net_flow": 53477017751.53506,
-      "gross_flow": 2467625824128.8857,
-      "price_effect": 3010556378248.465,
-      "n_new": 25979,
-      "n_exit": 19360,
-      "n_add": 67646,
-      "n_trim": 60855,
+      "net_flow": 52981298116.27728,
+      "gross_flow": 2466339805358.4917,
+      "price_effect": 3011052097883.7227,
+      "n_new": 25862,
+      "n_exit": 19243,
+      "n_add": 67700,
+      "n_trim": 60912,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.028659068722511685,
@@ -1998,10 +1998,10 @@
           "value": 128976749000.0
         }
       ],
-      "companies_total": 6547,
-      "companies_major": 4138,
-      "companies_minor": 1622,
-      "companies_none": 787,
+      "companies_total": 6537,
+      "companies_major": 4122,
+      "companies_minor": 1625,
+      "companies_none": 790,
       "top_company_moves": [
         {
           "issuer": "RAYTHEON TECHNOLOGIES CORP (RTX)",
@@ -2042,7 +2042,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.60T en el trimestre: $684.4B por precio y $913.4B por flujo neto (compras menos ventas). Actividad bruta de $2.86T con 21659 posiciones nuevas y 18683 salidas."
+        "text": "El valor agregado del universo cambió $1.60T en el trimestre: $684.5B por precio y $913.4B por flujo neto (compras menos ventas). Actividad bruta de $2.86T con 21424 posiciones nuevas y 18448 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2078,7 +2078,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +283%, 49 compradores / 5 vendedores, flujo neto $545.7B); Tesla Inc (TSLA) (títulos agregados +333%, 45 compradores / 10 vendedores, flujo neto $91.6B); Amazon Com Inc (AMZN) (títulos agregados -2%, 28 compradores / 37 vendedores, flujo neto -$9.8B). De 6720 empresas en cartera, 4038 tuvieron un cambio mayor, 1797 menor y 885 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +283%, 49 compradores / 5 vendedores, flujo neto $545.7B); Tesla Inc (TSLA) (títulos agregados +333%, 45 compradores / 10 vendedores, flujo neto $91.6B); Amazon Com Inc (AMZN) (títulos agregados -2%, 28 compradores / 37 vendedores, flujo neto -$9.8B). De 6699 empresas en cartera, 4008 tuvieron un cambio mayor, 1805 menor y 886 ninguno."
       },
       {
         "kind": "turnover",
@@ -2099,13 +2099,13 @@
       "n_positions": 166761,
       "total_value_chg": 0.09471406224220846,
       "n_common_managers": 92,
-      "net_flow": 913443416219.4349,
-      "gross_flow": 2863340148984.9424,
-      "price_effect": 684436360780.5651,
-      "n_new": 21659,
-      "n_exit": 18683,
-      "n_add": 65366,
-      "n_trim": 69294,
+      "net_flow": 913428354318.2877,
+      "gross_flow": 2862806765804.932,
+      "price_effect": 684451422681.7123,
+      "n_new": 21424,
+      "n_exit": 18448,
+      "n_add": 65483,
+      "n_trim": 69401,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.023107662897418488,
@@ -2141,10 +2141,10 @@
           "value": 291720614000.0
         }
       ],
-      "companies_total": 6720,
-      "companies_major": 4038,
-      "companies_minor": 1797,
-      "companies_none": 885,
+      "companies_total": 6699,
+      "companies_major": 4008,
+      "companies_minor": 1805,
+      "companies_none": 886,
       "top_company_moves": [
         {
           "issuer": "APPLE INC (AAPL)",
@@ -2185,7 +2185,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $3.30T en el trimestre: $2.55T por precio y $743.2B por flujo neto (compras menos ventas). Actividad bruta de $3.33T con 26643 posiciones nuevas y 19131 salidas."
+        "text": "El valor agregado del universo cambió $3.30T en el trimestre: $2.55T por precio y $746.4B por flujo neto (compras menos ventas). Actividad bruta de $3.32T con 26343 posiciones nuevas y 18831 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2221,11 +2221,11 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Tesla Inc (TSLA) (títulos agregados +11%, 28 compradores / 22 vendedores, flujo neto $21.4B); Nextera Energy Inc (NEE) (títulos agregados +294%, 47 compradores / 5 vendedores, flujo neto $51.8B); Apple Inc (AAPL) (títulos agregados -2%, 27 compradores / 27 vendedores, flujo neto -$12.8B). De 7179 empresas en cartera, 4612 tuvieron un cambio mayor, 1739 menor y 828 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Tesla Inc (TSLA) (títulos agregados +11%, 28 compradores / 22 vendedores, flujo neto $21.4B); Nextera Energy Inc (NEE) (títulos agregados +294%, 47 compradores / 5 vendedores, flujo neto $51.8B); Apple Inc (AAPL) (títulos agregados -2%, 27 compradores / 27 vendedores, flujo neto -$12.8B). De 7160 empresas en cartera, 4589 tuvieron un cambio mayor, 1742 menor y 829 ninguno."
       },
       {
         "kind": "turnover",
-        "text": "Mayor rotación de cartera: Flow Traders U.S. LLC (149%), Scion Asset Management, LLC (145%), Tudor Investment Corp (132%)."
+        "text": "Mayor rotación de cartera: Flow Traders U.S. LLC (149%), Scion Asset Management, LLC (145%), Tudor Investment Corp (131%)."
       },
       {
         "kind": "type_mismatch",
@@ -2242,13 +2242,13 @@
       "n_positions": 174263,
       "total_value_chg": 0.17845636855849079,
       "n_common_managers": 92,
-      "net_flow": 743195060047.4064,
-      "gross_flow": 3334344641370.7646,
-      "price_effect": 2552616590952.5938,
-      "n_new": 26643,
-      "n_exit": 19131,
-      "n_add": 74857,
-      "n_trim": 63229,
+      "net_flow": 746449255872.0638,
+      "gross_flow": 3321446485353.9453,
+      "price_effect": 2549362395127.9365,
+      "n_new": 26343,
+      "n_exit": 18831,
+      "n_add": 74999,
+      "n_trim": 63376,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.013702541820747996,
@@ -2283,10 +2283,10 @@
           "value": 304528886000.0
         }
       ],
-      "companies_total": 7179,
-      "companies_major": 4612,
-      "companies_minor": 1739,
-      "companies_none": 828,
+      "companies_total": 7160,
+      "companies_major": 4589,
+      "companies_minor": 1742,
+      "companies_none": 829,
       "top_company_moves": [
         {
           "issuer": "TESLA INC (TSLA)",
@@ -2327,7 +2327,7 @@
     "bullets": [
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $735.6B en el trimestre: $1.16T por precio y -$421.9B por flujo neto (compras menos ventas). Actividad bruta de $3.66T con 34644 posiciones nuevas y 20708 salidas."
+        "text": "El valor agregado del universo cambió $735.6B en el trimestre: $1.16T por precio y -$421.9B por flujo neto (compras menos ventas). Actividad bruta de $3.66T con 34573 posiciones nuevas y 20637 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2343,7 +2343,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Financials (+0.7 pp QoQ, +0.5 pp YoY), recibió flujo neto de -$1.6B frente a un efecto precio de $137.0B (11440 compras / 9246 ventas); su peso actual está en el percentil 56 de su historia."
+        "text": "El sector que más peso ganó, Financials (+0.7 pp QoQ, +0.5 pp YoY), recibió flujo neto de -$1.6B frente a un efecto precio de $137.0B (11438 compras / 9244 ventas); su peso actual está en el percentil 56 de su historia."
       },
       {
         "kind": "consensus_buy",
@@ -2359,7 +2359,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Alibaba Group Hldg Ltd (BABA) (títulos agregados -20%, 24 compradores / 35 vendedores, flujo neto -$23.9B); Apple Inc (AAPL) (títulos agregados -3%, 17 compradores / 37 vendedores, flujo neto -$21.5B); Tesla Inc (TSLA) (títulos agregados -8%, 27 compradores / 24 vendedores, flujo neto -$16.1B). De 7915 empresas en cartera, 5352 tuvieron un cambio mayor, 1794 menor y 769 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Alibaba Group Hldg Ltd (BABA) (títulos agregados -20%, 24 compradores / 35 vendedores, flujo neto -$23.9B); Apple Inc (AAPL) (títulos agregados -3%, 17 compradores / 37 vendedores, flujo neto -$21.5B); Tesla Inc (TSLA) (títulos agregados -8%, 27 compradores / 24 vendedores, flujo neto -$16.1B). De 7909 empresas en cartera, 5345 tuvieron un cambio mayor, 1795 menor y 769 ninguno."
       },
       {
         "kind": "turnover",
@@ -2380,13 +2380,13 @@
       "n_positions": 188207,
       "total_value_chg": 0.033798027856773105,
       "n_common_managers": 92,
-      "net_flow": -421864577769.9192,
-      "gross_flow": 3657094296487.3013,
-      "price_effect": 1157453534769.9192,
-      "n_new": 34644,
-      "n_exit": 20708,
-      "n_add": 73373,
-      "n_trim": 71882,
+      "net_flow": -421860686338.7847,
+      "gross_flow": 3656577833935.799,
+      "price_effect": 1157449643338.785,
+      "n_new": 34573,
+      "n_exit": 20637,
+      "n_add": 73405,
+      "n_trim": 71914,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.012582166039806927,
@@ -2415,9 +2415,9 @@
           "value": 540413475000.0
         }
       ],
-      "companies_total": 7915,
-      "companies_major": 5352,
-      "companies_minor": 1794,
+      "companies_total": 7909,
+      "companies_major": 5345,
+      "companies_minor": 1795,
       "companies_none": 769,
       "top_company_moves": [
         {
@@ -2463,7 +2463,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.84T en el trimestre: $1.61T por precio y $233.3B por flujo neto (compras menos ventas). Actividad bruta de $3.03T con 32441 posiciones nuevas y 25123 salidas."
+        "text": "El valor agregado del universo cambió $1.84T en el trimestre: $1.61T por precio y $231.5B por flujo neto (compras menos ventas). Actividad bruta de $2.99T con 32318 posiciones nuevas y 25000 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2495,7 +2495,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Alibaba Group Hldg Ltd (BABA) (títulos agregados -38%, 16 compradores / 41 vendedores, flujo neto -$36.9B); Marvell Technology Inc (MRVL) (títulos agregados +2107236%, 39 compradores / 1 vendedor, flujo neto $27.1B); Microsoft Corp (MSFT) (títulos agregados -1%, 19 compradores / 46 vendedores, flujo neto -$7.5B). De 8423 empresas en cartera, 5452 tuvieron un cambio mayor, 2006 menor y 965 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Alibaba Group Hldg Ltd (BABA) (títulos agregados -38%, 16 compradores / 41 vendedores, flujo neto -$36.9B); Marvell Technology Inc (MRVL) (títulos agregados +2107236%, 39 compradores / 1 vendedor, flujo neto $27.1B); Microsoft Corp (MSFT) (títulos agregados -1%, 19 compradores / 46 vendedores, flujo neto -$7.5B). De 8416 empresas en cartera, 5444 tuvieron un cambio mayor, 2007 menor y 965 ninguno."
       },
       {
         "kind": "turnover",
@@ -2523,13 +2523,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 233258081507.9359,
-      "gross_flow": 3033664210453.504,
-      "price_effect": 1610319838492.064,
-      "n_new": 32441,
-      "n_exit": 25123,
-      "n_add": 77767,
-      "n_trim": 74796,
+      "net_flow": 231476180395.8164,
+      "gross_flow": 2994336986054.4346,
+      "price_effect": 1612101739604.1836,
+      "n_new": 32318,
+      "n_exit": 25000,
+      "n_add": 77821,
+      "n_trim": 74862,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.011596432256565564,
@@ -2558,9 +2558,9 @@
           "value": 601473634000.0
         }
       ],
-      "companies_total": 8423,
-      "companies_major": 5452,
-      "companies_minor": 2006,
+      "companies_total": 8416,
+      "companies_major": 5444,
+      "companies_minor": 2007,
       "companies_none": 965,
       "top_company_moves": [
         {
@@ -2606,7 +2606,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $8.2B en el trimestre: -$411.1B por precio y $419.3B por flujo neto (compras menos ventas). Actividad bruta de $2.88T con 28645 posiciones nuevas y 24010 salidas."
+        "text": "El valor agregado del universo cambió $8.2B en el trimestre: -$413.9B por precio y $422.1B por flujo neto (compras menos ventas). Actividad bruta de $2.77T con 28494 posiciones nuevas y 23859 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2630,7 +2630,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): General Electric Co (GE) (45 compradores / 0 vendedores, flujo $55.2B), Nvidia Corporation (NVDA) (44 compradores / 4 vendedores, flujo $147.8B), Bath & Body Works Inc (BBWI) (41 compradores / 1 vendedor, flujo $8.6B)."
+        "text": "Compras de consenso (más compradores netos): Nvidia Corporation (NVDA) (44 compradores / 4 vendedores, flujo $147.8B), Bath & Body Works Inc (BBWI) (41 compradores / 1 vendedor, flujo $8.6B), Victorias Secret And Co (VSXY) (39 compradores / 0 vendedores, flujo $2.3B)."
       },
       {
         "kind": "consensus_sell",
@@ -2642,7 +2642,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +294%, 44 compradores / 4 vendedores, flujo neto $147.8B); General Electric Co (GE) (entrada nueva al universo, 45 compradores / 0 vendedores, flujo neto $55.2B); General Electric Co (GE) (títulos agregados -100%, 0 compradores / 48 vendedores, flujo neto -$55.0B). De 8865 empresas en cartera, 5598 tuvieron un cambio mayor, 2180 menor y 1087 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +294%, 44 compradores / 4 vendedores, flujo neto $147.8B); Amazon Com Inc (AMZN) (títulos agregados -1%, 26 compradores / 38 vendedores, flujo neto -$3.8B); Alexion Pharmaceuticals Inc (títulos agregados -100%, 0 compradores / 46 vendedores, flujo neto -$19.7B). De 8857 empresas en cartera, 5589 tuvieron un cambio mayor, 2181 menor y 1087 ninguno."
       },
       {
         "kind": "turnover",
@@ -2670,13 +2670,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 419282138968.0493,
-      "gross_flow": 2880338977999.533,
-      "price_effect": -411094206968.0493,
-      "n_new": 28645,
-      "n_exit": 24010,
-      "n_add": 79384,
-      "n_trim": 77744,
+      "net_flow": 422094920212.6146,
+      "gross_flow": 2771433969964.1543,
+      "price_effect": -413906988212.6146,
+      "n_new": 28494,
+      "n_exit": 23859,
+      "n_add": 79463,
+      "n_trim": 77810,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.00871834693457986,
@@ -2713,9 +2713,9 @@
           "value": 570657685000.0
         }
       ],
-      "companies_total": 8865,
-      "companies_major": 5598,
-      "companies_minor": 2180,
+      "companies_total": 8857,
+      "companies_major": 5589,
+      "companies_minor": 2181,
       "companies_none": 1087,
       "top_company_moves": [
         {
@@ -2728,21 +2728,21 @@
           "magnitude": "MAJOR"
         },
         {
-          "issuer": "GENERAL ELECTRIC CO (GE)",
-          "ticker": "GE",
-          "pct_shares": null,
-          "net_flow": 55217324000.0,
-          "buyers": 45,
-          "sellers": 0,
-          "magnitude": "MAJOR"
+          "issuer": "AMAZON COM INC (AMZN)",
+          "ticker": "AMZN",
+          "pct_shares": -0.006430219782023428,
+          "net_flow": -3770914194.241448,
+          "buyers": 26,
+          "sellers": 38,
+          "magnitude": "NONE"
         },
         {
-          "issuer": "GENERAL ELECTRIC CO (GE)",
-          "ticker": "GE",
+          "issuer": "ALEXION PHARMACEUTICALS INC",
+          "ticker": "",
           "pct_shares": -1.0,
-          "net_flow": -54963393000.0,
+          "net_flow": -19695943000.0,
           "buyers": 0,
-          "sellers": 48,
+          "sellers": 46,
           "magnitude": "MAJOR"
         }
       ],
@@ -2761,7 +2761,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $4.42T en el trimestre: $2.95T por precio y $1.47T por flujo neto (compras menos ventas). Actividad bruta de $4.28T con 29945 posiciones nuevas y 23885 salidas."
+        "text": "El valor agregado del universo cambió $4.42T en el trimestre: $2.95T por precio y $1.47T por flujo neto (compras menos ventas). Actividad bruta de $4.28T con 29885 posiciones nuevas y 23825 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2797,7 +2797,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Intuitive Surgical Inc (ISRG) (títulos agregados +192%, 47 compradores / 4 vendedores, flujo neto $40.8B); Rivian Automotive Inc (RIVN) (entrada nueva al universo, 46 compradores / 0 vendedores, flujo neto $38.2B); Microsoft Corp (MSFT) (títulos agregados +0%, 27 compradores / 36 vendedores, flujo neto $3.6B). De 9472 empresas en cartera, 6155 tuvieron un cambio mayor, 2243 menor y 1074 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Intuitive Surgical Inc (ISRG) (títulos agregados +192%, 47 compradores / 4 vendedores, flujo neto $40.8B); Rivian Automotive Inc (RIVN) (entrada nueva al universo, 46 compradores / 0 vendedores, flujo neto $38.2B); Microsoft Corp (MSFT) (títulos agregados +0%, 27 compradores / 36 vendedores, flujo neto $3.6B). De 9469 empresas en cartera, 6151 tuvieron un cambio mayor, 2243 menor y 1075 ninguno."
       },
       {
         "kind": "turnover",
@@ -2825,13 +2825,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 1474818946820.6365,
-      "gross_flow": 4284112685025.2915,
-      "price_effect": 2947486866179.364,
-      "n_new": 29945,
-      "n_exit": 23885,
-      "n_add": 88276,
-      "n_trim": 72101,
+      "net_flow": 1474989587528.9294,
+      "gross_flow": 4281893106249.083,
+      "price_effect": 2947316225471.0713,
+      "n_new": 29885,
+      "n_exit": 23825,
+      "n_add": 88305,
+      "n_trim": 72131,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.018387654510637147,
@@ -2868,10 +2868,10 @@
           "value": 371749940000.0
         }
       ],
-      "companies_total": 9472,
-      "companies_major": 6155,
+      "companies_total": 9469,
+      "companies_major": 6151,
       "companies_minor": 2243,
-      "companies_none": 1074,
+      "companies_none": 1075,
       "top_company_moves": [
         {
           "issuer": "INTUITIVE SURGICAL INC (ISRG)",
@@ -2916,7 +2916,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$4.17T en el trimestre: -$3.61T por precio y -$563.2B por flujo neto (compras menos ventas). Actividad bruta de $3.83T con 26454 posiciones nuevas y 28311 salidas."
+        "text": "El valor agregado del universo cambió -$4.17T en el trimestre: -$3.61T por precio y -$563.6B por flujo neto (compras menos ventas). Actividad bruta de $3.83T con 26351 posiciones nuevas y 28208 salidas."
       },
       {
         "kind": "asset_mix",
@@ -2952,7 +2952,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +0%, 24 compradores / 29 vendedores, flujo neto $3.7B); Chevron Corp New (CVX) (títulos agregados +13%, 21 compradores / 26 vendedores, flujo neto $16.9B); Microsoft Corp (MSFT) (títulos agregados -0%, 27 compradores / 40 vendedores, flujo neto -$4.1B). De 9632 empresas en cartera, 6044 tuvieron un cambio mayor, 2369 menor y 1219 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +0%, 24 compradores / 29 vendedores, flujo neto $3.7B); Chevron Corp New (CVX) (títulos agregados +13%, 21 compradores / 26 vendedores, flujo neto $16.9B); Microsoft Corp (MSFT) (títulos agregados -0%, 27 compradores / 40 vendedores, flujo neto -$4.1B). De 9627 empresas en cartera, 6039 tuvieron un cambio mayor, 2369 menor y 1219 ninguno."
       },
       {
         "kind": "turnover",
@@ -2980,13 +2980,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -563238045788.6874,
-      "gross_flow": 3830031170017.948,
-      "price_effect": -3610159033300.313,
-      "n_new": 26454,
-      "n_exit": 28311,
-      "n_add": 79837,
-      "n_trim": 83260,
+      "net_flow": -563614168921.6044,
+      "gross_flow": 3825829234283.3174,
+      "price_effect": -3609782910167.3955,
+      "n_new": 26351,
+      "n_exit": 28208,
+      "n_add": 79896,
+      "n_trim": 83302,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.015027418972898582,
@@ -3023,8 +3023,8 @@
           "value": 228426191225.0
         }
       ],
-      "companies_total": 9632,
-      "companies_major": 6044,
+      "companies_total": 9627,
+      "companies_major": 6039,
       "companies_minor": 2369,
       "companies_none": 1219,
       "top_company_moves": [
@@ -3071,7 +3071,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$4.04T en el trimestre: -$4.56T por precio y $516.3B por flujo neto (compras menos ventas). Actividad bruta de $3.32T con 28171 posiciones nuevas y 29087 salidas."
+        "text": "El valor agregado del universo cambió -$4.04T en el trimestre: -$4.56T por precio y $519.2B por flujo neto (compras menos ventas). Actividad bruta de $3.30T con 27770 posiciones nuevas y 28686 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3087,7 +3087,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.8 pp QoQ, +0.7 pp YoY), recibió flujo neto de $44.9B frente a un efecto precio de -$514.7B (6867 compras / 6919 ventas); su peso actual está en el percentil 96 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+0.8 pp QoQ, +0.7 pp YoY), recibió flujo neto de $45.6B frente a un efecto precio de -$515.4B (6853 compras / 6903 ventas); su peso actual está en el percentil 96 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3107,7 +3107,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Amazon Com Inc (AMZN) (títulos agregados +1919%, 63 compradores / 6 vendedores, flujo neto $358.9B); Microsoft Corp (MSFT) (títulos agregados +1%, 32 compradores / 35 vendedores, flujo neto $11.4B); Apple Inc (AAPL) (títulos agregados +1%, 24 compradores / 27 vendedores, flujo neto $6.8B). De 9572 empresas en cartera, 5656 tuvieron un cambio mayor, 2529 menor y 1387 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Amazon Com Inc (AMZN) (títulos agregados +1919%, 63 compradores / 6 vendedores, flujo neto $358.9B); Microsoft Corp (MSFT) (títulos agregados +1%, 32 compradores / 35 vendedores, flujo neto $11.4B); Apple Inc (AAPL) (títulos agregados +1%, 24 compradores / 27 vendedores, flujo neto $6.8B). De 9547 empresas en cartera, 5619 tuvieron un cambio mayor, 2540 menor y 1388 ninguno."
       },
       {
         "kind": "turnover",
@@ -3135,13 +3135,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 516314863624.775,
-      "gross_flow": 3317492194874.3545,
-      "price_effect": -4558549436081.775,
-      "n_new": 28171,
-      "n_exit": 29087,
-      "n_add": 80651,
-      "n_trim": 77860,
+      "net_flow": 519185594105.0186,
+      "gross_flow": 3304564020731.5557,
+      "price_effect": -4561420166562.019,
+      "n_new": 27770,
+      "n_exit": 28686,
+      "n_add": 80856,
+      "n_trim": 78044,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.017351183012364102,
@@ -3180,10 +3180,10 @@
           "value": 378696781740.0
         }
       ],
-      "companies_total": 9572,
-      "companies_major": 5656,
-      "companies_minor": 2529,
-      "companies_none": 1387,
+      "companies_total": 9547,
+      "companies_major": 5619,
+      "companies_minor": 2540,
+      "companies_none": 1388,
       "top_company_moves": [
         {
           "issuer": "AMAZON COM INC (AMZN)",
@@ -3228,7 +3228,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$1.01T en el trimestre: -$1.70T por precio y $697.0B por flujo neto (compras menos ventas). Actividad bruta de $2.82T con 22200 posiciones nuevas y 23340 salidas."
+        "text": "El valor agregado del universo cambió -$1.01T en el trimestre: -$1.71T por precio y $698.8B por flujo neto (compras menos ventas). Actividad bruta de $2.81T con 21783 posiciones nuevas y 22923 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3264,7 +3264,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Alphabet Inc (GOOGL) (títulos agregados +1897%, 60 compradores / 2 vendedores, flujo neto $227.3B); Alphabet Inc (GOOG) (títulos agregados +1852%, 54 compradores / 0 vendedores, flujo neto $196.8B); Tesla Inc (TSLA) (títulos agregados +213%, 49 compradores / 3 vendedores, flujo neto $170.8B). De 9631 empresas en cartera, 5501 tuvieron un cambio mayor, 2666 menor y 1464 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Alphabet Inc (GOOGL) (títulos agregados +1897%, 60 compradores / 2 vendedores, flujo neto $227.3B); Alphabet Inc (GOOG) (títulos agregados +1852%, 54 compradores / 0 vendedores, flujo neto $196.8B); Tesla Inc (TSLA) (títulos agregados +213%, 49 compradores / 3 vendedores, flujo neto $170.8B). De 9605 empresas en cartera, 5470 tuvieron un cambio mayor, 2670 menor y 1465 ninguno."
       },
       {
         "kind": "turnover",
@@ -3292,13 +3292,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 696993200636.1333,
-      "gross_flow": 2819826124967.7847,
-      "price_effect": -1703743746197.1333,
-      "n_new": 22200,
-      "n_exit": 23340,
-      "n_add": 82577,
-      "n_trim": 79118,
+      "net_flow": 698845772642.6475,
+      "gross_flow": 2807684818231.341,
+      "price_effect": -1705596318203.6472,
+      "n_new": 21783,
+      "n_exit": 22923,
+      "n_add": 82786,
+      "n_trim": 79310,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.01672637658976596,
@@ -3333,10 +3333,10 @@
           "value": 138495440271.0
         }
       ],
-      "companies_total": 9631,
-      "companies_major": 5501,
-      "companies_minor": 2666,
-      "companies_none": 1464,
+      "companies_total": 9605,
+      "companies_major": 5470,
+      "companies_minor": 2670,
+      "companies_none": 1465,
       "top_company_moves": [
         {
           "issuer": "ALPHABET INC (GOOGL)",
@@ -3381,7 +3381,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.43T en el trimestre: $1.30T por precio y $130.8B por flujo neto (compras menos ventas). Actividad bruta de $2.49T con 23912 posiciones nuevas y 26321 salidas."
+        "text": "El valor agregado del universo cambió $1.43T en el trimestre: $1.29T por precio y $141.5B por flujo neto (compras menos ventas). Actividad bruta de $2.48T con 23486 posiciones nuevas y 25895 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3397,7 +3397,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+1.0 pp QoQ, +0.8 pp YoY), recibió flujo neto de $21.2B frente a un efecto precio de $104.4B (6990 compras / 6747 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+1.0 pp QoQ, +0.8 pp YoY), recibió flujo neto de $21.2B frente a un efecto precio de $104.3B (6980 compras / 6734 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3417,7 +3417,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +1%, 24 compradores / 41 vendedores, flujo neto $5.3B); Amazon Com Inc (AMZN) (títulos agregados -1%, 39 compradores / 26 vendedores, flujo neto -$2.0B); Apple Inc (AAPL) (títulos agregados +0%, 26 compradores / 25 vendedores, flujo neto $122M). De 9677 empresas en cartera, 5818 tuvieron un cambio mayor, 2549 menor y 1310 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +1%, 24 compradores / 41 vendedores, flujo neto $5.3B); Amazon Com Inc (AMZN) (títulos agregados -1%, 39 compradores / 26 vendedores, flujo neto -$2.0B); Apple Inc (AAPL) (títulos agregados +0%, 26 compradores / 25 vendedores, flujo neto $122M). De 9644 empresas en cartera, 5778 tuvieron un cambio mayor, 2555 menor y 1311 ninguno."
       },
       {
         "kind": "turnover",
@@ -3445,13 +3445,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 130836877310.76485,
-      "gross_flow": 2491169329000.832,
-      "price_effect": 1301045319030.235,
-      "n_new": 23912,
-      "n_exit": 26321,
-      "n_add": 84547,
-      "n_trim": 75041,
+      "net_flow": 141528282765.32596,
+      "gross_flow": 2475489664179.324,
+      "price_effect": 1290353913575.674,
+      "n_new": 23486,
+      "n_exit": 25895,
+      "n_add": 84756,
+      "n_trim": 75232,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.020936186783015356,
@@ -3490,10 +3490,10 @@
           "value": 120226460147.0
         }
       ],
-      "companies_total": 9677,
-      "companies_major": 5818,
-      "companies_minor": 2549,
-      "companies_none": 1310,
+      "companies_total": 9644,
+      "companies_major": 5778,
+      "companies_minor": 2555,
+      "companies_none": 1311,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -3538,7 +3538,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.33T en el trimestre: $1.32T por precio y $10.7B por flujo neto (compras menos ventas). Actividad bruta de $2.77T con 22727 posiciones nuevas y 26217 salidas."
+        "text": "El valor agregado del universo cambió $1.33T en el trimestre: $1.32T por precio y $3.2B por flujo neto (compras menos ventas). Actividad bruta de $2.62T con 22268 posiciones nuevas y 25758 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3554,7 +3554,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.4 pp QoQ, +2.0 pp YoY), recibió flujo neto de $15.6B frente a un efecto precio de $352.1B (7206 compras / 6499 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.4 pp QoQ, +2.0 pp YoY), recibió flujo neto de $15.6B frente a un efecto precio de $352.1B (7202 compras / 6496 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3562,7 +3562,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Linde PLC (LIN) (49 compradores / 0 vendedores, flujo $79.2B), GE Healthcare Technologies I (GEHC) (36 compradores / 1 vendedor, flujo $16.2B), Frontline PLC (FRO) (35 compradores / 0 vendedores, flujo $607M)."
+        "text": "Compras de consenso (más compradores netos): GE Healthcare Technologies I (GEHC) (36 compradores / 1 vendedor, flujo $16.2B), Frontline PLC (FRO) (35 compradores / 0 vendedores, flujo $607M), Alight Inc (37 compradores / 3 vendedores, flujo $280M)."
       },
       {
         "kind": "consensus_sell",
@@ -3570,11 +3570,11 @@
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: Vanguard Group Inc abre Linde PLC (LIN) ($15.7B); Vanguard Group Inc liquida Linde PLC (LIN) (-$15.2B); BlackRock Inc. abre Linde PLC (LIN) ($12.2B); Dimensional Fund Advisors LP liquida Dimensional ETF Trust ETF (-$11.3B)."
+        "text": "Movimientos individuales más grandes: Dimensional Fund Advisors LP liquida Dimensional ETF Trust ETF (-$11.3B); Dimensional Fund Advisors LP liquida Dimensional ETF Trust ETF (-$11.1B); Dimensional Fund Advisors LP liquida Dimensional ETF Trust ETF (-$10.1B); Citadel Advisors LLC aumenta SPDR S&P 500 ETF Tr (SPY) ($8.7B)."
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Linde PLC (LIN) (entrada nueva al universo, 49 compradores / 0 vendedores, flujo neto $79.2B); Linde PLC (LIN) (títulos agregados -100%, 0 compradores / 44 vendedores, flujo neto -$70.4B); Apple Inc (AAPL) (títulos agregados +1%, 25 compradores / 29 vendedores, flujo neto $8.0B). De 9288 empresas en cartera, 5759 tuvieron un cambio mayor, 2339 menor y 1190 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Apple Inc (AAPL) (títulos agregados +1%, 25 compradores / 29 vendedores, flujo neto $8.0B); Amazon Com Inc (AMZN) (títulos agregados +1%, 37 compradores / 29 vendedores, flujo neto $4.0B); Microsoft Corp (MSFT) (títulos agregados +0%, 33 compradores / 33 vendedores, flujo neto $1.9B). De 9256 empresas en cartera, 5717 tuvieron un cambio mayor, 2346 menor y 1193 ninguno."
       },
       {
         "kind": "turnover",
@@ -3602,13 +3602,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 10720633585.55759,
-      "gross_flow": 2770343701472.07,
-      "price_effect": 1315236676247.4424,
-      "n_new": 22727,
-      "n_exit": 26217,
-      "n_add": 84871,
-      "n_trim": 74995,
+      "net_flow": 3246236441.494755,
+      "gross_flow": 2621758671726.754,
+      "price_effect": 1322711073391.5054,
+      "n_new": 22268,
+      "n_exit": 25758,
+      "n_add": 85087,
+      "n_trim": 75217,
       "sector_top_overweight": {
         "sector": "Communication Services",
         "active_weight": 0.0160039136552773,
@@ -3647,29 +3647,11 @@
           "value": 258532401223.0
         }
       ],
-      "companies_total": 9288,
-      "companies_major": 5759,
-      "companies_minor": 2339,
-      "companies_none": 1190,
+      "companies_total": 9256,
+      "companies_major": 5717,
+      "companies_minor": 2346,
+      "companies_none": 1193,
       "top_company_moves": [
-        {
-          "issuer": "LINDE PLC (LIN)",
-          "ticker": "LIN",
-          "pct_shares": null,
-          "net_flow": 79190805267.0,
-          "buyers": 49,
-          "sellers": 0,
-          "magnitude": "MAJOR"
-        },
-        {
-          "issuer": "LINDE PLC (LIN)",
-          "ticker": "LIN",
-          "pct_shares": -1.0,
-          "net_flow": -70371311975.0,
-          "buyers": 0,
-          "sellers": 44,
-          "magnitude": "MAJOR"
-        },
         {
           "issuer": "APPLE INC (AAPL)",
           "ticker": "AAPL",
@@ -3677,6 +3659,24 @@
           "net_flow": 7989221621.704679,
           "buyers": 25,
           "sellers": 29,
+          "magnitude": "NONE"
+        },
+        {
+          "issuer": "AMAZON COM INC (AMZN)",
+          "ticker": "AMZN",
+          "pct_shares": 0.010801468108447183,
+          "net_flow": 4007220328.6029058,
+          "buyers": 37,
+          "sellers": 29,
+          "magnitude": "MINOR"
+        },
+        {
+          "issuer": "MICROSOFT CORP (MSFT)",
+          "ticker": "MSFT",
+          "pct_shares": 0.0020764276340790038,
+          "net_flow": 1899985270.588356,
+          "buyers": 33,
+          "sellers": 33,
           "magnitude": "NONE"
         }
       ],
@@ -3695,7 +3695,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $1.57T en el trimestre: $1.57T por precio y $1.4B por flujo neto (compras menos ventas). Actividad bruta de $2.57T con 21330 posiciones nuevas y 25412 salidas."
+        "text": "El valor agregado del universo cambió $1.57T en el trimestre: $1.57T por precio y $1.3B por flujo neto (compras menos ventas). Actividad bruta de $2.56T con 20733 posiciones nuevas y 24813 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3711,7 +3711,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.0 pp QoQ, +2.2 pp YoY), recibió flujo neto de $11.4B frente a un efecto precio de $312.9B (6877 compras / 6759 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.0 pp QoQ, +2.2 pp YoY), recibió flujo neto de $11.4B frente a un efecto precio de $312.9B (6870 compras / 6751 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3731,7 +3731,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +1%, 39 compradores / 28 vendedores, flujo neto $8.3B); Apple Inc (AAPL) (títulos agregados +0%, 27 compradores / 25 vendedores, flujo neto $890M); Nvidia Corporation (NVDA) (títulos agregados +1%, 35 compradores / 30 vendedores, flujo neto $6.1B). De 8859 empresas en cartera, 5553 tuvieron un cambio mayor, 2153 menor y 1153 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +1%, 39 compradores / 28 vendedores, flujo neto $8.3B); Apple Inc (AAPL) (títulos agregados +0%, 27 compradores / 25 vendedores, flujo neto $890M); Nvidia Corporation (NVDA) (títulos agregados +1%, 35 compradores / 30 vendedores, flujo neto $6.1B). De 8807 empresas en cartera, 5489 tuvieron un cambio mayor, 2163 menor y 1155 ninguno."
       },
       {
         "kind": "turnover",
@@ -3759,13 +3759,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 1440153192.8286781,
-      "gross_flow": 2568552503512.0127,
-      "price_effect": 1565930442754.1714,
-      "n_new": 21330,
-      "n_exit": 25412,
-      "n_add": 79722,
-      "n_trim": 78298,
+      "net_flow": 1311426257.3876457,
+      "gross_flow": 2562641690175.385,
+      "price_effect": 1566061465944.6123,
+      "n_new": 20733,
+      "n_exit": 24813,
+      "n_add": 80020,
+      "n_trim": 78575,
       "sector_top_overweight": {
         "sector": "Communication Services",
         "active_weight": 0.015670364712234444,
@@ -3801,10 +3801,10 @@
           "value": 434587087636.0
         }
       ],
-      "companies_total": 8859,
-      "companies_major": 5553,
-      "companies_minor": 2153,
-      "companies_none": 1153,
+      "companies_total": 8807,
+      "companies_major": 5489,
+      "companies_minor": 2163,
+      "companies_none": 1155,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -3849,7 +3849,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$801.0B en el trimestre: -$887.2B por precio y $86.2B por flujo neto (compras menos ventas). Actividad bruta de $2.36T con 22874 posiciones nuevas y 21967 salidas."
+        "text": "El valor agregado del universo cambió -$801.0B en el trimestre: -$884.2B por precio y $83.2B por flujo neto (compras menos ventas). Actividad bruta de $2.34T con 22209 posiciones nuevas y 21302 salidas."
       },
       {
         "kind": "asset_mix",
@@ -3865,7 +3865,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Energy (+0.9 pp QoQ, +0.4 pp YoY), recibió flujo neto de $2.2B frente a un efecto precio de $50.0B (2624 compras / 2422 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Energy (+0.9 pp QoQ, +0.4 pp YoY), recibió flujo neto de $2.2B frente a un efecto precio de $50.0B (2623 compras / 2422 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -3873,7 +3873,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Crh PLC (41 compradores / 0 vendedores, flujo $7.9B), Liberty Media Corp Del (FWONA) (40 compradores / 0 vendedores, flujo $3.1B), Liberty Media Corp Del (FWONK) (38 compradores / 0 vendedores, flujo $4.8B)."
+        "text": "Compras de consenso (más compradores netos): Tko Group Holdings Inc (TKO) (38 compradores / 0 vendedores, flujo $2.2B), Exlservice Holdings Inc (EXLS) (40 compradores / 2 vendedores, flujo $2.1B), Copart Inc (CPRT) (40 compradores / 5 vendedores, flujo $8.5B)."
       },
       {
         "kind": "consensus_sell",
@@ -3885,7 +3885,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -0%, 39 compradores / 32 vendedores, flujo neto -$3.6B); Amazon Com Inc (AMZN) (títulos agregados +2%, 37 compradores / 33 vendedores, flujo neto $7.8B); Apple Inc (AAPL) (títulos agregados -1%, 24 compradores / 30 vendedores, flujo neto -$10.5B). De 8651 empresas en cartera, 5074 tuvieron un cambio mayor, 2321 menor y 1256 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -0%, 39 compradores / 32 vendedores, flujo neto -$3.6B); Amazon Com Inc (AMZN) (títulos agregados +2%, 37 compradores / 33 vendedores, flujo neto $7.8B); Apple Inc (AAPL) (títulos agregados -1%, 24 compradores / 30 vendedores, flujo neto -$10.5B). De 8616 empresas en cartera, 5026 tuvieron un cambio mayor, 2330 menor y 1260 ninguno."
       },
       {
         "kind": "turnover",
@@ -3893,7 +3893,7 @@
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 37%; turnover 43%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 59%; turnover 6%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 18 positions, top-10 92%; turnover 34%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 70%; turnover 45%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 37%; turnover 43%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 59%; turnover 6%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 18 positions, top-10 92%; turnover 21%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 70%; turnover 45%)."
       },
       {
         "kind": "options",
@@ -3913,13 +3913,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 86230022798.83672,
-      "gross_flow": 2361091298590.607,
-      "price_effect": -887216966533.8367,
-      "n_new": 22874,
-      "n_exit": 21967,
-      "n_add": 81199,
-      "n_trim": 76096,
+      "net_flow": 83192050202.66577,
+      "gross_flow": 2338387497469.6094,
+      "price_effect": -884178993937.6658,
+      "n_new": 22209,
+      "n_exit": 21302,
+      "n_add": 81528,
+      "n_trim": 76409,
       "sector_top_overweight": {
         "sector": "Communication Services",
         "active_weight": 0.021071210264103135,
@@ -3957,10 +3957,10 @@
           "value": 473996913651.0
         }
       ],
-      "companies_total": 8651,
-      "companies_major": 5074,
-      "companies_minor": 2321,
-      "companies_none": 1256,
+      "companies_total": 8616,
+      "companies_major": 5026,
+      "companies_minor": 2330,
+      "companies_none": 1260,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -4005,7 +4005,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $5.06T en el trimestre: $2.63T por precio y $2.43T por flujo neto (compras menos ventas). Actividad bruta de $4.85T con 22950 posiciones nuevas y 22182 salidas."
+        "text": "El valor agregado del universo cambió $5.06T en el trimestre: $2.63T por precio y $2.43T por flujo neto (compras menos ventas). Actividad bruta de $4.84T con 22474 posiciones nuevas y 21706 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4021,7 +4021,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.2 pp QoQ, +2.9 pp YoY), recibió flujo neto de $446.5B frente a un efecto precio de $366.4B (7508 compras / 5957 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.2 pp QoQ, +2.9 pp YoY), recibió flujo neto de $446.5B frente a un efecto precio de $366.4B (7504 compras / 5953 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4041,7 +4041,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +9%, 30 compradores / 37 vendedores, flujo neto $111.2B); Apple Inc (AAPL) (títulos agregados +6%, 30 compradores / 23 vendedores, flujo neto $76.4B); Amazon Com Inc (AMZN) (títulos agregados +10%, 43 compradores / 24 vendedores, flujo neto $59.3B). De 8488 empresas en cartera, 6600 tuvieron un cambio mayor, 1340 menor y 548 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados +9%, 30 compradores / 37 vendedores, flujo neto $111.2B); Apple Inc (AAPL) (títulos agregados +6%, 30 compradores / 23 vendedores, flujo neto $76.4B); Amazon Com Inc (AMZN) (títulos agregados +10%, 43 compradores / 24 vendedores, flujo neto $59.3B). De 8453 empresas en cartera, 6558 tuvieron un cambio mayor, 1344 menor y 551 ninguno."
       },
       {
         "kind": "turnover",
@@ -4069,13 +4069,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 2431261596652.436,
-      "gross_flow": 4848659025717.422,
-      "price_effect": 2625489323783.5635,
-      "n_new": 22950,
-      "n_exit": 22182,
-      "n_add": 93600,
-      "n_trim": 65634,
+      "net_flow": 2431424903488.612,
+      "gross_flow": 4842059758068.708,
+      "price_effect": 2625326016946.3877,
+      "n_new": 22474,
+      "n_exit": 21706,
+      "n_add": 93826,
+      "n_trim": 65858,
       "sector_top_overweight": {
         "sector": "Communication Services",
         "active_weight": 0.024363420331472055,
@@ -4110,10 +4110,10 @@
           "value": 1285065229623.0
         }
       ],
-      "companies_total": 8488,
-      "companies_major": 6600,
-      "companies_minor": 1340,
-      "companies_none": 548,
+      "companies_total": 8453,
+      "companies_major": 6558,
+      "companies_minor": 1344,
+      "companies_none": 551,
       "top_company_moves": [
         {
           "issuer": "MICROSOFT CORP (MSFT)",
@@ -4158,7 +4158,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $4.08T en el trimestre: $2.45T por precio y $1.63T por flujo neto (compras menos ventas). Actividad bruta de $4.84T con 22207 posiciones nuevas y 22379 salidas."
+        "text": "El valor agregado del universo cambió $4.08T en el trimestre: $2.45T por precio y $1.63T por flujo neto (compras menos ventas). Actividad bruta de $4.82T con 21790 posiciones nuevas y 21962 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4182,7 +4182,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Cooper Cos Inc (COO) (40 compradores / 0 vendedores, flujo $9.8B), Walmart Inc (WMT) (43 compradores / 4 vendedores, flujo $77.2B), Old Dominion Freight Line In (ODFL) (40 compradores / 3 vendedores, flujo $11.7B)."
+        "text": "Compras de consenso (más compradores netos): Walmart Inc (WMT) (43 compradores / 4 vendedores, flujo $77.2B), Old Dominion Freight Line In (ODFL) (40 compradores / 3 vendedores, flujo $11.7B), Corpay Inc (CPAY) (35 compradores / 0 vendedores, flujo $14.0B)."
       },
       {
         "kind": "consensus_sell",
@@ -4194,7 +4194,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +3%, 24 compradores / 35 vendedores, flujo neto $25.3B); Microsoft Corp (MSFT) (títulos agregados +4%, 25 compradores / 40 vendedores, flujo neto $57.0B); Apple Inc (AAPL) (títulos agregados +3%, 29 compradores / 24 vendedores, flujo neto $30.0B). De 8272 empresas en cartera, 5500 tuvieron un cambio mayor, 1881 menor y 891 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +3%, 24 compradores / 35 vendedores, flujo neto $25.3B); Microsoft Corp (MSFT) (títulos agregados +4%, 25 compradores / 40 vendedores, flujo neto $57.0B); Apple Inc (AAPL) (títulos agregados +3%, 29 compradores / 24 vendedores, flujo neto $30.0B). De 8241 empresas en cartera, 5460 tuvieron un cambio mayor, 1888 menor y 893 ninguno."
       },
       {
         "kind": "turnover",
@@ -4222,13 +4222,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 1628905119264.2463,
-      "gross_flow": 4836085527176.49,
-      "price_effect": 2446955044540.753,
-      "n_new": 22207,
-      "n_exit": 22379,
-      "n_add": 85009,
-      "n_trim": 75335,
+      "net_flow": 1628262468130.9585,
+      "gross_flow": 4816926117702.396,
+      "price_effect": 2447597695674.0415,
+      "n_new": 21790,
+      "n_exit": 21962,
+      "n_add": 85202,
+      "n_trim": 75543,
       "sector_top_overweight": {
         "sector": "Communication Services",
         "active_weight": 0.023266695980431504,
@@ -4266,10 +4266,10 @@
           "value": 563199088068.0
         }
       ],
-      "companies_total": 8272,
-      "companies_major": 5500,
-      "companies_minor": 1881,
-      "companies_none": 891,
+      "companies_total": 8241,
+      "companies_major": 5460,
+      "companies_minor": 1888,
+      "companies_none": 893,
       "top_company_moves": [
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
@@ -4314,7 +4314,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$1.83T en el trimestre: -$764.6B por precio y -$1.07T por flujo neto (compras menos ventas). Actividad bruta de $7.13T con 22424 posiciones nuevas y 23126 salidas."
+        "text": "El valor agregado del universo cambió -$1.83T en el trimestre: -$765.1B por precio y -$1.07T por flujo neto (compras menos ventas). Actividad bruta de $7.12T con 21936 posiciones nuevas y 22638 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4330,7 +4330,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.3 pp QoQ, +1.8 pp YoY), recibió flujo neto de $24.7B frente a un efecto precio de -$205.1B (7151 compras / 6634 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.3 pp QoQ, +1.8 pp YoY), recibió flujo neto de $24.7B frente a un efecto precio de -$205.1B (7146 compras / 6631 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4350,7 +4350,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +838%, 62 compradores / 1 vendedor, flujo neto $1.15T); Apple Inc (AAPL) (títulos agregados -8%, 42 compradores / 16 vendedores, flujo neto -$116.6B); Microsoft Corp (MSFT) (títulos agregados -6%, 27 compradores / 38 vendedores, flujo neto -$101.9B). De 8189 empresas en cartera, 5927 tuvieron un cambio mayor, 1605 menor y 657 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +838%, 62 compradores / 1 vendedor, flujo neto $1.15T); Apple Inc (AAPL) (títulos agregados -8%, 42 compradores / 16 vendedores, flujo neto -$116.6B); Microsoft Corp (MSFT) (títulos agregados -6%, 27 compradores / 38 vendedores, flujo neto -$101.9B). De 8158 empresas en cartera, 5891 tuvieron un cambio mayor, 1607 menor y 660 ninguno."
       },
       {
         "kind": "turnover",
@@ -4378,13 +4378,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -1070003123576.678,
-      "gross_flow": 7125914787992.82,
-      "price_effect": -764640384265.3223,
-      "n_new": 22424,
-      "n_exit": 23126,
-      "n_add": 81638,
-      "n_trim": 78713,
+      "net_flow": -1069585806631.7885,
+      "gross_flow": 7123471834567.262,
+      "price_effect": -765057701209.2112,
+      "n_new": 21936,
+      "n_exit": 22638,
+      "n_add": 81892,
+      "n_trim": 78932,
       "sector_top_overweight": {
         "sector": "Energy",
         "active_weight": 0.015503267007140595,
@@ -4422,10 +4422,10 @@
           "value": 553059930632.0
         }
       ],
-      "companies_total": 8189,
-      "companies_major": 5927,
-      "companies_minor": 1605,
-      "companies_none": 657,
+      "companies_total": 8158,
+      "companies_major": 5891,
+      "companies_minor": 1607,
+      "companies_none": 660,
       "top_company_moves": [
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
@@ -4470,7 +4470,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $2.02T en el trimestre: $1.33T por precio y $688.0B por flujo neto (compras menos ventas). Actividad bruta de $4.41T con 24523 posiciones nuevas y 24147 salidas."
+        "text": "El valor agregado del universo cambió $2.02T en el trimestre: $1.34T por precio y $686.0B por flujo neto (compras menos ventas). Actividad bruta de $4.35T con 24148 posiciones nuevas y 23772 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4486,7 +4486,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Industrials (+0.6 pp QoQ, +0.8 pp YoY), recibió flujo neto de -$3.8B frente a un efecto precio de $120.4B (7152 compras / 7492 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Industrials (+0.6 pp QoQ, +0.8 pp YoY), recibió flujo neto de -$3.8B frente a un efecto precio de $120.4B (7128 compras / 7472 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4494,7 +4494,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Ferguson Enterprises Inc (FERG) (47 compradores / 0 vendedores, flujo $17.2B), Te Connectivity PLC (TEL) (45 compradores / 0 vendedores, flujo $24.1B), Broadcom Inc (AVGO) (51 compradores / 7 vendedores, flujo $341.8B)."
+        "text": "Compras de consenso (más compradores netos): Ferguson Enterprises Inc (FERG) (47 compradores / 0 vendedores, flujo $17.2B), Broadcom Inc (AVGO) (51 compradores / 7 vendedores, flujo $341.8B), Cintas Corp (CTAS) (42 compradores / 3 vendedores, flujo $22.7B)."
       },
       {
         "kind": "consensus_sell",
@@ -4506,7 +4506,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Broadcom Inc (AVGO) (títulos agregados +903%, 51 compradores / 7 vendedores, flujo neto $341.8B); Apple Inc (AAPL) (títulos agregados +1%, 29 compradores / 32 vendedores, flujo neto $7.6B); Nvidia Corporation (NVDA) (títulos agregados -0%, 31 compradores / 31 vendedores, flujo neto -$5.0B). De 8208 empresas en cartera, 5098 tuvieron un cambio mayor, 2093 menor y 1017 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Broadcom Inc (AVGO) (títulos agregados +903%, 51 compradores / 7 vendedores, flujo neto $341.8B); Apple Inc (AAPL) (títulos agregados +1%, 29 compradores / 32 vendedores, flujo neto $7.6B); Nvidia Corporation (NVDA) (títulos agregados -0%, 31 compradores / 31 vendedores, flujo neto -$5.0B). De 8184 empresas en cartera, 5071 tuvieron un cambio mayor, 2096 menor y 1017 ninguno."
       },
       {
         "kind": "turnover",
@@ -4534,13 +4534,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 687998464677.3071,
-      "gross_flow": 4407101134770.48,
-      "price_effect": 1333428840724.6929,
-      "n_new": 24523,
-      "n_exit": 24147,
-      "n_add": 82744,
-      "n_trim": 72946,
+      "net_flow": 685971567792.5178,
+      "gross_flow": 4353117717051.3066,
+      "price_effect": 1335455737609.4822,
+      "n_new": 24148,
+      "n_exit": 23772,
+      "n_add": 82936,
+      "n_trim": 73115,
       "sector_top_overweight": {
         "sector": "Consumer Discretionary",
         "active_weight": 0.01582777372034813,
@@ -4577,9 +4577,9 @@
           "value": 628120026477.0
         }
       ],
-      "companies_total": 8208,
-      "companies_major": 5098,
-      "companies_minor": 2093,
+      "companies_total": 8184,
+      "companies_major": 5071,
+      "companies_minor": 2096,
       "companies_none": 1017,
       "top_company_moves": [
         {
@@ -4625,7 +4625,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$298.2B en el trimestre: $393.5B por precio y -$691.7B por flujo neto (compras menos ventas). Actividad bruta de $5.06T con 23300 posiciones nuevas y 21362 salidas."
+        "text": "El valor agregado del universo cambió -$298.2B en el trimestre: $405.5B por precio y -$703.7B por flujo neto (compras menos ventas). Actividad bruta de $4.79T con 22702 posiciones nuevas y 20764 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4641,7 +4641,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Financials (+0.8 pp QoQ, +0.4 pp YoY), recibió flujo neto de -$126.8B frente a un efecto precio de $113.3B (8912 compras / 7897 ventas); su peso actual está en el percentil 82 de su historia."
+        "text": "El sector que más peso ganó, Financials (+0.8 pp QoQ, +0.4 pp YoY), recibió flujo neto de -$129.9B frente a un efecto precio de $116.4B (8891 compras / 7879 ventas); su peso actual está en el percentil 82 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4649,7 +4649,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Lam Research Corp (LRCX) (49 compradores / 0 vendedores, flujo $42.4B), Arista Networks Inc (ANET) (44 compradores / 0 vendedores, flujo $53.6B), Super Micro Computer Inc (SMCI) (44 compradores / 0 vendedores, flujo $6.7B)."
+        "text": "Compras de consenso (más compradores netos): Lam Research Corp (LRCX) (49 compradores / 0 vendedores, flujo $42.4B), Super Micro Computer Inc (SMCI) (44 compradores / 0 vendedores, flujo $6.7B), Tractor Supply Co (TSCO) (40 compradores / 2 vendedores, flujo $12.5B)."
       },
       {
         "kind": "consensus_sell",
@@ -4661,7 +4661,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados -3%, 30 compradores / 31 vendedores, flujo neto -$40.8B); Microsoft Corp (MSFT) (títulos agregados -3%, 34 compradores / 35 vendedores, flujo neto -$45.6B); Apple Inc (AAPL) (títulos agregados -1%, 32 compradores / 26 vendedores, flujo neto -$22.9B). De 8178 empresas en cartera, 5473 tuvieron un cambio mayor, 1875 menor y 830 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados -3%, 30 compradores / 31 vendedores, flujo neto -$40.8B); Microsoft Corp (MSFT) (títulos agregados -3%, 34 compradores / 35 vendedores, flujo neto -$45.6B); Apple Inc (AAPL) (títulos agregados -1%, 32 compradores / 26 vendedores, flujo neto -$22.9B). De 8145 empresas en cartera, 5430 tuvieron un cambio mayor, 1883 menor y 832 ninguno."
       },
       {
         "kind": "turnover",
@@ -4669,7 +4669,7 @@
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 33%; turnover 58%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 61%; turnover 58%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 13 positions, top-10 99%; turnover 5%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 57%; turnover 45%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 33%; turnover 57%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 61%; turnover 18%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 13 positions, top-10 99%; turnover 5%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 57%; turnover 45%)."
       },
       {
         "kind": "options",
@@ -4689,13 +4689,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": -691688419907.2825,
-      "gross_flow": 5059940715897.751,
-      "price_effect": 393497930830.28253,
-      "n_new": 23300,
-      "n_exit": 21362,
-      "n_add": 87090,
-      "n_trim": 72717,
+      "net_flow": -703728394007.9907,
+      "gross_flow": 4785132458056.818,
+      "price_effect": 405537904930.9907,
+      "n_new": 22702,
+      "n_exit": 20764,
+      "n_add": 87389,
+      "n_trim": 72985,
       "sector_top_overweight": {
         "sector": "Energy",
         "active_weight": 0.01521941505779302,
@@ -4731,10 +4731,10 @@
           "value": 1353034770102.0
         }
       ],
-      "companies_total": 8178,
-      "companies_major": 5473,
-      "companies_minor": 1875,
-      "companies_none": 830,
+      "companies_total": 8145,
+      "companies_major": 5430,
+      "companies_minor": 1883,
+      "companies_none": 832,
       "top_company_moves": [
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
@@ -4779,7 +4779,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$1.10T en el trimestre: -$1.44T por precio y $341.5B por flujo neto (compras menos ventas). Actividad bruta de $3.50T con 22387 posiciones nuevas y 22307 salidas."
+        "text": "El valor agregado del universo cambió -$1.10T en el trimestre: -$1.44T por precio y $341.6B por flujo neto (compras menos ventas). Actividad bruta de $3.50T con 22057 posiciones nuevas y 21977 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4815,7 +4815,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Brookfield Asset Management Ltd (BAM) (títulos agregados +1474%, 31 compradores / 6 vendedores, flujo neto $58.2B); Apple Inc (AAPL) (títulos agregados -0%, 21 compradores / 36 vendedores, flujo neto -$2.4B); Microsoft Corp (MSFT) (títulos agregados +0%, 29 compradores / 39 vendedores, flujo neto $5.8B). De 8190 empresas en cartera, 5158 tuvieron un cambio mayor, 2092 menor y 940 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Brookfield Asset Management Ltd (BAM) (títulos agregados +1474%, 31 compradores / 6 vendedores, flujo neto $58.2B); Apple Inc (AAPL) (títulos agregados -0%, 21 compradores / 36 vendedores, flujo neto -$2.4B); Microsoft Corp (MSFT) (títulos agregados +0%, 29 compradores / 39 vendedores, flujo neto $5.8B). De 8156 empresas en cartera, 5120 tuvieron un cambio mayor, 2095 menor y 941 ninguno."
       },
       {
         "kind": "turnover",
@@ -4843,13 +4843,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 341506449293.419,
-      "gross_flow": 3502731870640.077,
-      "price_effect": -1443265031257.419,
-      "n_new": 22387,
-      "n_exit": 22307,
-      "n_add": 84557,
-      "n_trim": 75585,
+      "net_flow": 341586984783.66315,
+      "gross_flow": 3501596749121.68,
+      "price_effect": -1443345566747.663,
+      "n_new": 22057,
+      "n_exit": 21977,
+      "n_add": 84721,
+      "n_trim": 75723,
       "sector_top_overweight": {
         "sector": "Industrials",
         "active_weight": 0.012866034531059917,
@@ -4886,10 +4886,10 @@
           "value": 609480973993.0
         }
       ],
-      "companies_total": 8190,
-      "companies_major": 5158,
-      "companies_minor": 2092,
-      "companies_none": 940,
+      "companies_total": 8156,
+      "companies_major": 5120,
+      "companies_minor": 2095,
+      "companies_none": 941,
       "top_company_moves": [
         {
           "issuer": "BROOKFIELD ASSET MANAGEMENT LTD (BAM)",
@@ -4934,7 +4934,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $3.44T en el trimestre: $3.16T por precio y $274.4B por flujo neto (compras menos ventas). Actividad bruta de $3.85T con 23893 posiciones nuevas y 24562 salidas."
+        "text": "El valor agregado del universo cambió $3.44T en el trimestre: $3.17T por precio y $270.1B por flujo neto (compras menos ventas). Actividad bruta de $3.84T con 23474 posiciones nuevas y 24143 salidas."
       },
       {
         "kind": "asset_mix",
@@ -4950,7 +4950,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+1.8 pp QoQ, -0.8 pp YoY), recibió flujo neto de $33.5B frente a un efecto precio de $697.1B (7460 compras / 6550 ventas); su peso actual está en el percentil 94 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+1.8 pp QoQ, -0.8 pp YoY), recibió flujo neto de $33.5B frente a un efecto precio de $697.2B (7447 compras / 6536 ventas); su peso actual está en el percentil 94 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -4958,7 +4958,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Ralliant Corp (RAL) (44 compradores / 0 vendedores, flujo $3.5B), Rocket Lab Corp (RKLB) (41 compradores / 0 vendedores, flujo $6.4B), Coca Cola Cons Inc (COKE) (41 compradores / 1 vendedor, flujo $2.5B)."
+        "text": "Compras de consenso (más compradores netos): Ralliant Corp (RAL) (44 compradores / 0 vendedores, flujo $3.5B), Coca Cola Cons Inc (COKE) (41 compradores / 1 vendedor, flujo $2.5B), Oreilly Automotive Inc (ORLY) (42 compradores / 3 vendedores, flujo $32.0B)."
       },
       {
         "kind": "consensus_sell",
@@ -4970,7 +4970,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +2%, 45 compradores / 22 vendedores, flujo neto $39.5B); Microsoft Corp (MSFT) (títulos agregados +2%, 38 compradores / 31 vendedores, flujo neto $24.4B); Apple Inc (AAPL) (títulos agregados -0%, 30 compradores / 25 vendedores, flujo neto -$5.1B). De 8327 empresas en cartera, 5454 tuvieron un cambio mayor, 1911 menor y 962 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +2%, 45 compradores / 22 vendedores, flujo neto $39.5B); Microsoft Corp (MSFT) (títulos agregados +2%, 38 compradores / 31 vendedores, flujo neto $24.4B); Apple Inc (AAPL) (títulos agregados -0%, 30 compradores / 25 vendedores, flujo neto -$5.1B). De 8290 empresas en cartera, 5415 tuvieron un cambio mayor, 1913 menor y 962 ninguno."
       },
       {
         "kind": "turnover",
@@ -4978,7 +4978,7 @@
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 29%; turnover 65%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 61%; turnover 20%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 15 positions, top-10 97%; turnover 8%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 50%; turnover 41%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 29%; turnover 64%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 61%; turnover 20%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 15 positions, top-10 97%; turnover 8%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 50%; turnover 41%)."
       },
       {
         "kind": "options",
@@ -4998,13 +4998,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 274426193630.75073,
-      "gross_flow": 3848186156012.3047,
-      "price_effect": 3163382017700.2495,
-      "n_new": 23893,
-      "n_exit": 24562,
-      "n_add": 84879,
-      "n_trim": 74064,
+      "net_flow": 270085096182.32516,
+      "gross_flow": 3838097105812.544,
+      "price_effect": 3167723115148.675,
+      "n_new": 23474,
+      "n_exit": 24143,
+      "n_add": 85089,
+      "n_trim": 74257,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.015757324131194378,
@@ -5041,9 +5041,9 @@
           "value": 1637175477105.0
         }
       ],
-      "companies_total": 8327,
-      "companies_major": 5454,
-      "companies_minor": 1911,
+      "companies_total": 8290,
+      "companies_major": 5415,
+      "companies_minor": 1913,
       "companies_none": 962,
       "top_company_moves": [
         {
@@ -5089,7 +5089,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $4.75T en el trimestre: $2.61T por precio y $2.15T por flujo neto (compras menos ventas). Actividad bruta de $5.49T con 26366 posiciones nuevas y 22669 salidas."
+        "text": "El valor agregado del universo cambió $4.75T en el trimestre: $2.61T por precio y $2.15T por flujo neto (compras menos ventas). Actividad bruta de $5.47T con 25834 posiciones nuevas y 22137 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5105,7 +5105,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+0.6 pp QoQ, +0.6 pp YoY), recibió flujo neto de $454.2B frente a un efecto precio de $459.8B (7643 compras / 6549 ventas); su peso actual está en el percentil 97 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+0.6 pp QoQ, +0.6 pp YoY), recibió flujo neto de $454.2B frente a un efecto precio de $459.8B (7633 compras / 6545 ventas); su peso actual está en el percentil 97 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -5113,7 +5113,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Southstate Bk Corp (SSB) (41 compradores / 0 vendedores, flujo $5.3B), Gci Liberty Inc (37 compradores / 0 vendedores, flujo $393M), Viper Energy Inc (VNOM) (36 compradores / 0 vendedores, flujo $3.8B)."
+        "text": "Compras de consenso (más compradores netos): Gci Liberty Inc (37 compradores / 0 vendedores, flujo $393M), James Hardie Inds PLC (JHX) (36 compradores / 0 vendedores, flujo $2.6B), Figma Inc (FIG) (35 compradores / 0 vendedores, flujo $1.8B)."
       },
       {
         "kind": "consensus_sell",
@@ -5125,7 +5125,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +5%, 32 compradores / 35 vendedores, flujo neto $100.2B); Microsoft Corp (MSFT) (títulos agregados +6%, 44 compradores / 24 vendedores, flujo neto $93.6B); Apple Inc (AAPL) (títulos agregados +4%, 27 compradores / 28 vendedores, flujo neto $56.1B). De 8547 empresas en cartera, 5971 tuvieron un cambio mayor, 1798 menor y 778 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Nvidia Corporation (NVDA) (títulos agregados +5%, 32 compradores / 35 vendedores, flujo neto $100.2B); Microsoft Corp (MSFT) (títulos agregados +6%, 44 compradores / 24 vendedores, flujo neto $93.6B); Apple Inc (AAPL) (títulos agregados +4%, 27 compradores / 28 vendedores, flujo neto $56.1B). De 8499 empresas en cartera, 5910 tuvieron un cambio mayor, 1807 menor y 782 ninguno."
       },
       {
         "kind": "turnover",
@@ -5153,13 +5153,13 @@
           "last_period": "2021-03-31"
         }
       ],
-      "net_flow": 2147243148793.8755,
-      "gross_flow": 5486124382181.217,
-      "price_effect": 2606491981692.1245,
-      "n_new": 26366,
-      "n_exit": 22669,
-      "n_add": 88761,
-      "n_trim": 71805,
+      "net_flow": 2146676563212.7983,
+      "gross_flow": 5468107954659.946,
+      "price_effect": 2607058567273.2017,
+      "n_new": 25834,
+      "n_exit": 22137,
+      "n_add": 89034,
+      "n_trim": 72035,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.02400635931341255,
@@ -5197,10 +5197,10 @@
           "value": 2033513460975.0
         }
       ],
-      "companies_total": 8547,
-      "companies_major": 5971,
-      "companies_minor": 1798,
-      "companies_none": 778,
+      "companies_total": 8499,
+      "companies_major": 5910,
+      "companies_minor": 1807,
+      "companies_none": 782,
       "top_company_moves": [
         {
           "issuer": "NVIDIA CORPORATION (NVDA)",
@@ -5245,7 +5245,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$569.6B en el trimestre: $395.9B por precio y -$965.4B por flujo neto (compras menos ventas). Actividad bruta de $6.39T con 26670 posiciones nuevas y 24081 salidas."
+        "text": "El valor agregado del universo cambió -$569.6B en el trimestre: $396.4B por precio y -$965.9B por flujo neto (compras menos ventas). Actividad bruta de $6.38T con 26205 posiciones nuevas y 23616 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5261,7 +5261,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+0.6 pp QoQ, -0.5 pp YoY), recibió flujo neto de -$107.1B frente a un efecto precio de $167.8B (9040 compras / 7990 ventas); su peso actual está en el percentil 19 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+0.6 pp QoQ, -0.5 pp YoY), recibió flujo neto de -$107.1B frente a un efecto precio de $167.7B (9015 compras / 7964 ventas); su peso actual está en el percentil 19 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -5273,7 +5273,7 @@
       },
       {
         "kind": "consensus_sell",
-        "text": "Ventas de consenso: Light & Wonder I (LNWO) (35 vendedores / 1 comprador, flujo -$2.9B), Chubb Limited (CB) (36 vendedores / 12 compradores, flujo -$817M), Fti Consulting Inc (FCN) (31 vendedores / 8 compradores, flujo -$193M)."
+        "text": "Ventas de consenso: Light & Wonder I (LNWO) (35 vendedores / 1 comprador, flujo -$2.9B), Chubb Limited (CB) (36 vendedores / 12 compradores, flujo -$817M), Unilever Spn.adr 1:1 (UL) (28 vendedores / 5 compradores, flujo -$689M)."
       },
       {
         "kind": "moves",
@@ -5281,7 +5281,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Netflix Inc (NFLX) (títulos agregados +876%, 54 compradores / 4 vendedores, flujo neto $182.6B); Nvidia Corporation (NVDA) (títulos agregados -3%, 36 compradores / 31 vendedores, flujo neto -$52.3B); Microsoft Corp (MSFT) (títulos agregados -3%, 33 compradores / 36 vendedores, flujo neto -$50.6B). De 8673 empresas en cartera, 6005 tuvieron un cambio mayor, 1882 menor y 786 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Netflix Inc (NFLX) (títulos agregados +876%, 54 compradores / 4 vendedores, flujo neto $182.6B); Nvidia Corporation (NVDA) (títulos agregados -3%, 36 compradores / 31 vendedores, flujo neto -$52.3B); Microsoft Corp (MSFT) (títulos agregados -3%, 33 compradores / 36 vendedores, flujo neto -$50.6B). De 8618 empresas en cartera, 5945 tuvieron un cambio mayor, 1886 menor y 787 ninguno."
       },
       {
         "kind": "turnover",
@@ -5289,7 +5289,7 @@
       },
       {
         "kind": "type_mismatch",
-        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 28%; turnover 55%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 55%; turnover 20%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 9 positions, top-10 100%; turnover 9%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 54%; turnover 59%)."
+        "text": "Perfil de cartera distinto al tipo declarado: D. E. Shaw & Co., Inc. (declarado Hedge Fund - Quant, cartera parece Multi-strategy / Options-heavy: options 28%; turnover 54%); Temasek Holdings (Private) Ltd (declarado Sovereign Wealth Fund, cartera parece Concentrated Value: top-10 55%; turnover 20%); Paulson & Co. Inc. (declarado Hedge Fund - Event Driven, cartera parece Concentrated / Activist: 9 positions, top-10 100%; turnover 9%); Third Point LLC (declarado Hedge Fund - Event Driven, cartera parece Concentrated Value: top-10 54%; turnover 59%)."
       },
       {
         "kind": "options",
@@ -5314,13 +5314,13 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": -965437465955.3423,
-      "gross_flow": 6393855607638.08,
-      "price_effect": 395864643128.34235,
-      "n_new": 26670,
-      "n_exit": 24081,
-      "n_add": 83582,
-      "n_trim": 79257,
+      "net_flow": -965925687956.7563,
+      "gross_flow": 6378617815492.999,
+      "price_effect": 396352865132.75653,
+      "n_new": 26205,
+      "n_exit": 23616,
+      "n_add": 83798,
+      "n_trim": 79473,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.021153356248001687,
@@ -5357,10 +5357,10 @@
           "value": 1621730903375.0
         }
       ],
-      "companies_total": 8673,
-      "companies_major": 6005,
-      "companies_minor": 1882,
-      "companies_none": 786,
+      "companies_total": 8618,
+      "companies_major": 5945,
+      "companies_minor": 1886,
+      "companies_none": 787,
       "top_company_moves": [
         {
           "issuer": "NETFLIX INC (NFLX)",
@@ -5405,7 +5405,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió -$394.6B en el trimestre: -$1.14T por precio y $743.6B por flujo neto (compras menos ventas). Actividad bruta de $4.65T con 27188 posiciones nuevas y 26428 salidas."
+        "text": "El valor agregado del universo cambió -$394.6B en el trimestre: -$1.13T por precio y $731.5B por flujo neto (compras menos ventas). Actividad bruta de $4.60T con 26784 posiciones nuevas y 26014 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5429,7 +5429,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Pinnacle Finl Partners Inc (PNFP) (40 compradores / 0 vendedores, flujo $6.1B), Astrazeneca PLC (AZN) (39 compradores / 0 vendedores, flujo $41.5B), Versant Media Group Inc (VSNT) (36 compradores / 0 vendedores, flujo $2.2B)."
+        "text": "Compras de consenso (más compradores netos): Versant Media Group Inc (VSNT) (36 compradores / 0 vendedores, flujo $2.2B), Stifel Finl Corp (SF) (39 compradores / 4 vendedores, flujo $1.8B), Indivior Pharmaceuticals Inc (INDV) (35 compradores / 0 vendedores, flujo $1.6B)."
       },
       {
         "kind": "consensus_sell",
@@ -5441,7 +5441,7 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -1%, 30 compradores / 38 vendedores, flujo neto -$9.9B); Nvidia Corporation (NVDA) (títulos agregados +0%, 29 compradores / 37 vendedores, flujo neto $3.8B); Amazon Com Inc (AMZN) (títulos agregados +3%, 36 compradores / 36 vendedores, flujo neto $16.9B). De 8878 empresas en cartera, 6338 tuvieron un cambio mayor, 1729 menor y 811 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Microsoft Corp (MSFT) (títulos agregados -1%, 30 compradores / 38 vendedores, flujo neto -$9.9B); Nvidia Corporation (NVDA) (títulos agregados +0%, 29 compradores / 37 vendedores, flujo neto $3.8B); Amazon Com Inc (AMZN) (títulos agregados +3%, 36 compradores / 36 vendedores, flujo neto $16.9B). De 8829 empresas en cartera, 6286 tuvieron un cambio mayor, 1732 menor y 811 ninguno."
       },
       {
         "kind": "turnover",
@@ -5484,13 +5484,13 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": 743568036702.8768,
-      "gross_flow": 4653388386200.619,
-      "price_effect": -1138145338528.877,
-      "n_new": 27188,
-      "n_exit": 26428,
-      "n_add": 86481,
-      "n_trim": 70885,
+      "net_flow": 731527354374.9949,
+      "gross_flow": 4596419453925.921,
+      "price_effect": -1126091660901.9949,
+      "n_new": 26784,
+      "n_exit": 26014,
+      "n_add": 86685,
+      "n_trim": 71073,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.019884560055616493,
@@ -5528,9 +5528,9 @@
           "value": 926359723367.0
         }
       ],
-      "companies_total": 8878,
-      "companies_major": 6338,
-      "companies_minor": 1729,
+      "companies_total": 8829,
+      "companies_major": 6286,
+      "companies_minor": 1732,
       "companies_none": 811,
       "top_company_moves": [
         {
@@ -5576,7 +5576,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $5.84T en el trimestre: $4.32T por precio y $1.52T por flujo neto (compras menos ventas). Actividad bruta de $6.06T con 28329 posiciones nuevas y 25219 salidas."
+        "text": "El valor agregado del universo cambió $5.84T en el trimestre: $4.29T por precio y $1.55T por flujo neto (compras menos ventas). Actividad bruta de $5.97T con 27972 posiciones nuevas y 24862 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5592,7 +5592,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.7B frente a un efecto precio de $1.15T (7575 compras / 7038 ventas); su peso actual está en el percentil 100 de su historia."
+        "text": "El sector que más peso ganó, Information Technology (+6.3 pp QoQ, +6.6 pp YoY), recibió flujo neto de $255.7B frente a un efecto precio de $1.15T (7568 compras / 7013 ventas); su peso actual está en el percentil 100 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -5612,11 +5612,11 @@
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Kla Corp (KLAC) (títulos agregados +924%, 44 compradores / 3 vendedores, flujo neto $143.9B); Space Exploration Techn Corp (SPCX) (entrada nueva al universo, 55 compradores / 0 vendedores, flujo neto $140.6B); Micron Technology Inc (MU) (títulos agregados -1%, 24 compradores / 31 vendedores, flujo neto -$2.1B). De 8985 empresas en cartera, 6357 tuvieron un cambio mayor, 1742 menor y 886 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Kla Corp (KLAC) (títulos agregados +924%, 44 compradores / 3 vendedores, flujo neto $143.9B); Space Exploration Techn Corp (SPCX) (entrada nueva al universo, 55 compradores / 0 vendedores, flujo neto $140.6B); Micron Technology Inc (MU) (títulos agregados -1%, 24 compradores / 31 vendedores, flujo neto -$2.1B). De 8947 empresas en cartera, 6313 tuvieron un cambio mayor, 1747 menor y 887 ninguno."
       },
       {
         "kind": "turnover",
-        "text": "Mayor rotación de cartera: Dragoneer Investment Group, LLC (175%), Ontario Teachers Pension Plan Board (161%), Flow Traders U.S. LLC (152%)."
+        "text": "Mayor rotación de cartera: Dragoneer Investment Group, LLC (175%), Ontario Teachers Pension Plan Board (160%), Flow Traders U.S. LLC (152%)."
       },
       {
         "kind": "type_mismatch",
@@ -5655,13 +5655,13 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": 1519020936250.776,
-      "gross_flow": 6061434485928.229,
-      "price_effect": 4320354622182.2246,
-      "n_new": 28329,
-      "n_exit": 25219,
-      "n_add": 88443,
-      "n_trim": 71713,
+      "net_flow": 1546992406236.5972,
+      "gross_flow": 5970377524456.508,
+      "price_effect": 4292383152201.4023,
+      "n_new": 27972,
+      "n_exit": 24862,
+      "n_add": 88618,
+      "n_trim": 71877,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.019900922031757765,
@@ -5700,10 +5700,10 @@
           "value": 491539037792.0
         }
       ],
-      "companies_total": 8985,
-      "companies_major": 6357,
-      "companies_minor": 1742,
-      "companies_none": 886,
+      "companies_total": 8947,
+      "companies_major": 6313,
+      "companies_minor": 1747,
+      "companies_none": 887,
       "top_company_moves": [
         {
           "issuer": "KLA CORP (KLAC)",
@@ -5748,7 +5748,7 @@
       },
       {
         "kind": "flows",
-        "text": "El valor agregado del universo cambió $371.7B en el trimestre: -$113.3B por precio y $485.0B por flujo neto (compras menos ventas). Actividad bruta de $5.59T con 27866 posiciones nuevas y 24521 salidas."
+        "text": "El valor agregado del universo cambió $371.7B en el trimestre: -$75.4B por precio y $447.0B por flujo neto (compras menos ventas). Actividad bruta de $5.12T con 27215 posiciones nuevas y 23868 salidas."
       },
       {
         "kind": "asset_mix",
@@ -5764,7 +5764,7 @@
       },
       {
         "kind": "sector_driver",
-        "text": "El sector que más peso ganó, Health Care (+0.8 pp QoQ, +1.3 pp YoY), recibió flujo neto de $12.3B frente a un efecto precio de $93.8B (8685 compras / 8041 ventas); su peso actual está en el percentil 45 de su historia."
+        "text": "El sector que más peso ganó, Health Care (+0.8 pp QoQ, +1.3 pp YoY), recibió flujo neto de $11.8B frente a un efecto precio de $94.3B (8638 compras / 7985 ventas); su peso actual está en el percentil 45 de su historia."
       },
       {
         "kind": "sector_extremes",
@@ -5772,7 +5772,7 @@
       },
       {
         "kind": "consensus_buy",
-        "text": "Compras de consenso (más compradores netos): Exxonmobil Holdings Corp (XOM) (43 compradores / 0 vendedores, flujo $218.6B), Sk Hynix Inc (41 compradores / 0 vendedores, flujo $17.8B), Teva Pharmaceutical Inds Ltd (TEVA) (39 compradores / 0 vendedores, flujo $8.8B)."
+        "text": "Compras de consenso (más compradores netos): Sk Hynix Inc (41 compradores / 0 vendedores, flujo $17.8B), Monster Beverage Corp New (MNST) (40 compradores / 4 vendedores, flujo $13.2B), Crowdstrike Hldgs Inc (CRWD) (41 compradores / 6 vendedores, flujo $76.5B)."
       },
       {
         "kind": "consensus_sell",
@@ -5780,11 +5780,11 @@
       },
       {
         "kind": "moves",
-        "text": "Movimientos individuales más grandes: BlackRock Inc. abre Exxonmobil Holdings Corp (XOM) ($53.9B); BlackRock Inc. liquida Exxon Mobil Corp (XOM) (-$45.8B); Jane Street Group, LLC reduce State Str SPDR S&P 500 ETF T (SPY) (-$44.1B); Goldman Sachs Group Inc aumenta State Str SPDR S&P 500 ETF T (SPY) ($37.4B)."
+        "text": "Movimientos individuales más grandes: Jane Street Group, LLC reduce State Str SPDR S&P 500 ETF T (SPY) (-$44.1B); Goldman Sachs Group Inc aumenta State Str SPDR S&P 500 ETF T (SPY) ($37.4B); FMR LLC reduce Nvidia Corporation (NVDA) (-$21.3B); Marshall Wace, LLP reduce Ishares-s&p 500 Etp (IVV) (-$18.9B)."
       },
       {
         "kind": "company_moves",
-        "text": "Empresas con mayor movimiento agregado: Exxonmobil Holdings Corp (XOM) (entrada nueva al universo, 43 compradores / 0 vendedores, flujo neto $218.6B); Exxon Mobil Corp (XOM) (títulos agregados -100%, 0 compradores / 42 vendedores, flujo neto -$184.4B); Crowdstrike Hldgs Inc (CRWD) (títulos agregados +305%, 41 compradores / 6 vendedores, flujo neto $76.5B). De 9218 empresas en cartera, 6205 tuvieron un cambio mayor, 2007 menor y 1006 ninguno."
+        "text": "Empresas con mayor movimiento agregado: Crowdstrike Hldgs Inc (CRWD) (títulos agregados +305%, 41 compradores / 6 vendedores, flujo neto $76.5B); Nvidia Corporation (NVDA) (títulos agregados +0%, 36 compradores / 27 vendedores, flujo neto $2.7B); Space Exploration Techn Corp (SPCX) (títulos agregados +16%, 37 compradores / 24 vendedores, flujo neto $20.4B). De 9169 empresas en cartera, 6146 tuvieron un cambio mayor, 2013 menor y 1010 ninguno."
       },
       {
         "kind": "turnover",
@@ -5832,13 +5832,13 @@
           "last_period": "2025-09-30"
         }
       ],
-      "net_flow": 484950178236.49176,
-      "gross_flow": 5594440322844.535,
-      "price_effect": -113270554979.4917,
-      "n_new": 27866,
-      "n_exit": 24521,
-      "n_add": 83545,
-      "n_trim": 76796,
+      "net_flow": 447031273612.8711,
+      "gross_flow": 5124484029860.857,
+      "price_effect": -75351411948.871,
+      "n_new": 27215,
+      "n_exit": 23868,
+      "n_add": 83860,
+      "n_trim": 77106,
       "sector_top_overweight": {
         "sector": "Financials",
         "active_weight": 0.021580986842079833,
@@ -5878,29 +5878,11 @@
           "value": 1849225000152.0
         }
       ],
-      "companies_total": 9218,
-      "companies_major": 6205,
-      "companies_minor": 2007,
-      "companies_none": 1006,
+      "companies_total": 9169,
+      "companies_major": 6146,
+      "companies_minor": 2013,
+      "companies_none": 1010,
       "top_company_moves": [
-        {
-          "issuer": "EXXONMOBIL HOLDINGS CORP (XOM)",
-          "ticker": "XOM",
-          "pct_shares": null,
-          "net_flow": 218613850238.0,
-          "buyers": 43,
-          "sellers": 0,
-          "magnitude": "MAJOR"
-        },
-        {
-          "issuer": "EXXON MOBIL CORP (XOM)",
-          "ticker": "XOM",
-          "pct_shares": -1.0,
-          "net_flow": -184423706084.0,
-          "buyers": 0,
-          "sellers": 42,
-          "magnitude": "MAJOR"
-        },
         {
           "issuer": "CROWDSTRIKE HLDGS INC (CRWD)",
           "ticker": "CRWD",
@@ -5908,6 +5890,24 @@
           "net_flow": 76538036290.24199,
           "buyers": 41,
           "sellers": 6,
+          "magnitude": "MAJOR"
+        },
+        {
+          "issuer": "NVIDIA CORPORATION (NVDA)",
+          "ticker": "NVDA",
+          "pct_shares": 0.0014471515168217534,
+          "net_flow": 2687558633.239066,
+          "buyers": 36,
+          "sellers": 27,
+          "magnitude": "NONE"
+        },
+        {
+          "issuer": "SPACE EXPLORATION TECHN CORP (SPCX)",
+          "ticker": "SPCX",
+          "pct_shares": 0.16299304869650785,
+          "net_flow": 20417890988.975834,
+          "buyers": 37,
+          "sellers": 24,
           "magnitude": "MAJOR"
         }
       ],
