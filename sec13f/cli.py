@@ -20,6 +20,7 @@ import pandas as pd
 from .analysis import build_insights
 from .classify import SecurityClassifier, infer_manager_type, manager_fingerprint
 from .config import Settings
+from .cusip_links import detect_cusip_links
 from .dashboard import build_dashboard
 from .ingest import fetch_universe, iter_local_filings
 from .managers import cik_alias_map, load_managers
@@ -115,7 +116,9 @@ def cmd_build(args, settings: Settings):
     h["manager_short"] = h["cik"].map(mshort).fillna(h["manager"])
     h = add_weights(h)
 
-    changes = position_changes(h)
+    links = detect_cusip_links(h)
+    log.info("Linked %d CUSIP changes (old -> new identifier, same company); see cusip_links.csv", len(links))
+    changes = position_changes(h, links)
     turnover = manager_turnover(changes)
     fp = infer_manager_type(manager_fingerprint(h), turnover)
     fp["manager_type"] = fp["cik"].map(mtype).fillna("Unknown")
@@ -150,7 +153,7 @@ def cmd_build(args, settings: Settings):
         "exposure_asset_value_weighted": exp_asset_vw, "exposure_asset_equal_weighted": exp_asset_ew,
         "exposure_sector_equal_weighted": exp_sector_ew, "exposure_sector_value_weighted": exp_sector_vw, "exposure_sector_by_manager_type": exp_sector_type,
         "sector_rotation": rot, "consensus": cons, "put_call": pc,
-        "sector_positioning": sector_pos, "company_moves": moves,
+        "sector_positioning": sector_pos, "company_moves": moves, "cusip_links": links,
     }.items():
         if df is not None and not df.empty:
             df.to_csv(odir / f"{name}.csv", index=False)

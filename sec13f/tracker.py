@@ -15,17 +15,40 @@ def add_weights(h: pd.DataFrame) -> pd.DataFrame:
     return h
 
 
-def position_changes(h: pd.DataFrame) -> pd.DataFrame:
+def _carry_cusips(a: pd.DataFrame, mapping: dict[str, tuple[str, float]]) -> pd.DataFrame:
+    """Restate a previous book under its successor CUSIPs (shares and implied price converted by the share factor;
+    value unchanged), so the diff sees one continuous position instead of an exit plus an entry."""
+    hit = a["cusip"].isin(mapping.keys())
+    if not hit.any():
+        return a
+    a = a.copy()
+    new = a.loc[hit, "cusip"].map(lambda c: mapping[c][0])
+    factor = a.loc[hit, "cusip"].map(lambda c: mapping[c][1]).astype(float)
+    a.loc[hit, "shares"] = a.loc[hit, "shares"] * factor
+    if "implied_price" in a:
+        a.loc[hit, "implied_price"] = a.loc[hit, "implied_price"] / factor
+    a.loc[hit, "cusip"] = new
+    return a
+
+
+def position_changes(h: pd.DataFrame, links: pd.DataFrame | None = None) -> pd.DataFrame:
     """Diff each manager's book between consecutive reported periods.
 
     Value change is decomposed into a *flow* effect (shares bought/sold at
     the current implied price) and a *price* effect (old shares revalued).
+    ``links`` (from ``cusip_links.detect_cusip_links``) carries positions across CUSIP changes; ``cusip_prev``
+    records the CUSIP a carried position had in the previous period.
     """
+    from .cusip_links import cusip_map_for_period
+
     periods = sorted(h["period"].unique())
     frames = []
     for prev, cur in zip(periods[:-1], periods[1:]):
-        a = h[h["period"] == prev].set_index(POS_KEY)
-        b = h[h["period"] == cur].set_index(POS_KEY)
+        a = h[h["period"] == prev]
+        b = h[h["period"] == cur]
+        mapping = cusip_map_for_period(links, cur, set(a["cusip"]), set(b["cusip"])) if links is not None else {}
+        a = _carry_cusips(a.assign(cusip_prev=a["cusip"]), mapping).set_index(POS_KEY)
+        b = b.set_index(POS_KEY)
         # only managers that reported in both periods
         common_ciks = set(a.index.get_level_values(0)) & set(b.index.get_level_values(0))
         a = a[a.index.get_level_values(0).isin(common_ciks)]
@@ -33,7 +56,8 @@ def position_changes(h: pd.DataFrame) -> pd.DataFrame:
         label_cols = [c for c in ("manager", "manager_type", "manager_short", "issuer", "display_name", "title_of_class", "ticker", "asset_type",
                                   "underlying_asset", "sector", "industry") if c in h.columns]
         cols = label_cols + ["value_usd", "shares", "weight", "implied_price"]
-        j = a[cols].join(b[cols], how="outer", lsuffix="_prev", rsuffix="_cur")
+        j = a[cols + ["cusip_prev"]].join(b[cols], how="outer", lsuffix="_prev", rsuffix="_cur")
+        j["cusip_prev"] = j["cusip_prev"].fillna("")
         for c in label_cols:
             j[c] = j[f"{c}_cur"].fillna(j[f"{c}_prev"])
             j.drop(columns=[f"{c}_prev", f"{c}_cur"], inplace=True)
